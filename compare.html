@@ -244,7 +244,9 @@
     }
 
     document.getElementById('toggle-columns').addEventListener('click', () => {
-      document.getElementById('columns-panel').classList.toggle('open');
+      const panel = document.getElementById('columns-panel');
+      const isOpen = panel.style.display === 'block';
+      panel.style.display = isOpen ? 'none' : 'block';
     });
     document.getElementById('export-csv').addEventListener('click', exportCsv);
     load();
