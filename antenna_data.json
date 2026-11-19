@@ -520,6 +520,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-01060-dimensions.jpg",
+    "dimension_image_kind": "assembly",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS01060-SPEC-EN)",
@@ -5181,6 +5182,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-04004-dimensions.jpg",
+    "dimension_image_kind": "assembly",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS04004-SPEC-EN)",
@@ -5296,6 +5298,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-04010-dimensions.jpg",
+    "dimension_image_kind": "assembly",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS04010-SPEC-EN)",
@@ -5645,6 +5648,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-04119-dimensions.jpg",
+    "dimension_image_kind": "assembly",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS04119-SPEC-EN)",
@@ -5755,6 +5759,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-04121-dimensions.jpg",
+    "dimension_image_kind": "assembly",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS04121-SPEC-EN)",
@@ -14711,6 +14716,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-03673-dimensions.jpg",
+    "dimension_image_kind": "assembly",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS03673-SPEC-EN)",
@@ -14839,6 +14845,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-03674-dimensions.jpg",
+    "dimension_image_kind": "assembly",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS03674-SPEC-EN)",
@@ -14964,6 +14971,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-03675-dimensions.jpg",
+    "dimension_image_kind": "assembly",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS03675-SPEC-EN)",
@@ -15091,6 +15099,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-03676-dimensions.jpg",
+    "dimension_image_kind": "assembly",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS03676-SPEC-EN)",
@@ -16076,6 +16085,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-04153-dimensions.jpg",
+    "dimension_image_kind": "assembly",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS04153-SPEC-EN)",
@@ -16194,6 +16204,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-04154-dimensions.jpg",
+    "dimension_image_kind": "assembly",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS04154-SPEC-EN)",

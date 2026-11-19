@@ -493,6 +493,7 @@
         const sku = document.createElement('div');
         sku.className = 'result-cell result-model';
         const skuLink = document.createElement('a');
+        skuLink.className = 'sku-link';
         skuLink.href = `antenna.html?id=${encodeURIComponent(entry._slug)}&from=finder`;
         skuLink.textContent = entry.sku || entry.legacy_sku || 'View';
         sku.appendChild(skuLink);

@@ -460,6 +460,7 @@
             td.appendChild(document.createTextNode(entry.vendor || ''));
           } else if (colKey === 'sku') {
             const link = document.createElement('a');
+            link.className = 'sku-link';
             link.href = `antenna.html?id=${encodeURIComponent(id)}`;
             link.textContent = entry.sku || '';
             link.addEventListener('click', e => e.stopPropagation());

@@ -67,6 +67,7 @@
     }
   ],
   "dimension_image_url": "images/vendor/sku-dimensions.jpg",
+  "dimension_image_kind": "mechanical",
   "datasheet_urls": [
     {
       "label": "Vendor SPEC",
