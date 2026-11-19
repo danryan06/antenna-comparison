@@ -158,6 +158,31 @@
       font-weight: 500;
       letter-spacing: 0.01em;
     }
+    .legacy-sku-row,
+    .val-with-copy {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      max-width: 100%;
+      min-width: 0;
+      vertical-align: middle;
+    }
+    .legacy-sku-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px 8px;
+    }
+    .val-with-copy .part-text,
+    .legacy-sku-row .legacy-sku-value {
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+    .val-with-copy .part-text {
+      font-family: "JetBrains Mono", ui-monospace, monospace;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
     .notes-list {
       margin: 0.5rem 0 0;
       padding-left: 1.1rem;
@@ -287,9 +312,91 @@
 
     // Never render these in the UI (maintainer / merge notes only)
     const INTERNAL_ONLY_KEYS = new Set(['internal_notes', 'compatible_aps', 'field_notes']);
+    const COPYABLE_SKU_KEYS = new Set(['sku', 'legacy_sku']);
+    const COPY_ICON = '<rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>';
+    const CHECK_ICON = '<path d="M20 6 9 17l-5-5"/>';
 
     function readId() {
       return new URLSearchParams(window.location.search).get('id') || '';
+    }
+
+    function iconSvg(markup, size) {
+      const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.setAttribute('width', String(size));
+      svg.setAttribute('height', String(size));
+      svg.setAttribute('viewBox', '0 0 24 24');
+      svg.setAttribute('fill', 'none');
+      svg.setAttribute('stroke', 'currentColor');
+      svg.setAttribute('stroke-width', '2');
+      svg.setAttribute('stroke-linecap', 'round');
+      svg.setAttribute('stroke-linejoin', 'round');
+      svg.setAttribute('aria-hidden', 'true');
+      svg.innerHTML = markup;
+      return svg;
+    }
+
+    function copyAnnouncer() {
+      let live = document.getElementById('copy-status');
+      if (live) return live;
+      live = document.createElement('div');
+      live.id = 'copy-status';
+      live.className = 'visually-hidden';
+      live.setAttribute('aria-live', 'polite');
+      document.body.appendChild(live);
+      return live;
+    }
+
+    function copyPartNumber(text, button) {
+      const value = String(text || '').trim();
+      if (!value) return;
+      const clipboard = navigator.clipboard;
+      if (!clipboard || typeof clipboard.writeText !== 'function') return;
+      let pending;
+      try {
+        pending = clipboard.writeText(value);
+      } catch (err) {
+        return;
+      }
+      Promise.resolve(pending).then(() => {
+        const svg = button.querySelector('svg');
+        button.classList.add('is-copied');
+        button.setAttribute('aria-label', `Copied ${value}`);
+        if (svg) svg.innerHTML = CHECK_ICON;
+        const live = copyAnnouncer();
+        live.textContent = '';
+        window.setTimeout(() => { live.textContent = 'Copied'; }, 30);
+        window.clearTimeout(button._copyTimer);
+        button._copyTimer = window.setTimeout(() => {
+          button.classList.remove('is-copied');
+          button.setAttribute('aria-label', `Copy ${value}`);
+          if (svg) svg.innerHTML = COPY_ICON;
+        }, 1500);
+      }, () => {});
+    }
+
+    function createCopyButton(text) {
+      const value = String(text || '').trim();
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'copy-part';
+      button.setAttribute('aria-label', `Copy ${value}`);
+      button.title = `Copy ${value}`;
+      button.appendChild(iconSvg(COPY_ICON, 16));
+      button.addEventListener('click', event => {
+        event.preventDefault();
+        event.stopPropagation();
+        copyPartNumber(value, button);
+      });
+      return button;
+    }
+
+    function appendCopyableSku(container, text) {
+      const value = String(text || '').trim();
+      const part = document.createElement('span');
+      part.className = 'part-text';
+      part.textContent = value;
+      container.appendChild(part);
+      if (value) container.appendChild(createCopyButton(value));
     }
 
     function normalizeString(value) {
@@ -471,13 +578,16 @@
           const legacy = document.getElementById('legacy-line');
           legacy.style.display = 'block';
           legacy.replaceChildren();
+          const row = document.createElement('span');
+          row.className = 'legacy-sku-row';
           const label = document.createElement('span');
           label.className = 'legacy-sku-label';
           label.textContent = 'Former AccelTex part number';
           const value = document.createElement('span');
           value.className = 'legacy-sku-value';
           value.textContent = entry.legacy_sku;
-          legacy.append(label, document.createTextNode(': '), value);
+          row.append(label, document.createTextNode(': '), value, createCopyButton(entry.legacy_sku));
+          legacy.appendChild(row);
         }
 
         const imgUrl = safeUrl(entry.image_url, { allowRelative: true });
@@ -523,7 +633,13 @@
           keyDiv.textContent = label;
           const valDiv = document.createElement('div');
           valDiv.className = 'val';
-          valDiv.textContent = formatField(key, entry[key]);
+          if (COPYABLE_SKU_KEYS.has(key)) {
+            valDiv.classList.add('val-with-copy');
+            // Copy the raw SKU string even if the value is also rendered as a link elsewhere.
+            appendCopyableSku(valDiv, entry[key]);
+          } else {
+            valDiv.textContent = formatField(key, entry[key]);
+          }
           detailsEl.appendChild(keyDiv);
           detailsEl.appendChild(valDiv);
         });
