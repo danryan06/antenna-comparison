@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Feature Finder — AntennaComparison</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <div class="header-left">
+        <a href="index.html" class="site-logo-link">
+          <img src="logo.png" alt="AntennaComparison" class="logo-image" />
+          <span class="logo-text">AntennaComparison</span>
+        </a>
+      </div>
+
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link" data-page="index">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="8" y1="6" x2="21" y2="6"/>
+            <line x1="8" y1="12" x2="21" y2="12"/>
+            <line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/>
+            <line x1="3" y1="12" x2="3.01" y2="12"/>
+            <line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+          <span class="nav-text">Browse</span>
+        </a>
+
+        <a href="finder.html" class="nav-link active" data-page="finder">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+          </svg>
+          <span class="nav-text">Finder</span>
+        </a>
+
+        <a href="compare.html" class="nav-link" data-page="compare">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 20V10"/>
+            <path d="M12 20V4"/>
+            <path d="M6 20v-6"/>
+          </svg>
+          <span class="nav-text">Compare</span>
+        </a>
+      </nav>
+
+      <div class="header-right"></div>
+    </div>
+  </header>
+
+  <div class="container" style="margin-top: 24px;">
+    <div class="actions">
+      <a class="btn-link" href="index.html">Back to Antenna Table</a>
+      <button id="clear-filters" type="button" class="btn-link">Reset Filters</button>
+      <button id="export-csv" type="button" class="btn-link">Export CSV</button>
+    </div>
+
+    <div class="card finder-card">
+      <span class="badge">Feature Finder</span>
+      <p class="subtitle" style="margin-top:0.5rem;">
+        Step through form, bands, connector, lead count, and environment to find matching antennas.
+      </p>
+
+      <div class="wizard-steps" id="wizard-steps" aria-label="Finder steps"></div>
+
+      <div class="finder-grid">
+        <section class="filter-panel">
+          <h2 id="step-title">Filters</h2>
+          <p class="results-note" id="step-help">Loading…</p>
+
+          <div id="step-panels"></div>
+
+          <div class="wizard-nav">
+            <button type="button" id="btn-back" class="btn-link">Back</button>
+            <button type="button" id="btn-skip" class="btn-link">Any / Skip</button>
+            <button type="button" id="btn-next" class="btn-primary wizard-next">Next</button>
+          </div>
+        </section>
+
+        <section class="results-panel">
+          <div class="results-header">
+            <div>
+              <h2>Results</h2>
+              <p class="results-note" id="results-note">Loading data…</p>
+            </div>
+            <div class="match-count" id="match-count">—</div>
+          </div>
+
+          <div class="results-counter" id="results-counter" style="display:none;">
+            <div class="counter-content">
+              <span class="counter-number" id="counter-number">0</span>
+              <span class="counter-label">antennas match your criteria</span>
+            </div>
+          </div>
+
+          <div id="active-filters" class="active-filters" style="display:none;"></div>
+
+          <div id="results" class="results-table">
+            <div class="result-row result-header result-row-antenna">
+              <div class="result-cell"></div>
+              <div class="result-cell">Vendor</div>
+              <div class="result-cell">SKU</div>
+              <div class="result-cell">Form</div>
+              <div class="result-cell">Bands</div>
+              <div class="result-cell">Connector</div>
+              <div class="result-cell">Leads</div>
+              <div class="result-cell">Env</div>
+              <div class="result-cell"></div>
+            </div>
+          </div>
+          <div id="empty-state" class="empty-state" style="display:none;">
+            <p>No antennas match every selected requirement.</p>
+            <p>Try removing one filter at a time to widen the results.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <button id="compare-fab" class="btn-primary floating-compare" style="display:none;" type="button" disabled>Compare (0)</button>
+
+  <script src="antenna-format.js"></script>
+  <script>
+    const DATA_URL = 'antenna_data.json';
+    const WIFI_BANDS = ['2.4', '5', '6'];
+    const ENV_OPTIONS = [
+      { value: 'Indoor', label: 'Indoor' },
+      { value: 'Outdoor', label: 'Outdoor' },
+      { value: 'Either', label: 'Either' }
+    ];
+
+    const STEPS = [
+      {
+        id: 'form',
+        label: 'Form',
+        title: 'Form type',
+        help: 'Choose Omni, Patch, High-density patch — or leave open for any.'
+      },
+      {
+        id: 'bands',
+        label: 'Bands',
+        title: 'Wi-Fi bands',
+        help: 'Select bands the antenna must support (2.4 / 5 / 6 GHz).'
+      },
+      {
+        id: 'connector',
+        label: 'Connector',
+        title: 'Connector type',
+        help: 'Pick one or more connector types from the live catalog.'
+      },
+      {
+        id: 'leads',
+        label: 'Leads',
+        title: 'Lead count',
+        help: 'How many antenna leads / elements do you need?'
+      },
+      {
+        id: 'env',
+        label: 'Environment',
+        title: 'Indoor / Outdoor',
+        help: 'Indoor and Outdoor also match Indoor/Outdoor-rated antennas. Either skips this constraint.'
+      },
+      {
+        id: 'results',
+        label: 'Results',
+        title: 'Matching antennas',
+        help: 'Open a detail page, export CSV, or select two or more to compare.'
+      }
+    ];
+
+    const state = {
+      form: new Set(),
+      bands: new Set(),
+      connector: new Set(),
+      leads: new Set(),
+      env: 'Either'
+    };
+
+    let currentStep = 0;
+    let enrichedData = [];
+    const selectedIds = new Set();
+
+    function restoreStateFromUrl() {
+      const params = new URLSearchParams(window.location.search);
+      const stepParam = parseInt(params.get('step') || '0', 10);
+      if (!Number.isNaN(stepParam)) {
+        currentStep = Math.max(0, Math.min(STEPS.length - 1, stepParam));
+      }
+      (params.get('form') || '').split(',').filter(Boolean).forEach(v => state.form.add(v));
+      (params.get('bands') || '').split(',').filter(Boolean).forEach(v => state.bands.add(v));
+      (params.get('connector') || '').split(',').filter(Boolean).forEach(v => state.connector.add(v));
+      (params.get('leads') || '').split(',').filter(Boolean).forEach(v => state.leads.add(v));
+      const env = params.get('env');
+      if (env && ENV_OPTIONS.some(opt => opt.value === env)) state.env = env;
+    }
+
+    function getFilterStateForUrl() {
+      const params = new URLSearchParams();
+      if (currentStep > 0) params.set('step', String(currentStep));
+      if (state.form.size) params.set('form', Array.from(state.form).join(','));
+      if (state.bands.size) params.set('bands', Array.from(state.bands).join(','));
+      if (state.connector.size) params.set('connector', Array.from(state.connector).join(','));
+      if (state.leads.size) params.set('leads', Array.from(state.leads).join(','));
+      if (state.env && state.env !== 'Either') params.set('env', state.env);
+      return params;
+    }
+
+    function syncUrl() {
+      const qs = getFilterStateForUrl().toString();
+      history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+    }
+
+    async function loadData() {
+      try {
+        const res = await fetch(DATA_URL, { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const raw = await res.json();
+        if (!Array.isArray(raw)) throw new Error('antenna_data.json must be an array');
+        enrichedData = raw.map(enrichEntry);
+        restoreStateFromUrl();
+        buildWizard();
+        buildStepPanels();
+        syncCheckboxState();
+        showStep(currentStep);
+        applyFilters();
+      } catch (err) {
+        console.error('Failed to load data', err);
+        document.getElementById('results-note').textContent = 'Unable to load antenna data.';
+        document.getElementById('step-help').textContent = 'Unable to load antenna data.';
+      }
+    }
+
+    function connectorFamily(raw) {
+      const c = String(raw || '').toUpperCase().replace(/\s+/g, ' ').trim();
+      if (!c) return '';
+      if (c.includes('DART')) return 'DART';
+      if (c.includes('MPC')) return 'MPC';
+      if (c.includes('RPSMA')) return 'RPSMA';
+      if (c.includes('RPTNC')) return 'RPTNC';
+      if (
+        c === 'N-STYLE' ||
+        c.startsWith('N-STYLE') ||
+        c.startsWith('N MALE') ||
+        c.startsWith('N PLUG') ||
+        c.startsWith('N JACK') ||
+        /^N\b/.test(c)
+      ) return 'N-Style';
+      if (c.includes('SMA')) return 'SMA';
+      return String(raw).trim();
+    }
+
+    function enrichEntry(entry) {
+      return Object.assign({}, entry, {
+        _slug: slugifyAntenna(entry),
+        _bands: Array.isArray(entry.bands) ? entry.bands.map(String) : [],
+        _connectorFamily: connectorFamily(entry.connector)
+      });
+    }
+
+    function escapeAttrValue(value) {
+      if (window.CSS && typeof window.CSS.escape === 'function') {
+        return window.CSS.escape(value);
+      }
+      return String(value).replace(/"/g, '\\"');
+    }
+
+    function collectUnique(getter, { numeric = false } = {}) {
+      const set = new Set();
+      enrichedData.forEach(entry => {
+        const value = getter(entry);
+        if (value == null || value === '') return;
+        set.add(value);
+      });
+      const values = Array.from(set);
+      if (numeric) {
+        return values
+          .map(Number)
+          .filter(n => !Number.isNaN(n))
+          .sort((a, b) => a - b)
+          .map(String);
+      }
+      return values.sort((a, b) => String(a).localeCompare(String(b), undefined, { numeric: true }));
+    }
+
+    function buildWizard() {
+      const root = document.getElementById('wizard-steps');
+      root.innerHTML = '';
+      STEPS.forEach((step, index) => {
+        if (index > 0) {
+          const connector = document.createElement('div');
+          connector.className = 'step-connector';
+          root.appendChild(connector);
+        }
+        const el = document.createElement('button');
+        el.type = 'button';
+        el.className = 'step';
+        el.dataset.stepIndex = String(index);
+        el.setAttribute('aria-label', `Go to step ${index + 1}: ${step.label}`);
+        el.innerHTML = `<span class="step-number">${index + 1}</span><span class="step-label">${step.label}</span>`;
+        el.addEventListener('click', () => {
+          currentStep = index;
+          showStep(currentStep);
+          syncUrl();
+        });
+        root.appendChild(el);
+      });
+    }
+
+    function renderChipGroup(container, options, type, { multi = true } = {}) {
+      container.innerHTML = '';
+      const grid = document.createElement('div');
+      grid.className = 'chip-grid';
+      options.forEach(option => {
+        const value = option.value != null ? String(option.value) : String(option);
+        const labelText = option.label != null ? option.label : value;
+        const id = `${type}-${slugifyLabel(value)}`;
+        const label = document.createElement('label');
+        label.className = 'chip-option';
+        const input = document.createElement('input');
+        input.type = multi ? 'checkbox' : 'radio';
+        if (!multi) input.name = `filter-${type}`;
+        input.id = id;
+        input.dataset.filterType = type;
+        input.dataset.filterValue = value;
+        input.addEventListener('change', () => {
+          if (type === 'env') {
+            state.env = value;
+            applyFilters();
+            return;
+          }
+          const target = state[type];
+          if (!target) return;
+          if (input.checked) target.add(value);
+          else target.delete(value);
+          applyFilters();
+        });
+        const span = document.createElement('span');
+        span.textContent = labelText;
+        label.appendChild(input);
+        label.appendChild(span);
+        grid.appendChild(label);
+      });
+      container.appendChild(grid);
+    }
+
+    function slugifyLabel(value) {
+      return String(value || '')
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    }
+
+    function buildStepPanels() {
+      const host = document.getElementById('step-panels');
+      host.innerHTML = '';
+
+      STEPS.forEach((step) => {
+        const panel = document.createElement('div');
+        panel.className = 'wizard-panel';
+        panel.dataset.stepId = step.id;
+        panel.hidden = true;
+
+        if (step.id === 'form') {
+          const forms = FORM_TYPES.filter(f =>
+            enrichedData.some(e => e.form === f)
+          );
+          const available = forms.length ? forms : FORM_TYPES;
+          renderChipGroup(
+            panel,
+            available.map(v => ({ value: v, label: v })),
+            'form'
+          );
+        } else if (step.id === 'bands') {
+          const bands = WIFI_BANDS.filter(b =>
+            enrichedData.some(e => (e._bands || []).includes(b))
+          );
+          renderChipGroup(
+            panel,
+            bands.map(v => ({ value: v, label: `${v} GHz` })),
+            'bands'
+          );
+        } else if (step.id === 'connector') {
+          const connectors = collectUnique(e => e._connectorFamily);
+          renderChipGroup(
+            panel,
+            connectors.map(v => ({ value: v, label: v })),
+            'connector'
+          );
+        } else if (step.id === 'leads') {
+          const leads = collectUnique(e => e.lead_count, { numeric: true });
+          renderChipGroup(
+            panel,
+            leads.map(v => ({ value: v, label: `${v} lead${v === '1' ? '' : 's'}` })),
+            'leads'
+          );
+        } else if (step.id === 'env') {
+          renderChipGroup(panel, ENV_OPTIONS, 'env', { multi: false });
+        } else {
+          const note = document.createElement('p');
+          note.className = 'results-note';
+          note.textContent = 'Your matches are listed on the right. Refine earlier steps anytime.';
+          panel.appendChild(note);
+        }
+
+        host.appendChild(panel);
+      });
+    }
+
+    function syncCheckboxState() {
+      document.querySelectorAll('input[data-filter-type]').forEach(input => {
+        const type = input.dataset.filterType;
+        const value = input.dataset.filterValue;
+        if (type === 'env') {
+          input.checked = state.env === value;
+          return;
+        }
+        const set = state[type];
+        input.checked = !!(set && set.has(value));
+      });
+    }
+
+    function stepHasSelection(stepId) {
+      if (stepId === 'form') return state.form.size > 0;
+      if (stepId === 'bands') return state.bands.size > 0;
+      if (stepId === 'connector') return state.connector.size > 0;
+      if (stepId === 'leads') return state.leads.size > 0;
+      if (stepId === 'env') return state.env && state.env !== 'Either';
+      if (stepId === 'results') return true;
+      return false;
+    }
+
+    function showStep(index) {
+      currentStep = index;
+      const step = STEPS[index];
+      document.getElementById('step-title').textContent = step.title;
+      document.getElementById('step-help').textContent = step.help;
+
+      document.querySelectorAll('.wizard-panel').forEach(panel => {
+        panel.hidden = panel.dataset.stepId !== step.id;
+      });
+
+      document.querySelectorAll('.step').forEach((el, i) => {
+        el.classList.toggle('active', i === index);
+        el.classList.toggle('completed', i < index || (i !== index && stepHasSelection(STEPS[i].id)));
+      });
+
+      document.getElementById('btn-back').disabled = index === 0;
+      document.getElementById('btn-skip').style.display = step.id === 'results' ? 'none' : '';
+      document.getElementById('btn-next').textContent = step.id === 'results' ? 'Done' : 'Next';
+      document.getElementById('btn-next').disabled = false;
+    }
+
+    function matchesFilters(entry) {
+      if (state.form.size && !state.form.has(entry.form)) return false;
+
+      if (state.bands.size) {
+        for (const band of state.bands) {
+          if (!(entry._bands || []).includes(band)) return false;
+        }
+      }
+
+      if (state.connector.size && !state.connector.has(entry._connectorFamily)) return false;
+
+      if (state.leads.size) {
+        const leads = entry.lead_count == null ? '' : String(entry.lead_count);
+        if (!state.leads.has(leads)) return false;
+      }
+
+      if (state.env && state.env !== 'Either') {
+        const env = entry.indoor_outdoor || '';
+        if (state.env === 'Indoor') {
+          if (env !== 'Indoor' && env !== 'Indoor/Outdoor') return false;
+        } else if (state.env === 'Outdoor') {
+          if (env !== 'Outdoor' && env !== 'Indoor/Outdoor') return false;
+        }
+      }
+
+      return true;
+    }
+
+    function applyFilters() {
+      if (!enrichedData.length) return;
+      syncCheckboxState();
+      const matches = enrichedData.filter(matchesFilters);
+      renderActiveFilters();
+      renderResults(matches);
+      updateMatchCount(matches.length);
+      updateResultsCounter(matches.length);
+      document.getElementById('results-note').textContent = matches.length
+        ? 'Showing antennas that meet every selected requirement.'
+        : 'No matches yet — broaden your filters.';
+      // Refresh completed markers without leaving the step
+      document.querySelectorAll('.step').forEach((el, i) => {
+        el.classList.toggle('active', i === currentStep);
+        el.classList.toggle('completed', i < currentStep || (i !== currentStep && stepHasSelection(STEPS[i].id)));
+      });
+      syncUrl();
+    }
+
+    function updateResultsCounter(count) {
+      const counter = document.getElementById('results-counter');
+      const counterNumber = document.getElementById('counter-number');
+      if (count > 0) {
+        counter.style.display = 'block';
+        counterNumber.style.transform = 'scale(1.2)';
+        setTimeout(() => {
+          counterNumber.textContent = count;
+          counterNumber.style.transform = 'scale(1)';
+        }, 150);
+      } else {
+        counter.style.display = 'none';
+      }
+    }
+
+    function updateMatchCount(count) {
+      const el = document.getElementById('match-count');
+      el.textContent = count === 0 ? '0 matches' : `${count} match${count === 1 ? '' : 'es'}`;
+    }
+
+    function renderActiveFilters() {
+      const container = document.getElementById('active-filters');
+      container.innerHTML = '';
+      const chips = [];
+
+      state.form.forEach(v => chips.push({ type: 'form', value: v, label: v }));
+      state.bands.forEach(v => chips.push({ type: 'bands', value: v, label: `${v} GHz` }));
+      state.connector.forEach(v => chips.push({ type: 'connector', value: v, label: v }));
+      state.leads.forEach(v => chips.push({ type: 'leads', value: v, label: `${v} leads` }));
+      if (state.env && state.env !== 'Either') {
+        chips.push({ type: 'env', value: state.env, label: state.env });
+      }
+
+      if (!chips.length) {
+        container.style.display = 'none';
+        return;
+      }
+      container.style.display = 'flex';
+      chips.forEach(chip => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'active-filter-chip';
+        btn.textContent = chip.label;
+        btn.addEventListener('click', () => removeFilter(chip.type, chip.value));
+        container.appendChild(btn);
+      });
+    }
+
+    function removeFilter(type, value) {
+      if (type === 'env') {
+        state.env = 'Either';
+      } else if (state[type]) {
+        state[type].delete(value);
+      }
+      applyFilters();
+    }
+
+    function clearAllFilters() {
+      state.form.clear();
+      state.bands.clear();
+      state.connector.clear();
+      state.leads.clear();
+      state.env = 'Either';
+      selectedIds.clear();
+      currentStep = 0;
+      showStep(0);
+      applyFilters();
+    }
+
+    function clearCurrentStepSelection() {
+      const step = STEPS[currentStep];
+      if (step.id === 'form') state.form.clear();
+      else if (step.id === 'bands') state.bands.clear();
+      else if (step.id === 'connector') state.connector.clear();
+      else if (step.id === 'leads') state.leads.clear();
+      else if (step.id === 'env') state.env = 'Either';
+      applyFilters();
+    }
+
+    function renderResults(matches) {
+      const container = document.getElementById('results');
+      const emptyState = document.getElementById('empty-state');
+      const header = container.querySelector('.result-header');
+      container.innerHTML = '';
+      if (header) container.appendChild(header);
+
+      if (!matches.length) {
+        emptyState.style.display = 'block';
+        updateCompareFab();
+        return;
+      }
+      emptyState.style.display = 'none';
+
+      matches.forEach(entry => {
+        const row = document.createElement('div');
+        row.className = 'result-row result-row-antenna';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.className = 'row-select';
+        checkbox.setAttribute(
+          'aria-label',
+          `Select ${entry.vendor || ''} ${entry.sku || ''} for comparison`.trim()
+        );
+        checkbox.checked = selectedIds.has(entry._slug);
+        checkbox.addEventListener('click', e => e.stopPropagation());
+        checkbox.addEventListener('change', () => {
+          if (checkbox.checked) selectedIds.add(entry._slug);
+          else selectedIds.delete(entry._slug);
+          updateCompareFab();
+        });
+
+        const vendor = document.createElement('div');
+        vendor.className = 'result-cell result-vendor';
+        vendor.textContent = entry.vendor || '';
+
+        const sku = document.createElement('div');
+        sku.className = 'result-cell result-model';
+        const skuLink = document.createElement('a');
+        skuLink.href = `antenna.html?id=${encodeURIComponent(entry._slug)}`;
+        skuLink.textContent = entry.sku || entry.legacy_sku || 'View';
+        sku.appendChild(skuLink);
+
+        const form = document.createElement('div');
+        form.className = 'result-cell result-form';
+        form.textContent = entry.form || '—';
+
+        const bands = document.createElement('div');
+        bands.className = 'result-cell result-wifi';
+        bands.textContent = formatBands(entry.bands) || '—';
+
+        const connector = document.createElement('div');
+        connector.className = 'result-cell result-antenna';
+        connector.textContent = entry.connector || '—';
+
+        const leads = document.createElement('div');
+        leads.className = 'result-cell result-spatial';
+        leads.textContent = entry.lead_count == null ? '—' : String(entry.lead_count);
+
+        const env = document.createElement('div');
+        env.className = 'result-cell';
+        env.textContent = entry.indoor_outdoor || '—';
+
+        const actions = document.createElement('div');
+        actions.className = 'result-cell result-actions';
+        const detail = document.createElement('a');
+        detail.href = `antenna.html?id=${encodeURIComponent(entry._slug)}&from=finder`;
+        detail.className = 'btn-link btn-link-ghost btn-link-small';
+        detail.textContent = 'Details';
+        actions.appendChild(detail);
+
+        row.appendChild(checkbox);
+        row.appendChild(vendor);
+        row.appendChild(sku);
+        row.appendChild(form);
+        row.appendChild(bands);
+        row.appendChild(connector);
+        row.appendChild(leads);
+        row.appendChild(env);
+        row.appendChild(actions);
+
+        row.style.cursor = 'pointer';
+        row.addEventListener('click', (e) => {
+          if (e.target.type === 'checkbox' || e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
+          const params = getFilterStateForUrl();
+          params.set('id', entry._slug);
+          params.set('from', 'finder');
+          window.location.href = `antenna.html?${params.toString()}`;
+        });
+
+        container.appendChild(row);
+      });
+
+      updateCompareFab();
+    }
+
+    function updateCompareFab() {
+      const fab = document.getElementById('compare-fab');
+      const n = selectedIds.size;
+      fab.disabled = n < 2;
+      if (n >= 2) {
+        fab.style.display = 'inline-flex';
+        fab.textContent = `Compare (${n})`;
+      } else if (n === 1) {
+        fab.style.display = 'inline-flex';
+        fab.textContent = 'Select 1 more to compare';
+      } else {
+        fab.style.display = 'none';
+      }
+    }
+
+    function exportToCsv() {
+      const matches = enrichedData.filter(matchesFilters);
+      if (!matches.length) {
+        alert('No antennas to export. Please adjust your filters.');
+        return;
+      }
+
+      const keys = [
+        'vendor', 'sku', 'legacy_sku', 'name', 'form', 'indoor_outdoor', 'bands',
+        'connector', 'lead_count', 'gain_dbi', 'beamwidth', 'polarization',
+        'cable_length', 'dimensions', 'weight', 'ip_rating'
+      ];
+
+      function escapeCsvValue(value) {
+        const s = String(value || '');
+        return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+      }
+
+      function cell(entry, key) {
+        const v = entry[key];
+        if (key === 'bands') return formatBands(v);
+        if (key === 'gain_dbi') return formatGainCompact(v);
+        if (key === 'beamwidth') return formatBeamwidthCompact(v);
+        if (Array.isArray(v)) return v.join('; ');
+        if (v && typeof v === 'object') return JSON.stringify(v);
+        return v == null ? '' : String(v);
+      }
+
+      const rows = [
+        keys.map(escapeCsvValue).join(','),
+        ...matches.map(entry => keys.map(k => escapeCsvValue(cell(entry, k))).join(','))
+      ];
+      const blob = new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'antenna-finder-results.csv';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.querySelector('.site-header');
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 10) header.classList.add('scrolled');
+        else header.classList.remove('scrolled');
+      });
+
+      document.getElementById('btn-back').addEventListener('click', () => {
+        if (currentStep === 0) return;
+        currentStep -= 1;
+        showStep(currentStep);
+        syncUrl();
+      });
+      document.getElementById('btn-next').addEventListener('click', () => {
+        if (currentStep >= STEPS.length - 1) {
+          document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return;
+        }
+        currentStep += 1;
+        showStep(currentStep);
+        syncUrl();
+      });
+      document.getElementById('btn-skip').addEventListener('click', () => {
+        clearCurrentStepSelection();
+        if (currentStep < STEPS.length - 1) {
+          currentStep += 1;
+          showStep(currentStep);
+          syncUrl();
+        }
+      });
+      document.getElementById('clear-filters').addEventListener('click', clearAllFilters);
+      document.getElementById('export-csv').addEventListener('click', exportToCsv);
+      document.getElementById('compare-fab').addEventListener('click', () => {
+        if (selectedIds.size < 2) return;
+        window.location.href = `compare.html?ids=${encodeURIComponent(Array.from(selectedIds).join(','))}`;
+      });
+
+      loadData();
+    });
+  </script>
+</body>
+</html>

@@ -1680,6 +1680,54 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
   gap: 0.5rem;
 }
 
+.wizard-steps .step {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.wizard-panel {
+  margin: 1rem 0 1.25rem;
+}
+
+.wizard-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.wizard-nav .wizard-next {
+  margin-left: auto;
+}
+
+.wizard-nav .btn-link:disabled,
+.wizard-nav .btn-primary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.result-row-antenna {
+  grid-template-columns: auto 1.1fr 1fr 1.1fr 0.9fr 1.1fr 0.6fr 1fr auto;
+}
+
+@media (max-width: 1200px) {
+  .result-row-antenna {
+    grid-template-columns: auto 1fr 1fr 1fr 1fr auto;
+  }
+  .result-row-antenna .result-cell:nth-child(5),
+  .result-row-antenna .result-cell:nth-child(7),
+  .result-row-antenna .result-cell:nth-child(8) {
+    display: none;
+  }
+}
+
 .step {
   display: flex;
   flex-direction: column;
