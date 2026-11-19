@@ -63,22 +63,51 @@
     <div class="card finder-card">
       <span class="badge">Feature Finder</span>
       <p class="subtitle" style="margin-top:0.5rem;">
-        Step through form, bands, connector, lead count, and environment to find matching antennas.
+        Set any combination of filters — results update immediately.
       </p>
 
-      <div class="wizard-steps" id="wizard-steps" aria-label="Finder steps"></div>
-
       <div class="finder-grid">
-        <section class="filter-panel">
-          <h2 id="step-title">Filters</h2>
-          <p class="results-note" id="step-help">Loading…</p>
+        <section class="filter-panel" aria-label="Antenna filters">
+          <h2>Filters</h2>
 
-          <div id="step-panels"></div>
+          <div class="filter-group">
+            <div class="filter-group-head">
+              <h3>Form type</h3>
+            </div>
+            <div id="form-options" class="chip-grid" role="radiogroup" aria-label="Form type"></div>
+          </div>
 
-          <div class="wizard-nav">
-            <button type="button" id="btn-back" class="btn-link">Back</button>
-            <button type="button" id="btn-skip" class="btn-link">Any / Skip</button>
-            <button type="button" id="btn-next" class="btn-primary wizard-next">Next</button>
+          <div class="filter-group">
+            <div class="filter-group-head">
+              <h3 id="bands-heading">Bands</h3>
+              <p id="bands-help">Must support every selected band</p>
+            </div>
+            <div id="bands-options" class="chip-grid" role="group" aria-labelledby="bands-heading" aria-describedby="bands-help"></div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-head">
+              <h3>Connector</h3>
+            </div>
+            <select id="filter-connector" class="filter-select filter-panel-select" aria-label="Filter by connector">
+              <option value="">Any connector</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-head">
+              <h3>Lead count</h3>
+            </div>
+            <select id="filter-leads" class="filter-select filter-panel-select" aria-label="Filter by lead count">
+              <option value="">Any lead count</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-head">
+              <h3>Environment</h3>
+            </div>
+            <div id="env-options" class="chip-grid" role="radiogroup" aria-label="Indoor or outdoor"></div>
           </div>
         </section>
 
@@ -86,16 +115,9 @@
           <div class="results-header">
             <div>
               <h2>Results</h2>
-              <p class="results-note" id="results-note">Loading data…</p>
+              <p class="results-note" id="results-note" aria-live="polite">Loading data…</p>
             </div>
-            <div class="match-count" id="match-count">—</div>
-          </div>
-
-          <div class="results-counter" id="results-counter" style="display:none;">
-            <div class="counter-content">
-              <span class="counter-number" id="counter-number">0</span>
-              <span class="counter-label">antennas match your criteria</span>
-            </div>
+            <div class="match-count" id="match-count" aria-live="polite">—</div>
           </div>
 
           <div id="active-filters" class="active-filters" style="display:none;"></div>
@@ -134,78 +156,36 @@
       { value: 'Either', label: 'Either' }
     ];
 
-    const STEPS = [
-      {
-        id: 'form',
-        label: 'Form',
-        title: 'Form type',
-        help: 'Choose Omni, Patch, High-density patch — or leave open for any.'
-      },
-      {
-        id: 'bands',
-        label: 'Bands',
-        title: 'Wi-Fi bands',
-        help: 'Select bands the antenna must support (2.4 / 5 / 6 GHz).'
-      },
-      {
-        id: 'connector',
-        label: 'Connector',
-        title: 'Connector type',
-        help: 'Pick one or more connector types from the live catalog.'
-      },
-      {
-        id: 'leads',
-        label: 'Leads',
-        title: 'Lead count',
-        help: 'How many antenna leads / elements do you need?'
-      },
-      {
-        id: 'env',
-        label: 'Environment',
-        title: 'Indoor / Outdoor',
-        help: 'Indoor and Outdoor also match Indoor/Outdoor-rated antennas. Either skips this constraint.'
-      },
-      {
-        id: 'results',
-        label: 'Results',
-        title: 'Matching antennas',
-        help: 'Open a detail page, export CSV, or select two or more to compare.'
-      }
-    ];
-
     const state = {
-      form: new Set(),
+      form: '',
       bands: new Set(),
-      connector: new Set(),
-      leads: new Set(),
+      connector: '',
+      leads: '',
       env: 'Either'
     };
 
-    let currentStep = 0;
     let enrichedData = [];
     const selectedIds = new Set();
 
     function restoreStateFromUrl() {
       const params = new URLSearchParams(window.location.search);
-      const stepParam = parseInt(params.get('step') || '0', 10);
-      if (!Number.isNaN(stepParam)) {
-        currentStep = Math.max(0, Math.min(STEPS.length - 1, stepParam));
-      }
-      (params.get('form') || '').split(',').filter(Boolean).forEach(v => state.form.add(v));
-      (params.get('bands') || '').split(',').filter(Boolean).forEach(v => state.bands.add(v));
-      (params.get('connector') || '').split(',').filter(Boolean).forEach(v => state.connector.add(v));
-      (params.get('leads') || '').split(',').filter(Boolean).forEach(v => state.leads.add(v));
+      const form = params.get('form') || '';
+      if (form && FORM_TYPES.includes(form)) state.form = form;
+      (params.get('bands') || '').split(',').filter(Boolean).forEach(v => {
+        if (WIFI_BANDS.includes(v)) state.bands.add(v);
+      });
+      state.connector = params.get('connector') || '';
+      state.leads = params.get('leads') || '';
       const env = params.get('env');
       if (env && ENV_OPTIONS.some(opt => opt.value === env)) state.env = env;
     }
 
     function getFilterStateForUrl() {
       const params = new URLSearchParams();
-      if (currentStep > 0) params.set('step', String(currentStep));
-      if (state.form.size) params.set('form', Array.from(state.form).join(','));
+      if (state.form) params.set('form', state.form);
       if (state.bands.size) params.set('bands', Array.from(state.bands).join(','));
-      if (state.connector.size) params.set('connector', Array.from(state.connector).join(','));
-      if (state.leads.size) params.set('leads', Array.from(state.leads).join(','));
+      if (state.connector) params.set('connector', state.connector);
+      if (state.leads) params.set('leads', state.leads);
       if (state.env && state.env !== 'Either') params.set('env', state.env);
       return params;
     }
@@ -213,26 +193,6 @@
     function syncUrl() {
       const qs = getFilterStateForUrl().toString();
       history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
-    }
-
-    async function loadData() {
-      try {
-        const res = await fetch(DATA_URL, { cache: 'no-store' });
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        const raw = await res.json();
-        if (!Array.isArray(raw)) throw new Error('antenna_data.json must be an array');
-        enrichedData = raw.map(enrichEntry);
-        restoreStateFromUrl();
-        buildWizard();
-        buildStepPanels();
-        syncCheckboxState();
-        showStep(currentStep);
-        applyFilters();
-      } catch (err) {
-        console.error('Failed to load data', err);
-        document.getElementById('results-note').textContent = 'Unable to load antenna data.';
-        document.getElementById('step-help').textContent = 'Unable to load antenna data.';
-      }
     }
 
     function connectorFamily(raw) {
@@ -262,13 +222,6 @@
       });
     }
 
-    function escapeAttrValue(value) {
-      if (window.CSS && typeof window.CSS.escape === 'function') {
-        return window.CSS.escape(value);
-      }
-      return String(value).replace(/"/g, '\\"');
-    }
-
     function collectUnique(getter, { numeric = false } = {}) {
       const set = new Set();
       enrichedData.forEach(entry => {
@@ -287,67 +240,6 @@
       return values.sort((a, b) => String(a).localeCompare(String(b), undefined, { numeric: true }));
     }
 
-    function buildWizard() {
-      const root = document.getElementById('wizard-steps');
-      root.innerHTML = '';
-      STEPS.forEach((step, index) => {
-        if (index > 0) {
-          const connector = document.createElement('div');
-          connector.className = 'step-connector';
-          root.appendChild(connector);
-        }
-        const el = document.createElement('button');
-        el.type = 'button';
-        el.className = 'step';
-        el.dataset.stepIndex = String(index);
-        el.setAttribute('aria-label', `Go to step ${index + 1}: ${step.label}`);
-        el.innerHTML = `<span class="step-number">${index + 1}</span><span class="step-label">${step.label}</span>`;
-        el.addEventListener('click', () => {
-          currentStep = index;
-          showStep(currentStep);
-          syncUrl();
-        });
-        root.appendChild(el);
-      });
-    }
-
-    function renderChipGroup(container, options, type, { multi = true } = {}) {
-      container.innerHTML = '';
-      const grid = document.createElement('div');
-      grid.className = 'chip-grid';
-      options.forEach(option => {
-        const value = option.value != null ? String(option.value) : String(option);
-        const labelText = option.label != null ? option.label : value;
-        const id = `${type}-${slugifyLabel(value)}`;
-        const label = document.createElement('label');
-        label.className = 'chip-option';
-        const input = document.createElement('input');
-        input.type = multi ? 'checkbox' : 'radio';
-        if (!multi) input.name = `filter-${type}`;
-        input.id = id;
-        input.dataset.filterType = type;
-        input.dataset.filterValue = value;
-        input.addEventListener('change', () => {
-          if (type === 'env') {
-            state.env = value;
-            applyFilters();
-            return;
-          }
-          const target = state[type];
-          if (!target) return;
-          if (input.checked) target.add(value);
-          else target.delete(value);
-          applyFilters();
-        });
-        const span = document.createElement('span');
-        span.textContent = labelText;
-        label.appendChild(input);
-        label.appendChild(span);
-        grid.appendChild(label);
-      });
-      container.appendChild(grid);
-    }
-
     function slugifyLabel(value) {
       return String(value || '')
         .toLowerCase()
@@ -356,108 +248,104 @@
         .replace(/^-+|-+$/g, '');
     }
 
-    function buildStepPanels() {
-      const host = document.getElementById('step-panels');
-      host.innerHTML = '';
-
-      STEPS.forEach((step) => {
-        const panel = document.createElement('div');
-        panel.className = 'wizard-panel';
-        panel.dataset.stepId = step.id;
-        panel.hidden = true;
-
-        if (step.id === 'form') {
-          const forms = FORM_TYPES.filter(f =>
-            enrichedData.some(e => e.form === f)
-          );
-          const available = forms.length ? forms : FORM_TYPES;
-          renderChipGroup(
-            panel,
-            available.map(v => ({ value: v, label: v })),
-            'form'
-          );
-        } else if (step.id === 'bands') {
-          const bands = WIFI_BANDS.filter(b =>
-            enrichedData.some(e => (e._bands || []).includes(b))
-          );
-          renderChipGroup(
-            panel,
-            bands.map(v => ({ value: v, label: `${v} GHz` })),
-            'bands'
-          );
-        } else if (step.id === 'connector') {
-          const connectors = collectUnique(e => e._connectorFamily);
-          renderChipGroup(
-            panel,
-            connectors.map(v => ({ value: v, label: v })),
-            'connector'
-          );
-        } else if (step.id === 'leads') {
-          const leads = collectUnique(e => e.lead_count, { numeric: true });
-          renderChipGroup(
-            panel,
-            leads.map(v => ({ value: v, label: `${v} lead${v === '1' ? '' : 's'}` })),
-            'leads'
-          );
-        } else if (step.id === 'env') {
-          renderChipGroup(panel, ENV_OPTIONS, 'env', { multi: false });
-        } else {
-          const note = document.createElement('p');
-          note.className = 'results-note';
-          note.textContent = 'Your matches are listed on the right. Refine earlier steps anytime.';
-          panel.appendChild(note);
-        }
-
-        host.appendChild(panel);
+    function renderRadioChips(container, options, type, selectedValue) {
+      container.innerHTML = '';
+      options.forEach(option => {
+        const value = option.value != null ? String(option.value) : String(option);
+        const labelText = option.label != null ? option.label : value;
+        const id = `${type}-${slugifyLabel(value || 'any')}`;
+        const label = document.createElement('label');
+        label.className = 'chip-option';
+        const input = document.createElement('input');
+        input.type = 'radio';
+        input.name = `filter-${type}`;
+        input.id = id;
+        input.value = value;
+        input.checked = selectedValue === value;
+        input.addEventListener('change', () => {
+          if (!input.checked) return;
+          if (type === 'form') state.form = value;
+          else if (type === 'env') state.env = value;
+          applyFilters();
+        });
+        const span = document.createElement('span');
+        span.textContent = labelText;
+        label.appendChild(input);
+        label.appendChild(span);
+        container.appendChild(label);
       });
     }
 
-    function syncCheckboxState() {
-      document.querySelectorAll('input[data-filter-type]').forEach(input => {
-        const type = input.dataset.filterType;
-        const value = input.dataset.filterValue;
-        if (type === 'env') {
-          input.checked = state.env === value;
-          return;
-        }
-        const set = state[type];
-        input.checked = !!(set && set.has(value));
+    function renderBandChips(container) {
+      container.innerHTML = '';
+      const bands = WIFI_BANDS.filter(b =>
+        enrichedData.some(e => (e._bands || []).includes(b))
+      );
+      const available = bands.length ? bands : WIFI_BANDS;
+      available.forEach(band => {
+        const id = `bands-${slugifyLabel(band)}`;
+        const label = document.createElement('label');
+        label.className = 'chip-option';
+        const input = document.createElement('input');
+        input.type = 'checkbox';
+        input.id = id;
+        input.value = band;
+        input.checked = state.bands.has(band);
+        input.addEventListener('change', () => {
+          if (input.checked) state.bands.add(band);
+          else state.bands.delete(band);
+          applyFilters();
+        });
+        const span = document.createElement('span');
+        span.textContent = `${band} GHz`;
+        label.appendChild(input);
+        label.appendChild(span);
+        container.appendChild(label);
       });
     }
 
-    function stepHasSelection(stepId) {
-      if (stepId === 'form') return state.form.size > 0;
-      if (stepId === 'bands') return state.bands.size > 0;
-      if (stepId === 'connector') return state.connector.size > 0;
-      if (stepId === 'leads') return state.leads.size > 0;
-      if (stepId === 'env') return state.env && state.env !== 'Either';
-      if (stepId === 'results') return true;
-      return false;
+    function fillSelect(select, values, { labelFn } = {}) {
+      while (select.options.length > 1) select.remove(1);
+      values.forEach(value => {
+        const opt = document.createElement('option');
+        opt.value = value;
+        opt.textContent = labelFn ? labelFn(value) : value;
+        select.appendChild(opt);
+      });
     }
 
-    function showStep(index) {
-      currentStep = index;
-      const step = STEPS[index];
-      document.getElementById('step-title').textContent = step.title;
-      document.getElementById('step-help').textContent = step.help;
+    function buildControls() {
+      const formOptions = [
+        { value: '', label: 'Any' },
+        ...FORM_TYPES.map(v => ({ value: v, label: v }))
+      ];
+      renderRadioChips(document.getElementById('form-options'), formOptions, 'form', state.form);
+      renderBandChips(document.getElementById('bands-options'));
+      fillSelect(
+        document.getElementById('filter-connector'),
+        collectUnique(e => e._connectorFamily)
+      );
+      fillSelect(
+        document.getElementById('filter-leads'),
+        collectUnique(e => e.lead_count, { numeric: true }),
+        { labelFn: v => `${v} lead${v === '1' ? '' : 's'}` }
+      );
+      renderRadioChips(document.getElementById('env-options'), ENV_OPTIONS, 'env', state.env);
 
-      document.querySelectorAll('.wizard-panel').forEach(panel => {
-        panel.hidden = panel.dataset.stepId !== step.id;
-      });
-
-      document.querySelectorAll('.step').forEach((el, i) => {
-        el.classList.toggle('active', i === index);
-        el.classList.toggle('completed', i < index || (i !== index && stepHasSelection(STEPS[i].id)));
-      });
-
-      document.getElementById('btn-back').disabled = index === 0;
-      document.getElementById('btn-skip').style.display = step.id === 'results' ? 'none' : '';
-      document.getElementById('btn-next').textContent = step.id === 'results' ? 'Done' : 'Next';
-      document.getElementById('btn-next').disabled = false;
+      const connectorSelect = document.getElementById('filter-connector');
+      const leadsSelect = document.getElementById('filter-leads');
+      if (state.connector && ![...connectorSelect.options].some(o => o.value === state.connector)) {
+        state.connector = '';
+      }
+      if (state.leads && ![...leadsSelect.options].some(o => o.value === state.leads)) {
+        state.leads = '';
+      }
+      connectorSelect.value = state.connector;
+      leadsSelect.value = state.leads;
     }
 
     function matchesFilters(entry) {
-      if (state.form.size && !state.form.has(entry.form)) return false;
+      if (state.form && entry.form !== state.form) return false;
 
       if (state.bands.size) {
         for (const band of state.bands) {
@@ -465,11 +353,11 @@
         }
       }
 
-      if (state.connector.size && !state.connector.has(entry._connectorFamily)) return false;
+      if (state.connector && entry._connectorFamily !== state.connector) return false;
 
-      if (state.leads.size) {
+      if (state.leads) {
         const leads = entry.lead_count == null ? '' : String(entry.lead_count);
-        if (!state.leads.has(leads)) return false;
+        if (leads !== state.leads) return false;
       }
 
       if (state.env && state.env !== 'Either') {
@@ -486,36 +374,14 @@
 
     function applyFilters() {
       if (!enrichedData.length) return;
-      syncCheckboxState();
       const matches = enrichedData.filter(matchesFilters);
       renderActiveFilters();
       renderResults(matches);
       updateMatchCount(matches.length);
-      updateResultsCounter(matches.length);
       document.getElementById('results-note').textContent = matches.length
         ? 'Showing antennas that meet every selected requirement.'
-        : 'No matches yet — broaden your filters.';
-      // Refresh completed markers without leaving the step
-      document.querySelectorAll('.step').forEach((el, i) => {
-        el.classList.toggle('active', i === currentStep);
-        el.classList.toggle('completed', i < currentStep || (i !== currentStep && stepHasSelection(STEPS[i].id)));
-      });
+        : 'No matches — broaden your filters.';
       syncUrl();
-    }
-
-    function updateResultsCounter(count) {
-      const counter = document.getElementById('results-counter');
-      const counterNumber = document.getElementById('counter-number');
-      if (count > 0) {
-        counter.style.display = 'block';
-        counterNumber.style.transform = 'scale(1.2)';
-        setTimeout(() => {
-          counterNumber.textContent = count;
-          counterNumber.style.transform = 'scale(1)';
-        }, 150);
-      } else {
-        counter.style.display = 'none';
-      }
     }
 
     function updateMatchCount(count) {
@@ -528,10 +394,10 @@
       container.innerHTML = '';
       const chips = [];
 
-      state.form.forEach(v => chips.push({ type: 'form', value: v, label: v }));
+      if (state.form) chips.push({ type: 'form', value: state.form, label: state.form });
       state.bands.forEach(v => chips.push({ type: 'bands', value: v, label: `${v} GHz` }));
-      state.connector.forEach(v => chips.push({ type: 'connector', value: v, label: v }));
-      state.leads.forEach(v => chips.push({ type: 'leads', value: v, label: `${v} leads` }));
+      if (state.connector) chips.push({ type: 'connector', value: state.connector, label: state.connector });
+      if (state.leads) chips.push({ type: 'leads', value: state.leads, label: `${state.leads} leads` });
       if (state.env && state.env !== 'Either') {
         chips.push({ type: 'env', value: state.env, label: state.env });
       }
@@ -545,41 +411,46 @@
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'active-filter-chip';
-        btn.textContent = chip.label;
+        btn.textContent = `${chip.label} ×`;
+        btn.setAttribute('aria-label', `Remove ${chip.label} filter`);
         btn.addEventListener('click', () => removeFilter(chip.type, chip.value));
         container.appendChild(btn);
       });
     }
 
     function removeFilter(type, value) {
-      if (type === 'env') {
+      if (type === 'form') {
+        state.form = '';
+        const input = document.querySelector('input[name="filter-form"][value=""]');
+        if (input) input.checked = true;
+      } else if (type === 'bands') {
+        state.bands.delete(value);
+        const input = document.getElementById(`bands-${slugifyLabel(value)}`);
+        if (input) input.checked = false;
+      } else if (type === 'connector') {
+        state.connector = '';
+        document.getElementById('filter-connector').value = '';
+      } else if (type === 'leads') {
+        state.leads = '';
+        document.getElementById('filter-leads').value = '';
+      } else if (type === 'env') {
         state.env = 'Either';
-      } else if (state[type]) {
-        state[type].delete(value);
+        const input = document.querySelector('input[name="filter-env"][value="Either"]');
+        if (input) input.checked = true;
       }
       applyFilters();
     }
 
     function clearAllFilters() {
-      state.form.clear();
+      state.form = '';
       state.bands.clear();
-      state.connector.clear();
-      state.leads.clear();
+      state.connector = '';
+      state.leads = '';
       state.env = 'Either';
       selectedIds.clear();
-      currentStep = 0;
-      showStep(0);
+      buildControls();
       applyFilters();
-    }
-
-    function clearCurrentStepSelection() {
-      const step = STEPS[currentStep];
-      if (step.id === 'form') state.form.clear();
-      else if (step.id === 'bands') state.bands.clear();
-      else if (step.id === 'connector') state.connector.clear();
-      else if (step.id === 'leads') state.leads.clear();
-      else if (step.id === 'env') state.env = 'Either';
-      applyFilters();
+      updateCompareFab();
     }
 
     function renderResults(matches) {
@@ -622,7 +493,7 @@
         const sku = document.createElement('div');
         sku.className = 'result-cell result-model';
         const skuLink = document.createElement('a');
-        skuLink.href = `antenna.html?id=${encodeURIComponent(entry._slug)}`;
+        skuLink.href = `antenna.html?id=${encodeURIComponent(entry._slug)}&from=finder`;
         skuLink.textContent = entry.sku || entry.legacy_sku || 'View';
         sku.appendChild(skuLink);
 
@@ -737,6 +608,22 @@
       URL.revokeObjectURL(url);
     }
 
+    async function loadData() {
+      try {
+        const res = await fetch(DATA_URL, { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const raw = await res.json();
+        if (!Array.isArray(raw)) throw new Error('antenna_data.json must be an array');
+        enrichedData = raw.map(enrichEntry);
+        restoreStateFromUrl();
+        buildControls();
+        applyFilters();
+      } catch (err) {
+        console.error('Failed to load data', err);
+        document.getElementById('results-note').textContent = 'Unable to load antenna data.';
+      }
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
       const header = document.querySelector('.site-header');
       window.addEventListener('scroll', () => {
@@ -744,28 +631,13 @@
         else header.classList.remove('scrolled');
       });
 
-      document.getElementById('btn-back').addEventListener('click', () => {
-        if (currentStep === 0) return;
-        currentStep -= 1;
-        showStep(currentStep);
-        syncUrl();
+      document.getElementById('filter-connector').addEventListener('change', (e) => {
+        state.connector = e.target.value;
+        applyFilters();
       });
-      document.getElementById('btn-next').addEventListener('click', () => {
-        if (currentStep >= STEPS.length - 1) {
-          document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
-          return;
-        }
-        currentStep += 1;
-        showStep(currentStep);
-        syncUrl();
-      });
-      document.getElementById('btn-skip').addEventListener('click', () => {
-        clearCurrentStepSelection();
-        if (currentStep < STEPS.length - 1) {
-          currentStep += 1;
-          showStep(currentStep);
-          syncUrl();
-        }
+      document.getElementById('filter-leads').addEventListener('change', (e) => {
+        state.leads = e.target.value;
+        applyFilters();
       });
       document.getElementById('clear-filters').addEventListener('click', clearAllFilters);
       document.getElementById('export-csv').addEventListener('click', exportToCsv);
