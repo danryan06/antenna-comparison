@@ -20185,12 +20185,12 @@
     ],
     "pattern_images": [
       {
-        "label": "5 GHz Horizontal",
-        "url": "images/ventev/523248-pattern-5-ghz-horizontal.jpg"
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/523248-pattern-2-4-ghz-horizontal.jpg"
       },
       {
-        "label": "RF Vertical",
-        "url": "images/ventev/523248-pattern-unknown-vertical-1.jpg"
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/523248-pattern-2-4-ghz-vertical.jpg"
       }
     ],
     "dimension_image_url": "images/ventev/523248-dimensions.jpg",
@@ -20536,12 +20536,12 @@
     ],
     "pattern_images": [
       {
-        "label": "RF Vertical",
-        "url": "images/ventev/318227-pattern-unknown-vertical-0.jpg"
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/318227-pattern-2-4-ghz-vertical.jpg"
       },
       {
-        "label": "5 GHz Horizontal",
-        "url": "images/ventev/318227-pattern-5-ghz-horizontal.jpg"
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/318227-pattern-2-4-ghz-horizontal.jpg"
       }
     ],
     "dimension_image_url": null,
