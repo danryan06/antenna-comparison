@@ -17810,24 +17810,20 @@
     ],
     "pattern_images": [
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/610700-pattern-5-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/610700-pattern-2-4-ghz-vertical.jpg"
       },
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/610700-pattern-5-6-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/610700-pattern-2-4-ghz-horizontal.jpg"
       },
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/610700-pattern-5-6-ghz-horizontal-vertical-3.jpg",
-        "kind": "pattern"
+        "label": "5/6 GHz Vertical",
+        "url": "images/ventev/610700-pattern-5-6-ghz-vertical.jpg"
       },
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/610700-pattern-5-6-ghz-horizontal-vertical-4.jpg",
-        "kind": "pattern"
+        "label": "5/6 GHz Horizontal",
+        "url": "images/ventev/610700-pattern-5-6-ghz-horizontal.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -17851,7 +17847,8 @@
     ],
     "field_notes": {
       "sku": "Primary SKU is Ventev/Tessco 610700. Manufacturer part number M7050060O1D43620 (not a Hubbell dual-SKU).",
-      "gain_dbi": "Gain from datasheet '5/6/6' mapped onto bands ['2.4', '5', '6']."
+      "gain_dbi": "Gain from datasheet '5/6/6' mapped onto bands ['2.4', '5', '6'].",
+      "qc": "Batch2 QC: fixed wrong crops / overlay-vs-split captions (Horizontal/Vertical only for true overlays)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -18021,29 +18018,20 @@
     ],
     "pattern_images": [
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/611751-pattern-5-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/611751-pattern-5-6-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/611751-pattern-5-6-ghz-horizontal-vertical-3.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/611751-pattern-5-6-ghz-horizontal-vertical-4.jpg",
-        "kind": "pattern"
-      },
-      {
         "label": "2.4 GHz Vertical",
-        "url": "images/ventev/611751-pattern-2-4-ghz-vertical.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/611751-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/611751-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5/6 GHz Vertical",
+        "url": "images/ventev/611751-pattern-5-6-ghz-vertical.jpg"
+      },
+      {
+        "label": "5/6 GHz Horizontal",
+        "url": "images/ventev/611751-pattern-5-6-ghz-horizontal.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -18066,7 +18054,8 @@
       }
     ],
     "field_notes": {
-      "sku": "Primary SKU is Ventev/Tessco 611751. Manufacturer part number M7060060D3D43607E (not a Hubbell dual-SKU)."
+      "sku": "Primary SKU is Ventev/Tessco 611751. Manufacturer part number M7060060D3D43607E (not a Hubbell dual-SKU).",
+      "qc": "Batch2 QC: fixed wrong crops / overlay-vs-split captions (Horizontal/Vertical only for true overlays)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -18847,19 +18836,12 @@
     ],
     "pattern_images": [
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/609961-pattern-5-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/ventev/609961-pattern-2-4-ghz-horizontal-vertical.jpg"
       },
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/609961-pattern-5-6-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Vertical",
-        "url": "images/ventev/609961-pattern-5-6-ghz-vertical.jpg",
-        "kind": "pattern"
+        "label": "5/6 GHz Horizontal/Vertical",
+        "url": "images/ventev/609961-pattern-5-6-ghz-horizontal-vertical.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -18882,7 +18864,8 @@
       }
     ],
     "field_notes": {
-      "sku": "Primary SKU is Ventev/Tessco 609961. Manufacturer part number M7060060O1D43607E (not a Hubbell dual-SKU)."
+      "sku": "Primary SKU is Ventev/Tessco 609961. Manufacturer part number M7060060O1D43607E (not a Hubbell dual-SKU).",
+      "qc": "Batch2 QC: fixed wrong crops / overlay-vs-split captions (Horizontal/Vertical only for true overlays)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -19261,43 +19244,19 @@
     "pattern_images": [
       {
         "label": "5/6 GHz Vertical",
-        "url": "images/ventev/607902-pattern-5-6-ghz-vertical.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/607902-pattern-5-6-ghz-vertical.jpg"
       },
       {
         "label": "5/6 GHz Vertical",
-        "url": "images/ventev/607902-pattern-5-6-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Vertical",
-        "url": "images/ventev/607902-pattern-5-6-ghz-vertical-3.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Vertical",
-        "url": "images/ventev/607902-pattern-5-6-ghz-vertical-4.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/607902-pattern-5-6-ghz-vertical-3.jpg"
       },
       {
         "label": "6 GHz Vertical",
-        "url": "images/ventev/607902-pattern-6-ghz-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "6 GHz Vertical",
-        "url": "images/ventev/607902-pattern-6-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Vertical",
-        "url": "images/ventev/607902-pattern-5-6-ghz-vertical-5.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/607902-pattern-6-ghz-vertical.jpg"
       },
       {
         "label": "6 GHz Horizontal",
-        "url": "images/ventev/607902-pattern-6-ghz-horizontal.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/607902-pattern-6-ghz-horizontal.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -19320,7 +19279,8 @@
       }
     ],
     "field_notes": {
-      "sku": "Primary SKU is Ventev/Tessco 607902. Manufacturer part number M7080080P1D43620 (not a Hubbell dual-SKU)."
+      "sku": "Primary SKU is Ventev/Tessco 607902. Manufacturer part number M7080080P1D43620 (not a Hubbell dual-SKU).",
+      "qc": "Batch2 QC: fixed wrong crops / overlay-vs-split captions (Horizontal/Vertical only for true overlays)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -19866,19 +19826,12 @@
     ],
     "pattern_images": [
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/607917-pattern-5-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/ventev/607917-pattern-2-4-ghz-horizontal-vertical.jpg"
       },
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/607917-pattern-5-6-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Vertical",
-        "url": "images/ventev/607917-pattern-5-6-ghz-vertical.jpg",
-        "kind": "pattern"
+        "label": "5/6 GHz Horizontal/Vertical",
+        "url": "images/ventev/607917-pattern-5-6-ghz-horizontal-vertical.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -19901,7 +19854,8 @@
       }
     ],
     "field_notes": {
-      "sku": "Primary SKU is Ventev/Tessco 607917. Manufacturer part number M7060060O1D43602E (not a Hubbell dual-SKU)."
+      "sku": "Primary SKU is Ventev/Tessco 607917. Manufacturer part number M7060060O1D43602E (not a Hubbell dual-SKU).",
+      "qc": "Batch2 QC: fixed wrong crops / overlay-vs-split captions (Horizontal/Vertical only for true overlays)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -19974,29 +19928,20 @@
     ],
     "pattern_images": [
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/277197-pattern-5-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/277197-pattern-2-4-ghz-vertical.jpg"
       },
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/277197-pattern-5-6-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/277197-pattern-5-6-ghz-horizontal-vertical-3.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/277197-pattern-5-6-ghz-horizontal-vertical-4.jpg",
-        "kind": "pattern"
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/277197-pattern-2-4-ghz-horizontal.jpg"
       },
       {
         "label": "5/6 GHz Vertical",
-        "url": "images/ventev/277197-pattern-5-6-ghz-vertical.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/277197-pattern-5-6-ghz-vertical.jpg"
+      },
+      {
+        "label": "5/6 GHz Horizontal",
+        "url": "images/ventev/277197-pattern-5-6-ghz-horizontal.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -20019,7 +19964,8 @@
       }
     ],
     "field_notes": {
-      "sku": "Primary SKU is Ventev/Tessco 277197. Manufacturer part number M6060060D3D43602E (not a Hubbell dual-SKU)."
+      "sku": "Primary SKU is Ventev/Tessco 277197. Manufacturer part number M6060060D3D43602E (not a Hubbell dual-SKU).",
+      "qc": "Batch2 QC: fixed wrong crops / overlay-vs-split captions (Horizontal/Vertical only for true overlays)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -20313,24 +20259,20 @@
     ],
     "pattern_images": [
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/227601-pattern-5-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/227601-pattern-2-4-ghz-vertical.jpg"
       },
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/227601-pattern-5-6-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/227601-pattern-2-4-ghz-horizontal.jpg"
       },
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/227601-pattern-5-6-ghz-horizontal-vertical-3.jpg",
-        "kind": "pattern"
+        "label": "5/6 GHz Vertical",
+        "url": "images/ventev/227601-pattern-5-6-ghz-vertical.jpg"
       },
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/227601-pattern-5-6-ghz-horizontal-vertical-4.jpg",
-        "kind": "pattern"
+        "label": "5/6 GHz Horizontal",
+        "url": "images/ventev/227601-pattern-5-6-ghz-horizontal.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -20353,7 +20295,8 @@
       }
     ],
     "field_notes": {
-      "sku": "Primary SKU is Ventev/Tessco 227601. Manufacturer part number M6060060P1D43620E (not a Hubbell dual-SKU)."
+      "sku": "Primary SKU is Ventev/Tessco 227601. Manufacturer part number M6060060P1D43620E (not a Hubbell dual-SKU).",
+      "qc": "Batch2 QC: fixed wrong crops / overlay-vs-split captions (Horizontal/Vertical only for true overlays)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -20972,33 +20915,27 @@
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
-        "url": "images/ventev/266416-pattern-2-4-ghz-vertical.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/266416-pattern-2-4-ghz-vertical.jpg"
       },
       {
-        "label": "2.4 GHz Horizontal + Vertical",
-        "url": "images/ventev/266416-pattern-2-4-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/266416-pattern-2-4-ghz-horizontal.jpg"
       },
       {
         "label": "5 GHz Vertical",
-        "url": "images/ventev/266416-pattern-5-ghz-vertical.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/266416-pattern-5-ghz-vertical.jpg"
       },
       {
-        "label": "5 GHz Horizontal + Vertical",
-        "url": "images/ventev/266416-pattern-5-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/266416-pattern-5-ghz-horizontal.jpg"
       },
       {
         "label": "6 GHz Vertical",
-        "url": "images/ventev/266416-pattern-6-ghz-vertical.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/266416-pattern-6-ghz-vertical.jpg"
       },
       {
-        "label": "6 GHz Horizontal + Vertical",
-        "url": "images/ventev/266416-pattern-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
+        "label": "6 GHz Horizontal",
+        "url": "images/ventev/266416-pattern-6-ghz-horizontal.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -21021,7 +20958,8 @@
       }
     ],
     "field_notes": {
-      "sku": "Primary SKU is Ventev/Tessco 266416. Manufacturer part number M7050040D87202JB8 (not a Hubbell dual-SKU)."
+      "sku": "Primary SKU is Ventev/Tessco 266416. Manufacturer part number M7050040D87202JB8 (not a Hubbell dual-SKU).",
+      "qc": "Batch2 QC: fixed wrong crops / overlay-vs-split captions (Horizontal/Vertical only for true overlays)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -21330,43 +21268,19 @@
     "pattern_images": [
       {
         "label": "2.4 GHz Horizontal",
-        "url": "images/ventev/208671-pattern-2-4-ghz-horizontal.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/208671-pattern-2-4-ghz-horizontal.jpg"
       },
       {
         "label": "2.4 GHz Vertical",
-        "url": "images/ventev/208671-pattern-2-4-ghz-vertical.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/208671-pattern-2-4-ghz-vertical.jpg"
       },
       {
-        "label": "2.4 GHz Horizontal + Vertical",
-        "url": "images/ventev/208671-pattern-2-4-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/208671-pattern-5-ghz-horizontal.jpg"
       },
       {
-        "label": "2.4 GHz Horizontal",
-        "url": "images/ventev/208671-pattern-2-4-ghz-horizontal-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Horizontal + Vertical",
-        "url": "images/ventev/208671-pattern-2-4-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/208671-pattern-2-4-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Horizontal",
-        "url": "images/ventev/208671-pattern-2-4-ghz-horizontal-3.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/208671-pattern-2-4-ghz-vertical-3.jpg",
-        "kind": "pattern"
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/208671-pattern-5-ghz-vertical.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -21390,7 +21304,8 @@
     ],
     "field_notes": {
       "sku": "Primary SKU is Ventev/Tessco 208671. Manufacturer part number M6025040O3D420MWL (not a Hubbell dual-SKU).",
-      "gain_dbi": "Gain from datasheet '2.5/4' mapped onto bands ['2.4', '5']."
+      "gain_dbi": "Gain from datasheet '2.5/4' mapped onto bands ['2.4', '5'].",
+      "qc": "Batch2 QC: fixed wrong crops / overlay-vs-split captions (Horizontal/Vertical only for true overlays)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -21459,14 +21374,12 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4 GHz Horizontal",
-        "url": "images/ventev/275120-pattern-2-4-ghz-horizontal.jpg",
-        "kind": "pattern"
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/ventev/275120-pattern-2-4-ghz-horizontal-vertical.jpg"
       },
       {
-        "label": "2.4 GHz Horizontal",
-        "url": "images/ventev/275120-pattern-2-4-ghz-horizontal-2.jpg",
-        "kind": "pattern"
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/ventev/275120-pattern-5-ghz-horizontal-vertical.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -21489,7 +21402,8 @@
       }
     ],
     "field_notes": {
-      "sku": "Primary SKU is Ventev/Tessco 275120. Manufacturer part number M6060060P1D63600W (not a Hubbell dual-SKU)."
+      "sku": "Primary SKU is Ventev/Tessco 275120. Manufacturer part number M6060060P1D63600W (not a Hubbell dual-SKU).",
+      "qc": "Batch2 QC: fixed wrong crops / overlay-vs-split captions (Horizontal/Vertical only for true overlays)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -21558,14 +21472,12 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4 GHz Horizontal",
-        "url": "images/ventev/270485-pattern-2-4-ghz-horizontal.jpg",
-        "kind": "pattern"
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/ventev/270485-pattern-2-4-ghz-horizontal-vertical.jpg"
       },
       {
-        "label": "2.4 GHz Horizontal",
-        "url": "images/ventev/270485-pattern-2-4-ghz-horizontal-2.jpg",
-        "kind": "pattern"
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/ventev/270485-pattern-5-ghz-horizontal-vertical.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -21588,7 +21500,8 @@
       }
     ],
     "field_notes": {
-      "sku": "Primary SKU is Ventev/Tessco 270485. Manufacturer part number M6060060P1D63600P (not a Hubbell dual-SKU)."
+      "sku": "Primary SKU is Ventev/Tessco 270485. Manufacturer part number M6060060P1D63600P (not a Hubbell dual-SKU).",
+      "qc": "Batch2 QC: fixed wrong crops / overlay-vs-split captions (Horizontal/Vertical only for true overlays)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -21955,14 +21868,20 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4 GHz Horizontal + Vertical",
-        "url": "images/ventev/212207-pattern-2-4-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/212207-pattern-2-4-ghz-horizontal.jpg"
       },
       {
-        "label": "2.4 GHz Horizontal",
-        "url": "images/ventev/212207-pattern-2-4-ghz-horizontal.jpg",
-        "kind": "pattern"
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/212207-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/212207-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/212207-pattern-5-ghz-vertical.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -21985,7 +21904,8 @@
       }
     ],
     "field_notes": {
-      "sku": "Primary SKU is Ventev/Tessco 212207. Manufacturer part number M6060606P1D49602V (not a Hubbell dual-SKU)."
+      "sku": "Primary SKU is Ventev/Tessco 212207. Manufacturer part number M6060606P1D49602V (not a Hubbell dual-SKU).",
+      "qc": "Batch2 QC: fixed wrong crops / overlay-vs-split captions (Horizontal/Vertical only for true overlays)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -22060,43 +21980,19 @@
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
-        "url": "images/ventev/539823-pattern-2-4-ghz-vertical.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/539823-pattern-2-4-ghz-vertical.jpg"
       },
       {
         "label": "2.4 GHz Horizontal",
-        "url": "images/ventev/539823-pattern-2-4-ghz-horizontal.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/539823-pattern-2-4-ghz-horizontal.jpg"
       },
       {
         "label": "5 GHz Vertical",
-        "url": "images/ventev/539823-pattern-5-ghz-vertical.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/539823-pattern-5-ghz-vertical.jpg"
       },
       {
         "label": "5 GHz Horizontal",
-        "url": "images/ventev/539823-pattern-5-ghz-horizontal.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Horizontal",
-        "url": "images/ventev/539823-pattern-2-4-ghz-horizontal-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/539823-pattern-2-4-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5 GHz Horizontal",
-        "url": "images/ventev/539823-pattern-5-ghz-horizontal-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5 GHz Vertical",
-        "url": "images/ventev/539823-pattern-5-ghz-vertical-2.jpg",
-        "kind": "pattern"
+        "url": "images/ventev/539823-pattern-5-ghz-horizontal.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -22119,7 +22015,8 @@
       }
     ],
     "field_notes": {
-      "sku": "Primary SKU is Ventev/Tessco 539823. Manufacturer part number M6060060M1D43602M (not a Hubbell dual-SKU)."
+      "sku": "Primary SKU is Ventev/Tessco 539823. Manufacturer part number M6060060M1D43602M (not a Hubbell dual-SKU).",
+      "qc": "Batch2 QC: fixed wrong crops / overlay-vs-split captions (Horizontal/Vertical only for true overlays)."
     },
     "internal_notes": {
       "compatible_aps": [],
