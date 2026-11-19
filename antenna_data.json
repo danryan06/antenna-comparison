@@ -24569,16 +24569,16 @@
     "images": [],
     "pattern_images": [
       {
-        "label": "2.4 GHz Element 1 Vertical",
-        "url": "images/cisco/air-ant2460np-r-pattern-2-4-ghz-element-1-vertical.jpg"
+        "label": "2.4 GHz Left Horizontal + Vertical",
+        "url": "images/cisco/air-ant2460np-r-pattern-2-4-ghz-left-horizontal-vertical.jpg"
       },
       {
-        "label": "2.4 GHz Element 2 Vertical",
-        "url": "images/cisco/air-ant2460np-r-pattern-2-4-ghz-element-2-vertical.jpg"
+        "label": "2.4 GHz Middle Horizontal + Vertical",
+        "url": "images/cisco/air-ant2460np-r-pattern-2-4-ghz-middle-horizontal-vertical.jpg"
       },
       {
-        "label": "2.4 GHz Horizontal + Vertical",
-        "url": "images/cisco/air-ant2460np-r-pattern-2-4-ghz-horizontal-vertical.jpg"
+        "label": "2.4 GHz Right Horizontal + Vertical",
+        "url": "images/cisco/air-ant2460np-r-pattern-2-4-ghz-right-horizontal-vertical.jpg"
       }
     ],
     "datasheet_urls": [
