@@ -16681,7 +16681,7 @@
     "field_notes": {
       "sku": "Primary SKU 233530. Manufacturer part number M60300300O4242TA2 (not a Hubbell dual-SKU).",
       "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
-      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
+      "qc_hv": "QC: sheet overlays H+V on one polar chart \u2192 one image per band, caption Horizontal/Vertical (no fake split)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -17257,7 +17257,7 @@
     "field_notes": {
       "sku": "Primary SKU 219521. Manufacturer part number M6060060P1D83602S (not a Hubbell dual-SKU).",
       "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
-      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
+      "qc_hv": "QC: sheet overlays H+V on one polar chart \u2192 one image per band, caption Horizontal/Vertical (no fake split)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -17345,7 +17345,7 @@
     "field_notes": {
       "sku": "Primary SKU 248961. Manufacturer part number M6030060O42402ASM (not a Hubbell dual-SKU).",
       "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
-      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
+      "qc_hv": "QC: sheet overlays H+V on one polar chart \u2192 one image per band, caption Horizontal/Vertical (no fake split)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -17429,7 +17429,7 @@
     "field_notes": {
       "sku": "Primary SKU 264761. Manufacturer part number M040030D33620WS (not a Hubbell dual-SKU).",
       "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
-      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
+      "qc_hv": "QC: sheet overlays H+V on one polar chart \u2192 one image per band, caption Horizontal/Vertical (no fake split)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -18373,7 +18373,7 @@
     "field_notes": {
       "sku": "Primary SKU 249891. Manufacturer part number M6060060MO1D83699 (not a Hubbell dual-SKU).",
       "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
-      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
+      "qc_hv": "QC: sheet overlays H+V on one polar chart \u2192 one image per band, caption Horizontal/Vertical (no fake split)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -18836,7 +18836,7 @@
     "field_notes": {
       "sku": "Primary SKU 222152. Manufacturer part number M7040070O10007G (not a Hubbell dual-SKU).",
       "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
-      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
+      "qc_hv": "QC: sheet overlays H+V on one polar chart \u2192 one image per band, caption Horizontal/Vertical (no fake split)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -19306,11 +19306,11 @@
     "images": [],
     "pattern_images": [
       {
-        "label": "2.4 GHz Vertical (E-Plane)",
+        "label": "2.4 GHz Vertical",
         "url": "images/ventev/457948-pattern-2-4-ghz-vertical.jpg"
       },
       {
-        "label": "2.4 GHz Horizontal (H-Plane)",
+        "label": "2.4 GHz Horizontal",
         "url": "images/ventev/457948-pattern-2-4-ghz-horizontal.jpg"
       }
     ],
@@ -19336,7 +19336,7 @@
     "field_notes": {
       "sku": "Primary SKU 457948. Manufacturer part number T24150Y13602 (not a Hubbell dual-SKU).",
       "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
-      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
+      "qc_hv": "QC: sheet has separate H and V (or H/E) charts \u2192 separate Horizontal / Vertical images."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -19649,11 +19649,11 @@
     "images": [],
     "pattern_images": [
       {
-        "label": "5 GHz Vertical (E-Plane)",
+        "label": "5 GHz Vertical",
         "url": "images/ventev/590261-pattern-5-ghz-vertical.jpg"
       },
       {
-        "label": "5 GHz Horizontal (H-Plane)",
+        "label": "5 GHz Horizontal",
         "url": "images/ventev/590261-pattern-5-ghz-horizontal.jpg"
       }
     ],
@@ -19679,7 +19679,7 @@
     "field_notes": {
       "sku": "Primary SKU 590261. Manufacturer part number T58140P10006O (not a Hubbell dual-SKU).",
       "pattern_images": "Datasheet has no radiation pattern plots; page 2 is a mechanical/mount drawing only.",
-      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
+      "qc_hv": "QC: sheet has separate H and V (or H/E) charts \u2192 separate Horizontal / Vertical images."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -20416,19 +20416,19 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4 GHz Vertical (E-Plane)",
+        "label": "2.4 GHz Vertical",
         "url": "images/ventev/287214-pattern-2-4-ghz-vertical.jpg"
       },
       {
-        "label": "2.4 GHz Horizontal (H-Plane)",
+        "label": "2.4 GHz Horizontal",
         "url": "images/ventev/287214-pattern-2-4-ghz-horizontal.jpg"
       },
       {
-        "label": "5 GHz Vertical (E-Plane)",
+        "label": "5 GHz Vertical",
         "url": "images/ventev/287214-pattern-5-ghz-vertical.jpg"
       },
       {
-        "label": "5 GHz Horizontal (H-Plane)",
+        "label": "5 GHz Horizontal",
         "url": "images/ventev/287214-pattern-5-ghz-horizontal.jpg"
       }
     ],
@@ -20454,7 +20454,7 @@
     "field_notes": {
       "sku": "Primary SKU 287214. Manufacturer part number M6025040O3D220MW (not a Hubbell dual-SKU).",
       "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
-      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
+      "qc_hv": "QC: sheet has separate H and V (or H/E) charts \u2192 separate Horizontal / Vertical images."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -20859,19 +20859,19 @@
     "images": [],
     "pattern_images": [
       {
-        "label": "2.4 GHz Horizontal (H-Plane)",
+        "label": "2.4 GHz Horizontal",
         "url": "images/ventev/569668-pattern-2-4-ghz-horizontal.jpg"
       },
       {
-        "label": "2.4 GHz Vertical (E-Plane)",
+        "label": "2.4 GHz Vertical",
         "url": "images/ventev/569668-pattern-2-4-ghz-vertical.jpg"
       },
       {
-        "label": "5 GHz Horizontal (H-Plane)",
+        "label": "5 GHz Horizontal",
         "url": "images/ventev/569668-pattern-5-ghz-horizontal.jpg"
       },
       {
-        "label": "5 GHz Vertical (E-Plane)",
+        "label": "5 GHz Vertical",
         "url": "images/ventev/569668-pattern-5-ghz-vertical.jpg"
       }
     ],
@@ -20897,7 +20897,7 @@
     "field_notes": {
       "sku": "Primary SKU 569668. Manufacturer part number M6060060MO1D43607 (not a Hubbell dual-SKU).",
       "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
-      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
+      "qc_hv": "QC: sheet has separate H and V (or H/E) charts \u2192 separate Horizontal / Vertical images."
     },
     "internal_notes": {
       "compatible_aps": [],
