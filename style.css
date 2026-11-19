@@ -1516,16 +1516,28 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
 }
 
 .result-row-antenna {
-  grid-template-columns: auto 1.1fr 1fr 1.1fr 0.9fr 1.1fr 0.6fr 1fr auto;
+  grid-template-columns: auto 1.1fr 0.9fr 1fr 0.8fr 0.9fr 1.1fr 1fr 0.5fr 0.9fr auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
+  .result-row-antenna {
+    grid-template-columns: auto 1.1fr 0.9fr 1fr 0.8fr 1fr 0.5fr 0.9fr auto;
+  }
+  .result-row-antenna .result-cell:nth-child(6),
+  .result-row-antenna .result-cell:nth-child(7) {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
   .result-row-antenna {
     grid-template-columns: auto 1fr 1fr 1fr 1fr auto;
   }
   .result-row-antenna .result-cell:nth-child(5),
+  .result-row-antenna .result-cell:nth-child(6),
   .result-row-antenna .result-cell:nth-child(7),
-  .result-row-antenna .result-cell:nth-child(8) {
+  .result-row-antenna .result-cell:nth-child(8),
+  .result-row-antenna .result-cell:nth-child(9) {
     display: none;
   }
 }
@@ -1543,6 +1555,45 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
 
 .result-header:hover {
   background: rgba(15, 23, 42, 0.5);
+}
+
+.result-sort-btn {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+  cursor: pointer;
+  user-select: none;
+  text-align: left;
+  justify-content: flex-start;
+  gap: 0.25rem;
+}
+
+.result-sort-btn:hover {
+  color: #e2e8f0;
+}
+
+.result-sort-btn:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.result-sort-btn[data-dir="asc"]::after {
+  content: " ▲";
+  color: #93c5fd;
+  font-size: 0.7rem;
+}
+
+.result-sort-btn[data-dir="desc"]::after {
+  content: " ▼";
+  color: #93c5fd;
+  font-size: 0.7rem;
 }
 
 .result-row:last-child {
@@ -1615,19 +1666,15 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
 }
 
 @media (max-width: 1200px) {
-  .result-row {
+  .result-row:not(.result-row-antenna) {
     grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr;
     gap: 0.75rem;
   }
-  .result-header {
+  .result-row:not(.result-row-antenna).result-header {
     grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr;
   }
-  .result-spatial,
-  .result-antenna {
-    display: none;
-  }
-  .result-header .result-cell:nth-child(6),
-  .result-header .result-cell:nth-child(7) {
+  .result-row:not(.result-row-antenna) .result-spatial,
+  .result-row:not(.result-row-antenna) .result-antenna {
     display: none;
   }
 }
