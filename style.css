@@ -18,6 +18,12 @@
   --radius-lg: 12px;
   --radius-xl: 16px;
   --radius-full: 9999px;
+  /* Content links on dark navy — keep brighter than default browser blue */
+  --link: #93c5fd;
+  --link-hover: #dbeafe;
+  --link-focus: #eff6ff;
+  --link-underline: rgba(147, 197, 253, 0.55);
+  --link-underline-hover: rgba(219, 234, 254, 0.85);
 }
 
 /* ================================
@@ -533,6 +539,36 @@ td.vendor {
   font-weight: 600;
   font-size: 0.85rem;
   color: #bfdbfe;
+}
+
+/* SKU / content links in tables — high contrast on dark theme */
+table a,
+a.sku-link {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+  text-decoration-color: var(--link-underline);
+}
+
+table a:hover,
+a.sku-link:hover {
+  color: var(--link-hover);
+  text-decoration-color: var(--link-underline-hover);
+}
+
+table a:focus,
+a.sku-link:focus {
+  outline: none;
+}
+
+table a:focus-visible,
+a.sku-link:focus-visible {
+  color: var(--link-focus);
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+  border-radius: 2px;
+  text-decoration-color: var(--link-focus);
 }
 
 /* Model names - larger and bolder */
@@ -1098,15 +1134,29 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
   align-items: center;
   gap: 0.35rem;
   font-size: 0.8rem;
-  color: #60a5fa;
-  text-decoration: none;
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+  text-decoration-color: var(--link-underline);
   font-weight: 500;
   transition: color 0.15s ease;
 }
 
 .eos-link:hover {
-  color: #93c5fd;
-  text-decoration: underline;
+  color: var(--link-hover);
+  text-decoration-color: var(--link-underline-hover);
+}
+
+.eos-link:focus {
+  outline: none;
+}
+
+.eos-link:focus-visible {
+  color: var(--link-focus);
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 /* EoS fields in details grid */
@@ -1309,6 +1359,42 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
   color: #e5e7eb;
 }
 
+.band-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 0.65rem;
+}
+
+.band-preset {
+  padding: 0.35rem 0.7rem;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: rgba(15, 23, 42, 0.35);
+  color: #cbd5e1;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease-out, border-color 0.15s ease-out, color 0.15s ease-out;
+}
+
+.band-preset:hover {
+  background: rgba(15, 23, 42, 0.55);
+  border-color: rgba(148, 163, 184, 0.4);
+  color: #e5e7eb;
+}
+
+.band-preset.is-active {
+  background: rgba(37, 99, 235, 0.18);
+  border-color: rgba(59, 130, 246, 0.45);
+  color: #bfdbfe;
+}
+
+.band-preset:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
 .chip-grid {
   display: flex;
   flex-wrap: wrap;
@@ -1430,16 +1516,28 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
 }
 
 .result-row-antenna {
-  grid-template-columns: auto 1.1fr 1fr 1.1fr 0.9fr 1.1fr 0.6fr 1fr auto;
+  grid-template-columns: auto 1.1fr 0.9fr 1fr 0.8fr 0.9fr 1.1fr 1fr 0.5fr 0.9fr auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
+  .result-row-antenna {
+    grid-template-columns: auto 1.1fr 0.9fr 1fr 0.8fr 1fr 0.5fr 0.9fr auto;
+  }
+  .result-row-antenna .result-cell:nth-child(6),
+  .result-row-antenna .result-cell:nth-child(7) {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
   .result-row-antenna {
     grid-template-columns: auto 1fr 1fr 1fr 1fr auto;
   }
   .result-row-antenna .result-cell:nth-child(5),
+  .result-row-antenna .result-cell:nth-child(6),
   .result-row-antenna .result-cell:nth-child(7),
-  .result-row-antenna .result-cell:nth-child(8) {
+  .result-row-antenna .result-cell:nth-child(8),
+  .result-row-antenna .result-cell:nth-child(9) {
     display: none;
   }
 }
@@ -1457,6 +1555,45 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
 
 .result-header:hover {
   background: rgba(15, 23, 42, 0.5);
+}
+
+.result-sort-btn {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+  cursor: pointer;
+  user-select: none;
+  text-align: left;
+  justify-content: flex-start;
+  gap: 0.25rem;
+}
+
+.result-sort-btn:hover {
+  color: #e2e8f0;
+}
+
+.result-sort-btn:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.result-sort-btn[data-dir="asc"]::after {
+  content: " ▲";
+  color: #93c5fd;
+  font-size: 0.7rem;
+}
+
+.result-sort-btn[data-dir="desc"]::after {
+  content: " ▼";
+  color: #93c5fd;
+  font-size: 0.7rem;
 }
 
 .result-row:last-child {
@@ -1485,14 +1622,28 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
 }
 
 .result-model a {
-  color: #e5e7eb;
-  text-decoration: none;
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+  text-decoration-color: var(--link-underline);
   font-weight: 500;
 }
 
 .result-model a:hover {
-  color: #bfdbfe;
-  text-decoration: underline;
+  color: var(--link-hover);
+  text-decoration-color: var(--link-underline-hover);
+}
+
+.result-model a:focus {
+  outline: none;
+}
+
+.result-model a:focus-visible {
+  color: var(--link-focus);
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 .result-wifi {
@@ -1515,19 +1666,15 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
 }
 
 @media (max-width: 1200px) {
-  .result-row {
+  .result-row:not(.result-row-antenna) {
     grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr;
     gap: 0.75rem;
   }
-  .result-header {
+  .result-row:not(.result-row-antenna).result-header {
     grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr;
   }
-  .result-spatial,
-  .result-antenna {
-    display: none;
-  }
-  .result-header .result-cell:nth-child(6),
-  .result-header .result-cell:nth-child(7) {
+  .result-row:not(.result-row-antenna) .result-spatial,
+  .result-row:not(.result-row-antenna) .result-antenna {
     display: none;
   }
 }
