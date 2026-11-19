@@ -415,14 +415,35 @@
       container.appendChild(section);
     }
 
+    function dimensionImageKind(entry) {
+      // Explicit kind wins. "assembly" = AccelTex-style 3D isometric/assembly render.
+      // Default "mechanical" keeps real 2D vendor mech drawings labeled as such.
+      return entry && entry.dimension_image_kind === 'assembly' ? 'assembly' : 'mechanical';
+    }
+
     function extraProductPhotos(entry) {
-      const photos = Array.isArray(entry.images) ? entry.images : [];
+      const photos = Array.isArray(entry.images) ? entry.images.slice() : [];
+      const dimUrl = safeUrl(entry.dimension_image_url, { allowRelative: true });
+      if (dimUrl && dimensionImageKind(entry) === 'assembly') {
+        const dimKey = normalizeImageKey(dimUrl);
+        const already = photos.some(item => {
+          const url = safeUrl(item && (item.url || item), { allowRelative: true });
+          return url && normalizeImageKey(url) === dimKey;
+        });
+        if (!already) {
+          photos.push({ label: 'Assembly view', url: entry.dimension_image_url });
+        }
+      }
       const heroKey = normalizeImageKey(safeUrl(entry.image_url, { allowRelative: true }));
+      const seen = new Set();
       return photos.filter(item => {
         const url = safeUrl(item && (item.url || item), { allowRelative: true });
         if (!url) return false;
-        if (!heroKey) return true;
-        return normalizeImageKey(url) !== heroKey;
+        const key = normalizeImageKey(url);
+        if (heroKey && key === heroKey) return false;
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
       });
     }
 
@@ -538,7 +559,9 @@
         }
 
         addGallery(document.getElementById('patterns'), 'Radiation patterns', entry.pattern_images, 'pattern');
-        if (entry.dimension_image_url) {
+        // Real 2D mechanical drawings stay labeled; AccelTex-style 3D assembly renders
+        // are folded into Additional product photos instead (see dimension_image_kind).
+        if (entry.dimension_image_url && dimensionImageKind(entry) === 'mechanical') {
           addGallery(
             document.getElementById('dimensions'),
             'Dimensions',
