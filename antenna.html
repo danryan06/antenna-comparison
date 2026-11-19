@@ -416,9 +416,27 @@
     }
 
     function dimensionImageKind(entry) {
-      // Explicit kind wins. "assembly" = AccelTex-style 3D isometric/assembly render.
-      // Default "mechanical" keeps real 2D vendor mech drawings labeled as such.
-      return entry && entry.dimension_image_kind === 'assembly' ? 'assembly' : 'mechanical';
+      // Require an explicit kind. Unlabeled dimension_image_url must not default to
+      // "Mechanical drawing" (that hid product photos under Dimensions).
+      const kind = entry && entry.dimension_image_kind;
+      if (kind === 'assembly' || kind === 'assembly_render') return 'assembly';
+      if (kind === 'mechanical' || kind === 'mechanical_drawing') return 'mechanical';
+      return null;
+    }
+
+    function sanitizePhotoCaption(label) {
+      const raw = (label == null ? '' : String(label)).trim();
+      if (!raw) return 'Product photo';
+      const low = raw.toLowerCase();
+      if (low === 'product' || low === 'additional photo' || /^product\s*\(/.test(low)) {
+        return 'Product photo';
+      }
+      // Drop awkward source tags: "Front angle (AccelTex sheet)" → "Front angle"
+      const stripped = raw.replace(
+        /\s*\((?:datasheet|hubbell(?:\s+spec|\s+cdn)?|acceltex(?:\s+sheet)?)\)\s*$/i,
+        ''
+      ).trim();
+      return stripped || 'Product photo';
     }
 
     function extraProductPhotos(entry) {
@@ -444,6 +462,14 @@
         if (seen.has(key)) return false;
         seen.add(key);
         return true;
+      }).map(item => {
+        if (!item || typeof item !== 'object') {
+          return { label: 'Product photo', url: item };
+        }
+        return {
+          label: item.label === 'Assembly view' ? 'Assembly view' : sanitizePhotoCaption(item.label),
+          url: item.url
+        };
       });
     }
 
@@ -559,8 +585,8 @@
         }
 
         addGallery(document.getElementById('patterns'), 'Radiation patterns', entry.pattern_images, 'pattern');
-        // Real 2D mechanical drawings stay labeled; AccelTex-style 3D assembly renders
-        // are folded into Additional product photos instead (see dimension_image_kind).
+        // Only explicit mechanical drawings under Dimensions. Assembly renders fold into
+        // Additional product photos; unlabeled/photo dims are omitted (see dimension_image_kind).
         if (entry.dimension_image_url && dimensionImageKind(entry) === 'mechanical') {
           addGallery(
             document.getElementById('dimensions'),

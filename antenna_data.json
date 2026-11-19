@@ -53,11 +53,7 @@
     "image_url": "images/acceltex-hubbell/ats-03414.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03414.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03414-alt.jpg"
       }
     ],
@@ -108,7 +104,8 @@
         "Aruba/HP AP-754"
       ],
       "maintainer": "Seed entry preserved and lightly improved in AccelTex catalog batch 1. Compatible AP list is internal-only and must never render in the UI."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -160,11 +157,7 @@
     "image_url": "images/acceltex-hubbell/ats-01050.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01050.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01050-alt.jpg"
       }
     ],
@@ -274,11 +267,7 @@
     "image_url": "images/acceltex-hubbell/ats-01046.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01046.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01046-alt.jpg"
       }
     ],
@@ -387,11 +376,7 @@
     "image_url": "images/acceltex-hubbell/ats-01038.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01038.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01038-alt.jpg"
       }
     ],
@@ -501,11 +486,7 @@
     "image_url": "images/acceltex-hubbell/ats-01060.jpg",
     "images": [
       {
-        "label": "Product (Hubbell CDN)",
-        "url": "images/acceltex-hubbell/ats-01060.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01060-alt.jpg"
       }
     ],
@@ -519,8 +500,8 @@
         "url": "images/acceltex-hubbell/ats-01060-pattern-vertical.jpg"
       }
     ],
-    "dimension_image_url": "images/acceltex-hubbell/ats-01060-dimensions.jpg",
-    "dimension_image_kind": "assembly",
+    "dimension_image_url": null,
+    "dimension_image_kind": null,
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS01060-SPEC-EN)",
@@ -608,11 +589,7 @@
     "image_url": "images/acceltex-hubbell/ats-03021.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03021.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03021-alt.jpg"
       }
     ],
@@ -705,12 +682,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01123.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01123.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Horizontal/Vertical",
@@ -757,7 +729,8 @@
         "Aruba/HP AP-534"
       ],
       "maintainer": "Catalog batch 1. Compatible AP list is internal-only. Marketed for half-warehouse coverage."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -809,11 +782,7 @@
     "image_url": "images/acceltex-hubbell/ats-01022.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01022.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01022-alt.jpg"
       }
     ],
@@ -916,16 +885,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01023.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01023.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-01023-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -1023,11 +983,7 @@
     "image_url": "images/acceltex-hubbell/ats-01019.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01019.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01019-alt.jpg"
       }
     ],
@@ -1146,11 +1102,7 @@
     "image_url": "images/acceltex-hubbell/ats-01021.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01021.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01021-alt.jpg"
       }
     ],
@@ -1269,16 +1221,7 @@
     "isolation": null,
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-02671.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02671.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-02671-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -1328,7 +1271,8 @@
         "Aruba/HP AP-534"
       ],
       "maintainer": "High-density patch mining batch. Compatible AP list is internal-only and must never render in the UI."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -1378,19 +1322,15 @@
     "image_url": "images/acceltex-hubbell/ats-02691.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02691.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-02691-alt.jpg"
       },
       {
-        "label": "Front angle with DART lead (AccelTex sheet)",
+        "label": "Front angle with DART lead",
         "url": "images/acceltex-hubbell/ats-02691-front-angle.jpg"
       },
       {
-        "label": "Rear, DART connector (AccelTex sheet)",
+        "label": "Rear, DART connector",
         "url": "images/acceltex-hubbell/ats-02691-rear.jpg"
       }
     ],
@@ -1447,7 +1387,8 @@
         "Cisco Catalyst 9130AXE"
       ],
       "maintainer": "High-density patch mining batch. Compatible AP list is internal-only and must never render in the UI."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -1495,12 +1436,7 @@
     "isolation": ">30 dB",
     "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-02692.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02692.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -1554,7 +1490,8 @@
         "Aruba/HP AP-754"
       ],
       "maintainer": "High-density patch mining batch. Compatible AP list is internal-only and must never render in the UI."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -1602,12 +1539,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-02693.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02693.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -1661,7 +1593,8 @@
         "Cisco Catalyst 9130AXE"
       ],
       "maintainer": "High-density patch mining batch. Compatible AP list is internal-only and must never render in the UI."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -1711,16 +1644,7 @@
     "isolation": null,
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-02694.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02694.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-02694-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -1777,7 +1701,8 @@
         "Cisco MR86"
       ],
       "maintainer": "High-density patch mining batch. Compatible AP list is internal-only and must never render in the UI."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -1827,16 +1752,7 @@
     "isolation": null,
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-02695.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02695.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-02695-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -1888,7 +1804,8 @@
         "Cisco Catalyst 9120AXP"
       ],
       "maintainer": "High-density patch mining batch. Compatible AP list is internal-only and must never render in the UI."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -1938,16 +1855,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-02753.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02753.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-02753-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -2046,16 +1954,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-02754.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02754.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-02754-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -2165,16 +2064,7 @@
     "isolation": ">30 dB",
     "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-02959.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02959.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-02959-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Vertical",
@@ -2227,7 +2117,8 @@
         "Aruba/HP AP-734"
       ],
       "maintainer": "High-density patch mining batch. Compatible AP list is internal-only and must never render in the UI."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -2283,11 +2174,7 @@
     "image_url": "images/acceltex-hubbell/ats-02960.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02960.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-02960-alt.jpg"
       }
     ],
@@ -2347,7 +2234,8 @@
         "Cisco MR86"
       ],
       "maintainer": "High-density patch mining batch. Compatible AP list is internal-only and must never render in the UI."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -2401,12 +2289,7 @@
     "isolation": ">30 dB",
     "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-03114.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03114.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -2514,11 +2397,7 @@
     "image_url": "images/acceltex-hubbell/ats-03411.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03411.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03411-alt.jpg"
       }
     ],
@@ -2575,7 +2454,8 @@
         "Mist AP43e"
       ],
       "maintainer": "High-density patch mining batch. Compatible AP list is internal-only and must never render in the UI."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -2631,11 +2511,7 @@
     "image_url": "images/acceltex-hubbell/ats-03412.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03412.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03412-alt.jpg"
       }
     ],
@@ -2699,7 +2575,8 @@
         "Mist AP63E"
       ],
       "maintainer": "High-density patch mining batch. Compatible AP list is internal-only and must never render in the UI. Hubbell SPEC lists Fortinet FAP-432F twice; stored once."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -2755,11 +2632,7 @@
     "image_url": "images/acceltex-hubbell/ats-03413.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03413.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03413-alt.jpg"
       }
     ],
@@ -2858,12 +2731,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-00851.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-00851.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.45 GHz Horizontal and Vertical",
@@ -2964,12 +2832,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-00852.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-00852.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.45 GHz Horizontal and Vertical",
@@ -3067,12 +2930,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-00855.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-00855.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 / 2.45 / 2.5 GHz Horizontal",
@@ -3140,7 +2998,8 @@
         "Mist AP43e"
       ],
       "maintainer": "Omni mining batch. Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -3184,12 +3043,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-00856.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-00856.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 / 2.45 / 2.5 GHz Horizontal",
@@ -3257,7 +3111,8 @@
         "Mist AP43e"
       ],
       "maintainer": "Omni mining batch. Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -3307,12 +3162,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01047.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01047.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.45 GHz Horizontal",
@@ -3415,12 +3265,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01049.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01049.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.45 GHz Horizontal",
@@ -3524,12 +3369,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01052.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01052.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.45 GHz Horizontal",
@@ -3633,12 +3473,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01054.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01054.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.45 GHz Horizontal",
@@ -3734,12 +3569,7 @@
     "isolation": null,
     "operating_temp": "-40 to 60 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01057.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01057.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal (2.4 / 5 GHz)",
@@ -3851,12 +3681,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01062.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01062.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [],
     "dimension_image_url": null,
     "datasheet_urls": [
@@ -3940,12 +3765,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01064.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01064.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [],
     "dimension_image_url": null,
     "datasheet_urls": [
@@ -4029,12 +3849,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01066.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01066.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal (2.4 / 5 / 6 GHz)",
@@ -4122,12 +3937,7 @@
     "isolation": null,
     "operating_temp": "-40 to 85 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01082.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01082.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Wi-Fi Horizontal",
@@ -4249,12 +4059,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-02624.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02624.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal (2.4 / 5 / 6 GHz)",
@@ -4349,12 +4154,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-02627.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02627.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal (2.4 / 5 GHz)",
@@ -4412,7 +4212,8 @@
         "Mist AP43e"
       ],
       "maintainer": "Omni mining batch. Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -4466,12 +4267,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-03115.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03115.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal (2.4 / 5 / 6 GHz)",
@@ -4572,12 +4368,7 @@
     "isolation": ">30 dB",
     "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-03278.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03278.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal (2.4 / 5 / 6 GHz)",
@@ -4693,12 +4484,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03478.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03478.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [],
     "dimension_image_url": null,
     "datasheet_urls": [
@@ -4795,12 +4581,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03561.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03561.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [],
     "dimension_image_url": null,
     "datasheet_urls": [
@@ -4887,12 +4668,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03775.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03775.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [],
     "dimension_image_url": null,
     "datasheet_urls": [
@@ -4983,12 +4759,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03776.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03776.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [],
     "dimension_image_url": null,
     "datasheet_urls": [
@@ -5075,12 +4846,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03788.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03788.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [],
     "dimension_image_url": null,
     "datasheet_urls": [
@@ -5165,12 +4931,7 @@
     "isolation": ">20 dB",
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-04004.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-04004.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal (2.4 / 5 / 6 GHz)",
@@ -5182,7 +4943,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-04004-dimensions.jpg",
-    "dimension_image_kind": "assembly",
+    "dimension_image_kind": "mechanical",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS04004-SPEC-EN)",
@@ -5281,12 +5042,7 @@
     "isolation": ">20 dB",
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-04010.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-04010.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal (2.4 / 5 / 6 GHz)",
@@ -5298,7 +5054,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-04010-dimensions.jpg",
-    "dimension_image_kind": "assembly",
+    "dimension_image_kind": "mechanical",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS04010-SPEC-EN)",
@@ -5396,12 +5152,7 @@
     "isolation": ">20 dB",
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-04011.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-04011.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal (2.4 / 5 / 6 GHz)",
@@ -5465,7 +5216,8 @@
         "Mist AP43e"
       ],
       "maintainer": "Omni mining batch. Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -5513,12 +5265,7 @@
     "isolation": ">20 dB",
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-04012.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-04012.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal (2.4 / 5 / 6 GHz)",
@@ -5583,7 +5330,8 @@
         "Mist AP43e"
       ],
       "maintainer": "Omni mining batch. Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -5631,12 +5379,7 @@
     "isolation": ">20 dB",
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-04119.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-04119.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal (2.4 / 5 / 6 GHz)",
@@ -5648,7 +5391,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-04119-dimensions.jpg",
-    "dimension_image_kind": "assembly",
+    "dimension_image_kind": "mechanical",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS04119-SPEC-EN)",
@@ -5742,12 +5485,7 @@
     "isolation": ">20 dB",
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-04121.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-04121.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal (2.4 / 5 / 6 GHz)",
@@ -5759,7 +5497,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-04121-dimensions.jpg",
-    "dimension_image_kind": "assembly",
+    "dimension_image_kind": "mechanical",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS04121-SPEC-EN)",
@@ -5866,11 +5604,7 @@
     "image_url": "images/acceltex-hubbell/ats-00690.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-00690.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-00690-alt.jpg"
       }
     ],
@@ -5934,7 +5668,8 @@
         "Mist AP43e"
       ],
       "maintainer": "Patch early batch. Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -5986,11 +5721,7 @@
     "image_url": "images/acceltex-hubbell/ats-01016.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01016.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01016-alt.jpg"
       }
     ],
@@ -6091,11 +5822,7 @@
     "image_url": "images/acceltex-hubbell/ats-01086.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01086.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01086-alt.jpg"
       }
     ],
@@ -6206,11 +5933,7 @@
     "image_url": "images/acceltex-hubbell/ats-01087.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01087.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01087-alt.jpg"
       }
     ],
@@ -6315,11 +6038,7 @@
     "image_url": "images/acceltex-hubbell/ats-01088.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01088.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01088-alt.jpg"
       }
     ],
@@ -6425,11 +6144,7 @@
     "image_url": "images/acceltex-hubbell/ats-01091.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01091.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01091-alt.jpg"
       }
     ],
@@ -6536,11 +6251,7 @@
     "image_url": "images/acceltex-hubbell/ats-01092.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01092.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01092-alt.jpg"
       }
     ],
@@ -6647,11 +6358,7 @@
     "image_url": "images/acceltex-hubbell/ats-01094.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01094.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01094-alt.jpg"
       }
     ],
@@ -6750,11 +6457,7 @@
     "image_url": "images/acceltex-hubbell/ats-01096.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01096.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01096-alt.jpg"
       }
     ],
@@ -6863,16 +6566,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01099.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01099.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-01099-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.5 GHz Horizontal",
@@ -6982,16 +6676,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01100.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01100.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-01100-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.5 GHz Horizontal",
@@ -7095,16 +6780,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01101.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01101.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-01101-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.5 GHz Horizontal",
@@ -7211,11 +6887,7 @@
     "image_url": "images/acceltex-hubbell/ats-01102.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01102.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01102-alt.jpg"
       }
     ],
@@ -7327,11 +6999,7 @@
     "image_url": "images/acceltex-hubbell/ats-01103.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01103.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01103-alt.jpg"
       }
     ],
@@ -7436,11 +7104,7 @@
     "image_url": "images/acceltex-hubbell/ats-01106.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01106.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01106-alt.jpg"
       }
     ],
@@ -7543,11 +7207,7 @@
     "image_url": "images/acceltex-hubbell/ats-01107.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01107.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01107-alt.jpg"
       }
     ],
@@ -7650,11 +7310,7 @@
     "image_url": "images/acceltex-hubbell/ats-01108.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01108.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01108-alt.jpg"
       }
     ],
@@ -7763,11 +7419,7 @@
     "image_url": "images/acceltex-hubbell/ats-01110.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01110.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01110-alt.jpg"
       }
     ],
@@ -7870,11 +7522,7 @@
     "image_url": "images/acceltex-hubbell/ats-01111.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01111.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01111-alt.jpg"
       }
     ],
@@ -7979,11 +7627,7 @@
     "image_url": "images/acceltex-hubbell/ats-01112.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01112.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01112-alt.jpg"
       }
     ],
@@ -8086,11 +7730,7 @@
     "image_url": "images/acceltex-hubbell/ats-01113.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01113.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01113-alt.jpg"
       }
     ],
@@ -8192,11 +7832,7 @@
     "image_url": "images/acceltex-hubbell/ats-01114.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01114.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01114-alt.jpg"
       }
     ],
@@ -8298,11 +7934,7 @@
     "image_url": "images/acceltex-hubbell/ats-01116.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01116.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01116-alt.jpg"
       }
     ],
@@ -8403,11 +8035,7 @@
     "image_url": "images/acceltex-hubbell/ats-01117.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01117.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01117-alt.jpg"
       }
     ],
@@ -8509,11 +8137,7 @@
     "image_url": "images/acceltex-hubbell/ats-01119.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01119.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01119-alt.jpg"
       }
     ],
@@ -8615,11 +8239,7 @@
     "image_url": "images/acceltex-hubbell/ats-01120.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01120.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01120-alt.jpg"
       }
     ],
@@ -8724,11 +8344,7 @@
     "image_url": "images/acceltex-hubbell/ats-01121.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01121.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01121-alt.jpg"
       }
     ],
@@ -8825,11 +8441,7 @@
     "image_url": "images/acceltex-hubbell/ats-01122.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01122.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01122-alt.jpg"
       }
     ],
@@ -8885,7 +8497,8 @@
         "Cisco MR86"
       ],
       "maintainer": "Patch early batch. Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -8931,11 +8544,7 @@
     "image_url": "images/acceltex-hubbell/ats-01125.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01125.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01125-alt.jpg"
       }
     ],
@@ -8986,7 +8595,8 @@
         "Cisco Catalyst 9120AXP"
       ],
       "maintainer": "Patch early batch. Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -9032,11 +8642,7 @@
     "image_url": "images/acceltex-hubbell/ats-01126.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01126.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01126-alt.jpg"
       }
     ],
@@ -9148,11 +8754,7 @@
     "image_url": "images/acceltex-hubbell/ats-01127.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01127.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01127-alt.jpg"
       }
     ],
@@ -9262,11 +8864,7 @@
     "image_url": "images/acceltex-hubbell/ats-01128.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01128.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01128-alt.jpg"
       }
     ],
@@ -9378,11 +8976,7 @@
     "image_url": "images/acceltex-hubbell/ats-01144.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01144.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01144-alt.jpg"
       }
     ],
@@ -9488,11 +9082,7 @@
     "image_url": "images/acceltex-hubbell/ats-01145.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01145.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01145-alt.jpg"
       }
     ],
@@ -9600,11 +9190,7 @@
     "image_url": "images/acceltex-hubbell/ats-01146.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01146.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01146-alt.jpg"
       }
     ],
@@ -9712,11 +9298,7 @@
     "image_url": "images/acceltex-hubbell/ats-01147.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01147.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01147-alt.jpg"
       }
     ],
@@ -9822,11 +9404,7 @@
     "image_url": "images/acceltex-hubbell/ats-01148.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01148.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01148-alt.jpg"
       }
     ],
@@ -9926,11 +9504,7 @@
     "image_url": "images/acceltex-hubbell/ats-01150.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01150.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01150-alt.jpg"
       }
     ],
@@ -10030,11 +9604,7 @@
     "image_url": "images/acceltex-hubbell/ats-01152.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01152.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01152-alt.jpg"
       }
     ],
@@ -10134,11 +9704,7 @@
     "image_url": "images/acceltex-hubbell/ats-01153.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01153.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01153-alt.jpg"
       }
     ],
@@ -10245,11 +9811,7 @@
     "image_url": "images/acceltex-hubbell/ats-01156.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01156.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01156-alt.jpg"
       }
     ],
@@ -10354,11 +9916,7 @@
     "image_url": "images/acceltex-hubbell/ats-01157.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01157.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01157-alt.jpg"
       }
     ],
@@ -10463,11 +10021,7 @@
     "image_url": "images/acceltex-hubbell/ats-01158.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-01158.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-01158-alt.jpg"
       }
     ],
@@ -10569,11 +10123,7 @@
     "image_url": "images/acceltex-hubbell/ats-02470.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02470.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-02470-alt.jpg"
       }
     ],
@@ -10675,11 +10225,7 @@
     "image_url": "images/acceltex-hubbell/ats-02473.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02473.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-02473-alt.jpg"
       }
     ],
@@ -10777,16 +10323,7 @@
     "isolation": null,
     "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-02489.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02489.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-02489-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -10882,11 +10419,7 @@
     "image_url": "images/acceltex-hubbell/ats-02530.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02530.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-02530-alt.jpg"
       }
     ],
@@ -10989,11 +10522,7 @@
     "image_url": "images/acceltex-hubbell/ats-02587.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02587.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-02587-alt.jpg"
       }
     ],
@@ -11092,11 +10621,7 @@
     "image_url": "images/acceltex-hubbell/ats-02588.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02588.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-02588-alt.jpg"
       }
     ],
@@ -11193,16 +10718,7 @@
     "isolation": ">30 dB",
     "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-02589.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02589.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-02589-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -11304,11 +10820,7 @@
     "image_url": "images/acceltex-hubbell/ats-02625.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02625.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-02625-alt.jpg"
       }
     ],
@@ -11365,7 +10877,8 @@
         "Mist AP36M"
       ],
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -11421,11 +10934,7 @@
     "image_url": "images/acceltex-hubbell/ats-02626.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02626.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-02626-alt.jpg"
       }
     ],
@@ -11482,7 +10991,8 @@
         "Mist AP36M"
       ],
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -11538,11 +11048,7 @@
     "image_url": "images/acceltex-hubbell/ats-02789.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02789.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-02789-alt.jpg"
       }
     ],
@@ -11599,7 +11105,8 @@
         "Mist AP36M"
       ],
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -11655,11 +11162,7 @@
     "image_url": "images/acceltex-hubbell/ats-02839.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02839.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-02839-alt.jpg"
       }
     ],
@@ -11763,11 +11266,7 @@
     "image_url": "images/acceltex-hubbell/ats-02840.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02840.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-02840-alt.jpg"
       }
     ],
@@ -11870,11 +11369,7 @@
     "image_url": "images/acceltex-hubbell/ats-02841.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02841.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-02841-alt.jpg"
       }
     ],
@@ -11978,11 +11473,7 @@
     "image_url": "images/acceltex-hubbell/ats-02855.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-02855.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-02855-alt.jpg"
       }
     ],
@@ -12039,7 +11530,8 @@
         "Mist AP36M"
       ],
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -12089,16 +11581,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-03018.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03018.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-03018-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -12193,16 +11676,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-03019.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03019.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-03019-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -12303,16 +11777,7 @@
     "isolation": ">20 dB",
     "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-03020.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03020.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-03020-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -12410,11 +11875,7 @@
     "image_url": "images/acceltex-hubbell/ats-03022.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03022.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03022-alt.jpg"
       }
     ],
@@ -12473,7 +11934,8 @@
         "Mist AP63E"
       ],
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -12525,11 +11987,7 @@
     "image_url": "images/acceltex-hubbell/ats-03023.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03023.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03023-alt.jpg"
       }
     ],
@@ -12585,7 +12043,8 @@
         "Cisco MR46E"
       ],
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -12641,11 +12100,7 @@
     "image_url": "images/acceltex-hubbell/ats-03113.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03113.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03113-alt.jpg"
       }
     ],
@@ -12749,11 +12204,7 @@
     "image_url": "images/acceltex-hubbell/ats-03117.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03117.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03117-alt.jpg"
       }
     ],
@@ -12856,11 +12307,7 @@
     "image_url": "images/acceltex-hubbell/ats-03118.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03118.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03118-alt.jpg"
       }
     ],
@@ -12963,11 +12410,7 @@
     "image_url": "images/acceltex-hubbell/ats-03119.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03119.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03119-alt.jpg"
       }
     ],
@@ -13068,16 +12511,7 @@
     "isolation": ">30 dB",
     "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-03120.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03120.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-03120-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -13177,11 +12611,7 @@
     "image_url": "images/acceltex-hubbell/ats-03262.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03262.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03262-alt.jpg"
       }
     ],
@@ -13298,11 +12728,7 @@
     "image_url": "images/acceltex-hubbell/ats-03276.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03276.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03276-alt.jpg"
       }
     ],
@@ -13414,11 +12840,7 @@
     "image_url": "images/acceltex-hubbell/ats-03279.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03279.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03279-alt.jpg"
       }
     ],
@@ -13532,11 +12954,7 @@
     "image_url": "images/acceltex-hubbell/ats-03280.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03280.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03280-alt.jpg"
       }
     ],
@@ -13651,12 +13069,7 @@
     "isolation": ">30 dB",
     "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-03281.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03281.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Horizontal",
@@ -13769,11 +13182,7 @@
     "image_url": "images/acceltex-hubbell/ats-03282.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03282.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03282-alt.jpg"
       }
     ],
@@ -13890,11 +13299,7 @@
     "image_url": "images/acceltex-hubbell/ats-03283.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03283.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03283-alt.jpg"
       }
     ],
@@ -14011,11 +13416,7 @@
     "image_url": "images/acceltex-hubbell/ats-03285.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03285.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03285-alt.jpg"
       }
     ],
@@ -14124,11 +13525,7 @@
     "image_url": "images/acceltex-hubbell/ats-03286.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03286.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03286-alt.jpg"
       }
     ],
@@ -14240,11 +13637,7 @@
     "image_url": "images/acceltex-hubbell/ats-03287.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03287.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03287-alt.jpg"
       }
     ],
@@ -14355,11 +13748,7 @@
     "image_url": "images/acceltex-hubbell/ats-03288.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03288.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03288-alt.jpg"
       }
     ],
@@ -14471,11 +13860,7 @@
     "image_url": "images/acceltex-hubbell/ats-03289.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03289.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03289-alt.jpg"
       }
     ],
@@ -14587,11 +13972,7 @@
     "image_url": "images/acceltex-hubbell/ats-03464.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03464.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03464-alt.jpg"
       }
     ],
@@ -14641,7 +14022,8 @@
         "Mist AP45E"
       ],
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -14697,11 +14079,7 @@
     "image_url": "images/acceltex-hubbell/ats-03673.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03673.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03673-alt.jpg"
       }
     ],
@@ -14716,7 +14094,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-03673-dimensions.jpg",
-    "dimension_image_kind": "assembly",
+    "dimension_image_kind": "mechanical",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS03673-SPEC-EN)",
@@ -14826,11 +14204,7 @@
     "image_url": "images/acceltex-hubbell/ats-03674.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03674.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03674-alt.jpg"
       }
     ],
@@ -14845,7 +14219,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-03674-dimensions.jpg",
-    "dimension_image_kind": "assembly",
+    "dimension_image_kind": "mechanical",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS03674-SPEC-EN)",
@@ -14952,11 +14326,7 @@
     "image_url": "images/acceltex-hubbell/ats-03675.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03675.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03675-alt.jpg"
       }
     ],
@@ -14971,7 +14341,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-03675-dimensions.jpg",
-    "dimension_image_kind": "assembly",
+    "dimension_image_kind": "mechanical",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS03675-SPEC-EN)",
@@ -15080,11 +14450,7 @@
     "image_url": "images/acceltex-hubbell/ats-03676.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03676.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03676-alt.jpg"
       }
     ],
@@ -15099,7 +14465,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-03676-dimensions.jpg",
-    "dimension_image_kind": "assembly",
+    "dimension_image_kind": "mechanical",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS03676-SPEC-EN)",
@@ -15202,16 +14568,7 @@
     "isolation": ">30 dB",
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03951.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03951.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-03951-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "5 GHz Radio (4MPC) Vertical",
@@ -15274,7 +14631,8 @@
         "Mist AP47E"
       ],
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -15330,11 +14688,7 @@
     "image_url": "images/acceltex-hubbell/ats-03952.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03952.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-03952-alt.jpg"
       }
     ],
@@ -15402,7 +14756,8 @@
         "Mist AP47E"
       ],
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -15456,12 +14811,7 @@
     "isolation": ">30 dB",
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03953.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03953.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "6 GHz Radio (6MPC-BLK) Vertical",
@@ -15525,7 +14875,8 @@
         "Mist AP47E"
       ],
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "assembly"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -15579,16 +14930,7 @@
     "isolation": ">30 dB",
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03954.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03954.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-03954-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "6 GHz Radio (6MPC-BLK) Vertical",
@@ -15651,7 +14993,8 @@
         "Mist AP47E"
       ],
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -15705,12 +15048,7 @@
     "isolation": ">30 dB",
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03955.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03955.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "6 GHz Radio (6MPC-BLK) Vertical",
@@ -15775,7 +15113,8 @@
         "Mist AP47E"
       ],
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -15829,16 +15168,7 @@
     "isolation": ">30 dB",
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03997.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03997.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-03997-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Vertical",
@@ -15894,7 +15224,8 @@
         "Cisco MR86"
       ],
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -15948,16 +15279,7 @@
     "isolation": ">30 dB",
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03998.jpg",
-    "images": [
-      {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-03998.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
-        "url": "images/acceltex-hubbell/ats-03998-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "Vertical",
@@ -16010,7 +15332,8 @@
         "Cisco IW9165E"
       ],
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "AccelTex / Hubbell",
@@ -16066,11 +15389,7 @@
     "image_url": "images/acceltex-hubbell/ats-04153.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-04153.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-04153-alt.jpg"
       }
     ],
@@ -16085,7 +15404,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-04153-dimensions.jpg",
-    "dimension_image_kind": "assembly",
+    "dimension_image_kind": "mechanical",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS04153-SPEC-EN)",
@@ -16185,11 +15504,7 @@
     "image_url": "images/acceltex-hubbell/ats-04154.jpg",
     "images": [
       {
-        "label": "Product (Hubbell SPEC)",
-        "url": "images/acceltex-hubbell/ats-04154.jpg"
-      },
-      {
-        "label": "Product (AccelTex sheet)",
+        "label": "Product photo",
         "url": "images/acceltex-hubbell/ats-04154-alt.jpg"
       }
     ],
@@ -16204,7 +15519,7 @@
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-04154-dimensions.jpg",
-    "dimension_image_kind": "assembly",
+    "dimension_image_kind": "mechanical",
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS04154-SPEC-EN)",
@@ -16312,12 +15627,7 @@
     "isolation": null,
     "operating_temp": "-40 to 158 \u00b0F",
     "image_url": "images/ventev/276858.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/276858.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Horizontal + Vertical",
@@ -16406,12 +15716,7 @@
     "isolation": null,
     "operating_temp": "-40 to 158 \u00b0F",
     "image_url": "images/ventev/249595.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/249595.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
@@ -16457,7 +15762,8 @@
       "compatible_aps": [],
       "mfg_part": "M6060060M1D43607M",
       "maintainer": "Ventev batch 1. Small-form outdoor MIMO omni."
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "Ventev",
@@ -16506,12 +15812,7 @@
     "isolation": null,
     "operating_temp": "-40 to 158 \u00b0F",
     "image_url": "images/ventev/ven302021.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/ven302021.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Horizontal + Vertical",
@@ -16549,7 +15850,8 @@
       "compatible_aps": [],
       "mfg_part": "M6040060O2D1802R",
       "maintainer": "Ventev batch 1. Indoor ceiling MIMO omni; datasheet mentions Cisco 802.11ac Wave I/II APs generally."
-    }
+    },
+    "dimension_image_kind": "assembly"
   },
   {
     "vendor": "Ventev",
@@ -16600,8 +15902,8 @@
     "image_url": "images/ventev/527504.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/527504.jpg"
+        "label": "Product photo",
+        "url": "images/ventev/527504-dimensions.jpg"
       }
     ],
     "pattern_images": [
@@ -16614,7 +15916,7 @@
         "url": "images/ventev/527504-pattern-5-ghz-vertical.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/527504-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -16642,7 +15944,8 @@
       "compatible_aps": [],
       "mfg_part": "M6060060MP1D43620",
       "maintainer": "Ventev batch 1. Quad patch; datasheet says enterprise-class 802.11n MIMO APs generally."
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -16695,12 +15998,7 @@
     "isolation": null,
     "operating_temp": "-40 to 158 \u00b0F",
     "image_url": "images/ventev/611750.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/611750.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
@@ -16746,7 +16044,8 @@
       "compatible_aps": [],
       "mfg_part": "M7060060P1D43607TB",
       "maintainer": "Ventev batch 1. Tri-band patch for Wi-Fi 6E/7 APs generally."
-    }
+    },
+    "dimension_image_kind": "assembly"
   },
   {
     "vendor": "Ventev",
@@ -16799,12 +16098,7 @@
     "isolation": ">15 dB",
     "operating_temp": "-40 to 158 \u00b0F",
     "image_url": "images/ventev/609446.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/609446.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Horizontal",
@@ -16893,16 +16187,7 @@
     "isolation": null,
     "operating_temp": "-40 to 140 \u00b0F",
     "image_url": "images/ventev/216477.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/216477.jpg"
-      },
-      {
-        "label": "Product (datasheet)",
-        "url": "images/ventev/216477-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
@@ -16998,12 +16283,7 @@
     "isolation": "\u226525 dB",
     "operating_temp": "-40 to 158 \u00b0F",
     "image_url": "images/ventev/298003.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/298003.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
@@ -17099,11 +16379,7 @@
     "image_url": "images/ventev/608677.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/608677.jpg"
-      },
-      {
-        "label": "Product (datasheet)",
+        "label": "Product photo",
         "url": "images/ventev/608677-alt.jpg"
       }
     ],
@@ -17204,12 +16480,7 @@
     "isolation": "Cross Polarized",
     "operating_temp": null,
     "image_url": "images/ventev/292510.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/292510.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "5/6 GHz Horizontal",
@@ -17288,12 +16559,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/270444.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/270444.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Horizontal + Vertical",
@@ -17377,8 +16643,8 @@
     "image_url": "images/ventev/233530.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/233530.jpg"
+        "label": "Product photo",
+        "url": "images/ventev/233530-dimensions.jpg"
       }
     ],
     "pattern_images": [
@@ -17391,7 +16657,7 @@
         "url": "images/ventev/233530-pattern-2-4-ghz-horizontal.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/233530-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -17419,7 +16685,8 @@
       "mfg_part": "M60300300O4242TA2",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -17464,8 +16731,8 @@
     "image_url": "images/ventev/298232.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/298232.jpg"
+        "label": "Product photo",
+        "url": "images/ventev/298232-dimensions.jpg"
       }
     ],
     "pattern_images": [
@@ -17478,7 +16745,7 @@
         "url": "images/ventev/298232-pattern-5-ghz-horizontal-vertical.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/298232-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -17506,7 +16773,8 @@
       "mfg_part": "M6030030O42420TA",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -17562,8 +16830,8 @@
     "image_url": "images/ventev/268438.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/268438.jpg"
+        "label": "Product photo",
+        "url": "images/ventev/268438-dimensions.jpg"
       }
     ],
     "pattern_images": [
@@ -17584,7 +16852,7 @@
         "url": "images/ventev/268438-pattern-5-ghz-horizontal.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/268438-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -17612,7 +16880,8 @@
       "mfg_part": "M6060060D3D63620",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -17666,12 +16935,7 @@
     "isolation": "\u226520dB",
     "operating_temp": "(F\u00b0) -40\u00b0 ~ 158\u00b0",
     "image_url": "images/ventev/266541.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/266541.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4/5 GHz Horizontal",
@@ -17686,7 +16950,7 @@
         "url": "images/ventev/266541-pattern-2-4-ghz-vertical.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/266541-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -17714,7 +16978,8 @@
       "mfg_part": "M6060060P1D83602W",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -17757,12 +17022,7 @@
     "isolation": null,
     "operating_temp": "-40\u00b0 to 158\u00b0 F",
     "image_url": "images/ventev/299318.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/299318.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4/5 GHz Horizontal",
@@ -17805,7 +17065,8 @@
       "mfg_part": "M6040060O2D2420",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": "assembly"
   },
   {
     "vendor": "Ventev",
@@ -17864,12 +17125,7 @@
     "isolation": "> 22 / > 22 dBi",
     "operating_temp": "-40\u00b0 to 158\u00b0F",
     "image_url": "images/ventev/297129.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/297129.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4/5 GHz Vertical",
@@ -17965,12 +17221,7 @@
     "isolation": "\u226512 / \u226518",
     "operating_temp": "Range",
     "image_url": "images/ventev/219521.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/219521.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Horizontal",
@@ -18050,8 +17301,8 @@
     "image_url": "images/ventev/248961.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/248961.jpg"
+        "label": "Product photo",
+        "url": "images/ventev/248961-dimensions.jpg"
       }
     ],
     "pattern_images": [
@@ -18060,7 +17311,7 @@
         "url": "images/ventev/248961-pattern-2-4-5-ghz-horizontal.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/248961-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -18088,7 +17339,8 @@
       "mfg_part": "M6030060O42402ASM",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -18131,12 +17383,7 @@
     "isolation": "12/20 dB Cross Polarized",
     "operating_temp": null,
     "image_url": "images/ventev/264761.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/264761.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "5/6 GHz Horizontal",
@@ -18218,12 +17465,7 @@
     "isolation": "(Cross Polarized Ports)",
     "operating_temp": null,
     "image_url": "images/ventev/261112.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/261112.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "5/6 GHz Horizontal",
@@ -18305,12 +17547,7 @@
     "isolation": "(Cross Polarized Ports)",
     "operating_temp": null,
     "image_url": "images/ventev/239601.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/239601.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "5/6 GHz Horizontal",
@@ -18392,12 +17629,7 @@
     "isolation": null,
     "operating_temp": "-40\u00b0 to 158\u00b0F",
     "image_url": "images/ventev/217199.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/217199.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4/5 GHz Vertical",
@@ -18489,8 +17721,8 @@
     "image_url": "images/ventev/227659.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/227659.jpg"
+        "label": "Product photo",
+        "url": "images/ventev/227659-dimensions.jpg"
       }
     ],
     "pattern_images": [
@@ -18503,7 +17735,7 @@
         "url": "images/ventev/227659-pattern-2-4-5-ghz-horizontal.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/227659-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -18531,7 +17763,8 @@
       "mfg_part": "M6012013D1D103620",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -18574,12 +17807,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/265253.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/265253.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [],
     "dimension_image_url": null,
     "datasheet_urls": [],
@@ -18643,12 +17871,7 @@
     "isolation": null,
     "operating_temp": "-40\u00b0 to 158\u00b0F",
     "image_url": "images/ventev/227468.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/227468.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
@@ -18738,12 +17961,7 @@
     "isolation": null,
     "operating_temp": "-40\u00b0 to 140\u00b0F\u200b",
     "image_url": "images/ventev/206570.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/206570.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
@@ -18833,12 +18051,7 @@
     "isolation": "\u2265 20 dB",
     "operating_temp": "-40\u00b0 to 158\u00b0F",
     "image_url": "images/ventev/214484.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/214484.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4/5 GHz Vertical",
@@ -18925,12 +18138,7 @@
     "isolation": null,
     "operating_temp": "-40\u00b0 to +158\u00b0F",
     "image_url": "images/ventev/247147.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/247147.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "5 GHz Vertical",
@@ -18941,7 +18149,7 @@
         "url": "images/ventev/247147-pattern-5-ghz-horizontal.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/247147-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -18969,7 +18177,8 @@
       "mfg_part": "M6040070O10007B",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -19018,12 +18227,7 @@
     "isolation": null,
     "operating_temp": "Range",
     "image_url": "images/ventev/227737.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/227737.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
@@ -19042,7 +18246,7 @@
         "url": "images/ventev/227737-pattern-5-ghz-horizontal.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/227737-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -19070,7 +18274,8 @@
       "mfg_part": "M6060060D6D3620TM",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -19121,19 +18326,14 @@
     "isolation": null,
     "operating_temp": "Negative 40\u00b0 to +158\u00b0F",
     "image_url": "images/ventev/249891.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/249891.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "5 GHz Horizontal",
         "url": "images/ventev/249891-pattern-5-ghz-horizontal.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/249891-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -19161,7 +18361,8 @@
       "mfg_part": "M6060060MO1D83699",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": true
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -19206,8 +18407,8 @@
     "image_url": "images/ventev/273519.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/273519.jpg"
+        "label": "Product photo",
+        "url": "images/ventev/273519-dimensions.jpg"
       }
     ],
     "pattern_images": [
@@ -19228,7 +18429,7 @@
         "url": "images/ventev/273519-pattern-5-ghz-vertical.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/273519-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -19256,7 +18457,8 @@
       "mfg_part": "M6060060P1D43699D",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -19307,8 +18509,8 @@
     "image_url": "images/ventev/229080.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/229080.jpg"
+        "label": "Product photo",
+        "url": "images/ventev/229080-dimensions.jpg"
       }
     ],
     "pattern_images": [
@@ -19321,7 +18523,7 @@
         "url": "images/ventev/229080-pattern-5-ghz-horizontal-vertical.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/229080-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -19349,7 +18551,8 @@
       "mfg_part": "M6060060D1D83699",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": true
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -19394,8 +18597,8 @@
     "image_url": "images/ventev/285793.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/285793.jpg"
+        "label": "Product photo",
+        "url": "images/ventev/285793-dimensions.jpg"
       }
     ],
     "pattern_images": [
@@ -19416,7 +18619,7 @@
         "url": "images/ventev/285793-pattern-5-ghz-vertical.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/285793-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -19444,7 +18647,8 @@
       "mfg_part": "M6060060P1D43607T",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -19493,12 +18697,7 @@
     "isolation": null,
     "operating_temp": "-40\u00b0 to +158\u00b0F",
     "image_url": "images/ventev/283634.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/283634.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Horizontal",
@@ -19582,8 +18781,8 @@
     "image_url": "images/ventev/222152.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/222152.jpg"
+        "label": "Product photo",
+        "url": "images/ventev/222152-dimensions.jpg"
       }
     ],
     "pattern_images": [
@@ -19592,7 +18791,7 @@
         "url": "images/ventev/222152-pattern-2-4-5-ghz-horizontal.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/222152-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -19620,7 +18819,8 @@
       "mfg_part": "M7040070O10007G",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -19663,12 +18863,7 @@
     "isolation": null,
     "operating_temp": "Range",
     "image_url": "images/ventev/242142.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/242142.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "5 GHz Horizontal",
@@ -19679,7 +18874,7 @@
         "url": "images/ventev/242142-pattern-2-4-ghz-vertical.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/242142-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -19707,7 +18902,8 @@
       "mfg_part": "M7060080O10007G",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -19750,12 +18946,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/278465.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/278465.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Horizontal + Vertical",
@@ -19766,7 +18957,7 @@
         "url": "images/ventev/278465-pattern-5-ghz-horizontal-vertical.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/278465-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -19794,7 +18985,8 @@
       "mfg_part": "TWS244950-RPTNC-W",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -19837,16 +19029,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/517784.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/517784.jpg"
-      },
-      {
-        "label": "Additional photo",
-        "url": "images/ventev/517784-alt.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
@@ -19893,7 +19076,8 @@
       "mfg_part": "V10082-HRE-NEB",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "Ventev",
@@ -19936,12 +19120,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/374697.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/374697.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [],
     "dimension_image_url": null,
     "datasheet_urls": [
@@ -20011,12 +19190,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/485999.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/485999.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
@@ -20105,12 +19279,7 @@
     "isolation": null,
     "operating_temp": "-22\u00b0 to 158\u00b0F",
     "image_url": "images/ventev/457948.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/457948.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Horizontal",
@@ -20184,12 +19353,7 @@
     "isolation": "\u2265 20 dB",
     "operating_temp": null,
     "image_url": "images/ventev/523248.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/523248.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Horizontal",
@@ -20200,7 +19364,7 @@
         "url": "images/ventev/523248-pattern-2-4-ghz-vertical.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/523248-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -20228,7 +19392,8 @@
       "mfg_part": "T24140D30006O",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -20278,12 +19443,7 @@
     "isolation": null,
     "operating_temp": "-40\u00b0F to +158\u00b0F",
     "image_url": "images/ventev/215098.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/215098.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "5 GHz Horizontal",
@@ -20372,12 +19532,7 @@
     "isolation": null,
     "operating_temp": "-40\u00b0 to 158\u00b0F",
     "image_url": "images/ventev/242441.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/242441.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "5 GHz Vertical",
@@ -20388,7 +19543,7 @@
         "url": "images/ventev/242441-pattern-5-ghz-horizontal.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/242441-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -20416,7 +19571,8 @@
       "mfg_part": "T58185D0006",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -20461,14 +19617,9 @@
     "isolation": "(dB)",
     "operating_temp": null,
     "image_url": "images/ventev/590261.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/590261.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [],
-    "dimension_image_url": "images/ventev/590261-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -20496,7 +19647,8 @@
       "mfg_part": "T58140P10006O",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -20535,12 +19687,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/318227.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/318227.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
@@ -20630,11 +19777,7 @@
     "image_url": "images/ventev/581764.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/581764.jpg"
-      },
-      {
-        "label": "Additional photo",
+        "label": "Product photo",
         "url": "images/ventev/581764-alt.jpg"
       }
     ],
@@ -20723,12 +19866,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/251676.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/251676.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
@@ -20775,7 +19913,8 @@
       "mfg_part": "M6060060D3D3620T",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": true
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "Ventev",
@@ -20824,12 +19963,7 @@
     "isolation": null,
     "operating_temp": "-40\u00b0 to 158\u00b0F",
     "image_url": "images/ventev/269258.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/269258.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Horizontal",
@@ -20876,7 +20010,8 @@
       "mfg_part": "M6060060M1D43602C",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": "mechanical"
   },
   {
     "vendor": "Ventev",
@@ -20930,12 +20065,7 @@
     "isolation": null,
     "operating_temp": "-40\u00b0 to 40\u00b0F",
     "image_url": "images/ventev/220851.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/220851.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
@@ -21033,8 +20163,8 @@
     "image_url": "images/ventev/276884.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/276884.jpg"
+        "label": "Product photo",
+        "url": "images/ventev/276884-dimensions.jpg"
       }
     ],
     "pattern_images": [
@@ -21055,7 +20185,7 @@
         "url": "images/ventev/276884-pattern-5-ghz-horizontal.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/276884-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -21083,7 +20213,8 @@
       "mfg_part": "M060060M1D43607C",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -21136,8 +20267,8 @@
     "image_url": "images/ventev/589945.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/589945.jpg"
+        "label": "Product photo",
+        "url": "images/ventev/589945-dimensions.jpg"
       }
     ],
     "pattern_images": [
@@ -21158,7 +20289,7 @@
         "url": "images/ventev/589945-pattern-2-4-5-ghz-vertical.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/589945-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -21186,7 +20317,8 @@
       "mfg_part": "M6025040O3D402MWL",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -21239,8 +20371,8 @@
     "image_url": "images/ventev/287214.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/287214.jpg"
+        "label": "Product photo",
+        "url": "images/ventev/287214-dimensions.jpg"
       }
     ],
     "pattern_images": [
@@ -21249,7 +20381,7 @@
         "url": "images/ventev/287214-pattern-2-4-5-ghz-vertical.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/287214-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -21277,7 +20409,8 @@
       "mfg_part": "M6025040O3D220MW",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -21322,12 +20455,12 @@
     "image_url": "images/ventev/500865.jpg",
     "images": [
       {
-        "label": "Product",
-        "url": "images/ventev/500865.jpg"
+        "label": "Product photo",
+        "url": "images/ventev/500865-dimensions.jpg"
       }
     ],
     "pattern_images": [],
-    "dimension_image_url": "images/ventev/500865-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -21355,7 +20488,8 @@
       "mfg_part": "TWS244950-RPSMA-W",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -21398,12 +20532,7 @@
     "isolation": null,
     "operating_temp": "14\u00b0 to 131\u00b0F",
     "image_url": "images/ventev/569625.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/569625.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
@@ -21493,12 +20622,7 @@
     "isolation": null,
     "operating_temp": "14\u00b0 to +131\u00b0F",
     "image_url": "images/ventev/363318.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/363318.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Horizontal + Vertical",
@@ -21509,7 +20633,7 @@
         "url": "images/ventev/363318-pattern-5-ghz-horizontal-vertical.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/363318-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -21537,7 +20661,8 @@
       "mfg_part": "M7020030R10020B",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -21580,12 +20705,7 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/593861.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/593861.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4 GHz Horizontal",
@@ -21596,7 +20716,7 @@
         "url": "images/ventev/593861-pattern-5-ghz-vertical.jpg"
       }
     ],
-    "dimension_image_url": "images/ventev/593861-dimensions.jpg",
+    "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Ventev SPEC",
@@ -21624,7 +20744,8 @@
       "mfg_part": "M7020030MR10007",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": null
   },
   {
     "vendor": "Ventev",
@@ -21683,12 +20804,7 @@
     "isolation": null,
     "operating_temp": "-40\u00b0 to +158\u00b0F",
     "image_url": "images/ventev/569668.jpg",
-    "images": [
-      {
-        "label": "Product",
-        "url": "images/ventev/569668.jpg"
-      }
-    ],
+    "images": [],
     "pattern_images": [
       {
         "label": "2.4/5 GHz Horizontal",
@@ -21723,6 +20839,7 @@
       "mfg_part": "M6060060MO1D43607",
       "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
       "closeout": false
-    }
+    },
+    "dimension_image_kind": "mechanical"
   }
 ]
