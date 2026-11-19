@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+
+# Review files
+review files/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Local mount validator. Not published.
+validate_mounts.py
+

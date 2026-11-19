@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Antenna Details — AntennaComparison</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 1rem 0 1.5rem;
+    }
+    .gallery-item {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 12px;
+      text-align: center;
+    }
+    .gallery-item img {
+      max-width: 100%;
+      max-height: 280px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .gallery-item.pattern img,
+    .gallery-item.dimension img {
+      background: #0b1220;
+    }
+    .gallery-caption {
+      margin-top: 8px;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.65);
+    }
+    .legacy-sku {
+      font-family: "JetBrains Mono", ui-monospace, monospace;
+      font-size: 0.95rem;
+    }
+    .notes-list {
+      margin: 0.5rem 0 0;
+      padding-left: 1.1rem;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="actions">
+      <a id="back-link" class="btn-link" href="index.html">&larr; Back to Antenna Table</a>
+      <button id="export-csv" type="button" class="btn-link">Export CSV</button>
+    </div>
+
+    <div class="card">
+      <span class="badge">Antenna Details</span>
+
+      <div class="header-with-logo">
+        <h1 id="title-header">Antenna Details</h1>
+        <img src="logo.png" alt="AntennaComparison" class="site-logo" />
+      </div>
+      <p class="subtitle" id="subtitle"></p>
+      <p id="legacy-line" class="legacy-sku" style="display:none;"></p>
+
+      <div id="image-container" class="ap-image-wrapper" style="display:none;">
+        <img id="antenna-image" class="ap-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" loading="lazy" />
+      </div>
+
+      <div id="actions-inline"></div>
+      <div id="details" class="kv-grid"></div>
+      <div id="gallery"></div>
+      <div id="included"></div>
+      <div id="sources"></div>
+      <div id="field-notes"></div>
+
+      <div id="error-message" class="error" style="display:none;"></div>
+    </div>
+  </div>
+
+  <script src="antenna-format.js"></script>
+  <script>
+    const DATA_URL = 'antenna_data.json';
+    let currentEntry = null;
+
+    const PUBLIC_FIELDS = [
+      ['vendor', 'Vendor'],
+      ['sku', 'SKU (primary)'],
+      ['legacy_sku', 'Legacy SKU'],
+      ['name', 'Name'],
+      ['form', 'Form'],
+      ['indoor_outdoor', 'Indoor/Outdoor'],
+      ['bands', 'Bands'],
+      ['frequency_range', 'Frequency Range'],
+      ['gain_dbi', 'Gain (dBi)'],
+      ['beamwidth', 'Beamwidth'],
+      ['connector', 'Connector'],
+      ['lead_count', 'Lead Count'],
+      ['polarization', 'Polarization'],
+      ['cable_length', 'Cable Length'],
+      ['cable_type', 'Cable Type'],
+      ['dimensions', 'Dimensions'],
+      ['weight', 'Weight'],
+      ['ip_rating', 'IP Rating'],
+      ['radome', 'Radome'],
+      ['mount_type', 'Mount / Install Type'],
+      ['wind_rating', 'Wind Rating'],
+      ['vswr', 'VSWR'],
+      ['isolation', 'Isolation'],
+      ['operating_temp', 'Operating Temperature']
+    ];
+
+    // Never render these in the UI
+    const INTERNAL_ONLY_KEYS = new Set(['internal_notes', 'compatible_aps']);
+
+    function readId() {
+      return new URLSearchParams(window.location.search).get('id') || '';
+    }
+
+    function normalizeString(value) {
+      if (value == null) return '';
+      if (Array.isArray(value)) return value.join(', ');
+      return String(value);
+    }
+
+    function formatField(key, value) {
+      if (key === 'bands') return formatBands(value);
+      if (key === 'gain_dbi') return formatGainCompact(value) || formatBandObject(value, 'gain');
+      if (key === 'beamwidth') return formatBeamwidthCompact(value) || formatBandObject(value, 'beam');
+      if (Array.isArray(value)) return value.join('; ');
+      if (value && typeof value === 'object') return JSON.stringify(value);
+      return normalizeString(value);
+    }
+
+    function escapeCsvValue(value) {
+      const s = String(value || '');
+      return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+    }
+
+    function exportToCsv() {
+      if (!currentEntry) return;
+      const keys = PUBLIC_FIELDS.map(([k]) => k).filter(k => Object.prototype.hasOwnProperty.call(currentEntry, k));
+      const headers = keys.map(escapeCsvValue);
+      const values = keys.map(k => escapeCsvValue(formatField(k, currentEntry[k])));
+      const blob = new Blob([headers.join(',') + '\n' + values.join(',')], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = slugifyAntenna(currentEntry) + '.csv';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function addGallery(container, title, items, kind) {
+      if (!items || !items.length) return;
+      const section = document.createElement('div');
+      section.className = 'spec-section';
+      const h = document.createElement('h3');
+      h.textContent = title;
+      section.appendChild(h);
+      const grid = document.createElement('div');
+      grid.className = 'gallery-grid';
+      items.forEach(item => {
+        const url = safeUrl(item.url || item, { allowRelative: true });
+        if (!url) return;
+        const fig = document.createElement('figure');
+        fig.className = 'gallery-item ' + (kind || '');
+        const img = document.createElement('img');
+        img.src = url;
+        img.alt = item.label || title;
+        img.loading = 'lazy';
+        fig.appendChild(img);
+        if (item.label) {
+          const cap = document.createElement('figcaption');
+          cap.className = 'gallery-caption';
+          cap.textContent = item.label;
+          fig.appendChild(cap);
+        }
+        grid.appendChild(fig);
+      });
+      if (!grid.children.length) return;
+      section.appendChild(grid);
+      container.appendChild(section);
+    }
+
+    async function load() {
+      const errorEl = document.getElementById('error-message');
+      try {
+        const res = await fetch(DATA_URL, { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        const id = readId();
+        const entry = data.find(e => slugifyAntenna(e) === id);
+        if (!entry) {
+          errorEl.style.display = 'block';
+          errorEl.textContent = 'Antenna not found.';
+          return;
+        }
+        currentEntry = entry;
+
+        const titleText = `${entry.vendor || ''} ${entry.sku || ''}`.trim() || 'Antenna Details';
+        document.getElementById('title-header').textContent = titleText;
+        document.title = `${titleText} — AntennaComparison`;
+        document.getElementById('subtitle').textContent = entry.name || entry.form || '';
+
+        if (entry.legacy_sku) {
+          const legacy = document.getElementById('legacy-line');
+          legacy.style.display = 'block';
+          legacy.textContent = `Legacy AccelTex SKU: ${entry.legacy_sku}`;
+        }
+
+        const imgUrl = safeUrl(entry.image_url, { allowRelative: true });
+        const imageWrapper = document.getElementById('image-container');
+        const imageEl = document.getElementById('antenna-image');
+        if (imgUrl) {
+          imageEl.src = imgUrl;
+          imageEl.alt = titleText;
+          imageWrapper.style.display = 'block';
+          imageEl.onerror = () => { imageWrapper.style.display = 'none'; };
+        }
+
+        const actions = document.getElementById('actions-inline');
+        actions.className = 'detail-actions';
+        const sheets = Array.isArray(entry.datasheet_urls) ? entry.datasheet_urls : [];
+        sheets.forEach(sheet => {
+          const href = safeUrl(sheet.url);
+          if (!href) return;
+          const a = document.createElement('a');
+          a.href = href;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          a.className = 'btn-inline-action';
+          a.innerHTML = `<span>${sheet.label || 'Datasheet'}</span>`;
+          actions.appendChild(a);
+        });
+
+        const detailsEl = document.getElementById('details');
+        detailsEl.innerHTML = '';
+        PUBLIC_FIELDS.forEach(([key, label]) => {
+          if (INTERNAL_ONLY_KEYS.has(key)) return;
+          if (!Object.prototype.hasOwnProperty.call(entry, key)) return;
+          if (entry[key] == null || entry[key] === '') return;
+          const keyDiv = document.createElement('div');
+          keyDiv.className = 'key';
+          keyDiv.textContent = label;
+          const valDiv = document.createElement('div');
+          valDiv.className = 'val';
+          valDiv.textContent = formatField(key, entry[key]);
+          detailsEl.appendChild(keyDiv);
+          detailsEl.appendChild(valDiv);
+        });
+
+        const gallery = document.getElementById('gallery');
+        const photos = Array.isArray(entry.images) ? entry.images : [];
+        addGallery(gallery, 'Product photos', photos, 'photo');
+        addGallery(gallery, 'Radiation patterns', entry.pattern_images, 'pattern');
+        if (entry.dimension_image_url) {
+          addGallery(gallery, 'Dimensions', [{ label: 'Mechanical drawing', url: entry.dimension_image_url }], 'dimension');
+        }
+
+        const included = document.getElementById('included');
+        if (Array.isArray(entry.included_parts) && entry.included_parts.length) {
+          const section = document.createElement('div');
+          section.className = 'spec-section';
+          const h = document.createElement('h3');
+          h.textContent = 'Included parts';
+          section.appendChild(h);
+          const list = document.createElement('ul');
+          list.className = 'mount-list';
+          entry.included_parts.forEach(part => {
+            if (!part) return;
+            const li = document.createElement('li');
+            const name = document.createElement('div');
+            name.className = 'mount-name';
+            const qty = part.qty ? `${part.qty}× ` : '';
+            name.textContent = `${qty}${part.item || ''}`.trim();
+            li.appendChild(name);
+            if (part.part_number) {
+              const pn = document.createElement('div');
+              pn.className = 'mount-nums';
+              pn.textContent = part.part_number;
+              li.appendChild(pn);
+            }
+            list.appendChild(li);
+          });
+          section.appendChild(list);
+          included.appendChild(section);
+        }
+
+        const sourcesEl = document.getElementById('sources');
+        if (Array.isArray(entry.sources) && entry.sources.length) {
+          const section = document.createElement('div');
+          section.className = 'spec-section';
+          const h = document.createElement('h3');
+          h.textContent = 'Sources';
+          section.appendChild(h);
+          const list = document.createElement('ul');
+          list.className = 'notes-list';
+          entry.sources.forEach(src => {
+            const li = document.createElement('li');
+            const href = safeUrl(src.url);
+            if (href) {
+              const a = document.createElement('a');
+              a.href = href;
+              a.target = '_blank';
+              a.rel = 'noopener noreferrer';
+              a.textContent = src.label || src.id || href;
+              li.appendChild(a);
+            } else {
+              li.textContent = src.label || src.id || 'Source';
+            }
+            list.appendChild(li);
+          });
+          section.appendChild(list);
+          sourcesEl.appendChild(section);
+        }
+
+        const notesEl = document.getElementById('field-notes');
+        if (entry.field_notes && typeof entry.field_notes === 'object') {
+          const section = document.createElement('div');
+          section.className = 'spec-section';
+          const h = document.createElement('h3');
+          h.textContent = 'Merge notes';
+          section.appendChild(h);
+          const list = document.createElement('ul');
+          list.className = 'notes-list';
+          Object.entries(entry.field_notes).forEach(([k, v]) => {
+            const li = document.createElement('li');
+            li.textContent = `${k}: ${v}`;
+            list.appendChild(li);
+          });
+          section.appendChild(list);
+          notesEl.appendChild(section);
+        }
+
+        // Guard: never surface internal_notes / compatible_aps
+        if (entry.internal_notes) {
+          // intentionally unused in UI
+        }
+      } catch (err) {
+        errorEl.style.display = 'block';
+        errorEl.textContent = 'Failed to load antenna: ' + err.message;
+      }
+    }
+
+    document.getElementById('export-csv').addEventListener('click', exportToCsv);
+    const params = new URLSearchParams(window.location.search);
+    params.delete('id');
+    const backQs = params.toString();
+    document.getElementById('back-link').href = backQs ? `index.html?${backQs}` : 'index.html';
+    load();
+  </script>
+</body>
+</html>

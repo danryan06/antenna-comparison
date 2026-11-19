@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AntennaComparison — Wi-Fi Antenna Database</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <div class="header-left">
+        <a href="index.html" class="site-logo-link">
+          <img src="logo.png" alt="AntennaComparison" class="logo-image" />
+          <span class="logo-text">AntennaComparison</span>
+        </a>
+      </div>
+
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link active" data-page="index">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="8" y1="6" x2="21" y2="6"/>
+            <line x1="8" y1="12" x2="21" y2="12"/>
+            <line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/>
+            <line x1="3" y1="12" x2="3.01" y2="12"/>
+            <line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+          <span class="nav-text">Browse</span>
+        </a>
+
+        <a href="compare.html" class="nav-link" data-page="compare">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 20V10"/>
+            <path d="M12 20V4"/>
+            <path d="M6 20v-6"/>
+          </svg>
+          <span class="nav-text">Compare</span>
+        </a>
+      </nav>
+
+      <div class="header-right"></div>
+    </div>
+  </header>
+
+  <div class="filter-bar">
+    <div class="filter-bar-content">
+      <div class="search-wrapper">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input
+          type="text"
+          id="search"
+          class="search-input"
+          placeholder="Search vendor, SKU, legacy AccelTex SKU, connector..."
+          aria-label="Search antennas"
+        >
+      </div>
+
+      <div class="filter-group">
+        <select id="filter-vendor" class="filter-select" aria-label="Filter by vendor">
+          <option value="">All Vendors</option>
+        </select>
+
+        <select id="filter-form" class="filter-select" aria-label="Filter by form type">
+          <option value="">All Forms</option>
+          <option value="Omni">Omni</option>
+          <option value="Patch">Patch</option>
+          <option value="High-density patch">High-density patch</option>
+        </select>
+
+        <select id="filter-env" class="filter-select" aria-label="Filter by indoor/outdoor">
+          <option value="">Indoor &amp; Outdoor</option>
+          <option value="Indoor">Indoor</option>
+          <option value="Outdoor">Outdoor</option>
+          <option value="Indoor/Outdoor">Indoor/Outdoor</option>
+        </select>
+      </div>
+
+      <div class="filter-actions">
+        <button id="toggle-columns" type="button" class="btn-filter-action">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7m0-18H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7m0-18v18"/>
+          </svg>
+          <span>Choose Columns</span>
+        </button>
+
+        <button id="reset-btn" type="button" class="btn-filter-action btn-filter-reset">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="1 4 1 10 7 10"/>
+            <polyline points="23 20 23 14 17 14"/>
+            <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/>
+          </svg>
+          <span>Reset</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 24px;">
+    <p class="subtitle">Explore, filter, and compare Wi-Fi antennas.</p>
+
+    <div id="columns-panel" class="columns-panel">
+      <h3>Show/Hide Columns</h3>
+      <div id="columns-grid" class="columns-grid"></div>
+      <div style="margin-top:0.5rem; display:flex; justify-content:flex-end;">
+        <button id="reset-layout-btn" type="button" class="btn-link">Reset Layout</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="badge">Community-maintained</span>
+
+      <table>
+        <thead>
+          <tr>
+            <th class="sortable" data-key="vendor">Vendor</th>
+            <th class="sortable" data-key="sku">SKU</th>
+            <th class="sortable" data-key="form" data-tooltip="Omni, Patch, or High-density patch">Form</th>
+            <th class="sortable" data-key="bands" data-tooltip="Supported frequency bands">Bands</th>
+            <th class="sortable" data-key="gain_dbi" data-tooltip="Peak gain per band (dBi)">Gain</th>
+            <th class="sortable" data-key="beamwidth" data-tooltip="Horizontal / vertical beamwidth by band">Beamwidth</th>
+            <th class="sortable" data-key="connector" data-tooltip="Antenna connector type">Connector</th>
+            <th class="sortable" data-key="lead_count" data-tooltip="Number of antenna leads / elements">Leads</th>
+            <th class="sortable" data-key="indoor_outdoor">Indoor/Outdoor</th>
+            <th class="sortable" data-key="polarization">Polarization</th>
+            <th class="sortable" data-key="cable_length">Cable Length</th>
+            <th class="sortable" data-key="dimensions">Dimensions</th>
+            <th class="sortable" data-key="weight">Weight</th>
+            <th class="sortable" data-key="ip_rating">IP Rating</th>
+            <th class="sortable" data-key="legacy_sku" data-tooltip="Legacy AccelTex or prior catalog number">Legacy SKU</th>
+          </tr>
+        </thead>
+        <tbody id="antenna-table-body"></tbody>
+      </table>
+
+      <div id="error-message" class="error" style="display:none;"></div>
+
+      <div class="footer">
+        Maintained by Dan Ryan.
+      </div>
+    </div>
+  </div>
+
+  <button id="compare-fab" class="btn-primary floating-compare" style="display:none;" type="button" disabled>Compare (0)</button>
+
+  <script src="antenna-format.js"></script>
+  <script>
+    const DATA_URL = 'antenna_data.json';
+
+    let antennaData = [];
+    let currentQuery = '';
+    const currentFilters = { vendor: '', form: '', env: '' };
+    let currentSort = { key: 'vendor', dir: 'asc' };
+    const TABLE_COLUMN_KEYS = [
+      'vendor', 'sku', 'form', 'bands', 'gain_dbi', 'beamwidth', 'connector',
+      'lead_count', 'indoor_outdoor', 'polarization', 'cable_length',
+      'dimensions', 'weight', 'ip_rating', 'legacy_sku'
+    ];
+    function defaultHiddenColumns() {
+      return new Set(['lead_count', 'polarization', 'cable_length', 'dimensions', 'weight', 'ip_rating', 'legacy_sku']);
+    }
+    const hiddenColumns = defaultHiddenColumns();
+    const selectedIds = new Set();
+
+    function normalizeString(value) {
+      if (value == null) return '';
+      if (Array.isArray(value)) return value.join(', ');
+      if (typeof value === 'object') {
+        return formatBandObject(value, 'gain') || JSON.stringify(value);
+      }
+      return String(value);
+    }
+
+    function displayValue(entry, key) {
+      const v = entry[key];
+      if (key === 'bands') return formatBands(v);
+      if (key === 'gain_dbi') return formatGainCompact(v);
+      if (key === 'beamwidth') return formatBeamwidthCompact(v);
+      if (key === 'lead_count') return v == null ? '' : String(v);
+      return normalizeString(v);
+    }
+
+    function populateFilters() {
+      const vendorSelect = document.getElementById('filter-vendor');
+      const vendors = Array.from(new Set(antennaData.map(e => e.vendor).filter(Boolean))).sort((a, b) => a.localeCompare(b));
+      while (vendorSelect.options.length > 1) vendorSelect.remove(1);
+      vendors.forEach(v => {
+        const opt = document.createElement('option');
+        opt.value = v;
+        opt.textContent = v;
+        vendorSelect.appendChild(opt);
+      });
+    }
+
+    function updateSortIndicators() {
+      document.querySelectorAll('th.sortable').forEach(th => {
+        if (th.dataset.key === currentSort.key) {
+          th.setAttribute('data-dir', currentSort.dir);
+          th.setAttribute('aria-sort', currentSort.dir === 'asc' ? 'ascending' : 'descending');
+        } else {
+          th.removeAttribute('data-dir');
+          th.setAttribute('aria-sort', 'none');
+        }
+      });
+    }
+
+    function getColumnsFromHeader() {
+      return Array.from(document.querySelectorAll('thead th')).map((th, idx) => ({
+        key: th.dataset.key || `col_${idx + 1}`,
+        label: th.innerText.replace(/\s+/g, ' ').trim(),
+        index: idx
+      }));
+    }
+
+    function buildColumnsPanel() {
+      const grid = document.getElementById('columns-grid');
+      grid.innerHTML = '';
+      getColumnsFromHeader().forEach(col => {
+        const lock = col.key === 'vendor' || col.key === 'sku';
+        const label = document.createElement('label');
+        const input = document.createElement('input');
+        input.type = 'checkbox';
+        input.checked = !hiddenColumns.has(col.key) || lock;
+        input.disabled = lock;
+        input.addEventListener('change', () => {
+          if (input.checked) hiddenColumns.delete(col.key);
+          else hiddenColumns.add(col.key);
+          applyColumnVisibility();
+          updateUrl();
+        });
+        const span = document.createElement('span');
+        span.textContent = col.label;
+        label.appendChild(input);
+        label.appendChild(span);
+        grid.appendChild(label);
+      });
+    }
+
+    function applyColumnVisibility() {
+      const columns = getColumnsFromHeader();
+      const rows = Array.from(document.querySelectorAll('table tr'));
+      columns.forEach(col => {
+        const hide = hiddenColumns.has(col.key) && !(col.key === 'vendor' || col.key === 'sku');
+        rows.forEach(row => {
+          const cell = Array.from(row.children).find(item => item.dataset.key === col.key);
+          if (cell) cell.style.display = hide ? 'none' : '';
+        });
+      });
+      updateSortIndicators();
+    }
+
+    function saveLayout() {
+      const ths = Array.from(document.querySelectorAll('thead th'));
+      localStorage.setItem('antennaTable.colOrder', JSON.stringify(ths.map(th => th.dataset.key || '')));
+      const widths = {};
+      ths.forEach(th => {
+        if (th.dataset.key) widths[th.dataset.key] = th.style.width || '';
+      });
+      localStorage.setItem('antennaTable.colWidths', JSON.stringify(widths));
+    }
+
+    function applyColumnOrderFromHeader() {
+      const headerRow = document.querySelector('thead tr');
+      if (!headerRow) return;
+      const keys = Array.from(headerRow.children).map(th => th.dataset.key || '');
+      const tbody = document.querySelector('tbody');
+      if (!tbody) return;
+      Array.from(tbody.rows).forEach(row => {
+        const cells = new Map(Array.from(row.children).map(cell => [cell.dataset.key || '', cell]));
+        keys.forEach(key => {
+          const cell = cells.get(key);
+          if (cell) row.appendChild(cell);
+        });
+      });
+    }
+
+    function loadLayout() {
+      const headerRow = document.querySelector('thead tr');
+      if (!headerRow) return;
+      let storedOrder = [];
+      let storedWidths = {};
+      try {
+        storedOrder = JSON.parse(localStorage.getItem('antennaTable.colOrder') || '[]');
+        storedWidths = JSON.parse(localStorage.getItem('antennaTable.colWidths') || '{}');
+      } catch (err) {
+        localStorage.removeItem('antennaTable.colOrder');
+        localStorage.removeItem('antennaTable.colWidths');
+      }
+      if (Array.isArray(storedOrder) && storedOrder.length > 0) {
+        const map = {};
+        Array.from(headerRow.children).forEach(th => { map[th.dataset.key || ''] = th; });
+        const validOrder = [...new Set(storedOrder)].filter(key => map[key]);
+        Object.keys(map).forEach(key => {
+          if (!validOrder.includes(key)) validOrder.push(key);
+        });
+        validOrder.forEach(key => {
+          if (map[key]) headerRow.appendChild(map[key]);
+        });
+      }
+      applyColumnOrderFromHeader();
+      Array.from(headerRow.children).forEach(th => {
+        const key = th.dataset.key || '';
+        const w = storedWidths[key];
+        if (!w) return;
+        th.style.width = w;
+        const tbody = document.querySelector('tbody');
+        if (!tbody) return;
+        Array.from(tbody.rows).forEach(row => {
+          const cell = Array.from(row.children).find(item => item.dataset.key === key);
+          if (cell) cell.style.width = w;
+        });
+      });
+    }
+
+    let isResizing = false;
+
+    function initColumnResizersAndDnD() {
+      const headerRow = document.querySelector('thead tr');
+      if (!headerRow) return;
+      const ths = Array.from(headerRow.querySelectorAll('th'));
+      ths.forEach((th) => {
+        if (!th.querySelector('.col-resizer')) {
+          const resizer = document.createElement('span');
+          resizer.className = 'col-resizer';
+          th.appendChild(resizer);
+          let startX, startWidth;
+          const onMouseMove = (e) => {
+            const newWidth = Math.max(60, startWidth + (e.clientX - startX));
+            th.style.width = newWidth + 'px';
+            th.style.minWidth = newWidth + 'px';
+            const tbody = document.querySelector('tbody');
+            if (!tbody) return;
+            const colIndex = Array.from(th.parentNode.children).indexOf(th);
+            Array.from(tbody.rows).forEach(row => {
+              const cell = row.children[colIndex];
+              if (cell) {
+                cell.style.width = newWidth + 'px';
+                cell.style.minWidth = newWidth + 'px';
+              }
+            });
+          };
+          let blockDragStart;
+          const onMouseUp = () => {
+            document.removeEventListener('mousemove', onMouseMove);
+            document.removeEventListener('mouseup', onMouseUp);
+            document.removeEventListener('dragstart', blockDragStart, true);
+            isResizing = false;
+            th.draggable = true;
+            saveLayout();
+          };
+          resizer.addEventListener('mousedown', (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            startX = e.clientX;
+            startWidth = th.getBoundingClientRect().width;
+            isResizing = true;
+            th.draggable = false;
+            blockDragStart = (ev) => { ev.preventDefault(); };
+            document.addEventListener('dragstart', blockDragStart, true);
+            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mouseup', onMouseUp);
+          });
+        }
+        th.setAttribute('draggable', 'true');
+        th.addEventListener('dragstart', (e) => {
+          if (isResizing) { e.preventDefault(); return; }
+          e.dataTransfer.setData('text/plain', String(Array.from(th.parentNode.children).indexOf(th)));
+        });
+        th.addEventListener('dragover', (e) => {
+          e.preventDefault();
+          const rect = th.getBoundingClientRect();
+          th.classList.toggle('drag-over-left', e.clientX < rect.left + rect.width / 2);
+          th.classList.toggle('drag-over-right', e.clientX >= rect.left + rect.width / 2);
+        });
+        th.addEventListener('dragleave', () => {
+          th.classList.remove('drag-over-left', 'drag-over-right');
+        });
+        th.addEventListener('drop', (e) => {
+          e.preventDefault();
+          const srcIndex = parseInt(e.dataTransfer.getData('text/plain'), 10);
+          const srcTh = ths[srcIndex];
+          const after = e.clientX >= th.getBoundingClientRect().left + th.getBoundingClientRect().width / 2;
+          th.classList.remove('drag-over-left', 'drag-over-right');
+          if (srcTh && srcTh !== th) {
+            if (after) th.parentNode.insertBefore(srcTh, th.nextSibling);
+            else th.parentNode.insertBefore(srcTh, th);
+            ths.splice(ths.indexOf(srcTh), 1);
+            ths.splice(Array.from(th.parentNode.children).indexOf(srcTh), 0, srcTh);
+            applyColumnOrderFromHeader();
+            saveLayout();
+          }
+        });
+      });
+    }
+
+    function envMatches(value, selected) {
+      if (!selected) return true;
+      const v = String(value || '').toLowerCase();
+      const s = selected.toLowerCase();
+      if (s === 'indoor/outdoor') return v === 'indoor/outdoor' || (v.includes('indoor') && v.includes('outdoor'));
+      if (s === 'indoor') return v === 'indoor' || v.includes('indoor/outdoor') || v === 'indoor or outdoor';
+      if (s === 'outdoor') return v === 'outdoor' || v.includes('indoor/outdoor') || v === 'indoor or outdoor';
+      return v === s;
+    }
+
+    function renderTable() {
+      const tbody = document.getElementById('antenna-table-body');
+      const q = currentQuery.trim().toLowerCase();
+      const filtered = antennaData.filter(entry => {
+        if (currentFilters.vendor && entry.vendor !== currentFilters.vendor) return false;
+        if (currentFilters.form && String(entry.form || '').toLowerCase() !== currentFilters.form.toLowerCase()) return false;
+        if (currentFilters.env && !envMatches(entry.indoor_outdoor, currentFilters.env)) return false;
+        if (!q) return true;
+        return searchBlob(entry).includes(q);
+      });
+
+      const key = currentSort.key;
+      const dir = currentSort.dir === 'asc' ? 1 : -1;
+      const sorted = filtered.slice().sort((a, b) => {
+        const av = displayValue(a, key).toLowerCase();
+        const bv = displayValue(b, key).toLowerCase();
+        return av.localeCompare(bv, undefined, { numeric: true }) * dir;
+      });
+
+      tbody.innerHTML = '';
+      sorted.forEach(entry => {
+        const tr = document.createElement('tr');
+        const id = slugifyAntenna(entry);
+
+        TABLE_COLUMN_KEYS.forEach((colKey, index) => {
+          const td = document.createElement('td');
+          td.dataset.key = colKey;
+          if (colKey === 'vendor') {
+            td.classList.add('vendor');
+            const cb = document.createElement('input');
+            cb.type = 'checkbox';
+            cb.className = 'row-select';
+            cb.setAttribute('aria-label', `Select ${entry.vendor || ''} ${entry.sku || ''} for comparison`.trim());
+            cb.checked = selectedIds.has(id);
+            cb.addEventListener('click', e => e.stopPropagation());
+            cb.addEventListener('change', () => {
+              if (cb.checked) selectedIds.add(id);
+              else selectedIds.delete(id);
+              updateCompareFab();
+            });
+            td.appendChild(cb);
+            td.appendChild(document.createTextNode(entry.vendor || ''));
+          } else if (colKey === 'sku') {
+            const link = document.createElement('a');
+            link.href = `antenna.html?id=${encodeURIComponent(id)}`;
+            link.textContent = entry.sku || '';
+            link.addEventListener('click', e => e.stopPropagation());
+            td.appendChild(link);
+            td.style.fontSize = '1rem';
+            td.style.fontWeight = '600';
+          } else {
+            td.textContent = displayValue(entry, colKey);
+            if (colKey === 'sku' || colKey === 'legacy_sku' || colKey === 'connector') {
+              td.style.fontFamily = 'JetBrains Mono, ui-monospace, monospace';
+            }
+          }
+          tr.appendChild(td);
+        });
+
+        tr.addEventListener('click', () => {
+          const state = window.location.search.replace(/^\?/, '');
+          window.location.href = `antenna.html?id=${encodeURIComponent(id)}${state ? '&' + state : ''}`;
+        });
+        tbody.appendChild(tr);
+      });
+
+      if (sorted.length === 0) {
+        const tr = document.createElement('tr');
+        const td = document.createElement('td');
+        td.setAttribute('colspan', String(TABLE_COLUMN_KEYS.length));
+        td.className = 'empty-state-cell';
+        td.innerHTML = `
+          <div class="empty-state-enhanced">
+            <h3>No antennas match your criteria</h3>
+            <p>${q || currentFilters.vendor || currentFilters.form || currentFilters.env
+              ? 'Try adjusting your filters or search terms'
+              : 'No antennas defined yet. Add entries to antenna_data.json.'}</p>
+          </div>
+        `;
+        tr.appendChild(td);
+        tbody.appendChild(tr);
+      }
+
+      updateSortIndicators();
+      applyColumnOrderFromHeader();
+      applyColumnVisibility();
+      updateCompareFab();
+    }
+
+    function updateCompareFab() {
+      const fab = document.getElementById('compare-fab');
+      const n = selectedIds.size;
+      fab.disabled = n < 2;
+      if (n >= 2) {
+        fab.style.display = 'inline-flex';
+        fab.textContent = `Compare (${n})`;
+      } else if (n === 1) {
+        fab.style.display = 'inline-flex';
+        fab.textContent = 'Select 1 more to compare';
+      } else {
+        fab.style.display = 'none';
+      }
+    }
+
+    function updateUrl() {
+      const params = new URLSearchParams();
+      if (currentQuery) params.set('q', currentQuery);
+      if (currentFilters.vendor) params.set('vendor', currentFilters.vendor);
+      if (currentFilters.form) params.set('form', currentFilters.form);
+      if (currentFilters.env) params.set('env', currentFilters.env);
+      if (currentSort.key !== 'vendor' || currentSort.dir !== 'asc') {
+        params.set('sort', currentSort.key);
+        params.set('dir', currentSort.dir);
+      }
+      if (hiddenColumns.size) params.set('hide', Array.from(hiddenColumns).join(','));
+      if (selectedIds.size) params.set('sel', Array.from(selectedIds).join(','));
+      const qs = params.toString();
+      history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+    }
+
+    function readUrlState() {
+      const params = new URLSearchParams(window.location.search);
+      currentQuery = params.get('q') || '';
+      currentFilters.vendor = params.get('vendor') || '';
+      currentFilters.form = params.get('form') || '';
+      currentFilters.env = params.get('env') || '';
+      currentSort.key = params.get('sort') || 'vendor';
+      currentSort.dir = params.get('dir') === 'desc' ? 'desc' : 'asc';
+      const hide = params.get('hide');
+      if (hide) {
+        hiddenColumns.clear();
+        hide.split(',').filter(Boolean).forEach(k => hiddenColumns.add(k));
+      }
+      const sel = params.get('sel');
+      if (sel) sel.split(',').filter(Boolean).forEach(id => selectedIds.add(id));
+      document.getElementById('search').value = currentQuery;
+    }
+
+    async function load() {
+      const errorEl = document.getElementById('error-message');
+      try {
+        const res = await fetch(DATA_URL, { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        antennaData = await res.json();
+        if (!Array.isArray(antennaData)) throw new Error('antenna_data.json must be an array');
+        readUrlState();
+        populateFilters();
+        document.getElementById('filter-vendor').value = currentFilters.vendor;
+        document.getElementById('filter-form').value = currentFilters.form;
+        document.getElementById('filter-env').value = currentFilters.env;
+        buildColumnsPanel();
+        loadLayout();
+        initColumnResizersAndDnD();
+        renderTable();
+      } catch (err) {
+        errorEl.style.display = 'block';
+        errorEl.textContent = 'Failed to load antenna data: ' + err.message;
+      }
+    }
+
+    document.getElementById('search').addEventListener('input', (e) => {
+      currentQuery = e.target.value;
+      updateUrl();
+      renderTable();
+    });
+    document.getElementById('filter-vendor').addEventListener('change', (e) => {
+      currentFilters.vendor = e.target.value;
+      updateUrl();
+      renderTable();
+    });
+    document.getElementById('filter-form').addEventListener('change', (e) => {
+      currentFilters.form = e.target.value;
+      updateUrl();
+      renderTable();
+    });
+    document.getElementById('filter-env').addEventListener('change', (e) => {
+      currentFilters.env = e.target.value;
+      updateUrl();
+      renderTable();
+    });
+    document.getElementById('toggle-columns').addEventListener('click', () => {
+      document.getElementById('columns-panel').classList.toggle('open');
+    });
+    document.getElementById('reset-btn').addEventListener('click', () => {
+      currentQuery = '';
+      currentFilters.vendor = '';
+      currentFilters.form = '';
+      currentFilters.env = '';
+      currentSort = { key: 'vendor', dir: 'asc' };
+      hiddenColumns.clear();
+      defaultHiddenColumns().forEach(k => hiddenColumns.add(k));
+      selectedIds.clear();
+      document.getElementById('search').value = '';
+      document.getElementById('filter-vendor').value = '';
+      document.getElementById('filter-form').value = '';
+      document.getElementById('filter-env').value = '';
+      buildColumnsPanel();
+      updateUrl();
+      renderTable();
+    });
+    document.getElementById('reset-layout-btn').addEventListener('click', () => {
+      localStorage.removeItem('antennaTable.colOrder');
+      localStorage.removeItem('antennaTable.colWidths');
+      location.reload();
+    });
+    document.querySelectorAll('th.sortable').forEach(th => {
+      th.addEventListener('click', () => {
+        const key = th.dataset.key;
+        if (!key) return;
+        if (currentSort.key === key) currentSort.dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
+        else { currentSort.key = key; currentSort.dir = 'asc'; }
+        updateUrl();
+        renderTable();
+      });
+    });
+    document.getElementById('compare-fab').addEventListener('click', () => {
+      if (selectedIds.size < 2) return;
+      window.location.href = `compare.html?ids=${encodeURIComponent(Array.from(selectedIds).join(','))}`;
+    });
+
+    load();
+  </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+[
+  {
+    "vendor": "AccelTex / Hubbell",
+    "sku": "ATS-03414",
+    "legacy_sku": "ATS-OHDP-2456-14-8RPSP-36",
+    "name": "2.4/5/6 GHz 14 dBi 8-Element Indoor/Outdoor High Density Patch Antenna with RPSMA",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": ["2.4", "5", "6"],
+    "frequency_range": "2.4-2.48/5.15-5.85/6-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 13,
+      "5": 15,
+      "6": 15
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "25°",
+        "5": "20°",
+        "6": "20°"
+      },
+      "vertical": {
+        "2.4": "25°",
+        "5": "20°",
+        "6": "20°"
+      }
+    },
+    "connector": "RPSMA",
+    "lead_count": 8,
+    "polarization": "4 Vertical, 4 Horizontal",
+    "cable_length": "36 in (910 mm)",
+    "cable_type": "ATS-200",
+    "dimensions": "24 × 24 × 1.6 in (600 × 600 × 40 mm)",
+    "weight": "2.5 lb (0.68 kg)",
+    "ip_rating": "IP67",
+    "radome": "ASA",
+    "mount_type": "Flush mount to wall or articulating wall/pole mount",
+    "included_parts": [
+      {
+        "item": "Articulating wall/pole mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "134 mph (216 km/h)",
+    "vswr": "<1.5:1 (max 2.0)",
+    "isolation": ">30 dB",
+    "operating_temp": "-40 to 70 °C",
+    "image_url": "images/acceltex-hubbell/ats-03414.jpg",
+    "images": [
+      {
+        "label": "Product (Hubbell SPEC)",
+        "url": "images/acceltex-hubbell/ats-03414.jpg"
+      },
+      {
+        "label": "Product (AccelTex sheet)",
+        "url": "images/acceltex-hubbell/ats-03414-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-03414-pattern-vertical.jpg"
+      },
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-03414-pattern-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/acceltex-hubbell/ats-03414-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Hubbell SPEC (ATS-ATS03414-SPEC-EN)",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS03414-SPEC-EN.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hubbell SPEC ATS-ATS03414-SPEC-EN (REV 10/2026)",
+        "id": "ATS-ATS03414-SPEC-EN",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS03414-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OHDP-2456-14-8RPSP-36 (Version 1)",
+        "id": "ATS-OHDP-2456-14-8RPSP-36_Spec_Sheet",
+        "url": null,
+        "note": "Legacy AccelTex PDF provided as project sample; public URL not linked yet"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "Electrical tables list 13/15/15 dBi; marketing title on both sheets says 14 dBi.",
+      "cable_type": "Hubbell SPEC lists ATS-200; AccelTex sheet lists ATS-195. Primary value uses Hubbell (ATS-200).",
+      "radome": "Hubbell SPEC lists ASA; AccelTex sheet lists ABS. Primary value uses Hubbell (ASA).",
+      "vswr": "Taken from AccelTex sheet (<1.5:1, max 2.0). Hubbell lists Voltage Ratio <2.5.",
+      "weight": "Taken from AccelTex sheet (not on Hubbell SPEC).",
+      "ip_rating": "Taken from AccelTex sheet (IP67; not on Hubbell SPEC).",
+      "included_parts": "AccelTex sheet notes articulating wall/pole mount included; Hubbell lists installation type only.",
+      "bands": "2.4 / 5 / 6 GHz. Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Aruba/HP AP-654",
+        "Aruba/HP AP-754"
+      ],
+      "maintainer": "Seed entry for AntennaComparison scaffold. Compatible AP list is internal-only and must never render in the UI."
+    }
+  }
+]

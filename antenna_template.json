@@ -1,0 +1,88 @@
+{
+  "vendor": "Vendor Name",
+  "sku": "Primary Hubbell or vendor catalog number",
+  "legacy_sku": "Legacy AccelTex SKU if any (optional)",
+  "name": "Short product name / marketing title",
+  "form": "Omni | Patch | High-density patch",
+  "indoor_outdoor": "Indoor | Outdoor | Indoor/Outdoor",
+  "bands": ["2.4", "5", "6"],
+  "frequency_range": "2.4-2.48/5.15-5.85/6-7.125 GHz",
+  "gain_dbi": {
+    "2.4": 13,
+    "5": 15,
+    "6": 15
+  },
+  "beamwidth": {
+    "horizontal": {
+      "2.4": "25°",
+      "5": "20°",
+      "6": "20°"
+    },
+    "vertical": {
+      "2.4": "25°",
+      "5": "20°",
+      "6": "20°"
+    }
+  },
+  "connector": "RPSMA",
+  "lead_count": 8,
+  "polarization": "4 Vertical, 4 Horizontal",
+  "cable_length": "36 in (910 mm)",
+  "cable_type": "ATS-200",
+  "dimensions": "24 × 24 × 1.6 in (600 × 600 × 40 mm)",
+  "weight": "2.5 lb (0.68 kg)",
+  "ip_rating": "IP67",
+  "radome": "ASA",
+  "mount_type": "Flush mount to wall or articulating wall/pole mount",
+  "included_parts": [
+    {
+      "item": "Articulating wall/pole mount",
+      "part_number": null,
+      "qty": 1
+    }
+  ],
+  "wind_rating": "134 mph (216 km/h)",
+  "vswr": "<1.5:1 (max 2.0)",
+  "isolation": ">30 dB",
+  "operating_temp": "-40 to 70 °C",
+  "image_url": "images/vendor/sku.jpg",
+  "images": [
+    {
+      "label": "Product",
+      "url": "images/vendor/sku.jpg"
+    }
+  ],
+  "pattern_images": [
+    {
+      "label": "Vertical",
+      "url": "images/vendor/sku-pattern-vertical.jpg"
+    },
+    {
+      "label": "Horizontal",
+      "url": "images/vendor/sku-pattern-horizontal.jpg"
+    }
+  ],
+  "dimension_image_url": "images/vendor/sku-dimensions.jpg",
+  "datasheet_urls": [
+    {
+      "label": "Vendor SPEC",
+      "url": "https://example.com/spec.pdf"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Vendor SPEC",
+      "id": "doc-id",
+      "url": "https://example.com/spec.pdf"
+    }
+  ],
+  "field_notes": {
+    "example_field": "Explain dual-PDF conflicts or merge choices here"
+  },
+  "internal_notes": {
+    "compatible_aps": [
+      "Vendor AP models listed on datasheet — never render in UI"
+    ],
+    "maintainer": "Free-form maintainer notes"
+  }
+}
