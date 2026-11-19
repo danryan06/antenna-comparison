@@ -6,7 +6,11 @@
     "name": "2.4/5/6 GHz 14 dBi 8-Element Indoor/Outdoor High Density Patch Antenna with RPSMA",
     "form": "High-density patch",
     "indoor_outdoor": "Indoor/Outdoor",
-    "bands": ["2.4", "5", "6"],
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
     "frequency_range": "2.4-2.48/5.15-5.85/6-7.125 GHz",
     "gain_dbi": {
       "2.4": 13,
@@ -15,14 +19,14 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "25°",
-        "5": "20°",
-        "6": "20°"
+        "2.4": "25\u00b0",
+        "5": "20\u00b0",
+        "6": "20\u00b0"
       },
       "vertical": {
-        "2.4": "25°",
-        "5": "20°",
-        "6": "20°"
+        "2.4": "25\u00b0",
+        "5": "20\u00b0",
+        "6": "20\u00b0"
       }
     },
     "connector": "RPSMA",
@@ -30,7 +34,7 @@
     "polarization": "4 Vertical, 4 Horizontal",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-200",
-    "dimensions": "24 × 24 × 1.6 in (600 × 600 × 40 mm)",
+    "dimensions": "24 \u00d7 24 \u00d7 1.6 in (600 \u00d7 600 \u00d7 40 mm)",
     "weight": "2.5 lb (0.68 kg)",
     "ip_rating": "IP67",
     "radome": "ASA",
@@ -45,7 +49,7 @@
     "wind_rating": "134 mph (216 km/h)",
     "vswr": "<1.5:1 (max 2.0)",
     "isolation": ">30 dB",
-    "operating_temp": "-40 to 70 °C",
+    "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-03414.jpg",
     "images": [
       {
@@ -113,7 +117,10 @@
     "name": "2.4/5 GHz 4/6 dBi 6 Element Indoor/Outdoor Omni Antenna with N-Style",
     "form": "Omni",
     "indoor_outdoor": "Indoor/Outdoor",
-    "bands": ["2.4", "5"],
+    "bands": [
+      "2.4",
+      "5"
+    ],
     "frequency_range": "2.4-2.5/4.9-5.85 GHz",
     "gain_dbi": {
       "2.4": 4,
@@ -121,12 +128,12 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "360°",
-        "5": "360°"
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
       },
       "vertical": {
-        "2.4": "61°",
-        "5": "39°"
+        "2.4": "61\u00b0",
+        "5": "39\u00b0"
       }
     },
     "connector": "N-Style Plug",
@@ -134,7 +141,7 @@
     "polarization": "Vertical",
     "cable_length": "36 in (910 mm)",
     "cable_type": "RG58",
-    "dimensions": "⌀ 6.1 × 2.8 in H (⌀ 154 × 70 mm H)",
+    "dimensions": "\u2300 6.1 \u00d7 2.8 in H (\u2300 154 \u00d7 70 mm H)",
     "weight": "0.55 lb (0.25 kg)",
     "ip_rating": "IP66",
     "radome": "ASA",
@@ -149,7 +156,7 @@
     "wind_rating": "130 mph (210 km/h)",
     "vswr": "<2.0:1",
     "isolation": ">20 dB",
-    "operating_temp": "-40 to 65 °C",
+    "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01050.jpg",
     "images": [
       {
@@ -163,20 +170,20 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4 GHz H-Plane",
-        "url": "images/acceltex-hubbell/ats-01050-pattern-2-4-ghz-h-plane.jpg"
+        "label": "2.4 GHz Horizontal",
+        "url": "images/acceltex-hubbell/ats-01050-pattern-2-4-ghz-horizontal.jpg"
       },
       {
-        "label": "2.4 GHz V-Plane",
-        "url": "images/acceltex-hubbell/ats-01050-pattern-2-4-ghz-v-plane.jpg"
+        "label": "2.4 GHz Vertical",
+        "url": "images/acceltex-hubbell/ats-01050-pattern-2-4-ghz-vertical.jpg"
       },
       {
-        "label": "5 GHz V-Plane",
-        "url": "images/acceltex-hubbell/ats-01050-pattern-5-ghz-v-plane.jpg"
+        "label": "5 GHz Vertical",
+        "url": "images/acceltex-hubbell/ats-01050-pattern-5-ghz-vertical.jpg"
       },
       {
-        "label": "5 GHz H-Plane",
-        "url": "images/acceltex-hubbell/ats-01050-pattern-5-ghz-h-plane.jpg"
+        "label": "5 GHz Horizontal",
+        "url": "images/acceltex-hubbell/ats-01050-pattern-5-ghz-horizontal.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -205,7 +212,7 @@
     "field_notes": {
       "weight": "Taken from AccelTex sheet (not on Hubbell SPEC).",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
-      "dimensions": "AccelTex sheet lists ⌀ 6.1 × 2.8 in; Hubbell lists Length 6.1 in / Width 2.8 in."
+      "dimensions": "AccelTex sheet lists \u2300 6.1 \u00d7 2.8 in; Hubbell lists Length 6.1 in / Width 2.8 in."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -224,7 +231,10 @@
     "name": "2.4/5 GHz 4/6 dBi 4 Element Indoor/Outdoor Omni Antenna with N-Style",
     "form": "Omni",
     "indoor_outdoor": "Indoor/Outdoor",
-    "bands": ["2.4", "5"],
+    "bands": [
+      "2.4",
+      "5"
+    ],
     "frequency_range": "2.4-2.5/4.9-5.85 GHz",
     "gain_dbi": {
       "2.4": 4,
@@ -232,12 +242,12 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "360°",
-        "5": "360°"
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
       },
       "vertical": {
-        "2.4": "144°",
-        "5": "55°"
+        "2.4": "144\u00b0",
+        "5": "55\u00b0"
       }
     },
     "connector": "N-Style Plug",
@@ -245,7 +255,7 @@
     "polarization": "Vertical",
     "cable_length": "36 in (910 mm)",
     "cable_type": "RG58",
-    "dimensions": "⌀ 4.7 × 2.8 in H (⌀ 120 × 70 mm H)",
+    "dimensions": "\u2300 4.7 \u00d7 2.8 in H (\u2300 120 \u00d7 70 mm H)",
     "weight": "0.4 lb (0.2 kg)",
     "ip_rating": "IP66",
     "radome": "ASA",
@@ -260,7 +270,7 @@
     "wind_rating": "130 mph (210 km/h)",
     "vswr": "<2.0:1",
     "isolation": ">20 dB",
-    "operating_temp": "-40 to 65 °C",
+    "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01046.jpg",
     "images": [
       {
@@ -274,20 +284,20 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4 GHz H-Plane",
-        "url": "images/acceltex-hubbell/ats-01046-pattern-2-4-ghz-h-plane.jpg"
+        "label": "2.4 GHz Horizontal",
+        "url": "images/acceltex-hubbell/ats-01046-pattern-2-4-ghz-horizontal.jpg"
       },
       {
-        "label": "2.4 GHz V-Plane",
-        "url": "images/acceltex-hubbell/ats-01046-pattern-2-4-ghz-v-plane.jpg"
+        "label": "2.4 GHz Vertical",
+        "url": "images/acceltex-hubbell/ats-01046-pattern-2-4-ghz-vertical.jpg"
       },
       {
-        "label": "5 GHz V-Plane",
-        "url": "images/acceltex-hubbell/ats-01046-pattern-5-ghz-v-plane.jpg"
+        "label": "5 GHz Vertical",
+        "url": "images/acceltex-hubbell/ats-01046-pattern-5-ghz-vertical.jpg"
       },
       {
-        "label": "5 GHz H-Plane",
-        "url": "images/acceltex-hubbell/ats-01046-pattern-5-ghz-h-plane.jpg"
+        "label": "5 GHz Horizontal",
+        "url": "images/acceltex-hubbell/ats-01046-pattern-5-ghz-horizontal.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -340,7 +350,10 @@
     "name": "2.4/5 GHz 3/7 dBi White Indoor/Outdoor Omni Antenna with N-Style",
     "form": "Omni",
     "indoor_outdoor": "Indoor/Outdoor",
-    "bands": ["2.4", "5"],
+    "bands": [
+      "2.4",
+      "5"
+    ],
     "frequency_range": "2.4-2.5/5.1-5.85 GHz",
     "gain_dbi": {
       "2.4": 3,
@@ -348,12 +361,12 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "360°",
-        "5": "360°"
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
       },
       "vertical": {
-        "2.4": "50°",
-        "5": "30°"
+        "2.4": "50\u00b0",
+        "5": "30\u00b0"
       }
     },
     "connector": "N-Style Plug",
@@ -368,9 +381,9 @@
     "mount_type": "Direct-connect / integrated connector (outdoor stick)",
     "included_parts": [],
     "wind_rating": null,
-    "vswr": "≤2.84 / ≤1.49",
+    "vswr": "\u22642.84 / \u22641.49",
     "isolation": null,
-    "operating_temp": "-40 to 60 °C",
+    "operating_temp": "-40 to 60 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01038.jpg",
     "images": [
       {
@@ -416,7 +429,7 @@
       }
     ],
     "field_notes": {
-      "gain_dbi": "Hubbell marketing/electrical list 3/7 dBi; AccelTex sheet title sometimes says 2/3.5 dBi — primary uses Hubbell 3/7.",
+      "gain_dbi": "Hubbell marketing/electrical list 3/7 dBi; AccelTex sheet title sometimes says 2/3.5 dBi \u2014 primary uses Hubbell 3/7.",
       "ip_rating": "AccelTex sheet lists both Ingress Protection Outdoor IP65 and IP Rating IP66; primary uses IP66.",
       "weight": "Taken from AccelTex sheet."
     },
@@ -441,7 +454,11 @@
     "name": "2.4/5/6 GHz 4/6/6 dBi 6 Element Omni Antenna with RPSMA Plugs",
     "form": "Omni",
     "indoor_outdoor": "Indoor/Outdoor",
-    "bands": ["2.4", "5", "6"],
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
     "frequency_range": "2.4-2.48/5.15-5.85/6-7.125 GHz",
     "gain_dbi": {
       "2.4": 4,
@@ -450,14 +467,14 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "360°",
-        "5": "360°",
-        "6": "360°"
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
       },
       "vertical": {
-        "2.4": "105°",
-        "5": "75°",
-        "6": "75°"
+        "2.4": "105\u00b0",
+        "5": "75\u00b0",
+        "6": "75\u00b0"
       }
     },
     "connector": "RPSMA Plug",
@@ -465,7 +482,7 @@
     "polarization": "Vertical",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-200",
-    "dimensions": "4.7 × 4.7 × 2.8 in (119.4 × 119.4 × 71 mm)",
+    "dimensions": "4.7 \u00d7 4.7 \u00d7 2.8 in (119.4 \u00d7 119.4 \u00d7 71 mm)",
     "weight": "0.4 lb (0.18 kg)",
     "ip_rating": "IP66",
     "radome": "ABS",
@@ -478,9 +495,9 @@
       }
     ],
     "wind_rating": "134 mph (216 km/h)",
-    "vswr": "≤1.5:1, max 2.0",
+    "vswr": "\u22641.5:1, max 2.0",
     "isolation": ">30 dB",
-    "operating_temp": "-40 to 70 °C",
+    "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01060.jpg",
     "images": [
       {
@@ -526,7 +543,7 @@
       }
     ],
     "field_notes": {
-      "radome": "AccelTex sheet lists ABS; Hubbell SPEC product photo is small — dimensions/weight/IP/VSWR/isolation taken from AccelTex sheet where Hubbell SPEC omits them.",
+      "radome": "AccelTex sheet lists ABS; Hubbell SPEC product photo is small \u2014 dimensions/weight/IP/VSWR/isolation taken from AccelTex sheet where Hubbell SPEC omits them.",
       "bands": "Tri-band 2.4/5/6. Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
       "pattern_images": "Cropped from combined H/V figure on AccelTex sheet."
     },
@@ -547,7 +564,10 @@
     "name": "2.4/5 GHz 8/10 dBi 6 Element Indoor/Outdoor Patch Antenna with RPSMA V2",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
-    "bands": ["2.4", "5"],
+    "bands": [
+      "2.4",
+      "5"
+    ],
     "frequency_range": "2.4-2.5/4.9-5.85 GHz",
     "gain_dbi": {
       "2.4": 8,
@@ -555,12 +575,12 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "55°",
-        "5": "45°"
+        "2.4": "55\u00b0",
+        "5": "45\u00b0"
       },
       "vertical": {
-        "2.4": "65°",
-        "5": "45°"
+        "2.4": "65\u00b0",
+        "5": "45\u00b0"
       }
     },
     "connector": "RPSMA Plug",
@@ -568,7 +588,7 @@
     "polarization": "3 Vertical, 3 Horizontal",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-195",
-    "dimensions": "8.1 × 7 × 2 in (207 × 177 × 46–51 mm)",
+    "dimensions": "8.1 \u00d7 7 \u00d7 2 in (207 \u00d7 177 \u00d7 46\u201351 mm)",
     "weight": "1.2 lb (0.5 kg)",
     "ip_rating": "IP66",
     "radome": "ASA",
@@ -583,7 +603,7 @@
     "wind_rating": "130 mph (210 km/h)",
     "vswr": "<2.0:1",
     "isolation": ">20 dB",
-    "operating_temp": "-40 to 65 °C",
+    "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-03021.jpg",
     "images": [
       {
@@ -631,7 +651,7 @@
     "field_notes": {
       "weight": "Taken from AccelTex sheet.",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
-      "dimensions": "Hubbell lists 8.1 × 7 × 2 in; AccelTex lists 8.1 × 7 × 1.8 in — primary uses Hubbell depth."
+      "dimensions": "Hubbell lists 8.1 \u00d7 7 \u00d7 2 in; AccelTex lists 8.1 \u00d7 7 \u00d7 1.8 in \u2014 primary uses Hubbell depth."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -649,7 +669,10 @@
     "name": "2.4/5 GHz 8 dBi 4 Element Indoor/Outdoor Patch Antenna with RPSMA",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
-    "bands": ["2.4", "5"],
+    "bands": [
+      "2.4",
+      "5"
+    ],
     "frequency_range": "2.4-2.5/5.1-5.85 GHz",
     "gain_dbi": {
       "2.4": 8,
@@ -657,12 +680,12 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "125°",
-        "5": "114°"
+        "2.4": "125\u00b0",
+        "5": "114\u00b0"
       },
       "vertical": {
-        "2.4": "35°",
-        "5": "24°"
+        "2.4": "35\u00b0",
+        "5": "24\u00b0"
       }
     },
     "connector": "RPSMA",
@@ -670,7 +693,7 @@
     "polarization": "2 Vertical, 2 Horizontal",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-195",
-    "dimensions": "12.6 × 6.7 × 1.4 in (320 × 170 × 35 mm)",
+    "dimensions": "12.6 \u00d7 6.7 \u00d7 1.4 in (320 \u00d7 170 \u00d7 35 mm)",
     "weight": null,
     "ip_rating": "IP66",
     "radome": "ABS",
@@ -679,7 +702,7 @@
     "wind_rating": null,
     "vswr": "<1.5:1 (max 2.0)",
     "isolation": ">20 dB",
-    "operating_temp": "-40 to 70 °C",
+    "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01123.jpg",
     "images": [
       {
@@ -689,12 +712,12 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4 GHz",
-        "url": "images/acceltex-hubbell/ats-01123-pattern-2-4-ghz.jpg"
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/acceltex-hubbell/ats-01123-pattern-2-4-ghz-horizontal-vertical.jpg"
       },
       {
-        "label": "5 GHz",
-        "url": "images/acceltex-hubbell/ats-01123-pattern-5-ghz.jpg"
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/acceltex-hubbell/ats-01123-pattern-5-ghz-horizontal-vertical.jpg"
       }
     ],
     "dimension_image_url": "images/acceltex-hubbell/ats-01123-dimensions.jpg",
@@ -725,7 +748,7 @@
       "vswr": "Taken from AccelTex sheet (<1.5:1 max 2.0); Hubbell SPEC omits VSWR.",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
       "weight": "Not listed on either sheet reviewed.",
-      "pattern_images": "AccelTex sheet shows band-specific plots (2.4 / 5 GHz) rather than separate H/V labels."
+      "pattern_images": "AccelTex sheet overlays Horizontal + Vertical on one polar plot per band. Filenames use -horizontal-vertical so both orientations are denoted; plots were not split."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -742,7 +765,10 @@
     "name": "2.4/5 GHz 13/12 dBi 6 Element High Density Patch Antenna with N-Style",
     "form": "High-density patch",
     "indoor_outdoor": "Indoor/Outdoor",
-    "bands": ["2.4", "5"],
+    "bands": [
+      "2.4",
+      "5"
+    ],
     "frequency_range": "2.4-2.5/4.9-5.85 GHz",
     "gain_dbi": {
       "2.4": 13,
@@ -750,12 +776,12 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "33°",
-        "5": "34°"
+        "2.4": "33\u00b0",
+        "5": "34\u00b0"
       },
       "vertical": {
-        "2.4": "33°",
-        "5": "33°"
+        "2.4": "33\u00b0",
+        "5": "33\u00b0"
       }
     },
     "connector": "N-Style Jack",
@@ -763,7 +789,7 @@
     "polarization": "3 Vertical, 3 Horizontal",
     "cable_length": null,
     "cable_type": null,
-    "dimensions": "19.3 × 19.3 × 1.4 in (490 × 490 × 35 mm)",
+    "dimensions": "19.3 \u00d7 19.3 \u00d7 1.4 in (490 \u00d7 490 \u00d7 35 mm)",
     "weight": "1.3 lb (0.6 kg)",
     "ip_rating": "IP66",
     "radome": "ASA",
@@ -778,7 +804,7 @@
     "wind_rating": "130 mph (210 km/h)",
     "vswr": "<2.0:1",
     "isolation": ">20 dB",
-    "operating_temp": "-40 to 65 °C",
+    "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01022.jpg",
     "images": [
       {
@@ -824,7 +850,7 @@
       }
     ],
     "field_notes": {
-      "form": "Hubbell Antenna Type = High Density Patch; Product Type field says Patch Antenna — catalog form uses High-density patch.",
+      "form": "Hubbell Antenna Type = High Density Patch; Product Type field says Patch Antenna \u2014 catalog form uses High-density patch.",
       "weight": "Taken from AccelTex sheet.",
       "cable_length": "Integrated N-Style Jack connectors; cable assemblies sold separately.",
       "ip_rating": "Taken from AccelTex sheet (IP66)."
@@ -845,10 +871,13 @@
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-01023",
     "legacy_sku": "ATS-OHDP-245-42-6RPSP-36",
-    "name": "2.4/5 GHz 4/2 dBi 6 Element Indoor/Outdoor 90×90 Patch Antenna with RPSMA",
+    "name": "2.4/5 GHz 4/2 dBi 6 Element Indoor/Outdoor 90\u00d790 Patch Antenna with RPSMA",
     "form": "High-density patch",
     "indoor_outdoor": "Indoor/Outdoor",
-    "bands": ["2.4", "5"],
+    "bands": [
+      "2.4",
+      "5"
+    ],
     "frequency_range": "2.4-2.5/4.9-5.85 GHz",
     "gain_dbi": {
       "2.4": 4,
@@ -856,12 +885,12 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "80°",
-        "5": "90°"
+        "2.4": "80\u00b0",
+        "5": "90\u00b0"
       },
       "vertical": {
-        "2.4": "80°",
-        "5": "90°"
+        "2.4": "80\u00b0",
+        "5": "90\u00b0"
       }
     },
     "connector": "RPSMA Plug",
@@ -869,7 +898,7 @@
     "polarization": "3 Vertical, 3 Horizontal",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-195",
-    "dimensions": "8.1 × 7 × 1.8 in (205.7 × 178 × 45.7 mm)",
+    "dimensions": "8.1 \u00d7 7 \u00d7 1.8 in (205.7 \u00d7 178 \u00d7 45.7 mm)",
     "weight": "1.2 lb (0.54 kg)",
     "ip_rating": "IP66",
     "radome": "ASA",
@@ -884,7 +913,7 @@
     "wind_rating": "130 mph (210 km/h)",
     "vswr": "<2.0:1",
     "isolation": ">20 dB",
-    "operating_temp": "-40 to 65 °C",
+    "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01023.jpg",
     "images": [
       {
@@ -930,7 +959,7 @@
       }
     ],
     "field_notes": {
-      "form": "Hubbell Antenna Type field says Patch; legacy OHDP SKU and AccelTex title call it 90°/90° HD patch — catalog form uses High-density patch.",
+      "form": "Hubbell Antenna Type field says Patch; legacy OHDP SKU and AccelTex title call it 90\u00b0/90\u00b0 HD patch \u2014 catalog form uses High-density patch.",
       "weight": "Taken from AccelTex sheet.",
       "ip_rating": "Taken from AccelTex sheet (IP66)."
     },

@@ -60,6 +60,10 @@
     {
       "label": "Horizontal",
       "url": "images/vendor/sku-pattern-horizontal.jpg"
+    },
+    {
+      "label": "2.4 GHz Horizontal",
+      "url": "images/vendor/sku-pattern-2-4-ghz-horizontal.jpg"
     }
   ],
   "dimension_image_url": "images/vendor/sku-dimensions.jpg",

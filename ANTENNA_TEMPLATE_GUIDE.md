@@ -26,6 +26,23 @@ Prefer:
 
 Record conflicts in `field_notes`. Cite both in `sources`.
 
+## Radiation pattern filenames
+
+Orientation must appear in the filename (full words, not `-h`/`-v`):
+
+```
+images/{vendor-slug}/{sku-slug}-pattern[-{band}]-horizontal.jpg
+images/{vendor-slug}/{sku-slug}-pattern[-{band}]-vertical.jpg
+```
+
+Examples:
+
+- `ats-03414-pattern-vertical.jpg`
+- `ats-01050-pattern-2-4-ghz-horizontal.jpg`
+- `ats-01123-pattern-5-ghz-horizontal-vertical.jpg` — only when one plot overlays both orientations (do not invent a split)
+
+Optional `{band}` tokens: `2-4-ghz`, `5-ghz`, `6-ghz` when multiple patterns share an orientation. Keep `pattern_images[].label` human-readable (`Vertical`, `2.4 GHz Horizontal`, etc.).
+
 ## Internal only
 
 Put vendor-listed compatible APs under `internal_notes.compatible_aps`. Never render them in the UI.
