@@ -131,7 +131,9 @@
 
           <div id="active-filters" class="active-filters" style="display:none;"></div>
 
-          <div id="results" class="results-table"></div>
+          <div class="results-scroll">
+            <div id="results" class="results-table"></div>
+          </div>
           <div id="empty-state" class="empty-state" style="display:none;">
             <p>No antennas match every selected requirement.</p>
             <p>Try removing one filter at a time to widen the results.</p>
@@ -609,22 +611,25 @@
       header.appendChild(spacer);
 
       RESULT_COLUMNS.forEach(col => {
-        const cell = document.createElement('button');
-        cell.type = 'button';
-        cell.className = 'result-cell result-sort-btn';
-        cell.dataset.key = col.key;
-        cell.textContent = col.label;
+        const cell = document.createElement('div');
+        cell.className = 'result-cell';
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'result-sort-btn';
+        button.dataset.key = col.key;
+        button.textContent = col.label;
         if (currentSort.key === col.key) {
-          cell.dataset.dir = currentSort.dir;
-          cell.setAttribute('aria-sort', currentSort.dir === 'asc' ? 'ascending' : 'descending');
+          button.dataset.dir = currentSort.dir;
+          button.setAttribute('aria-sort', currentSort.dir === 'asc' ? 'ascending' : 'descending');
         } else {
-          cell.setAttribute('aria-sort', 'none');
+          button.setAttribute('aria-sort', 'none');
         }
-        cell.setAttribute('aria-label', `Sort by ${col.label}`);
-        cell.addEventListener('click', (e) => {
+        button.setAttribute('aria-label', `Sort by ${col.label}`);
+        button.addEventListener('click', (e) => {
           e.stopPropagation();
           setSort(col.key);
         });
+        cell.appendChild(button);
         header.appendChild(cell);
       });
 
@@ -685,7 +690,7 @@
           if (col.key === 'bands') cell.classList.add('result-wifi');
           if (col.key === 'connector') cell.classList.add('result-antenna');
           if (col.key === 'lead_count') cell.classList.add('result-spatial');
-          if (col.key === 'gain_dbi' || col.key === 'beamwidth') cell.classList.add('result-metrics');
+          if (col.key === 'gain_dbi') cell.classList.add('result-metrics');
 
           if (col.key === 'sku') {
             const skuLink = document.createElement('a');
@@ -693,6 +698,9 @@
             skuLink.href = `antenna.html?id=${encodeURIComponent(entry._slug)}&from=finder`;
             skuLink.textContent = entry.sku || entry.legacy_sku || 'View';
             cell.appendChild(skuLink);
+          } else if (col.key === 'beamwidth') {
+            cell.classList.add('result-beamwidth');
+            cell.textContent = formatBeamwidthStacked(entry.beamwidth) || '—';
           } else {
             cell.textContent = cellDisplay(entry, col.key);
           }
