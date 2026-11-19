@@ -17162,5 +17162,4567 @@
       "mfg_part": "M7050040D87220JB8",
       "maintainer": "Ventev batch 1. Junction-box aesthetic antenna for 8-lead APs generally."
     }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "292510",
+    "name": "Raised Access Floor Antenna with Integrated 6 dBi Junction Box Antenna with 8 RPSMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0"
+      },
+      "vertical": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 8,
+    "polarization": "3x Horizontal/Vertical",
+    "cable_length": "72 in",
+    "cable_type": null,
+    "dimensions": "11.75 \u00d7 11.75 \u00d7 4.88 in.",
+    "weight": "8.0 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2 / <2 dBi",
+    "isolation": "Cross Polarized",
+    "operating_temp": null,
+    "image_url": "images/ventev/292510.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/292510.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5/6 GHz Horizontal",
+        "url": "images/ventev/292510-pattern-5-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/292510-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/292510_093025.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 292510 (Rev. 093025)",
+        "id": "vspecs_292510",
+        "url": "https://ventevinfra.com/wp-content/uploads/292510_093025.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-292510",
+        "url": "https://ventevinfra.com/product/raised-access-floor-antenna-with-integrated-6-dbi-junction-box-antenna-with-6-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 292510. Manufacturer part number M7050040D87220JB8T (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M7050040D87220JB8T",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "270444",
+    "name": "Global IFS\u00ae TecCrete\u00ae 1250 Raised Access Floor Wi-Fi Omni Antenna with 6 RPSMA Male Connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 3.5,
+      "5": 3.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 6,
+    "polarization": null,
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": null,
+    "weight": "42.0 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": "images/ventev/270444.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/270444.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/ventev/270444-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/ventev/270444-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/270444_2.4_5_6-GHz-2_4-dBi-Raised-Access-Floor-Wi-Fi-Antenna-with-6-Dual-Band-Leads-RPSMA-1-1.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 270444",
+        "id": "vspecs_270444",
+        "url": "https://ventevinfra.com/wp-content/uploads/270444_2.4_5_6-GHz-2_4-dBi-Raised-Access-Floor-Wi-Fi-Antenna-with-6-Dual-Band-Leads-RPSMA-1-1.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-270444",
+        "url": "https://ventevinfra.com/product/global-ifs-teccrete-1250-raised-access-floor-wi-fi-omni-antenna-with-6-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 270444. Manufacturer part number M6030040O62420TA (not a Hubbell dual-SKU).",
+      "pattern_images": "Re-extracted with wide-plot / grid heuristics; H/V in filenames."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6030040O62420TA",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "233530",
+    "name": "Global IFS\u00ae TecCrete\u00ae 1500 Raised Access Floor Wi-Fi Omni Antenna with 4 RPSMA Male Connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "25\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "13.78 \u00d7 9 \u00d7 0.11\"",
+    "weight": "55.00 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "</= 2.5 dBi",
+    "isolation": null,
+    "operating_temp": "00 \u00b0F to 1400 \u00b0F",
+    "image_url": "images/ventev/233530.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/233530.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/233530-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/233530-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/233530-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/233530_2.4_5-GHz-6-dBi-Raised-Access-Floor-Wi-Fi-Antenna-Dual-Band-Leads-RPSMA.pub_.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 233530",
+        "id": "vspecs_233530",
+        "url": "https://ventevinfra.com/wp-content/uploads/233530_2.4_5-GHz-6-dBi-Raised-Access-Floor-Wi-Fi-Antenna-Dual-Band-Leads-RPSMA.pub_.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-233530",
+        "url": "https://ventevinfra.com/product/global-ifs-teccrete-1500-raised-access-floor-wi-fi-omni-antenna-with-4-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 233530. Manufacturer part number M60300300O4242TA2 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M60300300O4242TA2",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "298232",
+    "name": "Global IFS\u00ae TecCrete\u00ae 1250 Raised Access Floor Wi-Fi Omni Antenna with 4 RPSMA Male Connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "55\u00b0",
+        "5": "40\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Verical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "1.378\u201d \u00d7 9\u201d \u00d7 0.11\u201d",
+    "weight": "42.0 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "</= 2.5 dBi",
+    "isolation": null,
+    "operating_temp": "00 \u00b0F to 1400 \u00b0F",
+    "image_url": "images/ventev/298232.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/298232.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/ventev/298232-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/ventev/298232-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/298232-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/298232_Global-IFS\u00ae-TecCrete\u00ae-1250-Raised-Access-Floor-Wi-Fi-Omni-Antenna-with-4-RPSMA-Connectors.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 298232",
+        "id": "vspecs_298232",
+        "url": "https://ventevinfra.com/wp-content/uploads/298232_Global-IFS\u00ae-TecCrete\u00ae-1250-Raised-Access-Floor-Wi-Fi-Omni-Antenna-with-4-RPSMA-Connectors.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-298232",
+        "url": "https://ventevinfra.com/product/global-ifs-teccrete-1250-raised-access-floor-wi-fi-omni-antenna-with-4-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 298232. Manufacturer part number M6030030O42420TA (not a Hubbell dual-SKU).",
+      "pattern_images": "Re-extracted with wide-plot / grid heuristics; H/V in filenames."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6030030O42420TA",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "268438",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Directional Antenna with 6 RPSMA Male Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "65\u00b0",
+        "5": "55\u00b0"
+      },
+      "vertical": {
+        "2.4": "65\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 6,
+    "polarization": "3 \u00d7 Vertical & 3 \u00d7 Horizontal",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "10.6\u201d \u00d7 10.6\u201d \u00d7 1.26\u201d",
+    "weight": "5.0 lb",
+    "ip_rating": null,
+    "radome": "UV ABS, White",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "Strong arm mount",
+        "part_number": null,
+        "qty": null
+      },
+      {
+        "item": "Hose clamps",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": "124 mph",
+    "vswr": "\u2264 2.0",
+    "isolation": "\u226525dB",
+    "operating_temp": "(F\u00b0) -40\u00b0 ~ 158\u00b0",
+    "image_url": "images/ventev/268438.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/268438.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/268438-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/268438-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/268438-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/268438-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/268438-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/268438_2.4_5GHz-6dBi-Wi-Fi-Directional-Antenna-with-6-RPSMA-Connectors.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 268438",
+        "id": "vspecs_268438",
+        "url": "https://ventevinfra.com/wp-content/uploads/268438_2.4_5GHz-6dBi-Wi-Fi-Directional-Antenna-with-6-RPSMA-Connectors.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-268438",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-6dbi-wi-fi-directional-antenna-with-6-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 268438. Manufacturer part number M6060060D3D63620 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060D3D63620",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "266541",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Directional Antenna with 8 RPTNC Male Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "115\u00b0",
+        "5": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RPTNC Male",
+    "lead_count": 8,
+    "polarization": "8 \u00d7 Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "10.6\u201d \u00d7 10.6\u201d \u00d7 1.26\u201d",
+    "weight": "3.8 lb",
+    "ip_rating": null,
+    "radome": "Material and Color UV ABS, White",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "Strong arm mount",
+        "part_number": null,
+        "qty": null
+      },
+      {
+        "item": "Hose clamps",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": "124 mph",
+    "vswr": "\u22642.0",
+    "isolation": "\u226520dB",
+    "operating_temp": "(F\u00b0) -40\u00b0 ~ 158\u00b0",
+    "image_url": "images/ventev/266541.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/266541.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/ventev/266541-pattern-2-4-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/266541-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/266541-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/266541-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/266541_2.4_5GHz-6dBi-Wi-Fi-Directional-Antenna-with-8-RPTNC-Connectors.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 266541",
+        "id": "vspecs_266541",
+        "url": "https://ventevinfra.com/wp-content/uploads/266541_2.4_5GHz-6dBi-Wi-Fi-Directional-Antenna-with-8-RPTNC-Connectors.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-266541",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-6dbi-wi-fi-directional-antenna-with-8-rptnc-connectors-2/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 266541. Manufacturer part number M6060060P1D83602W (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060P1D83602W",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "299318",
+    "name": "2.4/5 GHz 4/6 dBi Wi-Fi Omni Mini Quad Ceiling Antenna with 4 RPSMA Male Connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "24 in",
+    "cable_type": null,
+    "dimensions": "Installation",
+    "weight": "0.44 lb",
+    "ip_rating": null,
+    "radome": "Color",
+    "mount_type": "Center Thread Screw",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u2264 2.0/ \u2264 2.5",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to 158\u00b0 F",
+    "image_url": "images/ventev/299318.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/299318.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/ventev/299318-pattern-2-4-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/299318-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/299318-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/299318-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vsepcs_299318miniquadOMNIAnt_121322-1.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 299318 (Rev. 121322)",
+        "id": "vspecs_299318",
+        "url": "https://ventevinfra.com/wp-content/uploads/vsepcs_299318miniquadOMNIAnt_121322-1.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-299318",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-4-6dbi-wi-fi-omni-mini-quad-ceiling-antenna-with-4-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 299318. Manufacturer part number M6040060O2D2420 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6040060O2D2420",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "297129",
+    "name": "2.4/5 GHz 8 dBi Wi-Fi Directional Antenna with 4 RPSMA Male Connectors and Articulating Mount",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 8.0,
+      "5": 8.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "90\u00b0",
+        "5": "115\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "35\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "2 \u00d7 Vertical and 2 \u00d7 Horizontal",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "10.6 \u00d7 6.7 \u00d7 1.6 in.",
+    "weight": "3.53 lb",
+    "ip_rating": null,
+    "radome": "UV Resistant ABS, White",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": null
+      },
+      {
+        "item": "Strong arm mount",
+        "part_number": null,
+        "qty": null
+      },
+      {
+        "item": "Hose clamps",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "< 2.0 / < 2.0",
+    "isolation": "> 22 / > 22 dBi",
+    "operating_temp": "-40\u00b0 to 158\u00b0F",
+    "image_url": "images/ventev/297129.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/297129.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Vertical",
+        "url": "images/ventev/297129-pattern-2-4-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/297129-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/297129-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_297129_WiFiDirectionalAntenna_030124.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 297129 (Rev. 030124)",
+        "id": "vspecs_297129",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_297129_WiFiDirectionalAntenna_030124.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-297129",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-8dbi-wi-fi-directional-antenna-h90-115-v45-35-with-4-rpsma-connectors-and-articulating-mount/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 297129. Manufacturer part number M6080080P1D43620 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6080080P1D43620",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": true
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "219521",
+    "name": "2.4/5/6 GHz 6 dBi Wi-Fi Patch Antenna with 8 RPTNC Male Connectors and Articulating Mount",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4/5/6 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0,
+      "6": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "80\u00b0",
+        "5": "120\u00b0",
+        "6": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "80\u00b0",
+        "5": "50\u00b0",
+        "6": "50\u00b0"
+      }
+    },
+    "connector": "RPTNC Male",
+    "lead_count": 8,
+    "polarization": "Vertical/Horizontal",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "6 \u00d7 3 \u00d7 3 in.",
+    "weight": "3.30 lb",
+    "ip_rating": null,
+    "radome": "White UV Resistant ABS",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u22642.0",
+    "isolation": "\u226512 / \u226518",
+    "operating_temp": "Range",
+    "image_url": "images/ventev/219521.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/219521.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/219521-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_219521_WiFiPatchAntenna_042624.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 219521 (Rev. 042624)",
+        "id": "vspecs_219521",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_219521_WiFiPatchAntenna_042624.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-219521",
+        "url": "https://ventevinfra.com/product/2-4-5-6ghz-6dbi-wi-fi-patch-h80-120-v-80-50-antenna-with-8-rptnc-male-connectors-and-articulating-mount/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 219521. Manufacturer part number M6060060P1D83602S (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060P1D83602S",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "248961",
+    "name": "Raised Access Floor Antenna with 4 RPTNC Male Connectors, ASM Access Flooring Panels",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "35\u00b0",
+        "5": "20\u00b0"
+      }
+    },
+    "connector": "RPTNC Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "(Tile with Antenna): 24\u201d \u00d7 24\u201d \u00d7 1.4\u201d",
+    "weight": "63.0 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u2264 2.5 dBi/ \u2264 2.5 dBi",
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": "images/ventev/248961.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/248961.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/ventev/248961-pattern-2-4-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/248961-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/248961_Raised-Access-Floor-Wi-Fi-Antenna-with-4-Connectors-ASM-Access-Flooring-Panels-1.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 248961",
+        "id": "vspecs_248961",
+        "url": "https://ventevinfra.com/wp-content/uploads/248961_Raised-Access-Floor-Wi-Fi-Antenna-with-4-Connectors-ASM-Access-Flooring-Panels-1.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-248961",
+        "url": "https://ventevinfra.com/product/raised-access-floor-antenna-with-4-rptnc-male-connectors-asm-access-flooring-panels/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 248961. Manufacturer part number M6030060O42402ASM (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6030060O42402ASM",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "264761",
+    "name": "Raised Access Floor Tile with Integrated Wi-Fi 5/6 dBi Junction Box Antenna and 4 RPSMA Male Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0"
+      },
+      "vertical": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "2x Horizontal/Vertical",
+    "cable_length": "72 in",
+    "cable_type": null,
+    "dimensions": "11.75 \u00d7 11.75 \u00d7 4.88 in.",
+    "weight": "8.0 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "<2.0",
+    "isolation": "12/20 dB Cross Polarized",
+    "operating_temp": null,
+    "image_url": "images/ventev/264761.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/264761.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5/6 GHz Horizontal",
+        "url": "images/ventev/264761-pattern-5-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/ventev/264761-pattern-2-4-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_221067_264761_RaisedFloorTile_070324.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 264761 (Rev. 070324)",
+        "id": "vspecs_264761",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_221067_264761_RaisedFloorTile_070324.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-264761",
+        "url": "https://ventevinfra.com/product/access-floor-box-with-integrated-wi-fi-6dbi-junction-box-antenna-with-4-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 264761. Manufacturer part number M040030D33620WS (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M040030D33620WS",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "261112",
+    "name": "TerraWave\u00ae Tate Access Floor Box with Integrated 5/6 dBi Wi-Fi Junction Box Antenna with 4 RPTNC Connectors -Side",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0"
+      },
+      "vertical": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0"
+      }
+    },
+    "connector": "RPTNC Male",
+    "lead_count": 4,
+    "polarization": "2x Horizontal/Vertical",
+    "cable_length": "72 in",
+    "cable_type": null,
+    "dimensions": "11.75 \u00d7 11.75 \u00d7 4.88 in.",
+    "weight": "8.0 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u22642.0 / \u22642.0 dBi",
+    "isolation": "(Cross Polarized Ports)",
+    "operating_temp": null,
+    "image_url": "images/ventev/261112.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/261112.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5/6 GHz Horizontal",
+        "url": "images/ventev/261112-pattern-5-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/261112-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_239601_261112_TerraWaveTateAccessFloorBox_062524_V4.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 261112 (Rev. 062524)",
+        "id": "vspecs_261112",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_239601_261112_TerraWaveTateAccessFloorBox_062524_V4.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-261112",
+        "url": "https://ventevinfra.com/product/access-floor-box-with-integrated-6dbi-wi-fi-junction-box-antenna-with-4-rptnc-connectors-side/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 261112. Manufacturer part number ACCESSBX-JBANT-S (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "ACCESSBX-JBANT-S",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "239601",
+    "name": "TerraWave\u00ae Tate Access Floor Box with Integrated 5/6 dBi Wi-Fi Junction Box Antenna with 4 RPSMA Connectors -Side",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0"
+      },
+      "vertical": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "2x Horizontal/Vertical",
+    "cable_length": "72 in",
+    "cable_type": null,
+    "dimensions": "11.75 \u00d7 11.75 \u00d7 4.88 in.",
+    "weight": "8.0 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u22642.0 / \u22642.0 dBi",
+    "isolation": "(Cross Polarized Ports)",
+    "operating_temp": null,
+    "image_url": "images/ventev/239601.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/239601.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5/6 GHz Horizontal",
+        "url": "images/ventev/239601-pattern-5-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/239601-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_239601_261112_TerraWaveTateAccessFloorBox_062524_V4.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 239601 (Rev. 062524)",
+        "id": "vspecs_239601",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_239601_261112_TerraWaveTateAccessFloorBox_062524_V4.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-239601",
+        "url": "https://ventevinfra.com/product/access-floor-box-with-integrated-6dbi-wi-fi-junction-box-antenna-with-4-rpsma-connectors-side/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 239601. Manufacturer part number ACCESSBX-JBANTR6R (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "ACCESSBX-JBANTR6R",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "217199",
+    "name": "2.4/5 GHz 12/13 dBi Wi-Fi Warehouse Directional Antenna with 6 N Female Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 13.0,
+      "5": 13.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "120\u00b0",
+        "5": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "12\u00b0",
+        "5": "12\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 6,
+    "polarization": "Vertical\u200b",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "24 \u00d7 21 \u00d7 2.8 in.",
+    "weight": "13.7 lb",
+    "ip_rating": null,
+    "radome": "White/UV Resistant ABS",
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1\u200b",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to 158\u00b0F",
+    "image_url": "images/ventev/217199.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/217199.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Vertical",
+        "url": "images/ventev/217199-pattern-2-4-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/217199-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/ventev/217199-pattern-2-4-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/217199-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_217199Directional_110422.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 217199 (Rev. 120522)",
+        "id": "vspecs_217199",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_217199Directional_110422.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-217199",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-12-13dbi-wi-fi-warehouse-directional-antenna-with-6-n-style-female-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 217199. Manufacturer part number M6120130MP1D6006W (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6120130MP1D6006W",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "227659",
+    "name": "2.4/5 GHz 12/13 dBi Wi-Fi Directional Antenna with 10 RPSMA Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 13.0,
+      "5": 13.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "50\u00b0",
+        "5": "40\u00b0 (Ports 1-5)"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "28\u00b0 (Ports 1-5)"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 10,
+    "polarization": "5 x Vertical, 5 x Horizontal",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "14.6 \u00d7 14.6 \u00d7 1.5 in",
+    "weight": "2.60 lbs.",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": "100 mph",
+    "vswr": "\u2264 2.0",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to 140\u00b0 F",
+    "image_url": "images/ventev/227659.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/227659.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Vertical",
+        "url": "images/ventev/227659-pattern-2-4-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/ventev/227659-pattern-2-4-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/227659-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_227659directionalantenna_110323.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 227659 (Rev. 10322)",
+        "id": "vspecs_227659",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_227659directionalantenna_110323.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-227659",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-12-13dbi-wi-fi-directional-antenna-with-10-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 227659. Manufacturer part number M6012013D1D103620 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6012013D1D103620",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "265253",
+    "name": "2.4/5 GHz 12/13 dBi Wi-Fi Directional Antenna with 8 RPSMA Male Connectors",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 13.0,
+      "5": 13.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "50\u00b0",
+        "5": "40\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "28\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 8,
+    "polarization": null,
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": null,
+    "weight": "2.10 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": "images/ventev/265253.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/265253.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "dimension_image_url": null,
+    "datasheet_urls": [],
+    "sources": [
+      {
+        "label": "Ventev product page",
+        "id": "ventev-265253",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-12-13dbi-wi-fi-directional-antenna-with-8-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 265253. Manufacturer part number M6012013D1D83620 (not a Hubbell dual-SKU).",
+      "datasheet": "Missing on-page datasheet PDF (inventory gap).",
+      "pattern_images": "No datasheet PDF available on product page or common upload paths; patterns unavailable."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6012013D1D83620",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "227468",
+    "name": "2.4/5 GHz 2/3 dBi Wi-Fi Omnidirectional Antenna with 8 Port DART Connector",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 3.0,
+      "5": 3.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "50\u00b0"
+      }
+    },
+    "connector": "DART",
+    "lead_count": 8,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "8.7 \u00d7 1.6 in",
+    "weight": "3.20 lb",
+    "ip_rating": null,
+    "radome": "Color/Material",
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u2264 2.0",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to 158\u00b0F",
+    "image_url": "images/ventev/227468.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/227468.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/227468-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Vertical",
+        "url": "images/ventev/227468-pattern-2-4-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/ventev/227468-pattern-2-4-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/227468-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vsepcs_227468_DARTant_110222.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 227468 (Rev. 110222)",
+        "id": "vspecs_227468",
+        "url": "https://ventevinfra.com/wp-content/uploads/vsepcs_227468_DARTant_110222.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-227468",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-2-3dbi-wi-fi-omnidirectional-antenna-with-8-port-dart-connector/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 227468. Manufacturer part number M6040040MO1D83699 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6040040MO1D83699",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "206570",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Flush Mount Directional Antenna with 4 RPSMA Male Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "115\u00b0",
+        "5": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Vertical\u200b",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "10.8 \u00d7 6.8 \u00d7 1.4 in.\u200b",
+    "weight": "1.20 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u2264 \u2264 2\u200b",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to 140\u00b0F\u200b",
+    "image_url": "images/ventev/206570.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/206570.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/206570-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/206570-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/206570-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/206570-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_206570Directional_111622.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 206570 (Rev. 111622)",
+        "id": "vspecs_206570",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_206570Directional_111622.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-206570",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-6dbi-wi-fi-flush-mount-directional-h115-120-v70-60-antenna-with-4-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 206570. Manufacturer part number M6060060P1D43620F (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060P1D43620F",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "214484",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Patch Antenna with 5 RPTNC Male Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "105\u00b0",
+        "5": "125\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "RPTNC Male",
+    "lead_count": 5,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "10 \u00d7 5.6 \u00d7 1.4 in",
+    "weight": "1.20 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": "60 mph",
+    "vswr": "\u22642.0",
+    "isolation": "\u2265 20 dB",
+    "operating_temp": "-40\u00b0 to 158\u00b0F",
+    "image_url": "images/ventev/214484.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/214484.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Vertical",
+        "url": "images/ventev/214484-pattern-2-4-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/214484-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/ventev/214484-pattern-2-4-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/214484-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_214484PatchAntenna_110322.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 214484 (Rev. 110322)",
+        "id": "vspecs_214484",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_214484PatchAntenna_110322.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-214484",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-6dbi-wi-fi-patch-h105-125-v-60-70-antenna-with-5-rptnc-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 214484. Manufacturer part number M6060060P1D536D02 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060P1D536D02",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "247147",
+    "name": "2.4/5 GHz 4/7 dBi Wi-Fi Omnidirectional Antenna with 1 N Male Connector",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 7.0,
+      "5": 7.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical / Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "7.9\u201d \u00d7 0.85\u201d Dia",
+    "weight": "0.20 lb",
+    "ip_rating": null,
+    "radome": "Material: UV Resistant ABS",
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u22642.0 / \u22642.0",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to +158\u00b0F",
+    "image_url": "images/ventev/247147.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/247147.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/247147-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/247147-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/247147-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/247147_2.4_5GHz-4_7dBi-Wi-Fi-Omnidirectional-Antenna-with-1-N-Style-Connector.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 247147",
+        "id": "vspecs_247147",
+        "url": "https://ventevinfra.com/wp-content/uploads/247147_2.4_5GHz-4_7dBi-Wi-Fi-Omnidirectional-Antenna-with-1-N-Style-Connector.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-247147",
+        "url": "https://ventevinfra.com/product/2-4-5-ghz-4-7-dbi-wi-fi-omnidirectional-antenna-with-1-n-male-connector/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 247147. Manufacturer part number M6040070O10007B (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6040070O10007B",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "227737",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Micro Patch Antenna with 6 RPSMA Male Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "80\u00b0",
+        "5": "80\u00b0"
+      },
+      "vertical": {
+        "2.4": "90\u00b0",
+        "5": "90\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 6,
+    "polarization": "3 x Horizontal, 3 x Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "6 \u00d7 3 \u00d7 3 in",
+    "weight": "1.40 lb",
+    "ip_rating": null,
+    "radome": "Color/Material",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 Nominal / 2:1 Nominal",
+    "isolation": null,
+    "operating_temp": "Range",
+    "image_url": "images/ventev/227737.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/227737.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/227737-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Vertical",
+        "url": "images/ventev/227737-pattern-2-4-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/227737-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/227737-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/227737-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_227737directonalantenna_011023.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 227737 (Rev. 011023)",
+        "id": "vspecs_227737",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_227737directonalantenna_011023.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-227737",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-6dbi-wi-fi-micro-patch-h80-v90-antenna-with-6-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 227737. Manufacturer part number M6060060D6D3620TM (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060D6D3620TM",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "249891",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Omnidirectional Antenna with 8 Port Right Angle DART Connector",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "RA DART",
+    "lead_count": 8,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "See Diagrams Above. Note: All draw ing dimensions in Inches",
+    "weight": "3.60 lb",
+    "ip_rating": "IP 54 Compliant",
+    "radome": "Color: White",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "L-bracket",
+        "part_number": null,
+        "qty": null
+      },
+      {
+        "item": "U-bolts",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": "134 mph max.",
+    "vswr": "\u22642.0 / \u22642.2",
+    "isolation": null,
+    "operating_temp": "Negative 40\u00b0 to +158\u00b0F",
+    "image_url": "images/ventev/249891.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/249891.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/249891-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/249891-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/249891_2.4_5GHz-6dBi-Outdoor-Omni-Antenna-with-8-Port-DART-Connector.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 249891",
+        "id": "vspecs_249891",
+        "url": "https://ventevinfra.com/wp-content/uploads/249891_2.4_5GHz-6dBi-Outdoor-Omni-Antenna-with-8-Port-DART-Connector.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-249891",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-6dbi-wi-fi-omnidirectional-antenna-with-8-port-dart-connector/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 249891. Manufacturer part number M6060060MO1D83699 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060MO1D83699",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": true
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "273519",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Directional Antenna with 4 Port DART Connector",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "105\u00b0",
+        "5": "125\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "DART",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "10.0\u201d \u00d7 5.6\u201d \u00d7 1.4\u201d",
+    "weight": "1.20 lb",
+    "ip_rating": null,
+    "radome": "UV ABS, White",
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": "60 mph",
+    "vswr": "\u2264 2.0",
+    "isolation": "\u226520dBi",
+    "operating_temp": "(F\u00b0) -40\u00b0 ~ +158\u00b0",
+    "image_url": "images/ventev/273519.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/273519.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/273519-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/273519-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/273519-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/273519-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/273519-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/273519_2.4_5GHz-6dBi-Wi-Fi-Directional-Antenna-with-4-Port-DART-Connector-1.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 273519",
+        "id": "vspecs_273519",
+        "url": "https://ventevinfra.com/wp-content/uploads/273519_2.4_5GHz-6dBi-Wi-Fi-Directional-Antenna-with-4-Port-DART-Connector-1.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-273519",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-6dbi-wi-fi-directional-h105-125-v60-70-antenna-with-4-port-dart-connector/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 273519. Manufacturer part number M6060060P1D43699D (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060P1D43699D",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "229080",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Directional Antenna with 8 Port Right Angle DART Connector",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "65\u00b0",
+        "5": "55\u00b0"
+      },
+      "vertical": {
+        "2.4": "65\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RA DART",
+    "lead_count": 8,
+    "polarization": "(Ports 1/A, 4/D, 5/E, 8/H) Horizontal/",
+    "cable_length": "30 in LMR-100",
+    "cable_type": null,
+    "dimensions": "11.5 \u00d7 11.5 \u00d7 1.60 in",
+    "weight": "4.70 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "Strong arm mount",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": "100 MPH",
+    "vswr": "< 2",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to 140\u00b0F",
+    "image_url": "images/ventev/229080.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/229080.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/ventev/229080-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/ventev/229080-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/229080-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_229080DirDART_011623.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 229080 (Rev. 011823)",
+        "id": "vspecs_229080",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_229080DirDART_011623.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-229080",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-6dbi-wi-fi-directional-antenna-with-8-port-right-angle-dart-connector/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 229080. Manufacturer part number M6060060D1D83699 (not a Hubbell dual-SKU).",
+      "pattern_images": "Re-extracted with wide-plot / grid heuristics; H/V in filenames."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060D1D83699",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": true
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "285793",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Directional Antenna with 4 N Male Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "105\u00b0",
+        "5": "125\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "10\u201d \u00d7 5.6\u201d \u00d7 1.4\u201d",
+    "weight": "1.20 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": "60 mph",
+    "vswr": "\u22642.0 / \u22642.0",
+    "isolation": null,
+    "operating_temp": "-40\u00b0F to +158\u00b0F",
+    "image_url": "images/ventev/285793.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/285793.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/285793-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/285793-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/285793-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/285793-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/285793-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/285793_2.4_5GHz-6dBi-Wi-Fi-Directional_H105_125-V60_70_Antenna-with-4-N-Style-Connectors.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 285793",
+        "id": "vspecs_285793",
+        "url": "https://ventevinfra.com/wp-content/uploads/285793_2.4_5GHz-6dBi-Wi-Fi-Directional_H105_125-V60_70_Antenna-with-4-N-Style-Connectors.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-285793",
+        "url": "https://ventevinfra.com/product/2-4-5-ghz-6-dbi-wi-fi-directional-antenna-with-4-n-male-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 285793. Manufacturer part number M6060060P1D43607T (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060P1D43607T",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "283634",
+    "name": "2.4/5GHz 6dBi Wi-Fi Penta Patch (H:80\u00b0/45\u00b0, V:80\u00b0/45\u00b0) Antenna with 5 RPTNC Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2400~2500 / 5150~5850 MHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "105\u00b0",
+        "5": "125\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "RPTNC",
+    "lead_count": 5,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "9.2\u201d \u00d7 9.0\u201d \u00d7 1.1\u201d",
+    "weight": "2.65 lbs",
+    "ip_rating": null,
+    "radome": "Color White",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": "134.2 mph",
+    "vswr": "\u22642.0 / \u22642.5",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to +158\u00b0F",
+    "image_url": "images/ventev/283634.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/283634.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/283634-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/ventev/283634-pattern-2-4-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/283634_2-4_5GHz-6dBi-Wi-Fi-Penta-Patch-Antenna-with-5-RPTNC-Connectors-1.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 283634",
+        "id": "vspecs_283634",
+        "url": "https://ventevinfra.com/wp-content/uploads/283634_2-4_5GHz-6dBi-Wi-Fi-Penta-Patch-Antenna-with-5-RPTNC-Connectors-1.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-283634",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-6dbi-wi-fi-penta-patch-h105-125-v60-70-antenna-with-5-rptnc-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 283634. Manufacturer part number M6060060P1D53602 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060P1D53602",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "222152",
+    "name": "2.4/5 GHz 4/7 dBi Wi-Fi Omni Antenna-Grey, with 1 N Male Connector",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 7.0,
+      "5": 7.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0",
+        "5": "18\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "1.25 \u00d7 11 in",
+    "weight": "0.20 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Direct to Access Point",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u22642.0",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to 158\u00b0 F",
+    "image_url": "images/ventev/222152.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/222152.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/ventev/222152-pattern-2-4-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/222152-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vsepcs_222152FiberglassAnt_110322.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 222152 (Rev. 110322)",
+        "id": "vspecs_222152",
+        "url": "https://ventevinfra.com/wp-content/uploads/vsepcs_222152FiberglassAnt_110322.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-222152",
+        "url": "https://ventevinfra.com/product/2-4-5-ghz-4-7-dbi-wi-fi-omni-antenna-grey-with-1-n-male-connector/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 222152. Manufacturer part number M7040070O10007G (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M7040070O10007G",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "242142",
+    "name": "2.4/5 GHz 6/8 dBi Wi-Fi Omni Antenna Grey, with 1 N Male Connector",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 8.0,
+      "5": 8.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "25\u00b0",
+        "5": "25\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "1.25\u201d DIA \u00d7 14.96\u201d",
+    "weight": "0.57 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Direct to Access Point (AP)",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u2264 2.0",
+    "isolation": null,
+    "operating_temp": "Range",
+    "image_url": "images/ventev/242142.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/242142.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/242142-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/242142-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/242142-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/242142_2.4_5GHz-6_8dBi-Wi-Fi-Omni-Antenna-Grey-with-1-N-Style-Connector.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 242142",
+        "id": "vspecs_242142",
+        "url": "https://ventevinfra.com/wp-content/uploads/242142_2.4_5GHz-6_8dBi-Wi-Fi-Omni-Antenna-Grey-with-1-N-Style-Connector.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-242142",
+        "url": "https://ventevinfra.com/product/2-4-5-ghz-6-8-dbi-wi-fi-omni-antenna-grey-with-1-n-male-connector/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 242142. Manufacturer part number M7060080O10007G (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M7060080O10007G",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "278465",
+    "name": "2.4/5 GHz Wi-Fi Omni Rubber Duck with RPTNC Male Connector",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "50\u00b0"
+      }
+    },
+    "connector": "RPTNC Male",
+    "lead_count": null,
+    "polarization": "Linear, Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "5\u201d \u00d7 0.95\u201d",
+    "weight": "0.05 lb",
+    "ip_rating": null,
+    "radome": "Material",
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2.0 : 1 Max",
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": "images/ventev/278465.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/278465.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/ventev/278465-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/ventev/278465-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/278465-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/278465_2.4-5-GHz-Dual-Band-Rubber-Duck-With-RPTNC-Plug-Connector-03062020.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 278465",
+        "id": "vspecs_278465",
+        "url": "https://ventevinfra.com/wp-content/uploads/278465_2.4-5-GHz-Dual-Band-Rubber-Duck-With-RPTNC-Plug-Connector-03062020.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-278465",
+        "url": "https://ventevinfra.com/product/2-4-5-ghz-wi-fi-omni-rubber-duck-with-rptnc-male-connector/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 278465. Manufacturer part number TWS244950-RPTNC-W (not a Hubbell dual-SKU).",
+      "pattern_images": "2.4 GHz crop excludes overlapping specs-table column (x\u2265225); 5 GHz is full 3-view strip. Combined H+V filenames."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "TWS244950-RPTNC-W",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "517784",
+    "name": "2.4/5 GHz 3 dBi Wi-Fi Directional (H:75/V:75) Guardrail Antenna with 4 RPSMA Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 3.0,
+      "5": 3.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0"
+      },
+      "vertical": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "2x Horizontal, 2 x Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "and Adjustable Features",
+    "weight": null,
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": "images/ventev/517784.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/517784.jpg"
+      },
+      {
+        "label": "Additional photo",
+        "url": "images/ventev/517784-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/517784-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/517784-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/517784-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/517784-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/517784-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/517784_2.4_5GHz-3dBi-Guardrail-Antenna-with-4-RPSMA-Connectors.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 517784",
+        "id": "vspecs_517784",
+        "url": "https://ventevinfra.com/wp-content/uploads/517784_2.4_5GHz-3dBi-Guardrail-Antenna-with-4-RPSMA-Connectors.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-517784",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-3dbi-wi-fi-guardrail-antenna-with-4-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 517784. Manufacturer part number V10082-HRE-NEB (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "V10082-HRE-NEB",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "374697",
+    "name": "2.4/5 GHz 11/13.5 dBi Wi-Fi Panel Antenna with 3 RPSMA Male Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 13.0,
+      "5": 13.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "45\u00b0",
+        "5": "45\u00b0"
+      },
+      "vertical": {
+        "2.4": "20\u00b0",
+        "5": "20\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 3,
+    "polarization": null,
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": null,
+    "weight": "4.40 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": "images/ventev/374697.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/374697.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/374697.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 374697",
+        "id": "vspecs_374697",
+        "url": "https://ventevinfra.com/wp-content/uploads/374697.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-374697",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-11-13-5dbi-wi-fi-panel-h45-v20-antenna-with-3-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 374697. Manufacturer part number M6110135MP1D3620 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
+      "qc": "Datasheet PDF is a marketing selection slide without usable radiation pattern plots; pattern_images cleared by QC."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6110135MP1D3620",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "485999",
+    "name": "2.4 GHz 2 dBi Wi-Fi Omni Antenna with 1 RPTNC Male Connector",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4 GHz",
+    "gain_dbi": {
+      "2.4": 2.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "[INSERT INFO]"
+      }
+    },
+    "connector": "RPTNC Male",
+    "lead_count": 1,
+    "polarization": null,
+    "cable_length": "15 in",
+    "cable_type": null,
+    "dimensions": null,
+    "weight": "0.22 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u2264 2.0",
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": "images/ventev/485999.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/485999.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/485999-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/485999-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_485999SurfacemountAntenna_120222.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 485999 (Rev. 120222)",
+        "id": "vspecs_485999",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_485999SurfacemountAntenna_120222.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-485999",
+        "url": "https://ventevinfra.com/product/2-4ghz-2dbi-wi-fi-omni-antenna-with-1-rptnc-connector/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 485999. Manufacturer part number T24010M11502W (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "T24010M11502W",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "457948",
+    "name": "2.4 GHz 15 dBi Yagi Antenna with 1 RPTNC Male Connector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4 GHz",
+    "gain_dbi": {
+      "2.4": 15.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "29\u00b0"
+      },
+      "vertical": {
+        "2.4": "29\u00b0"
+      }
+    },
+    "connector": "RPTNC Male",
+    "lead_count": 1,
+    "polarization": "Vertical or Horizontal",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "23.6 \u00d7 2 \u00d7 2\"",
+    "weight": "2.60 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "L-bracket",
+        "part_number": null,
+        "qty": null
+      },
+      {
+        "item": "U-bolts",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u2264 2.5",
+    "isolation": null,
+    "operating_temp": "-22\u00b0 to 158\u00b0F",
+    "image_url": "images/ventev/457948.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/457948.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/457948-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_457948YagiAntenna_120122.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 457948 (Rev. 120122)",
+        "id": "vspecs_457948",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_457948YagiAntenna_120122.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-457948",
+        "url": "https://ventevinfra.com/product/2-4ghz-15dbi-yagi-h29-v29-antenna-with-1-rptnc-connector/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 457948. Manufacturer part number T24150Y13602 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "T24150Y13602",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "523248",
+    "name": "2.4GHz 14dBi Wi-Fi Sector (H:90/V:15) Antenna with 3 N-Style Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2300 ~ 2700 MHz",
+    "gain_dbi": {
+      "2.4": 14.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "90\u00b0"
+      },
+      "vertical": {
+        "2.4": "15\u00b0"
+      }
+    },
+    "connector": "N-Style Jack (x3)",
+    "lead_count": 3,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "19\u201d \u00d7 11\u201d \u00d7 3.5\u201d",
+    "weight": "6.58 lbs",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u2264 1.7",
+    "isolation": "\u2265 20 dB",
+    "operating_temp": null,
+    "image_url": "images/ventev/523248.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/523248.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/523248-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/523248-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/523248-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/523248.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 523248",
+        "id": "vspecs_523248",
+        "url": "https://ventevinfra.com/wp-content/uploads/523248.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-523248",
+        "url": "https://ventevinfra.com/product/2-4ghz-14dbi-wi-fi-sector-h90-v15-antenna-with-3-n-style-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 523248. Manufacturer part number T24140D30006O (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "T24140D30006O",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "215098",
+    "name": "5GHz 6dbi Wi-Fi Directional Micro Patch (H:55/V:60) Antenna with 4 Right Angle RPTNC Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": null,
+    "gain_dbi": {
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "55\u00b0"
+      },
+      "vertical": {
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "Right Angle RPTNC",
+    "lead_count": 4,
+    "polarization": "(Ports B&D)",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "(Inches)",
+    "weight": "1.50 lbs",
+    "ip_rating": null,
+    "radome": "Color",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": null
+      },
+      {
+        "item": "Mounting hardware",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "-40\u00b0F to +158\u00b0F",
+    "image_url": "images/ventev/215098.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/215098.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/215098-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/215098-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/215098.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 215098",
+        "id": "vspecs_215098",
+        "url": "https://ventevinfra.com/wp-content/uploads/215098.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-215098",
+        "url": "https://ventevinfra.com/product/5ghz-6dbi-wi-fi-directional-micro-patch-h55-v60-antenna-with-4-right-angle-rptnc-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 215098. Manufacturer part number 5060060D336RA02 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "5060060D336RA02",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "242441",
+    "name": "5 GHz 18.5 dBi Wi-Fi Directional Antenna with 4 N Female Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5 GHz",
+    "gain_dbi": {
+      "5": 18.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "16\u00b0"
+      },
+      "vertical": {
+        "5": "16\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "2 Vertical, 2 Horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "16.25 \u00d7 8.12 \u00d7 1.06\"",
+    "weight": "3.0 lb",
+    "ip_rating": null,
+    "radome": "White ABS",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "Strong arm mount",
+        "part_number": null,
+        "qty": null
+      },
+      {
+        "item": "Hose clamps",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to 158\u00b0F",
+    "image_url": "images/ventev/242441.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/242441.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/242441-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/242441-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/242441-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_242441_WiFiDirectionalAntenna_051324.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 242441 (Rev. 051524)",
+        "id": "vspecs_242441",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_242441_WiFiDirectionalAntenna_051324.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-242441",
+        "url": "https://ventevinfra.com/product/5-ghz-18-5-dbi-wi-fi-directional-antenna-with-4-n-female-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 242441. Manufacturer part number T58185D0006 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "T58185D0006",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "590261",
+    "name": "5GHz 14dBi Wi-Fi Sector (H:60/10, V:15) Antenna with 2 N-Style Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5150 ~ 5850 MHz",
+    "gain_dbi": {
+      "5": 14.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "60\u00b110\u00b0"
+      },
+      "vertical": {
+        "5": "15\u00b0"
+      }
+    },
+    "connector": "N-Style Jack",
+    "lead_count": 2,
+    "polarization": "Vertical & Horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "8.27\u201d \u00d7 4.72\u201d \u00d7 1.65\u201d",
+    "weight": "0.55 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Mast or Pole",
+    "included_parts": [
+      {
+        "item": "Mounting hardware",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u22642.0",
+    "isolation": "(dB)",
+    "operating_temp": null,
+    "image_url": "images/ventev/590261.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/590261.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "dimension_image_url": "images/ventev/590261-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/590261.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 590261",
+        "id": "vspecs_590261",
+        "url": "https://ventevinfra.com/wp-content/uploads/590261.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-590261",
+        "url": "https://ventevinfra.com/product/5ghz-14dbi-wi-fi-sector-h60-10-v15-antenna-with-2-n-style-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 590261. Manufacturer part number T58140P10006O (not a Hubbell dual-SKU).",
+      "pattern_images": "Datasheet has no radiation pattern plots; page 2 is a mechanical/mount drawing only."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "T58140P10006O",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "318227",
+    "name": "2.4 GHz 6 dBi Wi-Fi Omni Antenna with 1 N Female Connector",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4 GHz",
+    "gain_dbi": {
+      "2.4": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "28\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": null,
+    "weight": "1.40 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "-/=1.5",
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": "images/ventev/318227.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/318227.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/318227-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/318227-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/318227.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 318227",
+        "id": "vspecs_318227",
+        "url": "https://ventevinfra.com/wp-content/uploads/318227.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-318227",
+        "url": "https://ventevinfra.com/product/2-4-ghz-6-dbi-wi-fi-omni-antenna-with-1-n-female-connector/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 318227. Manufacturer part number T24060O10006 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "T24060O10006",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "581764",
+    "name": "2.4/5 GHz 6 dBi\u00a0Wi-Fi Micro Patch Antenna with 4 N Male Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "80\u00b0 + - 10\u00b0",
+        "5": "80\u00b0 + - 10\u00b0"
+      },
+      "vertical": {
+        "2.4": "90\u00b0 + - 10\u00b0",
+        "5": "90\u00b0 + - 10\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 4,
+    "polarization": "2 x Horizontal, 2 x Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "4.7 \u00d7 4.7 \u00d7 1\"",
+    "weight": "2.0 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "Nominal 2:1",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to 158\u00b0F",
+    "image_url": "images/ventev/581764.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/581764.jpg"
+      },
+      {
+        "label": "Additional photo",
+        "url": "images/ventev/581764-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/581764-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Vertical",
+        "url": "images/ventev/581764-pattern-2-4-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/ventev/581764-pattern-2-4-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_581764_Wi-FiMicroPatchAntenna_092622.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 581764 (Rev. 092622)",
+        "id": "vspecs_581764",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_581764_Wi-FiMicroPatchAntenna_092622.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-581764",
+        "url": "https://ventevinfra.com/product/2-4-5-ghz-6-dbi-wi-fi-micro-patch-antenna-with-4-n-male-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 581764. Manufacturer part number M6060060D3D3607T (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060D3D3607T",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "251676",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Micro Patch Antenna with 4 RPSMA Male Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "80\u00b0 + - 10\u00b0",
+        "5": "80\u00b0 + - 10\u00b0"
+      },
+      "vertical": {
+        "2.4": "90\u00b0 + - 10\u00b0",
+        "5": "90\u00b0 + - 10\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "2 x Horizontal, 2 x Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "4.7 \u00d7 4.7 \u00d7 1\"",
+    "weight": "5.0 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1 Nominal / 2:1 Nominal",
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": "images/ventev/251676.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/251676.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/251676-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/251676-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/251676-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/251676-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/251676-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/251676_2.4_5GHz-6dBi-Wi-Fi-Micro-Patch-Antenna-with-4-RPSMA-Connectors-1.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 251676",
+        "id": "vspecs_251676",
+        "url": "https://ventevinfra.com/wp-content/uploads/251676_2.4_5GHz-6dBi-Wi-Fi-Micro-Patch-Antenna-with-4-RPSMA-Connectors-1.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-251676",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-6dbi-wi-fi-micro-patch-h80-v90-antenna-with-4-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 251676. Manufacturer part number M6060060D3D3620T (not a Hubbell dual-SKU).",
+      "pattern_images": "Re-extracted with wide-plot / grid heuristics; H/V in filenames."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060D3D3620T",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": true
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "269258",
+    "name": "2.4/5 GHz 5/6 dBi Wi-Fi Omni Antenna with 4 RPTNC Male Connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "20\u00b0"
+      }
+    },
+    "connector": "RPTNC Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "Mounting Options",
+    "weight": "3.0 lb",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "L-bracket",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u2264 2.0 / \u2264 2.0",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to 158\u00b0F",
+    "image_url": "images/ventev/269258.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/269258.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/269258-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/ventev/269258-pattern-2-4-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Vertical",
+        "url": "images/ventev/269258-pattern-2-4-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/269258-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/269258-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vsepcs_269258OmniAntenna_100322.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 269258 (Rev. 100322)",
+        "id": "vspecs_269258",
+        "url": "https://ventevinfra.com/wp-content/uploads/vsepcs_269258OmniAntenna_100322.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-269258",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-6dbi-wi-fi-omni-4-antenna-with-4-rptnc-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 269258. Manufacturer part number M6060060M1D43602C (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060M1D43602C",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "220851",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Omni Antenna with 4 RPSMA Male Connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "20\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "6 \u00d7 4 in.",
+    "weight": "3.0 lb",
+    "ip_rating": null,
+    "radome": "White ABS Plastic",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "L-bracket",
+        "part_number": null,
+        "qty": null
+      },
+      {
+        "item": "Mounting hardware",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u2264 2.0",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to 40\u00b0F",
+    "image_url": "images/ventev/220851.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/220851.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/220851-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/ventev/220851-pattern-2-4-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Vertical",
+        "url": "images/ventev/220851-pattern-2-4-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/220851-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_220851Omni_110422.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 220851 (Rev. 110422)",
+        "id": "vspecs_220851",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_220851Omni_110422.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-220851",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-6dbi-wi-fi-omni-4-antenna-with-4-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 220851. Manufacturer part number M060060M1D43620C (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M060060M1D43620C",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": true
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "276884",
+    "name": "2.4/5 GHz 4/6 dBi Wi-Fi Mini Omni Antenna with 4 N Male Connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "20\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "(H \u00d7 W)",
+    "weight": "3.0 lb",
+    "ip_rating": "IP 54 Compliant",
+    "radome": "Color & Material",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "Mounting hardware",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u22642.0",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 F to +140\u00b0 F",
+    "image_url": "images/ventev/276884.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/276884.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/276884-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/276884-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/276884-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/276884-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/276884-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/276884.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 276884",
+        "id": "vspecs_276884",
+        "url": "https://ventevinfra.com/wp-content/uploads/276884.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-276884",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-4-6dbi-wi-fi-mini-omni-antenna-with-4-ra-rptnc-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 276884. Manufacturer part number M060060M1D43607C (not a Hubbell dual-SKU).",
+      "pattern_images": "Re-extracted with wide-plot / grid heuristics; H/V in filenames."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M060060M1D43607C",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "589945",
+    "name": "2.4/5 GHz 2.5/4 dBi Wi-Fi Omni Antenna with 4 RPTNC Male Connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 4.0,
+      "5": 4.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "RPTNC Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "48 in",
+    "cable_type": null,
+    "dimensions": "3.54 \u00d7 1.57 in",
+    "weight": "0.30 lb",
+    "ip_rating": null,
+    "radome": "Color and Material",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "L-bracket",
+        "part_number": null,
+        "qty": null
+      },
+      {
+        "item": "Mounting hardware",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u22642/\u22642",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 - +158\u00b0F",
+    "image_url": "images/ventev/589945.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/589945.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/589945-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/589945-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/589945-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Vertical",
+        "url": "images/ventev/589945-pattern-2-4-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/589945-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/589945_2.4_5-Wifi-Omni-Antenna-with-4-RPTNC-Connectors.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 589945",
+        "id": "vspecs_589945",
+        "url": "https://ventevinfra.com/wp-content/uploads/589945_2.4_5-Wifi-Omni-Antenna-with-4-RPTNC-Connectors.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-589945",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-2-5-4dbi-wi-fi-omni-antenna-with-4-rptnc-connectors-2/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 589945. Manufacturer part number M6025040O3D402MWL (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6025040O3D402MWL",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "287214",
+    "name": "TerraWave\u00ae 2.4/5 GHz 2.5/4 dBi Wi-Fi Micro Omni Antenna with 2 RPSMA Male Connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 4.0,
+      "5": 4.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 2,
+    "polarization": "Vertical",
+    "cable_length": "48 in",
+    "cable_type": null,
+    "dimensions": "3.54 \u00d7 1.57 in.",
+    "weight": "0.50 lb",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "L-bracket",
+        "part_number": null,
+        "qty": null
+      },
+      {
+        "item": "U-bolts",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "< 2.0",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to 158\u00b0F",
+    "image_url": "images/ventev/287214.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/287214.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Vertical",
+        "url": "images/ventev/287214-pattern-2-4-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/287214-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_287214_TerraWaveMicroOmniAntenna_073024.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 287214 (Rev. 073024)",
+        "id": "vspecs_287214",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_287214_TerraWaveMicroOmniAntenna_073024.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-287214",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-2-5-4dbi-wi-fi-micro-omni-antenna-with-2-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 287214. Manufacturer part number M6025040O3D220MW (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6025040O3D220MW",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "500865",
+    "name": "2.4/5 GHz 3.5/6 dBi Wi-Fi Omni Antenna with 1 RPSMA Male Connector",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "polarization": "Linear. Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "5 \u00d7 0.95 in",
+    "weight": "0.05 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2.0:1 MAX",
+    "isolation": null,
+    "operating_temp": "-10\u00b0 to 55\u00b0C",
+    "image_url": "images/ventev/500865.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/500865.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "dimension_image_url": "images/ventev/500865-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_500865rubberduckant_011023.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 500865 (Rev. 011023)",
+        "id": "vspecs_500865",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_500865rubberduckant_011023.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-500865",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-3-5-6dbi-wi-fi-omni-antenna-with-1-rpsma-connector/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 500865. Manufacturer part number TWS244950-RPSMA-W (not a Hubbell dual-SKU).",
+      "pattern_images": "Datasheet/product sheet does not include radiation pattern plots."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "TWS244950-RPSMA-W",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "569625",
+    "name": "TerraWave\u00ae 2.4/5 GHz 2/3 dBi W-Fi Omni Antenna with 1 RPTNC Male Connector",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 3.0,
+      "5": 3.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "50\u00b0"
+      }
+    },
+    "connector": "RPTNC Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "0.63 \u00d7 5.56 in.",
+    "weight": "0.08 lb",
+    "ip_rating": null,
+    "radome": "White PU, UV Resistant ABS",
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "< 2.0:1",
+    "isolation": null,
+    "operating_temp": "14\u00b0 to 131\u00b0F",
+    "image_url": "images/ventev/569625.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/569625.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/569625-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/569625-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/569625-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/569625-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_569625_WiFiOmniAntenna_091024.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 569625 (Rev. 091024)",
+        "id": "vspecs_569625",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_569625_WiFiOmniAntenna_091024.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-569625",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-2-3dbi-w-fi-omni-antenna-with-1-rptnc-connector/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 569625. Manufacturer part number TWS-5000W (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "TWS-5000W",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "363318",
+    "name": "2.4/5 GHz 2 dBi Wi-Fi Omni Antenna with 1 RPSMA Male Connector",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 2.0,
+      "5": 2.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "7\" \u00d7 1.75\"",
+    "weight": "0.10 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u22642.0 / \u22642.5",
+    "isolation": null,
+    "operating_temp": "14\u00b0 to +131\u00b0F",
+    "image_url": "images/ventev/363318.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/363318.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/ventev/363318-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/ventev/363318-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/363318-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/363318_2.4_5GHz-2dBi-Wi-Fi-Omni-Rubber-Duck-Antenna-1.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 363318",
+        "id": "vspecs_363318",
+        "url": "https://ventevinfra.com/wp-content/uploads/363318_2.4_5GHz-2dBi-Wi-Fi-Omni-Rubber-Duck-Antenna-1.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-363318",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-2-3dbi-wi-fi-omni-antenna-with-1-rptnc-connector-3/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 363318. Manufacturer part number M7020030R10020B (not a Hubbell dual-SKU).",
+      "pattern_images": "Re-extracted with wide-plot / grid heuristics; H/V in filenames."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M7020030R10020B",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "593861",
+    "name": "2.4/5GHz 2/3dBi Wi-Fi Omni Antenna with 1 N Plug Connector",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5GHz / 4.9-5.825 GHz",
+    "gain_dbi": {
+      "2.4": 2.0,
+      "5": 3.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0"
+      }
+    },
+    "connector": "N Plug",
+    "lead_count": 1,
+    "polarization": "Linear, Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": ".78\" \u00d7 3.72\"",
+    "weight": "0.09 lbs",
+    "ip_rating": null,
+    "radome": "Material",
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2.0:1 MAX",
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": "images/ventev/593861.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/593861.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/593861-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/593861-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/593861-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/593861.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 593861",
+        "id": "vspecs_593861",
+        "url": "https://ventevinfra.com/wp-content/uploads/593861.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-593861",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-2-3dbi-wi-fi-omni-antenna-with-1-n-plug-connector/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 593861. Manufacturer part number M7020030MR10007 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M7020030MR10007",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "569668",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Omni Antenna with 4 N Male Connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6.0,
+      "5": 6.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "20\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "in inches",
+    "weight": "2.64 lb",
+    "ip_rating": null,
+    "radome": "Color and Material",
+    "mount_type": null,
+    "included_parts": [
+      {
+        "item": "L-bracket",
+        "part_number": null,
+        "qty": null
+      },
+      {
+        "item": "U-bolts",
+        "part_number": null,
+        "qty": null
+      },
+      {
+        "item": "Mounting hardware",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": "134 mph",
+    "vswr": "<2.0/<2.2",
+    "isolation": null,
+    "operating_temp": "-40\u00b0 to +158\u00b0F",
+    "image_url": "images/ventev/569668.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/569668.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/ventev/569668-pattern-2-4-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/569668-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/569668-Spec-Sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 569668 (Rev. 09/2026)",
+        "id": "vspecs_569668",
+        "url": "https://ventevinfra.com/wp-content/uploads/569668-Spec-Sheet.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-569668",
+        "url": "https://ventevinfra.com/product/2-4-5-ghz-6-dbi-wi-fi-omnidiectional-antenna-with-4-n-male-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 569668. Manufacturer part number M6060060MO1D43607 (not a Hubbell dual-SKU).",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060MO1D43607",
+      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "closeout": false
+    }
   }
 ]
