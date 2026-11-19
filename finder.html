@@ -152,7 +152,6 @@
     const DATA_URL = 'antenna_data.json';
     const WIFI_BANDS = ['2.4', '5', '6'];
     const BAND_PRESETS = [
-      { id: 'any', label: 'Any', bands: [] },
       { id: 'dual', label: 'Dual', bands: ['2.4', '5'] },
       { id: 'tri', label: 'Tri', bands: ['2.4', '5', '6'] }
     ];
@@ -317,9 +316,7 @@
         btn.className = 'band-preset';
         btn.dataset.preset = preset.id;
         btn.textContent = preset.label;
-        btn.title = preset.bands.length
-          ? `Select ${preset.bands.map(b => `${b} GHz`).join(' + ')}`
-          : 'Clear band selection';
+        btn.title = `Select ${preset.bands.map(b => `${b} GHz`).join(' + ')}`;
         btn.setAttribute('aria-pressed', 'false');
         btn.addEventListener('click', () => applyBandPreset(preset.bands));
         container.appendChild(btn);
