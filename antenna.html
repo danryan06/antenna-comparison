@@ -183,6 +183,39 @@
       font-weight: 500;
       letter-spacing: 0.01em;
     }
+    #title-header {
+      line-height: 1.28;
+      overflow-wrap: anywhere;
+    }
+    .header-with-logo {
+      align-items: flex-start;
+    }
+    .detail-identity {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem 0.7rem;
+      margin-top: 0.15rem;
+      color: #e5e7eb;
+    }
+    .identity-vendor {
+      color: #e5e7eb;
+      font-weight: 500;
+    }
+    .identity-sku-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+      min-width: 0;
+      max-width: 100%;
+    }
+    .identity-sku {
+      color: #f8fafc;
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      overflow-wrap: anywhere;
+    }
     .notes-list {
       margin: 0.5rem 0 0;
       padding-left: 1.1rem;
@@ -249,7 +282,7 @@
         <h1 id="title-header">Antenna Details</h1>
         <img src="logo.png" alt="AntennaComparison" class="site-logo" />
       </div>
-      <p class="subtitle" id="subtitle"></p>
+      <p class="subtitle detail-identity" id="subtitle"></p>
       <p id="legacy-line" class="legacy-sku" style="display:none;"></p>
 
       <div id="image-container" class="ap-image-wrapper" style="display:none;">
@@ -569,10 +602,36 @@
         }
         currentEntry = entry;
 
-        const titleText = `${entry.vendor || ''} ${entry.sku || ''}`.trim() || 'Antenna Details';
-        document.getElementById('title-header').textContent = titleText;
-        document.title = `${titleText} — AntennaComparison`;
-        document.getElementById('subtitle').textContent = entry.name || entry.form || '';
+        const productName = String(entry.name || '').trim();
+        const vendor = String(entry.vendor || '').trim();
+        const sku = String(entry.sku || '').trim();
+        const vendorSku = `${vendor} ${sku}`.trim();
+        const heading = productName || vendorSku || String(entry.form || '').trim() || 'Antenna Details';
+        document.getElementById('title-header').textContent = heading;
+        document.title = `${heading} — AntennaComparison`;
+
+        const subtitle = document.getElementById('subtitle');
+        subtitle.replaceChildren();
+        if (productName && (vendor || sku)) {
+          if (vendor) {
+            const vendorEl = document.createElement('span');
+            vendorEl.className = 'identity-vendor';
+            vendorEl.textContent = vendor;
+            subtitle.appendChild(vendorEl);
+          }
+          if (sku) {
+            const group = document.createElement('span');
+            group.className = 'identity-sku-group';
+            const skuEl = document.createElement('span');
+            skuEl.className = 'identity-sku';
+            skuEl.textContent = sku;
+            group.appendChild(skuEl);
+            group.appendChild(createCopyButton(sku));
+            subtitle.appendChild(group);
+          }
+        } else if (!productName && entry.form && heading !== String(entry.form).trim()) {
+          subtitle.textContent = String(entry.form).trim();
+        }
 
         if (entry.legacy_sku) {
           const legacy = document.getElementById('legacy-line');
@@ -596,11 +655,11 @@
         const heroZoom = document.getElementById('hero-zoom');
         if (imgUrl) {
           imageEl.src = imgUrl;
-          imageEl.alt = titleText;
+          imageEl.alt = heading;
           imageWrapper.style.display = 'block';
           heroZoom.hidden = false;
-          heroZoom.setAttribute('aria-label', `Expand product photo for ${titleText}`);
-          heroZoom.onclick = () => openLightbox(imgUrl, titleText);
+          heroZoom.setAttribute('aria-label', `Expand product photo for ${heading}`);
+          heroZoom.onclick = () => openLightbox(imgUrl, heading);
           imageEl.onerror = () => {
             imageWrapper.style.display = 'none';
             heroZoom.hidden = true;
