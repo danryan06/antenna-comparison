@@ -2802,6 +2802,10 @@
       {
         "label": "Product (Hubbell SPEC)",
         "url": "images/acceltex-hubbell/ats-01108.jpg"
+      },
+      {
+        "label": "Product (AccelTex sheet)",
+        "url": "images/acceltex-hubbell/ats-01108-alt.jpg"
       }
     ],
     "pattern_images": [
@@ -2911,6 +2915,10 @@
       {
         "label": "Product (Hubbell SPEC)",
         "url": "images/acceltex-hubbell/ats-01110.jpg"
+      },
+      {
+        "label": "Product (AccelTex sheet)",
+        "url": "images/acceltex-hubbell/ats-01110-alt.jpg"
       }
     ],
     "pattern_images": [
@@ -2951,7 +2959,8 @@
       "ip_rating": "Taken from AccelTex sheet (IP66).",
       "vswr": "Taken from AccelTex sheet (\u22641.5:1, max 2.0). Hubbell lists Voltage Ratio < 1.5:1, Max 2.0.",
       "cable_type": "Hubbell abbreviates the cable as RG402 Plen; AccelTex sheet spells RG402 Plenum.",
-      "pattern_images": "AccelTex sheet shows one plot per band and does not label horizontal vs vertical. Files are named by band only so an orientation is not assigned."
+      "pattern_images": "AccelTex sheet shows one plot per band and does not label horizontal vs vertical. Files are named by band only so an orientation is not assigned.",
+      "images": "AccelTex product photo on this sheet is the same image as ATS-01108."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -3013,6 +3022,10 @@
       {
         "label": "Product (Hubbell SPEC)",
         "url": "images/acceltex-hubbell/ats-01111.jpg"
+      },
+      {
+        "label": "Product (AccelTex sheet)",
+        "url": "images/acceltex-hubbell/ats-01111-alt.jpg"
       }
     ],
     "pattern_images": [
@@ -3054,7 +3067,8 @@
       "vswr": "Taken from AccelTex sheet (\u22641.5:1, max 2.0). Hubbell lists Voltage Ratio < 1.5:1, Max 2.0.",
       "operating_temp": "Operating temperature taken from AccelTex sheet; Hubbell SPEC omits it.",
       "cable_type": "Hubbell abbreviates the cable as RG402 Plen; AccelTex sheet spells RG402 Plenum.",
-      "pattern_images": "AccelTex sheet shows one plot per band and does not label horizontal vs vertical. Files are named by band only so an orientation is not assigned."
+      "pattern_images": "AccelTex sheet shows one plot per band and does not label horizontal vs vertical. Files are named by band only so an orientation is not assigned.",
+      "images": "AccelTex product photo on this sheet is the same image as ATS-01108."
     },
     "internal_notes": {
       "compatible_aps": [
