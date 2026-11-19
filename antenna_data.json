@@ -432,7 +432,7 @@
       "maintainer": "Catalog batch 1. Compatible AP list is internal-only."
     }
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-01060",
     "legacy_sku": "ATS-OO-2456-466-6RPSP-36",
@@ -452,14 +452,14 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "360°",
-        "5": "360°",
-        "6": "360°"
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
       },
       "vertical": {
-        "2.4": "105°",
-        "5": "75°",
-        "6": "75°"
+        "2.4": "105\u00b0",
+        "5": "75\u00b0",
+        "6": "75\u00b0"
       }
     },
     "connector": "RPSMA Plug",
@@ -467,7 +467,7 @@
     "polarization": "Vertical",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-200",
-    "dimensions": "4.7 × 4.7 × 2.8 in (119.4 × 119.4 × 71 mm)",
+    "dimensions": "4.7 \u00d7 4.7 \u00d7 2.8 in (119.4 \u00d7 119.4 \u00d7 71 mm)",
     "weight": "0.4 lb (0.18 kg)",
     "ip_rating": "IP66",
     "radome": "ABS",
@@ -480,9 +480,9 @@
       }
     ],
     "wind_rating": "134 mph (216 km/h)",
-    "vswr": "≤1.5:1, max 2.0",
+    "vswr": "\u22641.5:1, max 2.0",
     "isolation": ">30 dB",
-    "operating_temp": "-40 to 70 °C",
+    "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01060.jpg",
     "images": [
       {
@@ -525,7 +525,7 @@
       }
     ],
     "field_notes": {
-      "radome": "AccelTex sheet lists ABS; Hubbell SPEC product photo is small — dimensions/weight/IP/VSWR/isolation taken from AccelTex sheet where Hubbell SPEC omits them.",
+      "radome": "AccelTex sheet lists ABS; Hubbell SPEC product photo is small \u2014 dimensions/weight/IP/VSWR/isolation taken from AccelTex sheet where Hubbell SPEC omits them.",
       "bands": "Tri-band 2.4/5/6. Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
       "pattern_images": "Cropped from combined H/V figure on AccelTex sheet.",
       "dimension_image_url": "Removed prior dimensions asset: file was the Hubbell logo cropped from the SPEC banner, not a mechanical drawing. Neither Hubbell SPEC nor AccelTex sheet ships a usable dimension figure."
@@ -5561,7 +5561,7 @@
       "maintainer": "Omni mining batch. Compatible AP list is internal-only."
     }
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-00690",
     "legacy_sku": "ATS-DCP-245-68-1RPSP-IC",
@@ -5579,12 +5579,12 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "70°",
-        "5": "60°"
+        "2.4": "70\u00b0",
+        "5": "60\u00b0"
       },
       "vertical": {
-        "2.4": "90°",
-        "5": "60°"
+        "2.4": "90\u00b0",
+        "5": "60\u00b0"
       }
     },
     "connector": "RPSMA Plug",
@@ -5592,7 +5592,7 @@
     "polarization": "Vertical",
     "cable_length": null,
     "cable_type": null,
-    "dimensions": "3.25 × 3 × 2 in",
+    "dimensions": "3.25 \u00d7 3 \u00d7 2 in",
     "weight": "0.18 lb (0.08 kg)",
     "ip_rating": "IP66",
     "radome": "ASA",
@@ -5601,7 +5601,7 @@
     "wind_rating": "130.5 mph (210 km/h)",
     "vswr": "< 2.0:1",
     "isolation": null,
-    "operating_temp": "-40 to 65 °C",
+    "operating_temp": "-40 to 65 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-00690.jpg",
     "images": [
       {
@@ -5611,11 +5611,11 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4–2.5 GHz Horizontal/Vertical",
+        "label": "2.4\u20132.5 GHz Horizontal/Vertical",
         "url": "images/acceltex-hubbell/ats-00690-pattern-2-4-ghz-horizontal-vertical.jpg"
       },
       {
-        "label": "4.9–5.9 GHz Horizontal/Vertical",
+        "label": "4.9\u20135.9 GHz Horizontal/Vertical",
         "url": "images/acceltex-hubbell/ats-00690-pattern-5-ghz-horizontal-vertical.jpg"
       }
     ],
@@ -5645,7 +5645,7 @@
     "field_notes": {
       "frequency_range": "Hubbell frequency 2.4-2.5/4.9-5.85 GHz; AccelTex sheet lists 2.4-2.5/4.9-5.9 GHz. Primary uses Hubbell.",
       "radome": "Radome taken from AccelTex sheet (ASA); Hubbell SPEC omits it.",
-      "dimensions": "Hubbell SPEC lists 3.25 × 3 × 2 in. AccelTex text lists 2.3 in H × 2.3 in W × 0.75 in D (58 × 58 × 19 mm). The AccelTex drawing on the same sheet shows a 1.78 in (45 mm) square face, about 0.69 in body depth, and 1.34 in overall height with the connector. Primary dimensions use the Hubbell SPEC.",
+      "dimensions": "Hubbell SPEC lists 3.25 \u00d7 3 \u00d7 2 in. AccelTex text lists 2.3 in H \u00d7 2.3 in W \u00d7 0.75 in D (58 \u00d7 58 \u00d7 19 mm). The AccelTex drawing on the same sheet shows a 1.78 in (45 mm) square face, about 0.69 in body depth, and 1.34 in overall height with the connector. Primary dimensions use the Hubbell SPEC.",
       "weight": "Taken from AccelTex sheet (not on Hubbell SPEC).",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
       "wind_rating": "Wind rating taken from AccelTex sheet (130.5 mph (210 km/h)); Hubbell SPEC omits it.",
@@ -7164,7 +7164,7 @@
       "maintainer": "Patch early batch. Compatible AP list is internal-only."
     }
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-01107",
     "legacy_sku": "ATS-OP-245-6-1DART-36",
@@ -7182,12 +7182,12 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "105°",
-        "5": "110°"
+        "2.4": "105\u00b0",
+        "5": "110\u00b0"
       },
       "vertical": {
-        "2.4": "65°",
-        "5": "55°"
+        "2.4": "65\u00b0",
+        "5": "55\u00b0"
       }
     },
     "connector": "DART",
@@ -7195,16 +7195,16 @@
     "polarization": "Vertical",
     "cable_length": "36 in (910 mm)",
     "cable_type": "RG402 Plen",
-    "dimensions": "11.2 × 4.8 × 1.1 in",
+    "dimensions": "11.2 \u00d7 4.8 \u00d7 1.1 in",
     "weight": "1.5 lb (0.68 kg)",
     "ip_rating": "IP66",
     "radome": "ABS",
     "mount_type": "Flush Mount to Wall",
     "included_parts": [],
     "wind_rating": "134 mph (216 km/h)",
-    "vswr": "≤1.5:1, max 2.0",
+    "vswr": "\u22641.5:1, max 2.0",
     "isolation": ">30 dB",
-    "operating_temp": "-40 to 70 °C",
+    "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01107.jpg",
     "images": [
       {
@@ -7247,10 +7247,10 @@
     ],
     "field_notes": {
       "lead_count": "Hubbell Number of Leads is 4; AccelTex sheet lists 1. Primary uses Hubbell.",
-      "dimensions": "Hubbell lists 11.2 × 4.8 × 1.1 in. AccelTex sheet lists 11.12” L x 4.82” H x 1.08” D. Primary uses Hubbell inches.",
+      "dimensions": "Hubbell lists 11.2 \u00d7 4.8 \u00d7 1.1 in. AccelTex sheet lists 11.12\u201d L x 4.82\u201d H x 1.08\u201d D. Primary uses Hubbell inches.",
       "weight": "Taken from AccelTex sheet (not on Hubbell SPEC).",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
-      "vswr": "Taken from AccelTex sheet (≤1.5:1, max 2.0). Hubbell lists Voltage Ratio < 1.5:1, Max 2.0.",
+      "vswr": "Taken from AccelTex sheet (\u22641.5:1, max 2.0). Hubbell lists Voltage Ratio < 1.5:1, Max 2.0.",
       "pattern_images": "AccelTex sheet shows one plot per band and does not label horizontal vs vertical. Files are named by band only so an orientation is not assigned. Filenames updated to include horizontal-vertical because the AccelTex sheet overlays both planes on one plot without separate H/V figures."
     },
     "internal_notes": {
@@ -7261,7 +7261,7 @@
       "maintainer": "Patch early batch. Compatible AP list is internal-only."
     }
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-01108",
     "legacy_sku": "ATS-OP-245-6-4NP-36",
@@ -7279,12 +7279,12 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "105°",
-        "5": "110°"
+        "2.4": "105\u00b0",
+        "5": "110\u00b0"
       },
       "vertical": {
-        "2.4": "65°",
-        "5": "55°"
+        "2.4": "65\u00b0",
+        "5": "55\u00b0"
       }
     },
     "connector": "N-Style Plug",
@@ -7292,7 +7292,7 @@
     "polarization": "Vertical",
     "cable_length": "36 in (910 mm)",
     "cable_type": "RG402 Plenum",
-    "dimensions": "11.1 × 4.8 × 1.1 in (282.5 × 122.5 × 27.5 mm)",
+    "dimensions": "11.1 \u00d7 4.8 \u00d7 1.1 in (282.5 \u00d7 122.5 \u00d7 27.5 mm)",
     "weight": "1.5 lb (0.68 kg)",
     "ip_rating": "IP66",
     "radome": "ABS",
@@ -7305,9 +7305,9 @@
       }
     ],
     "wind_rating": "134 mph (216 km/h)",
-    "vswr": "≤1.5:1, max 2.0",
+    "vswr": "\u22641.5:1, max 2.0",
     "isolation": ">30 dB",
-    "operating_temp": "-40 to 70 °C",
+    "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01108.jpg",
     "images": [
       {
@@ -7351,7 +7351,7 @@
     "field_notes": {
       "weight": "Taken from AccelTex sheet (not on Hubbell SPEC).",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
-      "vswr": "Taken from AccelTex sheet (≤1.5:1, max 2.0). Hubbell lists Voltage Ratio < 1.5:1, Max 2.0.",
+      "vswr": "Taken from AccelTex sheet (\u22641.5:1, max 2.0). Hubbell lists Voltage Ratio < 1.5:1, Max 2.0.",
       "operating_temp": "Operating temperature taken from AccelTex sheet; Hubbell SPEC omits it.",
       "cable_type": "Hubbell abbreviates the cable as RG402 Plen; AccelTex sheet spells RG402 Plenum.",
       "pattern_images": "AccelTex sheet shows one plot per band and does not label horizontal vs vertical. Files are named by band only so an orientation is not assigned. Filenames updated to include horizontal-vertical because the AccelTex sheet overlays both planes on one plot without separate H/V figures."
@@ -7370,7 +7370,7 @@
       "maintainer": "Patch early batch. Compatible AP list is internal-only."
     }
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-01110",
     "legacy_sku": "ATS-OP-245-6-4RPSP-36",
@@ -7388,12 +7388,12 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "105°",
-        "5": "110°"
+        "2.4": "105\u00b0",
+        "5": "110\u00b0"
       },
       "vertical": {
-        "2.4": "65°",
-        "5": "55°"
+        "2.4": "65\u00b0",
+        "5": "55\u00b0"
       }
     },
     "connector": "RPSMA Plug",
@@ -7401,7 +7401,7 @@
     "polarization": "Vertical",
     "cable_length": "36 in (910 mm)",
     "cable_type": "RG402 Plenum",
-    "dimensions": "11.1 × 4.8 × 1.1 in (282.5 × 122.5 × 27.5 mm)",
+    "dimensions": "11.1 \u00d7 4.8 \u00d7 1.1 in (282.5 \u00d7 122.5 \u00d7 27.5 mm)",
     "weight": "1.5 lb (0.68 kg)",
     "ip_rating": "IP66",
     "radome": "ABS",
@@ -7414,9 +7414,9 @@
       }
     ],
     "wind_rating": "134 mph (216 km/h)",
-    "vswr": "≤1.5:1, max 2.0",
+    "vswr": "\u22641.5:1, max 2.0",
     "isolation": ">30 dB",
-    "operating_temp": "-40 to 70 °C",
+    "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01110.jpg",
     "images": [
       {
@@ -7460,7 +7460,7 @@
     "field_notes": {
       "weight": "Taken from AccelTex sheet (not on Hubbell SPEC).",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
-      "vswr": "Taken from AccelTex sheet (≤1.5:1, max 2.0). Hubbell lists Voltage Ratio < 1.5:1, Max 2.0.",
+      "vswr": "Taken from AccelTex sheet (\u22641.5:1, max 2.0). Hubbell lists Voltage Ratio < 1.5:1, Max 2.0.",
       "cable_type": "Hubbell abbreviates the cable as RG402 Plen; AccelTex sheet spells RG402 Plenum.",
       "pattern_images": "AccelTex sheet shows one plot per band and does not label horizontal vs vertical. Files are named by band only so an orientation is not assigned. Filenames updated to include horizontal-vertical because the AccelTex sheet overlays both planes on one plot without separate H/V figures.",
       "images": "AccelTex product photo on this sheet is the same image as ATS-01108."
@@ -7473,7 +7473,7 @@
       "maintainer": "Patch early batch. Compatible AP list is internal-only."
     }
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-01111",
     "legacy_sku": "ATS-OP-245-6-4RPTP-36",
@@ -7491,12 +7491,12 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "105°",
-        "5": "110°"
+        "2.4": "105\u00b0",
+        "5": "110\u00b0"
       },
       "vertical": {
-        "2.4": "65°",
-        "5": "55°"
+        "2.4": "65\u00b0",
+        "5": "55\u00b0"
       }
     },
     "connector": "RPTNC Plug",
@@ -7504,7 +7504,7 @@
     "polarization": "Vertical",
     "cable_length": "36 in (910 mm)",
     "cable_type": "RG402 Plenum",
-    "dimensions": "11.1 × 4.8 × 1.1 in (282.5 × 122.5 × 27.5 mm)",
+    "dimensions": "11.1 \u00d7 4.8 \u00d7 1.1 in (282.5 \u00d7 122.5 \u00d7 27.5 mm)",
     "weight": "1.5 lb (0.68 kg)",
     "ip_rating": "IP66",
     "radome": "ABS",
@@ -7517,9 +7517,9 @@
       }
     ],
     "wind_rating": "134 mph (216 km/h)",
-    "vswr": "≤1.5:1, max 2.0",
+    "vswr": "\u22641.5:1, max 2.0",
     "isolation": ">30 dB",
-    "operating_temp": "-40 to 70 °C",
+    "operating_temp": "-40 to 70 \u00b0C",
     "image_url": "images/acceltex-hubbell/ats-01111.jpg",
     "images": [
       {
@@ -7563,7 +7563,7 @@
     "field_notes": {
       "weight": "Taken from AccelTex sheet (not on Hubbell SPEC).",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
-      "vswr": "Taken from AccelTex sheet (≤1.5:1, max 2.0). Hubbell lists Voltage Ratio < 1.5:1, Max 2.0.",
+      "vswr": "Taken from AccelTex sheet (\u22641.5:1, max 2.0). Hubbell lists Voltage Ratio < 1.5:1, Max 2.0.",
       "operating_temp": "Operating temperature taken from AccelTex sheet; Hubbell SPEC omits it.",
       "cable_type": "Hubbell abbreviates the cable as RG402 Plen; AccelTex sheet spells RG402 Plenum.",
       "pattern_images": "AccelTex sheet shows one plot per band and does not label horizontal vs vertical. Files are named by band only so an orientation is not assigned. Filenames updated to include horizontal-vertical because the AccelTex sheet overlays both planes on one plot without separate H/V figures.",
@@ -14273,7 +14273,7 @@
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
     }
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-03675",
     "legacy_sku": null,
@@ -14293,14 +14293,14 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "60°",
-        "5": "50°",
-        "6": "40°"
+        "2.4": "60\u00b0",
+        "5": "50\u00b0",
+        "6": "40\u00b0"
       },
       "vertical": {
-        "2.4": "60°",
-        "5": "50°",
-        "6": "40°"
+        "2.4": "60\u00b0",
+        "5": "50\u00b0",
+        "6": "40\u00b0"
       }
     },
     "connector": "N-Style Plug",
@@ -14308,7 +14308,7 @@
     "polarization": "2 Vertical, 2 Horizontal",
     "cable_length": "36 in (914.4 mm)",
     "cable_type": "ATS-195",
-    "dimensions": "11.81 × 11.81 × 1.85 in (300 × 300 × 47 mm)",
+    "dimensions": "11.81 \u00d7 11.81 \u00d7 1.85 in (300 \u00d7 300 \u00d7 47 mm)",
     "weight": "2.5 lb (1.13 kg)",
     "ip_rating": "IP67",
     "radome": "ABS",
@@ -14364,7 +14364,7 @@
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS03675-SPEC-EN.pdf"
       },
       {
-        "label": "AccelTex Spec Sheet ATS-OP-2456-81010-4NP-36 (©2026)",
+        "label": "AccelTex Spec Sheet ATS-OP-2456-81010-4NP-36 (\u00a92026)",
         "id": "ATS-OP-2456-81010-4NP-36",
         "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-81010-4NP-36_Specsheet.pdf"
       },
@@ -14397,7 +14397,7 @@
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
     }
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-03676",
     "legacy_sku": null,
@@ -14417,14 +14417,14 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "60°",
-        "5": "50°",
-        "6": "40°"
+        "2.4": "60\u00b0",
+        "5": "50\u00b0",
+        "6": "40\u00b0"
       },
       "vertical": {
-        "2.4": "60°",
-        "5": "50°",
-        "6": "40°"
+        "2.4": "60\u00b0",
+        "5": "50\u00b0",
+        "6": "40\u00b0"
       }
     },
     "connector": "RPSMA Plug",
@@ -14432,7 +14432,7 @@
     "polarization": "2 Vertical, 2 Horizontal",
     "cable_length": "36 in (914.4 mm)",
     "cable_type": "ATS-195",
-    "dimensions": "11.81 × 11.81 × 1.85 in (300 × 300 × 47 mm)",
+    "dimensions": "11.81 \u00d7 11.81 \u00d7 1.85 in (300 \u00d7 300 \u00d7 47 mm)",
     "weight": "2.5 lb (1.13 kg)",
     "ip_rating": "IP67",
     "radome": "ABS",
@@ -14488,7 +14488,7 @@
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS03676-SPEC-EN.pdf"
       },
       {
-        "label": "AccelTex Spec Sheet ATS-OP-2456-81010-4RPSP-36 (©2024)",
+        "label": "AccelTex Spec Sheet ATS-OP-2456-81010-4RPSP-36 (\u00a92024)",
         "id": "ATS-OP-2456-81010-4RPSP-36",
         "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-81010-4RPSP-36_Specsheet.pdf"
       },
@@ -14517,11 +14517,11 @@
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
     }
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-03951",
     "legacy_sku": "ATS-OP-2456-81010-14MPC-36",
-    "name": "2.4/5/6 GHz 40°x40° 8/10/10 dBi 14 Element Patch antenna with MPC",
+    "name": "2.4/5/6 GHz 40\u00b0x40\u00b0 8/10/10 dBi 14 Element Patch antenna with MPC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
     "bands": [
@@ -14537,14 +14537,14 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "65°",
-        "5": "40°",
-        "6": "35°"
+        "2.4": "65\u00b0",
+        "5": "40\u00b0",
+        "6": "35\u00b0"
       },
       "vertical": {
-        "2.4": "65°",
-        "5": "40°",
-        "6": "35°"
+        "2.4": "65\u00b0",
+        "5": "40\u00b0",
+        "6": "35\u00b0"
       }
     },
     "connector": "MPC",
@@ -14552,7 +14552,7 @@
     "polarization": "7 Vertical, 7 Horizontal",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-100",
-    "dimensions": "15.35 × 15.35 × 2.25 in (390 × 390 × 57 mm)",
+    "dimensions": "15.35 \u00d7 15.35 \u00d7 2.25 in (390 \u00d7 390 \u00d7 57 mm)",
     "weight": "3 lb (1.3 kg)",
     "ip_rating": "IP66",
     "radome": "ABS",
@@ -14614,7 +14614,7 @@
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS03951-SPEC-EN.pdf"
       },
       {
-        "label": "AccelTex Spec Sheet ATS-03951_Spec_Sheet (©2025)",
+        "label": "AccelTex Spec Sheet ATS-03951_Spec_Sheet (\u00a92025)",
         "id": "ATS-03951_Spec_Sheet",
         "url": "https://hubbellcdn.com/specsheet/ATS-03951_Spec_Sheet.pdf"
       }
@@ -14635,11 +14635,11 @@
     },
     "dimension_image_kind": "mechanical"
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-03952",
     "legacy_sku": "ATS-OP-2456-8-14MPC-36",
-    "name": "2.4/5/6 GHz 25°x115° 8 dBi 14 Element Patch antenna with MPC",
+    "name": "2.4/5/6 GHz 25\u00b0x115\u00b0 8 dBi 14 Element Patch antenna with MPC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
     "bands": [
@@ -14655,14 +14655,14 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "105°",
-        "5": "110°",
-        "6": "110°"
+        "2.4": "105\u00b0",
+        "5": "110\u00b0",
+        "6": "110\u00b0"
       },
       "vertical": {
-        "2.4": "50°",
-        "5": "30°",
-        "6": "25°"
+        "2.4": "50\u00b0",
+        "5": "30\u00b0",
+        "6": "25\u00b0"
       }
     },
     "connector": "MPC",
@@ -14670,7 +14670,7 @@
     "polarization": "Vertical",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-100",
-    "dimensions": "19.3 × 19.3 × 2.25 in (490 × 490 × 57 mm)",
+    "dimensions": "19.3 \u00d7 19.3 \u00d7 2.25 in (490 \u00d7 490 \u00d7 57 mm)",
     "weight": "3.5 lb (1.5 kg)",
     "ip_rating": "IP66",
     "radome": "ASA",
@@ -14737,7 +14737,7 @@
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS03952-SPEC-EN.pdf"
       },
       {
-        "label": "AccelTex Spec Sheet ATS-03952_Spec_Sheet (©2025)",
+        "label": "AccelTex Spec Sheet ATS-03952_Spec_Sheet (\u00a92025)",
         "id": "ATS-03952_Spec_Sheet",
         "url": "https://hubbellcdn.com/specsheet/ATS-03952_Spec_Sheet.pdf"
       }
@@ -14760,7 +14760,7 @@
     },
     "dimension_image_kind": "mechanical"
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-03953",
     "legacy_sku": "ATS-OP-2456-7-14MPC-36",
@@ -14780,14 +14780,14 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "110°",
-        "5": "110°",
-        "6": "105°"
+        "2.4": "110\u00b0",
+        "5": "110\u00b0",
+        "6": "105\u00b0"
       },
       "vertical": {
-        "2.4": "60°",
-        "5": "55°",
-        "6": "50°"
+        "2.4": "60\u00b0",
+        "5": "55\u00b0",
+        "6": "50\u00b0"
       }
     },
     "connector": "MPC",
@@ -14795,7 +14795,7 @@
     "polarization": "14 Vertical",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-100",
-    "dimensions": "15.35 × 15.35 × 2.25 in (390 × 390 × 57 mm)",
+    "dimensions": "15.35 \u00d7 15.35 \u00d7 2.25 in (390 \u00d7 390 \u00d7 57 mm)",
     "weight": "3 lb (1.2 kg)",
     "ip_rating": "IP66",
     "radome": "ASA",
@@ -14880,11 +14880,11 @@
     },
     "dimension_image_kind": "assembly"
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-03954",
     "legacy_sku": "ATS-OP-2456-477-14MPC-36",
-    "name": "2.4/5/6 GHz 55°x55° 4/7/7 dBi 14 Element Patch antenna with MPC",
+    "name": "2.4/5/6 GHz 55\u00b0x55\u00b0 4/7/7 dBi 14 Element Patch antenna with MPC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
     "bands": [
@@ -14900,14 +14900,14 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "75°",
-        "5": "55°",
-        "6": "45°"
+        "2.4": "75\u00b0",
+        "5": "55\u00b0",
+        "6": "45\u00b0"
       },
       "vertical": {
-        "2.4": "75°",
-        "5": "55°",
-        "6": "45°"
+        "2.4": "75\u00b0",
+        "5": "55\u00b0",
+        "6": "45\u00b0"
       }
     },
     "connector": "MPC",
@@ -14915,7 +14915,7 @@
     "polarization": "7 Vertical, 7 Horizontal",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-100",
-    "dimensions": "11.8 × 11.8 × 1.85 in (300 × 300 × 47 mm)",
+    "dimensions": "11.8 \u00d7 11.8 \u00d7 1.85 in (300 \u00d7 300 \u00d7 47 mm)",
     "weight": "3 lb (1.3 kg)",
     "ip_rating": "IP66",
     "radome": "ABS",
@@ -14977,7 +14977,7 @@
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS03954-SPEC-EN.pdf"
       },
       {
-        "label": "AccelTex Spec Sheet ATS-03954_Spec_Sheet (©2025)",
+        "label": "AccelTex Spec Sheet ATS-03954_Spec_Sheet (\u00a92025)",
         "id": "ATS-03954_Spec_Sheet",
         "url": "https://hubbellcdn.com/specsheet/ATS-03954_Spec_Sheet.pdf"
       }
@@ -14998,7 +14998,7 @@
     },
     "dimension_image_kind": "mechanical"
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-03955",
     "legacy_sku": "ATS-OP-2456-5-14MPC-36",
@@ -15018,22 +15018,22 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "90°",
-        "5": "90°",
-        "6": "100°"
+        "2.4": "90\u00b0",
+        "5": "90\u00b0",
+        "6": "100\u00b0"
       },
       "vertical": {
-        "2.4": "90°",
-        "5": "85°",
-        "6": "90°"
+        "2.4": "90\u00b0",
+        "5": "85\u00b0",
+        "6": "90\u00b0"
       }
     },
     "connector": "MPC",
     "lead_count": 14,
-    "polarization": "7 (+45°) and 7 (-45°)",
+    "polarization": "7 (+45\u00b0) and 7 (-45\u00b0)",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-100",
-    "dimensions": "11.8 × 11.8 × 1.8 in (300 × 300 × 47 mm)",
+    "dimensions": "11.8 \u00d7 11.8 \u00d7 1.8 in (300 \u00d7 300 \u00d7 47 mm)",
     "weight": "3 lb (1.2 kg)",
     "ip_rating": "IP66",
     "radome": "ASA",
@@ -15118,7 +15118,7 @@
     },
     "dimension_image_kind": "mechanical"
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-03997",
     "legacy_sku": "ATS-OP-2456-8-4NP-36",
@@ -15138,14 +15138,14 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "120°",
-        "5": "115°",
-        "6": "110°"
+        "2.4": "120\u00b0",
+        "5": "115\u00b0",
+        "6": "110\u00b0"
       },
       "vertical": {
-        "2.4": "45°",
-        "5": "25°",
-        "6": "25°"
+        "2.4": "45\u00b0",
+        "5": "25\u00b0",
+        "6": "25\u00b0"
       }
     },
     "connector": "N-Style Plug",
@@ -15153,7 +15153,7 @@
     "polarization": "2 Vertical, 2 Horizontal",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-200",
-    "dimensions": "15.3 × 15.3 × 1.37 in (390 × 390 × 35 mm)",
+    "dimensions": "15.3 \u00d7 15.3 \u00d7 1.37 in (390 \u00d7 390 \u00d7 35 mm)",
     "weight": "2.5 lb (0.68 kg)",
     "ip_rating": "IP67",
     "radome": "ABS",
@@ -15199,7 +15199,7 @@
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS03997-SPEC-EN.pdf"
       },
       {
-        "label": "AccelTex Spec Sheet ATS-03997_Spec_Sheet (©2024)",
+        "label": "AccelTex Spec Sheet ATS-03997_Spec_Sheet (\u00a92024)",
         "id": "ATS-03997_Spec_Sheet",
         "url": "https://hubbellcdn.com/specsheet/ATS-03997_Spec_Sheet.pdf"
       }
@@ -15229,7 +15229,7 @@
     },
     "dimension_image_kind": "mechanical"
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-03998",
     "legacy_sku": "ATS-OP-2456-8-4RPSP-36",
@@ -15249,14 +15249,14 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "120°",
-        "5": "115°",
-        "6": "110°"
+        "2.4": "120\u00b0",
+        "5": "115\u00b0",
+        "6": "110\u00b0"
       },
       "vertical": {
-        "2.4": "45°",
-        "5": "25°",
-        "6": "25°"
+        "2.4": "45\u00b0",
+        "5": "25\u00b0",
+        "6": "25\u00b0"
       }
     },
     "connector": "RPSMA Plug",
@@ -15264,7 +15264,7 @@
     "polarization": "2 Vertical, 2 Horizontal",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-200",
-    "dimensions": "15.3 × 15.3 × 1.37 in (390 × 390 × 35 mm)",
+    "dimensions": "15.3 \u00d7 15.3 \u00d7 1.37 in (390 \u00d7 390 \u00d7 35 mm)",
     "weight": "2.5 lb (0.68 kg)",
     "ip_rating": "IP67",
     "radome": "ABS",
@@ -15310,7 +15310,7 @@
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS03998-SPEC-EN.pdf"
       },
       {
-        "label": "AccelTex Spec Sheet ATS-03998_Spec_Sheet (©2024)",
+        "label": "AccelTex Spec Sheet ATS-03998_Spec_Sheet (\u00a92024)",
         "id": "ATS-03998_Spec_Sheet",
         "url": "https://hubbellcdn.com/specsheet/ATS-03998_Spec_Sheet.pdf"
       }
@@ -15337,7 +15337,7 @@
     },
     "dimension_image_kind": "mechanical"
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-04153",
     "legacy_sku": "ATS-OP-2456-7-4NP-36",
@@ -15357,14 +15357,14 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "120°",
-        "5": "105°",
-        "6": "105°"
+        "2.4": "120\u00b0",
+        "5": "105\u00b0",
+        "6": "105\u00b0"
       },
       "vertical": {
-        "2.4": "45°",
-        "5": "55°",
-        "6": "50°"
+        "2.4": "45\u00b0",
+        "5": "55\u00b0",
+        "6": "50\u00b0"
       }
     },
     "connector": "N-Style Plug",
@@ -15372,7 +15372,7 @@
     "polarization": "Vertical",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-195",
-    "dimensions": "15.4 × 15.4 × 2.24 in (390 × 390 × 57 mm)",
+    "dimensions": "15.4 \u00d7 15.4 \u00d7 2.24 in (390 \u00d7 390 \u00d7 57 mm)",
     "weight": "2.5 (0.68 kg)",
     "ip_rating": "IP67",
     "radome": "ASA",
@@ -15424,7 +15424,7 @@
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS04153-SPEC-EN.pdf"
       },
       {
-        "label": "AccelTex Spec Sheet ATS-04153_Spec_Sheet (©2025)",
+        "label": "AccelTex Spec Sheet ATS-04153_Spec_Sheet (\u00a92025)",
         "id": "ATS-04153_Spec_Sheet",
         "url": "https://hubbellcdn.com/specsheet/ATS-04153_Spec_Sheet.pdf"
       }
@@ -15452,7 +15452,7 @@
       "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
     }
   },
-    {
+  {
     "vendor": "AccelTex / Hubbell",
     "sku": "ATS-04154",
     "legacy_sku": "ATS-OP-2456-7-4RPSP-36",
@@ -15472,14 +15472,14 @@
     },
     "beamwidth": {
       "horizontal": {
-        "2.4": "120°",
-        "5": "105°",
-        "6": "105°"
+        "2.4": "120\u00b0",
+        "5": "105\u00b0",
+        "6": "105\u00b0"
       },
       "vertical": {
-        "2.4": "45°",
-        "5": "55°",
-        "6": "50°"
+        "2.4": "45\u00b0",
+        "5": "55\u00b0",
+        "6": "50\u00b0"
       }
     },
     "connector": "RPSMA Plug",
@@ -15487,7 +15487,7 @@
     "polarization": "Vertical",
     "cable_length": "36 in (910 mm)",
     "cable_type": "ATS-195",
-    "dimensions": "15.4 × 15.4 × 2.24 in (390 × 390 × 57 mm)",
+    "dimensions": "15.4 \u00d7 15.4 \u00d7 2.24 in (390 \u00d7 390 \u00d7 57 mm)",
     "weight": "2.5 lb (0.68 kg)",
     "ip_rating": "IP67",
     "radome": "ASA",
@@ -15539,7 +15539,7 @@
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS04154-SPEC-EN.pdf"
       },
       {
-        "label": "AccelTex Spec Sheet ATS-04154_Spec_Sheet (©2025)",
+        "label": "AccelTex Spec Sheet ATS-04154_Spec_Sheet (\u00a92025)",
         "id": "ATS-04154_Spec_Sheet",
         "url": "https://hubbellcdn.com/specsheet/ATS-04154_Spec_Sheet.pdf"
       }
@@ -16651,12 +16651,12 @@
     ],
     "pattern_images": [
       {
-        "label": "5 GHz Horizontal",
-        "url": "images/ventev/233530-pattern-5-ghz-horizontal.jpg"
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/ventev/233530-pattern-2-4-ghz-horizontal-vertical.jpg"
       },
       {
-        "label": "2.4 GHz Horizontal",
-        "url": "images/ventev/233530-pattern-2-4-ghz-horizontal.jpg"
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/ventev/233530-pattern-5-ghz-horizontal-vertical.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -16680,7 +16680,8 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 233530. Manufacturer part number M60300300O4242TA2 (not a Hubbell dual-SKU).",
-      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
+      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -17226,8 +17227,12 @@
     "images": [],
     "pattern_images": [
       {
-        "label": "2.4 GHz Horizontal",
-        "url": "images/ventev/219521-pattern-2-4-ghz-horizontal.jpg"
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/ventev/219521-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5/6 GHz Horizontal/Vertical",
+        "url": "images/ventev/219521-pattern-5-6-ghz-horizontal-vertical.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -17251,7 +17256,8 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 219521. Manufacturer part number M6060060P1D83602S (not a Hubbell dual-SKU).",
-      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
+      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -17309,8 +17315,12 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4/5 GHz Horizontal",
-        "url": "images/ventev/248961-pattern-2-4-5-ghz-horizontal.jpg"
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/ventev/248961-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/ventev/248961-pattern-5-ghz-horizontal-vertical.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -17334,7 +17344,8 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 248961. Manufacturer part number M6030060O42402ASM (not a Hubbell dual-SKU).",
-      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
+      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -17388,12 +17399,12 @@
     "images": [],
     "pattern_images": [
       {
-        "label": "5/6 GHz Horizontal",
-        "url": "images/ventev/264761-pattern-5-6-ghz-horizontal.jpg"
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/ventev/264761-pattern-2-4-ghz-horizontal-vertical.jpg"
       },
       {
-        "label": "2.4/5 GHz Horizontal",
-        "url": "images/ventev/264761-pattern-2-4-5-ghz-horizontal.jpg"
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/ventev/264761-pattern-5-ghz-horizontal-vertical.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -17417,7 +17428,8 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 264761. Manufacturer part number M040030D33620WS (not a Hubbell dual-SKU).",
-      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
+      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -18331,8 +18343,12 @@
     "images": [],
     "pattern_images": [
       {
-        "label": "5 GHz Horizontal",
-        "url": "images/ventev/249891-pattern-5-ghz-horizontal.jpg"
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/ventev/249891-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/ventev/249891-pattern-5-ghz-horizontal-vertical.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -18356,7 +18372,8 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 249891. Manufacturer part number M6060060MO1D83699 (not a Hubbell dual-SKU).",
-      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
+      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -18789,8 +18806,12 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4/5 GHz Horizontal",
-        "url": "images/ventev/222152-pattern-2-4-5-ghz-horizontal.jpg"
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/ventev/222152-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/ventev/222152-pattern-5-ghz-horizontal-vertical.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -18814,7 +18835,8 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 222152. Manufacturer part number M7040070O10007G (not a Hubbell dual-SKU).",
-      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
+      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -19284,7 +19306,11 @@
     "images": [],
     "pattern_images": [
       {
-        "label": "2.4 GHz Horizontal",
+        "label": "2.4 GHz Vertical (E-Plane)",
+        "url": "images/ventev/457948-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal (H-Plane)",
         "url": "images/ventev/457948-pattern-2-4-ghz-horizontal.jpg"
       }
     ],
@@ -19309,7 +19335,8 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 457948. Manufacturer part number T24150Y13602 (not a Hubbell dual-SKU).",
-      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
+      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -19620,7 +19647,16 @@
     "operating_temp": null,
     "image_url": "images/ventev/590261.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical (E-Plane)",
+        "url": "images/ventev/590261-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal (H-Plane)",
+        "url": "images/ventev/590261-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
     "dimension_image_url": null,
     "datasheet_urls": [
       {
@@ -19642,7 +19678,8 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 590261. Manufacturer part number T58140P10006O (not a Hubbell dual-SKU).",
-      "pattern_images": "Datasheet has no radiation pattern plots; page 2 is a mechanical/mount drawing only."
+      "pattern_images": "Datasheet has no radiation pattern plots; page 2 is a mechanical/mount drawing only.",
+      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -20379,8 +20416,20 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4/5 GHz Vertical",
-        "url": "images/ventev/287214-pattern-2-4-5-ghz-vertical.jpg"
+        "label": "2.4 GHz Vertical (E-Plane)",
+        "url": "images/ventev/287214-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal (H-Plane)",
+        "url": "images/ventev/287214-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical (E-Plane)",
+        "url": "images/ventev/287214-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal (H-Plane)",
+        "url": "images/ventev/287214-pattern-5-ghz-horizontal.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -20404,7 +20453,8 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 287214. Manufacturer part number M6025040O3D220MW (not a Hubbell dual-SKU).",
-      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
+      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -20809,8 +20859,20 @@
     "images": [],
     "pattern_images": [
       {
-        "label": "2.4/5 GHz Horizontal",
-        "url": "images/ventev/569668-pattern-2-4-5-ghz-horizontal.jpg"
+        "label": "2.4 GHz Horizontal (H-Plane)",
+        "url": "images/ventev/569668-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical (E-Plane)",
+        "url": "images/ventev/569668-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal (H-Plane)",
+        "url": "images/ventev/569668-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical (E-Plane)",
+        "url": "images/ventev/569668-pattern-5-ghz-vertical.jpg"
       }
     ],
     "dimension_image_url": "images/ventev/569668-dimensions.jpg",
@@ -20834,7 +20896,8 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 569668. Manufacturer part number M6060060MO1D43607 (not a Hubbell dual-SKU).",
-      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
+      "qc_hv": "QC 2026-11-19: filled missing H/V (or Az/El) planes from datasheet; combined overlays labeled Horizontal/Vertical."
     },
     "internal_notes": {
       "compatible_aps": [],
