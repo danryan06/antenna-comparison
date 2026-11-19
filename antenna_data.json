@@ -971,5 +971,912 @@
       ],
       "maintainer": "Catalog batch 1. Compatible AP list is internal-only."
     }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "276858",
+    "name": "2.4/5/6 GHz 6 dBi Omnidirectional Wi-Fi Antenna with 4 RPSMA Male Connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4/5/6 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6,
+      "6": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "20\u00b0",
+        "6": "20\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "5.9 \u00d7 7 in",
+    "weight": "3.60 lb",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "Mast or pole (L-bracket included)",
+    "included_parts": [
+      {
+        "item": "L-bracket",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "U-bolts with nuts and washers",
+        "part_number": null,
+        "qty": 2
+      }
+    ],
+    "wind_rating": "134 mph",
+    "vswr": "\u22642.0 / \u22642.2",
+    "isolation": null,
+    "operating_temp": "-40 to 158 \u00b0F",
+    "image_url": "images/ventev/276858.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/276858.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/ventev/276858-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5/6 GHz Horizontal + Vertical",
+        "url": "images/ventev/276858-pattern-5-6-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_276858_OutddoorOmniAntenna_031225pdf.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 276858 (Rev. 031225)",
+        "id": "vspecs_276858",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_276858_OutddoorOmniAntenna_031225pdf.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-276858",
+        "url": "https://ventevinfra.com/product/2-4-5-6ghz-6-dbi-omnidirectional-wi-fi-antenna-with-4-rpsma-male-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU is Ventev/Tessco 276858. Manufacturer part number M6060060O1D43620E (not a Hubbell dual-SKU).",
+      "connector": "Datasheet and product title: RPSMA Male. Store attribute incorrectly listed RPTNC on scrape.",
+      "pattern_images": "Datasheet overlays H-plane and E-plane on one plot per band; filenames use horizontal-vertical.",
+      "indoor_outdoor": "Datasheet emphasizes warehouse/manufacturing/outdoor; store Application Indoor/Outdoor."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060O1D43620E",
+      "maintainer": "Ventev batch 1. Compatible AP model lists not published as structured per-SKU data on product page; datasheet mentions Cisco Wi-Fi 5/6/6E APs generally. Keep any future AP lists internal-only."
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "249595",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Omni Antenna with 4 N Male Connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "50\u00b0",
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in (3 ft)",
+    "cable_type": "RG58",
+    "dimensions": "6 \u00d7 4 in (H \u00d7 W)",
+    "weight": "3 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall, mast, or pole (L-bracket included)",
+    "included_parts": [
+      {
+        "item": "L-bracket for mast/wall mounting",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u22642.0 / \u22642.0",
+    "isolation": null,
+    "operating_temp": "-40 to 158 \u00b0F",
+    "image_url": "images/ventev/249595.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/249595.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/249595-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/249595-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/249595-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/249595-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/249595-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/249595_2.4_5GHz-6dBi-Wi-Fi-Omni-Antenna-with-4-N-Style-Connectors.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 249595",
+        "id": "249595_spec",
+        "url": "https://ventevinfra.com/wp-content/uploads/249595_2.4_5GHz-6dBi-Wi-Fi-Omni-Antenna-with-4-N-Style-Connectors.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-249595",
+        "url": "https://ventevinfra.com/product/2-4-5-ghz-6-dbi-wi-fi-omni-antenna-with-4-n-male-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 249595. Manufacturer part number M6060060M1D43607M.",
+      "pattern_images": "E-plane mapped to vertical; H-plane mapped to horizontal."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060M1D43607M",
+      "maintainer": "Ventev batch 1. Small-form outdoor MIMO omni."
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "VEN302021",
+    "name": "TerraWave 2.4/5 GHz 4/6 dBi Wi-Fi MIMO Omni Antenna with 4 RA RPTNC Male Connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "RA RPTNC Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "18 in",
+    "cable_type": null,
+    "dimensions": "5.4 \u00d7 2.9 \u00d7 1 in",
+    "weight": "0.44 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Ceiling tile (threaded plastic bushing and nut)",
+    "included_parts": [
+      {
+        "item": "Threaded plastic bushing and nut for ceiling tile mounting",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u22642.0 / \u22642.5",
+    "isolation": null,
+    "operating_temp": "-40 to 158 \u00b0F",
+    "image_url": "images/ventev/ven302021.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/ven302021.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/ventev/ven302021-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/ventev/ven302021-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/ven302021-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_302021MIMOOmniAntenna_082125.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC VEN302021 (Rev. 082125)",
+        "id": "vspecs_302021",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_302021MIMOOmniAntenna_082125.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-VEN302021",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-4-6dbi-wi-fi-omni-mini-antenna-with-4-ra-rptnc-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Current Ventev SKU VEN302021 (VEN-prefixed). Manufacturer part number M6040060O2D1802R.",
+      "pattern_images": "Plots overlay both planes; filenames use horizontal-vertical. Datasheet side labels say Vertical per band."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6040060O2D1802R",
+      "maintainer": "Ventev batch 1. Indoor ceiling MIMO omni; datasheet mentions Cisco 802.11ac Wave I/II APs generally."
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "527504",
+    "name": "TerraWave 2.4/5 GHz 6 dBi Wi-Fi Patch Antenna with 4 RPSMA Male Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "80\u00b0 \u00b1 20\u00b0",
+        "5": "45\u00b0 \u00b1 20\u00b0"
+      },
+      "vertical": {
+        "2.4": "80\u00b0 \u00b1 20\u00b0",
+        "5": "45\u00b0 \u00b1 20\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "9.2 \u00d7 9.0 \u00d7 1.1 in",
+    "weight": "2.65 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall, mast, or pole (articulating mount)",
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "<2.0 / <2.5",
+    "isolation": null,
+    "operating_temp": "-40 to 140 \u00b0F",
+    "image_url": "images/ventev/527504.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/527504.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/527504-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/527504-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/527504-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_527504_QuadPatchAnt_092024.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 527504 (Rev. 092024)",
+        "id": "vspecs_527504",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_527504_QuadPatchAnt_092024.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-527504",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-6dbi-wi-fi-patch-antenna-with-4-rpsma-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 527504. Manufacturer part number M6060060MP1D43620.",
+      "pattern_images": "Datasheet shows one plot per band without E/H labels on the extracted images; stored as vertical pending clearer plane labels. Front-to-back >18 dB on sheet.",
+      "front_to_back": ">18 dB (not a first-class field; noted here)."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060MP1D43620",
+      "maintainer": "Ventev batch 1. Quad patch; datasheet says enterprise-class 802.11n MIMO APs generally."
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "611750",
+    "name": "2.4/5/6 GHz 6 dBi Wi-Fi Patch Antenna with 4 N Male Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4/5/6 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6,
+      "6": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "105\u00b0",
+        "5": "120\u00b0",
+        "6": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "70\u00b0",
+        "6": "70\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "10 \u00d7 5.6 \u00d7 1.4 in",
+    "weight": "1.2 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Mast and/or wall (articulating mount)",
+    "included_parts": [
+      {
+        "item": "Articulating mount with mast/wall hardware",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "<2.0",
+    "isolation": null,
+    "operating_temp": "-40 to 158 \u00b0F",
+    "image_url": "images/ventev/611750.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/611750.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/611750-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/611750-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5/6 GHz Vertical",
+        "url": "images/ventev/611750-pattern-5-6-ghz-vertical.jpg"
+      },
+      {
+        "label": "5/6 GHz Horizontal",
+        "url": "images/ventev/611750-pattern-5-6-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/ventev/611750-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_611750_121124.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 611750 (Rev. 121124)",
+        "id": "vspec_611750",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_611750_121124.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-611750",
+        "url": "https://ventevinfra.com/product/2-4-5-6-ghz-6-dbi-wi-fi-micro-patch-antenna-with-4-n-male-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 611750. Manufacturer part number M7060060P1D43607TB.",
+      "form": "Datasheet marketing says 'High Density' but horizontal beamwidths are wide (105\u00b0/120\u00b0/120\u00b0); classified as Patch per project form rules (HD reserved for narrow multi-element)."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M7060060P1D43607TB",
+      "maintainer": "Ventev batch 1. Tri-band patch for Wi-Fi 6E/7 APs generally."
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "609446",
+    "name": "2.4/5/6 GHz 6 dBi Wi-Fi Flush Mount MIMO Patch Antenna with 4 N-Male Connectors",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4/5/6 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6,
+      "6": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "115\u00b0",
+        "5": "120\u00b0",
+        "6": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "60\u00b0",
+        "6": "60\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": "RG58",
+    "dimensions": "10.8 \u00d7 6.8 \u00d7 1.4 in",
+    "weight": "1.2 lb",
+    "ip_rating": null,
+    "radome": "White UV-resistant ABS",
+    "mount_type": "Flush mount to flat surface (mounting tabs)",
+    "included_parts": [
+      {
+        "item": "Mounting tabs",
+        "part_number": null,
+        "qty": null
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "<2.0",
+    "isolation": ">15 dB",
+    "operating_temp": "-40 to 158 \u00b0F",
+    "image_url": "images/ventev/609446.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/609446.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/609446-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/609446-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5/6 GHz Horizontal",
+        "url": "images/ventev/609446-pattern-5-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5/6 GHz Vertical",
+        "url": "images/ventev/609446-pattern-5-6-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_609446_FlushMountMIMOPatch_080824.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 609446 (Rev. 080824)",
+        "id": "vspecs_609446",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_609446_FlushMountMIMOPatch_080824.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-609446",
+        "url": "https://ventevinfra.com/product/2-4-5-6-ghz-6dbi-wi-fi-flush-mount-mimo-patch-antenna-with-4-n-male-connectors-mounting-tabs-and-36-leads/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 609446. Manufacturer part number M7060060P1D43607MT.",
+      "pattern_images": "Datasheet order H then E per band; mapped to horizontal/vertical filenames."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M7060060P1D43607MT",
+      "maintainer": "Ventev batch 1. Flush-mount MIMO patch for 802.11n/ac/ax (Wi-Fi 6/6E) APs generally."
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "216477",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Directional Antenna with 8 RPTNC Male Connectors",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4/5 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "65\u00b0",
+        "5": "55\u00b0"
+      },
+      "vertical": {
+        "2.4": "65\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RPTNC Male",
+    "lead_count": 8,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "11.5 \u00d7 11.5 \u00d7 1.6 in",
+    "weight": "4.70 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Indoor/Outdoor directional (mast/wall)",
+    "included_parts": [],
+    "wind_rating": "100 mph",
+    "vswr": "<2 / <2",
+    "isolation": null,
+    "operating_temp": "-40 to 140 \u00b0F",
+    "image_url": "images/ventev/216477.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/216477.jpg"
+      },
+      {
+        "label": "Product (datasheet)",
+        "url": "images/ventev/216477-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/216477-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/216477-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/216477-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/216477-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_216477directionalant_120822.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 216477 (Rev. 082422)",
+        "id": "vspecs_216477",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspecs_216477directionalant_120822.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-216477",
+        "url": "https://ventevinfra.com/product/2-4-5ghz-6dbi-wi-fi-directional-antenna-with-8-rptnc-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 216477. Manufacturer part number M6060060D1D83602B. Related historical RPSMA sibling SKU 299050 (M6060060D1D83620) appears in older public PDFs / shared product art.",
+      "form": "Datasheet explicitly calls this a high-density MIMO dual-polarized directional antenna; narrow ~55\u201365\u00b0 beams with 8 ports \u2192 High-density patch.",
+      "polarization": "Marketing text says dual polarized; specs table lists Vertical. Front-to-back >19 dB."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6060060D1D83602B",
+      "maintainer": "Ventev batch 1. High-density 8-port directional for Wi-Fi 6 / LPV use generally."
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "298003",
+    "name": "2.4/5 GHz 13 dBi Wi-Fi Patch Antenna with 6 N Male Connectors",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2400-2500 / 5150-5850 MHz",
+    "gain_dbi": {
+      "2.4": 13,
+      "5": 13
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "35\u00b0",
+        "5": "30\u00b0"
+      },
+      "vertical": {
+        "2.4": "35\u00b0",
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 6,
+    "polarization": "3 Vertical / 3 Horizontal",
+    "cable_length": "36 in",
+    "cable_type": "RG58",
+    "dimensions": "17.7 \u00d7 17.7 \u00d7 1.57 in",
+    "weight": "8 lb (including mount)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Mast / pole (2\u20134 in diameter)",
+    "included_parts": [
+      {
+        "item": "Mast/pole mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u22642",
+    "isolation": "\u226525 dB",
+    "operating_temp": "-40 to 158 \u00b0F",
+    "image_url": "images/ventev/298003.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/298003.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/298003-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/298003-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/298003-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/298003-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/298003_2.4-5GHz-13dBi-Wi-Fi-Patch-H30-35-V30-35-Antenna-with-6-N-Style-Connectors.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 298003",
+        "id": "298003_spec",
+        "url": "https://ventevinfra.com/wp-content/uploads/298003_2.4-5GHz-13dBi-Wi-Fi-Patch-H30-35-V30-35-Antenna-with-6-N-Style-Connectors.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-298003",
+        "url": "https://ventevinfra.com/product/2-4-5-ghz-13-dbi-wi-fi-patch-antenna-with-6-n-male-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 298003. Manufacturer part number M6011012MP1D63607.",
+      "form": "Datasheet calls it high-density with narrow 35\u00b0/30\u00b0 beams; 6 dual-pol elements \u2192 High-density patch.",
+      "beamwidth": "Azimuth/Elevation both listed 35\u00b0/30\u00b0 (2.4/5)."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M6011012MP1D63607",
+      "maintainer": "Ventev batch 1. Narrow high-gain patch for capacity/reuse."
+    }
+  },
+  {
+    "vendor": "Ventev",
+    "sku": "608677",
+    "name": "2.4/5/6 GHz 5/6/6 dBi Directional Wi-Fi Junction Box Antenna with 8 RPSMA Male Connectors",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4/5/6 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 6,
+      "6": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "65\u00b0",
+        "5": "65\u00b0",
+        "6": "65\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "70\u00b0",
+        "6": "70\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 8,
+    "polarization": "Dual slant 45\u00b0",
+    "cable_length": "72 in",
+    "cable_type": null,
+    "dimensions": "7.75 \u00d7 3.7 \u00d7 3.56 in",
+    "weight": "1.5 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall or ceiling (four-gang electrical box / drywall or drop ceiling)",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": "13/25 dB",
+    "operating_temp": null,
+    "image_url": "images/ventev/608677.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ventev/608677.jpg"
+      },
+      {
+        "label": "Product (datasheet)",
+        "url": "images/ventev/608677-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/608677-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/608677-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/608677-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/608677-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/ventev/608677-pattern-6-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/ventev/608677-pattern-6-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Ventev SPEC",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_608677_JunctionBoxAntenna_RPSMA_050824.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ventev SPEC 608677 (Rev. 050824)",
+        "id": "vspec_608677",
+        "url": "https://ventevinfra.com/wp-content/uploads/vspec_608677_JunctionBoxAntenna_RPSMA_050824.pdf"
+      },
+      {
+        "label": "Ventev product page",
+        "id": "ventev-608677",
+        "url": "https://ventevinfra.com/product/2-4-5-6-ghz-5-6-6-dbi-directional-wi-fi-junction-box-antenna-with-8-rpsma-male-connectors/"
+      }
+    ],
+    "field_notes": {
+      "sku": "Primary SKU 608677. Manufacturer part number M7050040D87220JB8.",
+      "gain_dbi": "Title/marketing 5/6/6 dBi; specs table also shows a flat '6 dBi' line \u2014 primary values use 5/6/6.",
+      "form": "8-port directional ~65\u00b0 beams for capacity; classified High-density patch. Construction is four-gang electrical box aesthetic cover."
+    },
+    "internal_notes": {
+      "compatible_aps": [],
+      "mfg_part": "M7050040D87220JB8",
+      "maintainer": "Ventev batch 1. Junction-box aesthetic antenna for 8-lead APs generally."
+    }
   }
 ]
