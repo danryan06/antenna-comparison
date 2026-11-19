@@ -82,6 +82,7 @@
               <h3 id="bands-heading">Bands</h3>
               <p id="bands-help">Must support every selected band</p>
             </div>
+            <div id="bands-presets" class="band-presets" role="group" aria-label="Band presets"></div>
             <div id="bands-options" class="chip-grid" role="group" aria-labelledby="bands-heading" aria-describedby="bands-help"></div>
           </div>
 
@@ -150,6 +151,10 @@
   <script>
     const DATA_URL = 'antenna_data.json';
     const WIFI_BANDS = ['2.4', '5', '6'];
+    const BAND_PRESETS = [
+      { id: 'dual', label: 'Dual', bands: ['2.4', '5'] },
+      { id: 'tri', label: 'Tri', bands: ['2.4', '5', '6'] }
+    ];
     const ENV_OPTIONS = [
       { value: 'Indoor', label: 'Indoor' },
       { value: 'Outdoor', label: 'Outdoor' },
@@ -276,6 +281,49 @@
       });
     }
 
+    function bandsMatchPreset(presetBands) {
+      if (state.bands.size !== presetBands.length) return false;
+      return presetBands.every(band => state.bands.has(band));
+    }
+
+    function syncBandCheckboxes() {
+      WIFI_BANDS.forEach(band => {
+        const input = document.getElementById(`bands-${slugifyLabel(band)}`);
+        if (input) input.checked = state.bands.has(band);
+      });
+    }
+
+    function updateBandPresetActive() {
+      document.querySelectorAll('#bands-presets .band-preset').forEach(btn => {
+        const preset = BAND_PRESETS.find(p => p.id === btn.dataset.preset);
+        const active = preset ? bandsMatchPreset(preset.bands) : false;
+        btn.classList.toggle('is-active', active);
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+    }
+
+    function applyBandPreset(bands) {
+      state.bands = new Set(bands);
+      syncBandCheckboxes();
+      applyFilters();
+    }
+
+    function renderBandPresets(container) {
+      container.innerHTML = '';
+      BAND_PRESETS.forEach(preset => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'band-preset';
+        btn.dataset.preset = preset.id;
+        btn.textContent = preset.label;
+        btn.title = `Select ${preset.bands.map(b => `${b} GHz`).join(' + ')}`;
+        btn.setAttribute('aria-pressed', 'false');
+        btn.addEventListener('click', () => applyBandPreset(preset.bands));
+        container.appendChild(btn);
+      });
+      updateBandPresetActive();
+    }
+
     function renderBandChips(container) {
       container.innerHTML = '';
       const bands = WIFI_BANDS.filter(b =>
@@ -320,6 +368,7 @@
         ...FORM_TYPES.map(v => ({ value: v, label: v }))
       ];
       renderRadioChips(document.getElementById('form-options'), formOptions, 'form', state.form);
+      renderBandPresets(document.getElementById('bands-presets'));
       renderBandChips(document.getElementById('bands-options'));
       fillSelect(
         document.getElementById('filter-connector'),
@@ -375,6 +424,7 @@
     function applyFilters() {
       if (!enrichedData.length) return;
       const matches = enrichedData.filter(matchesFilters);
+      updateBandPresetActive();
       renderActiveFilters();
       renderResults(matches);
       updateMatchCount(matches.length);
