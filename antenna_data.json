@@ -971,5 +971,1087 @@
       ],
       "maintainer": "Catalog batch 1. Compatible AP list is internal-only."
     }
+  },
+  {
+    "vendor": "AccelTex / Hubbell",
+    "sku": "ATS-02470",
+    "legacy_sku": "ATS-OP-245-7D-6RPTP-36",
+    "name": "2.4/5 GHz 7 dBi 6 Element Dual Pol Indoor/Outdoor 60/60 Patch Antenna with RPTNC",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.485/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 7,
+      "5": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "66\u00b0",
+        "5": "65\u00b0"
+      },
+      "vertical": {
+        "2.4": "66\u00b0",
+        "5": "62\u00b0"
+      }
+    },
+    "connector": "RPTNC Plug",
+    "lead_count": 6,
+    "polarization": "3 Vertical, 3 Horizontal",
+    "cable_length": "36 in (910 mm)",
+    "cable_type": "RG402 Plen",
+    "dimensions": "12.2 \u00d7 8.7 \u00d7 1.6 in (310 \u00d7 220 \u00d7 40 mm)",
+    "weight": "1.5 lb (0.68 kg)",
+    "ip_rating": "IP66",
+    "radome": "ABS",
+    "mount_type": "Flush Mount to Wall or Articulating Mount (included)",
+    "included_parts": [
+      {
+        "item": "Articulating wall/pole mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "134 mph (216 km/h)",
+    "vswr": "<1.5:1 (max 2.0)",
+    "isolation": ">30 dB",
+    "operating_temp": "-40 to 70 \u00b0C",
+    "image_url": "images/acceltex-hubbell/ats-02470.jpg",
+    "images": [
+      {
+        "label": "Product (Hubbell SPEC)",
+        "url": "images/acceltex-hubbell/ats-02470.jpg"
+      },
+      {
+        "label": "Product (AccelTex sheet)",
+        "url": "images/acceltex-hubbell/ats-02470-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-02470-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-02470-pattern-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Hubbell SPEC (ATS-ATS02470-SPEC-EN)",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02470-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-245-7D-6RPTP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-245-7D-6RPTP-36%20Spec%20Sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hubbell SPEC ATS-ATS02470-SPEC-EN (REV 10/2026)",
+        "id": "ATS-ATS02470-SPEC-EN",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02470-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-245-7D-6RPTP-36 (\u00a92023)",
+        "id": "ATS-OP-245-7D-6RPTP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-245-7D-6RPTP-36%20Spec%20Sheet.pdf"
+      }
+    ],
+    "field_notes": {
+      "weight": "Taken from AccelTex sheet.",
+      "ip_rating": "Taken from AccelTex sheet (IP66)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco MR46E"
+      ],
+      "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
+    }
+  },
+  {
+    "vendor": "AccelTex / Hubbell",
+    "sku": "ATS-02473",
+    "legacy_sku": "ATS-OP-2456-477-8RPSP-36",
+    "name": "2.4/5/6 GHz 4/7/7 dBi 8 Element Indoor/Outdoor Patch Antenna with RPSMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.48/5.15-5.85/6-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 7,
+      "6": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "75\u00b0",
+        "5": "50\u00b0",
+        "6": "45\u00b0"
+      },
+      "vertical": {
+        "2.4": "75\u00b0",
+        "5": "50\u00b0",
+        "6": "45\u00b0"
+      }
+    },
+    "connector": "RPSMA Plug",
+    "lead_count": 8,
+    "polarization": "4 Vertical, 4 Horizontal",
+    "cable_length": "36 in (910 mm)",
+    "cable_type": "ATS-195",
+    "dimensions": "11.8 \u00d7 11.8 \u00d7 2 in",
+    "weight": "1.5 lb (0.68 kg)",
+    "ip_rating": "IP66",
+    "radome": "ABS",
+    "mount_type": "Flush Mount to Wall or use Articulating Arm (included)",
+    "included_parts": [
+      {
+        "item": "Articulating wall/pole mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "134 mph (216 km/h)",
+    "vswr": "<1.5:1 (max 2.0)",
+    "isolation": ">30 dB",
+    "operating_temp": "-40 to 70 \u00b0C",
+    "image_url": "images/acceltex-hubbell/ats-02473.jpg",
+    "images": [
+      {
+        "label": "Product (Hubbell SPEC)",
+        "url": "images/acceltex-hubbell/ats-02473.jpg"
+      },
+      {
+        "label": "Product (AccelTex sheet)",
+        "url": "images/acceltex-hubbell/ats-02473-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-02473-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-02473-pattern-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Hubbell SPEC (ATS-ATS02473-SPEC-EN)",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02473-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-2456-477-8RPSP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-477-8RPSP-36%20Spec%20Sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hubbell SPEC ATS-ATS02473-SPEC-EN (REV 10/2026)",
+        "id": "ATS-ATS02473-SPEC-EN",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02473-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-2456-477-8RPSP-36 (\u00a92023)",
+        "id": "ATS-OP-2456-477-8RPSP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-477-8RPSP-36%20Spec%20Sheet.pdf"
+      }
+    ],
+    "field_notes": {
+      "weight": "Taken from AccelTex sheet.",
+      "ip_rating": "Taken from AccelTex sheet (IP66).",
+      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Aruba/HP AP-654",
+        "Aruba/HP AP-754"
+      ],
+      "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
+    }
+  },
+  {
+    "vendor": "AccelTex / Hubbell",
+    "sku": "ATS-02489",
+    "legacy_sku": "ATS-OP-245-7-5RPSP-36",
+    "name": "2.4/5 GHz 7 dBi 5 Element Dual Pol Indoor/Outdoor Patch Antenna with RPSMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.485/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 7,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "100\u00b0",
+        "5": "110\u00b0"
+      },
+      "vertical": {
+        "2.4": "59\u00b0",
+        "5": "61\u00b0"
+      }
+    },
+    "connector": "RPSMA Plug",
+    "lead_count": 5,
+    "polarization": "Horizontal",
+    "cable_length": "36 in (910 mm)",
+    "cable_type": "ATS-200",
+    "dimensions": "12.6 \u00d7 6.7 \u00d7 1.4 in (320 \u00d7 170 \u00d7 35 mm)",
+    "weight": "1.5 lb (0.68 kg)",
+    "ip_rating": "IP66",
+    "radome": "ABS",
+    "mount_type": "Flush Mount to Wall or Articulating Wall/Pole Mount (included)",
+    "included_parts": [
+      {
+        "item": "Articulating wall/pole mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "134 mph (216 km/h)",
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "-40 to 70 \u00b0C",
+    "image_url": "images/acceltex-hubbell/ats-02489.jpg",
+    "images": [
+      {
+        "label": "Product (Hubbell SPEC)",
+        "url": "images/acceltex-hubbell/ats-02489.jpg"
+      },
+      {
+        "label": "Product (AccelTex sheet)",
+        "url": "images/acceltex-hubbell/ats-02489-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-02489-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-02489-pattern-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Hubbell SPEC (ATS-ATS02489-SPEC-EN)",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02489-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-245-7-5RPSP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-245-7-5RPSP-36%20Spec%20Sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hubbell SPEC ATS-ATS02489-SPEC-EN (REV 10/2026)",
+        "id": "ATS-ATS02489-SPEC-EN",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02489-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-245-7-5RPSP-36 (\u00a92023)",
+        "id": "ATS-OP-245-7-5RPSP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-245-7-5RPSP-36%20Spec%20Sheet.pdf"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "Electrical table lists 7/6 dBi; marketing title says 7 dBi.",
+      "weight": "Taken from AccelTex sheet.",
+      "ip_rating": "Taken from AccelTex sheet (IP66)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Mist AP32e"
+      ],
+      "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
+    }
+  },
+  {
+    "vendor": "AccelTex / Hubbell",
+    "sku": "ATS-02530",
+    "legacy_sku": "ATS-OP-245-7D-4NP-36",
+    "name": "2.4/5 GHz 7 dBi 4 Element Dual Pol Indoor/Outdoor Patch Antenna with N-Style",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.485/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 7,
+      "5": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "66\u00b0",
+        "5": "65\u00b0"
+      },
+      "vertical": {
+        "2.4": "66\u00b0",
+        "5": "62\u00b0"
+      }
+    },
+    "connector": "N-Style Plug",
+    "lead_count": 4,
+    "polarization": "2 Vertical, 2 Horizontal",
+    "cable_length": "36 in (910 mm)",
+    "cable_type": "ATS-195",
+    "dimensions": "12 \u00d7 8.5 \u00d7 1.6 in (305 \u00d7 215 \u00d7 40 mm)",
+    "weight": "1.5 lb (0.68 kg)",
+    "ip_rating": "IP66",
+    "radome": "ABS",
+    "mount_type": "Flush Mount to Wall or Articulating Wall/Pole Mount (included)",
+    "included_parts": [
+      {
+        "item": "Articulating wall/pole mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "134 mph (216 km/h)",
+    "vswr": "<1.5:1 (max 2.0)",
+    "isolation": ">30 dB",
+    "operating_temp": "-40 to 70 \u00b0C",
+    "image_url": "images/acceltex-hubbell/ats-02530.jpg",
+    "images": [
+      {
+        "label": "Product (Hubbell SPEC)",
+        "url": "images/acceltex-hubbell/ats-02530.jpg"
+      },
+      {
+        "label": "Product (AccelTex sheet)",
+        "url": "images/acceltex-hubbell/ats-02530-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-02530-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-02530-pattern-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Hubbell SPEC (ATS-ATS02530-SPEC-EN)",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02530-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-245-7D-4NP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-245-7D-4NP-36%20Spec%20Sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hubbell SPEC ATS-ATS02530-SPEC-EN (REV 10/2026)",
+        "id": "ATS-ATS02530-SPEC-EN",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02530-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-245-7D-4NP-36 (\u00a92023)",
+        "id": "ATS-OP-245-7D-4NP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-245-7D-4NP-36%20Spec%20Sheet.pdf"
+      }
+    ],
+    "field_notes": {
+      "weight": "Taken from AccelTex sheet.",
+      "ip_rating": "Taken from AccelTex sheet (IP66)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Aruba/HP AP-584",
+        "Cisco 1562e",
+        "Cisco 1562ps",
+        "Cisco 1572eac",
+        "Cisco 1572ec",
+        "Cisco CW9163E",
+        "Cisco MR76",
+        "Cisco MR86"
+      ],
+      "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
+    }
+  },
+  {
+    "vendor": "AccelTex / Hubbell",
+    "sku": "ATS-02587",
+    "legacy_sku": "ATS-OP-2456-7-8PDART-ND-36",
+    "name": "2.4/5/6 GHz 7 dBi 8 Element Indoor/Outdoor Patch Antenna with DART",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.48/5.15-5.85/6-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6,
+      "6": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "105\u00b0",
+        "5": "105\u00b0",
+        "6": "105\u00b0"
+      },
+      "vertical": {
+        "2.4": "85\u00b0",
+        "5": "60\u00b0",
+        "6": "50\u00b0"
+      }
+    },
+    "connector": "Straight 8-Port DART",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": "36 in (910 mm)",
+    "cable_type": "ATS-100",
+    "dimensions": "15.4 \u00d7 15.4 \u00d7 2 in (390 \u00d7 390 \u00d7 55 mm)",
+    "weight": "6.61 lb (3 kg)",
+    "ip_rating": "IP66",
+    "radome": "ABS",
+    "mount_type": "Flush Mount to Wall",
+    "included_parts": [],
+    "wind_rating": "134 mph (216 km/h)",
+    "vswr": "<1.5:1 (max 2.0)",
+    "isolation": ">30 dB",
+    "operating_temp": "-40 to 70 \u00b0C",
+    "image_url": "images/acceltex-hubbell/ats-02587.jpg",
+    "images": [
+      {
+        "label": "Product (Hubbell SPEC)",
+        "url": "images/acceltex-hubbell/ats-02587.jpg"
+      },
+      {
+        "label": "Product (AccelTex sheet)",
+        "url": "images/acceltex-hubbell/ats-02587-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-02587-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-02587-pattern-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Hubbell SPEC (ATS-ATS02587-SPEC-EN)",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02587-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-2456-7-8PDART-ND-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-7-8PDART-ND-36%20Spec%20Sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hubbell SPEC ATS-ATS02587-SPEC-EN (REV 10/2026)",
+        "id": "ATS-ATS02587-SPEC-EN",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02587-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-2456-7-8PDART-ND-36 (\u00a92023)",
+        "id": "ATS-OP-2456-7-8PDART-ND-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-7-8PDART-ND-36%20Spec%20Sheet.pdf"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "Electrical table lists 6/6/6 dBi; marketing title says 7 dBi.",
+      "weight": "Taken from AccelTex sheet.",
+      "ip_rating": "Taken from AccelTex sheet (IP66).",
+      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
+      "lead_count": "Hubbell Number of Leads is 1 (Straight 8-Port DART). AccelTex lists number of leads as 1 (8 ports on DART Assembly)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Catalyst 9130AXE"
+      ],
+      "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
+    }
+  },
+  {
+    "vendor": "AccelTex / Hubbell",
+    "sku": "ATS-02588",
+    "legacy_sku": "ATS-OP-2456-7-8PRADART-ND-36",
+    "name": "2.4/5/6 GHz 7 dBi 8 Element Indoor/Outdoor Patch Antenna with Right Angle DART",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.48/5.15-5.85/6-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6,
+      "6": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "105\u00b0",
+        "5": "105\u00b0",
+        "6": "105\u00b0"
+      },
+      "vertical": {
+        "2.4": "85\u00b0",
+        "5": "60\u00b0",
+        "6": "50\u00b0"
+      }
+    },
+    "connector": "Right Angle 8-Port DART",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": "36 in (910 mm)",
+    "cable_type": "ATS-100",
+    "dimensions": "15.4 \u00d7 15.4 \u00d7 2 in (390 \u00d7 390 \u00d7 55 mm)",
+    "weight": "6.61 lb (3 kg)",
+    "ip_rating": "IP66",
+    "radome": "ABS",
+    "mount_type": "Flush Mount to Wall",
+    "included_parts": [],
+    "wind_rating": "134 mph (216 km/h)",
+    "vswr": "<1.5:1 (max 2.0)",
+    "isolation": ">30 dB",
+    "operating_temp": "-40 to 70 \u00b0C",
+    "image_url": "images/acceltex-hubbell/ats-02588.jpg",
+    "images": [
+      {
+        "label": "Product (Hubbell SPEC)",
+        "url": "images/acceltex-hubbell/ats-02588.jpg"
+      },
+      {
+        "label": "Product (AccelTex sheet)",
+        "url": "images/acceltex-hubbell/ats-02588-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-02588-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-02588-pattern-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Hubbell SPEC (ATS-ATS02588-SPEC-EN)",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02588-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-2456-7-8PRADART-ND-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-7-8PRADART-ND-36%20Spec%20Sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hubbell SPEC ATS-ATS02588-SPEC-EN (REV 10/2026)",
+        "id": "ATS-ATS02588-SPEC-EN",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02588-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-2456-7-8PRADART-ND-36 (\u00a92023)",
+        "id": "ATS-OP-2456-7-8PRADART-ND-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-7-8PRADART-ND-36%20Spec%20Sheet.pdf"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "Electrical table lists 6/6/6 dBi; marketing title says 7 dBi.",
+      "weight": "Taken from AccelTex sheet.",
+      "ip_rating": "Taken from AccelTex sheet (IP66).",
+      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
+      "lead_count": "Hubbell Number of Leads is 1 (Right Angle 8-Port DART). AccelTex lists number of leads as 1 (8 ports on DART Assembly)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Catalyst 9130AXE"
+      ],
+      "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
+    }
+  },
+  {
+    "vendor": "AccelTex / Hubbell",
+    "sku": "ATS-02589",
+    "legacy_sku": "ATS-OP-2456-7-8RPSP-36",
+    "name": "2.4/5/6 GHz 7 dBi 8 Element Indoor/Outdoor Patch Antenna with RPSMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.48/5.15-5.85/6-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6,
+      "6": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "105\u00b0",
+        "5": "105\u00b0",
+        "6": "105\u00b0"
+      },
+      "vertical": {
+        "2.4": "85\u00b0",
+        "5": "60\u00b0",
+        "6": "50\u00b0"
+      }
+    },
+    "connector": "RPSMA",
+    "lead_count": 8,
+    "polarization": "Vertical",
+    "cable_length": "36 in (910 mm)",
+    "cable_type": "ATS-200",
+    "dimensions": "15.4 \u00d7 15.4 \u00d7 2 in (390 \u00d7 390 \u00d7 55 mm)",
+    "weight": "1.5 lb (0.68 kg)",
+    "ip_rating": "IP66",
+    "radome": "ABS",
+    "mount_type": "Flush Mount to Wall",
+    "included_parts": [],
+    "wind_rating": "134 mph (216 km/h)",
+    "vswr": "<1.5:1 (max 2.0)",
+    "isolation": ">30 dB",
+    "operating_temp": "-40 to 70 \u00b0C",
+    "image_url": "images/acceltex-hubbell/ats-02589.jpg",
+    "images": [
+      {
+        "label": "Product (Hubbell SPEC)",
+        "url": "images/acceltex-hubbell/ats-02589.jpg"
+      },
+      {
+        "label": "Product (AccelTex sheet)",
+        "url": "images/acceltex-hubbell/ats-02589-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-02589-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-02589-pattern-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Hubbell SPEC (ATS-ATS02589-SPEC-EN)",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02589-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-2456-7-8RPSP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-7-8RPSP-36%20Spec%20Sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hubbell SPEC ATS-ATS02589-SPEC-EN (REV 10/2026)",
+        "id": "ATS-ATS02589-SPEC-EN",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02589-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-2456-7-8RPSP-36 (\u00a92023)",
+        "id": "ATS-OP-2456-7-8RPSP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-7-8RPSP-36%20Spec%20Sheet.pdf"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "Electrical table lists 6/6/6 dBi; marketing title says 7 dBi.",
+      "weight": "Taken from AccelTex sheet.",
+      "ip_rating": "Taken from AccelTex sheet (IP66).",
+      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Aruba/HP AP-654",
+        "Aruba/HP AP-754"
+      ],
+      "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
+    }
+  },
+  {
+    "vendor": "AccelTex / Hubbell",
+    "sku": "ATS-02625",
+    "legacy_sku": "ATS-OP-2456-477-10MPC-36",
+    "name": "2.4/5/6 GHz 4/7/7 dBi 10 Element Indoor Patch Antenna with 10 MPC",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.48/5.15-5.85/6-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 7,
+      "6": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "76\u00b0",
+        "5": "50\u00b0",
+        "6": "46\u00b0"
+      },
+      "vertical": {
+        "2.4": "72\u00b0",
+        "5": "50\u00b0",
+        "6": "44\u00b0"
+      }
+    },
+    "connector": "4 MPC and 6 MPC",
+    "lead_count": 10,
+    "polarization": "5 Vertical, 5 Horizontal",
+    "cable_length": "36 in (910 mm)",
+    "cable_type": "RG316",
+    "dimensions": "11.8 \u00d7 11.8 \u00d7 1.8 in (300 \u00d7 300 \u00d7 47 mm)",
+    "weight": "1.5 lb (0.68 kg)",
+    "ip_rating": "IP66",
+    "radome": "ABS",
+    "mount_type": "Flush Mount to Wall or Articulating Wall/Pole Mount (included)",
+    "included_parts": [
+      {
+        "item": "Articulating wall/pole mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "<2.0",
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": "images/acceltex-hubbell/ats-02625.jpg",
+    "images": [
+      {
+        "label": "Product (Hubbell SPEC)",
+        "url": "images/acceltex-hubbell/ats-02625.jpg"
+      },
+      {
+        "label": "Product (AccelTex sheet)",
+        "url": "images/acceltex-hubbell/ats-02625-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-02625-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-02625-pattern-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/acceltex-hubbell/ats-02625-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Hubbell SPEC (ATS-ATS02625-SPEC-EN)",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02625-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-2456-477-10MPC-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-477-10MPC-36%20Spec%20Sheet.pdf"
+      },
+      {
+        "label": "Outline drawing",
+        "url": "https://hubbellcdn.com/salesdrawings/ATS-OP-2456-477-10MPC-36%20Outline%20Drawing.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hubbell SPEC ATS-ATS02625-SPEC-EN (REV 11/2026)",
+        "id": "ATS-ATS02625-SPEC-EN",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02625-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-2456-477-10MPC-36 (\u00a92023)",
+        "id": "ATS-OP-2456-477-10MPC-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-477-10MPC-36%20Spec%20Sheet.pdf"
+      },
+      {
+        "label": "Outline drawing",
+        "id": "outline",
+        "url": "https://hubbellcdn.com/salesdrawings/ATS-OP-2456-477-10MPC-36%20Outline%20Drawing.pdf"
+      }
+    ],
+    "field_notes": {
+      "weight": "Taken from AccelTex sheet.",
+      "ip_rating": "Taken from AccelTex sheet (IP66).",
+      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Mist AP45E",
+        "Mist AP36M"
+      ],
+      "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
+    }
+  },
+  {
+    "vendor": "AccelTex / Hubbell",
+    "sku": "ATS-02626",
+    "legacy_sku": "ATS-OP-2456-81010-10MPC-36",
+    "name": "2.4/5/6 GHz 8/10/10 dBi 10 Element Indoor Patch Antenna with 10 MPC",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.48/5.15-5.85/6-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 8,
+      "5": 10,
+      "6": 10
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "65\u00b0",
+        "5": "45\u00b0",
+        "6": "40\u00b0"
+      },
+      "vertical": {
+        "2.4": "65\u00b0",
+        "5": "45\u00b0",
+        "6": "40\u00b0"
+      }
+    },
+    "connector": "4 MPC and 6 MPC",
+    "lead_count": 10,
+    "polarization": "5 Vertical, 5 Horizontal",
+    "cable_length": "36 in (910 mm)",
+    "cable_type": "RG316",
+    "dimensions": "15.4 \u00d7 15.4 \u00d7 2.2 in (390 \u00d7 390 \u00d7 57 mm)",
+    "weight": "1.5 lb (0.68 kg)",
+    "ip_rating": "IP66",
+    "radome": "ABS",
+    "mount_type": "Flush Mount to Wall or Articulating Wall/Pole Mount (included)",
+    "included_parts": [
+      {
+        "item": "Articulating wall/pole mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "<2.0",
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": "images/acceltex-hubbell/ats-02626.jpg",
+    "images": [
+      {
+        "label": "Product (Hubbell SPEC)",
+        "url": "images/acceltex-hubbell/ats-02626.jpg"
+      },
+      {
+        "label": "Product (AccelTex sheet)",
+        "url": "images/acceltex-hubbell/ats-02626-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-02626-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-02626-pattern-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/acceltex-hubbell/ats-02626-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Hubbell SPEC (ATS-ATS02626-SPEC-EN)",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02626-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-2456-81010-10MPC-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-81010-10MPC-36%20Spec%20Sheet.pdf"
+      },
+      {
+        "label": "Outline drawing",
+        "url": "https://hubbellcdn.com/salesdrawings/ATS-OP-2456-81010-10MPC-36%20Outline%20Drawing.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hubbell SPEC ATS-ATS02626-SPEC-EN (REV 11/2026)",
+        "id": "ATS-ATS02626-SPEC-EN",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02626-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-2456-81010-10MPC-36 (\u00a92023)",
+        "id": "ATS-OP-2456-81010-10MPC-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-81010-10MPC-36%20Spec%20Sheet.pdf"
+      },
+      {
+        "label": "Outline drawing",
+        "id": "outline",
+        "url": "https://hubbellcdn.com/salesdrawings/ATS-OP-2456-81010-10MPC-36%20Outline%20Drawing.pdf"
+      }
+    ],
+    "field_notes": {
+      "weight": "Taken from AccelTex sheet.",
+      "ip_rating": "Taken from AccelTex sheet (IP66).",
+      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Mist AP45E",
+        "Mist AP36M"
+      ],
+      "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
+    }
+  },
+  {
+    "vendor": "AccelTex / Hubbell",
+    "sku": "ATS-02789",
+    "legacy_sku": "ATS-OP-2456-8-10MPC-36",
+    "name": "2.4/5/6 GHz 8 dBi 10 Element Indoor Patch Antenna with 10 MPC",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.48/5.15-5.85/6-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 8,
+      "5": 8,
+      "6": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "115\u00b0",
+        "5": "110\u00b0",
+        "6": "110\u00b0"
+      },
+      "vertical": {
+        "2.4": "50\u00b0",
+        "5": "25\u00b0",
+        "6": "25\u00b0"
+      }
+    },
+    "connector": "4 MPC and 6 MPC",
+    "lead_count": 10,
+    "polarization": "5 Vertical, 5 Horizontal",
+    "cable_length": "36 in (910 mm)",
+    "cable_type": "RG316",
+    "dimensions": "15.4 \u00d7 15.4 \u00d7 2.2 in (390 \u00d7 390 \u00d7 57 mm)",
+    "weight": "1.5 lb (0.68 kg)",
+    "ip_rating": "IP66",
+    "radome": "ABS",
+    "mount_type": "Flush Mount to Wall or Articulating Wall/Pole Mount (included)",
+    "included_parts": [
+      {
+        "item": "Articulating wall/pole mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "<2.5",
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": "images/acceltex-hubbell/ats-02789.jpg",
+    "images": [
+      {
+        "label": "Product (Hubbell SPEC)",
+        "url": "images/acceltex-hubbell/ats-02789.jpg"
+      },
+      {
+        "label": "Product (AccelTex sheet)",
+        "url": "images/acceltex-hubbell/ats-02789-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-02789-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-02789-pattern-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/acceltex-hubbell/ats-02789-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Hubbell SPEC (ATS-ATS02789-SPEC-EN)",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02789-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-2456-8-10MPC-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-8-10MPC-36%20Spec%20Sheet.pdf"
+      },
+      {
+        "label": "Outline drawing",
+        "url": "https://hubbellcdn.com/salesdrawings/ATS-OP-2456-8-10MPC-36%20Outline%20Drawing.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hubbell SPEC ATS-ATS02789-SPEC-EN (REV 11/2026)",
+        "id": "ATS-ATS02789-SPEC-EN",
+        "url": "https://hubbellcdn.com/specsheet/ATS-ATS02789-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OP-2456-8-10MPC-36 (\u00a92023)",
+        "id": "ATS-OP-2456-8-10MPC-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OP-2456-8-10MPC-36%20Spec%20Sheet.pdf"
+      },
+      {
+        "label": "Outline drawing",
+        "id": "outline",
+        "url": "https://hubbellcdn.com/salesdrawings/ATS-OP-2456-8-10MPC-36%20Outline%20Drawing.pdf"
+      }
+    ],
+    "field_notes": {
+      "weight": "Taken from AccelTex sheet.",
+      "ip_rating": "Taken from AccelTex sheet (IP66).",
+      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Mist AP45E",
+        "Mist AP36M"
+      ],
+      "maintainer": "Patch mining batch (later SKUs). Compatible AP list is internal-only."
+    }
   }
 ]
