@@ -20843,5 +20843,4598 @@
       "closeout": false
     },
     "dimension_image_kind": "mechanical"
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2524DB-R",
+    "name": "2.4/5 GHz 2/4 dBi Articulating Dipole, Black",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "63\u00b0",
+        "5": "39\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "6.63 \u00d7 0.83 in (168.5 \u00d7 21 mm)",
+    "weight": "1.3 oz",
+    "ip_rating": null,
+    "radome": "Black",
+    "mount_type": "Direct to the AP RP-TNC port, 90\u00b0 articulation",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "<2:1",
+    "isolation": null,
+    "operating_temp": "\u221220 to 60 \u00b0C",
+    "image_url": "images/cisco/air-ant2524dw-r.jpg",
+    "images": [
+      {
+        "label": "Black articulating dipole",
+        "url": "images/cisco/air-ant2524dw-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524dw-r-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524dw-r-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2524.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2524.pdf)",
+        "id": "ant2524",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2524.pdf"
+      }
+    ],
+    "field_notes": {
+      "operating_temp": "Datasheet operating range is \u22124\u00b0 to 140\u00b0F. Storage is \u221240\u00b0F to 185\u00b0F.",
+      "beamwidth": "Azimuth is omnidirectional (not given a degree value). Elevation 3 dB beamwidth is 63\u00b0 at 2.4 GHz and 39\u00b0 at 5 GHz.",
+      "radome": "Electrically the same antenna; radome color is the only physical difference among DB/DG/DW. DW-RS adds self-identifying circuitry."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet access points with dual-band RP-TNC antenna ports (orange)",
+        "AIR-ANT2524DW-RS: Catalyst 9800 controllers, IOS-XE 17.4.1 or later; not supported on AireOS"
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2524DB-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2524DG-R",
+    "name": "2.4/5 GHz 2/4 dBi Articulating Dipole, Gray",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "63\u00b0",
+        "5": "39\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "6.63 \u00d7 0.83 in (168.5 \u00d7 21 mm)",
+    "weight": "1.3 oz",
+    "ip_rating": null,
+    "radome": "Gray",
+    "mount_type": "Direct to the AP RP-TNC port, 90\u00b0 articulation",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "<2:1",
+    "isolation": null,
+    "operating_temp": "\u221220 to 60 \u00b0C",
+    "image_url": "images/cisco/air-ant2524dw-r.jpg",
+    "images": [
+      {
+        "label": "Gray articulating dipole",
+        "url": "images/cisco/air-ant2524dw-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524dw-r-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524dw-r-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2524.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2524.pdf)",
+        "id": "ant2524",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2524.pdf"
+      }
+    ],
+    "field_notes": {
+      "operating_temp": "Datasheet operating range is \u22124\u00b0 to 140\u00b0F. Storage is \u221240\u00b0F to 185\u00b0F.",
+      "beamwidth": "Azimuth is omnidirectional (not given a degree value). Elevation 3 dB beamwidth is 63\u00b0 at 2.4 GHz and 39\u00b0 at 5 GHz.",
+      "radome": "Electrically the same antenna; radome color is the only physical difference among DB/DG/DW. DW-RS adds self-identifying circuitry."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet access points with dual-band RP-TNC antenna ports (orange)",
+        "AIR-ANT2524DW-RS: Catalyst 9800 controllers, IOS-XE 17.4.1 or later; not supported on AireOS"
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2524DG-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2524DW-R",
+    "name": "2.4/5 GHz 2/4 dBi Articulating Dipole, White",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "63\u00b0",
+        "5": "39\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "6.63 \u00d7 0.83 in (168.5 \u00d7 21 mm)",
+    "weight": "1.3 oz",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "Direct to the AP RP-TNC port, 90\u00b0 articulation",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "<2:1",
+    "isolation": null,
+    "operating_temp": "\u221220 to 60 \u00b0C",
+    "image_url": "images/cisco/air-ant2524dw-r.jpg",
+    "images": [
+      {
+        "label": "White articulating dipole",
+        "url": "images/cisco/air-ant2524dw-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524dw-r-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524dw-r-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2524.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2524.pdf)",
+        "id": "ant2524",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2524.pdf"
+      }
+    ],
+    "field_notes": {
+      "operating_temp": "Datasheet operating range is \u22124\u00b0 to 140\u00b0F. Storage is \u221240\u00b0F to 185\u00b0F.",
+      "beamwidth": "Azimuth is omnidirectional (not given a degree value). Elevation 3 dB beamwidth is 63\u00b0 at 2.4 GHz and 39\u00b0 at 5 GHz.",
+      "radome": "Electrically the same antenna; radome color is the only physical difference among DB/DG/DW. DW-RS adds self-identifying circuitry."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet access points with dual-band RP-TNC antenna ports (orange)",
+        "AIR-ANT2524DW-RS: Catalyst 9800 controllers, IOS-XE 17.4.1 or later; not supported on AireOS"
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2524DW-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2524DW-RS",
+    "name": "2.4/5 GHz 2/4 dBi Articulating Dipole, White, Self-Identifying",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "63\u00b0",
+        "5": "39\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "6.63 \u00d7 0.83 in (168.5 \u00d7 21 mm)",
+    "weight": "1.3 oz",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "Direct to the AP RP-TNC port, 90\u00b0 articulation",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "<2:1",
+    "isolation": null,
+    "operating_temp": "\u221220 to 60 \u00b0C",
+    "image_url": "images/cisco/air-ant2524dw-r.jpg",
+    "images": [
+      {
+        "label": "White articulating dipole",
+        "url": "images/cisco/air-ant2524dw-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524dw-r-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524dw-r-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2524.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2524.pdf)",
+        "id": "ant2524",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2524.pdf"
+      }
+    ],
+    "field_notes": {
+      "operating_temp": "Datasheet operating range is \u22124\u00b0 to 140\u00b0F. Storage is \u221240\u00b0F to 185\u00b0F.",
+      "beamwidth": "Azimuth is omnidirectional (not given a degree value). Elevation 3 dB beamwidth is 63\u00b0 at 2.4 GHz and 39\u00b0 at 5 GHz.",
+      "radome": "Electrically the same antenna; radome color is the only physical difference among DB/DG/DW. DW-RS adds self-identifying circuitry.",
+      "self_identifying": "EEPROM self-identification. Same RF and patterns as AIR-ANT2524DW-R. Supported on Catalyst 9800 with IOS-XE 17.4.1 or later."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet access points with dual-band RP-TNC antenna ports (orange)",
+        "AIR-ANT2524DW-RS: Catalyst 9800 controllers, IOS-XE 17.4.1 or later; not supported on AireOS"
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2524DW-RS="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2535SDW-R",
+    "name": "2.4/5 GHz 3/5 dBi Short Dipole, White",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "35\u00b0",
+        "5": "35\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "1.25 in dia. \u00d7 3.3 in H (3.18 \u00d7 8.4 cm)",
+    "weight": "1.7 oz (0.05 kg)",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "Direct to the AP RP-TNC port (non-articulating)",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2.0:1",
+    "isolation": ">20 dB (2.4 GHz); >23 dB (5 GHz)",
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/cisco/air-ant2535sdw-r-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/cisco/air-ant2535sdw-r-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/cisco/air-ant2535sdw-r-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/cisco/air-ant2535sdw-r-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2535sdwr.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2535sdwr.pdf)",
+        "id": "ant2535sdwr",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2535sdwr.pdf"
+      }
+    ],
+    "field_notes": {
+      "isolation": "Datasheet lists port-to-port isolation on this single-lead dipole. Stored as published; treat as a datasheet figure, not a multi-lead isolation spec.",
+      "beamwidth": "Elevation plane beamwidth is published. Azimuth is omnidirectional.",
+      "mount_type": "Does not articulate, unlike AIR-ANT2524Dx-R.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet access points with dual-band RP-TNC ports. RS model is self-identifying."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2535SDW-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2535SDW-RS",
+    "name": "2.4/5 GHz 3/5 dBi Short Dipole, White, Self-Identifying",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "35\u00b0",
+        "5": "35\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "1.25 in dia. \u00d7 3.3 in H (3.18 \u00d7 8.4 cm)",
+    "weight": "1.7 oz (0.05 kg)",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "Direct to the AP RP-TNC port (non-articulating)",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2.0:1",
+    "isolation": ">20 dB (2.4 GHz); >23 dB (5 GHz)",
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/cisco/air-ant2535sdw-r-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/cisco/air-ant2535sdw-r-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/cisco/air-ant2535sdw-r-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/cisco/air-ant2535sdw-r-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2535sdwr.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2535sdwr.pdf)",
+        "id": "ant2535sdwr",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2535sdwr.pdf"
+      }
+    ],
+    "field_notes": {
+      "isolation": "Datasheet lists port-to-port isolation on this single-lead dipole. Stored as published; treat as a datasheet figure, not a multi-lead isolation spec.",
+      "beamwidth": "Elevation plane beamwidth is published. Azimuth is omnidirectional.",
+      "mount_type": "Does not articulate, unlike AIR-ANT2524Dx-R.",
+      "self_identifying": "Self-identifying variant. Same RF as AIR-ANT2535SDW-R.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet access points with dual-band RP-TNC ports. RS model is self-identifying."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2535SDW-RS="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2524V4C-R",
+    "name": "2.4/5 GHz 2/4 dBi 4-Element Ceiling-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.484/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "69\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 4,
+    "polarization": "Linear",
+    "cable_length": "3 ft (91.4 cm)",
+    "cable_type": "Plenum",
+    "dimensions": "7.25 \u00d7 7.25 \u00d7 1 in (18.4 \u00d7 18.4 \u00d7 2.5 cm)",
+    "weight": "1.3 lb (0.59 kg)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Ceiling mount",
+    "included_parts": [
+      {
+        "item": "Ceiling mount hardware",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 or less",
+    "isolation": null,
+    "operating_temp": "0 to 56 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-2-4-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-5-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-2-4-ghz-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-5-ghz-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-2-4-ghz-element-3-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-5-ghz-element-3-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 4 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-2-4-ghz-element-4-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 4 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-5-ghz-element-4-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2524v4c.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2524v4c.pdf)",
+        "id": "ant2524v4c",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2524v4c.pdf"
+      }
+    ],
+    "field_notes": {
+      "operating_temp": "Datasheet range is 32\u2013133\u00b0F.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet access points that use four dual-band antennas. RS model includes self-identifying circuitry."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2524V4C-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2524V4C-RS",
+    "name": "2.4/5 GHz 2/4 dBi 4-Element Ceiling-Mount Omni, Self-Identifying",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.484/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "69\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 4,
+    "polarization": "Linear",
+    "cable_length": "3 ft (91.4 cm)",
+    "cable_type": "Plenum",
+    "dimensions": "7.25 \u00d7 7.25 \u00d7 1 in (18.4 \u00d7 18.4 \u00d7 2.5 cm)",
+    "weight": "1.3 lb (0.59 kg)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Ceiling mount",
+    "included_parts": [
+      {
+        "item": "Ceiling mount hardware",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 or less",
+    "isolation": null,
+    "operating_temp": "0 to 56 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-2-4-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-5-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-2-4-ghz-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-5-ghz-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-2-4-ghz-element-3-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-5-ghz-element-3-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 4 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-2-4-ghz-element-4-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 4 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2524v4c-r-pattern-5-ghz-element-4-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2524v4c.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2524v4c.pdf)",
+        "id": "ant2524v4c",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2524v4c.pdf"
+      }
+    ],
+    "field_notes": {
+      "operating_temp": "Datasheet range is 32\u2013133\u00b0F.",
+      "self_identifying": "Self-identifying variant of AIR-ANT2524V4C-R. Same RF and patterns.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet access points that use four dual-band antennas. RS model includes self-identifying circuitry."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2524V4C-RS="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2544V4M-R",
+    "name": "2.4/5 GHz 4 dBi 4-Element Wall-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.484/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "33\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 4,
+    "polarization": "Linear, vertical",
+    "cable_length": "3 ft (91.4 cm)",
+    "cable_type": "Plenum",
+    "dimensions": "8.6 \u00d7 6.3 in dia. (21.8 \u00d7 16 cm)",
+    "weight": "1.48 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall or mast",
+    "included_parts": [
+      {
+        "item": "Articulating mounting bracket",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 or less",
+    "isolation": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-5-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-5-ghz-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-3-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-5-ghz-element-3-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Element 4 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-4-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 4 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-5-ghz-element-4-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2544v4m-r.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2544v4m-r.pdf)",
+        "id": "ant2544v4m-r",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2544v4m-r.pdf"
+      }
+    ],
+    "field_notes": {
+      "operating_temp": "Datasheet range is \u221222\u00b0F to 158\u00b0F.",
+      "weight": "Spec row is labeled \u201cAntenna: 1.48 lb.\u201d",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet access points with four dual-band RP-TNC ports. RS model is self-identifying."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2544V4M-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2544V4M-RS",
+    "name": "2.4/5 GHz 4 dBi 4-Element Wall-Mount Omni, Self-Identifying",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.484/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "33\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 4,
+    "polarization": "Linear, vertical",
+    "cable_length": "3 ft (91.4 cm)",
+    "cable_type": "Plenum",
+    "dimensions": "8.6 \u00d7 6.3 in dia. (21.8 \u00d7 16 cm)",
+    "weight": "1.48 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall or mast",
+    "included_parts": [
+      {
+        "item": "Articulating mounting bracket",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 or less",
+    "isolation": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-5-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-5-ghz-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-3-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-5-ghz-element-3-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Element 4 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-4-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 4 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-5-ghz-element-4-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2544v4m-r.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2544v4m-r.pdf)",
+        "id": "ant2544v4m-r",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2544v4m-r.pdf"
+      }
+    ],
+    "field_notes": {
+      "operating_temp": "Datasheet range is \u221222\u00b0F to 158\u00b0F.",
+      "weight": "Spec row is labeled \u201cAntenna: 1.48 lb.\u201d",
+      "self_identifying": "Self-identifying variant of AIR-ANT2544V4M-R.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet access points with four dual-band RP-TNC ports. RS model is self-identifying."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2544V4M-RS="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2566P4W-R",
+    "name": "2.4/5 GHz 6 dBi 4-Element Patch",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.484/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "105\u00b0",
+        "5": "110\u00b0"
+      },
+      "vertical": {
+        "2.4": "65\u00b0",
+        "5": "55\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 4,
+    "polarization": "Linear, vertical",
+    "cable_length": "3 ft (91.4 cm)",
+    "cable_type": "Plenum",
+    "dimensions": "6.3 \u00d7 11 \u00d7 1.2 in (16 \u00d7 27.9 \u00d7 3.05 cm)",
+    "weight": "1.4 lb",
+    "ip_rating": "IP54",
+    "radome": null,
+    "mount_type": "Wall mount",
+    "included_parts": [
+      {
+        "item": "#8 \u00d7 1\u00bc in screw",
+        "part_number": null,
+        "qty": 4
+      },
+      {
+        "item": "#8 plastic anchor",
+        "part_number": null,
+        "qty": 4
+      },
+      {
+        "item": "End cap",
+        "part_number": null,
+        "qty": 4
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 or less",
+    "isolation": null,
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant2566p4w-r-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant2566p4w-r-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2566p4w.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2566p4w.pdf)",
+        "id": "ant2566p4w",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2566p4w.pdf"
+      }
+    ],
+    "field_notes": {
+      "azimuth_note": "5 GHz azimuth on the March 2025 install guide is 110\u00b0. An older reference-guide HTML scrape listed 125\u00b0; the install guide is the source used here.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Any Cisco Aironet access point that requires four dual-band antennas. AIR-ANT2566P4W-RS is supported only on Catalyst 9800 with IOS-XE 17.4.1 or later."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2566P4W-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2566P4W-RS",
+    "name": "2.4/5 GHz 6 dBi 4-Element Patch, Self-Identifying",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.484/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "105\u00b0",
+        "5": "110\u00b0"
+      },
+      "vertical": {
+        "2.4": "65\u00b0",
+        "5": "55\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 4,
+    "polarization": "Linear, vertical",
+    "cable_length": "3 ft (91.4 cm)",
+    "cable_type": "Plenum",
+    "dimensions": "6.3 \u00d7 11 \u00d7 1.2 in (16 \u00d7 27.9 \u00d7 3.05 cm)",
+    "weight": "1.4 lb",
+    "ip_rating": "IP54",
+    "radome": null,
+    "mount_type": "Wall mount",
+    "included_parts": [
+      {
+        "item": "#8 \u00d7 1\u00bc in screw",
+        "part_number": null,
+        "qty": 4
+      },
+      {
+        "item": "#8 plastic anchor",
+        "part_number": null,
+        "qty": 4
+      },
+      {
+        "item": "End cap",
+        "part_number": null,
+        "qty": 4
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 or less",
+    "isolation": null,
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant2566p4w-r-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant2566p4w-r-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2566p4w.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2566p4w.pdf)",
+        "id": "ant2566p4w",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2566p4w.pdf"
+      }
+    ],
+    "field_notes": {
+      "azimuth_note": "5 GHz azimuth on the March 2025 install guide is 110\u00b0. An older reference-guide HTML scrape listed 125\u00b0; the install guide is the source used here.",
+      "self_identifying": "Self-identifying variant. Same RF as AIR-ANT2566P4W-R. Catalyst 9800, IOS-XE 17.4.1+.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Any Cisco Aironet access point that requires four dual-band antennas. AIR-ANT2566P4W-RS is supported only on Catalyst 9800 with IOS-XE 17.4.1 or later."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2566P4W-RS="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2566D4M-R",
+    "name": "2.4/5 GHz 6 dBi 4-Port Polarization-Diverse Directional Array",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "65\u00b0",
+        "5": "55\u00b0"
+      },
+      "vertical": {
+        "2.4": "65\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 4,
+    "polarization": "Vertical (ports A, C); horizontal (ports B, D)",
+    "cable_length": "3 ft",
+    "cable_type": null,
+    "dimensions": "10 \u00d7 10 \u00d7 1.61 in (25.4 \u00d7 25.4 \u00d7 4.1 cm)",
+    "weight": "2.5 lb (1.13 kg)",
+    "ip_rating": "IP67",
+    "radome": null,
+    "mount_type": "Articulating wall, ceiling, or mast mount; flush wall mount",
+    "included_parts": [
+      {
+        "item": "Articulating mount flange",
+        "part_number": null,
+        "qty": 2
+      },
+      {
+        "item": "Articulating mount arm",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "Worm-gear hose clamp",
+        "part_number": null,
+        "qty": 2
+      }
+    ],
+    "wind_rating": "100 mph",
+    "vswr": "2:1",
+    "isolation": ">30 dB",
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz H-pol Horizontal + Vertical",
+        "url": "images/cisco/air-ant2566d4m-r-pattern-2-4-ghz-h-pol-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz V-pol Horizontal + Vertical",
+        "url": "images/cisco/air-ant2566d4m-r-pattern-2-4-ghz-v-pol-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz H-pol Horizontal + Vertical",
+        "url": "images/cisco/air-ant2566d4m-r-pattern-5-ghz-h-pol-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz V-pol Horizontal + Vertical",
+        "url": "images/cisco/air-ant2566d4m-r-pattern-5-ghz-v-pol-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2566d4m.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2566d4m.pdf)",
+        "id": "ant2566d4m",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2566d4m.pdf"
+      }
+    ],
+    "field_notes": {
+      "gain_off_boresight": "Peak gain at or beyond 30\u00b0 elevation is 3 dBi (both bands), lower than boresight.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet access points with four dual-band RP-TNC ports. RS model: Catalyst 9800, IOS-XE 17.4.1 or later; not supported on AireOS."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2566D4M-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2566D4M-RS",
+    "name": "2.4/5 GHz 6 dBi 4-Port Polarization-Diverse Directional Array, Self-Identifying",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "65\u00b0",
+        "5": "55\u00b0"
+      },
+      "vertical": {
+        "2.4": "65\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 4,
+    "polarization": "Vertical (ports A, C); horizontal (ports B, D)",
+    "cable_length": "3 ft",
+    "cable_type": null,
+    "dimensions": "10 \u00d7 10 \u00d7 1.61 in (25.4 \u00d7 25.4 \u00d7 4.1 cm)",
+    "weight": "2.5 lb (1.13 kg)",
+    "ip_rating": "IP67",
+    "radome": null,
+    "mount_type": "Articulating wall, ceiling, or mast mount; flush wall mount",
+    "included_parts": [
+      {
+        "item": "Articulating mount flange",
+        "part_number": null,
+        "qty": 2
+      },
+      {
+        "item": "Articulating mount arm",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "Worm-gear hose clamp",
+        "part_number": null,
+        "qty": 2
+      }
+    ],
+    "wind_rating": "100 mph",
+    "vswr": "2:1",
+    "isolation": ">30 dB",
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz H-pol Horizontal + Vertical",
+        "url": "images/cisco/air-ant2566d4m-r-pattern-2-4-ghz-h-pol-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz V-pol Horizontal + Vertical",
+        "url": "images/cisco/air-ant2566d4m-r-pattern-2-4-ghz-v-pol-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz H-pol Horizontal + Vertical",
+        "url": "images/cisco/air-ant2566d4m-r-pattern-5-ghz-h-pol-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz V-pol Horizontal + Vertical",
+        "url": "images/cisco/air-ant2566d4m-r-pattern-5-ghz-v-pol-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2566d4m.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2566d4m.pdf)",
+        "id": "ant2566d4m",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2566d4m.pdf"
+      }
+    ],
+    "field_notes": {
+      "gain_off_boresight": "Peak gain at or beyond 30\u00b0 elevation is 3 dBi (both bands), lower than boresight.",
+      "self_identifying": "Self-identifying variant of AIR-ANT2566D4M-R.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet access points with four dual-band RP-TNC ports. RS model: Catalyst 9800, IOS-XE 17.4.1 or later; not supported on AireOS."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2566D4M-RS="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2566D4M-DS",
+    "name": "2.4/5 GHz 6/5 dBi 4-Port Directional Array, DART",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "65\u00b0",
+        "5": "55\u00b0"
+      },
+      "vertical": {
+        "2.4": "65\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "4-port DART",
+    "lead_count": 4,
+    "polarization": "Vertical (ports A, C); horizontal (ports B, D)",
+    "cable_length": "3 ft",
+    "cable_type": null,
+    "dimensions": "10 \u00d7 10 \u00d7 1.61 in (25.4 \u00d7 25.4 \u00d7 4.1 cm)",
+    "weight": "2.5 lb (1.13 kg)",
+    "ip_rating": "IP67",
+    "radome": null,
+    "mount_type": "Articulating wall or mast mount",
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "100 mph",
+    "vswr": "2:1",
+    "isolation": ">30 dB",
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Port A Horizontal",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-2-4-ghz-port-a-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port A Vertical",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-2-4-ghz-port-a-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Port B Horizontal",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-2-4-ghz-port-b-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port B Vertical",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-2-4-ghz-port-b-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Port C Horizontal",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-2-4-ghz-port-c-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port C Vertical",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-2-4-ghz-port-c-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Port D Horizontal",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-2-4-ghz-port-d-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port D Vertical",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-2-4-ghz-port-d-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port A Horizontal",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-5-ghz-port-a-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port A Vertical",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-5-ghz-port-a-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port B Horizontal",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-5-ghz-port-b-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port B Vertical",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-5-ghz-port-b-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port C Horizontal",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-5-ghz-port-c-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port C Vertical",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-5-ghz-port-c-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port D Horizontal",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-5-ghz-port-d-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port D Vertical",
+        "url": "images/cisco/air-ant2566d4m-ds-pattern-5-ghz-port-d-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/cisco/air-ant2566d4m-ds-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2566d4m-ds.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2566d4m-ds.pdf)",
+        "id": "ant2566d4m-ds",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2566d4m-ds.pdf"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "5 GHz peak gain is 5 dBi on the DART (-DS) model, versus 6 dBi on AIR-ANT2566D4M-R. 2.4 GHz remains 6 dBi.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco access points with a 4-port DART antenna connector."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2566D4M-DS="
+    },
+    "dimension_image_kind": "mechanical"
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "C-ANT9101",
+    "name": "2.4/5/6 GHz 8-Element Ceiling Omni, DART",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.484/5.15-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 6,
+      "6": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      }
+    },
+    "connector": "Octal DART",
+    "lead_count": 8,
+    "polarization": "Dual-polarized (vertical and horizontal)",
+    "cable_length": "2 ft (61 cm)",
+    "cable_type": null,
+    "dimensions": "9 \u00d7 9 \u00d7 1.2 in (22.9 \u00d7 22.9 \u00d7 3.05 cm)",
+    "weight": "1.3 lb (0.59 kg)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Ceiling mount, articulating",
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": "20 dB",
+    "operating_temp": "0 to 50 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Port A Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-a-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port A Vertical",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-a-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port B Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-b-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port B Vertical",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-b-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port C Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-c-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port C Vertical",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-c-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port D Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-d-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port D Vertical",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-d-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port E Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-e-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port E Vertical",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-e-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port F Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-f-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port F Vertical",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-f-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port G Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-g-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port G Vertical",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-g-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port H Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-h-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port H Vertical",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-port-h-vertical.jpg"
+      },
+      {
+        "label": "5 GHz AUX Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-aux-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz AUX Vertical",
+        "url": "images/cisco/c-ant9101-pattern-5-ghz-aux-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Port E Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-2-4-ghz-port-e-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port E Vertical",
+        "url": "images/cisco/c-ant9101-pattern-2-4-ghz-port-e-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Port F Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-2-4-ghz-port-f-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port F Vertical",
+        "url": "images/cisco/c-ant9101-pattern-2-4-ghz-port-f-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Port G Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-2-4-ghz-port-g-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port G Vertical",
+        "url": "images/cisco/c-ant9101-pattern-2-4-ghz-port-g-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Port H Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-2-4-ghz-port-h-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port H Vertical",
+        "url": "images/cisco/c-ant9101-pattern-2-4-ghz-port-h-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz AUX Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-2-4-ghz-aux-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz AUX Vertical",
+        "url": "images/cisco/c-ant9101-pattern-2-4-ghz-aux-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz BLE Horizontal",
+        "url": "images/cisco/c-ant9101-pattern-2-4-ghz-ble-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz BLE Vertical",
+        "url": "images/cisco/c-ant9101-pattern-2-4-ghz-ble-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant9101.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant9101.pdf)",
+        "id": "ant9101",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant9101.pdf"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "5.15\u20137.125 GHz peak is 6 dBi on ports A\u2013D and 3 dBi on ports E\u2013H. Stored value is the port A\u2013D peak for both 5 and 6 GHz. IoT (2.4 GHz) column is 3 dBi versus 2 dBi on the main 2.4 GHz column.",
+      "beamwidth": "Azimuth is omnidirectional. Elevation beamwidth is not tabulated; elevation patterns are included per port.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Catalyst 9130AX Series access points (four dual-band and four 5/6 GHz paths, octal DART)."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "C-ANT9101="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "C-ANT9102",
+    "name": "2.4/5/6 GHz 4 dBi 8-Element Wall/Pole Omni, DART",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.484/5.15-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 4,
+      "6": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "30\u00b0",
+        "6": "30\u00b0"
+      }
+    },
+    "connector": "Octal DART",
+    "lead_count": 8,
+    "polarization": "Vertical at 2.4 GHz; dual-polarized (vertical and horizontal) at 5/6 GHz",
+    "cable_length": "2 ft (61 cm)",
+    "cable_type": null,
+    "dimensions": "10.45 \u00d7 8.03 in dia. (26.55 \u00d7 20.4 cm)",
+    "weight": "2.3 lb (1.04 kg)",
+    "ip_rating": "IP66",
+    "radome": null,
+    "mount_type": "Articulating wall or pole mount",
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": "images/cisco/c-ant9102.jpg",
+    "images": [
+      {
+        "label": "Wall-mount omni",
+        "url": "images/cisco/c-ant9102.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Port A Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-a-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port A Vertical",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-a-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port B Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-b-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port B Vertical",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-b-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port C Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-c-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port C Vertical",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-c-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port D Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-d-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port D Vertical",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-d-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Port E Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-2-4-ghz-port-e-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port E Vertical",
+        "url": "images/cisco/c-ant9102-pattern-2-4-ghz-port-e-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port E Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-e-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port E Vertical",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-e-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Port F Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-2-4-ghz-port-f-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port F Vertical",
+        "url": "images/cisco/c-ant9102-pattern-2-4-ghz-port-f-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port F Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-f-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port F Vertical",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-f-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Port G Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-2-4-ghz-port-g-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port G Vertical",
+        "url": "images/cisco/c-ant9102-pattern-2-4-ghz-port-g-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port G Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-g-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port G Vertical",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-g-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Port H Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-2-4-ghz-port-h-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port H Vertical",
+        "url": "images/cisco/c-ant9102-pattern-2-4-ghz-port-h-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port H Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-h-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port H Vertical",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-port-h-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz AUX Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-2-4-ghz-aux-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz AUX Vertical",
+        "url": "images/cisco/c-ant9102-pattern-2-4-ghz-aux-vertical.jpg"
+      },
+      {
+        "label": "5 GHz AUX Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-aux-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz AUX Vertical",
+        "url": "images/cisco/c-ant9102-pattern-5-ghz-aux-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz BLE Horizontal",
+        "url": "images/cisco/c-ant9102-pattern-2-4-ghz-ble-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz BLE Vertical",
+        "url": "images/cisco/c-ant9102-pattern-2-4-ghz-ble-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant9102.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant9102.pdf)",
+        "id": "ant9102",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant9102.pdf"
+      }
+    ],
+    "field_notes": {
+      "beamwidth": "5/6 GHz share the 5.15\u20137.125 GHz column (360\u00b0 azimuth, 30\u00b0 elevation). IoT column repeats 4 dBi and 60\u00b0 elevation at 2.4 GHz."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Catalyst 9130AX Series access points with an octal DART connector."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "C-ANT9102="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "C-ANT9103",
+    "name": "2.4/5/6 GHz 6 dBi 8-Element Directional Patch, DART",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.484/5.15-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6,
+      "6": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "75\u00b0",
+        "5": "70\u00b0",
+        "6": "70\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "70\u00b0",
+        "6": "70\u00b0"
+      }
+    },
+    "connector": "Right-angle octal DART",
+    "lead_count": 8,
+    "polarization": "Vertical at 2.4 GHz; dual-polarized at 5/6 GHz",
+    "cable_length": "2.5 ft (76 cm)",
+    "cable_type": null,
+    "dimensions": "12 \u00d7 12 \u00d7 1.2 in (30.5 \u00d7 30.5 \u00d7 3.0 cm)",
+    "weight": "2.5 lb (1.13 kg)",
+    "ip_rating": "IP66",
+    "radome": null,
+    "mount_type": "Articulating wall or pole mount",
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "120 mph",
+    "vswr": "2:1",
+    "isolation": ">20 dB",
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "Port A Vertical",
+        "url": "images/cisco/c-ant9103-pattern-port-a-vertical.jpg"
+      },
+      {
+        "label": "Port A Horizontal",
+        "url": "images/cisco/c-ant9103-pattern-port-a-horizontal.jpg"
+      },
+      {
+        "label": "Port B Vertical",
+        "url": "images/cisco/c-ant9103-pattern-port-b-vertical.jpg"
+      },
+      {
+        "label": "Port B Horizontal",
+        "url": "images/cisco/c-ant9103-pattern-port-b-horizontal.jpg"
+      },
+      {
+        "label": "Port C Vertical",
+        "url": "images/cisco/c-ant9103-pattern-port-c-vertical.jpg"
+      },
+      {
+        "label": "Port C Horizontal",
+        "url": "images/cisco/c-ant9103-pattern-port-c-horizontal.jpg"
+      },
+      {
+        "label": "Port D Vertical",
+        "url": "images/cisco/c-ant9103-pattern-port-d-vertical.jpg"
+      },
+      {
+        "label": "Port D Horizontal",
+        "url": "images/cisco/c-ant9103-pattern-port-d-horizontal.jpg"
+      },
+      {
+        "label": "Port E Vertical",
+        "url": "images/cisco/c-ant9103-pattern-port-e-vertical.jpg"
+      },
+      {
+        "label": "Port E Horizontal",
+        "url": "images/cisco/c-ant9103-pattern-port-e-horizontal.jpg"
+      },
+      {
+        "label": "Port F Vertical",
+        "url": "images/cisco/c-ant9103-pattern-port-f-vertical.jpg"
+      },
+      {
+        "label": "Port F Horizontal",
+        "url": "images/cisco/c-ant9103-pattern-port-f-horizontal.jpg"
+      },
+      {
+        "label": "Port G Vertical",
+        "url": "images/cisco/c-ant9103-pattern-port-g-vertical.jpg"
+      },
+      {
+        "label": "Port G Horizontal",
+        "url": "images/cisco/c-ant9103-pattern-port-g-horizontal.jpg"
+      },
+      {
+        "label": "Port H Vertical",
+        "url": "images/cisco/c-ant9103-pattern-port-h-vertical.jpg"
+      },
+      {
+        "label": "Port H Horizontal",
+        "url": "images/cisco/c-ant9103-pattern-port-h-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/cisco/c-ant9103-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant9103.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant9103.pdf)",
+        "id": "ant9103",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant9103.pdf"
+      }
+    ],
+    "field_notes": {
+      "dimensions": "Height cell reads 1.2 in. (4.1 cm); 1.2 in is 3.05 cm, so the metric parenthetical conflicts. Inch value stored with a converted metric depth.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Catalyst 9130AX Series access points with an octal DART connector."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "C-ANT9103="
+    },
+    "dimension_image_kind": "mechanical"
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "C-ANT9104",
+    "name": "2.4/5 GHz Stadium Array, 6 dBi / 10 dBi Narrow Beam, DART",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4 GHz and 5 GHz (beamwidth switching at 5 GHz)",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 10
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "70\u00b0",
+        "5": "25\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "25\u00b0"
+      }
+    },
+    "connector": "DART",
+    "lead_count": 8,
+    "polarization": "Vertical and horizontal (eight-port polarization-diverse array)",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "23.5 \u00d7 18.2 \u00d7 5.8 in (59.7 \u00d7 46.2 \u00d7 14.8 cm)",
+    "weight": "15.5 lb (7.03 kg)",
+    "ip_rating": "IP65",
+    "radome": null,
+    "mount_type": "Articulating wall or mast mount; access point mounts to the antenna",
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "100 mph",
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Slot 0 Vertical",
+        "url": "images/cisco/c-ant9104-pattern-2-4-ghz-slot-0-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Slot 0 Horizontal",
+        "url": "images/cisco/c-ant9104-pattern-2-4-ghz-slot-0-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Narrow 10\u00b0 Horizontal",
+        "url": "images/cisco/c-ant9104-pattern-5-ghz-narrow-steer-10-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Narrow 0\u00b0 Horizontal",
+        "url": "images/cisco/c-ant9104-pattern-5-ghz-narrow-steer-0-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Wide Vertical",
+        "url": "images/cisco/c-ant9104-pattern-5-ghz-wide-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Narrow 0\u00b0 Vertical",
+        "url": "images/cisco/c-ant9104-pattern-5-ghz-narrow-steer-0-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Wide Horizontal",
+        "url": "images/cisco/c-ant9104-pattern-5-ghz-wide-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Narrow 20\u00b0 Horizontal",
+        "url": "images/cisco/c-ant9104-pattern-5-ghz-narrow-steer-20-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz IoT Vertical",
+        "url": "images/cisco/c-ant9104-pattern-2-4-ghz-iot-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz IoT Horizontal",
+        "url": "images/cisco/c-ant9104-pattern-2-4-ghz-iot-horizontal.jpg"
+      },
+      {
+        "label": "AUX Wide Vertical",
+        "url": "images/cisco/c-ant9104-pattern-aux-wide-vertical.jpg"
+      },
+      {
+        "label": "AUX Wide Horizontal",
+        "url": "images/cisco/c-ant9104-pattern-aux-wide-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": "images/cisco/c-ant9104-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/b-ant9104ax_ig.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (b-ant9104ax_ig.pdf)",
+        "id": "b-ant9104ax_ig",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/b-ant9104ax_ig.pdf"
+      }
+    ],
+    "field_notes": {
+      "form": "Eight-port ultralow-sidelobe stadium array. Classified as high-density patch because of the 25\u00b0 narrow-beam 5 GHz mode, not as a separate sector type.",
+      "gain_dbi": "5 GHz wide-beam mode is 7 dBi (80\u00b0 azimuth \u00d7 25\u00b0 elevation). Narrow modes (boresight, \u00b110\u00b0, \u00b120\u00b0) are 10 dBi with 25\u00b0 \u00d7 25\u00b0 beamwidth. Stored 5 GHz gain and beamwidth are the narrow-beam values. 2.4 GHz and IoT are 6 dBi, 70\u00b0 \u00d7 70\u00b0.",
+      "connector": "RF connection to the mounted Catalyst 9130 is a DART cable. The spec table\u2019s \u201cConnector Type: RJ45 PoE\u201d is the Ethernet passthrough, not the RF port.",
+      "operating_temp": "Not tabulated in the installation-guide spec table.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Catalyst 9130AX (C9130AX) mounted on the antenna via DART."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "C-ANT9104="
+    },
+    "dimension_image_kind": "mechanical"
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2413P2M-N",
+    "name": "2.4 GHz 13 dBi 2-Port Directional Panel",
+    "form": "High-density patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 13
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "30\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 2,
+    "polarization": "Linear, dual",
+    "cable_length": "30 in (76.2 cm)",
+    "cable_type": null,
+    "dimensions": "7.8 \u00d7 7.8 in (19.8 \u00d7 19.8 cm)",
+    "weight": "21.6 oz (0.61 kg)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Adjustable wall or mast (azimuth and elevation brackets)",
+    "included_parts": [
+      {
+        "item": "Azimuth adjustable bracket",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "Elevation adjustable bracket",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221240 to 55 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant2413p2m-n-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2413p2m-n.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2413p2m-n.pdf)",
+        "id": "ant2413p2m-n",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2413p2m-n.pdf"
+      }
+    ],
+    "field_notes": {
+      "form": "Two-port 13 dBi, 30\u00b0 \u00d7 30\u00b0 directional panel. Classified as high-density patch (narrow multi-element), not a sector.",
+      "operating_temp": "Datasheet range is \u221240\u00b0F to 131\u00b0F.",
+      "vswr": "Not listed on the spec table.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet outdoor mesh access points (1560 and 1570 series are the reference-guide fit)."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2413P2M-N="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2450V-N",
+    "name": "2.4 GHz 5 dBi Direct-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.484 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Linear, vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "11.0 \u00d7 1.0 in dia. (27.9 cm length)",
+    "weight": "6.0 oz (160 g)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Direct mount to the access point N port",
+    "included_parts": [],
+    "wind_rating": "125 mph (201 km/h)",
+    "vswr": "1.7:1",
+    "isolation": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/cisco/air-ant2450v-n-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/cisco/air-ant2450v-n-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2450v.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2450v.pdf)",
+        "id": "ant2450v",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2450v.pdf"
+      }
+    ],
+    "field_notes": {
+      "dimensions": "Spec prints diameter as 1.0 in. (14.5 cm). 1.0 in is 2.54 cm, so the metric parenthetical is inconsistent and was not copied.",
+      "operating_temp": "Datasheet range is \u221222\u00b0F to 158\u00b0F.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet outdoor mesh access points with an N-male antenna port."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2450V-N="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2480V-N",
+    "name": "2.4 GHz 8 dBi Direct-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.484 GHz",
+    "gain_dbi": {
+      "2.4": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "10\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Linear, vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "19.5 \u00d7 0.75 in dia. (49.5 \u00d7 1.91 cm)",
+    "weight": null,
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Direct mount to the access point N port",
+    "included_parts": [],
+    "wind_rating": "100 mph operational; 165 mph survival",
+    "vswr": "<1.7:1",
+    "isolation": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/cisco/air-ant2480v-n-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/cisco/air-ant2480v-n-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2480v.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2480v.pdf)",
+        "id": "ant2480v",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2480v.pdf"
+      }
+    ],
+    "field_notes": {
+      "beamwidth": "The spec table says horizontal half-power beamwidth is 10\u00b0 and vertical is omnidirectional. The azimuth figure is a full circle and the elevation figure is the narrow multi-lobe cut, which matches a vertical colinear omni. Stored beamwidth follows the figures (horizontal 360\u00b0, vertical 10\u00b0).",
+      "operating_temp": "Datasheet range is \u221222 to 158\u00b0F. Weight is not listed.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet 1500 Series lightweight outdoor mesh access points."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2480V-N="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2513P4M-N",
+    "name": "2.4/5 GHz 13 dBi 4-Port Polarization-Diverse Array",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 13,
+      "5": 13
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "31\u00b0",
+        "5": "31\u00b0"
+      },
+      "vertical": {
+        "2.4": "33\u00b0",
+        "5": "27\u00b0"
+      }
+    },
+    "connector": "N-Female Bulkhead",
+    "lead_count": 4,
+    "polarization": "Vertical (ports A, C); horizontal (ports B, D)",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "14.5 \u00d7 20 \u00d7 0.8 in (36.8 \u00d7 50.7 \u00d7 2.11 cm)",
+    "weight": "81.1 oz (2.3 kg)",
+    "ip_rating": "IP67",
+    "radome": "Paintable",
+    "mount_type": "Articulating wall, ceiling, or pole mount (2\u20135 in pole)",
+    "included_parts": [
+      {
+        "item": "Articulating mount flange",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "Mounting arm",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "Hose clamp",
+        "part_number": null,
+        "qty": 2
+      }
+    ],
+    "wind_rating": "100 mph",
+    "vswr": "1.6:1 (2.4 GHz); 2:1 to 5.7 GHz and 1.5:1 above 5.7 GHz (5 GHz)",
+    "isolation": null,
+    "operating_temp": "\u221240 to 85 \u00b0C",
+    "image_url": "images/cisco/air-ant2513p4m-n.jpg",
+    "images": [
+      {
+        "label": "Four-port array",
+        "url": "images/cisco/air-ant2513p4m-n.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/cisco/air-ant2513p4m-n-pattern-2-4-ghz-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Vertical",
+        "url": "images/cisco/air-ant2513p4m-n-pattern-2-4-ghz-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/cisco/air-ant2513p4m-n-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2513p4mn.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2513p4mn.pdf)",
+        "id": "ant2513p4mn",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2513p4mn.pdf"
+      }
+    ],
+    "field_notes": {
+      "form": "Four-port polarization-diverse stadium/patch array, about 30\u00b0 beamwidth. Classified as high-density patch.",
+      "vswr": "5 GHz VSWR is 2:1 from 5.15 to 5.7 GHz and 1.5:1 from 5.7 to 5.9 GHz."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet 3702P (ports A\u2013D match the antenna) and 1570 series, per the installation guide."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2513P4M-N="
+    },
+    "dimension_image_kind": "mechanical"
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2513P4M-NS",
+    "name": "2.4/5 GHz 13 dBi 4-Port Polarization-Diverse Array, Self-Identifying",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 13,
+      "5": 13
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "31\u00b0",
+        "5": "31\u00b0"
+      },
+      "vertical": {
+        "2.4": "33\u00b0",
+        "5": "27\u00b0"
+      }
+    },
+    "connector": "N-Female Bulkhead",
+    "lead_count": 4,
+    "polarization": "Vertical (ports A, C); horizontal (ports B, D)",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "14.5 \u00d7 20 \u00d7 0.8 in (36.8 \u00d7 50.7 \u00d7 2.11 cm)",
+    "weight": "81.1 oz (2.3 kg)",
+    "ip_rating": "IP67",
+    "radome": "Paintable",
+    "mount_type": "Articulating wall, ceiling, or pole mount (2\u20135 in pole)",
+    "included_parts": [
+      {
+        "item": "Articulating mount flange",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "Mounting arm",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "Hose clamp",
+        "part_number": null,
+        "qty": 2
+      }
+    ],
+    "wind_rating": "100 mph",
+    "vswr": "1.6:1 (2.4 GHz); 2:1 to 5.7 GHz and 1.5:1 above 5.7 GHz (5 GHz)",
+    "isolation": null,
+    "operating_temp": "\u221240 to 85 \u00b0C",
+    "image_url": "images/cisco/air-ant2513p4m-n.jpg",
+    "images": [
+      {
+        "label": "Four-port array",
+        "url": "images/cisco/air-ant2513p4m-n.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz SIA Horizontal",
+        "url": "images/cisco/air-ant2513p4m-ns-pattern-2-4-ghz-5-ghz-sia-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5 GHz SIA Vertical",
+        "url": "images/cisco/air-ant2513p4m-ns-pattern-2-4-ghz-5-ghz-sia-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/cisco/air-ant2513p4m-n-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2513p4mn.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2513p4mn.pdf)",
+        "id": "ant2513p4mn",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2513p4mn.pdf"
+      }
+    ],
+    "field_notes": {
+      "form": "Four-port polarization-diverse stadium/patch array, about 30\u00b0 beamwidth. Classified as high-density patch.",
+      "vswr": "5 GHz VSWR is 2:1 from 5.15 to 5.7 GHz and 1.5:1 from 5.7 to 5.9 GHz.",
+      "self_identifying": "Self-identifying variant. Patterns are the SIA plots from the same installation guide."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet 3702P (ports A\u2013D match the antenna) and 1570 series, per the installation guide."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2513P4M-NS="
+    },
+    "dimension_image_kind": "mechanical"
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2547V-N",
+    "name": "2.4/5 GHz 4/7 dBi Direct-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.483/5.15-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0",
+        "5": "14\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "11.1 \u00d7 1.25 in dia. (28.2 \u00d7 3.17 cm)",
+    "weight": "6.0 oz (170 g)",
+    "ip_rating": "IP67",
+    "radome": null,
+    "mount_type": "Direct mount to the access point N port",
+    "included_parts": [],
+    "wind_rating": "100 mph (161 km/h) operational; 165 mph (265 km/h) survival",
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "\u221240 to 85 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/cisco/air-ant2547v-n-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/cisco/air-ant2547v-n-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/cisco/air-ant2547v-n-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/cisco/air-ant2547v-n-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2547vn.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2547vn.pdf)",
+        "id": "ant2547vn",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2547vn.pdf"
+      }
+    ],
+    "field_notes": {
+      "ip_rating": "Ingress is listed as IP66, IP67. IP67 stored as the rating; both appear on the sheet.",
+      "gain_dbi": "5 GHz gain cell is specified at 5250\u20135875 MHz (7 dBi), not the full 5150 MHz edge.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet outdoor access points with an N connector."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2547V-N="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2547VG-N",
+    "name": "2.4/5 GHz 4/7 dBi Direct-Mount Omni, Gray",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.483/5.15-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0",
+        "5": "14\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "11.1 \u00d7 1.25 in dia. (28.2 \u00d7 3.17 cm)",
+    "weight": "6.0 oz (170 g)",
+    "ip_rating": "IP67",
+    "radome": "Gray",
+    "mount_type": "Direct mount to the access point N port",
+    "included_parts": [],
+    "wind_rating": "100 mph (161 km/h) operational; 165 mph (265 km/h) survival",
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "\u221240 to 85 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/cisco/air-ant2547vg-n-pattern-2-4-ghz-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Vertical",
+        "url": "images/cisco/air-ant2547vg-n-pattern-2-4-ghz-5-ghz-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2547vgn.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2547vgn.pdf)",
+        "id": "ant2547vgn",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2547vgn.pdf"
+      }
+    ],
+    "field_notes": {
+      "radome": "Gray radome. RF matches AIR-ANT2547V-N. NS adds self-identification.",
+      "ip_rating": "Sheet lists IP66, IP67.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco outdoor access points. The NS model is read by the controller to set antenna type and gain."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2547VG-N="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2547VG-NS",
+    "name": "2.4/5 GHz 4/7 dBi Direct-Mount Omni, Gray, Self-Identifying",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.483/5.15-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0",
+        "5": "14\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "11.1 \u00d7 1.25 in dia. (28.2 \u00d7 3.17 cm)",
+    "weight": "6.0 oz (170 g)",
+    "ip_rating": "IP67",
+    "radome": "Gray",
+    "mount_type": "Direct mount to the access point N port",
+    "included_parts": [],
+    "wind_rating": "100 mph (161 km/h) operational; 165 mph (265 km/h) survival",
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "\u221240 to 85 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz SIA Horizontal",
+        "url": "images/cisco/air-ant2547vg-ns-pattern-2-4-ghz-5-ghz-sia-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5 GHz SIA Vertical",
+        "url": "images/cisco/air-ant2547vg-ns-pattern-2-4-ghz-5-ghz-sia-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2547vgn.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2547vgn.pdf)",
+        "id": "ant2547vgn",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2547vgn.pdf"
+      }
+    ],
+    "field_notes": {
+      "radome": "Gray radome. RF matches AIR-ANT2547V-N. NS adds self-identification.",
+      "ip_rating": "Sheet lists IP66, IP67.",
+      "self_identifying": "Self-identifying gray omni. Patterns are the SIA plots in the VG/NS guide.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco outdoor access points. The NS model is read by the controller to set antenna type and gain."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2547VG-NS="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2568VG-N",
+    "name": "2.4/5 GHz 6/8 dBi Direct-Mount Omni, Gray",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.483/5.15-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "24\u00b0",
+        "5": "11\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "14.8 \u00d7 1.25 in dia. (377 \u00d7 31.8 mm)",
+    "weight": "7.2 oz (204 g)",
+    "ip_rating": "IP67",
+    "radome": "Gray",
+    "mount_type": "Direct mount to the access point N port",
+    "included_parts": [],
+    "wind_rating": "100 mph (161 km/h) operational; 136 mph (218 km/h) survival",
+    "vswr": "1.5:1 (2.4 GHz); 2:1 (5 GHz)",
+    "isolation": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Horizontal",
+        "url": "images/cisco/air-ant2568vg-n-pattern-2-4-ghz-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5 GHz Vertical",
+        "url": "images/cisco/air-ant2568vg-n-pattern-2-4-ghz-5-ghz-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2568vgn.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2568vgn.pdf)",
+        "id": "ant2568vgn",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2568vgn.pdf"
+      }
+    ],
+    "field_notes": {
+      "beamwidth": "Azimuth plane ripple is 2 dB maximum. Azimuth 3 dB beamwidth is omnidirectional.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco outdoor access points. NS is self-identifying."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2568VG-N="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2568VG-NS",
+    "name": "2.4/5 GHz 6/8 dBi Direct-Mount Omni, Gray, Self-Identifying",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.483/5.15-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "24\u00b0",
+        "5": "11\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "14.8 \u00d7 1.25 in dia. (377 \u00d7 31.8 mm)",
+    "weight": "7.2 oz (204 g)",
+    "ip_rating": "IP67",
+    "radome": "Gray",
+    "mount_type": "Direct mount to the access point N port",
+    "included_parts": [],
+    "wind_rating": "100 mph (161 km/h) operational; 136 mph (218 km/h) survival",
+    "vswr": "1.5:1 (2.4 GHz); 2:1 (5 GHz)",
+    "isolation": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz SIA Horizontal",
+        "url": "images/cisco/air-ant2568vg-ns-pattern-2-4-ghz-5-ghz-sia-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5 GHz SIA Vertical",
+        "url": "images/cisco/air-ant2568vg-ns-pattern-2-4-ghz-5-ghz-sia-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2568vgn.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2568vgn.pdf)",
+        "id": "ant2568vgn",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2568vgn.pdf"
+      }
+    ],
+    "field_notes": {
+      "beamwidth": "Azimuth plane ripple is 2 dB maximum. Azimuth 3 dB beamwidth is omnidirectional.",
+      "self_identifying": "Self-identifying variant. SIA patterns used when the guide publishes them separately.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco outdoor access points. NS is self-identifying."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2568VG-NS="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2588P3M-N",
+    "name": "2.4/5 GHz 8 dBi 3-Port Directional Patch",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 8,
+      "5": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "120\u00b0",
+        "5": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0",
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "N-Female Bulkhead",
+    "lead_count": 3,
+    "polarization": "Linear, dual (2 vertical, 1 horizontal)",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "12 \u00d7 7 in (30.5 \u00d7 17.8 cm)",
+    "weight": "16 oz (0.45 kg)",
+    "ip_rating": "IP67",
+    "radome": null,
+    "mount_type": "Wall or mast",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1 or less",
+    "isolation": null,
+    "operating_temp": "\u221240 to 55 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz H-pol Horizontal + Vertical",
+        "url": "images/cisco/air-ant2588p3m-n-pattern-2-4-ghz-h-pol-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz H-pol Horizontal + Vertical",
+        "url": "images/cisco/air-ant2588p3m-n-pattern-5-ghz-h-pol-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz V-pol Horizontal + Vertical",
+        "url": "images/cisco/air-ant2588p3m-n-pattern-2-4-ghz-v-pol-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz V-pol Horizontal + Vertical",
+        "url": "images/cisco/air-ant2588p3m-n-pattern-5-ghz-v-pol-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2588p3m-n.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2588p3m-n.pdf)",
+        "id": "ant2588p3m-n",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2588p3m-n.pdf"
+      }
+    ],
+    "field_notes": {
+      "polarization": "Install guide: linear, dual. Cisco\u2019s antenna reference describes 2 vertical and 1 horizontal.",
+      "operating_temp": "Datasheet range is \u221240 to 131\u00b0F. Beamwidth is published as a single value for both bands.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet outdoor access points."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2588P3M-N="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT5114P-N",
+    "name": "5 GHz 14 dBi Patch",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9-5.85 GHz",
+    "gain_dbi": {
+      "5": 14
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "29\u00b0"
+      },
+      "vertical": {
+        "5": "25\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Linear, vertical",
+    "cable_length": "1 ft (0.3 m)",
+    "cable_type": "Plenum, UV rated",
+    "dimensions": "4.125 \u00d7 4.125 in (10.4 \u00d7 10.4 cm)",
+    "weight": null,
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Articulating wall or mast mount",
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/cisco/air-ant5114p-n-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/cisco/air-ant5114p-n-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant5114P.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant5114P.pdf)",
+        "id": "ant5114P",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant5114P.pdf"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "13 dBi from 4.9 to 5.47 GHz and 14 dBi from 5.47 to 5.85 GHz. Stored value is the upper-band peak.",
+      "vswr": "VSWR cell repeats the frequency range rather than a ratio.",
+      "form": "Single-port narrow panel. Kept as Patch; high-density patch is reserved for multi-element arrays.",
+      "cable_length": "Reference guide lists a 1 ft cable. This install guide says plenum-rated, UV-capable cable without restating the length on the same row.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet outdoor access points in the 4.9\u20135.85 GHz band."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT5114P-N="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT5114P2M-N",
+    "name": "5 GHz 14 dBi 2-Port Directional Panel",
+    "form": "High-density patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.9 GHz",
+    "gain_dbi": {
+      "5": 14
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "30\u00b0"
+      },
+      "vertical": {
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 2,
+    "polarization": "Linear, dual",
+    "cable_length": "30 in (76.2 cm)",
+    "cable_type": null,
+    "dimensions": "7.8 \u00d7 7.8 in (19.8 \u00d7 19.8 cm)",
+    "weight": "21.6 oz (0.61 kg)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Adjustable wall or mast",
+    "included_parts": [
+      {
+        "item": "Azimuth adjustable bracket",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "Elevation adjustable bracket",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221240 to 55 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant5114p2m-n-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant5114p2m-n.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant5114p2m-n.pdf)",
+        "id": "ant5114p2m-n",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant5114p2m-n.pdf"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "Element peak is 14 dBi. The guide notes about 1 dB of cable loss, so gain at the connector is about 13 dBi.",
+      "form": "Two-port 30\u00b0 \u00d7 30\u00b0 panel, classified as high-density patch.",
+      "vswr": "Not listed as a numeric ratio on the spec table.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet outdoor access points."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT5114P2M-N="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT5180V-N",
+    "name": "5 GHz 8 dBi Direct-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9-5.85 GHz",
+    "gain_dbi": {
+      "5": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "16\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "11.0 \u00d7 1.0 in dia. (27.9 \u00d7 2.54 cm)",
+    "weight": "6.0 oz (160 g)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Direct mount to the access point N port",
+    "included_parts": [],
+    "wind_rating": "125 mph (201 km/h)",
+    "vswr": "1.7:1",
+    "isolation": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/cisco/air-ant5180v-n-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/cisco/air-ant5180v-n-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant5180v.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant5180v.pdf)",
+        "id": "ant5180v",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant5180v.pdf"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "7 dBi at 4.9\u20135.0 GHz and 8 dBi at 5.4\u20135.85 GHz. Stored value is the upper-band peak.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet 1560 and 1570 series mesh access points."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT5180V-N="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "CW-ANT-T-D3-N",
+    "name": "2.4/5/6 GHz 6/7.5 dBi Directional, N Male",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/5.18-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 7.5,
+      "6": 7.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "95\u00b0",
+        "5": "148\u00b0",
+        "6": "148\u00b0"
+      },
+      "vertical": {
+        "2.4": "44\u00b0",
+        "5": "30\u00b0",
+        "6": "30\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "5.47 \u00d7 1.61 \u00d7 0.91 in (139 \u00d7 41 \u00d7 23 mm)",
+    "weight": "0.161 lb (73 g)",
+    "ip_rating": "IP67",
+    "radome": null,
+    "mount_type": "Articulating joint, \u00b190\u00b0 from the N-connector axis",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "<2.0",
+    "isolation": null,
+    "operating_temp": "\u221240 to 65 \u00b0C",
+    "image_url": "images/cisco/cw-ant-t-d3-n.jpg",
+    "images": [
+      {
+        "label": "Tri-band directional antenna",
+        "url": "images/cisco/cw-ant-t-d3-n.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz 90\u00b0 Vertical",
+        "url": "images/cisco/cw-ant-t-d3-n-pattern-2-4-ghz-steer-90-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz 0\u00b0 Vertical",
+        "url": "images/cisco/cw-ant-t-d3-n-pattern-2-4-ghz-steer-0-vertical.jpg"
+      },
+      {
+        "label": "5 GHz 90\u00b0 Vertical",
+        "url": "images/cisco/cw-ant-t-d3-n-pattern-5-ghz-steer-90-vertical.jpg"
+      },
+      {
+        "label": "5 GHz 0\u00b0 Vertical",
+        "url": "images/cisco/cw-ant-t-d3-n-pattern-5-ghz-steer-0-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/cisco/cw-ant-t-d3-n-dimensions.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/cw-ant-t-d3-n/b-CW-ANT-T-D3-N-ig.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (m-cw-ant-t-d3-n-overview.pdf)",
+        "id": "m-cw-ant-t-d3-n-overview",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/cw-ant-t-d3-n/b-CW-ANT-T-D3-N-ig.pdf"
+      }
+    ],
+    "field_notes": {
+      "beamwidth": "Stored beamwidth is the V-pol 3 dB cut. H-pol azimuth is 144\u00b0 (2.4 GHz) and 150\u00b0 (5/6 GHz); H-pol elevation is 34\u00b0 and 33\u00b0. The sheet also lists a 2.4 GHz average azimuth beamwidth of 118\u00b0.",
+      "ip_rating": "Environment rating is listed as both IP66 and IP67.",
+      "gain_dbi": "6 dBi at 2400\u20132500 MHz, 7.5 dBi at 5150\u20135900 MHz and at 6000\u20137125 MHz."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Wireless 9179F access point. Includes a one-wire EEPROM for self-identification."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "CW-ANT-T-D3-N="
+    },
+    "dimension_image_kind": "mechanical"
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT1728",
+    "name": "2.4 GHz 5.2 dBi Ceiling-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.483 GHz",
+    "gain_dbi": {
+      "2.4": 5.2
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "40\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": "3 ft (0.91 m)",
+    "cable_type": null,
+    "dimensions": null,
+    "weight": "4.6 oz (131 g)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Suspended ceiling track",
+    "included_parts": [
+      {
+        "item": "Ceiling track bracket",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "<2:1 (1.5:1 nominal)",
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/cisco/air-ant1728-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/cisco/air-ant1728-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant1728.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant1728.pdf)",
+        "id": "ant1728",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant1728.pdf"
+      }
+    ],
+    "field_notes": {
+      "beamwidth": "E-plane 3 dB bandwidth is 40\u00b0 (stored as vertical). H-plane is omnidirectional.",
+      "dimensions": "Outline dimensions are not in the spec table.",
+      "operating_temp": "Not tabulated.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet 2.4 GHz radios with an RP-TNC connector."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT1728="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2440NV-R",
+    "name": "2.4 GHz 4 dBi 3-Element Wall-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.484 GHz",
+    "gain_dbi": {
+      "2.4": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "36\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 3,
+    "polarization": "Linear, vertical",
+    "cable_length": "3 ft (91.4 cm)",
+    "cable_type": "Plenum",
+    "dimensions": "8.6 \u00d7 6.3 in dia. (21.8 \u00d7 16 cm)",
+    "weight": "1.33 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall or mast",
+    "included_parts": [
+      {
+        "item": "Mounting bracket",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 or less",
+    "isolation": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2440nv-r-pattern-2-4-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2440nv-r-pattern-2-4-ghz-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2440nv-r-pattern-2-4-ghz-element-3-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2440nv.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2440nv.pdf)",
+        "id": "ant2440nv",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2440nv.pdf"
+      }
+    ],
+    "field_notes": {
+      "operating_temp": "Datasheet range is \u221222\u00b0F to 158\u00b0F.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet 2.4 GHz MIMO radios with RP-TNC connectors."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2440NV-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2451NV-R",
+    "name": "2.4/5 GHz 2.5/3.5 dBi 6-Element Low-Profile Ceiling Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 2.5,
+      "5": 3.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "63\u00b0",
+        "5": "55\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 6,
+    "polarization": "Linear",
+    "cable_length": "3 ft (91.4 cm)",
+    "cable_type": "Plenum",
+    "dimensions": "8.6 in dia. (21.8 cm)",
+    "weight": null,
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Low-profile ceiling mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1 or less",
+    "isolation": null,
+    "operating_temp": "0 to 55 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2451nv-r-pattern-2-4-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2451nv-r-pattern-5-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2451nv-r-pattern-2-4-ghz-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2451nv-r-pattern-5-ghz-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2451nv-r-pattern-2-4-ghz-element-3-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2451nv-r-pattern-5-ghz-element-3-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2451nv.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2451nv.pdf)",
+        "id": "ant2451nv",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2451nv.pdf"
+      }
+    ],
+    "field_notes": {
+      "lead_count": "Antenna type is 6-element. Published patterns are grouped by antenna number rather than all six leads.",
+      "operating_temp": "Datasheet range is 32\u00b0F to 131\u00b0F.",
+      "weight": "Not tabulated.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet indoor access points with RP-TNC antenna ports."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2451NV-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2460NP-R",
+    "name": "2.4 GHz 6 dBi 3-Element MIMO Patch",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.484 GHz",
+    "gain_dbi": {
+      "2.4": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "80\u00b0"
+      },
+      "vertical": {
+        "2.4": "75\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 3,
+    "polarization": "Linear, vertical",
+    "cable_length": "3 ft (91.4 cm)",
+    "cable_type": "Plenum",
+    "dimensions": "5.8 \u00d7 11.25 \u00d7 1.13 in (14.7 \u00d7 28.6 \u00d7 2.9 cm)",
+    "weight": null,
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1 or less",
+    "isolation": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Vertical",
+        "url": "images/cisco/air-ant2460np-r-pattern-2-4-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Vertical",
+        "url": "images/cisco/air-ant2460np-r-pattern-2-4-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/cisco/air-ant2460np-r-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2460np.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2460np.pdf)",
+        "id": "ant2460np",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2460np.pdf"
+      }
+    ],
+    "field_notes": {
+      "front_to_back": "Front-to-back ratio is 10 dB.",
+      "weight": "Not on the spec table.",
+      "operating_temp": "Datasheet range is \u221222\u00b0F to 158\u00b0F.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet 2.4 GHz radios with an RP-TNC connector."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2460NP-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2465P-R",
+    "name": "2.4 GHz 6.5 dBi Diversity Patch",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.484 GHz",
+    "gain_dbi": {
+      "2.4": 6.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "75\u00b0"
+      },
+      "vertical": {
+        "2.4": "65\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 2,
+    "polarization": "Linear, vertical",
+    "cable_length": "36 in (91.4 cm)",
+    "cable_type": null,
+    "dimensions": "4.4 \u00d7 6.6 \u00d7 1 in (11.1 \u00d7 16.7 \u00d7 2.5 cm)",
+    "weight": null,
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": "images/cisco/air-ant2465p-r.jpg",
+    "images": [
+      {
+        "label": "Diversity patch",
+        "url": "images/cisco/air-ant2465p-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2465p-r-pattern-2-4-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2465p-r-pattern-2-4-ghz-element-2-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2465.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2465.pdf)",
+        "id": "ant2465",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2465.pdf"
+      }
+    ],
+    "field_notes": {
+      "beamwidth": "H-plane 75\u00b0 stored as horizontal; E-plane 65\u00b0 stored as vertical. Front-to-back ratio is 15 dB.",
+      "weight": "Not tabulated."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet access points and bridges with RP-TNC connectors."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2465P-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2485P-R",
+    "name": "2.4 GHz 8.5 dBi Patch",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.484 GHz",
+    "gain_dbi": {
+      "2.4": 8.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "66\u00b0"
+      },
+      "vertical": {
+        "2.4": "56\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Linear, vertical",
+    "cable_length": "36 in (91.4 cm)",
+    "cable_type": null,
+    "dimensions": "5.1 \u00d7 5.1 \u00d7 0.92 in (12.9 \u00d7 12.9 \u00d7 2.3 cm)",
+    "weight": null,
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": "images/cisco/air-ant2485p-r.jpg",
+    "images": [
+      {
+        "label": "Patch",
+        "url": "images/cisco/air-ant2485p-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/cisco/air-ant2485p-r-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/cisco/air-ant2485p-r-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2485.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2485.pdf)",
+        "id": "ant2485",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2485.pdf"
+      }
+    ],
+    "field_notes": {
+      "beamwidth": "H-plane 66\u00b0 stored as horizontal; E-plane 56\u00b0 stored as vertical. Front-to-back ratio is 20 dB.",
+      "weight": "Not tabulated."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet 2.4 GHz radios with an RP-TNC connector."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2485P-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2410Y-R",
+    "name": "2.4 GHz 10 dBi Yagi",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.485 GHz",
+    "gain_dbi": {
+      "2.4": 10
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "55\u00b0"
+      },
+      "vertical": {
+        "2.4": "55\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Linear; ships vertical, can be rotated to horizontal",
+    "cable_length": "3 ft (0.91 m)",
+    "cable_type": "RG-58",
+    "dimensions": "6.75 \u00d7 3 in OD (17.1 \u00d7 7.6 cm)",
+    "weight": null,
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Mast or wall mount",
+    "included_parts": [
+      {
+        "item": "Mast-mount hardware",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "125 mph (201 km/h)",
+    "vswr": "<1.5:1",
+    "isolation": null,
+    "operating_temp": "\u221240 to 60 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/cisco/air-ant2410y-r-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/cisco/air-ant2410y-r-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2410Y.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2410Y.pdf)",
+        "id": "ant2410Y",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2410Y.pdf"
+      }
+    ],
+    "field_notes": {
+      "form": "10 dBi yagi. Entered as Patch because this catalog has no separate yagi type.",
+      "dimensions": "One parenthetical on the sheet reads 76 cm against the 3 in diameter; the diameter row says 3 in (7.6 cm). Stored metric uses 7.6 cm.",
+      "front_to_back": "Front-to-back ratio is 23 dB. Maximum sidelobe is less than \u221216 dB.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet 2.4 GHz radios with an RP-TNC connector."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2410Y-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT5140NV-R",
+    "name": "5 GHz 4 dBi 3-Element Wall-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.85 GHz",
+    "gain_dbi": {
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "36\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 3,
+    "polarization": "Linear, vertical",
+    "cable_length": "3 ft (91.4 cm)",
+    "cable_type": "Plenum",
+    "dimensions": "8.6 \u00d7 6.3 in dia. (21.8 \u00d7 16 cm)",
+    "weight": "1.33 lb",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall or mast",
+    "included_parts": [
+      {
+        "item": "Mounting bracket",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 or less",
+    "isolation": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant5140nv-r-pattern-5-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant5140nv-r-pattern-5-ghz-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant5140nv-r-pattern-5-ghz-element-3-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant5140nv.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant5140nv.pdf)",
+        "id": "ant5140nv",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant5140nv.pdf"
+      }
+    ],
+    "field_notes": {
+      "operating_temp": "Datasheet range is \u221222\u00b0F to 158\u00b0F.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet 5 GHz MIMO radios with RP-TNC connectors."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT5140NV-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT5160NP-R",
+    "name": "5 GHz 6 dBi 3-Element MIMO Patch",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.85 GHz",
+    "gain_dbi": {
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "65\u00b0"
+      },
+      "vertical": {
+        "5": "65\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 3,
+    "polarization": "Linear, vertical",
+    "cable_length": "3 ft (91.4 cm)",
+    "cable_type": "Plenum",
+    "dimensions": "4 \u00d7 7 \u00d7 1 in (10.2 \u00d7 17.8 \u00d7 2.5 cm)",
+    "weight": null,
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1 or less",
+    "isolation": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant5160np-r-pattern-5-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant5160np-r-pattern-5-ghz-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant5160np-r-pattern-5-ghz-element-3-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant5160np.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant5160np.pdf)",
+        "id": "ant5160np",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant5160np.pdf"
+      }
+    ],
+    "field_notes": {
+      "front_to_back": "Front-to-back ratio is greater than 15 dB.",
+      "weight": "Not tabulated.",
+      "operating_temp": "Datasheet range is \u221222\u00b0 to 158\u00b0F.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet 5 GHz radios with RP-TNC connectors."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT5160NP-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2430V-R",
+    "name": "2.4 GHz 3 dBi 3-Element Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.402-2.485 GHz",
+    "gain_dbi": {
+      "2.4": 3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 3,
+    "polarization": "Linear",
+    "cable_length": "36 in (91.4 cm)",
+    "cable_type": null,
+    "dimensions": "12.1 \u00d7 4.2 \u00d7 1.6 in (30.7 \u00d7 10.6 \u00d7 4.0 cm)",
+    "weight": null,
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Indoor wall or ceiling",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "<2:1",
+    "isolation": null,
+    "operating_temp": "0 to 55 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element A Horizontal + Vertical",
+        "url": "images/cisco/air-ant2430v-r-pattern-2-4-ghz-element-a-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element C Horizontal + Vertical",
+        "url": "images/cisco/air-ant2430v-r-pattern-2-4-ghz-element-c-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element B Horizontal + Vertical",
+        "url": "images/cisco/air-ant2430v-r-pattern-2-4-ghz-element-b-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2430v.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2430v.pdf)",
+        "id": "ant2430v",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2430v.pdf"
+      }
+    ],
+    "field_notes": {
+      "lead_count": "Three radiating elements, each with its own coaxial cable.",
+      "beamwidth": "H-plane is omnidirectional. E-plane 3 dB beamwidth is 60\u00b0.",
+      "operating_temp": "Datasheet range is 32\u00b0F to 131\u00b0F.",
+      "weight": "Not tabulated.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet indoor 2.4 GHz radios with RP-TNC connectors."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2430V-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2422DW-R",
+    "name": "2.4 GHz 2 dBi Articulating Dipole, White",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.402-2.495 GHz",
+    "gain_dbi": {
+      "2.4": 2
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Linear, vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "5.5 in (13 cm)",
+    "weight": "1 oz",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "Direct to the AP RP-TNC port, articulating",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1 from 2385 to 2515 MHz",
+    "isolation": null,
+    "operating_temp": "0 to 60 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/cisco/air-ant2422dw-r-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/cisco/air-ant2422dw-r-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/2422dw.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (2422dw.pdf)",
+        "id": "2422dw",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/2422dw.pdf"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "Overview calls it a 2.2 dBi dipole; the spec table peak gain is 2 dBi.",
+      "name": "White articulated dipole. Do not connect to 5 GHz ports (blue dot).",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet 2.4 GHz devices with an RP-TNC connector."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2422DW-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2422DG-R",
+    "name": "2.4 GHz 2 dBi Fixed Dipole, Gray",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.402-2.495 GHz",
+    "gain_dbi": {
+      "2.4": 2
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Linear, vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "5.5 in (13 cm)",
+    "weight": "1 oz",
+    "ip_rating": null,
+    "radome": "Gray",
+    "mount_type": "Direct to the AP RP-TNC port (fixed, does not articulate)",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1 from 2385 to 2515 MHz",
+    "isolation": null,
+    "operating_temp": "0 to 60 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/cisco/air-ant2422dw-r-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/cisco/air-ant2422dw-r-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/an2422dg.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (an2422dg.pdf)",
+        "id": "an2422dg",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/an2422dg.pdf"
+      }
+    ],
+    "field_notes": {
+      "mount_type": "The gray AIR-ANT2422DG-R guide says the antenna is fixed and does not articulate. The white AIR-ANT2422DW-R does articulate.",
+      "gain_dbi": "Overview calls it a 2.2 dBi dipole; the spec table peak gain is 2 dBi.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used).",
+      "pattern_images": "The gray fixed-dipole guide has no radiation figures. Plots are from the white articulating AIR-ANT2422DW-R guide, which lists the same gain and beamwidth."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet 2.4 GHz devices with an RP-TNC connector."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2422DG-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT25137NP-R",
+    "name": "2.4/5 GHz 13/7 dBi Six-Element Patch Array",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.25-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 13,
+      "5": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "36\u00b0",
+        "5": "55\u00b0"
+      },
+      "vertical": {
+        "2.4": "36\u00b0",
+        "5": "48\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 6,
+    "polarization": "2.4 GHz: vertical, horizontal, vertical across three cables; 5 GHz: vertical",
+    "cable_length": "36 in (91 cm)",
+    "cable_type": null,
+    "dimensions": "18 \u00d7 13 \u00d7 2 in (45.7 \u00d7 33 \u00d7 5 cm)",
+    "weight": "7.75 lb (3.52 kg)",
+    "ip_rating": "IP65",
+    "radome": null,
+    "mount_type": "Articulating wall or mast mount",
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "100 mph operational",
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Cable A Horizontal + Vertical",
+        "url": "images/cisco/air-ant25137np-r-pattern-2-4-ghz-cable-a-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Cable B Horizontal + Vertical",
+        "url": "images/cisco/air-ant25137np-r-pattern-2-4-ghz-cable-b-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Cable C Horizontal + Vertical",
+        "url": "images/cisco/air-ant25137np-r-pattern-2-4-ghz-cable-c-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Cable A Horizontal + Vertical",
+        "url": "images/cisco/air-ant25137np-r-pattern-5-ghz-cable-a-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Cable B Horizontal + Vertical",
+        "url": "images/cisco/air-ant25137np-r-pattern-5-ghz-cable-b-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Cable C Horizontal + Vertical",
+        "url": "images/cisco/air-ant25137np-r-pattern-5-ghz-cable-c-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant25137npr.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant25137npr.pdf)",
+        "id": "ant25137npr",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant25137npr.pdf"
+      }
+    ],
+    "field_notes": {
+      "form": "Six-element dual-band patch array. 2.4 GHz is 13 dBi at 36\u00b0 \u00d7 36\u00b0, so it is classified as a high-density patch. 5 GHz is wider (55\u00b0 \u00d7 48\u00b0) and only 7 dBi.",
+      "ip_rating": "Environmental line: water IP65, dust and jetting.",
+      "operating_temp": "The spec row is truncated in the guide text extraction; temperature was not copied rather than guessed.",
+      "lead_count": "Six-element array. 2.4 GHz patterns are shown for cables A, B, and C.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet access points with RP-TNC antenna ports."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT25137NP-R="
+    },
+    "dimension_image_url": null
+  },
+  {
+    "vendor": "Cisco",
+    "sku": "AIR-ANT2451V-R",
+    "name": "2.4/5 GHz 2/3 dBi 4-Element Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "80\u00b0",
+        "5": "50\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 4,
+    "polarization": "Linear",
+    "cable_length": "18 in (45.7 cm)",
+    "cable_type": null,
+    "dimensions": "8.5 \u00d7 6 \u00d7 0.93 in (21.5 \u00d7 15.2 \u00d7 2.4 cm)",
+    "weight": null,
+    "ip_rating": null,
+    "radome": "UV-stable ABS",
+    "mount_type": "Ceiling or wall",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "0 to 50 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2451v-r-pattern-2-4-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2451v-r-pattern-2-4-ghz-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2451v-r-pattern-5-ghz-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2451v-r-pattern-5-ghz-element-2-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Cisco installation guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2451.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cisco installation guide (ant2451.pdf)",
+        "id": "ant2451",
+        "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2451.pdf"
+      }
+    ],
+    "field_notes": {
+      "connector": "Right-angle RP-TNC male.",
+      "operating_temp": "Datasheet range is \u221232\u00b0F to 122\u00b0F, which is about 0 to 50\u00b0C. The printed \u221232\u00b0F is likely 32\u00b0F; stored as 0 to 50\u00b0C.",
+      "weight": "Not tabulated.",
+      "beamwidth": "H-plane is omnidirectional. E-plane is 80\u00b0 at 2.4 GHz and 50\u00b0 at 5 GHz.",
+      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "Cisco Aironet indoor access points with RP-TNC ports."
+      ],
+      "maintainer": "Cisco external-antenna batch 1. Compatible AP text is internal-only.",
+      "orderable_spare": "AIR-ANT2451V-R="
+    },
+    "dimension_image_url": null
   }
 ]
