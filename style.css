@@ -18,6 +18,12 @@
   --radius-lg: 12px;
   --radius-xl: 16px;
   --radius-full: 9999px;
+  /* Content links on dark navy — keep brighter than default browser blue */
+  --link: #93c5fd;
+  --link-hover: #dbeafe;
+  --link-focus: #eff6ff;
+  --link-underline: rgba(147, 197, 253, 0.55);
+  --link-underline-hover: rgba(219, 234, 254, 0.85);
 }
 
 /* ================================
@@ -533,6 +539,36 @@ td.vendor {
   font-weight: 600;
   font-size: 0.85rem;
   color: #bfdbfe;
+}
+
+/* SKU / content links in tables — high contrast on dark theme */
+table a,
+a.sku-link {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+  text-decoration-color: var(--link-underline);
+}
+
+table a:hover,
+a.sku-link:hover {
+  color: var(--link-hover);
+  text-decoration-color: var(--link-underline-hover);
+}
+
+table a:focus,
+a.sku-link:focus {
+  outline: none;
+}
+
+table a:focus-visible,
+a.sku-link:focus-visible {
+  color: var(--link-focus);
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+  border-radius: 2px;
+  text-decoration-color: var(--link-focus);
 }
 
 /* Model names - larger and bolder */
@@ -1098,15 +1134,29 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
   align-items: center;
   gap: 0.35rem;
   font-size: 0.8rem;
-  color: #60a5fa;
-  text-decoration: none;
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+  text-decoration-color: var(--link-underline);
   font-weight: 500;
   transition: color 0.15s ease;
 }
 
 .eos-link:hover {
-  color: #93c5fd;
-  text-decoration: underline;
+  color: var(--link-hover);
+  text-decoration-color: var(--link-underline-hover);
+}
+
+.eos-link:focus {
+  outline: none;
+}
+
+.eos-link:focus-visible {
+  color: var(--link-focus);
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 /* EoS fields in details grid */
@@ -1439,14 +1489,28 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
 }
 
 .result-model a {
-  color: #e5e7eb;
-  text-decoration: none;
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+  text-decoration-color: var(--link-underline);
   font-weight: 500;
 }
 
 .result-model a:hover {
-  color: #bfdbfe;
-  text-decoration: underline;
+  color: var(--link-hover);
+  text-decoration-color: var(--link-underline-hover);
+}
+
+.result-model a:focus {
+  outline: none;
+}
+
+.result-model a:focus-visible {
+  color: var(--link-focus);
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 .result-wifi {

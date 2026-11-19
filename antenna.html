@@ -38,14 +38,46 @@
       color: rgba(255,255,255,0.65);
     }
     .legacy-sku {
-      font-family: "JetBrains Mono", ui-monospace, monospace;
-      font-size: 0.95rem;
+      margin-top: -0.85rem;
+      margin-bottom: 1.35rem;
+      font-size: 0.9rem;
+      line-height: 1.45;
+      color: #9ca3af;
+    }
+    .legacy-sku-label {
+      color: #9ca3af;
+    }
+    .legacy-sku-value {
+      color: #e5e7eb;
+      font-weight: 500;
+      letter-spacing: 0.01em;
     }
     .notes-list {
       margin: 0.5rem 0 0;
       padding-left: 1.1rem;
       color: rgba(255,255,255,0.75);
       font-size: 0.9rem;
+    }
+    .notes-list a {
+      color: var(--link, #93c5fd);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+      text-decoration-color: var(--link-underline, rgba(147, 197, 253, 0.55));
+    }
+    .notes-list a:hover {
+      color: var(--link-hover, #dbeafe);
+      text-decoration-color: var(--link-underline-hover, rgba(219, 234, 254, 0.85));
+    }
+    .notes-list a:focus {
+      outline: none;
+    }
+    .notes-list a:focus-visible {
+      color: var(--link-focus, #eff6ff);
+      outline: 2px solid #60a5fa;
+      outline-offset: 3px;
+      border-radius: 2px;
+      text-decoration-color: var(--link-focus, #eff6ff);
     }
     /* Clear break between last specs and media galleries */
     #details.kv-grid {
@@ -231,7 +263,14 @@
         if (entry.legacy_sku) {
           const legacy = document.getElementById('legacy-line');
           legacy.style.display = 'block';
-          legacy.textContent = `Legacy AccelTex SKU: ${entry.legacy_sku}`;
+          legacy.replaceChildren();
+          const label = document.createElement('span');
+          label.className = 'legacy-sku-label';
+          label.textContent = 'Former AccelTex part number';
+          const value = document.createElement('span');
+          value.className = 'legacy-sku-value';
+          value.textContent = entry.legacy_sku;
+          legacy.append(label, document.createTextNode(': '), value);
         }
 
         const imgUrl = safeUrl(entry.image_url, { allowRelative: true });
