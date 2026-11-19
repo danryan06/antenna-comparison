@@ -24,7 +24,11 @@ Prefer:
 - Hubbell SPEC for deep electrical/mechanical and product photo
 - Legacy AccelTex sheet for radiation patterns, IP rating, weight, included mount
 
-Record conflicts in `field_notes`. Cite both in `sources`.
+Record conflicts in `field_notes` (maintainer-only; never rendered in the UI). Cite both in `sources`.
+
+## Pattern captions
+
+Store whatever the datasheet figure says if useful for mining, but the detail page collapses mid-band frequency lists to simple band labels (`2.4 GHz Horizontal`, `5 GHz Vertical`, `6 GHz Horizontal`). Prefer those simple labels when writing new data.
 
 ## Radiation pattern filenames
 
@@ -45,4 +49,4 @@ Optional `{band}` tokens: `2-4-ghz`, `5-ghz`, `6-ghz` when multiple patterns sha
 
 ## Internal only
 
-Put vendor-listed compatible APs under `internal_notes.compatible_aps`. Never render them in the UI.
+Put vendor-listed compatible APs under `internal_notes.compatible_aps`. Never render `field_notes` or `internal_notes` in the UI.

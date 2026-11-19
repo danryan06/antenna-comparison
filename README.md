@@ -27,7 +27,7 @@ Each antenna entry includes:
 - **Media**: product photos, radiation pattern plots, dimension drawings
 - **Sources**: dual PDF citations where AccelTex/Hubbell publish both a Hubbell SPEC and a legacy AccelTex sheet
 
-Vendor-listed compatible APs are stored in `internal_notes` for maintainers only and are **never** shown in the UI.
+`field_notes` (merge/conflict notes) and `internal_notes` (including vendor-listed compatible APs) are maintainer-only and are **never** shown in the UI.
 
 ## How to use
 

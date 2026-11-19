@@ -48,6 +48,44 @@ function formatBands(bands) {
   return bands == null ? "" : String(bands);
 }
 
+/** Map a numeric frequency (GHz) to a Wi-Fi band label key. */
+function frequencyToBand(n) {
+  if (!Number.isFinite(n)) return null;
+  if (n >= 2.3 && n <= 2.6) return "2.4";
+  if (n >= 4.8 && n < 5.95) return "5";
+  if (n >= 5.95 && n <= 7.2) return "6";
+  return null;
+}
+
+/**
+ * Simplify radiation-pattern figure captions for display.
+ * Collapses mid-band frequency lists to band labels, e.g.
+ *   "2.4 / 2.45 / 2.5 GHz Horizontal" → "2.4 GHz Horizontal"
+ *   "4.9 / 5.4 / 5.8 GHz Vertical" → "5 GHz Vertical"
+ * Already-simple labels (and non-Wi-Fi captions) pass through.
+ */
+function formatPatternCaption(label) {
+  if (label == null || label === "") return "";
+  return String(label).replace(
+    /(\d+(?:\.\d+)?(?:\s*[\/,–—-]\s*\d+(?:\.\d+)?)*)\s*GHz/gi,
+    (match, freqPart) => {
+      const nums = String(freqPart).match(/\d+(?:\.\d+)?/g);
+      if (!nums || !nums.length) return match;
+      const bands = [];
+      const seen = new Set();
+      nums.forEach(raw => {
+        const band = frequencyToBand(Number(raw));
+        if (!band || seen.has(band)) return;
+        seen.add(band);
+        bands.push(band);
+      });
+      if (!bands.length) return match;
+      if (bands.length === 1) return `${bands[0]} GHz`;
+      return `${bands.join("/")} GHz`;
+    }
+  );
+}
+
 function flatBandParts(obj, kind) {
   if (!obj || typeof obj !== "object" || Array.isArray(obj)) return null;
   if (Object.values(obj).some(item => item && typeof item === "object")) return null;
@@ -155,6 +193,8 @@ if (typeof module !== "undefined" && module.exports) {
     slugifyAntenna,
     safeUrl,
     formatBands,
+    frequencyToBand,
+    formatPatternCaption,
     formatBandObject,
     formatBeamwidthCompact,
     formatGainCompact,
