@@ -18735,16 +18735,16 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4/5 GHz Vertical",
-        "url": "images/ventev/206570-pattern-2-4-5-ghz-vertical.jpg"
-      },
-      {
         "label": "2.4 GHz Vertical",
         "url": "images/ventev/206570-pattern-2-4-ghz-vertical.jpg"
       },
       {
-        "label": "2.4/5 GHz Horizontal",
-        "url": "images/ventev/206570-pattern-2-4-5-ghz-horizontal.jpg"
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/206570-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/206570-pattern-5-ghz-vertical.jpg"
       },
       {
         "label": "5 GHz Horizontal",
@@ -19201,20 +19201,20 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/273519-pattern-2-4-ghz-vertical.jpg"
-      },
-      {
         "label": "2.4 GHz Horizontal",
         "url": "images/ventev/273519-pattern-2-4-ghz-horizontal.jpg"
       },
       {
-        "label": "2.4/5 GHz Horizontal",
-        "url": "images/ventev/273519-pattern-2-4-5-ghz-horizontal.jpg"
+        "label": "2.4 GHz Vertical",
+        "url": "images/ventev/273519-pattern-2-4-ghz-vertical.jpg"
       },
       {
-        "label": "2.4/5 GHz Vertical",
-        "url": "images/ventev/273519-pattern-2-4-5-ghz-vertical.jpg"
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/273519-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/ventev/273519-pattern-5-ghz-vertical.jpg"
       }
     ],
     "dimension_image_url": "images/ventev/273519-dimensions.jpg",
@@ -19931,12 +19931,7 @@
         "url": "images/ventev/374697.jpg"
       }
     ],
-    "pattern_images": [
-      {
-        "label": "2.4/5 GHz Horizontal",
-        "url": "images/ventev/374697-pattern-2-4-5-ghz-horizontal.jpg"
-      }
-    ],
+    "pattern_images": [],
     "dimension_image_url": null,
     "datasheet_urls": [
       {
@@ -19958,7 +19953,8 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 374697. Manufacturer part number M6110135MP1D3620 (not a Hubbell dual-SKU).",
-      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present."
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge \u2265~1000px; H/V from nearby H/E-plane labels when present.",
+      "qc": "Datasheet PDF is a marketing selection slide without usable radiation pattern plots; pattern_images cleared by QC."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -20724,20 +20720,20 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4 GHz Horizontal",
-        "url": "images/ventev/251676-pattern-2-4-ghz-horizontal.jpg"
-      },
-      {
-        "label": "5 GHz Horizontal",
-        "url": "images/ventev/251676-pattern-5-ghz-horizontal.jpg"
-      },
-      {
         "label": "2.4 GHz Vertical",
         "url": "images/ventev/251676-pattern-2-4-ghz-vertical.jpg"
       },
       {
         "label": "5 GHz Vertical",
         "url": "images/ventev/251676-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/ventev/251676-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/ventev/251676-pattern-5-ghz-horizontal.jpg"
       }
     ],
     "dimension_image_url": "images/ventev/251676-dimensions.jpg",
