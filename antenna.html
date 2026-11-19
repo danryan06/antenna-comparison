@@ -47,6 +47,24 @@
       color: rgba(255,255,255,0.75);
       font-size: 0.9rem;
     }
+    /* Clear break between last specs and media galleries */
+    #details.kv-grid {
+      padding-bottom: 0.25rem;
+    }
+    #gallery:not(:empty) {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(148, 163, 184, 0.28);
+    }
+    #gallery .spec-section:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+    #included:not(:empty),
+    #sources:not(:empty) {
+      margin-top: 1.25rem;
+    }
   </style>
 </head>
 <body>
@@ -75,7 +93,6 @@
       <div id="gallery"></div>
       <div id="included"></div>
       <div id="sources"></div>
-      <div id="field-notes"></div>
 
       <div id="error-message" class="error" style="display:none;"></div>
     </div>
@@ -113,8 +130,8 @@
       ['operating_temp', 'Operating Temperature']
     ];
 
-    // Never render these in the UI
-    const INTERNAL_ONLY_KEYS = new Set(['internal_notes', 'compatible_aps']);
+    // Never render these in the UI (maintainer / merge notes only)
+    const INTERNAL_ONLY_KEYS = new Set(['internal_notes', 'compatible_aps', 'field_notes']);
 
     function readId() {
       return new URLSearchParams(window.location.search).get('id') || '';
@@ -172,13 +189,16 @@
         fig.className = 'gallery-item ' + (kind || '');
         const img = document.createElement('img');
         img.src = url;
-        img.alt = item.label || title;
+        const displayLabel = kind === 'pattern'
+          ? formatPatternCaption(item.label)
+          : (item.label || '');
+        img.alt = displayLabel || title;
         img.loading = 'lazy';
         fig.appendChild(img);
-        if (item.label) {
+        if (displayLabel) {
           const cap = document.createElement('figcaption');
           cap.className = 'gallery-caption';
-          cap.textContent = item.label;
+          cap.textContent = displayLabel;
           fig.appendChild(cap);
         }
         grid.appendChild(fig);
@@ -320,28 +340,7 @@
           sourcesEl.appendChild(section);
         }
 
-        const notesEl = document.getElementById('field-notes');
-        if (entry.field_notes && typeof entry.field_notes === 'object') {
-          const section = document.createElement('div');
-          section.className = 'spec-section';
-          const h = document.createElement('h3');
-          h.textContent = 'Merge notes';
-          section.appendChild(h);
-          const list = document.createElement('ul');
-          list.className = 'notes-list';
-          Object.entries(entry.field_notes).forEach(([k, v]) => {
-            const li = document.createElement('li');
-            li.textContent = `${k}: ${v}`;
-            list.appendChild(li);
-          });
-          section.appendChild(list);
-          notesEl.appendChild(section);
-        }
-
-        // Guard: never surface internal_notes / compatible_aps
-        if (entry.internal_notes) {
-          // intentionally unused in UI
-        }
+        // Guard: never surface field_notes / internal_notes / compatible_aps in the UI
       } catch (err) {
         errorEl.style.display = 'block';
         errorEl.textContent = 'Failed to load antenna: ' + err.message;
