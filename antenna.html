@@ -184,37 +184,47 @@
       letter-spacing: 0.01em;
     }
     #title-header {
-      line-height: 1.28;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #f8fafc;
       overflow-wrap: anywhere;
     }
     .header-with-logo {
       align-items: flex-start;
     }
-    .detail-identity {
+    .part-numbers {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.15rem;
+      margin: 0.85rem 0 1.35rem;
+      max-width: 48rem;
+    }
+    .part-number-row {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 0.35rem 0.7rem;
-      margin-top: 0.15rem;
-      color: #e5e7eb;
+      gap: 0.35rem 0.55rem;
+      max-width: 100%;
+      font-size: 0.95rem;
+      line-height: 1.4;
     }
-    .identity-vendor {
-      color: #e5e7eb;
+    .part-number-label {
+      color: #cbd5e1;
       font-weight: 500;
     }
-    .identity-sku-group {
-      display: inline-flex;
-      align-items: center;
-      gap: 2px;
-      min-width: 0;
-      max-width: 100%;
-    }
-    .identity-sku {
+    .part-number-value {
       color: #f8fafc;
       font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
       font-weight: 500;
       letter-spacing: 0.01em;
       overflow-wrap: anywhere;
+    }
+    @media (max-width: 480px) {
+      #title-header {
+        font-size: 1.5rem;
+      }
     }
     .notes-list {
       margin: 0.5rem 0 0;
@@ -282,8 +292,7 @@
         <h1 id="title-header">Antenna Details</h1>
         <img src="logo.png" alt="AntennaComparison" class="site-logo" />
       </div>
-      <p class="subtitle detail-identity" id="subtitle"></p>
-      <p id="legacy-line" class="legacy-sku" style="display:none;"></p>
+      <div id="part-numbers" class="part-numbers"></div>
 
       <div id="image-container" class="ap-image-wrapper" style="display:none;">
         <button type="button" id="hero-zoom" class="ap-image-zoom" aria-label="Expand product photo" hidden>
@@ -430,6 +439,24 @@
       part.textContent = value;
       container.appendChild(part);
       if (value) container.appendChild(createCopyButton(value));
+    }
+
+    function addPartNumber(container, value, label) {
+      const text = String(value || '').trim();
+      if (!text) return;
+      const row = document.createElement('div');
+      row.className = 'part-number-row';
+      if (label) {
+        const labelEl = document.createElement('span');
+        labelEl.className = 'part-number-label';
+        labelEl.textContent = label;
+        row.appendChild(labelEl);
+      }
+      const valueEl = document.createElement('span');
+      valueEl.className = 'part-number-value';
+      valueEl.textContent = text;
+      row.append(valueEl, createCopyButton(text));
+      container.appendChild(row);
     }
 
     function normalizeString(value) {
@@ -631,49 +658,16 @@
         const productName = String(entry.name || '').trim();
         const vendor = String(entry.vendor || '').trim();
         const sku = String(entry.sku || '').trim();
+        const legacySku = String(entry.legacy_sku || '').trim();
         const vendorSku = `${vendor} ${sku}`.trim();
         const heading = productName || vendorSku || String(entry.form || '').trim() || 'Antenna Details';
         document.getElementById('title-header').textContent = heading;
         document.title = `${heading} — AntennaComparison`;
 
-        const subtitle = document.getElementById('subtitle');
-        subtitle.replaceChildren();
-        if (productName && (vendor || sku)) {
-          if (vendor) {
-            const vendorEl = document.createElement('span');
-            vendorEl.className = 'identity-vendor';
-            vendorEl.textContent = vendor;
-            subtitle.appendChild(vendorEl);
-          }
-          if (sku) {
-            const group = document.createElement('span');
-            group.className = 'identity-sku-group';
-            const skuEl = document.createElement('span');
-            skuEl.className = 'identity-sku';
-            skuEl.textContent = sku;
-            group.appendChild(skuEl);
-            group.appendChild(createCopyButton(sku));
-            subtitle.appendChild(group);
-          }
-        } else if (!productName && entry.form && heading !== String(entry.form).trim()) {
-          subtitle.textContent = String(entry.form).trim();
-        }
-
-        if (entry.legacy_sku) {
-          const legacy = document.getElementById('legacy-line');
-          legacy.style.display = 'block';
-          legacy.replaceChildren();
-          const row = document.createElement('span');
-          row.className = 'legacy-sku-row';
-          const label = document.createElement('span');
-          label.className = 'legacy-sku-label';
-          label.textContent = 'Former AccelTex part number';
-          const value = document.createElement('span');
-          value.className = 'legacy-sku-value';
-          value.textContent = entry.legacy_sku;
-          row.append(label, document.createTextNode(': '), value, createCopyButton(entry.legacy_sku));
-          legacy.appendChild(row);
-        }
+        const parts = document.getElementById('part-numbers');
+        parts.replaceChildren();
+        addPartNumber(parts, sku);
+        if (legacySku) addPartNumber(parts, legacySku, 'Former AccelTex part number');
 
         const imgUrl = safeUrl(entry.image_url, { allowRelative: true });
         const imageWrapper = document.getElementById('image-container');
