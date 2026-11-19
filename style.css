@@ -263,6 +263,30 @@
 }
 
 @media (max-width: 480px) {
+  .header-content {
+    gap: 8px;
+    padding: 10px 8px;
+  }
+
+  .header-nav {
+    gap: 0;
+    min-width: 0;
+  }
+
+  .nav-link {
+    padding: 8px;
+  }
+
+  .nav-link-secondary,
+  .nav-link-accent {
+    padding: 8px;
+    min-width: 36px;
+  }
+
+  .header-divider {
+    margin: 0 4px;
+  }
+
   .logo-icon,
   .logo-image {
     width: 28px;
@@ -947,6 +971,15 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
   font-size: 0.9rem;
 }
 
+.form-row input[type="text"],
+.form-row input[type="url"],
+.form-row input:not([type]),
+.form-row textarea,
+.form-row select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .form-row textarea {
   min-height: 80px;
   resize: vertical;
@@ -1220,6 +1253,81 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
   flex-wrap: wrap;
   gap: 0.75rem;
   align-items: center;
+}
+
+.form-section {
+  margin-top: 1.35rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.form-section h3 {
+  margin: 0 0 0.2rem;
+  font-size: 1rem;
+}
+
+.form-section > .hint {
+  margin: 0 0 0.85rem;
+}
+
+.band-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.band-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.beam-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.beam-table th,
+.beam-table td {
+  padding: 0.2rem 0.45rem 0.2rem 0;
+  text-align: left;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.beam-table input {
+  width: 100%;
+}
+
+button.btn-link {
+  font: inherit;
+}
+
+a.inline-link {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+  text-decoration-color: var(--link-underline);
+}
+
+a.inline-link:hover {
+  color: var(--link-hover);
+  text-decoration-color: var(--link-underline-hover);
+}
+
+a.inline-link:focus-visible {
+  color: var(--link-focus);
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (max-width: 640px) {
+  .band-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .btn-primary {

@@ -14,6 +14,7 @@ Sibling of [AP Comparison](https://apcomparison.com) and [Switch Comparison](htt
 - **Choose columns** — show/hide fields; default columns are bands, gain, beamwidth, connector
 - **Side-by-side compare** — select multiple antennas and compare
 - **Detail pages** — product photos, radiation patterns, dimensions, included parts, dual datasheet sources
+- **Edit / submit** — correct an antenna from its detail page, or submit a new one from the catalog. Both open a prefilled GitHub issue
 - **Responsive** — desktop and mobile
 
 ## Data fields
@@ -39,9 +40,15 @@ Each antenna entry includes:
 
 ## Contributing
 
-This is an early scaffold. The first seeded entry is AccelTex / Hubbell **ATS-03414** (legacy **ATS-OHDP-2456-14-8RPSP-36**). Prefer pull requests that edit `antenna_data.json` and add images under `images/<vendor>/`. Follow `antenna_template.json` for field shape.
+From the catalog, use **Submit antenna** to propose a new entry. From an antenna’s detail page, use **Edit this antenna** to propose a correction. Both forms cover the public specs in `antenna_data.json` (SKU, legacy SKU, vendor, form factor, bands, gain, beamwidth, connector, lead count, and the rest). They generate a JSON snippet and open a prefilled GitHub issue:
 
-Always cite vendor datasheets. When AccelTex/Hubbell publish dual PDFs, merge fields and record conflicts in `field_notes`.
+`https://github.com/danryan06/antenna-comparison/issues/new`
+
+Review the issue and submit it. A maintainer adds the `antenna-submission` label. That label runs automation which opens a pull request updating `antenna_data.json`. New issues are titled `New Antenna: …`. Edits are titled `Edit Antenna: …`.
+
+Prefer to edit the data yourself? Open a pull request that changes `antenna_data.json` and add images under `images/<vendor>/`. Follow `antenna_template.json` for field shape.
+
+Always cite vendor datasheets. When AccelTex/Hubbell publish dual PDFs, merge fields and record conflicts in `field_notes`. `field_notes` and `internal_notes` (including compatible-AP lists) are maintainer-only and are not part of the public form.
 
 ## Technical details
 
@@ -55,9 +62,12 @@ Always cite vendor datasheets. When AccelTex/Hubbell publish dual PDFs, merge fi
 ```
 ├── index.html              # Browse / filter table
 ├── antenna.html            # Detail page
+├── edit.html               # Edit an existing antenna
+├── submit.html             # Submit a new antenna
 ├── compare.html            # Side-by-side compare
 ├── style.css               # Shared styling
 ├── antenna-format.js       # Display helpers
+├── antenna-submit.js       # Edit / submit form helpers
 ├── antenna_data.json       # Antenna catalog
 ├── antenna_template.json   # Entry template
 ├── images/                 # Product photos & patterns
