@@ -24,6 +24,21 @@ function comparable(entry) {
 function assertRoundTrip(entry) {
   const fields = submit.entryToFormFields(entry);
   const rebuilt = submit.buildAntennaEntry(fields, entry);
+  if (entry.dimension_image_kind === 'mechanical') {
+    assert.strictEqual(rebuilt.dimension_image_kind, 'mechanical', entry.sku + ' dropped mechanical dimension kind');
+  }
+  const vertical = entry.beamwidth && entry.beamwidth.vertical;
+  if (vertical && typeof vertical === 'object' && !Object.keys(vertical).length) {
+    assert.ok(rebuilt.beamwidth && rebuilt.beamwidth.vertical && !Object.keys(rebuilt.beamwidth.vertical).length, entry.sku + ' dropped empty vertical beamwidth');
+  }
+  ['images', 'pattern_images', 'sources', 'datasheet_urls'].forEach(key => {
+    (entry[key] || []).forEach((item, index) => {
+      if (!item || typeof item !== 'object') return;
+      Object.keys(item).forEach(field => {
+        assert.deepStrictEqual(rebuilt[key] && rebuilt[key][index] && rebuilt[key][index][field], item[field], entry.sku + ' dropped ' + key + '.' + field);
+      });
+    });
+  });
   assert.deepStrictEqual(rebuilt, comparable(entry), entry.sku + ' did not round-trip');
   assert.ok(!Object.prototype.hasOwnProperty.call(rebuilt, 'internal_notes'), entry.sku + ' leaked internal_notes');
   assert.ok(!Object.prototype.hasOwnProperty.call(rebuilt, 'field_notes'), entry.sku + ' leaked field_notes');
@@ -108,7 +123,7 @@ const fresh = submit.buildAntennaEntry({
 assert.strictEqual(fresh.image_url, undefined);
 assert.deepStrictEqual(fresh.images, [{ label: 'Product', url: 'images/example/ex-1.jpg' }]);
 assert.strictEqual(fresh.dimension_image_url, undefined);
-assert.strictEqual(fresh.dimension_image_kind, undefined);
+assert.strictEqual(fresh.dimension_image_kind, 'mechanical');
 assert.strictEqual(fresh.surprise, 'keep-me');
 assert.ok(!fresh.internal_notes && !fresh.field_notes);
 assert.deepStrictEqual(fresh.beamwidth.horizontal, { '2.4': '360°', '5': '360°' });

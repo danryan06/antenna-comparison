@@ -10,6 +10,8 @@
   const STANDARD_BANDS = ['2.4', '5', '6'];
   const BAND_KEY_ORDER = ['2.4', '5-lower', '5', '5-upper', '6', 'GPS', 'LTE', 'WiFi'];
   const FORMS = ['Omni', 'Patch', 'High-density patch'];
+  const DIMENSION_KINDS = ['mechanical', 'mechanical_drawing', 'assembly', 'assembly_render'];
+  const MEDIA_KINDS = ['photo', 'pattern', 'assembly_render', 'mechanical_drawing'];
   const ENVIRONMENTS = ['Indoor', 'Outdoor', 'Indoor/Outdoor'];
   const PRIVATE_KEYS = [
     'internal_notes',
@@ -65,7 +67,7 @@
     try {
       const parsed = new URL(raw);
       if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return '';
-      return parsed.href;
+      return raw;
     } catch (err) {
       return '';
     }
@@ -132,6 +134,8 @@
     if (!Array.isArray(items)) return '';
     return items.map(item => {
       if (!item || !item.url) return '';
+      const kind = item.kind ? String(item.kind) : '';
+      if (kind) return [item.label || '', item.url, kind].join(' | ');
       return (item.label ? item.label + ' | ' : '') + item.url;
     }).filter(Boolean).join('\n');
   }
@@ -139,14 +143,31 @@
   function parseLabeled(text, options) {
     const allowRelative = !options || options.allowRelative !== false;
     return String(text || '').split('\n').map(line => line.trim()).filter(Boolean).map(line => {
-      const splitAt = line.indexOf('|');
-      const label = splitAt === -1 ? '' : line.slice(0, splitAt).trim();
-      const rawUrl = splitAt === -1 ? line : line.slice(splitAt + 1).trim();
+      const parts = line.split('|').map(piece => piece.trim());
+      let label = '';
+      let rawUrl = '';
+      let kind = '';
+      if (parts.length <= 1) {
+        rawUrl = parts[0] || '';
+      } else if (parts.length === 2) {
+        label = parts[0];
+        rawUrl = parts[1];
+      } else {
+        label = parts[0];
+        kind = parts[parts.length - 1];
+        if (MEDIA_KINDS.indexOf(kind) === -1) {
+          rawUrl = parts.slice(1).join('|').trim();
+          kind = '';
+        } else {
+          rawUrl = parts.slice(1, -1).join('|').trim();
+        }
+      }
       const url = allowRelative ? sanitizeAssetUrl(rawUrl) : sanitizeHttpUrl(rawUrl);
       if (!url) return null;
       const row = {};
       if (label) row.label = label;
       row.url = url;
+      if (kind) row.kind = kind;
       return row;
     }).filter(Boolean);
   }
@@ -227,6 +248,8 @@
       }).join('\n'),
       beam_scalar_h: typeof horizontal === 'string' || typeof horizontal === 'number' ? String(horizontal) : '',
       beam_scalar_v: typeof vertical === 'string' || typeof vertical === 'number' ? String(vertical) : '',
+      beam_empty_h: horizontal && typeof horizontal === 'object' && !Object.keys(horizontal).length ? '1' : '',
+      beam_empty_v: vertical && typeof vertical === 'object' && !Object.keys(vertical).length ? '1' : '',
       connector: source.connector || '',
       lead_count: source.lead_count == null ? '' : String(source.lead_count),
       polarization: source.polarization || '',
@@ -246,7 +269,7 @@
       images_text: formatLabeled(source.images),
       pattern_images_text: formatLabeled(source.pattern_images),
       dimension_image_url: source.dimension_image_url || '',
-      dimension_image_kind: source.dimension_image_kind === 'assembly' ? 'assembly' : '',
+      dimension_image_kind: DIMENSION_KINDS.indexOf(source.dimension_image_kind) === -1 ? '' : source.dimension_image_kind,
       datasheet_text: formatLabeled(source.datasheet_urls),
       sources_text: formatSources(source.sources)
     };
@@ -292,10 +315,17 @@
       if (parts[1]) horizontal[parts[0]] = parts[1];
       if (parts[2]) vertical[parts[0]] = parts[2];
     });
-    if (Object.keys(horizontal).length || Object.keys(vertical).length) {
+    function plane(map, keepEmpty) {
+      if (Object.keys(map).length) return map;
+      if (keepEmpty === '1' || keepEmpty === true) return {};
+      return null;
+    }
+    const horizontalPlane = plane(horizontal, fields.beam_empty_h);
+    const verticalPlane = plane(vertical, fields.beam_empty_v);
+    if (horizontalPlane || verticalPlane) {
       const beam = {};
-      if (Object.keys(horizontal).length) beam.horizontal = horizontal;
-      if (Object.keys(vertical).length) beam.vertical = vertical;
+      if (horizontalPlane) beam.horizontal = horizontalPlane;
+      if (verticalPlane) beam.vertical = verticalPlane;
       return beam;
     }
     const scalarH = trim(fields.beam_scalar_h);
@@ -339,7 +369,7 @@
       images: parseLabeled(input.images_text),
       pattern_images: parseLabeled(input.pattern_images_text),
       dimension_image_url: sanitizeAssetUrl(input.dimension_image_url),
-      dimension_image_kind: trim(input.dimension_image_kind) === 'assembly' ? 'assembly' : '',
+      dimension_image_kind: DIMENSION_KINDS.indexOf(trim(input.dimension_image_kind)) === -1 ? '' : trim(input.dimension_image_kind),
       datasheet_urls: parseLabeled(input.datasheet_text, { allowRelative: false }),
       sources: parseSources(input.sources_text)
     };
@@ -379,9 +409,10 @@
     }
     if (!entry || !trim(entry.connector)) errors.push('Connector is required.');
     const sheets = entry && Array.isArray(entry.datasheet_urls) ? entry.datasheet_urls : [];
-    if (!sheets.some(sheet => sheet && sanitizeHttpUrl(sheet.url))) {
-      errors.push('Add at least one http(s) datasheet URL.');
-    }
+    const sources = entry && Array.isArray(entry.sources) ? entry.sources : [];
+    const hasLink = sheets.some(sheet => sheet && sanitizeHttpUrl(sheet.url)) ||
+      sources.some(source => source && sanitizeHttpUrl(source.url));
+    if (!hasLink) errors.push('Add at least one http(s) datasheet or source URL.');
     return errors;
   }
 
@@ -588,6 +619,14 @@
     });
     table.appendChild(tbody);
     beamRow.appendChild(table);
+    const emptyH = document.createElement('input');
+    emptyH.type = 'hidden';
+    emptyH.id = 'bw-empty-h';
+    const emptyV = document.createElement('input');
+    emptyV.type = 'hidden';
+    emptyV.id = 'bw-empty-v';
+    beamRow.appendChild(emptyH);
+    beamRow.appendChild(emptyV);
     radio.appendChild(beamRow);
     const otherBeam = document.createElement('textarea');
     otherBeam.placeholder = 'GPS | 360° | 90°';
@@ -643,21 +682,22 @@
     media.appendChild(fieldRow('image_url', 'Primary photo', imageUrl));
     const images = document.createElement('textarea');
     images.placeholder = 'Product | images/vendor/sku-alt.jpg';
-    media.appendChild(fieldRow('images', 'Additional photos', images, 'One photo per line: label | url.'));
+    media.appendChild(fieldRow('images', 'Additional photos', images, 'One photo per line: label | url | kind. Kind is optional (photo or assembly_render).'));
     const patterns = document.createElement('textarea');
     patterns.placeholder = '2.4 GHz Horizontal | images/vendor/sku-pattern-2-4-ghz-horizontal.jpg';
-    media.appendChild(fieldRow('pattern-images', 'Radiation patterns', patterns, 'One plot per line: label | url. Put the orientation in the label (Horizontal or Vertical).'));
+    media.appendChild(fieldRow('pattern-images', 'Radiation patterns', patterns, 'One plot per line: label | url | kind. Kind is optional (pattern). Put the orientation in the label (Horizontal or Vertical).'));
     const dimUrl = document.createElement('input');
     dimUrl.type = 'text';
     dimUrl.placeholder = 'images/vendor/sku-dimensions.jpg';
     media.appendChild(fieldRow('dimension_image_url', 'Dimension image', dimUrl));
     const kind = el('select');
-    kind.appendChild(el('option', { value: '', text: 'Mechanical drawing' }));
+    kind.appendChild(el('option', { value: '', text: 'Not set' }));
+    kind.appendChild(el('option', { value: 'mechanical', text: 'Mechanical drawing' }));
     kind.appendChild(el('option', { value: 'assembly', text: '3D assembly render' }));
-    media.appendChild(fieldRow('dimension_image_kind', 'Dimension image type', kind, 'Use 3D assembly render for isometric product views. Real 2D drawings stay mechanical drawings.'));
+    media.appendChild(fieldRow('dimension_image_kind', 'Dimension image type', kind, 'Choose Mechanical drawing when the vendor ships a real 2D drawing. That stores dimension_image_kind as mechanical. Use 3D assembly render for isometric views.'));
     const sheets = document.createElement('textarea');
     sheets.placeholder = 'Hubbell SPEC | https://example.com/spec.pdf';
-    media.appendChild(fieldRow('datasheets', 'Datasheet URLs', sheets, 'One datasheet per line: label | https URL. At least one is required.'));
+    media.appendChild(fieldRow('datasheets', 'Datasheet URLs', sheets, 'One datasheet per line: label | https URL. A datasheet or a source URL is required.'));
     const sources = document.createElement('textarea');
     sources.placeholder = 'Hubbell SPEC | ATS-ATS03414-SPEC-EN | https://example.com/spec.pdf';
     media.appendChild(fieldRow('sources', 'Sources', sources, 'One source per line: label | id | url | note. The note is optional.'));
@@ -696,6 +736,8 @@
       other_beam: value('other-beam'),
       beam_scalar_h: value('bw-h-scalar'),
       beam_scalar_v: value('bw-v-scalar'),
+      beam_empty_h: value('bw-empty-h'),
+      beam_empty_v: value('bw-empty-v'),
       connector: value('connector'),
       lead_count: value('lead_count'),
       polarization: value('polarization'),
@@ -911,6 +953,8 @@
     set('other-beam', data.other_beam);
     set('bw-h-scalar', data.beam_scalar_h);
     set('bw-v-scalar', data.beam_scalar_v);
+    set('bw-empty-h', data.beam_empty_h);
+    set('bw-empty-v', data.beam_empty_v);
     set('connector', data.connector);
     set('lead_count', data.lead_count);
     set('polarization', data.polarization);

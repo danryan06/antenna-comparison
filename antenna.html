@@ -158,6 +158,80 @@
       font-weight: 500;
       letter-spacing: 0.01em;
     }
+    .legacy-sku-row,
+    .val-with-copy {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      max-width: 100%;
+      min-width: 0;
+      vertical-align: middle;
+    }
+    .legacy-sku-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px 8px;
+    }
+    .val-with-copy .part-text,
+    .legacy-sku-row .legacy-sku-value {
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+    .val-with-copy .part-text {
+      font-family: "JetBrains Mono", ui-monospace, monospace;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+    #title-header {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #f8fafc;
+      overflow-wrap: anywhere;
+    }
+    .header-with-logo {
+      align-items: flex-start;
+    }
+    .part-numbers {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.15rem;
+      margin: 0.85rem 0 1.35rem;
+      max-width: 48rem;
+    }
+    .part-number-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem 0.55rem;
+      max-width: 100%;
+      /* Same UI sans as the specs grid, a step larger than .kv-grid .val (0.9rem). */
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1.05rem;
+      font-weight: 400;
+      letter-spacing: normal;
+      line-height: 1.45;
+    }
+    .part-number-label,
+    .part-number-value {
+      font-family: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+    }
+    .part-number-label {
+      color: #cbd5e1;
+    }
+    .part-number-value {
+      color: #e5e7eb;
+      overflow-wrap: anywhere;
+    }
+    @media (max-width: 480px) {
+      #title-header {
+        font-size: 1.5rem;
+      }
+    }
     .notes-list {
       margin: 0.5rem 0 0;
       padding-left: 1.1rem;
@@ -225,8 +299,7 @@
         <h1 id="title-header">Antenna Details</h1>
         <img src="logo.png" alt="AntennaComparison" class="site-logo" />
       </div>
-      <p class="subtitle" id="subtitle"></p>
-      <p id="legacy-line" class="legacy-sku" style="display:none;"></p>
+      <div id="part-numbers" class="part-numbers"></div>
 
       <div id="image-container" class="ap-image-wrapper" style="display:none;">
         <button type="button" id="hero-zoom" class="ap-image-zoom" aria-label="Expand product photo" hidden>
@@ -288,9 +361,109 @@
 
     // Never render these in the UI (maintainer / merge notes only)
     const INTERNAL_ONLY_KEYS = new Set(['internal_notes', 'compatible_aps', 'field_notes']);
+    const COPYABLE_SKU_KEYS = new Set(['sku', 'legacy_sku']);
+    const COPY_ICON = '<rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>';
+    const CHECK_ICON = '<path d="M20 6 9 17l-5-5"/>';
 
     function readId() {
       return new URLSearchParams(window.location.search).get('id') || '';
+    }
+
+    function iconSvg(markup, size) {
+      const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.setAttribute('width', String(size));
+      svg.setAttribute('height', String(size));
+      svg.setAttribute('viewBox', '0 0 24 24');
+      svg.setAttribute('fill', 'none');
+      svg.setAttribute('stroke', 'currentColor');
+      svg.setAttribute('stroke-width', '2');
+      svg.setAttribute('stroke-linecap', 'round');
+      svg.setAttribute('stroke-linejoin', 'round');
+      svg.setAttribute('aria-hidden', 'true');
+      svg.innerHTML = markup;
+      return svg;
+    }
+
+    function copyAnnouncer() {
+      let live = document.getElementById('copy-status');
+      if (live) return live;
+      live = document.createElement('div');
+      live.id = 'copy-status';
+      live.className = 'visually-hidden';
+      live.setAttribute('aria-live', 'polite');
+      document.body.appendChild(live);
+      return live;
+    }
+
+    function copyPartNumber(text, button) {
+      const value = String(text || '').trim();
+      if (!value) return;
+      const clipboard = navigator.clipboard;
+      if (!clipboard || typeof clipboard.writeText !== 'function') return;
+      let pending;
+      try {
+        pending = clipboard.writeText(value);
+      } catch (err) {
+        return;
+      }
+      Promise.resolve(pending).then(() => {
+        const svg = button.querySelector('svg');
+        button.classList.add('is-copied');
+        button.setAttribute('aria-label', `Copied ${value}`);
+        if (svg) svg.innerHTML = CHECK_ICON;
+        const live = copyAnnouncer();
+        live.textContent = '';
+        window.setTimeout(() => { live.textContent = 'Copied'; }, 30);
+        window.clearTimeout(button._copyTimer);
+        button._copyTimer = window.setTimeout(() => {
+          button.classList.remove('is-copied');
+          button.setAttribute('aria-label', `Copy ${value}`);
+          if (svg) svg.innerHTML = COPY_ICON;
+        }, 1500);
+      }, () => {});
+    }
+
+    function createCopyButton(text) {
+      const value = String(text || '').trim();
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'copy-part';
+      button.setAttribute('aria-label', `Copy ${value}`);
+      button.title = `Copy ${value}`;
+      button.appendChild(iconSvg(COPY_ICON, 16));
+      button.addEventListener('click', event => {
+        event.preventDefault();
+        event.stopPropagation();
+        copyPartNumber(value, button);
+      });
+      return button;
+    }
+
+    function appendCopyableSku(container, text) {
+      const value = String(text || '').trim();
+      const part = document.createElement('span');
+      part.className = 'part-text';
+      part.textContent = value;
+      container.appendChild(part);
+      if (value) container.appendChild(createCopyButton(value));
+    }
+
+    function addPartNumber(container, value, label) {
+      const text = String(value || '').trim();
+      if (!text) return;
+      const row = document.createElement('div');
+      row.className = 'part-number-row';
+      if (label) {
+        const labelEl = document.createElement('span');
+        labelEl.className = 'part-number-label';
+        labelEl.textContent = label;
+        row.appendChild(labelEl);
+      }
+      const valueEl = document.createElement('span');
+      valueEl.className = 'part-number-value';
+      valueEl.textContent = text;
+      row.append(valueEl, createCopyButton(text));
+      container.appendChild(row);
     }
 
     function normalizeString(value) {
@@ -417,9 +590,27 @@
     }
 
     function dimensionImageKind(entry) {
-      // Explicit kind wins. "assembly" = AccelTex-style 3D isometric/assembly render.
-      // Default "mechanical" keeps real 2D vendor mech drawings labeled as such.
-      return entry && entry.dimension_image_kind === 'assembly' ? 'assembly' : 'mechanical';
+      // Require an explicit kind. Unlabeled dimension_image_url must not default to
+      // "Mechanical drawing" (that hid product photos under Dimensions).
+      const kind = entry && entry.dimension_image_kind;
+      if (kind === 'assembly' || kind === 'assembly_render') return 'assembly';
+      if (kind === 'mechanical' || kind === 'mechanical_drawing') return 'mechanical';
+      return null;
+    }
+
+    function sanitizePhotoCaption(label) {
+      const raw = (label == null ? '' : String(label)).trim();
+      if (!raw) return 'Product photo';
+      const low = raw.toLowerCase();
+      if (low === 'product' || low === 'additional photo' || /^product\s*\(/.test(low)) {
+        return 'Product photo';
+      }
+      // Drop awkward source tags: "Front angle (AccelTex sheet)" → "Front angle"
+      const stripped = raw.replace(
+        /\s*\((?:datasheet|hubbell(?:\s+spec|\s+cdn)?|acceltex(?:\s+sheet)?)\)\s*$/i,
+        ''
+      ).trim();
+      return stripped || 'Product photo';
     }
 
     function extraProductPhotos(entry) {
@@ -445,6 +636,14 @@
         if (seen.has(key)) return false;
         seen.add(key);
         return true;
+      }).map(item => {
+        if (!item || typeof item !== 'object') {
+          return { label: 'Product photo', url: item };
+        }
+        return {
+          label: item.label === 'Assembly view' ? 'Assembly view' : sanitizePhotoCaption(item.label),
+          url: item.url
+        };
       });
     }
 
@@ -469,23 +668,19 @@
         editLink.href = `edit.html?${editParams.toString()}`;
         editLink.style.display = 'inline-flex';
 
-        const titleText = `${entry.vendor || ''} ${entry.sku || ''}`.trim() || 'Antenna Details';
-        document.getElementById('title-header').textContent = titleText;
-        document.title = `${titleText} — AntennaComparison`;
-        document.getElementById('subtitle').textContent = entry.name || entry.form || '';
+        const productName = String(entry.name || '').trim();
+        const vendor = String(entry.vendor || '').trim();
+        const sku = String(entry.sku || '').trim();
+        const legacySku = String(entry.legacy_sku || '').trim();
+        const vendorSku = `${vendor} ${sku}`.trim();
+        const heading = productName || vendorSku || String(entry.form || '').trim() || 'Antenna Details';
+        document.getElementById('title-header').textContent = heading;
+        document.title = `${heading} — AntennaComparison`;
 
-        if (entry.legacy_sku) {
-          const legacy = document.getElementById('legacy-line');
-          legacy.style.display = 'block';
-          legacy.replaceChildren();
-          const label = document.createElement('span');
-          label.className = 'legacy-sku-label';
-          label.textContent = 'Former AccelTex part number';
-          const value = document.createElement('span');
-          value.className = 'legacy-sku-value';
-          value.textContent = entry.legacy_sku;
-          legacy.append(label, document.createTextNode(': '), value);
-        }
+        const parts = document.getElementById('part-numbers');
+        parts.replaceChildren();
+        addPartNumber(parts, sku);
+        if (legacySku) addPartNumber(parts, legacySku, 'Former AccelTex part number');
 
         const imgUrl = safeUrl(entry.image_url, { allowRelative: true });
         const imageWrapper = document.getElementById('image-container');
@@ -493,11 +688,11 @@
         const heroZoom = document.getElementById('hero-zoom');
         if (imgUrl) {
           imageEl.src = imgUrl;
-          imageEl.alt = titleText;
+          imageEl.alt = heading;
           imageWrapper.style.display = 'block';
           heroZoom.hidden = false;
-          heroZoom.setAttribute('aria-label', `Expand product photo for ${titleText}`);
-          heroZoom.onclick = () => openLightbox(imgUrl, titleText);
+          heroZoom.setAttribute('aria-label', `Expand product photo for ${heading}`);
+          heroZoom.onclick = () => openLightbox(imgUrl, heading);
           imageEl.onerror = () => {
             imageWrapper.style.display = 'none';
             heroZoom.hidden = true;
@@ -530,7 +725,13 @@
           keyDiv.textContent = label;
           const valDiv = document.createElement('div');
           valDiv.className = 'val';
-          valDiv.textContent = formatField(key, entry[key]);
+          if (COPYABLE_SKU_KEYS.has(key)) {
+            valDiv.classList.add('val-with-copy');
+            // Copy the raw SKU string even if the value is also rendered as a link elsewhere.
+            appendCopyableSku(valDiv, entry[key]);
+          } else {
+            valDiv.textContent = formatField(key, entry[key]);
+          }
           detailsEl.appendChild(keyDiv);
           detailsEl.appendChild(valDiv);
         });
@@ -566,8 +767,8 @@
         }
 
         addGallery(document.getElementById('patterns'), 'Radiation patterns', entry.pattern_images, 'pattern');
-        // Real 2D mechanical drawings stay labeled; AccelTex-style 3D assembly renders
-        // are folded into Additional product photos instead (see dimension_image_kind).
+        // Only explicit mechanical drawings under Dimensions. Assembly renders fold into
+        // Additional product photos; unlabeled/photo dims are omitted (see dimension_image_kind).
         if (entry.dimension_image_url && dimensionImageKind(entry) === 'mechanical') {
           addGallery(
             document.getElementById('dimensions'),

@@ -89,6 +89,14 @@
 
           <div class="filter-group">
             <div class="filter-group-head">
+              <h3 id="vendor-heading">Manufacturer</h3>
+              <p id="vendor-help">Any selected vendor matches</p>
+            </div>
+            <div id="vendor-options" class="chip-grid" role="group" aria-labelledby="vendor-heading" aria-describedby="vendor-help"></div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-head">
               <h3>Form type</h3>
             </div>
             <div id="form-options" class="chip-grid" role="radiogroup" aria-label="Form type"></div>
@@ -140,18 +148,8 @@
 
           <div id="active-filters" class="active-filters" style="display:none;"></div>
 
-          <div id="results" class="results-table">
-            <div class="result-row result-header result-row-antenna">
-              <div class="result-cell"></div>
-              <div class="result-cell">Vendor</div>
-              <div class="result-cell">SKU</div>
-              <div class="result-cell">Form</div>
-              <div class="result-cell">Bands</div>
-              <div class="result-cell">Connector</div>
-              <div class="result-cell">Leads</div>
-              <div class="result-cell">Env</div>
-              <div class="result-cell"></div>
-            </div>
+          <div class="results-scroll">
+            <div id="results" class="results-table"></div>
           </div>
           <div id="empty-state" class="empty-state" style="display:none;">
             <p>No antennas match every selected requirement.</p>
@@ -177,20 +175,38 @@
       { value: 'Outdoor', label: 'Outdoor' },
       { value: 'Either', label: 'Either' }
     ];
+    const RESULT_COLUMNS = [
+      { key: 'vendor', label: 'Vendor' },
+      { key: 'sku', label: 'SKU' },
+      { key: 'form', label: 'Form' },
+      { key: 'bands', label: 'Bands' },
+      { key: 'gain_dbi', label: 'Gain' },
+      { key: 'beamwidth', label: 'Beamwidth' },
+      { key: 'connector', label: 'Connector' },
+      { key: 'lead_count', label: 'Leads' },
+      { key: 'indoor_outdoor', label: 'Env' }
+    ];
+    const DEFAULT_SORT = { key: 'vendor', dir: 'asc' };
 
     const state = {
+      vendors: new Set(),
       form: '',
       bands: new Set(),
       connector: '',
       leads: '',
       env: 'Either'
     };
+    let currentSort = { key: DEFAULT_SORT.key, dir: DEFAULT_SORT.dir };
 
     let enrichedData = [];
     const selectedIds = new Set();
 
     function restoreStateFromUrl() {
       const params = new URLSearchParams(window.location.search);
+      const knownVendors = new Set(enrichedData.map(e => e.vendor).filter(Boolean));
+      (params.get('vendors') || '').split('|').map(v => v.trim()).filter(Boolean).forEach(v => {
+        if (knownVendors.has(v)) state.vendors.add(v);
+      });
       const form = params.get('form') || '';
       if (form && FORM_TYPES.includes(form)) state.form = form;
       (params.get('bands') || '').split(',').filter(Boolean).forEach(v => {
@@ -200,15 +216,25 @@
       state.leads = params.get('leads') || '';
       const env = params.get('env');
       if (env && ENV_OPTIONS.some(opt => opt.value === env)) state.env = env;
+      const sortKey = params.get('sort') || '';
+      if (RESULT_COLUMNS.some(col => col.key === sortKey)) currentSort.key = sortKey;
+      else currentSort.key = DEFAULT_SORT.key;
+      currentSort.dir = params.get('dir') === 'desc' ? 'desc' : 'asc';
+      if (!params.get('sort')) currentSort = { key: DEFAULT_SORT.key, dir: DEFAULT_SORT.dir };
     }
 
     function getFilterStateForUrl() {
       const params = new URLSearchParams();
+      if (state.vendors.size) params.set('vendors', Array.from(state.vendors).join('|'));
       if (state.form) params.set('form', state.form);
       if (state.bands.size) params.set('bands', Array.from(state.bands).join(','));
       if (state.connector) params.set('connector', state.connector);
       if (state.leads) params.set('leads', state.leads);
       if (state.env && state.env !== 'Either') params.set('env', state.env);
+      if (currentSort.key !== DEFAULT_SORT.key || currentSort.dir !== DEFAULT_SORT.dir) {
+        params.set('sort', currentSort.key);
+        params.set('dir', currentSort.dir);
+      }
       return params;
     }
 
@@ -341,6 +367,31 @@
       updateBandPresetActive();
     }
 
+    function renderVendorChips(container) {
+      container.innerHTML = '';
+      const vendors = collectUnique(e => e.vendor);
+      vendors.forEach(vendor => {
+        const id = `vendor-${slugifyLabel(vendor)}`;
+        const label = document.createElement('label');
+        label.className = 'chip-option';
+        const input = document.createElement('input');
+        input.type = 'checkbox';
+        input.id = id;
+        input.value = vendor;
+        input.checked = state.vendors.has(vendor);
+        input.addEventListener('change', () => {
+          if (input.checked) state.vendors.add(vendor);
+          else state.vendors.delete(vendor);
+          applyFilters();
+        });
+        const span = document.createElement('span');
+        span.textContent = vendor;
+        label.appendChild(input);
+        label.appendChild(span);
+        container.appendChild(label);
+      });
+    }
+
     function renderBandChips(container) {
       container.innerHTML = '';
       const bands = WIFI_BANDS.filter(b =>
@@ -384,6 +435,7 @@
         { value: '', label: 'Any' },
         ...FORM_TYPES.map(v => ({ value: v, label: v }))
       ];
+      renderVendorChips(document.getElementById('vendor-options'));
       renderRadioChips(document.getElementById('form-options'), formOptions, 'form', state.form);
       renderBandPresets(document.getElementById('bands-presets'));
       renderBandChips(document.getElementById('bands-options'));
@@ -398,6 +450,11 @@
       );
       renderRadioChips(document.getElementById('env-options'), ENV_OPTIONS, 'env', state.env);
 
+      const knownVendors = new Set(collectUnique(e => e.vendor));
+      Array.from(state.vendors).forEach(v => {
+        if (!knownVendors.has(v)) state.vendors.delete(v);
+      });
+
       const connectorSelect = document.getElementById('filter-connector');
       const leadsSelect = document.getElementById('filter-leads');
       if (state.connector && ![...connectorSelect.options].some(o => o.value === state.connector)) {
@@ -411,6 +468,8 @@
     }
 
     function matchesFilters(entry) {
+      if (state.vendors.size && !state.vendors.has(entry.vendor)) return false;
+
       if (state.form && entry.form !== state.form) return false;
 
       if (state.bands.size) {
@@ -438,9 +497,31 @@
       return true;
     }
 
+    function sortValue(entry, key) {
+      if (key === 'bands') return formatBands(entry.bands);
+      if (key === 'gain_dbi') return formatGainCompact(entry.gain_dbi);
+      if (key === 'beamwidth') return formatBeamwidthCompact(entry.beamwidth);
+      if (key === 'lead_count') return entry.lead_count == null ? '' : String(entry.lead_count);
+      const v = entry[key];
+      if (v == null) return '';
+      if (Array.isArray(v)) return v.join(', ');
+      if (typeof v === 'object') return JSON.stringify(v);
+      return String(v);
+    }
+
+    function sortMatches(matches) {
+      const dir = currentSort.dir === 'asc' ? 1 : -1;
+      const key = currentSort.key;
+      return matches.slice().sort((a, b) => {
+        const av = sortValue(a, key).toLowerCase();
+        const bv = sortValue(b, key).toLowerCase();
+        return av.localeCompare(bv, undefined, { numeric: true }) * dir;
+      });
+    }
+
     function applyFilters() {
       if (!enrichedData.length) return;
-      const matches = enrichedData.filter(matchesFilters);
+      const matches = sortMatches(enrichedData.filter(matchesFilters));
       updateBandPresetActive();
       renderActiveFilters();
       renderResults(matches);
@@ -461,6 +542,7 @@
       container.innerHTML = '';
       const chips = [];
 
+      state.vendors.forEach(v => chips.push({ type: 'vendors', value: v, label: v }));
       if (state.form) chips.push({ type: 'form', value: state.form, label: state.form });
       state.bands.forEach(v => chips.push({ type: 'bands', value: v, label: `${v} GHz` }));
       if (state.connector) chips.push({ type: 'connector', value: state.connector, label: state.connector });
@@ -486,7 +568,11 @@
     }
 
     function removeFilter(type, value) {
-      if (type === 'form') {
+      if (type === 'vendors') {
+        state.vendors.delete(value);
+        const input = document.getElementById(`vendor-${slugifyLabel(value)}`);
+        if (input) input.checked = false;
+      } else if (type === 'form') {
         state.form = '';
         const input = document.querySelector('input[name="filter-form"][value=""]');
         if (input) input.checked = true;
@@ -509,23 +595,81 @@
     }
 
     function clearAllFilters() {
+      state.vendors.clear();
       state.form = '';
       state.bands.clear();
       state.connector = '';
       state.leads = '';
       state.env = 'Either';
+      currentSort = { key: DEFAULT_SORT.key, dir: DEFAULT_SORT.dir };
       selectedIds.clear();
       buildControls();
       applyFilters();
       updateCompareFab();
     }
 
+    function setSort(key) {
+      if (!key) return;
+      if (currentSort.key === key) {
+        currentSort.dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
+      } else {
+        currentSort.key = key;
+        currentSort.dir = 'asc';
+      }
+      applyFilters();
+    }
+
+    function renderResultsHeader(container) {
+      const header = document.createElement('div');
+      header.className = 'result-row result-header result-row-antenna';
+
+      const spacer = document.createElement('div');
+      spacer.className = 'result-cell';
+      header.appendChild(spacer);
+
+      RESULT_COLUMNS.forEach(col => {
+        const cell = document.createElement('div');
+        cell.className = 'result-cell';
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'result-sort-btn';
+        button.dataset.key = col.key;
+        button.textContent = col.label;
+        if (currentSort.key === col.key) {
+          button.dataset.dir = currentSort.dir;
+          button.setAttribute('aria-sort', currentSort.dir === 'asc' ? 'ascending' : 'descending');
+        } else {
+          button.setAttribute('aria-sort', 'none');
+        }
+        button.setAttribute('aria-label', `Sort by ${col.label}`);
+        button.addEventListener('click', (e) => {
+          e.stopPropagation();
+          setSort(col.key);
+        });
+        cell.appendChild(button);
+        header.appendChild(cell);
+      });
+
+      const actions = document.createElement('div');
+      actions.className = 'result-cell';
+      header.appendChild(actions);
+      container.appendChild(header);
+    }
+
+    function cellDisplay(entry, key) {
+      if (key === 'bands') return formatBands(entry.bands) || '—';
+      if (key === 'gain_dbi') return formatGainCompact(entry.gain_dbi) || '—';
+      if (key === 'beamwidth') return formatBeamwidthCompact(entry.beamwidth) || '—';
+      if (key === 'lead_count') return entry.lead_count == null ? '—' : String(entry.lead_count);
+      const v = entry[key];
+      return v == null || v === '' ? '—' : String(v);
+    }
+
     function renderResults(matches) {
       const container = document.getElementById('results');
       const emptyState = document.getElementById('empty-state');
-      const header = container.querySelector('.result-header');
       container.innerHTML = '';
-      if (header) container.appendChild(header);
+      renderResultsHeader(container);
 
       if (!matches.length) {
         emptyState.style.display = 'block';
@@ -552,38 +696,33 @@
           else selectedIds.delete(entry._slug);
           updateCompareFab();
         });
+        row.appendChild(checkbox);
 
-        const vendor = document.createElement('div');
-        vendor.className = 'result-cell result-vendor';
-        vendor.textContent = entry.vendor || '';
+        RESULT_COLUMNS.forEach(col => {
+          const cell = document.createElement('div');
+          cell.className = 'result-cell';
+          if (col.key === 'vendor') cell.classList.add('result-vendor');
+          if (col.key === 'sku') cell.classList.add('result-model');
+          if (col.key === 'form') cell.classList.add('result-form');
+          if (col.key === 'bands') cell.classList.add('result-wifi');
+          if (col.key === 'connector') cell.classList.add('result-antenna');
+          if (col.key === 'lead_count') cell.classList.add('result-spatial');
+          if (col.key === 'gain_dbi') cell.classList.add('result-metrics');
 
-        const sku = document.createElement('div');
-        sku.className = 'result-cell result-model';
-        const skuLink = document.createElement('a');
-        skuLink.className = 'sku-link';
-        skuLink.href = `antenna.html?id=${encodeURIComponent(entry._slug)}&from=finder`;
-        skuLink.textContent = entry.sku || entry.legacy_sku || 'View';
-        sku.appendChild(skuLink);
-
-        const form = document.createElement('div');
-        form.className = 'result-cell result-form';
-        form.textContent = entry.form || '—';
-
-        const bands = document.createElement('div');
-        bands.className = 'result-cell result-wifi';
-        bands.textContent = formatBands(entry.bands) || '—';
-
-        const connector = document.createElement('div');
-        connector.className = 'result-cell result-antenna';
-        connector.textContent = entry.connector || '—';
-
-        const leads = document.createElement('div');
-        leads.className = 'result-cell result-spatial';
-        leads.textContent = entry.lead_count == null ? '—' : String(entry.lead_count);
-
-        const env = document.createElement('div');
-        env.className = 'result-cell';
-        env.textContent = entry.indoor_outdoor || '—';
+          if (col.key === 'sku') {
+            const skuLink = document.createElement('a');
+            skuLink.className = 'sku-link';
+            skuLink.href = `antenna.html?id=${encodeURIComponent(entry._slug)}&from=finder`;
+            skuLink.textContent = entry.sku || entry.legacy_sku || 'View';
+            cell.appendChild(skuLink);
+          } else if (col.key === 'beamwidth') {
+            cell.classList.add('result-beamwidth');
+            cell.textContent = formatBeamwidthStacked(entry.beamwidth) || '—';
+          } else {
+            cell.textContent = cellDisplay(entry, col.key);
+          }
+          row.appendChild(cell);
+        });
 
         const actions = document.createElement('div');
         actions.className = 'result-cell result-actions';
@@ -592,15 +731,6 @@
         detail.className = 'btn-link btn-link-ghost btn-link-small';
         detail.textContent = 'Details';
         actions.appendChild(detail);
-
-        row.appendChild(checkbox);
-        row.appendChild(vendor);
-        row.appendChild(sku);
-        row.appendChild(form);
-        row.appendChild(bands);
-        row.appendChild(connector);
-        row.appendChild(leads);
-        row.appendChild(env);
         row.appendChild(actions);
 
         row.style.cursor = 'pointer';
@@ -634,7 +764,7 @@
     }
 
     function exportToCsv() {
-      const matches = enrichedData.filter(matchesFilters);
+      const matches = sortMatches(enrichedData.filter(matchesFilters));
       if (!matches.length) {
         alert('No antennas to export. Please adjust your filters.');
         return;

@@ -136,23 +136,37 @@ function formatBandObject(obj, kind) {
   return "";
 }
 
-function formatBeamwidthCompact(beamwidth) {
-  if (!beamwidth || typeof beamwidth !== "object") return "";
-  // Prefer "H 25/20/20° · V 25/20/20°" when planes share band keys
-  const planes = ["horizontal", "vertical"].filter(p => beamwidth[p] && typeof beamwidth[p] === "object");
-  if (planes.length) {
-    return planes.map(plane => {
-      const bands = beamwidth[plane];
-      const order = ["2.4", "5", "6"];
-      const vals = order.map(b => bands[b]).filter(v => v != null && v !== "");
-      if (vals.length) {
-        const short = plane === "horizontal" ? "H" : "V";
-        return `${short} ${vals.join("/")}`;
-      }
-      return `${beamPlaneLabel(plane)}: ${formatBandObject(bands, "beam")}`;
-    }).join(" · ");
+function beamwidthPlaneLines(beamwidth) {
+  if (!beamwidth || typeof beamwidth !== "object" || Array.isArray(beamwidth)) return [];
+  const names = ["horizontal", "vertical"].filter(name => {
+    const value = beamwidth[name];
+    return value != null && value !== "";
+  });
+  if (!names.length) {
+    const flat = formatBandObject(beamwidth, "beam");
+    return flat ? [flat] : [];
   }
-  return formatBandObject(beamwidth, "beam");
+  return names.map(name => {
+    const value = beamwidth[name];
+    const short = name === "horizontal" ? "H" : "V";
+    if (typeof value === "string" || typeof value === "number") return `${short} ${value}`;
+    if (!value || typeof value !== "object") return "";
+    const order = ["2.4", "5", "6"];
+    const vals = order.map(band => value[band]).filter(v => v != null && v !== "");
+    if (vals.length) return `${short} ${vals.join("/")}`;
+    const inner = formatBandObject(value, "beam");
+    return inner ? `${beamPlaneLabel(name)}: ${inner}` : "";
+  }).filter(Boolean);
+}
+
+function formatBeamwidthCompact(beamwidth) {
+  // One line for detail, compare, sort, and CSV. Tables use formatBeamwidthStacked.
+  return beamwidthPlaneLines(beamwidth).join(" · ");
+}
+
+/** Table display. Break before V so the plane label stays with its beamwidths. */
+function formatBeamwidthStacked(beamwidth) {
+  return beamwidthPlaneLines(beamwidth).join("\n");
 }
 
 function formatGainCompact(gain) {
@@ -197,6 +211,7 @@ if (typeof module !== "undefined" && module.exports) {
     formatPatternCaption,
     formatBandObject,
     formatBeamwidthCompact,
+    formatBeamwidthStacked,
     formatGainCompact,
     searchBlob
   };
