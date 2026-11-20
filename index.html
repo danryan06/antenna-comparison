@@ -123,7 +123,7 @@
     <div class="card">
       <span class="badge">Community-maintained</span>
 
-      <table>
+      <table class="antenna-table">
         <thead>
           <tr>
             <th class="sortable" data-key="vendor">Vendor</th>
@@ -467,6 +467,9 @@
             td.appendChild(link);
             td.style.fontSize = '1rem';
             td.style.fontWeight = '600';
+          } else if (colKey === 'beamwidth') {
+            td.classList.add('beamwidth-cell');
+            td.textContent = formatBeamwidthStacked(entry.beamwidth);
           } else {
             td.textContent = displayValue(entry, colKey);
             if (colKey === 'sku' || colKey === 'legacy_sku' || colKey === 'connector') {
