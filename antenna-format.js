@@ -57,6 +57,9 @@ function frequencyToBand(n) {
   return null;
 }
 
+const PATTERN_GHZ = /(\d+(?:\.\d+)?(?:\s*[\/,–—-]\s*\d+(?:\.\d+)?)*)\s*GHz/gi;
+const PATTERN_BAND_ORDER = ["2.4", "5", "6"];
+
 /**
  * Simplify radiation-pattern figure captions for display.
  * Collapses mid-band frequency lists to band labels, e.g.
@@ -64,10 +67,25 @@ function frequencyToBand(n) {
  *   "4.9 / 5.4 / 5.8 GHz Vertical" → "5 GHz Vertical"
  * Already-simple labels (and non-Wi-Fi captions) pass through.
  */
+
+function ghzBandsInText(text) {
+  const found = new Set();
+  const re = new RegExp(PATTERN_GHZ.source, "gi");
+  let match;
+  while ((match = re.exec(String(text || "")))) {
+    const nums = String(match[1]).match(/\d+(?:\.\d+)?/g) || [];
+    nums.forEach(raw => {
+      const band = frequencyToBand(Number(raw));
+      if (band) found.add(band);
+    });
+  }
+  return PATTERN_BAND_ORDER.filter(band => found.has(band));
+}
+
 function formatPatternCaption(label) {
   if (label == null || label === "") return "";
   return String(label).replace(
-    /(\d+(?:\.\d+)?(?:\s*[\/,–—-]\s*\d+(?:\.\d+)?)*)\s*GHz/gi,
+    new RegExp(PATTERN_GHZ.source, "gi"),
     (match, freqPart) => {
       const nums = String(freqPart).match(/\d+(?:\.\d+)?/g);
       if (!nums || !nums.length) return match;
@@ -84,6 +102,123 @@ function formatPatternCaption(label) {
       return `${bands.join("/")} GHz`;
     }
   );
+}
+
+/**
+ * Gallery order for radiation patterns:
+ *   band low → high (2.4, then 5, then 6; a multi-band chart stays one image
+ *   and sorts by the bands it covers, so 2.4 comes before 2.4/5 before 5 before 5/6 before 6),
+ *   then element (1, 2, 3… then A, B, C…; Port / Cable / Slot use the same idea),
+ *   then Horizontal, then a combined Horizontal + Vertical chart, then Vertical.
+ * Charts with no band stay after banded ones, in their original relative order
+ * aside from the plane sort. Duplicate plots of the same band, element, and plane
+ * keep the order they were stored in.
+ */
+function patternPlaneRank(label) {
+  const text = String(label || "").toLowerCase();
+  const horizontal = /\bhorizontal\b/.test(text);
+  const vertical = /\bvertical\b/.test(text);
+  if (horizontal && vertical) return 1;
+  if (horizontal) return 0;
+  if (vertical) return 2;
+  return 3;
+}
+
+function patternGroupKey(label, url) {
+  let rest = String(label || "")
+    .replace(new RegExp(PATTERN_GHZ.source, "gi"), " ")
+    .replace(/\bhorizontal\b/gi, " ")
+    .replace(/\bvertical\b/gi, " ")
+    .replace(/\band\b/gi, " ")
+    .replace(/[+/]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!rest) {
+    const fromFile = String(url || "").match(/element-(\d+|[a-z])(?=-|\.)/i);
+    if (fromFile) {
+      rest = /^\d+$/.test(fromFile[1])
+        ? `Element ${Number(fromFile[1])}`
+        : `Element ${fromFile[1].toUpperCase()}`;
+    }
+  }
+  return rest;
+}
+
+function patternGroupRank(group, firstSeen) {
+  const text = String(group || "").trim();
+  if (!text) return [2, 0, 0];
+  let match = text.match(/^element\s+(\d+)$/i);
+  if (match) return [0, 0, Number(match[1])];
+  match = text.match(/^element\s+([a-z])$/i);
+  if (match) return [0, 1, match[1].toUpperCase().charCodeAt(0)];
+  match = text.match(/^(?:port|cable|slot)\s+(\d+)$/i);
+  if (match) return [1, 0, Number(match[1])];
+  match = text.match(/^(?:port|cable|slot)\s+([a-z])$/i);
+  if (match) return [1, 1, match[1].toUpperCase().charCodeAt(0)];
+  // Named planes that are not elements (AUX, BLE, a radio, an elevation cut)
+  // keep the order they first appear in, so only band and H-before-V move them.
+  const seen = firstSeen && firstSeen.get(text.toLowerCase());
+  return [3, seen == null ? 0 : seen, 0];
+}
+
+function comparePatternRank(a, b) {
+  const length = Math.max(a.length, b.length);
+  for (let i = 0; i < length; i++) {
+    if (i >= a.length) return -1;
+    if (i >= b.length) return 1;
+    if (a[i] === b[i]) continue;
+    if (typeof a[i] === "number" && typeof b[i] === "number") return a[i] - b[i];
+    return String(a[i]).localeCompare(String(b[i]), undefined, { numeric: true, sensitivity: "base" });
+  }
+  return 0;
+}
+
+function comparePatternBands(a, b) {
+  if (!a.length && !b.length) return 0;
+  if (!a.length) return 1;
+  if (!b.length) return -1;
+  const length = Math.max(a.length, b.length);
+  for (let i = 0; i < length; i++) {
+    if (i >= a.length) return -1;
+    if (i >= b.length) return 1;
+    const diff = PATTERN_BAND_ORDER.indexOf(a[i]) - PATTERN_BAND_ORDER.indexOf(b[i]);
+    if (diff) return diff;
+  }
+  return 0;
+}
+
+function patternImageFields(item) {
+  if (typeof item === "string") return { label: "", url: item };
+  const label = item && item.label != null ? String(item.label) : "";
+  const url = item && item.url != null ? String(item.url) : "";
+  return { label, url };
+}
+
+function comparePatternImages(a, b, firstSeen) {
+  const left = patternImageFields(a);
+  const right = patternImageFields(b);
+  const bandDiff = comparePatternBands(ghzBandsInText(left.label), ghzBandsInText(right.label));
+  if (bandDiff) return bandDiff;
+  const groupDiff = comparePatternRank(
+    patternGroupRank(patternGroupKey(left.label, left.url), firstSeen),
+    patternGroupRank(patternGroupKey(right.label, right.url), firstSeen)
+  );
+  if (groupDiff) return groupDiff;
+  return patternPlaneRank(left.label) - patternPlaneRank(right.label);
+}
+
+function sortPatternImages(items) {
+  if (!Array.isArray(items)) return [];
+  const firstSeen = new Map();
+  items.forEach((item, index) => {
+    const fields = patternImageFields(item);
+    const key = patternGroupKey(fields.label, fields.url).toLowerCase();
+    if (!firstSeen.has(key)) firstSeen.set(key, index);
+  });
+  return items
+    .map((item, index) => ({ item, index }))
+    .sort((a, b) => comparePatternImages(a.item, b.item, firstSeen) || a.index - b.index)
+    .map(entry => entry.item);
 }
 
 function flatBandParts(obj, kind) {
@@ -209,6 +344,7 @@ if (typeof module !== "undefined" && module.exports) {
     formatBands,
     frequencyToBand,
     formatPatternCaption,
+    sortPatternImages,
     formatBandObject,
     formatBeamwidthCompact,
     formatBeamwidthStacked,

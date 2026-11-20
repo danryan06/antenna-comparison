@@ -549,6 +549,9 @@
 
     function addGallery(container, title, items, kind) {
       if (!items || !items.length) return;
+      const ordered = kind === 'pattern' && typeof sortPatternImages === 'function'
+        ? sortPatternImages(items)
+        : items;
       const section = document.createElement('div');
       section.className = 'spec-section';
       const h = document.createElement('h3');
@@ -556,7 +559,7 @@
       section.appendChild(h);
       const grid = document.createElement('div');
       grid.className = 'gallery-grid';
-      items.forEach(item => {
+      ordered.forEach(item => {
         const url = safeUrl(item.url || item, { allowRelative: true });
         if (!url) return;
         const fig = document.createElement('figure');
