@@ -20887,7 +20887,7 @@
     "image_url": "images/cisco/air-ant2524dw-r.jpg",
     "images": [
       {
-        "label": "Black articulating dipole",
+        "label": "Articulating dipole",
         "url": "images/cisco/air-ant2524dw-r.jpg"
       }
     ],
@@ -20972,7 +20972,7 @@
     "image_url": "images/cisco/air-ant2524dw-r.jpg",
     "images": [
       {
-        "label": "Gray articulating dipole",
+        "label": "Articulating dipole",
         "url": "images/cisco/air-ant2524dw-r.jpg"
       }
     ],
@@ -21057,7 +21057,7 @@
     "image_url": "images/cisco/air-ant2524dw-r.jpg",
     "images": [
       {
-        "label": "White articulating dipole",
+        "label": "Articulating dipole",
         "url": "images/cisco/air-ant2524dw-r.jpg"
       }
     ],
@@ -21142,7 +21142,7 @@
     "image_url": "images/cisco/air-ant2524dw-r.jpg",
     "images": [
       {
-        "label": "White articulating dipole",
+        "label": "Articulating dipole",
         "url": "images/cisco/air-ant2524dw-r.jpg"
       }
     ],
@@ -21629,32 +21629,32 @@
     "images": [],
     "pattern_images": [
       {
-        "label": "2.4/5 GHz Element 1 Horizontal + Vertical",
-        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-1-horizontal-vertical.jpg"
+        "label": "2.4 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-element-1-horizontal-vertical.jpg"
       },
       {
         "label": "5 GHz Element 1 Horizontal + Vertical",
         "url": "images/cisco/air-ant2544v4m-r-pattern-5-ghz-element-1-horizontal-vertical.jpg"
       },
       {
-        "label": "2.4/5 GHz Element 2 Horizontal + Vertical",
-        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-2-horizontal-vertical.jpg"
+        "label": "2.4 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-element-2-horizontal-vertical.jpg"
       },
       {
         "label": "5 GHz Element 2 Horizontal + Vertical",
         "url": "images/cisco/air-ant2544v4m-r-pattern-5-ghz-element-2-horizontal-vertical.jpg"
       },
       {
-        "label": "2.4/5 GHz Element 3 Horizontal + Vertical",
-        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-3-horizontal-vertical.jpg"
+        "label": "2.4 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-element-3-horizontal-vertical.jpg"
       },
       {
         "label": "5 GHz Element 3 Horizontal + Vertical",
         "url": "images/cisco/air-ant2544v4m-r-pattern-5-ghz-element-3-horizontal-vertical.jpg"
       },
       {
-        "label": "2.4/5 GHz Element 4 Horizontal + Vertical",
-        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-4-horizontal-vertical.jpg"
+        "label": "2.4 GHz Element 4 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-element-4-horizontal-vertical.jpg"
       },
       {
         "label": "5 GHz Element 4 Horizontal + Vertical",
@@ -21738,32 +21738,32 @@
     "images": [],
     "pattern_images": [
       {
-        "label": "2.4/5 GHz Element 1 Horizontal + Vertical",
-        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-1-horizontal-vertical.jpg"
+        "label": "2.4 GHz Element 1 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-element-1-horizontal-vertical.jpg"
       },
       {
         "label": "5 GHz Element 1 Horizontal + Vertical",
         "url": "images/cisco/air-ant2544v4m-r-pattern-5-ghz-element-1-horizontal-vertical.jpg"
       },
       {
-        "label": "2.4/5 GHz Element 2 Horizontal + Vertical",
-        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-2-horizontal-vertical.jpg"
+        "label": "2.4 GHz Element 2 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-element-2-horizontal-vertical.jpg"
       },
       {
         "label": "5 GHz Element 2 Horizontal + Vertical",
         "url": "images/cisco/air-ant2544v4m-r-pattern-5-ghz-element-2-horizontal-vertical.jpg"
       },
       {
-        "label": "2.4/5 GHz Element 3 Horizontal + Vertical",
-        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-3-horizontal-vertical.jpg"
+        "label": "2.4 GHz Element 3 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-element-3-horizontal-vertical.jpg"
       },
       {
         "label": "5 GHz Element 3 Horizontal + Vertical",
         "url": "images/cisco/air-ant2544v4m-r-pattern-5-ghz-element-3-horizontal-vertical.jpg"
       },
       {
-        "label": "2.4/5 GHz Element 4 Horizontal + Vertical",
-        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-5-ghz-element-4-horizontal-vertical.jpg"
+        "label": "2.4 GHz Element 4 Horizontal + Vertical",
+        "url": "images/cisco/air-ant2544v4m-r-pattern-2-4-ghz-element-4-horizontal-vertical.jpg"
       },
       {
         "label": "5 GHz Element 4 Horizontal + Vertical",
@@ -22923,7 +22923,7 @@
     "wind_rating": "100 mph",
     "vswr": "2:1",
     "isolation": null,
-    "operating_temp": null,
+    "operating_temp": "\u221220 to 60 \u00b0C",
     "image_url": null,
     "images": [],
     "pattern_images": [
@@ -22994,7 +22994,7 @@
       "form": "Eight-port ultralow-sidelobe stadium array. Classified as high-density patch because of the 25\u00b0 narrow-beam 5 GHz mode, not as a separate sector type.",
       "gain_dbi": "5 GHz wide-beam mode is 7 dBi (80\u00b0 azimuth \u00d7 25\u00b0 elevation). Narrow modes (boresight, \u00b110\u00b0, \u00b120\u00b0) are 10 dBi with 25\u00b0 \u00d7 25\u00b0 beamwidth. Stored 5 GHz gain and beamwidth are the narrow-beam values. 2.4 GHz and IoT are 6 dBi, 70\u00b0 \u00d7 70\u00b0.",
       "connector": "RF connection to the mounted Catalyst 9130 is a DART cable. The spec table\u2019s \u201cConnector Type: RJ45 PoE\u201d is the Ethernet passthrough, not the RF port.",
-      "operating_temp": "Not tabulated in the installation-guide spec table.",
+      "operating_temp": "No solar loading: \u221220 to 60 \u00b0C. With solar loading and the solar cover, up to 50 \u00b0C. Storage is \u221240 to 70 \u00b0C.",
       "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
     },
     "internal_notes": {
@@ -23031,8 +23031,8 @@
     "lead_count": 2,
     "polarization": "Linear, dual",
     "cable_length": "30 in (76.2 cm)",
-    "cable_type": null,
-    "dimensions": "7.8 \u00d7 7.8 in (19.8 \u00d7 19.8 cm)",
+    "cable_type": "Outdoor rated coax",
+    "dimensions": "7.8 \u00d7 7.8 \u00d7 1.2 in (19.8 \u00d7 19.8 \u00d7 3 cm)",
     "weight": "21.6 oz (0.61 kg)",
     "ip_rating": null,
     "radome": null,
@@ -23121,7 +23121,7 @@
     "radome": null,
     "mount_type": "Direct mount to the access point N port",
     "included_parts": [],
-    "wind_rating": "125 mph (201 km/h)",
+    "wind_rating": "125 mph (201 km/h); 165 mph (265 km/h) gusts",
     "vswr": "1.7:1",
     "isolation": null,
     "operating_temp": "\u221230 to 70 \u00b0C",
@@ -23196,7 +23196,7 @@
     "radome": null,
     "mount_type": "Direct mount to the access point N port",
     "included_parts": [],
-    "wind_rating": "100 mph operational; 165 mph survival",
+    "wind_rating": "100 mph operational; 165 mph gusts",
     "vswr": "<1.7:1",
     "isolation": null,
     "operating_temp": "\u221230 to 70 \u00b0C",
@@ -23873,7 +23873,7 @@
     "polarization": "Linear, dual (2 vertical, 1 horizontal)",
     "cable_length": null,
     "cable_type": null,
-    "dimensions": "12 \u00d7 7 in (30.5 \u00d7 17.8 cm)",
+    "dimensions": "12 \u00d7 7 \u00d7 1.1 in (30.5 \u00d7 17.8 \u00d7 2.79 cm)",
     "weight": "16 oz (0.45 kg)",
     "ip_rating": "IP67",
     "radome": null,
@@ -23956,7 +23956,7 @@
     "polarization": "Linear, vertical",
     "cable_length": "1 ft (0.3 m)",
     "cable_type": "Plenum, UV rated",
-    "dimensions": "4.125 \u00d7 4.125 in (10.4 \u00d7 10.4 cm)",
+    "dimensions": "4.125 \u00d7 4.125 \u00d7 1.375 in (10.4 \u00d7 10.4 \u00d7 3.49 cm)",
     "weight": null,
     "ip_rating": null,
     "radome": null,
@@ -24038,8 +24038,8 @@
     "lead_count": 2,
     "polarization": "Linear, dual",
     "cable_length": "30 in (76.2 cm)",
-    "cable_type": null,
-    "dimensions": "7.8 \u00d7 7.8 in (19.8 \u00d7 19.8 cm)",
+    "cable_type": "Outdoor rated coax",
+    "dimensions": "7.8 \u00d7 7.8 \u00d7 1.2 in (19.8 \u00d7 19.8 \u00d7 3 cm)",
     "weight": "21.6 oz (0.61 kg)",
     "ip_rating": null,
     "radome": null,
@@ -24128,7 +24128,7 @@
     "radome": null,
     "mount_type": "Direct mount to the access point N port",
     "included_parts": [],
-    "wind_rating": "125 mph (201 km/h)",
+    "wind_rating": "125 mph (201 km/h) operational; 165 mph (265 km/h) survival",
     "vswr": "1.7:1",
     "isolation": null,
     "operating_temp": "\u221230 to 70 \u00b0C",
@@ -24223,20 +24223,20 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4 GHz 90\u00b0 Vertical",
-        "url": "images/cisco/cw-ant-t-d3-n-pattern-2-4-ghz-steer-90-vertical.jpg"
+        "label": "2.4 GHz Elevation 90\u00b0",
+        "url": "images/cisco/cw-ant-t-d3-n-pattern-2-4-ghz-elevation-90-vertical.jpg"
       },
       {
-        "label": "2.4 GHz 0\u00b0 Vertical",
-        "url": "images/cisco/cw-ant-t-d3-n-pattern-2-4-ghz-steer-0-vertical.jpg"
+        "label": "2.4 GHz Elevation 0\u00b0",
+        "url": "images/cisco/cw-ant-t-d3-n-pattern-2-4-ghz-elevation-0-vertical.jpg"
       },
       {
-        "label": "5 GHz 90\u00b0 Vertical",
-        "url": "images/cisco/cw-ant-t-d3-n-pattern-5-ghz-steer-90-vertical.jpg"
+        "label": "5 GHz Elevation 90\u00b0",
+        "url": "images/cisco/cw-ant-t-d3-n-pattern-5-ghz-elevation-90-vertical.jpg"
       },
       {
-        "label": "5 GHz 0\u00b0 Vertical",
-        "url": "images/cisco/cw-ant-t-d3-n-pattern-5-ghz-steer-0-vertical.jpg"
+        "label": "5 GHz Elevation 0\u00b0",
+        "url": "images/cisco/cw-ant-t-d3-n-pattern-5-ghz-elevation-0-vertical.jpg"
       }
     ],
     "dimension_image_url": "images/cisco/cw-ant-t-d3-n-dimensions.jpg",
@@ -24292,8 +24292,8 @@
     "lead_count": 1,
     "polarization": "Vertical",
     "cable_length": "3 ft (0.91 m)",
-    "cable_type": null,
-    "dimensions": null,
+    "cable_type": "Plenum rated RG-58",
+    "dimensions": "11.5 \u00d7 1.25 in (29.2 \u00d7 3.2 cm)",
     "weight": "4.6 oz (131 g)",
     "ip_rating": null,
     "radome": null,
@@ -24336,7 +24336,8 @@
     ],
     "field_notes": {
       "beamwidth": "E-plane 3 dB bandwidth is 40\u00b0 (stored as vertical). H-plane is omnidirectional.",
-      "dimensions": "Outline dimensions are not in the spec table.",
+      "dimensions": "Spec table Dimensions (H x W): 11.5 in x 1.25 in (29.2 cm x 3.2 cm).",
+      "cable_type": "Plenum rated RG-58.",
       "operating_temp": "Not tabulated.",
       "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
     },
@@ -24463,7 +24464,7 @@
     "polarization": "Linear",
     "cable_length": "3 ft (91.4 cm)",
     "cable_type": "Plenum",
-    "dimensions": "8.6 in dia. (21.8 cm)",
+    "dimensions": "8.6 in dia. \u00d7 1.8 in thick (21.8 \u00d7 4.6 cm)",
     "weight": null,
     "ip_rating": null,
     "radome": null,
@@ -24772,7 +24773,7 @@
     "sku": "AIR-ANT2410Y-R",
     "name": "2.4 GHz 10 dBi Yagi",
     "form": "Patch",
-    "indoor_outdoor": "Outdoor",
+    "indoor_outdoor": "Indoor/Outdoor",
     "bands": [
       "2.4"
     ],
@@ -24836,6 +24837,7 @@
     ],
     "field_notes": {
       "form": "10 dBi yagi. Entered as Patch because this catalog has no separate yagi type.",
+      "indoor_outdoor": "Install guide overview says the yagi is mounted indoors or outdoors.",
       "dimensions": "One parenthetical on the sheet reads 76 cm against the 3 in diameter; the diameter row says 3 in (7.6 cm). Stored metric uses 7.6 cm.",
       "front_to_back": "Front-to-back ratio is 23 dB. Maximum sidelobe is less than \u221216 dB.",
       "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
@@ -25205,16 +25207,21 @@
     "vswr": "2:1 from 2385 to 2515 MHz",
     "isolation": null,
     "operating_temp": "0 to 60 \u00b0C",
-    "image_url": null,
-    "images": [],
+    "image_url": "images/cisco/air-ant2422dg-r.jpg",
+    "images": [
+      {
+        "label": "Gray dipole",
+        "url": "images/cisco/air-ant2422dg-r.jpg"
+      }
+    ],
     "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
-        "url": "images/cisco/air-ant2422dw-r-pattern-2-4-ghz-vertical.jpg"
+        "url": "images/cisco/air-ant2422dg-r-pattern-2-4-ghz-vertical.jpg"
       },
       {
         "label": "2.4 GHz Horizontal",
-        "url": "images/cisco/air-ant2422dw-r-pattern-2-4-ghz-horizontal.jpg"
+        "url": "images/cisco/air-ant2422dg-r-pattern-2-4-ghz-horizontal.jpg"
       }
     ],
     "datasheet_urls": [
@@ -25233,8 +25240,8 @@
     "field_notes": {
       "mount_type": "The gray AIR-ANT2422DG-R guide says the antenna is fixed and does not articulate. The white AIR-ANT2422DW-R does articulate.",
       "gain_dbi": "Overview calls it a 2.2 dBi dipole; the spec table peak gain is 2 dBi.",
-      "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used).",
-      "pattern_images": "The gray fixed-dipole guide has no radiation figures. Plots are from the white articulating AIR-ANT2422DW-R guide, which lists the same gain and beamwidth."
+      "image_url": "Product drawing from the gray dipole installation guide.",
+      "pattern_images": "E-plane stored as vertical and H-plane as horizontal, from the gray dipole guide. The white AIR-ANT2422DW-R plots are not reused."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -25290,7 +25297,7 @@
     "wind_rating": "100 mph operational",
     "vswr": "2:1",
     "isolation": null,
-    "operating_temp": null,
+    "operating_temp": "\u221230 to 70 \u00b0C",
     "image_url": null,
     "images": [],
     "pattern_images": [
@@ -25335,7 +25342,7 @@
     "field_notes": {
       "form": "Six-element dual-band patch array. 2.4 GHz is 13 dBi at 36\u00b0 \u00d7 36\u00b0, so it is classified as a high-density patch. 5 GHz is wider (55\u00b0 \u00d7 48\u00b0) and only 7 dBi.",
       "ip_rating": "Environmental line: water IP65, dust and jetting.",
-      "operating_temp": "The spec row is truncated in the guide text extraction; temperature was not copied rather than guessed.",
+      "operating_temp": "Spec table: \u221230 to 70 \u00b0C (\u221222 to 158 \u00b0F).",
       "lead_count": "Six-element array. 2.4 GHz patterns are shown for cables A, B, and C.",
       "image_url": "Installation guide has no product photograph (only a Cisco template banner, which was not used)."
     },
@@ -25377,7 +25384,7 @@
     "lead_count": 4,
     "polarization": "Linear",
     "cable_length": "18 in (45.7 cm)",
-    "cable_type": null,
+    "cable_type": "Plenum",
     "dimensions": "8.5 \u00d7 6 \u00d7 0.93 in (21.5 \u00d7 15.2 \u00d7 2.4 cm)",
     "weight": null,
     "ip_rating": null,
