@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Edit an antenna — AntennaComparison</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <div class="header-left">
+        <a href="index.html" class="site-logo-link">
+          <img src="logo.png" alt="AntennaComparison" class="logo-image" />
+          <span class="logo-text">AntennaComparison</span>
+        </a>
+      </div>
+
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link" data-page="index">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="8" y1="6" x2="21" y2="6"/>
+            <line x1="8" y1="12" x2="21" y2="12"/>
+            <line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/>
+            <line x1="3" y1="12" x2="3.01" y2="12"/>
+            <line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+          <span class="nav-text">Browse</span>
+        </a>
+
+        <a href="finder.html" class="nav-link" data-page="finder">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+          </svg>
+          <span class="nav-text">Finder</span>
+        </a>
+
+        <a href="compare.html" class="nav-link" data-page="compare">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 20V10"/>
+            <path d="M12 20V4"/>
+            <path d="M6 20v-6"/>
+          </svg>
+          <span class="nav-text">Compare</span>
+        </a>
+      </nav>
+
+      <div class="header-right">
+        <div class="header-divider"></div>
+        <a href="edit.html" class="nav-link nav-link-secondary" aria-current="page">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+          </svg>
+          <span class="nav-text">Edit antenna</span>
+        </a>
+        <a href="submit.html" class="nav-link nav-link-accent">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <line x1="5" y1="12" x2="19" y2="12"/>
+          </svg>
+          <span class="nav-text">Submit antenna</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container" style="margin-top: 24px;">
+    <div class="actions">
+      <a class="btn-link" id="back-link" href="index.html">&larr; Back to Antenna Table</a>
+    </div>
+
+    <h2>Edit an antenna</h2>
+    <p class="subtitle">
+      Update the public specs, generate the JSON, then open a prefilled GitHub issue.
+      The form covers the catalog fields only.
+    </p>
+
+    <div class="card">
+      <span class="badge">Edit antenna</span>
+
+      <form id="antenna-form">
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="existing">Which antenna are you editing?</label>
+            <select id="existing" name="existing">
+              <option value="">Select an antenna…</option>
+            </select>
+            <p class="hint">The issue keeps this name even if you correct the SKU below.</p>
+          </div>
+          <div id="form-fields"></div>
+        </div>
+
+        <div id="form-errors" class="error" style="display:none;" role="alert"></div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Generate Updated JSON Snippet</button>
+          <button type="button" class="btn-link" id="open-issue-btn">Open GitHub Issue with This Update</button>
+        </div>
+      </form>
+
+      <div class="output-box">
+        <label for="output">Updated JSON entry (replaces the existing object in <code>antenna_data.json</code>):</label>
+        <textarea id="output" readonly placeholder="The updated JSON snippet appears here after you generate it."></textarea>
+        <p class="hint" style="margin-top:0.5rem;">
+          Step 1: Choose the antenna, edit the fields, and click “Generate Updated JSON Snippet”.
+          Step 2: Click “Open GitHub Issue with This Update” and submit the prefilled issue on GitHub.
+        </p>
+      </div>
+
+      <div class="footer">
+        Workflow: generate the JSON, open the prefilled GitHub issue, then review and submit it.
+        A maintainer labels the issue <code>antenna-submission</code> and automation opens the pull request.
+      </div>
+    </div>
+  </div>
+
+  <script src="antenna-format.js"></script>
+  <script src="antenna-submit.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const returnId = params.get('id') || '';
+    params.delete('id');
+    const backQs = params.toString();
+    const back = document.getElementById('back-link');
+    if (returnId) back.href = 'antenna.html?id=' + encodeURIComponent(returnId) + (backQs ? '&' + backQs : '');
+    else back.href = backQs ? 'index.html?' + backQs : 'index.html';
+    initAntennaSubmissionPage({ kind: 'edit' });
+  </script>
+</body>
+</html>

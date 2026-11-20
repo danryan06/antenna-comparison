@@ -1,0 +1,91 @@
+name: Process Antenna Submissions
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: read
+
+jobs:
+  add-antenna-from-issue:
+    runs-on: ubuntu-latest
+    if: >
+      github.event.issue.state == 'open' &&
+      github.event.label.name == 'antenna-submission' &&
+      startsWith(github.event.issue.title, 'New Antenna:')
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Save issue body
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          script: |
+            const fs = require('fs');
+            const issue = context.payload.issue;
+            if (!issue || !issue.body) {
+              core.setFailed('Issue body is missing.');
+              return;
+            }
+            fs.writeFileSync('/tmp/antenna-issue.md', issue.body, 'utf8');
+
+      - name: Add the antenna to antenna_data.json
+        id: update-json
+        run: node .github/scripts/apply-antenna-submission.js --data antenna_data.json --body-file /tmp/antenna-issue.md --kind new
+
+      - name: Create pull request for the new antenna
+        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6
+        with:
+          commit-message: "Add antenna: ${{ steps.update-json.outputs.vendor }} ${{ steps.update-json.outputs.sku }}"
+          branch: "antenna-from-issue-${{ github.event.issue.number }}"
+          title: "Add antenna from issue #${{ github.event.issue.number }}: ${{ steps.update-json.outputs.vendor }} ${{ steps.update-json.outputs.sku }}"
+          body: |
+            This PR adds an antenna entry from issue #${{ github.event.issue.number }}.
+
+            Vendor: **${{ steps.update-json.outputs.vendor }}**
+            SKU: **${{ steps.update-json.outputs.sku }}**
+
+            Please review `antenna_data.json` before merging.
+
+  edit-antenna-from-issue:
+    runs-on: ubuntu-latest
+    if: >
+      github.event.issue.state == 'open' &&
+      github.event.label.name == 'antenna-submission' &&
+      startsWith(github.event.issue.title, 'Edit Antenna:')
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Save issue body
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          script: |
+            const fs = require('fs');
+            const issue = context.payload.issue;
+            if (!issue || !issue.body) {
+              core.setFailed('Issue body is missing.');
+              return;
+            }
+            fs.writeFileSync('/tmp/antenna-issue.md', issue.body, 'utf8');
+
+      - name: Update the antenna in antenna_data.json
+        id: update-json
+        run: node .github/scripts/apply-antenna-submission.js --data antenna_data.json --body-file /tmp/antenna-issue.md --kind edit
+
+      - name: Create pull request for the edited antenna
+        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6
+        with:
+          commit-message: "Edit antenna: ${{ steps.update-json.outputs.vendor }} ${{ steps.update-json.outputs.sku }}"
+          branch: "edit-antenna-from-issue-${{ github.event.issue.number }}"
+          title: "Edit antenna from issue #${{ github.event.issue.number }}: ${{ steps.update-json.outputs.vendor }} ${{ steps.update-json.outputs.sku }}"
+          body: |
+            This PR updates an antenna entry from issue #${{ github.event.issue.number }}.
+
+            Vendor: **${{ steps.update-json.outputs.vendor }}**
+            SKU: **${{ steps.update-json.outputs.sku }}**
+
+            Please review `antenna_data.json` before merging. Maintainer notes on the existing entry are kept.
