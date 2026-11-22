@@ -27939,8 +27939,19 @@
       }
     ],
     "dimension_image_url": null,
-    "datasheet_urls": [],
-    "sources": []
+    "datasheet_urls": [
+      {
+        "label": "Aruba Networks antennas product line matrix (Matrix_Antennas_120213)",
+        "url": "https://www.corporatearmor.com/documents/Aruba_Networks_Antennas_Matrix.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba Networks antennas product line matrix (Matrix_Antennas_120213)",
+        "id": "Matrix_Antennas_120213",
+        "url": "https://www.corporatearmor.com/documents/Aruba_Networks_Antennas_Matrix.pdf"
+      }
+    ]
   },
   {
     "vendor": "Aruba",

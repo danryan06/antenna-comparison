@@ -32442,11 +32442,22 @@
       }
     ],
     "dimension_image_url": null,
-    "datasheet_urls": [],
-    "sources": [],
+    "datasheet_urls": [
+      {
+        "label": "Aruba Networks antennas product line matrix (Matrix_Antennas_120213)",
+        "url": "https://www.corporatearmor.com/documents/Aruba_Networks_Antennas_Matrix.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba Networks antennas product line matrix (Matrix_Antennas_120213)",
+        "id": "Matrix_Antennas_120213",
+        "url": "https://www.corporatearmor.com/documents/Aruba_Networks_Antennas_Matrix.pdf"
+      }
+    ],
     "field_notes": {
       "gain_dbi": "Lower than AP-ANT-1B because of the built-in high-pass cellular filter. Attenuation is >30 dB at 806–960 MHz, >35 dB at 1710–2025 MHz, >45 dB at 1805–1990 MHz, and >25 dB at 2110–2170 MHz.",
-      "sources": "Figures are from the Aruba AP-ANT-1F data sheet, Rev 04-03-12. No current HPE document id or public PDF URL was found for that sheet."
+      "sources": "No current HPE document id or public PDF URL was found for the Aruba AP-ANT-1F data sheet, Rev 04-03-12, which supplied the figures. Linked public source is the Aruba antenna product line matrix (Matrix_Antennas_120213), which lists AP-ANT-1F gain/beamwidth/dimensions."
     },
     "internal_notes": {
       "compatible_aps": [],
