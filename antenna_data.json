@@ -46907,5 +46907,4141 @@
       "maintainer": "Mobile Mark Wi-Fi AP/site mine 2026-11-22; fleet multi-radio cellular combos excluded.",
       "product_slug": "xw-5xo-fps13m3"
     }
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Catalog uses ground-plane peak gains (5.5/4.5/4.5 dBi); free-space gains are lower on the datasheet."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "710106-2",
+    "name": "Smarteq Wi-Fi 6E/7 Terminal Tri-Band Swivel Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-7.2 GHz",
+    "gain_dbi": {
+      "2.4": 5.5,
+      "5": 4.5,
+      "6": 4.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "Straight 10 \u00d7 108 mm; angled 10 \u00d7 87 mm",
+    "weight": "10 g",
+    "radome": "Black",
+    "mount_type": "Terminal swivel (direct connector mount)",
+    "vswr": "<2.5:1",
+    "operating_temp": "-30 to 70 \u00b0C",
+    "image_url": "images/pctel/710106-2.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Smarteq Wi-Fi 6E/7 Terminal Tri-Band Antenna datasheet",
+        "url": "https://pctel.com/datasheets/wifi-6e-7-terminal-tri-band-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Smarteq Wi-Fi 6E/7 Terminal Tri-Band Antenna datasheet",
+        "id": "wifi-6e-7-terminal-tri-band-antenna",
+        "url": "https://pctel.com/datasheets/wifi-6e-7-terminal-tri-band-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Catalog uses ground-plane peak gains (5.5/4.5/4.5 dBi); free-space gains are lower on the datasheet."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "710107-2",
+    "name": "Smarteq Wi-Fi 6E/7 Terminal Tri-Band Swivel Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-7.2 GHz",
+    "gain_dbi": {
+      "2.4": 5.5,
+      "5": 4.5,
+      "6": 4.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "Straight 10 \u00d7 108 mm; angled 10 \u00d7 87 mm",
+    "weight": "10 g",
+    "radome": "Black",
+    "mount_type": "Terminal swivel (direct connector mount)",
+    "vswr": "<2.5:1",
+    "operating_temp": "-30 to 70 \u00b0C",
+    "image_url": "images/pctel/710107-2.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Smarteq Wi-Fi 6E/7 Terminal Tri-Band Antenna datasheet",
+        "url": "https://pctel.com/datasheets/wifi-6e-7-terminal-tri-band-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Smarteq Wi-Fi 6E/7 Terminal Tri-Band Antenna datasheet",
+        "id": "wifi-6e-7-terminal-tri-band-antenna",
+        "url": "https://pctel.com/datasheets/wifi-6e-7-terminal-tri-band-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [
+      {
+        "item": "Wall/pole mount bracket and clamps",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "images": [],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "710274",
+    "name": "Smarteq Wi-Fi Dual Band Omni Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.485/4.9-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 5.1,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": "0.5 m",
+    "cable_type": "RG223",
+    "dimensions": "25 \u00d7 240 mm (without bracket)",
+    "weight": "Antenna 145 g; bracket 120 g",
+    "ip_rating": "IP67",
+    "radome": "Glass fiber / ASA, white",
+    "mount_type": "Wall or pole mount; bracket and clamps included",
+    "vswr": "<2.0:1 typical (max 2.0:1)",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/710274.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Smarteq Wi-Fi Dual Band Omnidirectional Antenna datasheet",
+        "url": "https://pctel.com/datasheets/smarteq-wifi-dualband-omnidirectional-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Smarteq Wi-Fi Dual Band Omnidirectional Antenna datasheet",
+        "id": "smarteq-wifi-dualband-omnidirectional-antenna",
+        "url": "https://pctel.com/datasheets/smarteq-wifi-dualband-omnidirectional-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/710872-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/710872-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Typical gain with 20 cm cable per datasheet footnote."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "710872",
+    "name": "Low-Profile Wi-Fi 6E/7 Antenna Platform",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.85/5.925-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 3.5,
+      "6": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": "1.5 m",
+    "cable_type": "RG316",
+    "dimensions": "136 \u00d7 47 \u00d7 22 mm (5.35 \u00d7 1.85 \u00d7 0.87 in)",
+    "weight": "~50 g (1.76 oz)",
+    "ip_rating": "IP65",
+    "radome": "ASA, grey",
+    "mount_type": "Screw mount (side or top)",
+    "vswr": "\u22642.0:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/710872.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Low-Profile Wi-Fi 6E/7 Antenna Platform datasheet",
+        "url": "https://pctel.com/datasheets/low-profile-wifi-6e-7-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Low-Profile Wi-Fi 6E/7 Antenna Platform datasheet",
+        "id": "low-profile-wifi-6e-7-antenna",
+        "url": "https://pctel.com/datasheets/low-profile-wifi-6e-7-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/710873-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/710873-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Typical gain with 20 cm cable per datasheet footnote."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "710873",
+    "name": "Low-Profile Wi-Fi 6E/7 Antenna Platform",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.85/5.925-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 3.5,
+      "6": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Male",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": "1.5 m",
+    "cable_type": "RG316",
+    "dimensions": "136 \u00d7 47 \u00d7 22 mm (5.35 \u00d7 1.85 \u00d7 0.87 in)",
+    "weight": "~50 g (1.76 oz)",
+    "ip_rating": "IP65",
+    "radome": "ASA, grey",
+    "mount_type": "Screw mount (side or top)",
+    "vswr": "\u22642.0:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/710873.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Low-Profile Wi-Fi 6E/7 Antenna Platform datasheet",
+        "url": "https://pctel.com/datasheets/low-profile-wifi-6e-7-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Low-Profile Wi-Fi 6E/7 Antenna Platform datasheet",
+        "id": "low-profile-wifi-6e-7-antenna",
+        "url": "https://pctel.com/datasheets/low-profile-wifi-6e-7-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/710874-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/710874-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Typical gain with 20 cm cable per datasheet footnote."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "710874",
+    "name": "Low-Profile Wi-Fi 6E/7 Antenna Platform",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.85/5.925-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 3.5,
+      "6": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Male",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": "0.5 m",
+    "cable_type": "RG316",
+    "dimensions": "136 \u00d7 47 \u00d7 22 mm (5.35 \u00d7 1.85 \u00d7 0.87 in)",
+    "weight": "~50 g (1.76 oz)",
+    "ip_rating": "IP65",
+    "radome": "ASA, grey",
+    "mount_type": "Screw mount (side or top)",
+    "vswr": "\u22642.0:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/710874.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Low-Profile Wi-Fi 6E/7 Antenna Platform datasheet",
+        "url": "https://pctel.com/datasheets/low-profile-wifi-6e-7-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Low-Profile Wi-Fi 6E/7 Antenna Platform datasheet",
+        "id": "low-profile-wifi-6e-7-antenna",
+        "url": "https://pctel.com/datasheets/low-profile-wifi-6e-7-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/bmhodb24490305nm-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/bmhodb24490305nm-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "field_notes": {
+      "name": "Black radome variant"
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BMHODB24490305NM",
+    "name": "Dual Band High Performance Omnidirectional Wi-Fi Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.94-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "35\u00b0",
+        "5": "25\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "1.25 OD \u00d7 6.3 H in (3.17 \u00d7 16 cm)",
+    "weight": "0.3 lb (0.14 kg)",
+    "radome": "UV-stable ASA",
+    "mount_type": "Direct mount; BAM-1009 sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<2.0:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/bmhodb24490305nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Dual Band High Performance Omnidirectional Wi-Fi Antennas datasheet",
+        "url": "https://pctel.com/datasheets/dual-band-high-performance-omnidirectional-wifi-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Dual Band High Performance Omnidirectional Wi-Fi Antennas datasheet",
+        "id": "dual-band-high-performance-omnidirectional-wifi-antennas",
+        "url": "https://pctel.com/datasheets/dual-band-high-performance-omnidirectional-wifi-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BMHODB2458IP",
+    "name": "Compact Ground Plane Independent Dual Band Wi-Fi Omnidirectional Antenna (Black)",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 2
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "Low-profile puck (see datasheet drawing)",
+    "weight": "3 oz (85 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable ASA",
+    "mount_type": "Direct mount",
+    "vswr": "<2.0:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/bmhodb2458ip.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Omnidirectional Low Profile Ground Plane Independent Dual Band Wi-Fi Antenna datasheet",
+        "url": "https://pctel.com/datasheets/omnidirectional-low-profile-ground-plane-independent-dual-band-wi-fi-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Omnidirectional Low Profile Ground Plane Independent Dual Band Wi-Fi Antenna datasheet",
+        "id": "omnidirectional-low-profile-ground-plane-independent-dual-band-wi-fi-antenna",
+        "url": "https://pctel.com/datasheets/omnidirectional-low-profile-ground-plane-independent-dual-band-wi-fi-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24004nf-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24004nf-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA24004NF",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA24004NF",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "42\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "10.1 L \u00d7 0.825 OD in (25.65 \u00d7 2.09 cm)",
+    "weight": "0.33 lb (151 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa24004nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24006nf-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24006nf-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA24006NF",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA24006NF",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "28\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "15.0 L \u00d7 0.825 OD in (38.1 \u00d7 2.09 cm)",
+    "weight": "0.38 lb (176 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa24006nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24006nm-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24006nm-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA24006NM",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA24006NM",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "28\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "14.8 L \u00d7 0.825 OD in (37.5 \u00d7 2.09 cm)",
+    "weight": "0.30 lb (134 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa24006nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24008dt12nf-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24008dt12nf-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA24008DT12NF",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA24008DT12NF",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "15\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "25.4 L \u00d7 0.825 OD in (64.5 \u00d7 2.09 cm)",
+    "weight": "0.52 lb (235 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa24008dt12nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24008dt12nm-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24008dt12nm-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA24008DT12NM",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA24008DT12NM",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "15\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "25 L \u00d7 0.825 OD in (63.5 \u00d7 2.09 cm)",
+    "weight": "0.40 lb (182 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa24008dt12nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24008dt7nf-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24008dt7nf-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA24008DT7NF",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA24008DT7NF",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "15\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "25.4 L \u00d7 0.825 OD in (64.5 \u00d7 2.09 cm)",
+    "weight": "0.52 lb (235 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa24008dt7nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24008dt7nm-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24008dt7nm-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA24008DT7NM",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA24008DT7NM",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "15\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "25 L \u00d7 0.825 OD in (63.5 \u00d7 2.09 cm)",
+    "weight": "0.42 lb (192 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa24008dt7nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24008nf-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24008nf-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA24008NF",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA24008NF",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "15\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "19.4 L \u00d7 0.825 OD in (49.3 \u00d7 2.09 cm)",
+    "weight": "0.45 lb (203 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa24008nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24008nm-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24008nm-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA24008NM",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA24008NM",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "15\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "19.1 L \u00d7 0.825 OD in (48.5 \u00d7 2.09 cm)",
+    "weight": "0.35 lb (161 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa24008nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24010nf-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa24010nf-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA24010NF",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA24010NF",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 10
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "9\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "25.3 L \u00d7 0.825 OD in (64.4 \u00d7 2.09 cm)",
+    "weight": "0.52 lb (235 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa24010nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa51004nf-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa51004nf-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA51004NF",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA51004NF",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.1-5.9 GHz",
+    "gain_dbi": {
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "42\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "5.5 L \u00d7 0.825 OD in (13.9 \u00d7 2.09 cm)",
+    "weight": "0.27 lb (124 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa51004nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa51004nm-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa51004nm-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA51004NM",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA51004NM",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.1-5.9 GHz",
+    "gain_dbi": {
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "42\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "5.3 L \u00d7 0.825 OD in (13.5 \u00d7 2.09 cm)",
+    "weight": "0.18 lb (82 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa51004nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa58006nf-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa58006nf-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA58006NF",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA58006NF",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.7-5.8 GHz",
+    "gain_dbi": {
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "28\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "7.29 L \u00d7 0.825 OD in (18.5 \u00d7 2.09 cm)",
+    "weight": "0.30 lb (134 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa58006nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa58006nm-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa58006nm-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA58006NM",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA58006NM",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.7-5.8 GHz",
+    "gain_dbi": {
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "28\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "7.03 L \u00d7 0.825 OD in (17.8 \u00d7 2.09 cm)",
+    "weight": "0.30 lb (134 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa58006nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa58010nf-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa58010nf-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA58010NF",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA58010NF",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.7-5.8 GHz",
+    "gain_dbi": {
+      "5": 10
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "10\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "17.9 L \u00d7 0.825 OD in (45.5 \u00d7 2.09 cm)",
+    "weight": "0.43 lb (194 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa58010nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa58010nm-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boa58010nm-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOA58010NM",
+    "name": "VenU Heavy-Duty Omnidirectional Base Station Antenna BOA58010NM",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.7-5.8 GHz",
+    "gain_dbi": {
+      "5": 10
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "10\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "17.6 L \u00d7 0.825 OD in (44.7 \u00d7 2.09 cm)",
+    "weight": "0.33 lb (152 g)",
+    "ip_rating": "IP67",
+    "radome": "Black UV-stable pultruded fiberglass",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boa58010nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
+        "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boah242505nf-alt-1.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOAH242505NF",
+    "name": "VenU Horizontally Polarized Omnidirectional Base Station Antenna BOAH242505NF",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Horizontal",
+    "dimensions": "12.85 L \u00d7 1.26 OD in (32.63 \u00d7 3.20 cm)",
+    "weight": "6 oz",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<2:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boah242505nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
+        "url": "https://pctel.com/datasheets/venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
+        "id": "venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boah242505nm-alt-1.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOAH242505NM",
+    "name": "VenU Horizontally Polarized Omnidirectional Base Station Antenna BOAH242505NM",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Horizontal",
+    "dimensions": "12.62 L \u00d7 1.26 OD in (32.05 \u00d7 3.20 cm)",
+    "weight": "6 oz",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<2:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boah242505nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
+        "url": "https://pctel.com/datasheets/venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
+        "id": "venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boah515905nf-alt-1.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOAH515905NF",
+    "name": "VenU Horizontally Polarized Omnidirectional Base Station Antenna BOAH515905NF",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.1-5.9 GHz",
+    "gain_dbi": {
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Horizontal",
+    "dimensions": "6.55 L \u00d7 1.26 OD in (16.63 \u00d7 3.20 cm)",
+    "weight": "4 oz",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<2:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boah515905nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
+        "url": "https://pctel.com/datasheets/venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
+        "id": "venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/boah515905nm-alt-1.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "BOAH515905NM",
+    "name": "VenU Horizontally Polarized Omnidirectional Base Station Antenna BOAH515905NM",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.1-5.9 GHz",
+    "gain_dbi": {
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Horizontal",
+    "dimensions": "6.32 L \u00d7 1.26 OD in (16.05 \u00d7 3.20 cm)",
+    "weight": "4 oz",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "BAM1009 or BAM1011-HCA mast mounts sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<2:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/boah515905nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
+        "url": "https://pctel.com/datasheets/venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
+        "id": "venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series",
+        "url": "https://pctel.com/datasheets/venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [
+      {
+        "item": "Wall/mast mount bracket",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "images": [],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "DAA4959-14DP",
+    "name": "5 GHz Dual-Polarized Directional Array Antenna",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9-5.9 GHz",
+    "gain_dbi": {
+      "5": 14.6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "23-35"
+      },
+      "vertical": {
+        "5": "23-35"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 2,
+    "polarization": "Dual port, dual orthogonal",
+    "dimensions": "Antenna 1.1 OD \u00d7 11.2 L in (2.85 \u00d7 28.5 cm)",
+    "ip_rating": "IP67",
+    "mount_type": "Wall/mast clamp bracket included",
+    "wind_rating": "125 mph",
+    "vswr": "<2.0:1 typical, <2.5:1 across band",
+    "isolation": "19 dB minimum",
+    "operating_temp": "-40 to 70 \u00b0C",
+    "image_url": "images/pctel/daa4959-14dp.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Dual-Polarized Directional Array Antenna datasheet",
+        "url": "https://pctel.com/datasheets/dual-polarized-directional-array-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Dual-Polarized Directional Array Antenna datasheet",
+        "id": "dual-polarized-directional-array-antenna",
+        "url": "https://pctel.com/datasheets/dual-polarized-directional-array-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [
+      {
+        "item": "FPM-1001 adjustable mount",
+        "part_number": "FPM-1001",
+        "qty": 1
+      }
+    ],
+    "images": [],
+    "pattern_images": [],
+    "field_notes": {
+      "bands": "Only FP4959-22DP mined from FP series; FP1800/2327/3637 are cellular bands and excluded.",
+      "datasheet_urls": "Datasheet is filed under cellular antennas but FP4959 covers 4.9\u20135.9 GHz Wi-Fi."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "FP4959-22DP",
+    "name": "VenU Dual-Polarized Directional Panel Antenna 4.9\u20135.9 GHz",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9-5.9 GHz",
+    "gain_dbi": {
+      "5": 22.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "9\u00b0"
+      },
+      "vertical": {
+        "5": "9\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 2,
+    "polarization": "Dual linear H/V or \u00b145\u00b0 slant",
+    "dimensions": "14.5 \u00d7 14.5 \u00d7 1.57 in (368 \u00d7 368 \u00d7 40 mm)",
+    "mount_type": "FPM-1001 fully adjustable wall/mast mount included",
+    "vswr": "1.5:1 typical, 2.0:1 maximum",
+    "image_url": "images/pctel/fp4959-22dp.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Dual-Polarized Directional Panel Antennas (FP Series) datasheet",
+        "url": "https://pctel.com/datasheets/dual-polarized-directional-panel-antennas-venu-fp-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Dual-Polarized Directional Panel Antennas (FP Series) datasheet",
+        "id": "dual-polarized-directional-panel-antennas-venu-fp-series",
+        "url": "https://pctel.com/datasheets/dual-polarized-directional-panel-antennas-venu-fp-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [
+      {
+        "item": "FPM-1005 articulating wall/pipe mount",
+        "part_number": "FPM-1005",
+        "qty": 1
+      }
+    ],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/fpmi245808-dp4nf-alt-1.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Datasheet prints 7.6 dB at 2.4 GHz and 8 dBi at 4.9\u20136.0 GHz."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "FPMI245808-DP4NF",
+    "name": "VenU Dual Band Wi-Fi Panel Antenna (4-port)",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.49/4.9-6.0 GHz",
+    "gain_dbi": {
+      "2.4": 7.6,
+      "5": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      },
+      "vertical": {
+        "2.4": "44\u00b0",
+        "5": "43\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "\u00b145\u00b0 linear slant horizontal and vertical",
+    "dimensions": "7.8 \u00d7 7.8 \u00d7 1.3 in (197 \u00d7 197 \u00d7 34 mm)",
+    "weight": "2.6 lb (1.2 kg) including adjustable mount",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "FPM-1005 wall/pipe mount included (+20/-90\u00b0 vertical tilt, \u00b170\u00b0 horizontal)",
+    "wind_rating": "135 mph",
+    "vswr": "2.0:1 maximum",
+    "isolation": "18 dB min port-to-port",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/fpmi245808-dp4nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Dual Band Wi-Fi Panel Antenna datasheet",
+        "url": "https://pctel.com/datasheets/venu-dual-band-wifi-panel-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Dual Band Wi-Fi Panel Antenna datasheet",
+        "id": "venu-dual-band-wifi-panel-antenna",
+        "url": "https://pctel.com/datasheets/venu-dual-band-wifi-panel-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [
+      {
+        "item": "Plastic mounting screws",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "images": [],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MCMI24583RPSMA",
+    "name": "Miniature Ceiling Mount Dual Band Wi-Fi Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.3-6.0 GHz",
+    "gain_dbi": {
+      "2.4": 3.5,
+      "5": 3.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "RPSMA",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "1.8 \u00d7 1.2 \u00d7 0.07 in (4.6 \u00d7 3.1 \u00d7 0.2 cm)",
+    "weight": "0.2 oz (0.005 kg)",
+    "mount_type": "Ceiling screw mount (plastic screws included)",
+    "vswr": "<2.0:1",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/pctel/mcmi24583rpsma.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Miniature Ceiling Mount Dual Band Antenna datasheet",
+        "url": "https://pctel.com/datasheets/miniature-ceiling-mount-dual-band-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Miniature Ceiling Mount Dual Band Antenna datasheet",
+        "id": "miniature-ceiling-mount-dual-band-antenna",
+        "url": "https://pctel.com/datasheets/miniature-ceiling-mount-dual-band-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHO24007NMIP",
+    "name": "VenU Sealed Omnidirectional Antenna 2.4 GHz 7 dBi",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "24\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "12.42 \u00d7 0.9 in (31.5 \u00d7 2.3 cm)",
+    "weight": "0.22 lb (0.1 kg)",
+    "ip_rating": "IP67",
+    "radome": "UV-stable plastic",
+    "mount_type": "Direct mount",
+    "vswr": "<2.0:1",
+    "image_url": "images/pctel/mho24007nmip.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU High Performance Omnidirectional Antenna datasheet",
+        "url": "https://pctel.com/datasheets/venu-high-performance-omnidirectional-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU High Performance Omnidirectional Antenna datasheet",
+        "id": "venu-high-performance-omnidirectional-antenna",
+        "url": "https://pctel.com/datasheets/venu-high-performance-omnidirectional-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mho245607nf-v-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mho245607nf-v-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/mho245607nf-v-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/mho245607nf-v-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/mho245607nf-v-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/mho245607nf-v-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/pctel/mho245607nf-v-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/pctel/mho245607nf-v-pattern-6-ghz-vertical.jpg"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "7 GHz column peak gain 7.5 dBi folded into 6 GHz catalog band as 7 dBi typical mid-UNII-5/7.",
+      "pattern_images": "Pattern order from datasheet radiation pages; azimuth\u2192Horizontal, elevation\u2192Vertical."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHO245607NF-V",
+    "name": "Tri-band Omnidirectional Antenna for Wi-Fi 6E/7 (MHO245607)",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.484/5.15-5.835/5.925-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 4.5,
+      "5": 6.5,
+      "6": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "38\u00b0",
+        "5": "22\u00b0",
+        "6": "21\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "1-1/8\" \u00d7 12.6\" (28.6 \u00d7 321 mm)",
+    "weight": "7.4 oz (209.8 g)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "Direct mount; BAM1009 sold separately",
+    "wind_rating": "126 mph (200 km/h)",
+    "vswr": "2:1 nominal",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/pctel/mho245607nf-v.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Tri-band Omnidirectional Antenna MHO245607 datasheet",
+        "url": "https://pctel.com/datasheets/triband-omnidirectional-antenna-mho245607-series-web.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Tri-band Omnidirectional Antenna MHO245607 datasheet",
+        "id": "triband-omnidirectional-antenna-mho245607-series-web",
+        "url": "https://pctel.com/datasheets/triband-omnidirectional-antenna-mho245607-series-web.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mho245607nm-v-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mho245607nm-v-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/mho245607nm-v-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/mho245607nm-v-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/mho245607nm-v-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/mho245607nm-v-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/pctel/mho245607nm-v-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/pctel/mho245607nm-v-pattern-6-ghz-vertical.jpg"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "7 GHz column peak gain 7.5 dBi folded into 6 GHz catalog band as 7 dBi typical mid-UNII-5/7.",
+      "pattern_images": "Pattern order from datasheet radiation pages; azimuth\u2192Horizontal, elevation\u2192Vertical."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHO245607NM-V",
+    "name": "Tri-band Omnidirectional Antenna for Wi-Fi 6E/7 (MHO245607)",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.484/5.15-5.835/5.925-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 4.5,
+      "5": 6.5,
+      "6": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "38\u00b0",
+        "5": "22\u00b0",
+        "6": "21\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "1-1/8\" \u00d7 11.53\" (28.6 \u00d7 292 mm)",
+    "weight": "5.7 oz (161.6 g)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "Direct mount; BAM1009 sold separately",
+    "wind_rating": "126 mph (200 km/h)",
+    "vswr": "2:1 nominal",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/pctel/mho245607nm-v.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Tri-band Omnidirectional Antenna MHO245607 datasheet",
+        "url": "https://pctel.com/datasheets/triband-omnidirectional-antenna-mho245607-series-web.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Tri-band Omnidirectional Antenna MHO245607 datasheet",
+        "id": "triband-omnidirectional-antenna-mho245607-series-web",
+        "url": "https://pctel.com/datasheets/triband-omnidirectional-antenna-mho245607-series-web.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/mho497107nf-h-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/mho497107nf-h-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/pctel/mho497107nf-h-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/pctel/mho497107nf-h-pattern-6-ghz-vertical.jpg"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "Datasheet lists peak gain 6 dBi across 4.9/5/6/7 GHz columns.",
+      "pattern_images": "Azimuth labeled Horizontal; elevation labeled Vertical."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHO497107NF-H",
+    "name": "Horizontally-Polarized Omnidirectional Antenna for Wi-Fi 6E/7",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5",
+      "6"
+    ],
+    "frequency_range": "4.94-7.125 GHz",
+    "gain_dbi": {
+      "5": 6,
+      "6": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "5": "26\u00b0",
+        "6": "22\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Horizontal",
+    "dimensions": "1.36\" \u00d7 8.66\" (34.5 \u00d7 220 mm)",
+    "weight": "~0.42 lb (~190 g)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "Direct mount; BAM-1009 sold separately",
+    "wind_rating": "126 mph (200 km/h)",
+    "vswr": "2:1 (2.5:1 at 7 GHz)",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/pctel/mho497107nf-h.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Horizontally-Polarized Omnidirectional Wi-Fi 6E/7 Antenna datasheet",
+        "url": "https://pctel.com/datasheets/horizontally-polarized-omnidirectional-wi-fi-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Horizontally-Polarized Omnidirectional Wi-Fi 6E/7 Antenna datasheet",
+        "id": "horizontally-polarized-omnidirectional-wi-fi-antennas",
+        "url": "https://pctel.com/datasheets/horizontally-polarized-omnidirectional-wi-fi-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/mho497107nf-v-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/mho497107nf-v-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/pctel/mho497107nf-v-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/pctel/mho497107nf-v-pattern-6-ghz-vertical.jpg"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "Peak gain columns: 5 dBi (4.9), 6 dBi (5), 7 dBi (6), 7 dBi (7). Catalog uses 5\u21926 and 6\u21927.",
+      "pattern_images": "Azimuth labeled Horizontal; elevation labeled Vertical."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHO497107NF-V",
+    "name": "Vertically-Polarized Omnidirectional Antenna for Wi-Fi 6E/7",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5",
+      "6"
+    ],
+    "frequency_range": "4.94-7.125 GHz",
+    "gain_dbi": {
+      "5": 6,
+      "6": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "5": "24\u00b0",
+        "6": "21\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "1.36\" \u00d7 8.66\" (34.5 \u00d7 220 mm)",
+    "weight": "~0.42 lb (~190 g)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "Direct mount; BAM-1009 sold separately",
+    "wind_rating": "126 mph (200 km/h)",
+    "vswr": "2:1",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/pctel/mho497107nf-v.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Vertically-Polarized Omnidirectional Wi-Fi 6E/7 Antenna datasheet",
+        "url": "https://pctel.com/datasheets/vertically-polarized-omnidirectional-wi-fi-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Vertically-Polarized Omnidirectional Wi-Fi 6E/7 Antenna datasheet",
+        "id": "vertically-polarized-omnidirectional-wi-fi-antennas",
+        "url": "https://pctel.com/datasheets/vertically-polarized-omnidirectional-wi-fi-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/mho497107nm-h-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/mho497107nm-h-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/pctel/mho497107nm-h-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/pctel/mho497107nm-h-pattern-6-ghz-vertical.jpg"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "Datasheet lists peak gain 6 dBi across 4.9/5/6/7 GHz columns.",
+      "pattern_images": "Azimuth labeled Horizontal; elevation labeled Vertical."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHO497107NM-H",
+    "name": "Horizontally-Polarized Omnidirectional Antenna for Wi-Fi 6E/7",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5",
+      "6"
+    ],
+    "frequency_range": "4.94-7.125 GHz",
+    "gain_dbi": {
+      "5": 6,
+      "6": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "5": "26\u00b0",
+        "6": "22\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Horizontal",
+    "dimensions": "1.36\" \u00d7 7.68\" (34.5 \u00d7 195 mm)",
+    "weight": "~0.31 lb (~140 g)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "Direct mount; BAM-1009 sold separately",
+    "wind_rating": "126 mph (200 km/h)",
+    "vswr": "2:1 (2.5:1 at 7 GHz)",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/pctel/mho497107nm-h.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Horizontally-Polarized Omnidirectional Wi-Fi 6E/7 Antenna datasheet",
+        "url": "https://pctel.com/datasheets/horizontally-polarized-omnidirectional-wi-fi-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Horizontally-Polarized Omnidirectional Wi-Fi 6E/7 Antenna datasheet",
+        "id": "horizontally-polarized-omnidirectional-wi-fi-antennas",
+        "url": "https://pctel.com/datasheets/horizontally-polarized-omnidirectional-wi-fi-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/mho497107nm-v-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/mho497107nm-v-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/pctel/mho497107nm-v-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/pctel/mho497107nm-v-pattern-6-ghz-vertical.jpg"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "Peak gain columns: 5 dBi (4.9), 6 dBi (5), 7 dBi (6), 7 dBi (7). Catalog uses 5\u21926 and 6\u21927.",
+      "pattern_images": "Azimuth labeled Horizontal; elevation labeled Vertical."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHO497107NM-V",
+    "name": "Vertically-Polarized Omnidirectional Antenna for Wi-Fi 6E/7",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5",
+      "6"
+    ],
+    "frequency_range": "4.94-7.125 GHz",
+    "gain_dbi": {
+      "5": 6,
+      "6": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "5": "24\u00b0",
+        "6": "21\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "1.36\" \u00d7 7.68\" (34.5 \u00d7 195 mm)",
+    "weight": "~0.31 lb (~140 g)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "Direct mount; BAM-1009 sold separately",
+    "wind_rating": "126 mph (200 km/h)",
+    "vswr": "2:1",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/pctel/mho497107nm-v.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Vertically-Polarized Omnidirectional Wi-Fi 6E/7 Antenna datasheet",
+        "url": "https://pctel.com/datasheets/vertically-polarized-omnidirectional-wi-fi-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Vertically-Polarized Omnidirectional Wi-Fi 6E/7 Antenna datasheet",
+        "id": "vertically-polarized-omnidirectional-wi-fi-antennas",
+        "url": "https://pctel.com/datasheets/vertically-polarized-omnidirectional-wi-fi-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mho58009nmip-alt-1.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHO58009NMIP",
+    "name": "VenU Sealed High Gain Omnidirectional Antenna 5 GHz 9 dBi",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.85 GHz",
+    "gain_dbi": {
+      "5": 9
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "11\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "12.42 \u00d7 0.9 in (31.5 \u00d7 2.3 cm)",
+    "weight": "0.26 lb (0.12 kg)",
+    "ip_rating": "IP67",
+    "radome": "UV-stable plastic",
+    "mount_type": "Direct mount",
+    "vswr": "<2.0:1",
+    "image_url": "images/pctel/mho58009nmip.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Slender High Performance Omnidirectional Antenna datasheet",
+        "url": "https://pctel.com/datasheets/venu-slender-high-performance-omnidirectional-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Slender High Performance Omnidirectional Antenna datasheet",
+        "id": "venu-slender-high-performance-omnidirectional-antenna",
+        "url": "https://pctel.com/datasheets/venu-slender-high-performance-omnidirectional-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mhodb24490305nm-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mhodb24490305nm-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHODB24490305NM",
+    "name": "Dual Band High Performance Omnidirectional Wi-Fi Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.94-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "35\u00b0",
+        "5": "25\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "1.25 OD \u00d7 6.3 H in (3.17 \u00d7 16 cm)",
+    "weight": "0.3 lb (0.14 kg)",
+    "radome": "UV-stable ASA",
+    "mount_type": "Direct mount; BAM-1009 sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<2.0:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/mhodb24490305nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Dual Band High Performance Omnidirectional Wi-Fi Antennas datasheet",
+        "url": "https://pctel.com/datasheets/dual-band-high-performance-omnidirectional-wifi-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Dual Band High Performance Omnidirectional Wi-Fi Antennas datasheet",
+        "id": "dual-band-high-performance-omnidirectional-wifi-antennas",
+        "url": "https://pctel.com/datasheets/dual-band-high-performance-omnidirectional-wifi-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mhodb24490507nf-ip-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mhodb24490507nf-ip-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHODB24490507NF-IP",
+    "name": "VenU Sealed Dual Band High Performance Omnidirectional Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.94-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "25\u00b0",
+        "5": "15\u00b0"
+      }
+    },
+    "connector": "N Female bulkhead",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "1.25 OD \u00d7 11 H in (3.17 \u00d7 27.9 cm)",
+    "weight": "0.3 lb (0.14 kg)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "Direct mount; BAM-1009 sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<2.0:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/mhodb24490507nf-ip.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Sealed Dual Band High Performance Omnidirectional Antennas datasheet",
+        "url": "https://pctel.com/datasheets/venu-dual-band-high-performance-omnidirectional-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Sealed Dual Band High Performance Omnidirectional Antennas datasheet",
+        "id": "venu-dual-band-high-performance-omnidirectional-antennas",
+        "url": "https://pctel.com/datasheets/venu-dual-band-high-performance-omnidirectional-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mhodb24490507nm-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mhodb24490507nm-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHODB24490507NM",
+    "name": "Dual Band High Performance Omnidirectional Wi-Fi Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.94-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "25\u00b0",
+        "5": "15\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "1.25 OD \u00d7 10.4 H in (3.17 \u00d7 26.4 cm)",
+    "weight": "0.3 lb (0.14 kg)",
+    "radome": "UV-stable ASA",
+    "mount_type": "Direct mount; BAM-1009 sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<2.0:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/mhodb24490507nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Dual Band High Performance Omnidirectional Wi-Fi Antennas datasheet",
+        "url": "https://pctel.com/datasheets/dual-band-high-performance-omnidirectional-wifi-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Dual Band High Performance Omnidirectional Wi-Fi Antennas datasheet",
+        "id": "dual-band-high-performance-omnidirectional-wifi-antennas",
+        "url": "https://pctel.com/datasheets/dual-band-high-performance-omnidirectional-wifi-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mhodb24490507nm-ip-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mhodb24490507nm-ip-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHODB24490507NM-IP",
+    "name": "VenU Sealed Dual Band High Performance Omnidirectional Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.94-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "25\u00b0",
+        "5": "15\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "1.25 OD \u00d7 11 H in (3.17 \u00d7 27.9 cm)",
+    "weight": "0.3 lb (0.14 kg)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "Direct mount; BAM-1009 sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<2.0:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/mhodb24490507nm-ip.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Sealed Dual Band High Performance Omnidirectional Antennas datasheet",
+        "url": "https://pctel.com/datasheets/venu-dual-band-high-performance-omnidirectional-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Sealed Dual Band High Performance Omnidirectional Antennas datasheet",
+        "id": "venu-dual-band-high-performance-omnidirectional-antennas",
+        "url": "https://pctel.com/datasheets/venu-dual-band-high-performance-omnidirectional-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHODB2458IP",
+    "name": "Compact Ground Plane Independent Dual Band Wi-Fi Omnidirectional Antenna (White)",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 2
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "Low-profile puck (see datasheet drawing)",
+    "weight": "3 oz (85 g)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "Direct mount",
+    "vswr": "<2.0:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/mhodb2458ip.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Omnidirectional Low Profile Ground Plane Independent Dual Band Wi-Fi Antenna datasheet",
+        "url": "https://pctel.com/datasheets/omnidirectional-low-profile-ground-plane-independent-dual-band-wi-fi-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Omnidirectional Low Profile Ground Plane Independent Dual Band Wi-Fi Antenna datasheet",
+        "id": "omnidirectional-low-profile-ground-plane-independent-dual-band-wi-fi-antenna",
+        "url": "https://pctel.com/datasheets/omnidirectional-low-profile-ground-plane-independent-dual-band-wi-fi-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Datasheet lists 5 dBi / 7 dBi across 2.4 and 4.94\u20137.125 GHz rows."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHOTBNF",
+    "name": "Tri-band Wi-Fi Sealed Omnidirectional Antenna (MHOTB)",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.94-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 7,
+      "6": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Female bulkhead",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "1.25 OD \u00d7 10.52 H in (3.18 \u00d7 26.72 cm)",
+    "weight": "0.45 lb (0.20 kg)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "Direct mount; BAM-1009 sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<2.0 / <2.5",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/mhotbnf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Tri-band Wi-Fi Sealed Omnidirectional MHOTB datasheet",
+        "url": "https://pctel.com/datasheets/tri-band-wifi-sealed-omnidirectional-mhotb-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Tri-band Wi-Fi Sealed Omnidirectional MHOTB datasheet",
+        "id": "tri-band-wifi-sealed-omnidirectional-mhotb-antennas",
+        "url": "https://pctel.com/datasheets/tri-band-wifi-sealed-omnidirectional-mhotb-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Datasheet lists 5 dBi / 7 dBi across 2.4 and 4.94\u20137.125 GHz rows."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MHOTBNM",
+    "name": "Tri-band Wi-Fi Sealed Omnidirectional Antenna (MHOTB)",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.94-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 7,
+      "6": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "1.25 OD \u00d7 10.29 H in (3.18 \u00d7 26.14 cm)",
+    "weight": "0.35 lb (0.16 kg)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable ASA",
+    "mount_type": "Direct mount; BAM-1009 sold separately",
+    "wind_rating": "125 mph",
+    "vswr": "<2.0 / <2.5",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/mhotbnm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Tri-band Wi-Fi Sealed Omnidirectional MHOTB datasheet",
+        "url": "https://pctel.com/datasheets/tri-band-wifi-sealed-omnidirectional-mhotb-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Tri-band Wi-Fi Sealed Omnidirectional MHOTB datasheet",
+        "id": "tri-band-wifi-sealed-omnidirectional-mhotb-antennas",
+        "url": "https://pctel.com/datasheets/tri-band-wifi-sealed-omnidirectional-mhotb-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mpamb24495804-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mpamb24495804-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "field_notes": {
+      "bands": "MPAMB700MSMA cellular model on same datasheet excluded."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MPAMB24495804",
+    "name": "Portable Dual Band Omnidirectional Blade Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.94-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 2.14,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "Height 6 in (15.2 cm)",
+    "ip_rating": "IP64",
+    "radome": "ABS (UV stabilized)",
+    "mount_type": "Direct access point mount (0\u201390\u00b0 blade)",
+    "vswr": "<2.5:1",
+    "operating_temp": "-40 to 75 \u00b0C",
+    "image_url": "images/pctel/mpamb24495804.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Portable Omnidirectional Antennas MPAMB Series datasheet",
+        "url": "https://pctel.com/datasheets/portable-omnidirectional-antennas-mpamb-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Portable Omnidirectional Antennas MPAMB Series datasheet",
+        "id": "portable-omnidirectional-antennas-mpamb-series",
+        "url": "https://pctel.com/datasheets/portable-omnidirectional-antennas-mpamb-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mpamb24495804-rpsma-alt-1.jpg"
+      },
+      {
+        "label": "Product photo",
+        "url": "images/pctel/mpamb24495804-rpsma-alt-2.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "field_notes": {
+      "bands": "MPAMB700MSMA cellular model on same datasheet excluded."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MPAMB24495804-RPSMA",
+    "name": "Portable Dual Band Omnidirectional Blade Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.94-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 2.14,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "Height 6 in (15.2 cm)",
+    "ip_rating": "IP64",
+    "radome": "ABS (UV stabilized)",
+    "mount_type": "Direct access point mount (0\u201390\u00b0 blade)",
+    "vswr": "<2.5:1",
+    "operating_temp": "-40 to 75 \u00b0C",
+    "image_url": "images/pctel/mpamb24495804-rpsma.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Portable Omnidirectional Antennas MPAMB Series datasheet",
+        "url": "https://pctel.com/datasheets/portable-omnidirectional-antennas-mpamb-series.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Portable Omnidirectional Antennas MPAMB Series datasheet",
+        "id": "portable-omnidirectional-antennas-mpamb-series",
+        "url": "https://pctel.com/datasheets/portable-omnidirectional-antennas-mpamb-series.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [
+      {
+        "item": "Articulating wall/mast mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "images": [],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Peak gain includes 3 ft cable per datasheet."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MPMI2458-3-RPSMA",
+    "name": "VenU Dual Band MIMO Omnidirectional Antenna (3-lead)",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "25\u00b0",
+        "5": "15\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 3,
+    "polarization": "Linear, vertical",
+    "cable_length": "36 in (91.4 cm)",
+    "cable_type": "Plenum-rated UV-stable RG-58/U",
+    "dimensions": "8.6 H \u00d7 6.3 OD in (21.8 \u00d7 16.0 cm)",
+    "ip_rating": "IP54",
+    "radome": "PC (UV-stabilized)",
+    "mount_type": "1.5-inch stud; articulating wall/mast mount included; ceiling tile jam nut",
+    "vswr": "2.0:1",
+    "operating_temp": "-30 to 70 \u00b0C",
+    "image_url": "images/pctel/mpmi2458-3-rpsma.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Dual Band MIMO Omnidirectional Antenna datasheet",
+        "url": "https://pctel.com/datasheets/venu-dual-band-mimo-omnidirectional-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Dual Band MIMO Omnidirectional Antenna datasheet",
+        "id": "venu-dual-band-mimo-omnidirectional-antenna",
+        "url": "https://pctel.com/datasheets/venu-dual-band-mimo-omnidirectional-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [
+      {
+        "item": "Articulating wall/mast mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "images": [],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Peak gain includes 3 ft cable per datasheet."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MPMI2458-4-RPC",
+    "name": "VenU Dual Band MIMO Omnidirectional Antenna (4-lead)",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "33\u00b0"
+      }
+    },
+    "connector": "RP-TNC Male",
+    "lead_count": 4,
+    "polarization": "Linear, vertical",
+    "cable_length": "36 in (91.4 cm)",
+    "cable_type": "Plenum-rated UV-stable RG-58/U",
+    "dimensions": "8.6 H \u00d7 6.3 OD in (21.8 \u00d7 16.0 cm)",
+    "ip_rating": "IP54",
+    "radome": "PC (UV-stabilized)",
+    "mount_type": "1.5-inch stud; articulating wall/mast mount included; ceiling tile jam nut",
+    "vswr": "2.0:1",
+    "operating_temp": "-30 to 70 \u00b0C",
+    "image_url": "images/pctel/mpmi2458-4-rpc.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Dual Band MIMO Omnidirectional Antenna datasheet",
+        "url": "https://pctel.com/datasheets/venu-dual-band-mimo-omnidirectional-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Dual Band MIMO Omnidirectional Antenna datasheet",
+        "id": "venu-dual-band-mimo-omnidirectional-antenna",
+        "url": "https://pctel.com/datasheets/venu-dual-band-mimo-omnidirectional-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [
+      {
+        "item": "Articulating wall/mast mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "images": [],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Peak gain includes 3 ft cable per datasheet."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "MPMI2458-6-RPSMA",
+    "name": "VenU Dual Band MIMO Omnidirectional Antenna (6-lead)",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "25\u00b0",
+        "5": "15\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 6,
+    "polarization": "Linear, vertical",
+    "cable_length": "36 in (91.4 cm)",
+    "cable_type": "Plenum-rated UV-stable RG-58/U",
+    "dimensions": "8.6 H \u00d7 6.3 OD in (21.8 \u00d7 16.0 cm)",
+    "ip_rating": "IP54",
+    "radome": "PC (UV-stabilized)",
+    "mount_type": "1.5-inch stud; articulating wall/mast mount included; ceiling tile jam nut",
+    "vswr": "2.0:1",
+    "operating_temp": "-30 to 70 \u00b0C",
+    "image_url": "images/pctel/mpmi2458-6-rpsma.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL VenU Dual Band MIMO Omnidirectional Antenna datasheet",
+        "url": "https://pctel.com/datasheets/venu-dual-band-mimo-omnidirectional-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL VenU Dual Band MIMO Omnidirectional Antenna datasheet",
+        "id": "venu-dual-band-mimo-omnidirectional-antenna",
+        "url": "https://pctel.com/datasheets/venu-dual-band-mimo-omnidirectional-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Datasheet lists 3\u20134 dBi across both bands; catalog uses 3.5 dBi."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "PCTHPMIMO-2-MM",
+    "name": "Multiband MIMO Temporary Magnet Mount Antenna (2-element)",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 3.5,
+      "5": 3.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 2,
+    "polarization": "Vertical, linear",
+    "cable_length": "17 ft",
+    "cable_type": "Pro-Flex Plus 195 stranded",
+    "dimensions": "3.6 \u00d7 5.1 in (9.1 \u00d7 12.9 cm)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable rugged thermoplastics",
+    "mount_type": "Magnet mount",
+    "vswr": "<2.0:1",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/pctel/pcthpmimo-2-mm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Multiband MIMO Antennas for Secure Temporary Mount Applications datasheet",
+        "url": "https://pctel.com/datasheets/multiband-mimo-antennas-for-secure-temporary-mount-applications.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Multiband MIMO Antennas for Secure Temporary Mount Applications datasheet",
+        "id": "multiband-mimo-antennas-for-secure-temporary-mount-applications",
+        "url": "https://pctel.com/datasheets/multiband-mimo-antennas-for-secure-temporary-mount-applications.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "field_notes": {
+      "bands": "Marketing title says Wi-Fi 6E; electrical table lists 2.3\u20132.8 and 4.9\u20135.9 GHz only (no 6 GHz row).",
+      "name": "Black radome option uses B prefix; white SKUs mined."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "PCTHPMIMO-2-SF",
+    "name": "Coach Wi-Fi Multiband MIMO Permanent Mount Antenna (2-element)",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.3-2.8/4.9-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 1.5,
+      "5": 0.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0",
+        "5": "25\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 2,
+    "polarization": "Vertical, linear",
+    "cable_length": "17 ft",
+    "cable_type": "RG-58 (DBL) stranded",
+    "dimensions": "5.4 OD \u00d7 2.7 in H (137 \u00d7 67 mm)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable rugged thermoplastics",
+    "mount_type": "1-inch hole slotted stud mount with 3/4-16 UNF hex nut",
+    "vswr": "<1.8:1",
+    "isolation": "23 dB / 26 dB in-band between elements",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/pctel/pcthpmimo-2-sf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Coach Wi-Fi 6E Multiband MIMO Permanent Mount Antennas datasheet",
+        "url": "https://pctel.com/datasheets/coach-wifi-6e-multiband-mimo-permanent-mount-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Coach Wi-Fi 6E Multiband MIMO Permanent Mount Antennas datasheet",
+        "id": "coach-wifi-6e-multiband-mimo-permanent-mount-antennas",
+        "url": "https://pctel.com/datasheets/coach-wifi-6e-multiband-mimo-permanent-mount-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Datasheet lists 3\u20134 dBi across both bands; catalog uses 3.5 dBi."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "PCTHPMIMO-3-MM",
+    "name": "Multiband MIMO Temporary Magnet Mount Antenna (3-element)",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 3.5,
+      "5": 3.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 3,
+    "polarization": "Vertical, linear",
+    "cable_length": "17 ft",
+    "cable_type": "Pro-Flex Plus 195 stranded",
+    "dimensions": "3.6 \u00d7 5.1 in (9.1 \u00d7 12.9 cm)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable rugged thermoplastics",
+    "mount_type": "Magnet mount",
+    "vswr": "<2.0:1",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/pctel/pcthpmimo-3-mm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Multiband MIMO Antennas for Secure Temporary Mount Applications datasheet",
+        "url": "https://pctel.com/datasheets/multiband-mimo-antennas-for-secure-temporary-mount-applications.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Multiband MIMO Antennas for Secure Temporary Mount Applications datasheet",
+        "id": "multiband-mimo-antennas-for-secure-temporary-mount-applications",
+        "url": "https://pctel.com/datasheets/multiband-mimo-antennas-for-secure-temporary-mount-applications.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "field_notes": {
+      "bands": "Marketing title says Wi-Fi 6E; electrical table lists 2.3\u20132.8 and 4.9\u20135.9 GHz only (no 6 GHz row).",
+      "name": "Black radome option uses B prefix; white SKUs mined."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "PCTHPMIMO-3-SF",
+    "name": "Coach Wi-Fi Multiband MIMO Permanent Mount Antenna (3-element)",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.3-2.8/4.9-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 1.5,
+      "5": 0.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0",
+        "5": "25\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 3,
+    "polarization": "Vertical, linear",
+    "cable_length": "17 ft",
+    "cable_type": "RG-58 (DBL) stranded",
+    "dimensions": "5.4 OD \u00d7 2.7 in H (137 \u00d7 67 mm)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable rugged thermoplastics",
+    "mount_type": "1-inch hole slotted stud mount with 3/4-16 UNF hex nut",
+    "vswr": "<1.8:1",
+    "isolation": "23 dB / 26 dB in-band between elements",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/pctel/pcthpmimo-3-sf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Coach Wi-Fi 6E Multiband MIMO Permanent Mount Antennas datasheet",
+        "url": "https://pctel.com/datasheets/coach-wifi-6e-multiband-mimo-permanent-mount-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Coach Wi-Fi 6E Multiband MIMO Permanent Mount Antennas datasheet",
+        "id": "coach-wifi-6e-multiband-mimo-permanent-mount-antennas",
+        "url": "https://pctel.com/datasheets/coach-wifi-6e-multiband-mimo-permanent-mount-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Datasheet lists 3\u20134 dBi across both bands; catalog uses 3.5 dBi."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "PCTHPMIMO-4-MM",
+    "name": "Multiband MIMO Temporary Magnet Mount Antenna (4-element)",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 3.5,
+      "5": 3.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Vertical, linear",
+    "cable_length": "17 ft",
+    "cable_type": "Pro-Flex Plus 195 stranded",
+    "dimensions": "3.6 \u00d7 5.1 in (9.1 \u00d7 12.9 cm)",
+    "ip_rating": "IP67",
+    "radome": "White UV-stable rugged thermoplastics",
+    "mount_type": "Magnet mount",
+    "vswr": "<2.0:1",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/pctel/pcthpmimo-4-mm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Multiband MIMO Antennas for Secure Temporary Mount Applications datasheet",
+        "url": "https://pctel.com/datasheets/multiband-mimo-antennas-for-secure-temporary-mount-applications.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Multiband MIMO Antennas for Secure Temporary Mount Applications datasheet",
+        "id": "multiband-mimo-antennas-for-secure-temporary-mount-applications",
+        "url": "https://pctel.com/datasheets/multiband-mimo-antennas-for-secure-temporary-mount-applications.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "PCTMI2458-RPC",
+    "name": "Low Profile Dual Band Access Point Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.92 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "62\u00b0",
+        "5": "35\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "3.26 L \u00d7 0.77 OD in (8.28 \u00d7 1.95 cm)",
+    "ip_rating": "IPX7",
+    "radome": "PC, white UL94 V0",
+    "mount_type": "Direct access point mount",
+    "vswr": "<2.0:1",
+    "operating_temp": "-30 to 70 \u00b0C",
+    "image_url": "images/pctel/pctmi2458-rpc.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Low Profile Access Point Antenna for Broadband Wireless datasheet",
+        "url": "https://pctel.com/datasheets/low-profile-access-point-antenna-for-broadband-wireless.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Low Profile Access Point Antenna for Broadband Wireless datasheet",
+        "id": "low-profile-access-point-antenna-for-broadband-wireless",
+        "url": "https://pctel.com/datasheets/low-profile-access-point-antenna-for-broadband-wireless.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "PCTMI2458-RPSMA",
+    "name": "Very Low Profile Dual Band Access Point Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 2.2,
+      "5": 4.0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "35\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "polarization": "Vertical, linear",
+    "dimensions": "1.7 L \u00d7 0.75 OD in (4.3 \u00d7 1.9 cm)",
+    "radome": "PC",
+    "mount_type": "Direct access point mount",
+    "vswr": "<2.0:1",
+    "operating_temp": "0 to 55 \u00b0C",
+    "image_url": "images/pctel/pctmi2458-rpsma.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Very Low Profile Access Point Antenna datasheet",
+        "url": "https://pctel.com/datasheets/pctmi-very-low-profile-access-point-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Very Low Profile Access Point Antenna datasheet",
+        "id": "pctmi-very-low-profile-access-point-antenna",
+        "url": "https://pctel.com/datasheets/pctmi-very-low-profile-access-point-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/pctel/pctmi245871-rpc-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/pctel/pctmi245871-rpc-pattern-vertical.jpg"
+      },
+      {
+        "label": "Vertical (Phi 90\u00b0)",
+        "url": "images/pctel/pctmi245871-rpc-pattern-vertical-phi-90.jpg"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "Peak gain columns include 4 dBi at 6.875\u20137.125 GHz; catalog 6 GHz uses 3 dBi (5.925\u20136.875)."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "PCTMI245871-RPC",
+    "name": "Low Profile Tri-band Wi-Fi Access Point Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.925/5.925-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 1,
+      "5": 2,
+      "6": 3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "90\u00b0",
+        "5": "75\u00b0",
+        "6": "70\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "3.3 H \u00d7 0.78 OD in (83 \u00d7 20 mm)",
+    "weight": "1.3 oz (37 g)",
+    "radome": "White UL V0 plastic",
+    "mount_type": "Direct access point mount",
+    "vswr": "<2.0:1",
+    "operating_temp": "-30 to 70 \u00b0C",
+    "image_url": "images/pctel/pctmi245871-rpc.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Low Profile Tri-band Wi-Fi Access Point Antenna datasheet",
+        "url": "https://pctel.com/datasheets/low-profile-tri-band-wifi-access-point-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Low Profile Tri-band Wi-Fi Access Point Antenna datasheet",
+        "id": "low-profile-tri-band-wifi-access-point-antenna",
+        "url": "https://pctel.com/datasheets/low-profile-tri-band-wifi-access-point-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [
+      {
+        "item": "Scissors-style pipe mount bracket",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "images": [],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "Datasheet lists 16.5 dBi (4.9\u20135.4) and 15.5 dBi (5.4\u20135.99); catalog uses 16 dBi nominal."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "SP4959-16XP90",
+    "name": "4.9\u20135.9 GHz 90\u00b0 Sector Panel Antenna",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9-5.99 GHz",
+    "gain_dbi": {
+      "5": 16
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "90\u00b0"
+      },
+      "vertical": {
+        "5": "5\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 2,
+    "polarization": "Linear dual slant \u00b145\u00b0",
+    "dimensions": "28 \u00d7 6.7 \u00d7 3.5 in (711 \u00d7 171 \u00d7 90 mm)",
+    "weight": "7 lb (3.1 kg)",
+    "ip_rating": "IP31",
+    "radome": "Gray UV-resistant plastic",
+    "mount_type": "Adjustable scissors-style pipe mount with 0\u201310\u00b0 downtilt included",
+    "wind_rating": "125 mph",
+    "vswr": "<1.5:1",
+    "isolation": "30 dB typical",
+    "operating_temp": "-40 to 65 \u00b0C",
+    "image_url": "images/pctel/sp4959-16xp90.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Sector Panel Antenna datasheet",
+        "url": "https://pctel.com/datasheets/sector-panel-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Sector Panel Antenna datasheet",
+        "id": "sector-panel-antenna",
+        "url": "https://pctel.com/datasheets/sector-panel-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/pctel/wlp2458ngp-alt-1.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "field_notes": {
+      "gain_dbi": "3 dBi without ground plane; 3.5 dBi with 60 cm ground plane. Catalog uses 3 dBi."
+    },
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "WLP2458NGP",
+    "name": "Ground Plane Independent Low Profile Dual Band Wi-Fi Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "TNC jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "2.36 \u00d7 1.73 in (6.0 \u00d7 4.4 cm)",
+    "weight": "0.11 lb (50 g)",
+    "ip_rating": "IP67",
+    "radome": "White GE Lexan EXL9330",
+    "mount_type": "\u00be-inch permanent through-hole or bracket mount",
+    "vswr": "<2.0:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/wlp2458ngp.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Low Profile Dual Band Wi-Fi Antenna (ground plane independent) datasheet",
+        "url": "https://pctel.com/datasheets/low-profile-dual-band-wi-fi-antenna-ground-plane-independent.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Low Profile Dual Band Wi-Fi Antenna (ground plane independent) datasheet",
+        "id": "low-profile-dual-band-wi-fi-antenna-ground-plane-independent",
+        "url": "https://pctel.com/datasheets/low-profile-dual-band-wi-fi-antenna-ground-plane-independent.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "WV-COVDB2458",
+    "name": "Hush Covert Dual Band Wi-Fi Glass Mount Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.3-2.5/4.9-5.99 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 3.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "cable_length": "3 ft",
+    "cable_type": "RG316",
+    "dimensions": "2.25 \u00d7 0.75 \u00d7 0.17 in (57.1 \u00d7 19 \u00d7 4.4 mm)",
+    "weight": "0.054 lb (0.87 oz)",
+    "ip_rating": "IP67",
+    "radome": "Black overmolded polyamide",
+    "mount_type": "Glass mount (VHB tape)",
+    "vswr": "\u22642.0:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/wv-covdb2458.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Hush Low Profile Wi-Fi Glass Mount Antenna datasheet",
+        "url": "https://pctel.com/datasheets/hush-low-profile-wi-fi-glass-mount-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Hush Low Profile Wi-Fi Glass Mount Antenna datasheet",
+        "id": "hush-low-profile-wi-fi-glass-mount-antenna",
+        "url": "https://pctel.com/datasheets/hush-low-profile-wi-fi-glass-mount-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "PCTEL",
+    "included_parts": [],
+    "images": [],
+    "pattern_images": [],
+    "internal_notes": {
+      "maintainer": "PCTEL first-party datasheet mine 2026-11-22"
+    },
+    "sku": "WV-COVWIFI",
+    "name": "Hush Covert Wi-Fi Glass Mount Antenna 2.4 GHz",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.3-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 2.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "cable_length": "3 ft",
+    "cable_type": "RG316",
+    "dimensions": "2.25 \u00d7 0.75 \u00d7 0.17 in (57.1 \u00d7 19 \u00d7 4.4 mm)",
+    "weight": "0.054 lb (0.87 oz)",
+    "ip_rating": "IP67",
+    "radome": "Black overmolded polyamide",
+    "mount_type": "Glass mount (VHB tape)",
+    "vswr": "\u22642.0:1",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/pctel/wv-covwifi.jpg",
+    "datasheet_urls": [
+      {
+        "label": "PCTEL Hush Low Profile Wi-Fi Glass Mount Antenna datasheet",
+        "url": "https://pctel.com/datasheets/hush-low-profile-wi-fi-glass-mount-antenna.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PCTEL Hush Low Profile Wi-Fi Glass Mount Antenna datasheet",
+        "id": "hush-low-profile-wi-fi-glass-mount-antenna",
+        "url": "https://pctel.com/datasheets/hush-low-profile-wi-fi-glass-mount-antenna.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
   }
 ]
