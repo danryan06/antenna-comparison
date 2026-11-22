@@ -26544,5 +26544,3197 @@
         "url": "https://www.cisco.com/c/en/us/td/docs/wireless/antenna/installation/guide/ant2451.pdf"
       }
     ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-311",
+    "name": "Tri-band articulating omni dipole, direct-mount RP-SMA",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.400\u20132.500 / 5.100\u20135.900 / 5.900\u20137.150 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 6,
+      "6": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "50\u00b0",
+        "5": "25\u00b0",
+        "6": "25\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "19 \u00d7 14 \u00d7 153 mm (straight); 19 \u00d7 39 \u00d7 137 mm (knuckle at 90\u00b0)",
+    "weight": "21 g",
+    "ip_rating": null,
+    "radome": "ABS, UV resistant, white",
+    "mount_type": "Articulating direct mount to the AP",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "< 2.0:1",
+    "isolation": null,
+    "operating_temp": "-10 to +55 \u00b0C",
+    "image_url": "images/aruba/ap-ant-311.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-311.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-311-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-311-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-311-pattern-2-4-ghz-vertical-90.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-311-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-311-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-311-pattern-5-ghz-vertical-90.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/aruba/ap-ant-311-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/aruba/ap-ant-311-pattern-6-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-311-pattern-6-ghz-vertical-90.jpg"
+      }
+    ],
+    "dimension_image_url": "images/aruba/ap-ant-311-dimensions.jpg",
+    "dimension_image_kind": "mechanical",
+    "datasheet_urls": [
+      {
+        "label": "HPE AP-ANT-311 data sheet (a00134289enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00134289enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE AP-ANT-311 data sheet (a00134289enw)",
+        "id": "a00134289enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00134289enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-312",
+    "name": "Tri-band low-profile articulating omni dipole, direct-mount RP-SMA",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.400\u20132.500 / 5.150\u20135.850 / 5.925\u20137.125 GHz",
+    "gain_dbi": {
+      "2.4": 3.3,
+      "5": 3.3,
+      "6": 4.1
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "39\u00b0",
+        "5": "72\u00b0",
+        "6": "60\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "16.5 \u00d7 10.3 \u00d7 69.2 mm (straight); 16.5 \u00d7 28.2 \u00d7 51.0 mm (knuckle at 90\u00b0)",
+    "weight": "10.5 g",
+    "ip_rating": null,
+    "radome": "PC+ABS, UL94-V0, white",
+    "mount_type": "Articulating direct mount to the AP",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "< 2.0:1",
+    "isolation": null,
+    "operating_temp": "-40 to +95 \u00b0C",
+    "image_url": "images/aruba/ap-ant-312.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-312.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-312-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-312-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-312-pattern-2-4-ghz-vertical-90.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-312-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-312-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-312-pattern-5-ghz-vertical-90.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/aruba/ap-ant-312-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/aruba/ap-ant-312-pattern-6-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-312-pattern-6-ghz-vertical-90.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE AP-ANT-312 data sheet (a00134290enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00134290enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE AP-ANT-312 data sheet (a00134290enw)",
+        "id": "a00134290enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00134290enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-313",
+    "name": "Tri-band cabled omni dipole, indoor/outdoor",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.400\u20132.500 / 4.900\u20136.000 / 6.000\u20137.125 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 6,
+      "6": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "50\u00b0",
+        "5": "20\u00b0",
+        "6": "20\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": "36 in",
+    "cable_type": "Plenum RG58LL",
+    "dimensions": "\u00d828.6 \u00d7 245.7 mm",
+    "weight": "120 g",
+    "ip_rating": "IP44 upright (inverted not rated)",
+    "radome": "PC ET3113, white",
+    "mount_type": "Inverted ceiling clip, inverted I-beam clamp, or upright pole mount",
+    "included_parts": [
+      {
+        "item": "Ceiling clip, I-beam clamp, and upright pole mount hardware",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "193 km/h",
+    "vswr": "< 2.0:1",
+    "isolation": null,
+    "operating_temp": "-40 to +70 \u00b0C",
+    "image_url": "images/aruba/ap-ant-313.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-313.jpg"
+      },
+      {
+        "label": "Alternate view",
+        "url": "images/aruba/ap-ant-313-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-313-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-313-pattern-2-4-ghz-vertical-90.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-313-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-313-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-313-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-313-pattern-5-ghz-vertical-90.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/aruba/ap-ant-313-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/aruba/ap-ant-313-pattern-6-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-313-pattern-6-ghz-vertical-90.jpg"
+      }
+    ],
+    "dimension_image_url": "images/aruba/ap-ant-313-dimensions.jpg",
+    "dimension_image_kind": "mechanical",
+    "datasheet_urls": [
+      {
+        "label": "HPE AP-ANT-313 data sheet (a00134291enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00134291enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE AP-ANT-313 data sheet (a00134291enw)",
+        "id": "a00134291enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00134291enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-320",
+    "name": "Tri-band 2-element downtilt omni ceiling antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.400\u20132.500 / 5.100\u20135.900 / 5.900\u20137.150 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 5,
+      "6": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "90\u00b0",
+        "5": "60\u00b0",
+        "6": "60\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 2,
+    "polarization": "Vertical",
+    "cable_length": "75 cm",
+    "cable_type": "Plenum RG58LL",
+    "dimensions": "\u00d8177.8 \u00d7 32 mm",
+    "weight": "0.33 kg",
+    "ip_rating": "IP20",
+    "radome": "PC/ABS, UV resistant, white",
+    "mount_type": "Flush mount to ceiling tile or drywall (threaded post and nut)",
+    "included_parts": [
+      {
+        "item": "Mounting nut",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "< 2.0:1",
+    "isolation": "18 dB",
+    "operating_temp": "-40 to +70 \u00b0C",
+    "image_url": "images/aruba/ap-ant-320.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-320.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-320-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal (40\u00b0 downtilt)",
+        "url": "images/aruba/ap-ant-320-pattern-2-4-ghz-horizontal-2.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-320-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-320-pattern-2-4-ghz-vertical-90.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-320-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal (40\u00b0 downtilt)",
+        "url": "images/aruba/ap-ant-320-pattern-5-ghz-horizontal-2.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-320-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-320-pattern-5-ghz-vertical-90.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/aruba/ap-ant-320-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal (40\u00b0 downtilt)",
+        "url": "images/aruba/ap-ant-320-pattern-6-ghz-horizontal-2.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/aruba/ap-ant-320-pattern-6-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-320-pattern-6-ghz-vertical-90.jpg"
+      }
+    ],
+    "dimension_image_url": "images/aruba/ap-ant-320-dimensions.jpg",
+    "dimension_image_kind": "mechanical",
+    "datasheet_urls": [
+      {
+        "label": "HPE AP-ANT-320 data sheet (a00134292enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00134292enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE AP-ANT-320 data sheet (a00134292enw)",
+        "id": "a00134292enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00134292enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-325",
+    "name": "Tri-band 2-element medium-gain directional panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.400\u20132.500 / 4.900\u20135.900 / 6.000\u20137.150 GHz",
+    "gain_dbi": {
+      "2.4": 6.1,
+      "5": 6.1,
+      "6": 5.4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "79.3\u00b0",
+        "5": "83.2\u00b0",
+        "6": "80.3\u00b0"
+      },
+      "vertical": {
+        "2.4": "79.1\u00b0",
+        "5": "78.5\u00b0",
+        "6": "78.0\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 2,
+    "polarization": "Dual-polarized",
+    "cable_length": "75 cm",
+    "cable_type": "Plenum RG58LL",
+    "dimensions": "200 \u00d7 200 \u00d7 46.5 mm",
+    "weight": "0.4 kg",
+    "ip_rating": "IP67",
+    "radome": "ASA (Luran S 788T), UV, white",
+    "mount_type": "Wall or ceiling; optional articulating wall/pole mount",
+    "included_parts": [
+      {
+        "item": "Wall mounting hardware",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "136 mph",
+    "vswr": "< 2:1",
+    "isolation": "20 dB (2.4) / 25 dB (5) / 23 dB (6)",
+    "operating_temp": "-40 to 65 \u00b0C",
+    "image_url": "images/aruba/ap-ant-325.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-325.jpg"
+      },
+      {
+        "label": "RP-SMA male connector",
+        "url": "images/aruba/ap-ant-325-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-325-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-325-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-325-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-325-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/aruba/ap-ant-325-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/aruba/ap-ant-325-pattern-6-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE AP-ANT-325 data sheet (a00142651enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00142651enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE AP-ANT-325 data sheet (a00142651enw)",
+        "id": "a00142651enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00142651enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-328",
+    "name": "Tri-band 2-element high-gain directional panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.400\u20132.500 / 5.000\u20135.875 / 5.935\u20137.150 GHz",
+    "gain_dbi": {
+      "2.4": 7,
+      "5": 7,
+      "6": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "70\u00b0",
+        "5": "56\u00b0",
+        "6": "56\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "56\u00b0",
+        "6": "56\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 2,
+    "polarization": "Dual slant \u00b145\u00b0",
+    "cable_length": "750 mm",
+    "cable_type": null,
+    "dimensions": "190 \u00d7 190 \u00d7 40 mm",
+    "weight": "1 kg",
+    "ip_rating": "IP67",
+    "radome": "Polycarbonate, grey-white (RAL 9002)",
+    "mount_type": "Wall or ceiling; optional articulating wall/pole mount",
+    "included_parts": [
+      {
+        "item": "Wall anchors",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "220 km/h survival / 160 km/h operation",
+    "vswr": "< 2.0:1",
+    "isolation": "20 dB",
+    "operating_temp": "-40 to +85 \u00b0C",
+    "image_url": "images/aruba/ap-ant-328.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-328.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-328-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-328-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-328-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-328-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/aruba/ap-ant-328-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/aruba/ap-ant-328-pattern-6-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE AP-ANT-328 data sheet (a00134294enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00134294enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE AP-ANT-328 data sheet (a00134294enw)",
+        "id": "a00134294enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00134294enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-340",
+    "name": "Tri-band 4-element downtilt omni ceiling antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.400\u20132.500 / 5.100\u20135.900 / 5.900\u20137.150 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 5,
+      "6": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "80\u00b0",
+        "5": "60\u00b0",
+        "6": "40\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "75 cm",
+    "cable_type": "Plenum RG58LL",
+    "dimensions": "\u00d8177.8 \u00d7 32 mm",
+    "weight": "0.44 kg",
+    "ip_rating": "IP20",
+    "radome": "PC/ABS, UV resistant, white",
+    "mount_type": "Flush mount to ceiling tile or drywall (threaded post and nut)",
+    "included_parts": [
+      {
+        "item": "Mounting nut",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "< 2.0:1",
+    "isolation": "18 dB",
+    "operating_temp": "-40 to +70 \u00b0C",
+    "image_url": "images/aruba/ap-ant-340.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-340.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-340-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal (40\u00b0 downtilt)",
+        "url": "images/aruba/ap-ant-340-pattern-2-4-ghz-horizontal-2.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-340-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-340-pattern-2-4-ghz-vertical-90.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-340-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal (40\u00b0 downtilt)",
+        "url": "images/aruba/ap-ant-340-pattern-5-ghz-horizontal-2.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-340-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-340-pattern-5-ghz-vertical-90.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/aruba/ap-ant-340-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal (40\u00b0 downtilt)",
+        "url": "images/aruba/ap-ant-340-pattern-6-ghz-horizontal-2.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/aruba/ap-ant-340-pattern-6-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Vertical (90\u00b0)",
+        "url": "images/aruba/ap-ant-340-pattern-6-ghz-vertical-90.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE AP-ANT-340 data sheet (a00134295enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00134295enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE AP-ANT-340 data sheet (a00134295enw)",
+        "id": "a00134295enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00134295enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-345",
+    "name": "Tri-band 4-element medium-gain directional panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.400\u20132.500 / 4.900\u20135.900 / 6.000\u20137.150 GHz",
+    "gain_dbi": {
+      "2.4": 6.1,
+      "5": 6.1,
+      "6": 5.4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "79.3\u00b0",
+        "5": "83.2\u00b0",
+        "6": "80.3\u00b0"
+      },
+      "vertical": {
+        "2.4": "79.1\u00b0",
+        "5": "78.5\u00b0",
+        "6": "78.0\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Dual-polarized",
+    "cable_length": "75 cm",
+    "cable_type": "Plenum RG58LL",
+    "dimensions": "200 \u00d7 200 \u00d7 46.5 mm",
+    "weight": "0.4 kg",
+    "ip_rating": "IP67",
+    "radome": "ASA (Luran S 788T), UV, white",
+    "mount_type": "Wall or ceiling; optional articulating wall/pole mount",
+    "included_parts": [
+      {
+        "item": "Wall mounting hardware",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "136 mph",
+    "vswr": "< 2:1",
+    "isolation": "20 dB (2.4) / 25 dB (5) / 23 dB (6)",
+    "operating_temp": "-40 to 65 \u00b0C",
+    "image_url": "images/aruba/ap-ant-345.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-345.jpg"
+      },
+      {
+        "label": "RP-SMA male connector",
+        "url": "images/aruba/ap-ant-345-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-345-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-345-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-345-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-345-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/aruba/ap-ant-345-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/aruba/ap-ant-345-pattern-6-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE AP-ANT-345 data sheet (a00142652enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00142652enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE AP-ANT-345 data sheet (a00142652enw)",
+        "id": "a00142652enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00142652enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-348",
+    "name": "Tri-band 4-element high-gain directional panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.400\u20132.500 / 5.000\u20135.875 / 5.935\u20137.150 GHz",
+    "gain_dbi": {
+      "2.4": 7,
+      "5": 7,
+      "6": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "70\u00b0",
+        "5": "56\u00b0",
+        "6": "56\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "56\u00b0",
+        "6": "56\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Dual slant \u00b145\u00b0 \u00d7 2",
+    "cable_length": "750 mm",
+    "cable_type": null,
+    "dimensions": "190 \u00d7 190 \u00d7 40 mm",
+    "weight": "1 kg",
+    "ip_rating": "IP67",
+    "radome": "Polycarbonate, grey-white (RAL 9002)",
+    "mount_type": "Wall or ceiling; optional articulating wall/pole mount",
+    "included_parts": [
+      {
+        "item": "Wall anchors",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "220 km/h survival / 160 km/h operation",
+    "vswr": "< 2.0:1",
+    "isolation": "20 dB",
+    "operating_temp": "-40 to +85 \u00b0C",
+    "image_url": "images/aruba/ap-ant-348.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-348.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-348-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-348-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-348-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-348-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/aruba/ap-ant-348-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/aruba/ap-ant-348-pattern-6-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/aruba/ap-ant-348-dimensions.jpg",
+    "dimension_image_kind": "mechanical",
+    "datasheet_urls": [
+      {
+        "label": "HPE AP-ANT-348 data sheet (a00134297enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00134297enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE AP-ANT-348 data sheet (a00134297enw)",
+        "id": "a00134297enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00134297enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-22",
+    "name": "Dual-band downtilt omni kit, two antennas",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20136.0 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "45\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 2,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "\u00d819.6 \u00d7 44.2 mm each",
+    "weight": "30 g each",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Direct attach to the AP",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1 max",
+    "isolation": null,
+    "operating_temp": "-40 to +65 \u00b0C",
+    "image_url": "images/aruba/ap-ant-22.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-22.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Vertical",
+        "url": "images/aruba/ap-ant-22-pattern-vertical.jpg"
+      },
+      {
+        "label": "Horizontal",
+        "url": "images/aruba/ap-ant-22-pattern-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE AP-ANT-22 data sheet (a00144079enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144079enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE AP-ANT-22 data sheet (a00144079enw)",
+        "id": "a00144079enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144079enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-45",
+    "name": "Dual-band 4-element 90\u00b0 sector panel",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20136.0 GHz",
+    "gain_dbi": {
+      "2.4": 4.5,
+      "5": 5.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "90\u00b0",
+        "5": "90\u00b0"
+      },
+      "vertical": {
+        "2.4": "90\u00b0",
+        "5": "90\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "\u00b145\u00b0 and \u00b1135\u00b0",
+    "cable_length": "75 cm",
+    "cable_type": null,
+    "dimensions": "200 \u00d7 200 \u00d7 40 mm",
+    "weight": "590 g",
+    "ip_rating": null,
+    "radome": "Plastic radome, aluminum housing",
+    "mount_type": "Wall; optional azimuth/elevation pole mount",
+    "included_parts": [
+      {
+        "item": "Wall mount anchors",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 max",
+    "isolation": null,
+    "operating_temp": "-40 to +65 \u00b0C",
+    "image_url": "images/aruba/ap-ant-45.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-45.jpg"
+      },
+      {
+        "label": "Isometric",
+        "url": "images/aruba/ap-ant-45-alt.jpg"
+      },
+      {
+        "label": "Pole mount",
+        "url": "images/aruba/ap-ant-45-alt2.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-45-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-45-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-45-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-45-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE AP-ANT-45 data sheet (a00135901enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00135901enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE AP-ANT-45 data sheet (a00135901enw)",
+        "id": "a00135901enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00135901enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-1B",
+    "name": "Dual-band articulating omni, off-white",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20135.875 GHz",
+    "gain_dbi": {
+      "2.4": 3.8,
+      "5": 5.8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "50\u00b0",
+        "5": "25\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "0.75 \u00d7 1.54 \u00d7 5.00 in (19 \u00d7 39 \u00d7 127 mm) with the knuckle at 90\u00b0",
+    "weight": null,
+    "ip_rating": null,
+    "radome": "ABS, UV resistant, off-white",
+    "mount_type": "Articulating direct mount to the AP",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "< 2.0:1",
+    "isolation": null,
+    "operating_temp": "-10 to +55 \u00b0C",
+    "image_url": "images/aruba/ap-ant-1b.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-1b.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-1b-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-1b-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-1b-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-1b-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-1b-pattern-5-ghz-vertical-2.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-1b-pattern-5-ghz-vertical-3.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-1b-pattern-5-ghz-horizontal-2.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-1b-pattern-5-ghz-horizontal-3.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba AP-ANT-1 data sheet (DS_AP-ANT-1_120516)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-1.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba AP-ANT-1 data sheet (DS_AP-ANT-1_120516)",
+        "id": "DS_AP-ANT-1_120516",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-1.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-1W",
+    "name": "Dual-band articulating omni, white",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20135.875 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "50\u00b0",
+        "5": "25\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "0.75 \u00d7 1.54 \u00d7 5.00 in (19 \u00d7 39 \u00d7 127 mm) with the knuckle at 90\u00b0",
+    "weight": null,
+    "ip_rating": null,
+    "radome": "ABS, UV resistant, white",
+    "mount_type": "Articulating direct mount to the AP",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "< 2.0:1",
+    "isolation": null,
+    "operating_temp": "-10 to +55 \u00b0C",
+    "image_url": "images/aruba/ap-ant-1w.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-1w.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-1w-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-1w-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-1w-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-1w-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-1w-pattern-5-ghz-vertical-2.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-1w-pattern-5-ghz-vertical-3.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-1w-pattern-5-ghz-horizontal-2.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-1w-pattern-5-ghz-horizontal-3.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba AP-ANT-1 data sheet (DS_AP-ANT-1_120516)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-1.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba AP-ANT-1 data sheet (DS_AP-ANT-1_120516)",
+        "id": "DS_AP-ANT-1_120516",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-1.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-1F",
+    "name": "Dual-band articulating omni with cellular filter",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20135.875 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "50\u00b0",
+        "5": "25\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "19 \u00d7 14 \u00d7 152 mm extended; 19 \u00d7 39 \u00d7 127 mm with the knuckle at 90\u00b0",
+    "weight": null,
+    "ip_rating": null,
+    "radome": "ABS, UV resistant, off-white",
+    "mount_type": "Articulating direct mount to the AP",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "< 2.0:1",
+    "isolation": null,
+    "operating_temp": "-10 to +55 \u00b0C",
+    "image_url": "images/aruba/ap-ant-1f.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-1f.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-1f-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-1f-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-1f-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-1f-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [],
+    "sources": []
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-20A",
+    "name": "Compact dual-band articulating omni, classic color",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20135.875 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 2
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "80\u00b0",
+        "5": "80\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "102 \u00d7 14.8 \u00d7 10 mm extended; 79 \u00d7 35.3 \u00d7 10 mm with the knuckle at 90\u00b0",
+    "weight": null,
+    "ip_rating": null,
+    "radome": "POM/ABS",
+    "mount_type": "Articulating direct mount to the AP",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "< 2.0:1",
+    "isolation": null,
+    "operating_temp": "-10 to +55 \u00b0C",
+    "image_url": "images/aruba/ap-ant-20a.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-20a.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-20a-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-20a-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-20a-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-20a-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba AP-ANT-20 data sheet (DS_AP-ANT-20_010413)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-20.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba AP-ANT-20 data sheet (DS_AP-ANT-20_010413)",
+        "id": "DS_AP-ANT-20_010413",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-20.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-20W",
+    "name": "Compact dual-band articulating omni, white",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20135.875 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 2
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "80\u00b0",
+        "5": "80\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "102 \u00d7 14.8 \u00d7 10 mm extended; 79 \u00d7 35.3 \u00d7 10 mm with the knuckle at 90\u00b0",
+    "weight": null,
+    "ip_rating": null,
+    "radome": "POM/ABS, white",
+    "mount_type": "Articulating direct mount to the AP",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "< 2.0:1",
+    "isolation": null,
+    "operating_temp": "-10 to +55 \u00b0C",
+    "image_url": "images/aruba/ap-ant-20w.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-20w.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-20w-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-20w-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-20w-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-20w-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba AP-ANT-20 data sheet (DS_AP-ANT-20_010413)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-20.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba AP-ANT-20 data sheet (DS_AP-ANT-20_010413)",
+        "id": "DS_AP-ANT-20_010413",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-20.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-25A",
+    "name": "Dual-band 2-element 90\u00b0 sector panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20136.0 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "100\u00b0",
+        "5": "100\u00b0"
+      },
+      "vertical": {
+        "2.4": "90\u00b0",
+        "5": "90\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 2,
+    "polarization": "Dual slant \u00b145\u00b0",
+    "cable_length": "75 cm",
+    "cable_type": null,
+    "dimensions": "200 \u00d7 200 \u00d7 32 mm",
+    "weight": "0.7 kg",
+    "ip_rating": null,
+    "radome": "Plastic radome, aluminum housing",
+    "mount_type": "Wall (anchors included); optional azimuth/elevation mount",
+    "included_parts": [
+      {
+        "item": "Wall anchors",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 max",
+    "isolation": null,
+    "operating_temp": "-45 to +70 \u00b0C",
+    "image_url": "images/aruba/ap-ant-25a.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-25a.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-25a-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-25a-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-25a-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-25a-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba AP-ANT-25A data sheet (DS_AP-ANT-25A_010915)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-25a.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba AP-ANT-25A data sheet (DS_AP-ANT-25A_010915)",
+        "id": "DS_AP-ANT-25A_010915",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-25a.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-28",
+    "name": "Dual-band 2-element 60\u00b0 sector panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20136.0 GHz",
+    "gain_dbi": {
+      "2.4": 7.5,
+      "5": 7.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 2,
+    "polarization": "Dual slant \u00b145\u00b0",
+    "cable_length": "75 cm",
+    "cable_type": null,
+    "dimensions": "197.5 \u00d7 197.5 \u00d7 34.5 mm",
+    "weight": "489 g",
+    "ip_rating": null,
+    "radome": "Plastic radome, aluminum housing",
+    "mount_type": "Wall (anchors included); optional azimuth/elevation mount",
+    "included_parts": [
+      {
+        "item": "Wall anchors",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 max",
+    "isolation": null,
+    "operating_temp": "-45 to +65 \u00b0C",
+    "image_url": "images/aruba/ap-ant-28.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-28.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-28-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-28-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-28-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-28-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba AP-ANT-28 data sheet (DS_AP-ANT-28_061714)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-28.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba AP-ANT-28 data sheet (DS_AP-ANT-28_061714)",
+        "id": "DS_AP-ANT-28_061714",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-28.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-32",
+    "name": "Dual-band downtilt omni kit, three antennas",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20136.0 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "45\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 3,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "\u00d819.6 \u00d7 44.2 mm each",
+    "weight": "30 g each",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Direct attach to the AP",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1 max",
+    "isolation": null,
+    "operating_temp": "-40 to +65 \u00b0C",
+    "image_url": "images/aruba/ap-ant-32.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-32.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Vertical",
+        "url": "images/aruba/ap-ant-32-pattern-vertical.jpg"
+      },
+      {
+        "label": "Horizontal",
+        "url": "images/aruba/ap-ant-32-pattern-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba AP-ANT-32 data sheet (DS_AP-ANT-32_062215)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-32.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba AP-ANT-32 data sheet (DS_AP-ANT-32_062215)",
+        "id": "DS_AP-ANT-32_062215",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-32.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-35A",
+    "name": "Dual-band 3-element 90\u00b0 sector panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20136.0 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "100\u00b0",
+        "5": "100\u00b0"
+      },
+      "vertical": {
+        "2.4": "90\u00b0",
+        "5": "90\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 3,
+    "polarization": "Dual slant \u00b145\u00b0",
+    "cable_length": "75 cm",
+    "cable_type": null,
+    "dimensions": "200 \u00d7 200 \u00d7 32 mm",
+    "weight": "0.75 kg",
+    "ip_rating": null,
+    "radome": "Plastic radome, aluminum housing",
+    "mount_type": "Wall (anchors included); optional azimuth/elevation mount",
+    "included_parts": [
+      {
+        "item": "Wall anchors",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 max",
+    "isolation": null,
+    "operating_temp": "-45 to +70 \u00b0C",
+    "image_url": "images/aruba/ap-ant-35a.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-35a.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-35a-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-35a-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-35a-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-35a-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba AP-ANT-35A data sheet (DS_AP-ANT-35A_010915)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-35a.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba AP-ANT-35A data sheet (DS_AP-ANT-35A_010915)",
+        "id": "DS_AP-ANT-35A_010915",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-35a.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-38",
+    "name": "Dual-band 3-element 60\u00b0 sector panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20136.0 GHz",
+    "gain_dbi": {
+      "2.4": 7.5,
+      "5": 7.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 3,
+    "polarization": "Vertical and slant \u00b145\u00b0",
+    "cable_length": "75 cm",
+    "cable_type": null,
+    "dimensions": "197.5 \u00d7 197.5 \u00d7 34.5 mm",
+    "weight": "548 g",
+    "ip_rating": null,
+    "radome": "Plastic radome, aluminum housing",
+    "mount_type": "Wall (anchors included); optional azimuth/elevation mount",
+    "included_parts": [
+      {
+        "item": "Wall anchors",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 max",
+    "isolation": null,
+    "operating_temp": "-45 to +65 \u00b0C",
+    "image_url": "images/aruba/ap-ant-38.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-38.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-38-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-38-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-38-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-38-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba AP-ANT-38 data sheet (DS_AP-ANT-38_072715)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-38.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba AP-ANT-38 data sheet (DS_AP-ANT-38_072715)",
+        "id": "DS_AP-ANT-38_072715",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-38.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-40",
+    "name": "Dual-band 4-element downtilt omni ceiling antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400\u20132.500 / 4.900\u20136.000 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "100\u00b0",
+        "5": "100\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "750 mm",
+    "cable_type": "Plenum RG58",
+    "dimensions": "\u00d8178 \u00d7 32 mm",
+    "weight": "410 g",
+    "ip_rating": null,
+    "radome": "PC/ABS UL94-V0, white",
+    "mount_type": "Flush mount to ceiling tile or drywall; solid-surface hardware also supplied",
+    "included_parts": [
+      {
+        "item": "Mounting nut and solid-surface hardware",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "< 2.0:1",
+    "isolation": null,
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/aruba/ap-ant-40.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-40.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-40-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-40-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-40-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-40-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba AP-ANT-40 data sheet (DS_AP-ANT-40_072415)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-40.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba AP-ANT-40 data sheet (DS_AP-ANT-40_072415)",
+        "id": "DS_AP-ANT-40_072415",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ap-ant-40.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "AP-ANT-48",
+    "name": "Dual-band 4-element 60\u00b0 sector panel",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20136.0 GHz",
+    "gain_dbi": {
+      "2.4": 8.5,
+      "5": 8.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "70\u00b0",
+        "5": "56\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "56\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "\u00b145\u00b0 and \u00b1135\u00b0",
+    "cable_length": "75 cm",
+    "cable_type": null,
+    "dimensions": "190 \u00d7 190 \u00d7 44 mm (excluding wall-mount flanges)",
+    "weight": "700 g",
+    "ip_rating": null,
+    "radome": "Plastic radome, aluminum housing",
+    "mount_type": "Wall; optional azimuth/elevation pole mount",
+    "included_parts": [
+      {
+        "item": "Wall mount anchors",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 max",
+    "isolation": null,
+    "operating_temp": "-45 to +65 \u00b0C",
+    "image_url": "images/aruba/ap-ant-48.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ap-ant-48.jpg"
+      },
+      {
+        "label": "Pole mount",
+        "url": "images/aruba/ap-ant-48-alt.jpg"
+      },
+      {
+        "label": "Wall mount",
+        "url": "images/aruba/ap-ant-48-alt2.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ap-ant-48-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ap-ant-48-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ap-ant-48-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ap-ant-48-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE AP-ANT-48 data sheet (a00115417enw)",
+        "url": "https://www.hpe.com/psnow/doc/a00115417enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE AP-ANT-48 data sheet (a00115417enw)",
+        "id": "a00115417enw",
+        "url": "https://www.hpe.com/psnow/doc/a00115417enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "ANT-2x2-2005",
+    "name": "2.4 GHz 5 dBi omni pair, N male",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4\u20132.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0 (Vpol) / 25\u00b0 (Hpol)"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 2,
+    "polarization": "1 vertical, 1 horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "Vpol 309 \u00d7 32 \u00d7 32 mm; Hpol 329 \u00d7 45 \u00d7 45 mm",
+    "weight": "Vpol 140 g; Hpol 260 g",
+    "ip_rating": null,
+    "radome": "Polycarbonate, UV, white",
+    "mount_type": "Direct mount or pole mount",
+    "included_parts": [
+      {
+        "item": "Pole mount kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "Vpol < 1.7:1 / Hpol < 2.0:1",
+    "isolation": null,
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/aruba/ant-2x2-2005.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ant-2x2-2005.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ant-2x2-2005-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ant-2x2-2005-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE ANT-2x2-2005 data sheet (a00144082enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144082enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE ANT-2x2-2005 data sheet (a00144082enw)",
+        "id": "a00144082enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144082enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "ANT-2x2-2314",
+    "name": "2.4 GHz 14 dBi 30\u00b0 \u00d7 30\u00b0 directional panel",
+    "form": "High-density patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4\u20132.5 GHz",
+    "gain_dbi": {
+      "2.4": 14
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "30\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 2,
+    "polarization": "Horizontal and vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "260 \u00d7 261 \u00d7 30 mm",
+    "weight": "1000 g",
+    "ip_rating": null,
+    "radome": "Plastic radome, aluminum housing",
+    "mount_type": "Wall or pole",
+    "included_parts": [
+      {
+        "item": "Wall and pole mount kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "1.5:1 typical",
+    "isolation": null,
+    "operating_temp": "-45 to +65 \u00b0C",
+    "image_url": "images/aruba/ant-2x2-2314.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ant-2x2-2314.jpg"
+      },
+      {
+        "label": "Back view",
+        "url": "images/aruba/ant-2x2-2314-alt.jpg"
+      },
+      {
+        "label": "Mount kit illustration",
+        "url": "images/aruba/ant-2x2-2314-alt2.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ant-2x2-2314-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ant-2x2-2314-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE ANT-2x2-2314 data sheet (a00144083enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144083enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE ANT-2x2-2314 data sheet (a00144083enw)",
+        "id": "a00144083enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144083enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "ANT-2x2-2714",
+    "name": "2.4 GHz 14 dBi 70\u00b0 sector panel",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.400\u20132.483 GHz",
+    "gain_dbi": {
+      "2.4": 14
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "70\u00b0"
+      },
+      "vertical": {
+        "2.4": "23\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 2,
+    "polarization": "Dual slant \u00b145\u00b0",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "306 \u00d7 306 \u00d7 25 mm",
+    "weight": "1700 g",
+    "ip_rating": null,
+    "radome": "ABS with UV protection; powder-coated aluminum housing",
+    "mount_type": "Wall or pole",
+    "included_parts": [
+      {
+        "item": "Wall and pole mount kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "< 1.5:1",
+    "isolation": null,
+    "operating_temp": "-45 to +70 \u00b0C",
+    "image_url": "images/aruba/ant-2x2-2714.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ant-2x2-2714.jpg"
+      },
+      {
+        "label": "Side view",
+        "url": "images/aruba/ant-2x2-2714-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ant-2x2-2714-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ant-2x2-2714-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE ANT-2x2-2714 data sheet (a00144087enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144087enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE ANT-2x2-2714 data sheet (a00144087enw)",
+        "id": "a00144087enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144087enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "ANT-2x2-5005",
+    "name": "5 GHz 5 dBi omni pair, N male",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9\u20135.875 GHz",
+    "gain_dbi": {
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "29\u00b0 (Vpol) / 33\u00b0 (Hpol)"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 2,
+    "polarization": "1 vertical, 1 horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "200 \u00d7 25 \u00d7 25 mm each",
+    "weight": "140 g each",
+    "ip_rating": null,
+    "radome": "Polycarbonate, UV, white",
+    "mount_type": "Direct mount or pole mount",
+    "included_parts": [
+      {
+        "item": "Pole mount kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2.0:1",
+    "isolation": null,
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/aruba/ant-2x2-5005.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ant-2x2-5005.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ant-2x2-5005-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ant-2x2-5005-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE ANT-2x2-5005 data sheet (a00144084enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144084enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE ANT-2x2-5005 data sheet (a00144084enw)",
+        "id": "a00144084enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144084enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "ANT-2x2-5010",
+    "name": "5 GHz 10 dBi omni pair, N male",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9\u20135.875 GHz",
+    "gain_dbi": {
+      "5": 10
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "8\u00b0 (Vpol) / 9.5\u00b0 (Hpol)"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 2,
+    "polarization": "1 vertical, 1 horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "Vpol 495 \u00d7 25 \u00d7 25 mm; Hpol 451 \u00d7 25 \u00d7 25 mm",
+    "weight": "180 g each",
+    "ip_rating": null,
+    "radome": "Polycarbonate, UV, white",
+    "mount_type": "Direct mount or pole mount",
+    "included_parts": [
+      {
+        "item": "Pole mount kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2.0:1",
+    "isolation": null,
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/aruba/ant-2x2-5010.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ant-2x2-5010.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ant-2x2-5010-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ant-2x2-5010-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE ANT-2x2-5010 data sheet (a00144085enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144085enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE ANT-2x2-5010 data sheet (a00144085enw)",
+        "id": "a00144085enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144085enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "ANT-2x2-5314",
+    "name": "5 GHz 14 dBi 30\u00b0 \u00d7 30\u00b0 directional panel",
+    "form": "High-density patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9\u20136.0 GHz",
+    "gain_dbi": {
+      "5": 14
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "30\u00b0"
+      },
+      "vertical": {
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 2,
+    "polarization": "Horizontal and vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "190 \u00d7 190 \u00d7 30 mm",
+    "weight": "700 g",
+    "ip_rating": null,
+    "radome": "Plastic radome, aluminum housing",
+    "mount_type": "Wall or pole",
+    "included_parts": [
+      {
+        "item": "Wall and pole mount kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "-45 to +65 \u00b0C",
+    "image_url": "images/aruba/ant-2x2-5314.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ant-2x2-5314.jpg"
+      },
+      {
+        "label": "Front View",
+        "url": "images/aruba/ant-2x2-5314-alt.jpg"
+      },
+      {
+        "label": "Back View",
+        "url": "images/aruba/ant-2x2-5314-alt2.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ant-2x2-5314-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ant-2x2-5314-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE ANT-2x2-5314 data sheet (a00144086enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144086enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE ANT-2x2-5314 data sheet (a00144086enw)",
+        "id": "a00144086enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144086enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "ANT-4x4-5314",
+    "name": "5 GHz 14 dBi 30\u00b0 \u00d7 30\u00b0 4-element panel",
+    "form": "High-density patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9\u20136.0 GHz",
+    "gain_dbi": {
+      "5": 14
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "30\u00b0"
+      },
+      "vertical": {
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "Horizontal, vertical, and dual slant 45\u00b0",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "260 \u00d7 260 \u00d7 30 mm",
+    "weight": "1200 g",
+    "ip_rating": null,
+    "radome": "Plastic radome, aluminum backplate",
+    "mount_type": "Wall or pole",
+    "included_parts": [
+      {
+        "item": "Wall and pole mount kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 max",
+    "isolation": null,
+    "operating_temp": "-45 to +65 \u00b0C",
+    "image_url": "images/aruba/ant-4x4-5314.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ant-4x4-5314.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ant-4x4-5314-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ant-4x4-5314-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE ANT-4x4-5314 data sheet (a00144081enw)",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144081enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE ANT-4x4-5314 data sheet (a00144081enw)",
+        "id": "a00144081enw",
+        "url": "https://assets.ext.hpe.com/is/content/hpedam/a00144081enw"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "ANT-4x4-D707",
+    "name": "Dual-band 4-element sector panel, N female",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20136.0 GHz",
+    "gain_dbi": {
+      "2.4": 7.5,
+      "5": 7.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "70\u00b0",
+        "5": "56\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "56\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "Dual slant \u00b145\u00b0",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "190 \u00d7 190 \u00d7 31 mm",
+    "weight": "1 kg including mount",
+    "ip_rating": null,
+    "radome": "Plastic radome, aluminum housing",
+    "mount_type": "Wall or pole",
+    "included_parts": [
+      {
+        "item": "Wall and pole mount kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 max",
+    "isolation": null,
+    "operating_temp": "-45 to +70 \u00b0C",
+    "image_url": "images/aruba/ant-4x4-d707.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ant-4x4-d707.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ant-4x4-d707-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ant-4x4-d707-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ant-4x4-d707-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ant-4x4-d707-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "HPE ANT-4x4-D707 data sheet (a00128393enw)",
+        "url": "https://www.hpe.com/psnow/doc/a00128393enw"
+      }
+    ],
+    "sources": [
+      {
+        "label": "HPE ANT-4x4-D707 data sheet (a00128393enw)",
+        "id": "a00128393enw",
+        "url": "https://www.hpe.com/psnow/doc/a00128393enw"
+      },
+      {
+        "label": "FCC exhibit of HPE a00128393enw",
+        "id": "DS_D707OutdoorAntenna_RVK_120322",
+        "url": "https://fccid.ai/m/e64864e66918b82f6e1e4eb8f1b8ca733a4a2fab05ae9058e18e8014f3463e13.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "ANT-3x3-2005",
+    "name": "2.4 GHz 5 dBi omni kit, three antennas",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4\u20132.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0 (Vpol) / 25\u00b0 (Hpol)"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 3,
+    "polarization": "2 vertical, 1 horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "Vpol 309 \u00d7 32 \u00d7 32 mm; Hpol 329 \u00d7 45 \u00d7 45 mm",
+    "weight": "Vpol 140 g; Hpol 260 g",
+    "ip_rating": null,
+    "radome": "Polycarbonate, UV, white",
+    "mount_type": "Direct mount or pole mount",
+    "included_parts": [
+      {
+        "item": "Pole mount kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "Vpol < 1.7:1 / Hpol < 2.0:1",
+    "isolation": null,
+    "operating_temp": "-40 to +70 \u00b0C",
+    "image_url": "images/aruba/ant-3x3-2005.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ant-3x3-2005.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ant-3x3-2005-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ant-3x3-2005-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba ANT-3x3-2005 data sheet (DS_ANT-3x3-2005_012814)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ant-3x3-2005.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba ANT-3x3-2005 data sheet (DS_ANT-3x3-2005_012814)",
+        "id": "DS_ANT-3x3-2005_012814",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ant-3x3-2005.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "ANT-3x3-5005",
+    "name": "5 GHz 5 dBi omni kit, three antennas",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9\u20135.875 GHz",
+    "gain_dbi": {
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "29\u00b0 (Vpol) / 33\u00b0 (Hpol)"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 3,
+    "polarization": "2 vertical, 1 horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "200 \u00d7 25 \u00d7 25 mm each",
+    "weight": "140 g each",
+    "ip_rating": null,
+    "radome": "Polycarbonate, UV, white",
+    "mount_type": "Direct mount or pole mount",
+    "included_parts": [
+      {
+        "item": "Pole mount kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2.0:1",
+    "isolation": null,
+    "operating_temp": "-40 to +70 \u00b0C",
+    "image_url": "images/aruba/ant-3x3-5005.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ant-3x3-5005.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ant-3x3-5005-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ant-3x3-5005-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba ANT-3x3-5005 data sheet (DS_ANT-3x3-5005_012814)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ant-3x3-5005.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba ANT-3x3-5005 data sheet (DS_ANT-3x3-5005_012814)",
+        "id": "DS_ANT-3x3-5005_012814",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ant-3x3-5005.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "ANT-3x3-5010",
+    "name": "5 GHz 10 dBi omni kit, three antennas",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9\u20135.875 GHz",
+    "gain_dbi": {
+      "5": 10
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "8\u00b0 (Vpol) / 9.5\u00b0 (Hpol)"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 3,
+    "polarization": "2 vertical, 1 horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "Vpol 495 \u00d7 25 \u00d7 25 mm; Hpol 451 \u00d7 25 \u00d7 25 mm",
+    "weight": "180 g each",
+    "ip_rating": null,
+    "radome": "Polycarbonate, UV, white",
+    "mount_type": "Direct mount or pole mount",
+    "included_parts": [
+      {
+        "item": "Pole mount kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2.0:1",
+    "isolation": null,
+    "operating_temp": "-40 to +70 \u00b0C",
+    "image_url": "images/aruba/ant-3x3-5010.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ant-3x3-5010.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ant-3x3-5010-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ant-3x3-5010-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba ANT-3x3-5010 data sheet (DS_ANT-3x3-5010_120815)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ant-3x3-5010.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba ANT-3x3-5010 data sheet (DS_ANT-3x3-5010_120815)",
+        "id": "DS_ANT-3x3-5010_120815",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ant-3x3-5010.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "ANT-3x3-D100",
+    "name": "Dual-band 3-element 90\u00b0 sector panel",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20136.0 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "100\u00b0",
+        "5": "100\u00b0"
+      },
+      "vertical": {
+        "2.4": "90\u00b0",
+        "5": "90\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 3,
+    "polarization": "Vertical and slant \u00b145\u00b0",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "200 \u00d7 200 \u00d7 33 mm",
+    "weight": "0.8 kg without bracket",
+    "ip_rating": null,
+    "radome": "Plastic radome, aluminum housing",
+    "mount_type": "Wall or pole",
+    "included_parts": [
+      {
+        "item": "Wall and pole mount kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 max",
+    "isolation": null,
+    "operating_temp": "-45 to +70 \u00b0C",
+    "image_url": "images/aruba/ant-3x3-d100.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ant-3x3-d100.jpg"
+      },
+      {
+        "label": "Alternate view",
+        "url": "images/aruba/ant-3x3-d100-alt.jpg"
+      },
+      {
+        "label": "Alternate view",
+        "url": "images/aruba/ant-3x3-d100-alt2.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ant-3x3-d100-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ant-3x3-d100-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ant-3x3-d100-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ant-3x3-d100-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba ANT-3x3-D100 data sheet (DS_ANT-3x3-D100_012115)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ant-3x3-d100.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba ANT-3x3-D100 data sheet (DS_ANT-3x3-D100_012115)",
+        "id": "DS_ANT-3x3-D100_012115",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ant-3x3-d100.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Aruba",
+    "sku": "ANT-3x3-D608",
+    "name": "Dual-band 3-element 60\u00b0 sector panel",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20136.0 GHz",
+    "gain_dbi": {
+      "2.4": 7.5,
+      "5": 7.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 3,
+    "polarization": "Vertical and slant \u00b145\u00b0",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "197.5 \u00d7 197.5 \u00d7 34.5 mm",
+    "weight": "521 g",
+    "ip_rating": null,
+    "radome": "Plastic radome, aluminum housing",
+    "mount_type": "Wall or pole",
+    "included_parts": [
+      {
+        "item": "Wall and pole mount kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1 max",
+    "isolation": null,
+    "operating_temp": "-45 to +65 \u00b0C",
+    "image_url": "images/aruba/ant-3x3-d608.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/aruba/ant-3x3-d608.jpg"
+      },
+      {
+        "label": "Alternate view",
+        "url": "images/aruba/ant-3x3-d608-alt.jpg"
+      },
+      {
+        "label": "Alternate view",
+        "url": "images/aruba/ant-3x3-d608-alt2.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/aruba/ant-3x3-d608-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/aruba/ant-3x3-d608-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/aruba/ant-3x3-d608-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/aruba/ant-3x3-d608-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Aruba ANT-3x3-D608 data sheet (DS_ANT-3x3-D608_071615)",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ant-3x3-d608.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Aruba ANT-3x3-D608 data sheet (DS_ANT-3x3-D608_071615)",
+        "id": "DS_ANT-3x3-D608_071615",
+        "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ant-3x3-d608.pdf"
+      }
+    ]
   }
 ]
