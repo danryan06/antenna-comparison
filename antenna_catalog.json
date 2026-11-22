@@ -31741,5 +31741,1757 @@
         "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
       }
     ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-04ABGN-2504-O-R",
+    "name": "2.4/5 GHz 2.5/4 dBi Wi-Fi Omni Micro Antenna with 4 RPSMA",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2400\u20132500 / 4900\u20135850 MHz",
+    "gain_dbi": {
+      "2.4": 2.5,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in (91.44 cm)",
+    "cable_type": null,
+    "dimensions": "3.54 \u00d7 1.57 in (9.0 \u00d7 4.0 cm)",
+    "weight": "0.27 lb (124.7 g)",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "Surface mount",
+    "included_parts": [
+      {
+        "item": "Ceiling/surface mounting nut",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u22642",
+    "isolation": null,
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-04abgn-2504-o-r.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-04abgn-2504-o-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Port 1 Horizontal",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-2-4-ghz-port-1-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port 1 Vertical",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-2-4-ghz-port-1-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Port 2 Horizontal",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-2-4-ghz-port-2-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port 2 Vertical",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-2-4-ghz-port-2-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Port 3 Horizontal",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-2-4-ghz-port-3-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port 3 Vertical",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-2-4-ghz-port-3-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Port 4 Horizontal",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-2-4-ghz-port-4-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Port 4 Vertical",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-2-4-ghz-port-4-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port 1 Horizontal",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-5-ghz-port-1-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port 1 Vertical",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-5-ghz-port-1-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port 2 Horizontal",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-5-ghz-port-2-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port 2 Vertical",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-5-ghz-port-2-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port 3 Horizontal",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-5-ghz-port-3-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port 3 Vertical",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-5-ghz-port-3-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Port 4 Horizontal",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-5-ghz-port-4-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Port 4 Vertical",
+        "url": "images/fortinet/fant-04abgn-2504-o-r-pattern-5-ghz-port-4-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-04ABGN-0606-O-R",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Omni Antenna with 4 RPSMA connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2400\u20132500 / 5150\u20135850 MHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "20\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in (91.44 cm)",
+    "cable_type": null,
+    "dimensions": "5.9 \u00d7 7 in (14.99 \u00d7 17.78 cm)",
+    "weight": "2.64 lb (1.2 kg)",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "Mast and/or wall mounting (L-bracket)",
+    "included_parts": [
+      {
+        "item": "L-bracket for mast/wall",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "134 mph (216 km/h)",
+    "vswr": "\u22642.0 (2.4 GHz); \u22642.2 (5 GHz)",
+    "isolation": "\u2264 \u221215 dB",
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-04abgn-0606-o.jpg",
+    "images": [
+      {
+        "label": "Product (\u2212R pictured)",
+        "url": "images/fortinet/fant-04abgn-0606-o.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/fortinet/fant-04abgn-0606-o-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/fortinet/fant-04abgn-0606-o-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-04ABGN-0606-O-N",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Omni Antenna with 4 N-Type connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2400\u20132500 / 5150\u20135850 MHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "20\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "36 in (91.44 cm)",
+    "cable_type": null,
+    "dimensions": "5.9 \u00d7 7 in (14.99 \u00d7 17.78 cm)",
+    "weight": "2.64 lb (1.2 kg)",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "Mast and/or wall mounting (L-bracket)",
+    "included_parts": [
+      {
+        "item": "L-bracket for mast/wall",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "134 mph (216 km/h)",
+    "vswr": "\u22642.0 (2.4 GHz); \u22642.2 (5 GHz)",
+    "isolation": "\u2264 \u221215 dB",
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-04abgn-0606-o.jpg",
+    "images": [
+      {
+        "label": "Product (\u2212R pictured)",
+        "url": "images/fortinet/fant-04abgn-0606-o.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/fortinet/fant-04abgn-0606-o-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/fortinet/fant-04abgn-0606-o-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-06ABGN-0606-O-R",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Omni Antenna with 6 RPSMA connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2400\u20132500 / 5150\u20135850 MHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "35\u00b0",
+        "5": "25\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 6,
+    "polarization": "Vertical",
+    "cable_length": "36 in (91.44 cm)",
+    "cable_type": null,
+    "dimensions": "5.9 \u00d7 7 in (14.99 \u00d7 17.78 cm)",
+    "weight": "3.15 lb (1.43 kg)",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "Mast and/or wall mounting (L-bracket)",
+    "included_parts": [
+      {
+        "item": "L-bracket for mast/wall",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "134 mph (216 km/h)",
+    "vswr": "Typical \u22641.5\u20132.0",
+    "isolation": "\u2264 \u221215 dB",
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-06abgn-0606-o.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-06abgn-0606-o.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/fortinet/fant-06abgn-0606-o-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/fortinet/fant-06abgn-0606-o-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/fortinet/fant-06abgn-0606-o-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/fortinet/fant-06abgn-0606-o-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-06ABGN-0606-O-N",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Omni Antenna with 6 N-Type connectors",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2400\u20132500 / 5150\u20135850 MHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "35\u00b0",
+        "5": "25\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 6,
+    "polarization": "Vertical",
+    "cable_length": "36 in (91.44 cm)",
+    "cable_type": null,
+    "dimensions": "5.9 \u00d7 7 in (14.99 \u00d7 17.78 cm)",
+    "weight": "3.15 lb (1.43 kg)",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "Mast and/or wall mounting (L-bracket)",
+    "included_parts": [
+      {
+        "item": "L-bracket for mast/wall",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "134 mph (216 km/h)",
+    "vswr": "Typical \u22641.5\u20132.0",
+    "isolation": "\u2264 \u221215 dB",
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-06abgn-0606-o.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-06abgn-0606-o.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/fortinet/fant-06abgn-0606-o-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/fortinet/fant-06abgn-0606-o-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/fortinet/fant-06abgn-0606-o-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/fortinet/fant-06abgn-0606-o-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-06ABGN-2504-O-R",
+    "name": "2.4/5 GHz 2.5/4 dBi Wi-Fi Omni Antenna with 6 RPSMA (Ceiling Mount)",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2400\u20132483 / 5150\u20135850 MHz",
+    "gain_dbi": {
+      "2.4": 2.5,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "55\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 6,
+    "polarization": "Vertical",
+    "cable_length": "36 in (91.44 cm)",
+    "cable_type": null,
+    "dimensions": "7.1 \u00d7 5.1 \u00d7 1.9 in (18.03 \u00d7 12.95 \u00d7 4.83 cm)",
+    "weight": "0.68 lb (0.31 kg)",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "Ceiling mount",
+    "included_parts": [
+      {
+        "item": "Ceiling mounting nut",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u22642.0 (2.4 GHz); \u22642.5 (5 GHz)",
+    "isolation": null,
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-06abgn-2504-o-r.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-06abgn-2504-o-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/fortinet/fant-06abgn-2504-o-r-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/fortinet/fant-06abgn-2504-o-r-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/fortinet/fant-06abgn-2504-o-r-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/fortinet/fant-06abgn-2504-o-r-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-04ABGN-0606-P-R",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Patch Antenna with 4 RPSMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2400\u20132500 / 5150\u20135850 MHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "80\u00b120\u00b0 / 45\u00b120\u00b0",
+        "5": "80\u00b120\u00b0 / 45\u00b120\u00b0"
+      },
+      "vertical": {
+        "2.4": "80\u00b120\u00b0 / 45\u00b120\u00b0",
+        "5": "80\u00b120\u00b0 / 45\u00b120\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Vertical / Horizontal (dual-pol leads)",
+    "cable_length": "36 in (91.44 cm)",
+    "cable_type": null,
+    "dimensions": "9.2 \u00d7 9.0 \u00d7 1.1 in (23.37 \u00d7 22.86 \u00d7 2.79 cm)",
+    "weight": "2.65 lb (1.2 kg)",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "Wall or mast/pole (articulating mount included)",
+    "included_parts": [
+      {
+        "item": "Universal articulating mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u22642.0 (2.4 GHz); \u22642.5 (5 GHz)",
+    "isolation": null,
+    "operating_temp": "\u221240 to +60 \u00b0C",
+    "image_url": "images/fortinet/fant-04abgn-0606-p-r.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-04abgn-0606-p-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/fortinet/fant-04abgn-0606-p-r-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/fortinet/fant-04abgn-0606-p-r-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-04ABGN-1414-P-N",
+    "name": "2.4/5 GHz 14 dBi Wi-Fi High Density Patch Antenna with 4 N-Type",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2400\u20132500 / 5150\u20135850 MHz",
+    "gain_dbi": {
+      "2.4": 14,
+      "5": 14
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "35\u00b0",
+        "5": "35\u00b0"
+      },
+      "vertical": {
+        "2.4": "35\u00b0",
+        "5": "35\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "Vertical / Linear",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "14.96 \u00d7 14.96 \u00d7 1.3 in (38 \u00d7 38 \u00d7 3.3 cm)",
+    "weight": "7.5 lb (3.4 kg)",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "Mast mounting (industrial articulating mount)",
+    "included_parts": [
+      {
+        "item": "Industrial articulating mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u22642",
+    "isolation": "\u226428 dB",
+    "operating_temp": "\u221230 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-04abgn-1414-p-n.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-04abgn-1414-p-n.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/fortinet/fant-04abgn-1414-p-n-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/fortinet/fant-04abgn-1414-p-n-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-04ABGN-8065-P-N",
+    "name": "2.4/5 GHz 8/6.5 dBi Wi-Fi Patch Antenna with 4 N-Type",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 8,
+      "5": 6.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "60\u00b0",
+        "5": "65\u00b0"
+      },
+      "vertical": {
+        "2.4": "65\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 4,
+    "polarization": "Dual (2\u00d7 V / 2\u00d7 H)",
+    "cable_length": "24 in (60.96 cm)",
+    "cable_type": null,
+    "dimensions": "7.5 \u00d7 7.5 \u00d7 1.5 in (19.05 \u00d7 19.05 \u00d7 3.81 cm)",
+    "weight": "2.5 lb (1.134 kg)",
+    "ip_rating": "IP66",
+    "radome": "White",
+    "mount_type": "Universal articulating mount",
+    "included_parts": [
+      {
+        "item": "Universal articulating mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "<2",
+    "isolation": ">25 dB (2.4 GHz); >30 dB (5 GHz)",
+    "operating_temp": "\u221240 to +60 \u00b0C",
+    "image_url": "images/fortinet/fant-04abgn-8065-p-n.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-04abgn-8065-p-n.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/fortinet/fant-04abgn-8065-p-n-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/fortinet/fant-04abgn-8065-p-n-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/fortinet/fant-04abgn-8065-p-n-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/fortinet/fant-04abgn-8065-p-n-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-08ABGN-1213-D-R",
+    "name": "2.4/5 GHz 12/13 dBi Wi-Fi Directional Antenna with 8 RPSMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2400\u20132500 / 5150\u20135850 MHz",
+    "gain_dbi": {
+      "2.4": 12,
+      "5": 13
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "50\u00b0 / 40\u00b0 (ports 1\u20134); 45\u00b0 / 28\u00b0 (ports 5\u20138)",
+        "5": "50\u00b0 / 40\u00b0 (ports 1\u20134); 45\u00b0 / 28\u00b0 (ports 5\u20138)"
+      },
+      "vertical": {
+        "2.4": "45\u00b0 / 28\u00b0 (ports 1\u20134); 50\u00b0 / 40\u00b0 (ports 5\u20138)",
+        "5": "45\u00b0 / 28\u00b0 (ports 1\u20134); 50\u00b0 / 40\u00b0 (ports 5\u20138)"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 8,
+    "polarization": "4\u00d7 Horizontal / 4\u00d7 Vertical",
+    "cable_length": "36 in (91.44 cm)",
+    "cable_type": null,
+    "dimensions": "12 \u00d7 12 \u00d7 1.5 in (30.48 \u00d7 30.48 \u00d7 3.81 cm)",
+    "weight": "2.1 lb (0.95 kg)",
+    "ip_rating": "IP54",
+    "radome": "White",
+    "mount_type": "10 in Strong Arm Mount",
+    "included_parts": [
+      {
+        "item": "10 in Strong Arm Mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "100 mph (160 km/h)",
+    "vswr": "\u22642.25",
+    "isolation": "\u226418 dB (2.4 GHz); \u226425 dB (5 GHz) port-to-port",
+    "operating_temp": "\u221240 to +60 \u00b0C",
+    "image_url": "images/fortinet/fant-08abgn-1213-d-r.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-08abgn-1213-d-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal Polarization",
+        "url": "images/fortinet/fant-08abgn-1213-d-r-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical Polarization",
+        "url": "images/fortinet/fant-08abgn-1213-d-r-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal Polarization",
+        "url": "images/fortinet/fant-08abgn-1213-d-r-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical Polarization",
+        "url": "images/fortinet/fant-08abgn-1213-d-r-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-06ACAX-8509-D-N",
+    "name": "2.4/5 GHz 8.5/9 dBi Wi-Fi Directional Antenna with 6 N-Type",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.15\u20135.875 GHz",
+    "gain_dbi": {
+      "2.4": 8.5,
+      "5": 9
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "60\u00b0",
+        "5": "65\u00b0"
+      },
+      "vertical": {
+        "2.4": "65\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 6,
+    "polarization": "Vertical",
+    "cable_length": "47.2 in (120 cm)",
+    "cable_type": null,
+    "dimensions": "11.8 \u00d7 11.8 \u00d7 1.77 in (300 \u00d7 300 \u00d7 45 mm)",
+    "weight": null,
+    "ip_rating": "IP65",
+    "radome": "White",
+    "mount_type": "Mast or wall",
+    "included_parts": [],
+    "wind_rating": "124 mph",
+    "vswr": "2.0:1 max",
+    "isolation": "20 dB (2.4 GHz); 30 dB (5 GHz)",
+    "operating_temp": "\u221240 to +65 \u00b0C",
+    "image_url": "images/fortinet/fant-06acax-8509-d-n.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-06acax-8509-d-n.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/fortinet/fant-06acax-8509-d-n-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/fortinet/fant-06acax-8509-d-n-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-10ACAX-1213-D-N",
+    "name": "2.4/5 GHz 12/13 dBi Wi-Fi Directional Antenna with 10 N-Male",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 12,
+      "5": 13
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "60\u00b0",
+        "5": "65\u00b0"
+      },
+      "vertical": {
+        "2.4": "65\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 10,
+    "polarization": "5\u00d7 Horizontal / 5\u00d7 Vertical",
+    "cable_length": "36 in RG58 (91.4 cm)",
+    "cable_type": "RG58",
+    "dimensions": "14.6 \u00d7 14.6 \u00d7 1.5 in (37.1 \u00d7 37.1 \u00d7 3.81 cm)",
+    "weight": "2.6 lb (1.18 kg)",
+    "ip_rating": "IP54",
+    "radome": "White",
+    "mount_type": "Mast or wall (articulating mount included)",
+    "included_parts": [
+      {
+        "item": "Articulating mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "100 mph (160 km/h)",
+    "vswr": "\u22642.0",
+    "isolation": "\u226428 dB",
+    "operating_temp": "\u221240 to +60 \u00b0C",
+    "image_url": "images/fortinet/fant-10acax-1213-d-n.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-10acax-1213-d-n.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/fortinet/fant-10acax-1213-d-n-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/fortinet/fant-10acax-1213-d-n-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/fortinet/fant-10acax-1213-d-n-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/fortinet/fant-10acax-1213-d-n-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-02ACAX-0505-D-N",
+    "name": "2.4/5 GHz 5 dBi Wi-Fi Directional Sector Antenna with 2 N-Type",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "120\u00b0",
+        "5": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 2,
+    "polarization": "Dual slant \u00b145\u00b0",
+    "cable_length": "24 in RG316",
+    "cable_type": "RG316",
+    "dimensions": null,
+    "weight": null,
+    "ip_rating": "IP67",
+    "radome": "UV-protected plastic",
+    "mount_type": "Wall",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u22642.0",
+    "isolation": "\u226420 dB",
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-02acax-0505-d.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-02acax-0505-d.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/fortinet/fant-02acax-0505-d-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/fortinet/fant-02acax-0505-d-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/fortinet/fant-02acax-0505-d-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/fortinet/fant-02acax-0505-d-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-02ACAX-0505-D-R",
+    "name": "2.4/5 GHz 5 dBi Wi-Fi Directional Sector Antenna with 2 RPSMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "120\u00b0",
+        "5": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 2,
+    "polarization": "Dual slant \u00b145\u00b0",
+    "cable_length": "24 in RG316",
+    "cable_type": "RG316",
+    "dimensions": null,
+    "weight": null,
+    "ip_rating": "IP67",
+    "radome": "UV-protected plastic",
+    "mount_type": "Wall",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u22642.0",
+    "isolation": "\u226420 dB",
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-02acax-0505-d.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-02acax-0505-d.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/fortinet/fant-02acax-0505-d-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/fortinet/fant-02acax-0505-d-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/fortinet/fant-02acax-0505-d-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/fortinet/fant-02acax-0505-d-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-02ACAX-0606-P-R",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Patch Antenna with 2 RPSMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "40\u00b0",
+        "5": "40\u00b0"
+      },
+      "vertical": {
+        "2.4": "40\u00b0",
+        "5": "40\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 2,
+    "polarization": "Vertical",
+    "cable_length": "35 in (90 cm)",
+    "cable_type": null,
+    "dimensions": "10.3 \u00d7 10.3 \u00d7 1.4 in (261 \u00d7 261 \u00d7 35 mm)",
+    "weight": "2.3 lb (1.05 kg)",
+    "ip_rating": "IP67",
+    "radome": "White",
+    "mount_type": "Mast mounting (universal articulating mount included)",
+    "included_parts": [
+      {
+        "item": "Universal articulating mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "\u22641.5 (2.4 GHz); \u22642.3 (5 GHz)",
+    "isolation": null,
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-02acax-0606-p-r.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-02acax-0606-p-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Horizontal",
+        "url": "images/fortinet/fant-02acax-0606-p-r-pattern-2-4-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Horizontal",
+        "url": "images/fortinet/fant-02acax-0606-p-r-pattern-2-4-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Horizontal",
+        "url": "images/fortinet/fant-02acax-0606-p-r-pattern-5-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal",
+        "url": "images/fortinet/fant-02acax-0606-p-r-pattern-5-ghz-element-2-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-04ACAX-0505-D-R",
+    "name": "2.4/5 GHz 5 dBi Wi-Fi Directional Sector Antenna with 4 RPSMA",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.3\u20132.7 / 4.9\u20136.1 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "120\u00b0",
+        "5": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Dual slant \u00b145\u00b0",
+    "cable_length": "47.2 in RG316 (1.2 m)",
+    "cable_type": "RG316",
+    "dimensions": null,
+    "weight": null,
+    "ip_rating": "IP67",
+    "radome": "White",
+    "mount_type": "Wall mount",
+    "included_parts": [],
+    "wind_rating": "160 km/h",
+    "vswr": "\u22642.0",
+    "isolation": "\u226420 dB",
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-04acax-0505-d-r.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-04acax-0505-d-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/fortinet/fant-04acax-0505-d-r-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/fortinet/fant-04acax-0505-d-r-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/fortinet/fant-04acax-0505-d-r-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/fortinet/fant-04acax-0505-d-r-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-04ACAX-0606-D-R",
+    "name": "2.4/5 GHz 6 dBi Wi-Fi Directional Narrow-Beam Sector Antenna with 4 RPSMA",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.15\u20135.875 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Dual slant \u00b145\u00b0",
+    "cable_length": "29.5 in RG316 (75 cm)",
+    "cable_type": "RG316",
+    "dimensions": null,
+    "weight": null,
+    "ip_rating": "IP67",
+    "radome": "White",
+    "mount_type": "Wall",
+    "included_parts": [],
+    "wind_rating": "200 km/h",
+    "vswr": "\u22642.0",
+    "isolation": "\u226425 dB",
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-04acax-0606-d-r.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-04acax-0606-d-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/fortinet/fant-04acax-0606-d-r-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/fortinet/fant-04acax-0606-d-r-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/fortinet/fant-04acax-0606-d-r-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/fortinet/fant-04acax-0606-d-r-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-04BEAX-0606-P-R",
+    "name": "2.4/5/6 GHz 6 dBi Wi-Fi Tri-band Directional Patch Antenna with 4 RPSMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4 / 5 / 6 GHz",
+    "gain_dbi": {
+      "2.4": 6,
+      "5": 6,
+      "6": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "80\u00b0",
+        "5": "120\u00b0",
+        "6": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "80\u00b0",
+        "5": "50\u00b0",
+        "6": "50\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Directional patch",
+    "cable_length": "36 in",
+    "cable_type": null,
+    "dimensions": "3.4 \u00d7 3.4 \u00d7 1.4 in",
+    "weight": "1.0 lb",
+    "ip_rating": "IP54",
+    "radome": "White",
+    "mount_type": "Pole or wall (medium-strength articulating mount included)",
+    "included_parts": [
+      {
+        "item": "Medium strength articulating mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": "\u2264100 mph",
+    "vswr": "\u22642.0",
+    "isolation": "\u226510 / \u226522 dB",
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-04beax-0606-p-r.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-04beax-0606-p-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/fortinet/fant-04beax-0606-p-r-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/fortinet/fant-04beax-0606-p-r-pattern-5-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal + Vertical",
+        "url": "images/fortinet/fant-04beax-0606-p-r-pattern-6-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-04BEAX-1313-D-N",
+    "name": "2.4/5/6 GHz 13 dBi Wi-Fi Directional Antenna with 4 N-Type",
+    "form": "Patch",
+    "indoor_outdoor": "Industrial/Warehouse",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4 / 5 / 6 GHz",
+    "gain_dbi": {
+      "2.4": 13,
+      "5": 13,
+      "6": 13
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "115\u00b0",
+        "5": "115\u00b0",
+        "6": "115\u00b0"
+      },
+      "vertical": {
+        "2.4": "11\u00b0",
+        "5": "11\u00b0",
+        "6": "11\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "24 \u00d7 14 \u00d7 2.8 in",
+    "weight": "9.5 lb",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "10 in Strong Arm Mount",
+    "included_parts": [
+      {
+        "item": "10 in Strong Arm Mount",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "Hose clamps D32\u2013D127",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "M6 screws",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "M6 washers (spare)",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "M6 hex nuts (spare)",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "M4 screw (spare)",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "Expansion bolts M6 for wall mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": "\u226515 / \u226535 / \u226535 dB",
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-04beax-1313-d-n.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-04beax-1313-d-n.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/fortinet/fant-04beax-1313-d-n-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/fortinet/fant-04beax-1313-d-n-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5/6 GHz Horizontal",
+        "url": "images/fortinet/fant-04beax-1313-d-n-pattern-5-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5/6 GHz Vertical",
+        "url": "images/fortinet/fant-04beax-1313-d-n-pattern-5-6-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Fortinet",
+    "sku": "FANT-06BEAX-1313-D-R",
+    "name": "2.4/5/6 GHz 12/13/13 dBi Wi-Fi Directional Antenna with 6 RPSMA",
+    "form": "Patch",
+    "indoor_outdoor": "Industrial/Warehouse",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4 / 5 / 6 GHz",
+    "gain_dbi": {
+      "2.4": 12,
+      "5": 13,
+      "6": 13
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "120\u00b15\u00b0",
+        "5": "120\u00b15\u00b0",
+        "6": "120\u00b15\u00b0"
+      },
+      "vertical": {
+        "2.4": "12\u00b0",
+        "5": "12\u00b0",
+        "6": "12\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 6,
+    "polarization": "Vertical",
+    "cable_length": "3 ft",
+    "cable_type": null,
+    "dimensions": "24 \u00d7 21 \u00d7 2.8 in",
+    "weight": "13.7 lb",
+    "ip_rating": null,
+    "radome": "White",
+    "mount_type": "10 in Strong Arm Mount",
+    "included_parts": [
+      {
+        "item": "10 in Strong Arm Mount",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": "\u226515 / \u226535 / \u226535 dB",
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/fortinet/fant-06beax-1313-d-r.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/fortinet/fant-06beax-1313-d-r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5/6 GHz Element 1 Horizontal",
+        "url": "images/fortinet/fant-06beax-1313-d-r-pattern-5-6-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "5/6 GHz Element 1 Vertical",
+        "url": "images/fortinet/fant-06beax-1313-d-r-pattern-5-6-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "5/6 GHz Element 2 Horizontal",
+        "url": "images/fortinet/fant-06beax-1313-d-r-pattern-5-6-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "5/6 GHz Element 2 Vertical",
+        "url": "images/fortinet/fant-06beax-1313-d-r-pattern-5-6-ghz-element-2-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fortinet Antenna Portfolio (FANT-DAT-R17-20260226)",
+        "id": "FANT-DAT-R17-20260226",
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinet-antennas.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
   }
 ]
