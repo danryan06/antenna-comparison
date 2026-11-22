@@ -29747,5 +29747,1999 @@
         "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ant-3x3-d608.pdf"
       }
     ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "AI-DP04360S",
+    "legacy_sku": null,
+    "name": "5-port dual-band down-tilt ceiling omni panel, RP-SMA",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.15\u20135.85 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 5,
+    "polarization": "Linear, vertical and horizontal",
+    "cable_length": null,
+    "cable_type": "RG316",
+    "dimensions": "220.0 \u00d7 69.9 mm",
+    "weight": "1.32 lb (0.6 kg)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Ceiling mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/extreme/ai-dp04360s-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/extreme/ai-dp04360s-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/extreme/ai-dp04360s-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/extreme/ai-dp04360s-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "ML-2452-APA2-01",
+    "legacy_sku": null,
+    "name": "Dual-band articulating dipole, RP-SMA (black)",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.8 GHz",
+    "gain_dbi": {
+      "2.4": 2.7,
+      "5": 4.6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "48\u00b0",
+        "5": "28\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 1,
+    "polarization": "Linear, vertical",
+    "cable_length": null,
+    "cable_type": "RG-178",
+    "dimensions": "157.0 \u00d7 17.6 \u00d7 5.8 mm",
+    "weight": "0.03 lb (0.01 kg)",
+    "ip_rating": null,
+    "radome": "ABS plastic, black",
+    "mount_type": "Direct-attach to the access point",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u22641.92 (2.4\u20132.5 and 5.1\u20135.8 GHz)",
+    "isolation": null,
+    "operating_temp": "\u221210 to +60 \u00b0C",
+    "image_url": "images/extreme/ml-2452-apa2-01.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ml-2452-apa2-01.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-apa2-01-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-apa2-01-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "ML-2452-APA2-02",
+    "legacy_sku": null,
+    "name": "Dual-band articulating dipole, RP-SMA (white)",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.8 GHz",
+    "gain_dbi": {
+      "2.4": 2.7,
+      "5": 4.6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "48\u00b0",
+        "5": "28\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 1,
+    "polarization": "Linear, vertical",
+    "cable_length": null,
+    "cable_type": "RG-178",
+    "dimensions": "157.0 \u00d7 17.6 \u00d7 5.8 mm",
+    "weight": "0.03 lb (0.01 kg)",
+    "ip_rating": null,
+    "radome": "ABS plastic, white",
+    "mount_type": "Direct-attach to the access point",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "\u22641.92 (2.4\u20132.5 and 5.1\u20135.8 GHz)",
+    "isolation": null,
+    "operating_temp": "\u221210 to +60 \u00b0C",
+    "image_url": "images/extreme/ml-2452-apa2-01.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ml-2452-apa2-01.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-apa2-01-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-apa2-01-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "ML-2452-HPA5-036",
+    "legacy_sku": null,
+    "name": "Dual-band hanging omni, 36 in cable, RP-SMA",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 2.1,
+      "5": 3.8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "44\u00b0",
+        "5": "18\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 1,
+    "polarization": "Linear, vertical",
+    "cable_length": "36 in",
+    "cable_type": "RG-58 plenum-rated",
+    "dimensions": "25.4 \u00d7 245.5 mm",
+    "weight": "0.30 lb (0.14 kg)",
+    "ip_rating": null,
+    "radome": "Polycarbonate",
+    "mount_type": "Beam, ceiling, or mast mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "\u221230 to +70 \u00b0C",
+    "image_url": "images/extreme/ml-2452-hpa5-036.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ml-2452-hpa5-036.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/extreme/ml-2452-hpa5-036-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/extreme/ml-2452-hpa5-036-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/extreme/ml-2452-hpa5-036-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/extreme/ml-2452-hpa5-036-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "ML-2452-HPA6-01",
+    "legacy_sku": null,
+    "name": "Four-feed dual-band outdoor dipole stick, N-type",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 1.1,
+      "5": 2.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "100\u00b0",
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 4,
+    "polarization": "Dipole (linear)",
+    "cable_length": null,
+    "cable_type": "RG-178",
+    "dimensions": "318.20 \u00d7 22 mm",
+    "weight": "0.235 lb (0.107 kg)",
+    "ip_rating": null,
+    "radome": "PC1110U plastic",
+    "mount_type": "Direct attach",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "<2.0",
+    "isolation": null,
+    "operating_temp": "\u221240 to +85 \u00b0C",
+    "image_url": "images/extreme/ml-2452-hpa6-01.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ml-2452-hpa6-01.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-hpa6-01-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-hpa6-01-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "ML-2452-HPAG4A6-01",
+    "legacy_sku": null,
+    "name": "Dual-band outdoor omni, N-type",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "53\u00b0\u201356\u00b0",
+        "5": "18\u00b0\u201322\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 1,
+    "polarization": "Linear, vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "280.2 \u00d7 24.8 mm",
+    "weight": "0.31 lb (0.14 kg)",
+    "ip_rating": null,
+    "radome": "Polycarbonate (PC) plastic",
+    "mount_type": "Direct attach; pole mount with pole mounting kit",
+    "included_parts": [],
+    "wind_rating": "134 mph",
+    "vswr": "2 (2.4\u20132.5 and 5.1\u20135.9 GHz)",
+    "isolation": null,
+    "operating_temp": "Storage \u221240 to +80 \u00b0C (operating not separately listed)",
+    "image_url": "images/extreme/ml-2452-hpag4a6-01.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ml-2452-hpag4a6-01.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4/5 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-hpag4a6-01-pattern-2-4-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "ML-2452-HPAG5A8-01",
+    "legacy_sku": null,
+    "name": "Dual-band outdoor high-gain omni, N-type",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 7.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "28\u00b0",
+        "5": "15\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "280.2 \u00d7 24.8 mm",
+    "weight": "0.33 lb (0.15 kg)",
+    "ip_rating": null,
+    "radome": "Polycarbonate (PC)",
+    "mount_type": "Direct mount; pole mount with pole mount kit",
+    "included_parts": [],
+    "wind_rating": "134 mph",
+    "vswr": "2 (2.4\u20132.5); 2.3 (4.9\u20135.1); 2 (5.1\u20135.9)",
+    "isolation": null,
+    "operating_temp": "\u221230 to +70 \u00b0C",
+    "image_url": "images/extreme/ml-2452-hpag5a8-01.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ml-2452-hpag5a8-01.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-hpag5a8-01-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-hpag5a8-01-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "ML-2452-PTA2M2-036",
+    "legacy_sku": null,
+    "name": "2-port dual-band ceiling patch array, RP-SMA",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 2,
+    "polarization": "Linear, vertical",
+    "cable_length": null,
+    "cable_type": "RG-58",
+    "dimensions": null,
+    "weight": "0.50 lb (0.23 kg)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Ceiling mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "\u221230 to +70 \u00b0C",
+    "image_url": "images/extreme/ml-2452-pta2m2-036.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ml-2452-pta2m2-036.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-pta2m2-036-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-pta2m2-036-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "ML-2452-PTA4M4-036",
+    "legacy_sku": null,
+    "name": "4-port dual-band ceiling patch array, RP-SMA",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 5.7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "50\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 4,
+    "polarization": "Linear, omnidirectional",
+    "cable_length": "36 in",
+    "cable_type": "RG-58 plenum-rated",
+    "dimensions": null,
+    "weight": "1.10 lb (0.50 kg)",
+    "ip_rating": null,
+    "radome": "ASA",
+    "mount_type": "Ceiling mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/extreme/ml-2452-pta4m4-036.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ml-2452-pta4m4-036.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-pta4m4-036-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-pta4m4-036-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "ML-2452-PNA5-01R",
+    "legacy_sku": null,
+    "name": "Dual-band 120\u00b0 panel, N-type",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 3.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "120\u00b0",
+        "5": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 1,
+    "polarization": "Linear, vertical",
+    "cable_length": "12 in",
+    "cable_type": "RG-58 plenum-rated",
+    "dimensions": "131.06 \u00d7 54.86 \u00d7 35.05 mm",
+    "weight": "0.20 lb (0.09 kg)",
+    "ip_rating": null,
+    "radome": "KYDEX 100 thermoplastic",
+    "mount_type": "Wall or pole mount",
+    "included_parts": [],
+    "wind_rating": "100 mph",
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "\u221230 to +70 \u00b0C",
+    "image_url": "images/extreme/ml-2452-pna5-01r.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ml-2452-pna5-01r.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/extreme/ml-2452-pna5-01r-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/extreme/ml-2452-pna5-01r-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "ML-2452-SEC6M4-036",
+    "legacy_sku": null,
+    "name": "4-port dual-band sector, RP-SMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 6.3,
+      "5": 6.1
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "100\u00b0",
+        "5": "80\u00b0"
+      },
+      "vertical": {
+        "2.4": "90\u00b0",
+        "5": "65\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 4,
+    "polarization": "Linear, vertical",
+    "cable_length": "32 in",
+    "cable_type": "RG316 plenum-rated transparent",
+    "dimensions": null,
+    "weight": "1.00 lb (0.45 kg)",
+    "ip_rating": null,
+    "radome": "UV stable plastic",
+    "mount_type": "Wall mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2",
+    "isolation": null,
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/extreme/ml-2452-sec6m4-036.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ml-2452-sec6m4-036.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/extreme/ml-2452-sec6m4-036-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/extreme/ml-2452-sec6m4-036-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/extreme/ml-2452-sec6m4-036-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/extreme/ml-2452-sec6m4-036-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "ML-2452-PNA7-01R",
+    "legacy_sku": null,
+    "name": "Dual-band directional panel, N-type",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 4.9\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 7,
+      "5": 10.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "68\u00b0",
+        "5": "52\u00b0"
+      },
+      "vertical": {
+        "2.4": "66\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 1,
+    "polarization": "Linear, vertical",
+    "cable_length": "12 in",
+    "cable_type": "RG-58 plenum-rated",
+    "dimensions": "105.66 \u00d7 105.6 \u00d7 35.05 mm",
+    "weight": "0.50 lb (0.23 kg)",
+    "ip_rating": null,
+    "radome": "ASA",
+    "mount_type": "Wall or pole mount",
+    "included_parts": [],
+    "wind_rating": "100 mph",
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "\u221230 to +70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-pna7-01r-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/extreme/ml-2452-pna7-01r-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "AI-DQ04360S",
+    "legacy_sku": null,
+    "name": "4-port dual-band omni, RP-SMA",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 4.25,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "33\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 4,
+    "polarization": "Linear, vertical",
+    "cable_length": "36 in",
+    "cable_type": "RG-58/U plenum-rated (four cables)",
+    "dimensions": "218 \u00d7 160 mm",
+    "weight": "3.20 lb (1.45 kg)",
+    "ip_rating": null,
+    "radome": "UV protected plastic (UL94 V-0)",
+    "mount_type": "Wall or mast mount",
+    "included_parts": [],
+    "wind_rating": "125 mph",
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "\u221240 to +85 \u00b0C",
+    "image_url": "images/extreme/ai-dq04360s.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ai-dq04360s.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/extreme/ai-dq04360s-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/extreme/ai-dq04360s-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "WS-AI-DQ05120",
+    "legacy_sku": "30702",
+    "name": "4-port dual-band indoor sector, RP-SMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 4.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "100\u00b0",
+        "5": "80\u00b0"
+      },
+      "vertical": {
+        "2.4": "90\u00b0",
+        "5": "65\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 4,
+    "polarization": "Dual-slant linear \u00b145\u00b0",
+    "cable_length": "58 in",
+    "cable_type": "RG-316 (UL94)",
+    "dimensions": "200 \u00d7 200 \u00d7 34 mm",
+    "weight": "1.00 lb (0.45 kg)",
+    "ip_rating": null,
+    "radome": "UV protected plastic",
+    "mount_type": "Wall or pipe mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "1.5 typical / 2.0 maximum",
+    "isolation": null,
+    "operating_temp": "Storage \u221240 to +70 \u00b0C",
+    "image_url": "images/extreme/ws-ai-dq05120.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ws-ai-dq05120.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/extreme/ws-ai-dq05120-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/extreme/ws-ai-dq05120-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/extreme/ws-ai-dq05120-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/extreme/ws-ai-dq05120-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "WS-AI-5Q04060",
+    "legacy_sku": "30703",
+    "name": "4-port 5 GHz indoor sector, RP-SMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9\u20136.1 GHz",
+    "gain_dbi": {
+      "5": 3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "50\u00b0"
+      },
+      "vertical": {
+        "5": "33\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 4,
+    "polarization": "Dual-slant linear \u00b145\u00b0",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "200 \u00d7 200 \u00d7 34 mm",
+    "weight": "1.00 lb (0.45 kg)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall or pipe mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "1.5 typical / 2.0 maximum",
+    "isolation": null,
+    "operating_temp": "Storage \u221240 to +70 \u00b0C",
+    "image_url": "images/extreme/ws-ai-5q04060.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ws-ai-5q04060.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/extreme/ws-ai-5q04060-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/extreme/ws-ai-5q04060-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "WS-AI-2Q05060",
+    "legacy_sku": "30704",
+    "name": "4-port 2.4 GHz indoor sector, RP-SMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4 GHz",
+    "gain_dbi": {
+      "2.4": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "73\u00b0"
+      },
+      "vertical": {
+        "2.4": "34\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 4,
+    "polarization": "Dual-slant linear \u00b145\u00b0",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "200 \u00d7 200 \u00d7 34 mm",
+    "weight": "1.00 lb (0.45 kg)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall or pipe mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "1.5 typical / 2.0 maximum",
+    "isolation": null,
+    "operating_temp": "Storage \u221240 to +70 \u00b0C",
+    "image_url": "images/extreme/ws-ai-2q05060.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ws-ai-2q05060.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/extreme/ws-ai-2q05060-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/extreme/ws-ai-2q05060-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "WS-AI-DE07025",
+    "legacy_sku": "30705",
+    "name": "8-port dual-band indoor directional array, RP-SMA",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 6.5,
+      "5": 5.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "31\u00b0",
+        "5": "29\u00b0"
+      },
+      "vertical": {
+        "2.4": "43\u00b0",
+        "5": "37\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 8,
+    "polarization": "Dual linear",
+    "cable_length": "58 in",
+    "cable_type": "RG-58PLW plenum",
+    "dimensions": "305.0 \u00d7 305.0 \u00d7 110.5 mm",
+    "weight": "5.00 lb (2.27 kg)",
+    "ip_rating": null,
+    "radome": "White UL 94-HB plastic",
+    "mount_type": "Wall or pipe mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "<2.25:1",
+    "isolation": null,
+    "operating_temp": "Storage \u221230 to +80 \u00b0C",
+    "image_url": "images/extreme/ws-ai-de07025.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ws-ai-de07025.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/extreme/ws-ai-de07025-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/extreme/ws-ai-de07025-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/extreme/ws-ai-de07025-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/extreme/ws-ai-de07025-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "WS-AI-5Q05025",
+    "legacy_sku": "30706",
+    "name": "4-port 5 GHz indoor sector, RP-SMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "5": 3.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "30\u00b0"
+      },
+      "vertical": {
+        "5": "40\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 4,
+    "polarization": "Dual-linear",
+    "cable_length": "58 in",
+    "cable_type": "RG-58PLW plenum",
+    "dimensions": "181 \u00d7 249 \u00d7 129 mm",
+    "weight": "3.00 lb (1.36 kg)",
+    "ip_rating": null,
+    "radome": "UL 94-HB plastic",
+    "mount_type": "Adjustable bracket for wall or pipe mounting",
+    "included_parts": [
+      {
+        "item": "Adjustable articulating mounting bracket",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "1.0 typical / 2.0 maximum",
+    "isolation": null,
+    "operating_temp": "\u221230 to +80 \u00b0C",
+    "image_url": "images/extreme/ws-ai-5q05025.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ws-ai-5q05025.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/extreme/ws-ai-5q05025-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/extreme/ws-ai-5q05025-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "WS-AI-DE10055",
+    "legacy_sku": "30707",
+    "name": "8-port dual-band indoor directional array, RP-SMA",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 10,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "51\u00b0",
+        "5": "53\u00b0"
+      },
+      "vertical": {
+        "2.4": "44\u00b0",
+        "5": "43\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 8,
+    "polarization": "Dual linear",
+    "cable_length": "58 in",
+    "cable_type": "RG-58PLW plenum",
+    "dimensions": "305.0 \u00d7 305.0 \u00d7 110.5 mm",
+    "weight": "5.00 lb (2.30 kg)",
+    "ip_rating": null,
+    "radome": "White UL 94-HB plastic",
+    "mount_type": "Wall or pipe mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "<2.25:1",
+    "isolation": null,
+    "operating_temp": "Storage \u221230 to +80 \u00b0C",
+    "image_url": "images/extreme/ws-ai-de10055.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ws-ai-de10055.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/extreme/ws-ai-de10055-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/extreme/ws-ai-de10055-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/extreme/ws-ai-de10055-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/extreme/ws-ai-de10055-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "WS-AO-DQ05120N",
+    "legacy_sku": "30711",
+    "name": "4-port dual-band outdoor sector, N-type",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 4.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "100\u00b0",
+        "5": "80\u00b0"
+      },
+      "vertical": {
+        "2.4": "90\u00b0",
+        "5": "80\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 4,
+    "polarization": "Dual-slant linear \u00b145\u00b0",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "200 \u00d7 200 \u00d7 34 mm",
+    "weight": "1.00 lb (0.45 kg)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall or pipe mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "1.5\u20132.0",
+    "isolation": null,
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/extreme/ws-ao-dq05120n.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ws-ao-dq05120n.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/extreme/ws-ao-dq05120n-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/extreme/ws-ao-dq05120n-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/extreme/ws-ao-dq05120n-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/extreme/ws-ao-dq05120n-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "WS-AO-5Q04060N",
+    "legacy_sku": "30712",
+    "name": "4-port 5 GHz outdoor sector, N-type",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15\u20135.85 GHz",
+    "gain_dbi": {
+      "5": 3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "50\u00b0"
+      },
+      "vertical": {
+        "5": "33\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 4,
+    "polarization": "Dual-slant linear \u00b145\u00b0",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "200 \u00d7 200 \u00d7 34 mm",
+    "weight": "1.00 lb (0.45 kg)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Wall or pipe mount",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "1.5 typical / 2.0 maximum",
+    "isolation": null,
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/extreme/ws-ao-5q04060n.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ws-ao-5q04060n.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/extreme/ws-ao-5q04060n-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/extreme/ws-ao-5q04060n-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "WS-AO-5Q05025N",
+    "legacy_sku": "30716",
+    "name": "4-port 5 GHz outdoor sector, N-type",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "5": 3.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "30\u00b0"
+      },
+      "vertical": {
+        "5": "40\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 4,
+    "polarization": "Dual-linear",
+    "cable_length": "58 in",
+    "cable_type": "RG-58PLW plenum",
+    "dimensions": "181 \u00d7 249 \u00d7 129 mm",
+    "weight": "3.00 lb (1.36 kg)",
+    "ip_rating": null,
+    "radome": "UL 94-HB plastic",
+    "mount_type": "Adjustable bracket for wall or pipe mounting",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "1.0 typical / 2.0 maximum",
+    "isolation": null,
+    "operating_temp": "\u221230 to +80 \u00b0C",
+    "image_url": "images/extreme/ws-ao-5q05025n.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ws-ao-5q05025n.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/extreme/ws-ao-5q05025n-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/extreme/ws-ao-5q05025n-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "WS-AO-DQ04360N",
+    "legacy_sku": "30724",
+    "name": "4-port dual-band outdoor omni, N-type",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 4.25,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "33\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 4,
+    "polarization": "Linear, vertical",
+    "cable_length": "36 in",
+    "cable_type": "RG-58/U plenum-rated (four cables)",
+    "dimensions": "218.44 \u00d7 160.02 mm",
+    "weight": "3.20 lb (1.45 kg)",
+    "ip_rating": null,
+    "radome": "UV protected plastic",
+    "mount_type": "Wall or mast mount",
+    "included_parts": [],
+    "wind_rating": "125 mph",
+    "vswr": "2:1",
+    "isolation": null,
+    "operating_temp": "Storage \u221240 to +85 \u00b0C",
+    "image_url": "images/extreme/ws-ao-dq04360n.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ws-ao-dq04360n.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/extreme/ws-ao-dq04360n-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/extreme/ws-ao-dq04360n-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/extreme/ws-ao-dq04360n-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/extreme/ws-ao-dq04360n-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "AH-ACC-ANT-AX-KT",
+    "legacy_sku": null,
+    "name": "Dual-band 5 dBi articulating dipole kit (pack of 8)",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.1\u20135.9 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "Not specified",
+        "5": "Not specified"
+      }
+    },
+    "connector": "SMA",
+    "lead_count": 1,
+    "polarization": "Linear, vertical",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": null,
+    "weight": null,
+    "ip_rating": null,
+    "radome": "ABS",
+    "mount_type": "Direct attach",
+    "included_parts": [
+      {
+        "item": "Dual-band articulating dipole antenna",
+        "part_number": null,
+        "qty": 8
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2",
+    "isolation": null,
+    "operating_temp": "\u221220 to +60 \u00b0C",
+    "image_url": "images/extreme/ah-acc-ant-ax-kt.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/extreme/ah-acc-ant-ax-kt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/extreme/ah-acc-ant-ax-kt-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/extreme/ah-acc-ant-ax-kt-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "AI-DS0305360-RPSMA",
+    "legacy_sku": null,
+    "name": "Dual-band dipole for AP3000X, RP-SMA",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.5 / 5.15\u20135.85 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "Not specified",
+        "5": "Not specified"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": null,
+    "weight": null,
+    "ip_rating": null,
+    "radome": "UV protected plastic",
+    "mount_type": "Direct attach to AP3000X ports 2 and 4",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "<2",
+    "isolation": null,
+    "operating_temp": "\u221240 to +80 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/extreme/ai-ds0305360-rpsma-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/extreme/ai-ds0305360-rpsma-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "AI0-DD75060-RPSMA",
+    "legacy_sku": "AIO-DD75060-RPSMA",
+    "name": "2-port dual-band sector, RP-SMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.3\u20132.7 / 4.9\u20136.1 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 2,
+    "polarization": "Dual slant \u00b145\u00b0",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "200 \u00d7 200 \u00d7 33 mm (7.9 \u00d7 7.9 \u00d7 1.25 in)",
+    "weight": "0.057 lb (25.91 g)",
+    "ip_rating": "IP67",
+    "radome": "UV protected polycarbonate",
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1 max (typ. 1.5:1)",
+    "isolation": null,
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/extreme/ai0-dd75060-rpsma-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "vendor": "Extreme",
+    "sku": "AI0-DD05120-RPSMA",
+    "legacy_sku": "AIO-DD05120-RPSMA",
+    "name": "2-port dual-band 120\u00b0 sector, RP-SMA",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.3\u20132.7 / 4.9\u20136.1 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "120\u00b0",
+        "5": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "RP-SMA",
+    "lead_count": 2,
+    "polarization": "Dual slant \u00b145\u00b0",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "200 \u00d7 200 \u00d7 33 mm (7.9 \u00d7 7.9 \u00d7 1.25 in)",
+    "weight": "0.057 lb (25.91 g)",
+    "ip_rating": "IP67",
+    "radome": "UV protected polycarbonate",
+    "mount_type": null,
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2:1 max (typ. 1.5:1)",
+    "isolation": null,
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/extreme/ai0-dd05120-rpsma-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/extreme/ai0-dd05120-rpsma-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Extreme Wi-Fi 6 Antennas Guide (9036524-10 Rev AB, June 2024)",
+        "id": "9036524-10-Rev-AB",
+        "url": "https://documentation.extremenetworks.com/wireless/Antenna_Guide/downloads/WiFi6_Antennas_Guide.pdf"
+      }
+    ]
   }
 ]
