@@ -5,6 +5,13 @@
   <title>Compare Antennas — AntennaComparison</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="description" content="Side-by-side comparison of Wi-Fi antennas from the AntennaComparison catalog." />
+  <link rel="canonical" href="https://danryan06.github.io/antenna-comparison/compare.html" />
+  <meta property="og:title" content="Compare Antennas — AntennaComparison" />
+  <meta property="og:description" content="Side-by-side comparison of Wi-Fi antennas from the AntennaComparison catalog." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://danryan06.github.io/antenna-comparison/logo.png" />
+  <meta name="twitter:card" content="summary" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="style.css" />
   <style>
@@ -72,6 +79,7 @@
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <div class="header-content">
       <div class="header-left">
@@ -132,6 +140,8 @@
     </div>
   </header>
 
+  <main id="main-content">
+
   <div class="container" style="margin-top: 24px;">
     <div class="actions">
       <a class="btn-link" href="index.html">&larr; Back to Antenna Table</a>
@@ -142,6 +152,9 @@
       <span class="badge">Compare</span>
       <h1>Compare Antennas</h1>
       <p class="subtitle">Side-by-side antenna comparison.</p>
+      <p class="catalog-disclaimer">
+        Specifications are compiled from vendor documentation and may be incomplete, outdated, or normalized from conflicting sources. Verify the current manufacturer documentation for the exact part number before purchase or installation.
+      </p>
 
       <div class="compare-toolbar">
         <button id="toggle-columns" type="button" class="btn-filter-action">
@@ -157,6 +170,8 @@
       <div id="error-message" class="error" style="display:none;"></div>
     </div>
   </div>
+
+  </main>
 
   <script src="antenna-format.js"></script>
   <script>

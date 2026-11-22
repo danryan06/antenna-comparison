@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Authoring catalog may include maintainer-only notes; the site loads antenna_catalog.json.
+Disallow: /antenna_data.json

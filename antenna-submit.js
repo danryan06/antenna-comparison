@@ -83,7 +83,24 @@
     return false;
   }
 
+  // Prefer the shared sanitizer from antenna-format.js (Node require or browser global).
+  function sharedSafeUrl() {
+    try {
+      if (typeof require === 'function') {
+        const format = require('./antenna-format.js');
+        if (format && typeof format.safeUrl === 'function') return format.safeUrl;
+      }
+    } catch (err) {
+      /* browser path loads antenna-format.js as a classic script */
+    }
+    const g = typeof globalThis !== 'undefined' ? globalThis : null;
+    if (g && typeof g.safeUrl === 'function') return g.safeUrl;
+    return null;
+  }
+
   function sanitizeHttpUrl(value) {
+    const shared = sharedSafeUrl();
+    if (shared) return shared(value, { allowRelative: false });
     const raw = trim(value);
     if (!raw) return '';
     try {
@@ -96,10 +113,19 @@
   }
 
   function sanitizeAssetUrl(value) {
+    const shared = sharedSafeUrl();
+    if (shared) return shared(value, { allowRelative: true });
     const raw = trim(value);
     if (!raw) return '';
     if (/^[a-z][a-z0-9+.-]*:/i.test(raw)) return sanitizeHttpUrl(raw);
     if (raw.startsWith('//') || raw.startsWith('/') || raw.includes('\\') || raw.includes('..')) return '';
+    let decoded = raw;
+    try {
+      decoded = decodeURIComponent(raw);
+    } catch (err) {
+      return '';
+    }
+    if (decoded.includes('\\') || decoded.split(/[/?#]/).some(part => part === '..')) return '';
     return raw;
   }
 
