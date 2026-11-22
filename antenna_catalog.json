@@ -13751,7 +13751,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 6,
+      "2.4": 5,
       "5": 6
     },
     "beamwidth": {
@@ -13776,16 +13776,18 @@
     "mount_type": null,
     "included_parts": [],
     "wind_rating": null,
-    "vswr": "2 / <2 dBi",
-    "isolation": "Cross Polarized",
+    "vswr": "2 / <2",
+    "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/292510.jpg",
-    "images": [],
-    "pattern_images": [
+    "images": [
       {
-        "label": "5/6 GHz Horizontal",
-        "url": "images/ventev/292510-pattern-5-6-ghz-horizontal.jpg"
-      },
+        "url": "images/ventev/292510-pattern-5-6-ghz-horizontal.jpg",
+        "kind": "photo",
+        "label": "Product photo"
+      }
+    ],
+    "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
         "url": "images/ventev/292510-pattern-2-4-ghz-vertical.jpg"
@@ -13823,7 +13825,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 3.5,
+      "2.4": 2,
       "5": 3.5
     },
     "beamwidth": {
@@ -13892,7 +13894,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 6,
+      "2.4": 3,
       "5": 6
     },
     "beamwidth": {
@@ -13917,9 +13919,9 @@
     "mount_type": null,
     "included_parts": [],
     "wind_rating": null,
-    "vswr": "</= 2.5 dBi",
+    "vswr": "\u22642.5",
     "isolation": null,
-    "operating_temp": "00 \u00b0F to 1400 \u00b0F",
+    "operating_temp": null,
     "image_url": "images/ventev/233530.jpg",
     "images": [
       {
@@ -13970,7 +13972,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 6,
+      "2.4": 3,
       "5": 6
     },
     "beamwidth": {
@@ -13985,7 +13987,7 @@
     },
     "connector": "RPSMA Male",
     "lead_count": 4,
-    "polarization": "Verical",
+    "polarization": "Vertical",
     "cable_length": "36 in",
     "cable_type": null,
     "dimensions": "1.378\u201d \u00d7 9\u201d \u00d7 0.11\u201d",
@@ -13995,9 +13997,9 @@
     "mount_type": null,
     "included_parts": [],
     "wind_rating": null,
-    "vswr": "</= 2.5 dBi",
+    "vswr": "\u22642.5",
     "isolation": null,
-    "operating_temp": "00 \u00b0F to 1400 \u00b0F",
+    "operating_temp": null,
     "image_url": "images/ventev/298232.jpg",
     "images": [
       {
@@ -14251,10 +14253,10 @@
     "polarization": "Vertical",
     "cable_length": "24 in",
     "cable_type": null,
-    "dimensions": "Installation",
+    "dimensions": "5.4 \u00d7 2.9 \u00d7 1 in",
     "weight": "0.44 lb",
     "ip_rating": null,
-    "radome": "Color",
+    "radome": "White",
     "mount_type": "Center Thread Screw",
     "included_parts": [],
     "wind_rating": null,
@@ -14352,7 +14354,7 @@
     ],
     "wind_rating": null,
     "vswr": "< 2.0 / < 2.0",
-    "isolation": "> 22 / > 22 dBi",
+    "isolation": ">22 / >22 dB",
     "operating_temp": "-40\u00b0 to 158\u00b0F",
     "image_url": "images/ventev/297129.jpg",
     "images": [],
@@ -14439,7 +14441,7 @@
     "wind_rating": null,
     "vswr": "\u22642.0",
     "isolation": "\u226512 / \u226518",
-    "operating_temp": "Range",
+    "operating_temp": null,
     "image_url": "images/ventev/219521.jpg",
     "images": [],
     "pattern_images": [
@@ -14484,7 +14486,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 6,
+      "2.4": 3,
       "5": 6
     },
     "beamwidth": {
@@ -14509,7 +14511,7 @@
     "mount_type": null,
     "included_parts": [],
     "wind_rating": null,
-    "vswr": "\u2264 2.5 dBi/ \u2264 2.5 dBi",
+    "vswr": "\u22642.5 / \u22642.5",
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/248961.jpg",
@@ -14562,7 +14564,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 6,
+      "2.4": 5,
       "5": 6
     },
     "beamwidth": {
@@ -14634,7 +14636,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 6,
+      "2.4": 5,
       "5": 6
     },
     "beamwidth": {
@@ -14659,8 +14661,8 @@
     "mount_type": null,
     "included_parts": [],
     "wind_rating": null,
-    "vswr": "\u22642.0 / \u22642.0 dBi",
-    "isolation": "(Cross Polarized Ports)",
+    "vswr": "\u22642.0 / \u22642.0",
+    "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/261112.jpg",
     "images": [],
@@ -14706,7 +14708,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 6,
+      "2.4": 5,
       "5": 6
     },
     "beamwidth": {
@@ -14731,8 +14733,8 @@
     "mount_type": null,
     "included_parts": [],
     "wind_rating": null,
-    "vswr": "\u22642.0 / \u22642.0 dBi",
-    "isolation": "(Cross Polarized Ports)",
+    "vswr": "\u22642.0 / \u22642.0",
+    "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/239601.jpg",
     "images": [],
@@ -14778,7 +14780,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 13,
+      "2.4": 12,
       "5": 13
     },
     "beamwidth": {
@@ -14793,7 +14795,7 @@
     },
     "connector": "N Female",
     "lead_count": 6,
-    "polarization": "Vertical\u200b",
+    "polarization": "Vertical",
     "cable_length": null,
     "cable_type": null,
     "dimensions": "24 \u00d7 21 \u00d7 2.8 in.",
@@ -14803,7 +14805,7 @@
     "mount_type": null,
     "included_parts": [],
     "wind_rating": null,
-    "vswr": "2:1\u200b",
+    "vswr": "2:1",
     "isolation": null,
     "operating_temp": "-40\u00b0 to 158\u00b0F",
     "image_url": "images/ventev/217199.jpg",
@@ -14858,7 +14860,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 13,
+      "2.4": 12,
       "5": 13
     },
     "beamwidth": {
@@ -14989,7 +14991,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 3,
+      "2.4": 2,
       "5": 3
     },
     "beamwidth": {
@@ -15010,7 +15012,7 @@
     "dimensions": "8.7 \u00d7 1.6 in",
     "weight": "3.20 lb",
     "ip_rating": null,
-    "radome": "Color/Material",
+    "radome": null,
     "mount_type": null,
     "included_parts": [],
     "wind_rating": null,
@@ -15084,19 +15086,19 @@
     },
     "connector": "RPSMA Male",
     "lead_count": 4,
-    "polarization": "Vertical\u200b",
+    "polarization": "Vertical",
     "cable_length": "36 in",
     "cable_type": null,
-    "dimensions": "10.8 \u00d7 6.8 \u00d7 1.4 in.\u200b",
+    "dimensions": "10.8 \u00d7 6.8 \u00d7 1.4 in.",
     "weight": "1.20 lb",
     "ip_rating": null,
     "radome": null,
     "mount_type": null,
     "included_parts": [],
     "wind_rating": null,
-    "vswr": "\u2264 \u2264 2\u200b",
+    "vswr": "\u22642",
     "isolation": null,
-    "operating_temp": "-40\u00b0 to 140\u00b0F\u200b",
+    "operating_temp": "-40\u00b0 to 140\u00b0F",
     "image_url": "images/ventev/206570.jpg",
     "images": [],
     "pattern_images": [
@@ -15229,7 +15231,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 7,
+      "2.4": 4,
       "5": 7
     },
     "beamwidth": {
@@ -15320,7 +15322,7 @@
     "dimensions": "6 \u00d7 3 \u00d7 3 in",
     "weight": "1.40 lb",
     "ip_rating": null,
-    "radome": "Color/Material",
+    "radome": null,
     "mount_type": null,
     "included_parts": [
       {
@@ -15332,7 +15334,7 @@
     "wind_rating": null,
     "vswr": "2:1 Nominal / 2:1 Nominal",
     "isolation": null,
-    "operating_temp": "Range",
+    "operating_temp": null,
     "image_url": "images/ventev/227737.jpg",
     "images": [],
     "pattern_images": [
@@ -15401,7 +15403,7 @@
     "polarization": "Vertical",
     "cable_length": "36 in",
     "cable_type": null,
-    "dimensions": "See Diagrams Above. Note: All draw ing dimensions in Inches",
+    "dimensions": "5.9 \u00d7 7 in",
     "weight": "3.60 lb",
     "ip_rating": "IP 54 Compliant",
     "radome": "Color: White",
@@ -15493,7 +15495,7 @@
     "included_parts": [],
     "wind_rating": "60 mph",
     "vswr": "\u2264 2.0",
-    "isolation": "\u226520dBi",
+    "isolation": "\u226520 dB",
     "operating_temp": "(F\u00b0) -40\u00b0 ~ +158\u00b0",
     "image_url": "images/ventev/273519.jpg",
     "images": [
@@ -15801,7 +15803,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 7,
+      "2.4": 4,
       "5": 7
     },
     "beamwidth": {
@@ -15879,7 +15881,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 8,
+      "2.4": 6,
       "5": 8
     },
     "beamwidth": {
@@ -15906,7 +15908,7 @@
     "wind_rating": null,
     "vswr": "\u2264 2.0",
     "isolation": null,
-    "operating_temp": "Range",
+    "operating_temp": null,
     "image_url": "images/ventev/242142.jpg",
     "images": [],
     "pattern_images": [
@@ -15952,7 +15954,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 6,
+      "2.4": 3.5,
       "5": 6
     },
     "beamwidth": {
@@ -15966,14 +15968,14 @@
       }
     },
     "connector": "RPTNC Male",
-    "lead_count": null,
+    "lead_count": 1,
     "polarization": "Linear, Vertical",
     "cable_length": null,
     "cable_type": null,
     "dimensions": "5\u201d \u00d7 0.95\u201d",
     "weight": "0.05 lb",
     "ip_rating": null,
-    "radome": "Material",
+    "radome": null,
     "mount_type": null,
     "included_parts": [],
     "wind_rating": null,
@@ -16043,7 +16045,7 @@
     "polarization": "2x Horizontal, 2 x Vertical",
     "cable_length": null,
     "cable_type": null,
-    "dimensions": "and Adjustable Features",
+    "dimensions": null,
     "weight": null,
     "ip_rating": null,
     "radome": null,
@@ -16174,9 +16176,7 @@
       "horizontal": {
         "2.4": "360\u00b0"
       },
-      "vertical": {
-        "2.4": "[INSERT INFO]"
-      }
+      "vertical": {}
     },
     "connector": "RPTNC Male",
     "lead_count": 1,
@@ -16396,13 +16396,13 @@
     },
     "connector": "Right Angle RPTNC",
     "lead_count": 4,
-    "polarization": "(Ports B&D)",
+    "polarization": null,
     "cable_length": "36 in",
     "cable_type": null,
-    "dimensions": "(Inches)",
+    "dimensions": "4.5 \u00d7 4.5 \u00d7 1.375 in",
     "weight": "1.50 lbs",
     "ip_rating": null,
-    "radome": "Color",
+    "radome": "Bone White",
     "mount_type": null,
     "included_parts": [
       {
@@ -16572,7 +16572,7 @@
     ],
     "wind_rating": null,
     "vswr": "\u22642.0",
-    "isolation": "(dB)",
+    "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/590261.jpg",
     "images": [],
@@ -16640,7 +16640,7 @@
     "mount_type": null,
     "included_parts": [],
     "wind_rating": null,
-    "vswr": "-/=1.5",
+    "vswr": "\u22641.5",
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/318227.jpg",
@@ -16855,7 +16855,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 6,
+      "2.4": 5,
       "5": 6
     },
     "beamwidth": {
@@ -16873,7 +16873,7 @@
     "polarization": "Vertical",
     "cable_length": "36 in",
     "cable_type": null,
-    "dimensions": "Mounting Options",
+    "dimensions": "6 \u00d7 4 in",
     "weight": "3.0 lb",
     "ip_rating": null,
     "radome": "White",
@@ -16942,7 +16942,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 6,
+      "2.4": 5,
       "5": 6
     },
     "beamwidth": {
@@ -17051,10 +17051,10 @@
     "polarization": "Vertical",
     "cable_length": "36 in",
     "cable_type": null,
-    "dimensions": "(H \u00d7 W)",
+    "dimensions": null,
     "weight": "3.0 lb",
     "ip_rating": "IP 54 Compliant",
-    "radome": "Color & Material",
+    "radome": null,
     "mount_type": null,
     "included_parts": [
       {
@@ -17125,7 +17125,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 4,
+      "2.4": 2.5,
       "5": 4
     },
     "beamwidth": {
@@ -17143,7 +17143,7 @@
     "dimensions": "3.54 \u00d7 1.57 in",
     "weight": "0.30 lb",
     "ip_rating": null,
-    "radome": "Color and Material",
+    "radome": null,
     "mount_type": null,
     "included_parts": [
       {
@@ -17219,7 +17219,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 4,
+      "2.4": 2.5,
       "5": 4
     },
     "beamwidth": {
@@ -17313,7 +17313,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 6,
+      "2.4": 3.5,
       "5": 6
     },
     "beamwidth": {
@@ -17382,7 +17382,7 @@
     ],
     "frequency_range": "2.4/5 GHz",
     "gain_dbi": {
-      "2.4": 3,
+      "2.4": 2,
       "5": 3
     },
     "beamwidth": {
@@ -17556,7 +17556,7 @@
     "dimensions": ".78\" \u00d7 3.72\"",
     "weight": "0.09 lbs",
     "ip_rating": null,
-    "radome": "Material",
+    "radome": null,
     "mount_type": null,
     "included_parts": [],
     "wind_rating": null,
@@ -17626,10 +17626,10 @@
     "polarization": "Vertical",
     "cable_length": "36 in",
     "cable_type": null,
-    "dimensions": "in inches",
+    "dimensions": "5.9 \u00d7 7 in",
     "weight": "2.64 lb",
     "ip_rating": null,
-    "radome": "Color and Material",
+    "radome": null,
     "mount_type": null,
     "included_parts": [
       {
@@ -17730,7 +17730,7 @@
     "dimensions": "\u0003\u000325 diameter x 2\u00130 mm",
     "weight": "0.2 lbs.",
     "ip_rating": null,
-    "radome": "612235",
+    "radome": null,
     "mount_type": "Direct Plug into Access Point",
     "included_parts": [],
     "wind_rating": null,
@@ -17802,7 +17802,7 @@
     },
     "connector": "N Male",
     "lead_count": 4,
-    "polarization": "Vertical (2x)/",
+    "polarization": "Vertical (2\u00d7) / Horizontal (2\u00d7)",
     "cable_length": "36 in.",
     "cable_type": "RG58",
     "dimensions": "10.3 x 10.3 x 1.4 in",
@@ -17882,7 +17882,7 @@
       "5",
       "6"
     ],
-    "frequency_range": "2400-2500",
+    "frequency_range": "2400-2500 / 4900-6000 MHz",
     "gain_dbi": {
       "2.4": 12,
       "5": 12,
@@ -17906,7 +17906,7 @@
     "cable_length": "36 in.",
     "cable_type": null,
     "dimensions": "14.96 x 14.96 x 1.3 in.",
-    "weight": "(Antenna Only)",
+    "weight": "1.7 lb (antenna only)",
     "ip_rating": null,
     "radome": "White ABS",
     "mount_type": "Wall or Pole",
@@ -18101,7 +18101,7 @@
         "qty": 1
       }
     ],
-    "wind_rating": "Load",
+    "wind_rating": "124 mph",
     "vswr": "<2.0",
     "isolation": null,
     "operating_temp": "-40\u00b0 to +158\u00b0F",
@@ -18181,7 +18181,7 @@
     },
     "connector": "RPSMA Male/N-Male",
     "lead_count": 4,
-    "polarization": "Vertical/",
+    "polarization": "Vertical / Horizontal",
     "cable_length": "36.22 \u00b1 0.39 in.",
     "cable_type": null,
     "dimensions": "4.57 x 4.57 x 1.10 in. (\u00b10.08)",
@@ -18366,7 +18366,7 @@
     },
     "connector": "RPSMA Male/N-Male",
     "lead_count": 4,
-    "polarization": "Vertical/",
+    "polarization": "Vertical / Horizontal",
     "cable_length": "36.22 \u00b1 0.39 in.",
     "cable_type": null,
     "dimensions": "4.57 x 4.57 x 1.10 in. (\u00b10.08)",
@@ -18455,7 +18455,7 @@
     },
     "connector": "N Male",
     "lead_count": 4,
-    "polarization": "Vertical/",
+    "polarization": "Vertical / Horizontal",
     "cable_length": "36 in.",
     "cable_type": null,
     "dimensions": "7.5 x 7.5 x 1.5 in.",
@@ -18530,13 +18530,13 @@
     "sku": "610693",
     "name": "TerraWave\u00ae 2400-2500/4900-7125 MHz 6/6 dBi Omni",
     "form": "Omni",
-    "indoor_outdoor": "Omni",
+    "indoor_outdoor": null,
     "bands": [
       "2.4",
       "5",
       "6"
     ],
-    "frequency_range": "2400-2500",
+    "frequency_range": "2400-2500 / 4900-7125 MHz",
     "gain_dbi": {
       "2.4": 6,
       "5": 6,
@@ -18550,8 +18550,8 @@
       },
       "vertical": {
         "2.4": "45\u00b0",
-        "5": "45\u00b0",
-        "6": "45\u00b0"
+        "5": "20\u00b0",
+        "6": "20\u00b0"
       }
     },
     "connector": "N-Male",
@@ -18663,8 +18663,8 @@
     "dimensions": "3.54 x 0.157 in.",
     "weight": "0.30 lb.",
     "ip_rating": null,
-    "radome": "",
-    "mount_type": "Style",
+    "radome": "White",
+    "mount_type": "Surface mount",
     "included_parts": [],
     "wind_rating": null,
     "vswr": "< 2.0",
@@ -18829,7 +18829,7 @@
     "sku": "607904",
     "name": "2.4/5/6 GHz 6 dBi Wi-Fi 6 Femto Patch Antenna with 4 N Male Connectors and Articulating Mount",
     "form": "Patch",
-    "indoor_outdoor": "IP54",
+    "indoor_outdoor": null,
     "bands": [
       "2.4",
       "5",
@@ -19012,8 +19012,8 @@
     "frequency_range": null,
     "gain_dbi": {
       "2.4": 8,
-      "5": 8,
-      "6": 8
+      "5": 10,
+      "6": 10
     },
     "beamwidth": {
       "horizontal": {
@@ -19114,7 +19114,7 @@
     },
     "connector": "4x Male MSoc, 6x Male MSoc",
     "lead_count": 10,
-    "polarization": "Vertical/",
+    "polarization": "Vertical / Horizontal",
     "cable_length": "36 in.",
     "cable_type": null,
     "dimensions": "10.63 x 10.63 x 1.38 in.",
@@ -19193,7 +19193,7 @@
     "dimensions": "5.9 x 7 in.",
     "weight": "3.60 lbs.",
     "ip_rating": null,
-    "radome": "",
+    "radome": "White",
     "mount_type": "Mount Specifications",
     "included_parts": [
       {
@@ -19207,7 +19207,7 @@
         "qty": 2
       }
     ],
-    "wind_rating": "Load",
+    "wind_rating": "134 mph",
     "vswr": "\u2264 2.0/ \u2264 2.2",
     "isolation": null,
     "operating_temp": "-40 to 158\u00b0F",
@@ -19404,7 +19404,7 @@
         "qty": 1
       }
     ],
-    "wind_rating": "Load",
+    "wind_rating": "124 mph",
     "vswr": "<2.0",
     "isolation": null,
     "operating_temp": "-40\u00b0 to +158\u00b0F",
@@ -19489,7 +19489,7 @@
     },
     "connector": "RPSMA Male",
     "lead_count": 4,
-    "polarization": "Vertical &",
+    "polarization": "Vertical & Horizontal",
     "cable_length": null,
     "cable_type": null,
     "dimensions": "3 x 3 x 1 in.",
@@ -19504,7 +19504,7 @@
         "qty": 1
       }
     ],
-    "wind_rating": "Load",
+    "wind_rating": "124 mph",
     "vswr": "<2.0",
     "isolation": null,
     "operating_temp": "-40\u00b0 to +158\u00b0F",
@@ -19666,7 +19666,7 @@
         "5": "90\u00b0"
       }
     },
-    "connector": "Option of SMA Male,",
+    "connector": "TNC Male",
     "lead_count": 1,
     "polarization": "Vertical",
     "cable_length": null,
@@ -19772,7 +19772,7 @@
         "5": "90\u00b0"
       }
     },
-    "connector": "Option of SMA Male,",
+    "connector": "N Male",
     "lead_count": 1,
     "polarization": "Vertical",
     "cable_length": null,
@@ -19903,7 +19903,7 @@
         "qty": 1
       }
     ],
-    "wind_rating": "Rating",
+    "wind_rating": "124 mph",
     "vswr": "< 2.0",
     "isolation": null,
     "operating_temp": "-40\u00b0 to 158\u00b0F",
@@ -20104,7 +20104,7 @@
     "dimensions": "5.9 x 7 in.",
     "weight": "3.60 lbs.",
     "ip_rating": null,
-    "radome": "",
+    "radome": "White",
     "mount_type": "Mount Specifications",
     "included_parts": [
       {
@@ -20118,7 +20118,7 @@
         "qty": 2
       }
     ],
-    "wind_rating": "Load",
+    "wind_rating": "134 mph",
     "vswr": "\u2264 2.0/ \u2264 2.2",
     "isolation": null,
     "operating_temp": "-40 to 158\u00b0F",
@@ -20206,7 +20206,7 @@
     },
     "connector": "RPSMA Male",
     "lead_count": 4,
-    "polarization": "Vertical/",
+    "polarization": "Vertical / Horizontal",
     "cable_length": "36 in.",
     "cable_type": null,
     "dimensions": "7.5 x 7.5 x 1.5 in.",
@@ -20309,8 +20309,8 @@
     "dimensions": "3.54 x 0.157 in.",
     "weight": "0.30 lb.",
     "ip_rating": null,
-    "radome": "",
-    "mount_type": "Style",
+    "radome": "White",
+    "mount_type": "Surface mount",
     "included_parts": [],
     "wind_rating": null,
     "vswr": "< 2.0",
@@ -20422,7 +20422,7 @@
     },
     "connector": "N Female",
     "lead_count": 4,
-    "polarization": "Vertical/",
+    "polarization": "Vertical / Horizontal",
     "cable_length": null,
     "cable_type": null,
     "dimensions": "14.96 x 14.96 x 1.3 in.",
@@ -20711,7 +20711,7 @@
         "qty": 1
       }
     ],
-    "wind_rating": "Rating",
+    "wind_rating": "124 mph",
     "vswr": "< 2.0",
     "isolation": null,
     "operating_temp": "-40\u00b0 to 158\u00b0F",
@@ -20821,7 +20821,7 @@
         "qty": 2
       }
     ],
-    "wind_rating": "Load",
+    "wind_rating": "134 mph",
     "vswr": "< 2.5",
     "isolation": null,
     "operating_temp": "-40\u00b0 to 158\u00b0F",
@@ -20925,7 +20925,7 @@
     "radome": null,
     "mount_type": null,
     "included_parts": [],
-    "wind_rating": "Rating",
+    "wind_rating": "124 mph",
     "vswr": "\u2264< 2.0",
     "isolation": null,
     "operating_temp": "-40\u00b0 to 158\u00b0F",
@@ -21029,7 +21029,7 @@
     "radome": null,
     "mount_type": null,
     "included_parts": [],
-    "wind_rating": "Rating",
+    "wind_rating": "124 mph",
     "vswr": "\u2264< 2.0",
     "isolation": null,
     "operating_temp": "-40\u00b0 to 158\u00b0F",
@@ -21222,13 +21222,13 @@
     },
     "connector": "RPTNC Male",
     "lead_count": 8,
-    "polarization": "4x Vertical, 4x",
+    "polarization": "4\u00d7 Vertical, 4\u00d7 Horizontal",
     "cable_length": "36\" RG58",
     "cable_type": null,
     "dimensions": "10.6 x 10.6 x 1.25 in",
     "weight": "4.1 lbs",
     "ip_rating": null,
-    "radome": "",
+    "radome": "White UV-resistant ABS",
     "mount_type": "Options",
     "included_parts": [
       {
@@ -21237,7 +21237,7 @@
         "qty": 1
       }
     ],
-    "wind_rating": "Velocity",
+    "wind_rating": "124 mph",
     "vswr": "\u2264 2.0",
     "isolation": null,
     "operating_temp": "-40\u00b0 to 158\u00b0F",
@@ -21337,7 +21337,7 @@
         "5": "90\u00b0"
       }
     },
-    "connector": "Option of SMA Male,",
+    "connector": "SMA Male",
     "lead_count": 1,
     "polarization": "Vertical",
     "cable_length": null,
@@ -21452,8 +21452,8 @@
     "dimensions": "3.54 x .157 in",
     "weight": "0.30 lb",
     "ip_rating": null,
-    "radome": "",
-    "mount_type": "Style",
+    "radome": "White",
+    "mount_type": "Surface mount",
     "included_parts": [],
     "wind_rating": null,
     "vswr": "\u2264 2.0",
@@ -21537,7 +21537,7 @@
     },
     "connector": "QN Female",
     "lead_count": 6,
-    "polarization": "3x Vertical, 3x",
+    "polarization": "3\u00d7 Vertical, 3\u00d7 Horizontal",
     "cable_length": null,
     "cable_type": null,
     "dimensions": "9.84 x 9.98 x 1 in.",
@@ -21626,7 +21626,7 @@
     },
     "connector": "QN Female",
     "lead_count": 6,
-    "polarization": "Vertical (3\u00d7) &",
+    "polarization": "Vertical (3\u00d7) & Horizontal (3\u00d7)",
     "cable_length": null,
     "cable_type": null,
     "dimensions": "9.84 x 9.98 x 1 in.",
@@ -21693,7 +21693,7 @@
     "sku": "290230",
     "name": "2.4/5/6 GHz 6 dBi Wi-Fi 6 Femto Patch Antenna with 4 RPTNC Male Connectors and Articulating Mount",
     "form": "Patch",
-    "indoor_outdoor": "IP54",
+    "indoor_outdoor": null,
     "bands": [
       "2.4",
       "5",
@@ -21719,7 +21719,7 @@
     },
     "connector": "RPTNC Male",
     "lead_count": 4,
-    "polarization": "2x",
+    "polarization": "2\u00d7 Horizontal, 2\u00d7 Vertical",
     "cable_length": "36 in.",
     "cable_type": null,
     "dimensions": "3.4 x 3.4 x 1.4 in.",
@@ -21788,7 +21788,7 @@
     "sku": "209391",
     "name": "2.4/5/6 GHz 6 dBi Wi-Fi 6 Femto Patch Antenna with  4 RPSMA Male Connectors and Articulating Mount",
     "form": "Patch",
-    "indoor_outdoor": "IP54",
+    "indoor_outdoor": null,
     "bands": [
       "2.4",
       "5",
@@ -21814,7 +21814,7 @@
     },
     "connector": "RPSMA Male",
     "lead_count": 4,
-    "polarization": "2 x",
+    "polarization": "2\u00d7 Horizontal, 2\u00d7 Vertical",
     "cable_length": "36 in.",
     "cable_type": null,
     "dimensions": "3.4 x 3.4 x 1.4 in.",
@@ -21914,7 +21914,7 @@
     "radome": null,
     "mount_type": null,
     "included_parts": [],
-    "wind_rating": "Load",
+    "wind_rating": "60 mph",
     "vswr": "\u2264 2.0 / \u2264 2.0",
     "isolation": "\u2265 20 dB",
     "operating_temp": "-40\u00b0 to +158\u00b0F",
@@ -22273,14 +22273,14 @@
     },
     "connector": "RPSMA Male",
     "lead_count": 6,
-    "polarization": "2 \u00d7 Vertical and 2 \u00d7",
+    "polarization": "2\u00d7 Vertical and 2\u00d7 Horizontal",
     "cable_length": "35 in.",
     "cable_type": null,
     "dimensions": "10.6 x 6.7 x 1.6 in.",
-    "weight": "(Includes",
+    "weight": "5.1 lb (includes mounting hardware)",
     "ip_rating": null,
     "radome": "White, UV Resistant ABS",
-    "mount_type": "& Pole/Mast Diameter",
+    "mount_type": "Wall, pole, or mast (1.2\u20136.2 in diameter)",
     "included_parts": [
       {
         "item": "Articulating mount",
@@ -22369,7 +22369,7 @@
     },
     "connector": "RPTNC Male",
     "lead_count": 4,
-    "polarization": "2 \u00d7 Vertical and 2 \u00d7",
+    "polarization": "2\u00d7 Vertical and 2\u00d7 Horizontal",
     "cable_length": "36 in. RG58/U",
     "cable_type": null,
     "dimensions": "10.6 x 6.7 x 1.6 in.",
@@ -22408,17 +22408,17 @@
         "kind": "pattern"
       },
       {
-        "label": "2.4 GHz Horizontal",
+        "label": "2.4 GHz Vertical",
         "url": "images/ventev/208128-pattern-2-4-ghz-horizontal-2.jpg",
         "kind": "pattern"
       },
       {
-        "label": "6 GHz Horizontal",
+        "label": "5 GHz Horizontal",
         "url": "images/ventev/208128-pattern-6-ghz-horizontal.jpg",
         "kind": "pattern"
       },
       {
-        "label": "6 GHz Horizontal",
+        "label": "5 GHz Vertical",
         "url": "images/ventev/208128-pattern-6-ghz-horizontal-2.jpg",
         "kind": "pattern"
       }
@@ -22474,7 +22474,7 @@
     },
     "connector": "RPSMA Male",
     "lead_count": 6,
-    "polarization": "3 x Vertical/",
+    "polarization": "3\u00d7 Vertical / Horizontal",
     "cable_length": "36 in.",
     "cable_type": null,
     "dimensions": "6 x 6 x 1.4 in.",
@@ -22489,7 +22489,7 @@
         "qty": 1
       }
     ],
-    "wind_rating": "Speed Range",
+    "wind_rating": "<100 mph",
     "vswr": "\u2264 2.0",
     "isolation": "\u2265 10 / \u2265 22",
     "operating_temp": "-40\u00b0 to 158\u00b0F",
