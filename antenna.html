@@ -451,6 +451,7 @@
       svg.setAttribute('stroke-linecap', 'round');
       svg.setAttribute('stroke-linejoin', 'round');
       svg.setAttribute('aria-hidden', 'true');
+      // Trusted compile-time SVG path markup only (not catalog strings).
       svg.innerHTML = markup;
       return svg;
     }
@@ -481,7 +482,7 @@
         const svg = button.querySelector('svg');
         button.classList.add('is-copied');
         button.setAttribute('aria-label', `Copied ${value}`);
-        if (svg) svg.innerHTML = CHECK_ICON;
+        if (svg) svg.innerHTML = CHECK_ICON; // trusted constant SVG paths
         const live = copyAnnouncer();
         live.textContent = '';
         window.setTimeout(() => { live.textContent = 'Copied'; }, 30);
@@ -489,7 +490,7 @@
         button._copyTimer = window.setTimeout(() => {
           button.classList.remove('is-copied');
           button.setAttribute('aria-label', `Copy ${value}`);
-          if (svg) svg.innerHTML = COPY_ICON;
+          if (svg) svg.innerHTML = COPY_ICON; // trusted constant SVG paths
         }, 1500);
       }, () => {});
     }

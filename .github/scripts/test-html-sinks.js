@@ -2,9 +2,13 @@
 'use strict';
 
 /**
- * Inventory HTML sinks in page scripts. Fail if catalog/user strings are
- * interpolated into innerHTML assignments. Constant clears and compile-time
- * SVG markup are allowed; document them here when the pattern is intentional.
+ * Inventory HTML sinks in page scripts.
+ *
+ * Flag every innerHTML / outerHTML assignment unless the RHS is:
+ *   - a string literal with no interpolation, or
+ *   - an allowlisted constant / trusted empty shell
+ * Lowercase identifiers are violations unless allowlisted.
+ * Flag every insertAdjacentHTML( unless allowlisted.
  */
 
 const fs = require('fs');
@@ -25,41 +29,69 @@ const files = [
   'connector-normalize.js'
 ];
 
-const ALLOWED_INNERHTML_PATTERNS = [
-  /\.innerHTML\s*=\s*['"`]\s*['"`]/, // clear
-  /\.innerHTML\s*=\s*markup\b/, // antenna.html copy-icon SVG constants
-  /\.innerHTML\s*=\s*CHECK_ICON\b/,
-  /\.innerHTML\s*=\s*COPY_ICON\b/,
-  // compare.html builds empty structural shells then fills via textContent
-  /\.innerHTML\s*=\s*`<div class="card-vendor"><\/div><div class="card-model"><\/div>`/,
-  /\.innerHTML\s*=\s*`<div class="spec-label"><\/div><div class="spec-value"><\/div>`/
-];
+// Trusted constant markup only — keep why-comments next to real assignments.
+const ALLOWED_RHS = new Set([
+  "''",
+  '""',
+  '``',
+  'markup', // antenna.html copy/check SVG path constants
+  'CHECK_ICON',
+  'COPY_ICON',
+  '`<div class="card-vendor"></div><div class="card-model"></div>`', // compare empty shell
+  '`<div class="spec-label"></div><div class="spec-value"></div>`' // compare empty shell
+]);
 
-function isAllowed(statement) {
-  const normalized = statement.replace(/\s+/g, ' ').trim();
-  return ALLOWED_INNERHTML_PATTERNS.some(re => re.test(normalized));
+const ALLOWED_INSERT_ADJACENT = new Set();
+
+function normalizeRhs(rhs) {
+  return String(rhs || '').replace(/\s+/g, ' ').trim();
+}
+
+function isPlainStringLiteral(rhs) {
+  const s = normalizeRhs(rhs);
+  if (!s) return false;
+  if (/\$\{/.test(s)) return false;
+  if ((s.startsWith("'") && s.endsWith("'")) || (s.startsWith('"') && s.endsWith('"'))) {
+    return true;
+  }
+  if (s.startsWith('`') && s.endsWith('`')) {
+    return !/\$\{/.test(s);
+  }
+  return false;
+}
+
+function isAllowedRhs(rhs) {
+  const s = normalizeRhs(rhs);
+  if (ALLOWED_RHS.has(s)) return true;
+  if (isPlainStringLiteral(s)) return true;
+  return false;
 }
 
 const violations = [];
 
 files.forEach(rel => {
   const source = fs.readFileSync(path.join(root, rel), 'utf8');
-  // Flag template-literal or concatenated innerHTML that embeds ${...}
-  const re = /(?:\w+\.)?innerHTML\s*=\s*(`[^`]*`|"[^"]*"|'[^']*'|[^;\n]+)/g;
+
+  const assignRe = /\b(?:innerHTML|outerHTML)\s*=\s*([^;]+);/g;
   let match;
-  while ((match = re.exec(source))) {
-    const stmt = match[0];
-    if (/\$\{/.test(stmt) || /\+\s*[a-zA-Z_$]/.test(stmt)) {
-      violations.push({ file: rel, snippet: stmt.slice(0, 160) });
-      continue;
+  while ((match = assignRe.exec(source))) {
+    const rhs = match[1];
+    if (!isAllowedRhs(rhs)) {
+      violations.push({
+        file: rel,
+        kind: 'assign',
+        snippet: match[0].replace(/\s+/g, ' ').trim().slice(0, 160)
+      });
     }
-    if (!isAllowed(stmt) && !/\.innerHTML\s*=\s*['"`]\s*['"`]/.test(stmt) && !/\.innerHTML\s*=\s*''/.test(stmt)) {
-      // Allow bare clears via variable? still inventory non-allowed assignments
-      if (/\.innerHTML\s*=\s*['"`]/.test(stmt) || /\.innerHTML\s*=\s*[A-Z_]/.test(stmt)) {
-        if (!isAllowed(stmt)) {
-          violations.push({ file: rel, snippet: stmt.slice(0, 160) });
-        }
-      }
+  }
+
+  const insertRe = /\binsertAdjacentHTML\s*\(/g;
+  while ((match = insertRe.exec(source))) {
+    const start = match.index;
+    const snippet = source.slice(start, start + 120).replace(/\s+/g, ' ').trim();
+    const key = rel + ':' + start;
+    if (!ALLOWED_INSERT_ADJACENT.has(key) && !ALLOWED_INSERT_ADJACENT.has(snippet)) {
+      violations.push({ file: rel, kind: 'insertAdjacentHTML', snippet });
     }
   }
 });
@@ -79,8 +111,8 @@ assert.ok(
 
 if (violations.length) {
   console.error('Unexpected HTML sinks:');
-  violations.forEach(v => console.error('- ' + v.file + ': ' + v.snippet));
+  violations.forEach(v => console.error('- ' + v.file + ' [' + v.kind + ']: ' + v.snippet));
   process.exit(1);
 }
 
-console.log('OK: HTML sink inventory — no catalog/user string → innerHTML interpolations');
+console.log('OK: HTML sink inventory — no catalog/user string → HTML parse sinks');

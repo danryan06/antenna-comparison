@@ -257,6 +257,7 @@
         card.appendChild(imgWrap);
         const title = document.createElement('div');
         title.className = 'card-title';
+        // Empty structural shell; vendor/SKU filled via textContent below.
         title.innerHTML = `<div class="card-vendor"></div><div class="card-model"></div>`;
         title.querySelector('.card-vendor').textContent = entry.vendor || '';
         title.querySelector('.card-model').textContent = entry.sku || '';
@@ -267,6 +268,7 @@
           if (hidden.has(key)) return;
           const row = document.createElement('div');
           row.className = 'spec-row';
+          // Empty structural shell; label/value filled via textContent below.
           row.innerHTML = `<div class="spec-label"></div><div class="spec-value"></div>`;
           row.querySelector('.spec-label').textContent = label;
           row.querySelector('.spec-value').textContent = formatField(key, entry[key]);
