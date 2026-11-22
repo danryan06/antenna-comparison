@@ -10,6 +10,7 @@ Sibling of [AP Comparison](https://apcomparison.com) and [Switch Comparison](htt
 
 - **Comparison table** — sortable, filterable catalog of antennas
 - **Filters** — vendor, form (Omni / Patch / High-density patch), indoor/outdoor
+- **AP compatibility (Finder)** — pick a canonical AP id (`?ap=`) from the pinned AP Comparison RF export; see best-effort statuses, reasons, and manufacturer verification links (not a certification)
 - **Search** — matches primary Hubbell SKU and legacy AccelTex SKU
 - **Choose columns** — show/hide fields; default columns are bands, gain, beamwidth, connector
 - **Side-by-side compare** — select multiple antennas and compare
@@ -65,7 +66,16 @@ node .github/scripts/build-public-catalog.js
 node .github/scripts/build-public-catalog.js --check
 ```
 
-CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-only keys.
+Compatibility artifacts (pinned AP Comparison export + generated index):
+
+```bash
+node .github/scripts/validate-compatibility.js
+node .github/scripts/build-compatibility-index.js
+node .github/scripts/build-compatibility-index.js --check
+node .github/scripts/test-compatibility-matcher.js
+```
+
+CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-only keys, or if the compatibility index drifts from the matcher.
 
 ### Project structure
 
@@ -75,9 +85,12 @@ CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-onl
 ├── edit.html               # Edit an existing antenna
 ├── submit.html             # Submit a new antenna
 ├── compare.html            # Side-by-side compare
-├── finder.html             # Feature Finder
+├── finder.html             # Feature Finder (+ AP compatibility lookup)
 ├── style.css               # Shared styling
 ├── antenna-format.js       # Display helpers
+├── compatibility-matcher.js
+├── connector-normalize.js
+├── data/compatibility/     # Pinned AP RF export + generated index
 ├── antenna-submit.js       # Edit / submit form helpers
 ├── antenna_data.json       # Authoring catalog (may include maintainer notes)
 ├── antenna_catalog.json    # Public Pages catalog (allowlisted fields only)

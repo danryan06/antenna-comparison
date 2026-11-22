@@ -78,8 +78,14 @@
     <div class="card finder-card">
       <span class="badge">Feature Finder</span>
       <p class="subtitle" style="margin-top:0.5rem;">
-        Set any combination of filters — results update immediately.
+        Set any combination of filters — results update immediately. Choose an access point to see best-effort antenna compatibility.
       </p>
+
+      <div id="compat-banner" class="compat-banner" role="note" hidden>
+        <strong class="compat-banner-title"></strong>
+        <p class="compat-banner-body"></p>
+        <p class="compat-banner-about"><a href="#about-compatibility" id="about-compatibility-link"></a></p>
+      </div>
 
       <div class="finder-grid">
         <details class="finder-filters" id="finder-filters" open>
@@ -89,6 +95,29 @@
           </summary>
           <section class="filter-panel" aria-label="Antenna filters">
             <h2 class="finder-filters-heading">Filters</h2>
+
+            <div class="filter-group">
+              <div class="filter-group-head">
+                <h3 id="ap-heading">Access point</h3>
+                <p id="ap-help">Canonical AP ID from AP Comparison</p>
+              </div>
+              <label class="visually-hidden" for="filter-ap">Access point</label>
+              <input
+                id="filter-ap"
+                class="filter-select filter-panel-select"
+                type="text"
+                list="ap-options"
+                autocomplete="off"
+                placeholder="Search AP model or id…"
+                aria-labelledby="ap-heading"
+                aria-describedby="ap-help ap-status"
+              />
+              <datalist id="ap-options"></datalist>
+              <p id="ap-status" class="filter-inline-note" aria-live="polite"></p>
+              <button id="clear-ap" type="button" class="btn-link btn-link-small" hidden>Clear access point</button>
+            </div>
+
+            <div id="ap-summary" class="ap-summary" hidden></div>
 
             <div class="filter-group">
               <div class="filter-group-head">
@@ -139,6 +168,16 @@
               <div id="env-options" class="chip-grid" role="radiogroup" aria-label="Indoor or outdoor"></div>
             </div>
 
+            <div class="filter-group">
+              <div class="filter-group-head">
+                <h3>Compatibility</h3>
+              </div>
+              <label class="chip-option">
+                <input type="checkbox" id="show-excluded" />
+                <span>Show excluded</span>
+              </label>
+            </div>
+
             <div class="finder-filter-actions">
               <button id="clear-filters" type="button" class="btn-link">Reset Filters</button>
             </div>
@@ -168,14 +207,22 @@
           </div>
         </section>
       </div>
+
+      <section id="about-compatibility" class="compat-about card" hidden>
+        <h2>About compatibility results</h2>
+        <p id="compat-about-body"></p>
+      </section>
     </div>
   </div>
 
   <button id="compare-fab" class="btn-primary floating-compare" style="display:none;" type="button" disabled>Compare (0)</button>
 
   <script src="antenna-format.js"></script>
+  <script src="compatibility-matcher.js"></script>
   <script>
     const DATA_URL = 'antenna_catalog.json';
+    const AP_PROFILES_URL = 'data/compatibility/ap-profiles.json';
+    const AP_COMPARE_BASE = 'https://apcomparison.com';
     const WIFI_BANDS = ['2.4', '5', '6'];
     const BAND_PRESETS = [
       { id: 'dual', label: 'Dual', bands: ['2.4', '5'] },
@@ -205,12 +252,18 @@
       bands: new Set(),
       connector: '',
       leads: '',
-      env: 'Either'
+      env: 'Either',
+      apId: '',
+      showExcluded: false
     };
     let currentSort = { key: DEFAULT_SORT.key, dir: DEFAULT_SORT.dir };
 
     let enrichedData = [];
+    let apIndex = null;
+    let selectedApProfile = null;
+    let lastCompatResults = [];
     const selectedIds = new Set();
+    const DISCLAIMERS = (window.AntennaCompatibility && AntennaCompatibility.DISCLAIMERS) || {};
 
     function restoreStateFromUrl() {
       const params = new URLSearchParams(window.location.search);
@@ -227,6 +280,8 @@
       state.leads = params.get('leads') || '';
       const env = params.get('env');
       if (env && ENV_OPTIONS.some(opt => opt.value === env)) state.env = env;
+      state.apId = (params.get('ap') || '').trim();
+      state.showExcluded = params.get('excluded') === '1';
       const sortKey = params.get('sort') || '';
       if (RESULT_COLUMNS.some(col => col.key === sortKey)) currentSort.key = sortKey;
       else currentSort.key = DEFAULT_SORT.key;
@@ -236,12 +291,14 @@
 
     function getFilterStateForUrl() {
       const params = new URLSearchParams();
+      if (state.apId) params.set('ap', state.apId);
       if (state.vendors.size) params.set('vendors', Array.from(state.vendors).join('|'));
       if (state.form) params.set('form', state.form);
       if (state.bands.size) params.set('bands', Array.from(state.bands).join(','));
       if (state.connector) params.set('connector', state.connector);
       if (state.leads) params.set('leads', state.leads);
       if (state.env && state.env !== 'Either') params.set('env', state.env);
+      if (state.showExcluded) params.set('excluded', '1');
       if (currentSort.key !== DEFAULT_SORT.key || currentSort.dir !== DEFAULT_SORT.dir) {
         params.set('sort', currentSort.key);
         params.set('dir', currentSort.dir);
@@ -468,11 +525,187 @@
       });
     }
 
+    function buildApOptions() {
+      const list = document.getElementById('ap-options');
+      list.innerHTML = '';
+      if (!apIndex) return;
+      apIndex.list.forEach(profile => {
+        const opt = document.createElement('option');
+        opt.value = profile.ap_id;
+        opt.label = `${profile.display_name} (${profile.ap_id})`;
+        list.appendChild(opt);
+      });
+    }
+
+    function resolveApInput(raw) {
+      const text = String(raw || '').trim();
+      if (!text || !apIndex) return null;
+      if (apIndex.byId[text]) return apIndex.byId[text];
+      const lower = text.toLowerCase();
+      const exactName = apIndex.list.find(p =>
+        String(p.display_name || '').toLowerCase() === lower ||
+        String(p.model || '').toLowerCase() === lower
+      );
+      if (exactName) return exactName;
+      return null;
+    }
+
+    function formatApInterfaceSummary(profile) {
+      const cfg = AntennaCompatibility.defaultConfiguration(profile);
+      if (!cfg) return 'No external interface data';
+      const ifaces = (cfg.external_interfaces || []).filter(i =>
+        i && i.requirement === 'required' &&
+        i.purpose !== 'iot' && i.purpose !== 'gnss' && i.purpose !== 'lorawan' && i.purpose !== 'lte'
+      );
+      if (!ifaces.length) return 'No required Wi-Fi external interface';
+      return ifaces.map(iface => {
+        const c = iface.connector || {};
+        const parts = [
+          c.family || 'unknown family',
+          c.variant ? `variant ${c.variant}` : null,
+          c.gender || 'gender unknown',
+          `${iface.connector_count || '?'} connector(s)`,
+          `${iface.rf_path_count || '?'} RF path(s)`
+        ].filter(Boolean);
+        return parts.join(' · ');
+      }).join('; ');
+    }
+
+    function updateCompatChrome() {
+      const banner = document.getElementById('compat-banner');
+      const about = document.getElementById('about-compatibility');
+      const aboutBody = document.getElementById('compat-about-body');
+      const active = !!selectedApProfile;
+      banner.hidden = !active;
+      about.hidden = !active;
+      if (active) {
+        banner.querySelector('.compat-banner-title').textContent = DISCLAIMERS.bannerTitle || 'Best-effort compatibility guidance';
+        banner.querySelector('.compat-banner-body').textContent = DISCLAIMERS.bannerBody || '';
+        const aboutLink = document.getElementById('about-compatibility-link');
+        aboutLink.textContent = DISCLAIMERS.aboutLinkLabel || 'About compatibility results';
+        aboutBody.textContent =
+          'AntennaComparison compiles information from sources believed to be reliable, but specifications, approvals, firmware requirements, and product availability can change without notice. Results may contain errors or omissions and do not replace manufacturer documentation, qualified RF engineering, site surveys, installation guidance, or applicable laws and regulations. AntennaComparison is not affiliated with or endorsed by the listed manufacturers unless explicitly stated. Use of the information is at your own risk. To the maximum extent permitted by applicable law, the site and its contributors provide the information “as is,” without warranties of accuracy, completeness, compatibility, merchantability, fitness for a particular purpose, non-infringement, or uninterrupted availability, and are not liable for purchasing decisions, installation costs, service interruption, equipment damage, loss of data, lost profits, or other direct, indirect, incidental, special, consequential, or punitive damages arising from reliance on the results.';
+      }
+    }
+
+    function renderApSummary(profile) {
+      const el = document.getElementById('ap-summary');
+      const status = document.getElementById('ap-status');
+      const clearBtn = document.getElementById('clear-ap');
+      if (!profile) {
+        el.hidden = true;
+        el.innerHTML = '';
+        clearBtn.hidden = !state.apId;
+        return;
+      }
+      clearBtn.hidden = false;
+      el.hidden = false;
+      const complete = profile.completeness && profile.completeness.status === 'complete';
+      const missing = (profile.completeness && profile.completeness.missing) || [];
+      const ds = profile.datasheet_url ? safeUrl(profile.datasheet_url) : '';
+      el.innerHTML = '';
+
+      const title = document.createElement('h3');
+      title.textContent = profile.display_name || profile.ap_id;
+      el.appendChild(title);
+
+      const meta = document.createElement('p');
+      meta.className = 'ap-summary-meta';
+      meta.textContent = `AP ID: ${profile.ap_id}`;
+      el.appendChild(meta);
+
+      const iface = document.createElement('p');
+      iface.textContent = formatApInterfaceSummary(profile);
+      el.appendChild(iface);
+
+      const bands = document.createElement('p');
+      bands.textContent = 'Bands: ' + ((profile.supported_bands || []).join(', ') || '—');
+      el.appendChild(bands);
+
+      const dataChecked = document.createElement('p');
+      dataChecked.className = 'ap-summary-meta';
+      const gen = (apIndex && apIndex.envelope && apIndex.envelope.generated_at) || '';
+      dataChecked.textContent = complete
+        ? `Data checked: ${gen || 'pinned export'} · profile complete`
+        : `Data checked: ${gen || 'pinned export'} · incomplete (${missing.length} missing fact${missing.length === 1 ? '' : 's'})`;
+      el.appendChild(dataChecked);
+
+      const links = document.createElement('p');
+      links.className = 'ap-summary-links';
+      const back = document.createElement('a');
+      back.href = AP_COMPARE_BASE;
+      back.target = '_blank';
+      back.rel = 'noopener noreferrer';
+      back.textContent = 'Open AP Comparison';
+      links.appendChild(back);
+      if (ds) {
+        links.appendChild(document.createTextNode(' · '));
+        const doc = document.createElement('a');
+        doc.href = ds;
+        doc.target = '_blank';
+        doc.rel = 'noopener noreferrer';
+        doc.textContent = 'AP documentation';
+        links.appendChild(doc);
+      }
+      el.appendChild(links);
+
+      status.textContent = complete
+        ? 'Using pinned AP profile.'
+        : 'Pinned AP profile is incomplete — results stay conservative.';
+    }
+
+    function setSelectedAp(profile, { syncInput = true } = {}) {
+      selectedApProfile = profile || null;
+      state.apId = profile ? profile.ap_id : state.apId;
+      if (!profile && !resolveApInput(state.apId)) {
+        // keep typed unknown id for unavailable state
+      }
+      if (syncInput) {
+        document.getElementById('filter-ap').value = state.apId || '';
+      }
+      updateCompatChrome();
+      renderApSummary(profile);
+      document.getElementById('show-excluded').checked = state.showExcluded;
+    }
+
+    function applyApSelectionFromInput() {
+      const input = document.getElementById('filter-ap');
+      const status = document.getElementById('ap-status');
+      const raw = input.value.trim();
+      if (!raw) {
+        state.apId = '';
+        setSelectedAp(null, { syncInput: false });
+        status.textContent = '';
+        applyFilters();
+        return;
+      }
+      const profile = resolveApInput(raw);
+      if (!profile) {
+        state.apId = raw;
+        setSelectedAp(null, { syncInput: false });
+        status.textContent = 'AP profile unavailable for this id. Pick a pinned access point — Finder does not guess from display names.';
+        document.getElementById('ap-summary').hidden = true;
+        updateCompatChrome();
+        document.getElementById('compat-banner').hidden = false;
+        document.getElementById('compat-banner').querySelector('.compat-banner-title').textContent =
+          DISCLAIMERS.bannerTitle || 'Best-effort compatibility guidance';
+        document.getElementById('compat-banner').querySelector('.compat-banner-body').textContent =
+          DISCLAIMERS.bannerBody || '';
+        applyFilters();
+        return;
+      }
+      state.apId = profile.ap_id;
+      if (input.value !== profile.ap_id) input.value = profile.ap_id;
+      setSelectedAp(profile, { syncInput: false });
+      applyFilters();
+    }
+
     function buildControls() {
       const formOptions = [
         { value: '', label: 'Any' },
         ...FORM_TYPES.map(v => ({ value: v, label: v }))
       ];
+      buildApOptions();
       renderVendorChips(document.getElementById('vendor-options'));
       renderRadioChips(document.getElementById('form-options'), formOptions, 'form', state.form);
       renderBandPresets(document.getElementById('bands-presets'));
@@ -503,6 +736,15 @@
       }
       connectorSelect.value = state.connector;
       leadsSelect.value = state.leads;
+      document.getElementById('filter-ap').value = state.apId || '';
+      document.getElementById('show-excluded').checked = state.showExcluded;
+      if (state.apId) {
+        const profile = resolveApInput(state.apId);
+        if (profile) setSelectedAp(profile, { syncInput: true });
+        else applyApSelectionFromInput();
+      } else {
+        setSelectedAp(null);
+      }
     }
 
     function matchesFilters(entry) {
@@ -559,15 +801,233 @@
 
     function applyFilters() {
       if (!enrichedData.length) return;
-      const matches = sortMatches(enrichedData.filter(matchesFilters));
       updateBandPresetActive();
       renderActiveFilters();
+
+      if (state.apId && !selectedApProfile) {
+        lastCompatResults = [];
+        renderCompatUnavailable();
+        updateMatchCount(0);
+        document.getElementById('results-note').textContent =
+          'AP profile unavailable — choose a pinned access point id.';
+        syncUrl();
+        return;
+      }
+
+      if (selectedApProfile) {
+        const filtered = enrichedData.filter(matchesFilters);
+        const results = AntennaCompatibility.matchAllForAp(filtered, selectedApProfile, {
+          showExcluded: state.showExcluded
+        });
+        lastCompatResults = results;
+        renderCompatResults(results);
+        const visible = results.filter(r => r.status !== 'incompatible' || state.showExcluded);
+        updateMatchCount(visible.length);
+        document.getElementById('results-note').textContent = visible.length
+          ? 'Compatibility results for the selected AP, narrowed by active filters.'
+          : 'No compatibility candidates for this AP with the current filters.';
+        syncUrl();
+        return;
+      }
+
+      lastCompatResults = [];
+      const matches = sortMatches(enrichedData.filter(matchesFilters));
       renderResults(matches);
       updateMatchCount(matches.length);
       document.getElementById('results-note').textContent = matches.length
         ? 'Showing antennas that meet every selected requirement.'
         : 'No matches — broaden your filters.';
       syncUrl();
+    }
+
+    function renderCompatUnavailable() {
+      const container = document.getElementById('results');
+      const emptyState = document.getElementById('empty-state');
+      container.innerHTML = '';
+      emptyState.style.display = 'none';
+      const box = document.createElement('div');
+      box.className = 'compat-unavailable';
+      const h = document.createElement('h3');
+      h.textContent = 'AP profile unavailable';
+      const p = document.createElement('p');
+      p.textContent = 'This deep link uses an opaque AP id that is not in the pinned AP Comparison export. Pick an access point from the list — Finder will not fuzzy-match display names.';
+      box.appendChild(h);
+      box.appendChild(p);
+      container.appendChild(box);
+      updateCompareFab();
+    }
+
+    function statusClass(status) {
+      return 'compat-status compat-status-' + String(status || '').replace(/_/g, '-');
+    }
+
+    function manufacturerLinks(entry, result) {
+      const wrap = document.createElement('div');
+      wrap.className = 'compat-verify';
+      const label = document.createElement('strong');
+      label.textContent = 'Verify with manufacturers';
+      wrap.appendChild(label);
+      const list = document.createElement('ul');
+      if (selectedApProfile && selectedApProfile.datasheet_url) {
+        const href = safeUrl(selectedApProfile.datasheet_url);
+        if (href) {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = href;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          a.textContent = 'AP documentation';
+          li.appendChild(a);
+          list.appendChild(li);
+        }
+      }
+      const sheets = Array.isArray(entry.datasheet_urls) ? entry.datasheet_urls : [];
+      sheets.slice(0, 2).forEach(sheet => {
+        const href = safeUrl(sheet && sheet.url);
+        if (!href) return;
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = href;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.textContent = sheet.label || 'Antenna documentation';
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+      if (!list.children.length) {
+        const li = document.createElement('li');
+        li.textContent = 'No direct documentation links in catalog — check the manufacturer site.';
+        list.appendChild(li);
+      }
+      wrap.appendChild(list);
+      return wrap;
+    }
+
+    function renderCompatResults(results) {
+      const container = document.getElementById('results');
+      const emptyState = document.getElementById('empty-state');
+      container.innerHTML = '';
+      const groups = AntennaCompatibility.groupResults(results);
+      let rendered = 0;
+
+      groups.forEach(group => {
+        const items = group.items.filter(r =>
+          group.id !== 'excluded' || state.showExcluded
+        );
+        if (group.id === 'excluded' && !state.showExcluded) return;
+        if (!items.length && group.id !== 'excluded') return;
+        if (!items.length) return;
+
+        const section = document.createElement('section');
+        section.className = 'compat-group';
+        const heading = document.createElement('h3');
+        heading.textContent = `${group.title} (${items.length})`;
+        section.appendChild(heading);
+
+        items.forEach(result => {
+          rendered += 1;
+          const entry = result.antenna;
+          const card = document.createElement('article');
+          card.className = 'compat-result';
+
+          const top = document.createElement('div');
+          top.className = 'compat-result-top';
+
+          const status = document.createElement('span');
+          status.className = statusClass(result.status);
+          status.textContent = AntennaCompatibility.statusLabel(result.status);
+          top.appendChild(status);
+
+          if (result.vendor_listed) {
+            const claim = document.createElement('span');
+            claim.className = 'compat-claim';
+            claim.textContent = 'Vendor listed';
+            top.appendChild(claim);
+          }
+
+          const title = document.createElement('a');
+          title.className = 'compat-sku';
+          title.href = detailHrefFor(entry._slug);
+          title.textContent = `${entry.vendor || ''} ${entry.sku || ''}`.trim();
+          top.appendChild(title);
+          card.appendChild(top);
+
+          if (result.status !== 'incompatible') {
+            const reminder = document.createElement('p');
+            reminder.className = 'compat-reminder';
+            reminder.textContent = DISCLAIMERS.compact ||
+              'Best-effort match — verify with the manufacturers before purchase or installation.';
+            card.appendChild(reminder);
+          }
+
+          if (result.status === 'vendor_listed_unverified' || result.status === 'review_required') {
+            const warn = document.createElement('p');
+            warn.className = 'compat-verify-warning';
+            warn.textContent = DISCLAIMERS.verificationRequired ||
+              'Verification required. The available evidence is incomplete or ambiguous.';
+            card.appendChild(warn);
+          }
+
+          const meta = document.createElement('p');
+          meta.className = 'compat-meta';
+          const bits = [
+            entry.connector || 'connector —',
+            entry.form || null,
+            formatBands(entry.bands) || null,
+            result.units_required ? `${result.units_required} unit(s) required` : null
+          ].filter(Boolean);
+          meta.textContent = bits.join(' · ');
+          card.appendChild(meta);
+
+          const why = document.createElement('details');
+          why.className = 'compat-why';
+          const summary = document.createElement('summary');
+          summary.textContent = 'Why this result?';
+          why.appendChild(summary);
+          const ul = document.createElement('ul');
+          (result.reasons || []).forEach(r => {
+            const li = document.createElement('li');
+            li.textContent = `${r.code}: ${r.message}`;
+            ul.appendChild(li);
+          });
+          (result.warnings || []).forEach(r => {
+            const li = document.createElement('li');
+            li.textContent = `Warning ${r.code}: ${r.message}`;
+            ul.appendChild(li);
+          });
+          why.appendChild(ul);
+          card.appendChild(why);
+
+          card.appendChild(manufacturerLinks(entry, result));
+
+          const actions = document.createElement('div');
+          actions.className = 'compat-actions';
+          const detail = document.createElement('a');
+          detail.href = detailHrefFor(entry._slug);
+          detail.className = 'btn-link btn-link-ghost btn-link-small';
+          detail.textContent = 'Details';
+          actions.appendChild(detail);
+          const select = document.createElement('button');
+          select.type = 'button';
+          select.className = 'btn-link btn-link-small';
+          select.textContent = selectedIds.has(entry._slug) ? 'Selected' : 'Select';
+          select.addEventListener('click', () => {
+            if (selectedIds.has(entry._slug)) selectedIds.delete(entry._slug);
+            else selectedIds.add(entry._slug);
+            updateCompareFab();
+            applyFilters();
+          });
+          actions.appendChild(select);
+          card.appendChild(actions);
+
+          section.appendChild(card);
+        });
+
+        container.appendChild(section);
+      });
+
+      emptyState.style.display = rendered ? 'none' : 'block';
+      updateCompareFab();
     }
 
     function updateMatchCount(count) {
@@ -580,6 +1040,7 @@
       container.innerHTML = '';
       const chips = [];
 
+      if (state.apId) chips.push({ type: 'ap', value: state.apId, label: `AP ${state.apId}` });
       state.vendors.forEach(v => chips.push({ type: 'vendors', value: v, label: v }));
       if (state.form) chips.push({ type: 'form', value: state.form, label: state.form });
       state.bands.forEach(v => chips.push({ type: 'bands', value: v, label: `${v} GHz` }));
@@ -588,6 +1049,7 @@
       if (state.env && state.env !== 'Either') {
         chips.push({ type: 'env', value: state.env, label: state.env });
       }
+      if (state.showExcluded) chips.push({ type: 'excluded', value: '1', label: 'Show excluded' });
 
       if (!chips.length) {
         container.style.display = 'none';
@@ -608,7 +1070,14 @@
     }
 
     function removeFilter(type, value) {
-      if (type === 'vendors') {
+      if (type === 'ap') {
+        state.apId = '';
+        document.getElementById('filter-ap').value = '';
+        setSelectedAp(null);
+      } else if (type === 'excluded') {
+        state.showExcluded = false;
+        document.getElementById('show-excluded').checked = false;
+      } else if (type === 'vendors') {
         state.vendors.delete(value);
         const input = document.getElementById(`vendor-${slugifyLabel(value)}`);
         if (input) input.checked = false;
@@ -641,8 +1110,12 @@
       state.connector = '';
       state.leads = '';
       state.env = 'Either';
+      state.apId = '';
+      state.showExcluded = false;
       currentSort = { key: DEFAULT_SORT.key, dir: DEFAULT_SORT.dir };
       selectedIds.clear();
+      document.getElementById('filter-ap').value = '';
+      setSelectedAp(null);
       buildControls();
       applyFilters();
       updateCompareFab();
@@ -805,42 +1278,84 @@
     }
 
     function exportToCsv() {
-      const matches = sortMatches(enrichedData.filter(matchesFilters));
-      if (!matches.length) {
-        alert('No antennas to export. Please adjust your filters.');
-        return;
-      }
-
-      const keys = [
-        'vendor', 'sku', 'legacy_sku', 'name', 'form', 'indoor_outdoor', 'bands',
-        'connector', 'lead_count', 'gain_dbi', 'beamwidth', 'polarization',
-        'cable_length', 'dimensions', 'weight', 'ip_rating'
-      ];
-
       function escapeCsvValue(value) {
         const s = String(value || '');
         return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
       }
 
-      function cell(entry, key) {
-        const v = entry[key];
-        if (key === 'bands') return formatBands(v);
-        if (key === 'gain_dbi') return formatGainCompact(v);
-        if (key === 'beamwidth') return formatBeamwidthCompact(v);
-        if (Array.isArray(v)) return v.join('; ');
-        if (v && typeof v === 'object') return JSON.stringify(v);
-        return v == null ? '' : String(v);
+      let rows;
+      if (selectedApProfile) {
+        const results = lastCompatResults.length
+          ? lastCompatResults
+          : AntennaCompatibility.matchAllForAp(
+            enrichedData.filter(matchesFilters),
+            selectedApProfile,
+            { showExcluded: state.showExcluded }
+          );
+        if (!results.length) {
+          alert('No antennas to export. Please adjust your filters.');
+          return;
+        }
+        const notice = DISCLAIMERS.exportNotice || '';
+        const keys = [
+          'status', 'confidence', 'units_required', 'vendor_listed', 'reason_codes',
+          'antenna_id', 'vendor', 'sku', 'name', 'form', 'bands', 'connector', 'lead_count'
+        ];
+        rows = [
+          'NOTICE,' + escapeCsvValue(notice),
+          `ap_id,${escapeCsvValue(selectedApProfile.ap_id)}`,
+          keys.map(escapeCsvValue).join(','),
+          ...results.map(result => {
+            const entry = result.antenna || {};
+            const map = {
+              status: result.status,
+              confidence: result.confidence,
+              units_required: result.units_required,
+              vendor_listed: result.vendor_listed ? 'yes' : 'no',
+              reason_codes: (result.reasons || []).map(r => r.code).join('|'),
+              antenna_id: result.antenna_id || entry.antenna_id || '',
+              vendor: entry.vendor,
+              sku: entry.sku,
+              name: entry.name,
+              form: entry.form,
+              bands: formatBands(entry.bands),
+              connector: entry.connector,
+              lead_count: entry.lead_count
+            };
+            return keys.map(k => escapeCsvValue(map[k])).join(',');
+          })
+        ];
+      } else {
+        const matches = sortMatches(enrichedData.filter(matchesFilters));
+        if (!matches.length) {
+          alert('No antennas to export. Please adjust your filters.');
+          return;
+        }
+        const keys = [
+          'vendor', 'sku', 'legacy_sku', 'name', 'form', 'indoor_outdoor', 'bands',
+          'connector', 'lead_count', 'gain_dbi', 'beamwidth', 'polarization',
+          'cable_length', 'dimensions', 'weight', 'ip_rating'
+        ];
+        function cell(entry, key) {
+          const v = entry[key];
+          if (key === 'bands') return formatBands(v);
+          if (key === 'gain_dbi') return formatGainCompact(v);
+          if (key === 'beamwidth') return formatBeamwidthCompact(v);
+          if (Array.isArray(v)) return v.join('; ');
+          if (v && typeof v === 'object') return JSON.stringify(v);
+          return v == null ? '' : String(v);
+        }
+        rows = [
+          keys.map(escapeCsvValue).join(','),
+          ...matches.map(entry => keys.map(k => escapeCsvValue(cell(entry, k))).join(','))
+        ];
       }
 
-      const rows = [
-        keys.map(escapeCsvValue).join(','),
-        ...matches.map(entry => keys.map(k => escapeCsvValue(cell(entry, k))).join(','))
-      ];
       const blob = new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8;' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'antenna-finder-results.csv';
+      a.download = selectedApProfile ? 'antenna-compatibility-results.csv' : 'antenna-finder-results.csv';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -849,11 +1364,23 @@
 
     async function loadData() {
       try {
-        const res = await fetch(DATA_URL, { cache: 'no-store' });
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        const raw = await res.json();
+        const [antennaRes, apRes] = await Promise.all([
+          fetch(DATA_URL, { cache: 'no-store' }),
+          fetch(AP_PROFILES_URL, { cache: 'no-store' })
+        ]);
+        if (!antennaRes.ok) throw new Error('HTTP ' + antennaRes.status);
+        const raw = await antennaRes.json();
         if (!Array.isArray(raw)) throw new Error('antenna_catalog.json must be an array');
         enrichedData = raw.map(enrichEntry);
+
+        if (apRes.ok) {
+          const envelope = await apRes.json();
+          apIndex = AntennaCompatibility.indexProfiles(envelope);
+        } else {
+          console.warn('AP profiles unavailable', apRes.status);
+          apIndex = null;
+        }
+
         restoreStateFromUrl();
         buildControls();
         applyFilters();
@@ -885,6 +1412,24 @@
       });
       document.getElementById('filter-leads').addEventListener('change', (e) => {
         state.leads = e.target.value;
+        applyFilters();
+      });
+      const apInput = document.getElementById('filter-ap');
+      apInput.addEventListener('change', applyApSelectionFromInput);
+      apInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          applyApSelectionFromInput();
+        }
+      });
+      document.getElementById('clear-ap').addEventListener('click', () => {
+        state.apId = '';
+        apInput.value = '';
+        setSelectedAp(null);
+        applyFilters();
+      });
+      document.getElementById('show-excluded').addEventListener('change', (e) => {
+        state.showExcluded = !!e.target.checked;
         applyFilters();
       });
       document.getElementById('clear-filters').addEventListener('click', clearAllFilters);

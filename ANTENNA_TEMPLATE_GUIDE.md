@@ -4,9 +4,16 @@ Use `antenna_template.json` as the shape for new rows in `antenna_data.json`.
 
 ## Identity
 
+- `antenna_id` — immutable `vendor-slug:sku-slug` used by AP compatibility matching; freeze after assignment even if display vendor/SKU text changes
 - `sku` — primary / display catalog number (Hubbell for AccelTex/Hubbell products)
 - `legacy_sku` — searchable AccelTex (or prior) alias; show on the detail page
 - Search must match either SKU
+
+## RF interfaces (compatibility)
+
+- `rf_interfaces[]` — structured connector/path/cable facts for AP matching (`connector_family`, gender, counts, bands, cable inclusion)
+- Keep raw `connector` / `lead_count` / `cable_*` for display; do not invent proprietary variants
+- `compatibility_claims[]` — curated public claims with `ap_id` + `source_id` only (legacy `internal_notes.compatible_aps` stays internal and is never rendered)
 
 ## Form
 

@@ -1,4 +1,5 @@
 {
+  "antenna_id": "vendor-slug:sku-slug",
   "vendor": "Vendor Name",
   "sku": "Primary Hubbell or vendor catalog number",
   "legacy_sku": "Legacy AccelTex SKU if any (optional)",
@@ -29,6 +30,27 @@
   "polarization": "4 Vertical, 4 Horizontal",
   "cable_length": "36 in (910 mm)",
   "cable_type": "ATS-200",
+  "rf_interfaces": [
+    {
+      "interface_id": "main",
+      "attachment": "pigtail",
+      "connector_family": "rp-sma",
+      "connector_variant": null,
+      "gender": "male",
+      "orientation": null,
+      "connector_count": 8,
+      "physical_lead_count": 8,
+      "rf_path_count": 8,
+      "bands": ["2.4", "5", "6"],
+      "cable": {
+        "included": true,
+        "length_mm": 910,
+        "type": "ATS-200",
+        "removable": false
+      }
+    }
+  ],
+  "compatibility_claims": [],
   "dimensions": "24 × 24 × 1.6 in (600 × 600 × 40 mm)",
   "weight": "2.5 lb (0.68 kg)",
   "ip_rating": "IP67",
