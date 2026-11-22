@@ -34823,6 +34823,12 @@
         "id": "te-connectivity-antenna-catalog",
         "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
         "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PSQ24495",
+        "id": "psq24495-91rsm-te-connectivity-datasheet-159012458",
+        "url": "https://datasheet.octopart.com/PSQ24495-91RSM-TE-Connectivity-datasheet-159012458.pdf",
+        "last_checked": "2026-11-22"
       }
     ],
     "datasheet_urls": [
@@ -34845,7 +34851,25 @@
       "gain_dbi": "Peak Gain \u2013 Max from datasheet (avg 5.5/6.0).",
       "beamwidth": "Azimuth\u2192horizontal, Vertical plane\u2192vertical."
     },
-    "image_url": "images/te-connectivity/psq24495-91rsm.jpg"
+    "image_url": "images/te-connectivity/psq24495-91rsm.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/psq24495-91rsm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/psq24495-91rsm-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/psq24495-91rsm-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/psq24495-91rsm-pattern-5-ghz-vertical.jpg"
+      }
+    ]
   },
   {
     "vendor": "TE Connectivity",
@@ -34890,6 +34914,12 @@
         "id": "te-connectivity-antenna-catalog",
         "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
         "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PSQ24495",
+        "id": "psq24495-91rsm-te-connectivity-datasheet-159012458",
+        "url": "https://datasheet.octopart.com/PSQ24495-91RSM-TE-Connectivity-datasheet-159012458.pdf",
+        "last_checked": "2026-11-22"
       }
     ],
     "datasheet_urls": [
@@ -34912,7 +34942,25 @@
       "gain_dbi": "Peak Gain \u2013 Max from datasheet (avg 5.5/6.0).",
       "beamwidth": "Azimuth\u2192horizontal, Vertical plane\u2192vertical."
     },
-    "image_url": "images/te-connectivity/psq24495-91nf.jpg"
+    "image_url": "images/te-connectivity/psq24495-91nf.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/psq24495-91nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/psq24495-91nf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/psq24495-91nf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/psq24495-91nf-pattern-5-ghz-vertical.jpg"
+      }
+    ]
   },
   {
     "vendor": "TE Connectivity",
@@ -34957,6 +35005,12 @@
         "id": "te-connectivity-antenna-catalog",
         "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
         "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PSQ24495",
+        "id": "psq24495-91rsm-te-connectivity-datasheet-159012458",
+        "url": "https://datasheet.octopart.com/PSQ24495-91RSM-TE-Connectivity-datasheet-159012458.pdf",
+        "last_checked": "2026-11-22"
       }
     ],
     "datasheet_urls": [
@@ -34979,7 +35033,25 @@
       "gain_dbi": "Peak Gain \u2013 Max from datasheet (avg 5.5/6.0).",
       "beamwidth": "Azimuth\u2192horizontal, Vertical plane\u2192vertical."
     },
-    "image_url": "images/te-connectivity/psq24495-91nm.jpg"
+    "image_url": "images/te-connectivity/psq24495-91nm.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/psq24495-91nm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/psq24495-91nm-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/psq24495-91nm-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/psq24495-91nm-pattern-5-ghz-vertical.jpg"
+      }
+    ]
   },
   {
     "vendor": "TE Connectivity",
@@ -35647,6 +35719,12 @@
         "id": "ANT-DS-PDM24519",
         "url": "https://www.ariat-tech.com/datasheet/84/PDM24519-FNF.pdf",
         "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Laird ANT-DS-PDM24519",
+        "id": "pdm24519-fnf",
+        "url": "https://www.unikeyic.com/media/pdf/HTMLDatasheet/te-connectivity/5c/c4/32ca/pdm24519-fnf/2025/11/pdm24519-fnf.pdf",
+        "last_checked": "2026-11-22"
       }
     ],
     "datasheet_urls": [
@@ -35671,7 +35749,57 @@
     "field_notes": {
       "beamwidth": "Datasheet azimuth/elevation typical."
     },
-    "image_url": "images/te-connectivity/pdm24519-fnf.jpg"
+    "image_url": "images/te-connectivity/pdm24519-fnf.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Horizontal",
+        "url": "images/te-connectivity/pdm24519-fnf-pattern-2-4-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 1 Vertical",
+        "url": "images/te-connectivity/pdm24519-fnf-pattern-2-4-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Horizontal",
+        "url": "images/te-connectivity/pdm24519-fnf-pattern-2-4-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Vertical",
+        "url": "images/te-connectivity/pdm24519-fnf-pattern-2-4-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Horizontal",
+        "url": "images/te-connectivity/pdm24519-fnf-pattern-2-4-ghz-element-3-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Vertical",
+        "url": "images/te-connectivity/pdm24519-fnf-pattern-2-4-ghz-element-3-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Horizontal",
+        "url": "images/te-connectivity/pdm24519-fnf-pattern-5-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Vertical",
+        "url": "images/te-connectivity/pdm24519-fnf-pattern-5-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal",
+        "url": "images/te-connectivity/pdm24519-fnf-pattern-5-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Vertical",
+        "url": "images/te-connectivity/pdm24519-fnf-pattern-5-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Horizontal",
+        "url": "images/te-connectivity/pdm24519-fnf-pattern-5-ghz-element-3-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Vertical",
+        "url": "images/te-connectivity/pdm24519-fnf-pattern-5-ghz-element-3-vertical.jpg"
+      }
+    ]
   },
   {
     "vendor": "TE Connectivity",
@@ -36188,6 +36316,12 @@
         "id": "te-connectivity-antenna-catalog",
         "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
         "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Laird ANT-DS-OP24516SX",
+        "id": "op24516sx-91nm",
+        "url": "https://pdf.ample-chip.com/258036/OP24516SX-91NM.pdf",
+        "last_checked": "2026-11-22"
       }
     ],
     "datasheet_urls": [
@@ -36209,7 +36343,57 @@
     "field_notes": {
       "dimensions": "Drawing lists height stack 116.5 mm class; diameter via mast clamp geometry."
     },
-    "image_url": "images/te-connectivity/op24516sx-91rsmm.jpg"
+    "image_url": "images/te-connectivity/op24516sx-91rsmm.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Horizontal",
+        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-2-4-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 1 Vertical",
+        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-2-4-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Horizontal",
+        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-2-4-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Vertical",
+        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-2-4-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Horizontal",
+        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-2-4-ghz-element-3-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Vertical",
+        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-2-4-ghz-element-3-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Horizontal",
+        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-5-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Vertical",
+        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-5-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal",
+        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-5-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Vertical",
+        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-5-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Horizontal",
+        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-5-ghz-element-3-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Vertical",
+        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-5-ghz-element-3-vertical.jpg"
+      }
+    ]
   },
   {
     "vendor": "TE Connectivity",
