@@ -33911,5 +33911,433 @@
         "note": "Partner-hosted 2010 Antenna Guide; primary RF from current first-party datasheet"
       }
     ]
+  },
+  {
+    "vendor": "Cambium",
+    "sku": "ANT-OM-1X1-05",
+    "name": "Tri-band 2.4/5/6 GHz omni-directional 1x1, N male",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4 / 5 / 6 GHz",
+    "gain_dbi": {
+      "2.4": 4.4,
+      "5": 5.5,
+      "6": 5.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "Not specified",
+        "5": "Not specified",
+        "6": "Not specified"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "22.7 \u00d7 196.9 mm",
+    "weight": "75 g",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Direct to N-type port / cable (N male plug)",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": "2.0:1",
+    "isolation": null,
+    "operating_temp": "\u221240 to 85 \u00b0C",
+    "image_url": "images/cambium/ant-om-1x1-05.jpg",
+    "images": [
+      {
+        "label": "Mechanical drawing",
+        "url": "images/cambium/ant-om-1x1-05.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/cambium/ant-om-1x1-05-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/cambium/ant-om-1x1-05-pattern-5-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal + Vertical",
+        "url": "images/cambium/ant-om-1x1-05-pattern-6-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/cambium/ant-om-1x1-05-dimensions.jpg",
+    "dimension_image_kind": "mechanical",
+    "datasheet_urls": [
+      {
+        "label": "Cambium XE3-4TN Antenna Selection Guide",
+        "url": "https://www.cambiumnetworks.com/wp-content/uploads/Cambium_Networks_XE3-4TN_Antenna_Guide.pdf"
+      },
+      {
+        "label": "Cambium XE3-4TN data sheet",
+        "url": "https://brandcentral.cambiumnetworks.com/m/1605ffefa3814519/original/XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambium XE3-4TN Antenna Selection Guide",
+        "id": "Cambium_Networks_XE3-4TN_Antenna_Guide",
+        "url": "https://www.cambiumnetworks.com/wp-content/uploads/Cambium_Networks_XE3-4TN_Antenna_Guide.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Cambium XE3-4TN data sheet (antenna ordering table)",
+        "id": "XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet",
+        "url": "https://brandcentral.cambiumnetworks.com/m/1605ffefa3814519/original/XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Cambium",
+    "sku": "ANT-D30-2X2-02",
+    "name": "Dual-band 2.4/5 GHz 2x2 MIMO directional 30\u00b0, N female",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.3\u20132.7 / 4.9\u20135.925 GHz",
+    "gain_dbi": {
+      "2.4": 11.5,
+      "5": 14
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "30\u00b0",
+        "5": "30\u00b0"
+      },
+      "vertical": {
+        "2.4": "Not specified",
+        "5": "Not specified"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 2,
+    "polarization": "Dual slant",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "305 \u00d7 305 \u00d7 15 mm (max)",
+    "weight": "1,000 g",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "MT-120018/A/H (bracket with antenna; cables sold separately)",
+    "included_parts": [
+      {
+        "item": "Mount bracket MT-120018/A/H",
+        "part_number": "MT-120018/A/H",
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2.0:1 (max) 2.4\u20132.7 GHz & 5.15\u20135.925 GHz",
+    "isolation": null,
+    "operating_temp": "\u221245 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Cambium XE3-4TN Antenna Selection Guide",
+        "url": "https://www.cambiumnetworks.com/wp-content/uploads/Cambium_Networks_XE3-4TN_Antenna_Guide.pdf"
+      },
+      {
+        "label": "Cambium XE3-4TN data sheet",
+        "url": "https://brandcentral.cambiumnetworks.com/m/1605ffefa3814519/original/XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambium XE3-4TN Antenna Selection Guide",
+        "id": "Cambium_Networks_XE3-4TN_Antenna_Guide",
+        "url": "https://www.cambiumnetworks.com/wp-content/uploads/Cambium_Networks_XE3-4TN_Antenna_Guide.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Cambium XE3-4TN data sheet (antenna ordering table)",
+        "id": "XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet",
+        "url": "https://brandcentral.cambiumnetworks.com/m/1605ffefa3814519/original/XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Cambium",
+    "sku": "ANT-D60-2X2-02",
+    "name": "Dual-band 2.4/5 GHz 2x2 MIMO directional 60\u00b0, N-type",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4\u20132.49 / 4.9\u20136 GHz",
+    "gain_dbi": {
+      "2.4": 7.5,
+      "5": 7.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      },
+      "vertical": {
+        "2.4": "Not specified",
+        "5": "Not specified"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 2,
+    "polarization": "Dual slant",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "190 \u00d7 190 \u00d7 31 mm (max)",
+    "weight": "1,000 g",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "MT-120018/A/H (bracket with antenna; cables sold separately)",
+    "included_parts": [
+      {
+        "item": "Mount bracket MT-120018/A/H",
+        "part_number": "MT-120018/A/H",
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "1.6:1 (typical), 2.0:1 (max)",
+    "isolation": null,
+    "operating_temp": "\u221245 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Cambium XE3-4TN Antenna Selection Guide",
+        "url": "https://www.cambiumnetworks.com/wp-content/uploads/Cambium_Networks_XE3-4TN_Antenna_Guide.pdf"
+      },
+      {
+        "label": "Cambium XE3-4TN data sheet",
+        "url": "https://brandcentral.cambiumnetworks.com/m/1605ffefa3814519/original/XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambium XE3-4TN Antenna Selection Guide",
+        "id": "Cambium_Networks_XE3-4TN_Antenna_Guide",
+        "url": "https://www.cambiumnetworks.com/wp-content/uploads/Cambium_Networks_XE3-4TN_Antenna_Guide.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Cambium XE3-4TN data sheet (antenna ordering table)",
+        "id": "XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet",
+        "url": "https://brandcentral.cambiumnetworks.com/m/1605ffefa3814519/original/XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Cambium",
+    "sku": "ANT-D35-4X4-01",
+    "name": "Dual-band 5/6 GHz 4x4 directional 30\u00b0/35\u00b0, N female",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5",
+      "6"
+    ],
+    "frequency_range": "5.15\u20137.125 GHz",
+    "gain_dbi": {
+      "5": 14,
+      "6": 14
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "30\u00b0",
+        "6": "30\u00b0"
+      },
+      "vertical": {
+        "5": "15\u00b0",
+        "6": "15\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "4 \u00d7 slant \u00b145\u00b0",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "258 \u00d7 228 \u00d7 51 mm",
+    "weight": "1,257 g",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Pole or wall mount (attachments included); cables sold separately",
+    "included_parts": [
+      {
+        "item": "Pole/wall mount attachments",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2.0:1 (max)",
+    "isolation": null,
+    "operating_temp": "\u221240 to 85 \u00b0C",
+    "image_url": "images/cambium/ant-d35-4x4-01.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/cambium/ant-d35-4x4-01.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/cambium/ant-d35-4x4-01-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/cambium/ant-d35-4x4-01-pattern-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Cambium XE3-4TN Antenna Selection Guide",
+        "url": "https://www.cambiumnetworks.com/wp-content/uploads/Cambium_Networks_XE3-4TN_Antenna_Guide.pdf"
+      },
+      {
+        "label": "Cambium XE3-4TN data sheet",
+        "url": "https://brandcentral.cambiumnetworks.com/m/1605ffefa3814519/original/XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambium XE3-4TN Antenna Selection Guide",
+        "id": "Cambium_Networks_XE3-4TN_Antenna_Guide",
+        "url": "https://www.cambiumnetworks.com/wp-content/uploads/Cambium_Networks_XE3-4TN_Antenna_Guide.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Cambium XE3-4TN data sheet (antenna ordering table)",
+        "id": "XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet",
+        "url": "https://brandcentral.cambiumnetworks.com/m/1605ffefa3814519/original/XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Cambium",
+    "sku": "ANT-D60-4X4-02",
+    "name": "Dual-band 5/6 GHz 4x4 directional 70\u00b0/60\u00b0, N female",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5",
+      "6"
+    ],
+    "frequency_range": "5.15\u20137.125 GHz",
+    "gain_dbi": {
+      "5": 11,
+      "6": 11
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "70\u00b0",
+        "6": "70\u00b0"
+      },
+      "vertical": {
+        "5": "15\u00b0",
+        "6": "15\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "4 \u00d7 slant \u00b145\u00b0",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "220 \u00d7 140 \u00d7 49 mm",
+    "weight": "900 g",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Pole or wall mount (attachments included); cables sold separately",
+    "included_parts": [
+      {
+        "item": "Pole/wall mount attachments",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": "2.0:1 (max typical)",
+    "isolation": null,
+    "operating_temp": "\u221240 to 85 \u00b0C",
+    "image_url": "images/cambium/ant-d60-4x4-02.jpg",
+    "images": [
+      {
+        "label": "Product with mount",
+        "url": "images/cambium/ant-d60-4x4-02.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "Element 1 Horizontal + Vertical",
+        "url": "images/cambium/ant-d60-4x4-02-pattern-element-1-horizontal-vertical.jpg"
+      },
+      {
+        "label": "Element 2 Horizontal + Vertical",
+        "url": "images/cambium/ant-d60-4x4-02-pattern-element-2-horizontal-vertical.jpg"
+      },
+      {
+        "label": "Element 3 Horizontal + Vertical",
+        "url": "images/cambium/ant-d60-4x4-02-pattern-element-3-horizontal-vertical.jpg"
+      },
+      {
+        "label": "Element 4 Horizontal + Vertical",
+        "url": "images/cambium/ant-d60-4x4-02-pattern-element-4-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Cambium XE3-4TN Antenna Selection Guide",
+        "url": "https://www.cambiumnetworks.com/wp-content/uploads/Cambium_Networks_XE3-4TN_Antenna_Guide.pdf"
+      },
+      {
+        "label": "Cambium XE3-4TN data sheet",
+        "url": "https://brandcentral.cambiumnetworks.com/m/1605ffefa3814519/original/XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambium XE3-4TN Antenna Selection Guide",
+        "id": "Cambium_Networks_XE3-4TN_Antenna_Guide",
+        "url": "https://www.cambiumnetworks.com/wp-content/uploads/Cambium_Networks_XE3-4TN_Antenna_Guide.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Cambium XE3-4TN data sheet (antenna ordering table)",
+        "id": "XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet",
+        "url": "https://brandcentral.cambiumnetworks.com/m/1605ffefa3814519/original/XE3-4TN-Wi-Fi-6-Outdoor-Access-Point-Data-Sheet.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
   }
 ]
