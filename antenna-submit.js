@@ -48,6 +48,25 @@
     return out;
   }
 
+  // Allowlisted public catalog entry for Pages. Unknown keys and maintainer-only
+  // fields are dropped so the deployed JSON cannot carry private notes.
+  function toPublicCatalogEntry(entry) {
+    const out = {};
+    if (!entry || typeof entry !== 'object' || Array.isArray(entry)) return out;
+    PUBLIC_KEYS.forEach(key => {
+      if (Object.prototype.hasOwnProperty.call(entry, key)) out[key] = entry[key];
+    });
+    PRIVATE_KEYS.forEach(key => {
+      delete out[key];
+    });
+    return out;
+  }
+
+  function findPrivateCatalogKeys(entry) {
+    if (!entry || typeof entry !== 'object' || Array.isArray(entry)) return [];
+    return Object.keys(entry).filter(key => isPrivateKey(key));
+  }
+
   function numericOrString(raw) {
     const text = trim(raw);
     if (/^-?\d+(?:\.\d+)?$/.test(text)) return Number(text);
@@ -888,7 +907,7 @@
       });
     }
 
-    fetch('antenna_data.json', { cache: 'no-store' })
+    fetch('antenna_catalog.json', { cache: 'no-store' })
       .then(res => {
         if (!res.ok) throw new Error('HTTP ' + res.status);
         return res.json();
@@ -987,6 +1006,8 @@
     PRIVATE_KEYS: PRIVATE_KEYS,
     PUBLIC_KEYS: PUBLIC_KEYS,
     stripPrivateFields: stripPrivateFields,
+    toPublicCatalogEntry: toPublicCatalogEntry,
+    findPrivateCatalogKeys: findPrivateCatalogKeys,
     entryToFormFields: entryToFormFields,
     buildAntennaEntry: buildAntennaEntry,
     validateSubmission: validateSubmission,

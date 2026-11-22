@@ -59,4 +59,4 @@ Optional `{band}` tokens: `2-4-ghz`, `5-ghz`, `6-ghz` when multiple patterns sha
 
 ## Internal only
 
-Put vendor-listed compatible APs under `internal_notes.compatible_aps`. Never render `field_notes` or `internal_notes` in the UI.
+Put vendor-listed compatible APs under `internal_notes.compatible_aps`. Never render `field_notes` or `internal_notes` in the UI. These maintainer-only keys stay in `antenna_data.json` and are excluded from the generated public Pages catalog (`antenna_catalog.json`).

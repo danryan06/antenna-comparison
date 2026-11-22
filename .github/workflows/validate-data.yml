@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'antenna_data.json'
+      - 'antenna_catalog.json'
+      - 'antenna_catalog.meta.json'
       - 'antenna_template.json'
       - '*.html'
       - '*.js'
@@ -14,6 +16,8 @@ on:
   pull_request:
     paths:
       - 'antenna_data.json'
+      - 'antenna_catalog.json'
+      - 'antenna_catalog.meta.json'
       - 'antenna_template.json'
       - '*.html'
       - '*.js'
@@ -37,6 +41,8 @@ jobs:
           node-version: '22'
       - name: Validate antenna data
         run: node .github/scripts/validate-data.js
+      - name: Verify public catalog artifact
+        run: node .github/scripts/build-public-catalog.js --check
       - name: Test edit and submit helpers
         run: node .github/scripts/test-antenna-submit.js
       - name: Test datasheet label XSS guard

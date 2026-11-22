@@ -36,6 +36,9 @@ jobs:
         id: update-json
         run: node .github/scripts/apply-antenna-submission.js --data antenna_data.json --body-file /tmp/antenna-issue.md --kind new
 
+      - name: Rebuild public catalog artifact
+        run: node .github/scripts/build-public-catalog.js
+
       - name: Create pull request for the new antenna
         uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6
         with:
@@ -48,7 +51,7 @@ jobs:
             Vendor: **${{ steps.update-json.outputs.vendor }}**
             SKU: **${{ steps.update-json.outputs.sku }}**
 
-            Please review `antenna_data.json` before merging.
+            Please review `antenna_data.json` and the regenerated `antenna_catalog.json` before merging.
 
   edit-antenna-from-issue:
     runs-on: ubuntu-latest
@@ -76,6 +79,9 @@ jobs:
         id: update-json
         run: node .github/scripts/apply-antenna-submission.js --data antenna_data.json --body-file /tmp/antenna-issue.md --kind edit
 
+      - name: Rebuild public catalog artifact
+        run: node .github/scripts/build-public-catalog.js
+
       - name: Create pull request for the edited antenna
         uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6
         with:
@@ -88,4 +94,4 @@ jobs:
             Vendor: **${{ steps.update-json.outputs.vendor }}**
             SKU: **${{ steps.update-json.outputs.sku }}**
 
-            Please review `antenna_data.json` before merging. Maintainer notes on the existing entry are kept.
+            Please review `antenna_data.json` and the regenerated `antenna_catalog.json` before merging. Maintainer notes on the existing entry are kept.

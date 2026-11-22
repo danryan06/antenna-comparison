@@ -164,7 +164,7 @@
 
   <script src="antenna-format.js"></script>
   <script>
-    const DATA_URL = 'antenna_data.json';
+    const DATA_URL = 'antenna_catalog.json';
     const WIFI_BANDS = ['2.4', '5', '6'];
     const BAND_PRESETS = [
       { id: 'dual', label: 'Dual', bands: ['2.4', '5'] },
@@ -811,7 +811,7 @@
         const res = await fetch(DATA_URL, { cache: 'no-store' });
         if (!res.ok) throw new Error('HTTP ' + res.status);
         const raw = await res.json();
-        if (!Array.isArray(raw)) throw new Error('antenna_data.json must be an array');
+        if (!Array.isArray(raw)) throw new Error('antenna_catalog.json must be an array');
         enrichedData = raw.map(enrichEntry);
         restoreStateFromUrl();
         buildControls();
