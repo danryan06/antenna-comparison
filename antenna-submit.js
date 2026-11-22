@@ -84,6 +84,7 @@
   }
 
   // Prefer the shared sanitizer from antenna-format.js (Node require or browser global).
+  // Pages must load antenna-format.js before antenna-submit.js.
   function sharedSafeUrl() {
     try {
       if (typeof require === 'function') {
@@ -98,35 +99,22 @@
     return null;
   }
 
-  function sanitizeHttpUrl(value) {
+  function requireSafeUrl() {
     const shared = sharedSafeUrl();
-    if (shared) return shared(value, { allowRelative: false });
-    const raw = trim(value);
-    if (!raw) return '';
-    try {
-      const parsed = new URL(raw);
-      if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return '';
-      return raw;
-    } catch (err) {
-      return '';
+    if (!shared) {
+      throw new Error(
+        'safeUrl is unavailable; load antenna-format.js before antenna-submit.js'
+      );
     }
+    return shared;
+  }
+
+  function sanitizeHttpUrl(value) {
+    return requireSafeUrl()(value, { allowRelative: false });
   }
 
   function sanitizeAssetUrl(value) {
-    const shared = sharedSafeUrl();
-    if (shared) return shared(value, { allowRelative: true });
-    const raw = trim(value);
-    if (!raw) return '';
-    if (/^[a-z][a-z0-9+.-]*:/i.test(raw)) return sanitizeHttpUrl(raw);
-    if (raw.startsWith('//') || raw.startsWith('/') || raw.includes('\\') || raw.includes('..')) return '';
-    let decoded = raw;
-    try {
-      decoded = decodeURIComponent(raw);
-    } catch (err) {
-      return '';
-    }
-    if (decoded.includes('\\') || decoded.split(/[/?#]/).some(part => part === '..')) return '';
-    return raw;
+    return requireSafeUrl()(value, { allowRelative: true });
   }
 
   function splitList(text) {

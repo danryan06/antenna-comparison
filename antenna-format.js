@@ -34,6 +34,8 @@ function slugifyAntenna(entry) {
 function safeUrl(value, options = {}) {
   const raw = String(value || "").trim();
   if (!raw) return "";
+  // Reject control characters used to obfuscate schemes (e.g. java\tscript:).
+  if (/[\u0000-\u001F\u007F]/.test(raw)) return "";
   const allowRelative = options.allowRelative === true;
   const hasScheme = /^[a-z][a-z0-9+.-]*:/i.test(raw);
   if (!hasScheme) {

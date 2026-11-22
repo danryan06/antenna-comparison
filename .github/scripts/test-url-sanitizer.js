@@ -3,7 +3,8 @@
 
 /**
  * Shared URL policy: http(s) only for absolute URLs; relative asset paths may
- * not traverse, use backslashes, or absolute-root form.
+ * not traverse, use backslashes, or absolute-root form. Control characters
+ * that obfuscate schemes are rejected.
  */
 
 const assert = require('assert');
@@ -37,6 +38,28 @@ assertRejected('dotdot segment', 'images/../secret.png', { allowRelative: true }
 assertRejected('dotdot alone', '../secret.png', { allowRelative: true });
 assertRejected('encoded dotdot', 'images/%2e%2e/secret.png', { allowRelative: true });
 assertRejected('encoded dotdot upper', 'images/%2E%2E/secret.png', { allowRelative: true });
+
+const controlCases = [
+  ['tab scheme', 'java\tscript:alert(1)'],
+  ['newline scheme', 'java\nscript:alert(1)'],
+  ['cr scheme', 'java\rscript:alert(1)'],
+  ['nul path', 'images/\u0000x.png']
+];
+
+controlCases.forEach(([label, value]) => {
+  assertRejected(label + ' allowRelative false', value, { allowRelative: false });
+  assertRejected(label + ' allowRelative true', value, { allowRelative: true });
+  assert.strictEqual(
+    submit.sanitizeHttpUrl(value),
+    '',
+    label + ' (submit.sanitizeHttpUrl)'
+  );
+  assert.strictEqual(
+    submit.sanitizeAssetUrl(value),
+    '',
+    label + ' (submit.sanitizeAssetUrl)'
+  );
+});
 
 assert.strictEqual(
   submit.sanitizeAssetUrl('images/../x.png'),
