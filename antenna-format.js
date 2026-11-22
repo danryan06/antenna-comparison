@@ -43,6 +43,44 @@ function safeUrl(value, options = {}) {
   }
 }
 
+/** Allowed same-origin return targets for detail Back links (no open redirects). */
+const SAFE_RETURN_PAGES = new Set([
+  "index.html",
+  "finder.html",
+  "compare.html",
+  "submit.html",
+  "edit.html"
+]);
+
+/**
+ * Validate a relative return path used across Browse/Finder → Detail → Back.
+ * Accepts only known HTML pages with a safe query string; rejects schemes,
+ * protocol-relative URLs, path traversal, and fragments.
+ */
+function safeReturnPath(value) {
+  const raw = String(value || "").trim();
+  if (!raw || raw.includes("\\") || raw.includes("//") || raw.includes("..")) return "";
+  if (/^[a-z][a-z0-9+.-]*:/i.test(raw) || raw.startsWith("/") || raw.includes("#")) return "";
+  const match = raw.match(/^(index|finder|compare|submit|edit)\.html(\?[^#]*)?$/i);
+  if (!match) return "";
+  const page = `${match[1].toLowerCase()}.html`;
+  if (!SAFE_RETURN_PAGES.has(page)) return "";
+  const qs = match[2] || "";
+  // Allow encoded and raw query characters used by Finder/Browse state
+  // (vendors may include "/", spaces as "+" / "%20", etc.).
+  if (qs && !/^\?[a-zA-Z0-9._~&=%+\-|,/* ]*$/.test(qs)) return "";
+  return page + qs;
+}
+
+/** Build antenna.html?id=…&return=… with a validated return path. */
+function buildAntennaDetailHref(slug, returnPath) {
+  const params = new URLSearchParams();
+  params.set("id", String(slug || ""));
+  const safe = safeReturnPath(returnPath);
+  if (safe) params.set("return", safe);
+  return `antenna.html?${params.toString()}`;
+}
+
 function formatBands(bands) {
   if (Array.isArray(bands)) return bands.map(b => String(b)).join(" / ");
   return bands == null ? "" : String(bands);
@@ -360,6 +398,8 @@ if (typeof module !== "undefined" && module.exports) {
     normalizeForSlug,
     slugifyAntenna,
     safeUrl,
+    safeReturnPath,
+    buildAntennaDetailHref,
     createDatasheetActionLink,
     formatBands,
     frequencyToBand,
