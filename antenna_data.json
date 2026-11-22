@@ -38759,5 +38759,481 @@
       "portfolio_pages": "26, 29"
     },
     "dimension_image_url": null
+  },
+  {
+    "vendor": "Ruckus",
+    "sku": "ANT-2120-0000",
+    "legacy_sku": "911-2120-0000",
+    "name": "4-Port Directional H/V MIMO Antenna for the T750SE",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4 / 5 GHz",
+    "gain_dbi": {
+      "2.4": 14,
+      "5": 14.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "31\u00b0",
+        "5": "33\u00b0"
+      },
+      "vertical": {
+        "2.4": "31\u00b0",
+        "5": "27\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "Vertical & Horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "507 \u00d7 368 \u00d7 21.1 mm",
+    "weight": "5.071 lb (2300 g)",
+    "ip_rating": "IP67",
+    "radome": null,
+    "mount_type": "Wall/pole mount (mounting kit included)",
+    "included_parts": [
+      {
+        "item": "Wall/pole mounting kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221240 to +70 \u00b0C",
+    "image_url": "images/ruckus/ant-2120-0000.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ruckus/ant-2120-0000.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "RUCKUS ANT-2120-0000 datasheet",
+        "url": "https://productresources.vistancenetworks.com/admin/ImageServer.php?ID=122f5b292ae2e21f5b66fb0ce2ac13dfa645e2a9f5c2664690ab6809b008bb40:209378@kbl572&class=Mamfile&rand=972ecf313d7dc210e5033948ae9ccf2c&omitPreview=true&downloadname=RUCKUS_ANT-2120-0000_external.pdf"
+      },
+      {
+        "label": "Product page",
+        "url": "https://www.ruckusnetworks.com/products/accessories/ant-2120-0000/"
+      }
+    ],
+    "sources": [
+      {
+        "label": "RUCKUS ANT-2120-0000 datasheet (Vistance/CommScope P360, revised 2026-07-28 / CommScope 2023-09-07)",
+        "id": "ANT-2120-0000",
+        "url": "https://productresources.vistancenetworks.com/admin/ImageServer.php?ID=122f5b292ae2e21f5b66fb0ce2ac13dfa645e2a9f5c2664690ab6809b008bb40:209378@kbl572&class=Mamfile&rand=972ecf313d7dc210e5033948ae9ccf2c&omitPreview=true&downloadname=RUCKUS_ANT-2120-0000_external.pdf"
+      },
+      {
+        "label": "RUCKUS T750 datasheet (911-2120-0000 accessory note)",
+        "id": "ds-ruckus-t750",
+        "url": "https://webresources.ruckuswireless.com/datasheets/t750/ds-ruckus-t750.pdf",
+        "note": "Orders as 911-2120-0000; summarizes ~30\u00b0 3 dB beamwidth and 14/14.5 dBi"
+      }
+    ],
+    "field_notes": {
+      "beamwidth": "Interpreted datasheet \u201cBandwidth H/V @ 3 dB 31-33/31-27 degrees\u201d as H 31\u00b0/33\u00b0 and V 31\u00b0/27\u00b0 for 2.4/5 GHz. T750 accessory text approximates \u201c30 degrees\u201d. Alternate reading (H 31\u201333\u00b0 and V 31\u201327\u00b0 as ranges on both bands) noted but not used.",
+      "gain_dbi": "Datasheet Antenna Gain 14 dBi/14.5 dBi mapped as 2.4 = 14 and 5 = 14.5 (same order as T750 accessory text).",
+      "cable_length": "Datasheet: four rear N-type connectors; no cable included.",
+      "pattern_images": "First-party antenna datasheet and product page do not publish radiation-pattern plots for this SKU."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "RUCKUS T750SE"
+      ],
+      "maintainer": "Ruckus OEM batch 1. BeamFlex-only APs intentionally excluded. Compatible AP list is internal-only."
+    }
+  },
+  {
+    "vendor": "Ruckus",
+    "sku": "ANT-2140-0000",
+    "legacy_sku": "911-2140-0000",
+    "name": "2-Port Directional H/V MIMO Antenna for the T350SE",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.3\u20132.7 / 4.9\u20135.875 GHz",
+    "gain_dbi": {
+      "2.4": 11,
+      "5": 10.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "77\u00b0",
+        "5": "55\u00b0"
+      },
+      "vertical": {
+        "2.4": "27\u00b0",
+        "5": "15\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 2,
+    "polarization": "Vertical & Horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "305 \u00d7 305 \u00d7 25 mm",
+    "weight": "2.646 lb (1200 g)",
+    "ip_rating": "IP67",
+    "radome": null,
+    "mount_type": "Wall/pole mount (mounting kit included)",
+    "included_parts": [
+      {
+        "item": "Wall/pole mounting kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221255 to +71 \u00b0C",
+    "image_url": "images/ruckus/ant-2140-0000.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ruckus/ant-2140-0000.jpg"
+      }
+    ],
+    "pattern_images": [],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "RUCKUS ANT-2140-0000 datasheet",
+        "url": "https://productresources.vistancenetworks.com/admin/ImageServer.php?ID=89f424f4a0e3343d987b57fddf72875d6b8a46d26d3f7cff65302a117e32f38b:209380@kbl572&class=Mamfile&rand=246bf36cb7ea1510695ab9b2b21a86c7&omitPreview=true&downloadname=RUCKUS_ANT-2140-0000_external.pdf"
+      },
+      {
+        "label": "Product page",
+        "url": "https://www.ruckusnetworks.com/products/accessories/ant-2140-0000/"
+      }
+    ],
+    "sources": [
+      {
+        "label": "RUCKUS ANT-2140-0000 datasheet (Vistance, revised 2026-07-28)",
+        "id": "ANT-2140-0000",
+        "url": "https://productresources.vistancenetworks.com/admin/ImageServer.php?ID=89f424f4a0e3343d987b57fddf72875d6b8a46d26d3f7cff65302a117e32f38b:209380@kbl572&class=Mamfile&rand=246bf36cb7ea1510695ab9b2b21a86c7&omitPreview=true&downloadname=RUCKUS_ANT-2140-0000_external.pdf"
+      },
+      {
+        "label": "RUCKUS T350 datasheet (911-2140-0000 accessory note)",
+        "id": "ds-ruckus-t350",
+        "url": "https://webresources.ruckuswireless.com/datasheets/t350/ds-ruckus-t350.pdf",
+        "note": "Per-band azimuth/elevation 3 dB beamwidths and frequency ranges used preferentially over antenna sheet H/V summary"
+      }
+    ],
+    "field_notes": {
+      "beamwidth": "Prefer T350 accessory note: azimuth 77\u00b0 (2.4) / 55\u00b0 (5); elevation 27\u00b0 (2.4) / 15\u00b0 (5). Antenna product datasheet repeats Bandwidth H/V @ 3 dB 31-33/31-27 degrees (same string as ANT-2120) \u2014 treated as likely copy error; not used for primary beamwidth.",
+      "gain_dbi": "Antenna sheet 11 dBi/10.5 dBi matches T350 text 11.0 / 10.5 dBi for 2.4 / 5.",
+      "frequency_range": "Taken from T350 accessory note (antenna sheet only lists Wi-Fi Band 2.4 | 5 GHz).",
+      "cable_length": "Datasheet: two rear N-type connectors; no cable included.",
+      "pattern_images": "First-party antenna datasheet and product page do not publish radiation-pattern plots for this SKU."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "RUCKUS T350se"
+      ],
+      "maintainer": "Ruckus OEM batch 1. Compatible AP list is internal-only."
+    }
+  },
+  {
+    "vendor": "Ruckus",
+    "sku": "AT-1212-DP",
+    "legacy_sku": "911-1212-DP01",
+    "name": "5 GHz dual-polarized 12 dBi 120\u00b0 sector antenna",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15\u20135.875 GHz",
+    "gain_dbi": {
+      "5": 12.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "120\u00b0"
+      },
+      "vertical": {
+        "5": "15\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 2,
+    "polarization": "Vertical & Horizontal",
+    "cable_length": "1 m",
+    "cable_type": null,
+    "dimensions": "200 \u00d7 200 \u00d7 33 mm",
+    "weight": "2.205 lb (1000 g)",
+    "ip_rating": "IP67",
+    "radome": null,
+    "mount_type": "Wall/pole mount (mounting kit included)",
+    "included_parts": [
+      {
+        "item": "Wall/pole mounting kit",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "1 m RF cable",
+        "part_number": null,
+        "qty": 2
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221255 to +65 \u00b0C",
+    "image_url": "images/ruckus/at-1212-dp.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ruckus/at-1212-dp.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/ruckus/at-1212-dp-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "RUCKUS AT-1212-DP datasheet",
+        "url": "https://productresources.vistancenetworks.com/admin/ImageServer.php?ID=0c03717d3d1fd216fabfcf2eeebc8bb6c1e6c24f5c1d3b11bbcb086053c45ade:209284@kbl572&class=Mamfile&rand=c36952271c2d16c4763d5e260926fc5e&omitPreview=true&downloadname=RUCKUS_AT-1212-DP_external.pdf"
+      },
+      {
+        "label": "Product page",
+        "url": "https://www.ruckusnetworks.com/products/accessories/at-1212-dp/"
+      }
+    ],
+    "sources": [
+      {
+        "label": "RUCKUS AT-1212-DP datasheet (Vistance/CommScope P360, revised 2026-07-28 / CommScope 2023-04-17)",
+        "id": "AT-1212-DP",
+        "url": "https://productresources.vistancenetworks.com/admin/ImageServer.php?ID=0c03717d3d1fd216fabfcf2eeebc8bb6c1e6c24f5c1d3b11bbcb086053c45ade:209284@kbl572&class=Mamfile&rand=c36952271c2d16c4763d5e260926fc5e&omitPreview=true&downloadname=RUCKUS_AT-1212-DP_external.pdf"
+      },
+      {
+        "label": "Ruckus Antenna Guide (legacy matrix; frequency range)",
+        "id": "ruckus-antenna-guide-2010",
+        "url": null,
+        "note": "Partner-hosted 2010 Antenna Guide used only for 5.15\u20135.875 GHz range; primary RF from current first-party datasheet"
+      }
+    ],
+    "field_notes": {
+      "form": "Marketing \u201c120 degrees sector\u201d; schema has no Sector type \u2192 Patch.",
+      "frequency_range": "Current P360 sheet lists Wi-Fi Band 5 GHz only; 5.15\u20135.875 GHz taken from legacy Antenna Guide row for AT-1212-DP.",
+      "pattern_images": "Product-page pattern thumbnail (vertical/horizontal polarization azimuth + elevation composite). Upscaled short edge to \u22651000 px; no full-page pattern sheet in the P360 datasheet."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "RUCKUS ZF7731",
+        "RUCKUS ZF7762-S/T"
+      ],
+      "maintainer": "Ruckus OEM batch 1. Legacy AP names from 2010 Antenna Guide; internal-only."
+    }
+  },
+  {
+    "vendor": "Ruckus",
+    "sku": "AT-2101-DP",
+    "legacy_sku": "911-2101-DP01",
+    "name": "5 GHz dual-polarized high-gain 21 dBi directional antenna",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9\u20135.875 GHz",
+    "gain_dbi": {
+      "5": 21
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "10\u00b0"
+      },
+      "vertical": {
+        "5": "10\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 2,
+    "polarization": "Vertical & Horizontal",
+    "cable_length": "1 m",
+    "cable_type": null,
+    "dimensions": "305 \u00d7 305 \u00d7 15 mm",
+    "weight": "1.984 lb (900 g)",
+    "ip_rating": "IP67",
+    "radome": null,
+    "mount_type": "Wall/pole mount (mounting kit included)",
+    "included_parts": [
+      {
+        "item": "Wall/pole mounting kit",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "1 m RF cable",
+        "part_number": null,
+        "qty": 2
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221255 to +65 \u00b0C",
+    "image_url": "images/ruckus/at-2101-dp.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ruckus/at-2101-dp.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/ruckus/at-2101-dp-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "RUCKUS AT-2101-DP datasheet",
+        "url": "https://productresources.vistancenetworks.com/admin/ImageServer.php?ID=8c67c4ad27f40a9d44789a3039e64848933dfea0d26b815da73fb994a908208d:209287@kbl572&class=Mamfile&rand=6a57b4ecd104948415f977df065a24c5&omitPreview=true&downloadname=RUCKUS_AT-2101-DP_external.pdf"
+      },
+      {
+        "label": "Product page",
+        "url": "https://www.ruckusnetworks.com/products/accessories/at-2101-dp/"
+      }
+    ],
+    "sources": [
+      {
+        "label": "RUCKUS AT-2101-DP datasheet (Vistance/CommScope P360, revised 2026-07-28 / CommScope 2023-04-17)",
+        "id": "AT-2101-DP",
+        "url": "https://productresources.vistancenetworks.com/admin/ImageServer.php?ID=8c67c4ad27f40a9d44789a3039e64848933dfea0d26b815da73fb994a908208d:209287@kbl572&class=Mamfile&rand=6a57b4ecd104948415f977df065a24c5&omitPreview=true&downloadname=RUCKUS_AT-2101-DP_external.pdf"
+      },
+      {
+        "label": "Ruckus Antenna Guide (legacy matrix; frequency range)",
+        "id": "ruckus-antenna-guide-2010",
+        "url": null,
+        "note": "Partner-hosted 2010 Antenna Guide used only for 4.9\u20135.875 GHz range; primary RF from current first-party datasheet"
+      }
+    ],
+    "field_notes": {
+      "frequency_range": "Current P360 sheet lists Wi-Fi Band 5 GHz only; 4.9\u20135.875 GHz taken from legacy Antenna Guide row for AT-2101-DP.",
+      "pattern_images": "Product-page pattern thumbnail (vertical/horizontal polarization E/H-plane composite). Upscaled short edge to \u22651000 px."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "RUCKUS ZF7731"
+      ],
+      "maintainer": "Ruckus OEM batch 1. Compatible AP list is internal-only."
+    }
+  },
+  {
+    "vendor": "Ruckus",
+    "sku": "AT-2401-DP",
+    "legacy_sku": "911-2401-DP01",
+    "name": "5 GHz dual-polarized high-gain 24 dBi directional antenna",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9\u20135.875 GHz",
+    "gain_dbi": {
+      "5": 24.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "7\u20139\u00b0"
+      },
+      "vertical": {
+        "5": "7\u20139\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 2,
+    "polarization": "Vertical & Horizontal",
+    "cable_length": "1 m",
+    "cable_type": null,
+    "dimensions": "370 \u00d7 370 \u00d7 40 mm",
+    "weight": "3.968 lb (1800 g)",
+    "ip_rating": "IP67",
+    "radome": null,
+    "mount_type": "Wall/pole mount (mounting kit included)",
+    "included_parts": [
+      {
+        "item": "Wall/pole mounting kit",
+        "part_number": null,
+        "qty": 1
+      },
+      {
+        "item": "1 m RF cable",
+        "part_number": null,
+        "qty": 2
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221240 to +65 \u00b0C",
+    "image_url": "images/ruckus/at-2401-dp.jpg",
+    "images": [
+      {
+        "label": "Product",
+        "url": "images/ruckus/at-2401-dp.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/ruckus/at-2401-dp-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "RUCKUS AT-2401-DP datasheet",
+        "url": "https://productresources.vistancenetworks.com/admin/ImageServer.php?ID=d94228f04fc756ccea6091e99972824f2ecbc5a2b66a9169d2379dbb19bcad23:209289@kbl572&class=Mamfile&rand=b014cc15d8b0625635837409e4674664&omitPreview=true&downloadname=RUCKUS_AT-2401-DP_external.pdf"
+      },
+      {
+        "label": "Product page",
+        "url": "https://www.ruckusnetworks.com/products/accessories/at-2401-dp/"
+      }
+    ],
+    "sources": [
+      {
+        "label": "RUCKUS AT-2401-DP datasheet (Vistance/CommScope P360, revised 2026-07-28 / CommScope 2023-04-17)",
+        "id": "AT-2401-DP",
+        "url": "https://productresources.vistancenetworks.com/admin/ImageServer.php?ID=d94228f04fc756ccea6091e99972824f2ecbc5a2b66a9169d2379dbb19bcad23:209289@kbl572&class=Mamfile&rand=b014cc15d8b0625635837409e4674664&omitPreview=true&downloadname=RUCKUS_AT-2401-DP_external.pdf"
+      },
+      {
+        "label": "Ruckus Antenna Guide (legacy matrix; frequency range / V vs H gain)",
+        "id": "ruckus-antenna-guide-2010",
+        "url": null,
+        "note": "Partner-hosted 2010 Antenna Guide; primary RF from current first-party datasheet"
+      }
+    ],
+    "field_notes": {
+      "gain_dbi": "Datasheet Antenna Gain 24.5 dBi/23.5 dBi is vertical/horizontal polarization (not bands). Stored 24.5 dBi for 5 GHz; H-pol is 23.5 dBi.",
+      "frequency_range": "Current P360 sheet lists Wi-Fi Band 5 GHz only; 4.9\u20135.875 GHz taken from legacy Antenna Guide row for AT-2401-DP.",
+      "pattern_images": "Product-page pattern thumbnail (vertical/horizontal polarization E/H-plane composite). Upscaled short edge to \u22651000 px."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "RUCKUS ZF7731"
+      ],
+      "maintainer": "Ruckus OEM batch 1. Compatible AP list is internal-only."
+    }
   }
 ]
