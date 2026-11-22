@@ -29747,5 +29747,2221 @@
         "url": "https://cdn.blueally.com/securewirelessworks/datasheets/antenna/ds_ant-3x3-d608.pdf"
       }
     ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "L000684-03",
+    "legacy_sku": "PSD24716-75RSMM",
+    "name": "ProSig Wi-Fi 6E/7 Tri-Band 2x2 MIMO Directional Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-6.0/6.0-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 6.1,
+      "5": 6.1,
+      "6": 5.4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "79\u00b0",
+        "5": "83\u00b0",
+        "6": "80\u00b0"
+      },
+      "vertical": {
+        "2.4": "79\u00b0",
+        "5": "79\u00b0",
+        "6": "78\u00b0"
+      }
+    },
+    "connector": "RPSMA",
+    "lead_count": 2,
+    "polarization": "Dual Slant \u00b145\u00b0",
+    "cable_length": "75 cm (29.5 in)",
+    "cable_type": "RG58LL plenum",
+    "dimensions": "200 \u00d7 200 \u00d7 46.5 mm (7.87 \u00d7 7.87 \u00d7 1.83 in)",
+    "weight": "0.43 kg (0.95 lb)",
+    "ip_rating": "IP67",
+    "radome": "ASA Luran S 788T UV (White)",
+    "mount_type": "Pole/mast or wall bracket (included)",
+    "wind_rating": "135 mph (217 km/h)",
+    "vswr": "<2.0:1 average",
+    "isolation": "20/25/23 dB (2.4/5/6)",
+    "operating_temp": "-50 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/l000684-03.jpg",
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/te-connectivity/l000684-03-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/l000684-03-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/l000684-03-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/l000684-03-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/l000684-03-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/te-connectivity/l000684-03-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/te-connectivity/l000684-03-pattern-6-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/te-connectivity/l000684-03-dimensions.jpg",
+    "dimension_image_kind": "mechanical",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-L000684",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ENG_DS_ANT-DS-L000684_A4&DocType=DS&DocLang=EN"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-L000684",
+        "id": "ENG_DS_ANT-DS-L000684_A4",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ENG_DS_ANT-DS-L000684_A4&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE product L000684-03",
+        "id": "L000684-03",
+        "url": "https://www.te.com/en/product-L000684-03.html",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "L000684-04",
+    "legacy_sku": "PSQ24716-75RSMM",
+    "name": "ProSig Wi-Fi 6E/7 Tri-Band 4x4 MIMO Directional Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-6.0/6.0-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 6.1,
+      "5": 6.1,
+      "6": 5.4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "79\u00b0",
+        "5": "83\u00b0",
+        "6": "80\u00b0"
+      },
+      "vertical": {
+        "2.4": "79\u00b0",
+        "5": "79\u00b0",
+        "6": "78\u00b0"
+      }
+    },
+    "connector": "RPSMA",
+    "lead_count": 4,
+    "polarization": "Dual Slant \u00b145\u00b0",
+    "cable_length": "75 cm (29.5 in)",
+    "cable_type": "RG58LL plenum",
+    "dimensions": "200 \u00d7 200 \u00d7 46.5 mm (7.87 \u00d7 7.87 \u00d7 1.83 in)",
+    "weight": "0.54 kg (1.19 lb)",
+    "ip_rating": "IP67",
+    "radome": "ASA Luran S 788T UV (White)",
+    "mount_type": "Pole/mast or wall bracket (included)",
+    "wind_rating": "135 mph (217 km/h)",
+    "vswr": "<2.0:1 average",
+    "isolation": "20/25/23 dB (2.4/5/6)",
+    "operating_temp": "-50 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/l000684-04.jpg",
+    "images": [
+      {
+        "label": "Product photo",
+        "url": "images/te-connectivity/l000684-04-alt.jpg"
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/l000684-04-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/l000684-04-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/l000684-04-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/l000684-04-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/te-connectivity/l000684-04-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/te-connectivity/l000684-04-pattern-6-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": "images/te-connectivity/l000684-04-dimensions.jpg",
+    "dimension_image_kind": "mechanical",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-L000684",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ENG_DS_ANT-DS-L000684_A4&DocType=DS&DocLang=EN"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-L000684",
+        "id": "ENG_DS_ANT-DS-L000684_A4",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ENG_DS_ANT-DS-L000684_A4&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE product L000684-04",
+        "id": "L000684-04",
+        "url": "https://www.te.com/en/product-L000684-04.html",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "L000962-01",
+    "legacy_sku": "PSD24718-75RSMM",
+    "name": "ProSig Wi-Fi 6E/7 Tri-Band 2x2 MIMO Directional Panel (8 dBi class)",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.9/6.0-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 8,
+      "5": 9.6,
+      "6": 8
+    },
+    "beamwidth": {
+      "horizontal": {},
+      "vertical": {}
+    },
+    "connector": "RPSMA",
+    "lead_count": 2,
+    "polarization": "Dual Slant \u00b145\u00b0",
+    "cable_length": "75 cm (29.5 in)",
+    "cable_type": "RG 58",
+    "dimensions": "200 \u00d7 200 \u00d7 46.5 mm (7.87 \u00d7 7.87 \u00d7 1.83 in)",
+    "weight": "0.493 kg (1.09 lb)",
+    "ip_rating": "IP67",
+    "mount_type": "Pole/mast or wall bracket",
+    "vswr": "<2.0:1",
+    "image_url": "images/te-connectivity/l000962-01.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-ProSig-L000962",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ENG_DS_ANT-DS-L000962_A1&DocType=DS&DocLang=EN"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-ProSig-L000962",
+        "id": "ENG_DS_ANT-DS-L000962_A1",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ENG_DS_ANT-DS-L000962_A1&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE product L000962-01",
+        "id": "L000962-01",
+        "url": "https://www.te.com/en/product-L000962-01.html",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "L000962-02",
+    "legacy_sku": "PSQ24718-75RSMM",
+    "name": "ProSig Wi-Fi 6E/7 Tri-Band 4x4 MIMO Directional Panel (8 dBi class)",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.9/6.0-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 8,
+      "5": 9.6,
+      "6": 8
+    },
+    "beamwidth": {
+      "horizontal": {},
+      "vertical": {}
+    },
+    "connector": "RPSMA",
+    "lead_count": 4,
+    "polarization": "Dual Slant \u00b145\u00b0",
+    "cable_length": "75 cm (29.5 in)",
+    "cable_type": "RG 58",
+    "dimensions": "200 \u00d7 200 \u00d7 46.5 mm (7.87 \u00d7 7.87 \u00d7 1.83 in)",
+    "weight": "0.60 kg (1.32 lb)",
+    "ip_rating": "IP67",
+    "mount_type": "Pole/mast or wall bracket",
+    "vswr": "<2.0:1",
+    "image_url": "images/te-connectivity/l000962-02.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-ProSig-L000962",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ENG_DS_ANT-DS-L000962_A1&DocType=DS&DocLang=EN"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-ProSig-L000962",
+        "id": "ENG_DS_ANT-DS-L000962_A1",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ENG_DS_ANT-DS-L000962_A1&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE product L000962-02",
+        "id": "L000962-02",
+        "url": "https://www.te.com/en/product-L000962-02.html",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PSQ24495-91RSM",
+    "name": "2.4/5 GHz 4-Port Slant \u00b145\u00b0 MIMO Directional Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.49/4.9-6.0 GHz",
+    "gain_dbi": {
+      "2.4": 6.6,
+      "5": 7.7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "110\u00b0",
+        "5": "85\u00b0"
+      },
+      "vertical": {
+        "2.4": "85\u00b0",
+        "5": "90\u00b0"
+      }
+    },
+    "connector": "RPSMA",
+    "lead_count": 4,
+    "polarization": "Slant \u00b145\u00b0",
+    "cable_length": "91 cm (3.0 ft)",
+    "dimensions": "202 \u00d7 200 \u00d7 40 mm (7.96 \u00d7 7.87 \u00d7 1.6 in)",
+    "weight": "0.698 kg (1.54 lb) without mount",
+    "ip_rating": "IP67",
+    "radome": "ASA Luran S778T",
+    "mount_type": "Articulating mast/wall mount",
+    "wind_rating": "125 mph (200 km/h) survival",
+    "vswr": "<2.0:1 max",
+    "isolation": ">15/>20 dB typ max (2.4/5)",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/psq24495-91rsm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE/Laird ANT-DS-PSQ24495",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PSQ24495_1119&DocType=DS&DocLang=EN"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE/Laird ANT-DS-PSQ24495",
+        "id": "ANT-DS-PSQ24495_1119",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PSQ24495_1119&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PSQ24495-91NF",
+    "name": "2.4/5 GHz 4-Port Slant \u00b145\u00b0 MIMO Directional Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.49/4.9-6.0 GHz",
+    "gain_dbi": {
+      "2.4": 6.6,
+      "5": 7.7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "110\u00b0",
+        "5": "85\u00b0"
+      },
+      "vertical": {
+        "2.4": "85\u00b0",
+        "5": "90\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "Slant \u00b145\u00b0",
+    "cable_length": "91 cm (3.0 ft)",
+    "dimensions": "202 \u00d7 200 \u00d7 40 mm (7.96 \u00d7 7.87 \u00d7 1.6 in)",
+    "weight": "0.698 kg (1.54 lb) without mount",
+    "ip_rating": "IP67",
+    "radome": "ASA Luran S778T",
+    "mount_type": "Articulating mast/wall mount",
+    "wind_rating": "125 mph (200 km/h) survival",
+    "vswr": "<2.0:1 max",
+    "isolation": ">15/>20 dB typ max (2.4/5)",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/psq24495-91nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE/Laird ANT-DS-PSQ24495",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PSQ24495_1119&DocType=DS&DocLang=EN"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE/Laird ANT-DS-PSQ24495",
+        "id": "ANT-DS-PSQ24495_1119",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PSQ24495_1119&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PSQ24495-91NM",
+    "name": "2.4/5 GHz 4-Port Slant \u00b145\u00b0 MIMO Directional Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.49/4.9-6.0 GHz",
+    "gain_dbi": {
+      "2.4": 6.6,
+      "5": 7.7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "110\u00b0",
+        "5": "85\u00b0"
+      },
+      "vertical": {
+        "2.4": "85\u00b0",
+        "5": "90\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 4,
+    "polarization": "Slant \u00b145\u00b0",
+    "cable_length": "91 cm (3.0 ft)",
+    "dimensions": "202 \u00d7 200 \u00d7 40 mm (7.96 \u00d7 7.87 \u00d7 1.6 in)",
+    "weight": "0.698 kg (1.54 lb) without mount",
+    "ip_rating": "IP67",
+    "radome": "ASA Luran S778T",
+    "mount_type": "Articulating mast/wall mount",
+    "wind_rating": "125 mph (200 km/h) survival",
+    "vswr": "<2.0:1 max",
+    "isolation": ">15/>20 dB typ max (2.4/5)",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/psq24495-91nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE/Laird ANT-DS-PSQ24495",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PSQ24495_1119&DocType=DS&DocLang=EN"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE/Laird ANT-DS-PSQ24495",
+        "id": "ANT-DS-PSQ24495_1119",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PSQ24495_1119&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PDQ24496-FNF",
+    "name": "2.4/5 GHz 4-Port H/V MIMO Directional Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.95 GHz",
+    "gain_dbi": {
+      "2.4": 6.8,
+      "5": 6.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "68\u00b0",
+        "5": "58\u00b0"
+      },
+      "vertical": {
+        "2.4": "62\u00b0",
+        "5": "58\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "2 Vertical, 2 Horizontal",
+    "cable_length": "Fixed connectors (no pigtail)",
+    "dimensions": "254 \u00d7 254 \u00d7 41 mm (10 \u00d7 10 \u00d7 1.6 in)",
+    "weight": "1.14 kg (2.50 lb) without mount",
+    "ip_rating": "IP67",
+    "radome": "Polycarbonate UL94-V0 UV white",
+    "mount_type": "Articulating mast or flush",
+    "wind_rating": "125 mph (200 km/h) survival",
+    "vswr": "<2.0:1 max",
+    "isolation": ">30 dB",
+    "operating_temp": "-40 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/pdq24496-fnf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-PDQ24496",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ24496&DocType=DS&DocLang=EN"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PDQ24496 (mirror)",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq24496-91nf.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-PDQ24496",
+        "id": "ANT-DS-PDQ24496",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ24496&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22",
+        "note": "Primary first-party DocumentDelivery URL; mirror used during mining when te.com PDF fetch was bot-blocked."
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PDQ24496 (mirror)",
+        "id": "ANT-DS-PDQ24496",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq24496-91nf.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PDQ24496-91NF",
+    "name": "2.4/5 GHz 4-Port H/V MIMO Directional Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.95 GHz",
+    "gain_dbi": {
+      "2.4": 6.8,
+      "5": 6.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "68\u00b0",
+        "5": "58\u00b0"
+      },
+      "vertical": {
+        "2.4": "62\u00b0",
+        "5": "58\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "2 Vertical, 2 Horizontal",
+    "cable_length": "91 cm (3.0 ft)",
+    "dimensions": "254 \u00d7 254 \u00d7 41 mm (10 \u00d7 10 \u00d7 1.6 in)",
+    "weight": "1.14 kg (2.50 lb) without mount",
+    "ip_rating": "IP67",
+    "radome": "Polycarbonate UL94-V0 UV white",
+    "mount_type": "Articulating mast or flush",
+    "wind_rating": "125 mph (200 km/h) survival",
+    "vswr": "<2.0:1 max",
+    "isolation": ">30 dB",
+    "operating_temp": "-40 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/pdq24496-91nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-PDQ24496",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ24496&DocType=DS&DocLang=EN"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PDQ24496 (mirror)",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq24496-91nf.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-PDQ24496",
+        "id": "ANT-DS-PDQ24496",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ24496&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22",
+        "note": "Primary first-party DocumentDelivery URL; mirror used during mining when te.com PDF fetch was bot-blocked."
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PDQ24496 (mirror)",
+        "id": "ANT-DS-PDQ24496",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq24496-91nf.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PDQ24496-91NM",
+    "name": "2.4/5 GHz 4-Port H/V MIMO Directional Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.95 GHz",
+    "gain_dbi": {
+      "2.4": 6.8,
+      "5": 6.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "68\u00b0",
+        "5": "58\u00b0"
+      },
+      "vertical": {
+        "2.4": "62\u00b0",
+        "5": "58\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 4,
+    "polarization": "2 Vertical, 2 Horizontal",
+    "cable_length": "91 cm (3.0 ft)",
+    "dimensions": "254 \u00d7 254 \u00d7 41 mm (10 \u00d7 10 \u00d7 1.6 in)",
+    "weight": "1.14 kg (2.50 lb) without mount",
+    "ip_rating": "IP67",
+    "radome": "Polycarbonate UL94-V0 UV white",
+    "mount_type": "Articulating mast or flush",
+    "wind_rating": "125 mph (200 km/h) survival",
+    "vswr": "<2.0:1 max",
+    "isolation": ">30 dB",
+    "operating_temp": "-40 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/pdq24496-91nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-PDQ24496",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ24496&DocType=DS&DocLang=EN"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PDQ24496 (mirror)",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq24496-91nf.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-PDQ24496",
+        "id": "ANT-DS-PDQ24496",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ24496&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22",
+        "note": "Primary first-party DocumentDelivery URL; mirror used during mining when te.com PDF fetch was bot-blocked."
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PDQ24496 (mirror)",
+        "id": "ANT-DS-PDQ24496",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq24496-91nf.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PDQ24499-91NM",
+    "name": "2.4/5 GHz 4-Port H/V MIMO Directional Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.95-5.95 GHz",
+    "gain_dbi": {
+      "2.4": 8.6,
+      "5": 9.4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "75\u00b0",
+        "5": "62\u00b0"
+      },
+      "vertical": {
+        "2.4": "62\u00b0",
+        "5": "50\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 4,
+    "polarization": "2 Vertical, 2 Horizontal",
+    "cable_length": "91 cm (3.0 ft)",
+    "dimensions": "254 \u00d7 254 \u00d7 41 mm",
+    "weight": "1.14 kg (2.50 lb) without mount",
+    "ip_rating": "IP67",
+    "mount_type": "Articulating mast or flush",
+    "wind_rating": "137 mph (220 km/h) survival",
+    "vswr": "<2.0:1",
+    "isolation": ">30 dB",
+    "operating_temp": "-40 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/pdq24499-91nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-PDQ24499",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ24499&DocType=DS&DocLang=EN"
+      },
+      {
+        "label": "TE/Laird PDQ24499 drawing/datasheet (mirror)",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq24499-91nf.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-PDQ24499",
+        "id": "ANT-DS-PDQ24499",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ24499&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22",
+        "note": "Primary first-party DocumentDelivery URL; mirror used during mining when te.com PDF fetch was bot-blocked."
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird PDQ24499 drawing/datasheet (mirror)",
+        "id": "PDQ24499-91NF",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq24499-91nf.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PDQ24499-91NF",
+    "name": "2.4/5 GHz 4-Port H/V MIMO Directional Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.95-5.95 GHz",
+    "gain_dbi": {
+      "2.4": 8.6,
+      "5": 9.4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "75\u00b0",
+        "5": "62\u00b0"
+      },
+      "vertical": {
+        "2.4": "62\u00b0",
+        "5": "50\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "2 Vertical, 2 Horizontal",
+    "cable_length": "91 cm / 860 mm class pigtails",
+    "dimensions": "254 \u00d7 254 \u00d7 41 mm",
+    "weight": "1.14 kg (2.50 lb) without mount",
+    "ip_rating": "IP67",
+    "mount_type": "Articulating mast or flush",
+    "wind_rating": "137 mph (220 km/h) survival",
+    "vswr": "<2.0:1",
+    "isolation": ">30 dB",
+    "operating_temp": "-40 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/pdq24499-91nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-PDQ24499",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ24499&DocType=DS&DocLang=EN"
+      },
+      {
+        "label": "TE/Laird PDQ24499 drawing/datasheet (mirror)",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq24499-91nf.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-PDQ24499",
+        "id": "ANT-DS-PDQ24499",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ24499&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22",
+        "note": "Primary first-party DocumentDelivery URL; mirror used during mining when te.com PDF fetch was bot-blocked."
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird PDQ24499 drawing/datasheet (mirror)",
+        "id": "PDQ24499-91NF",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq24499-91nf.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PDQ244915-91NF",
+    "name": "2.4/5 GHz 4-Port H/V High-Gain MIMO Directional Panel",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.95 GHz",
+    "gain_dbi": {
+      "2.4": 11.1,
+      "5": 15
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "48\u00b0",
+        "5": "21\u00b0"
+      },
+      "vertical": {
+        "2.4": "48\u00b0",
+        "5": "18\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "2 Vertical, 2 Horizontal",
+    "cable_length": "91 cm (3.0 ft)",
+    "dimensions": "373.3 \u00d7 411.4 \u00d7 35.8 mm (14.7 \u00d7 16.2 \u00d7 1.41 in)",
+    "weight": "1.58 kg (3.48 lb); 2.28 kg (5.03 lb) with mount",
+    "ip_rating": "IP67",
+    "radome": "ASA white UV stable",
+    "mount_type": "Mast 44\u201357 mm or concrete wall (HDMNT)",
+    "vswr": "<2.0:1 max",
+    "isolation": ">30 dB",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/pdq244915-91nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-PDQ244915",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ244915&DocType=DS&DocLang=EN"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PDQ244915 (mirror)",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq244915-91nf.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-PDQ244915",
+        "id": "ANT-DS-PDQ244915",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ244915&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22",
+        "note": "Primary first-party DocumentDelivery URL; mirror used during mining when te.com PDF fetch was bot-blocked."
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PDQ244915 (mirror)",
+        "id": "ANT-DS-PDQ244915",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq244915-91nf.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PDQ244915-91NM",
+    "name": "2.4/5 GHz 4-Port H/V High-Gain MIMO Directional Panel",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.95 GHz",
+    "gain_dbi": {
+      "2.4": 11.1,
+      "5": 15
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "48\u00b0",
+        "5": "21\u00b0"
+      },
+      "vertical": {
+        "2.4": "48\u00b0",
+        "5": "18\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 4,
+    "polarization": "2 Vertical, 2 Horizontal",
+    "cable_length": "91 cm (3.0 ft)",
+    "dimensions": "373.3 \u00d7 411.4 \u00d7 35.8 mm (14.7 \u00d7 16.2 \u00d7 1.41 in)",
+    "weight": "1.58 kg (3.48 lb); 2.28 kg (5.03 lb) with mount",
+    "ip_rating": "IP67",
+    "radome": "ASA white UV stable",
+    "mount_type": "Mast 44\u201357 mm or concrete wall (HDMNT)",
+    "vswr": "<2.0:1 max",
+    "isolation": ">30 dB",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/pdq244915-91nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-PDQ244915",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ244915&DocType=DS&DocLang=EN"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PDQ244915 (mirror)",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq244915-91nf.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-PDQ244915",
+        "id": "ANT-DS-PDQ244915",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ244915&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22",
+        "note": "Primary first-party DocumentDelivery URL; mirror used during mining when te.com PDF fetch was bot-blocked."
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PDQ244915 (mirror)",
+        "id": "ANT-DS-PDQ244915",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq244915-91nf.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PDQ244915-FNF",
+    "name": "2.4/5 GHz 4-Port H/V High-Gain MIMO Directional Panel",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.95 GHz",
+    "gain_dbi": {
+      "2.4": 11.1,
+      "5": 15
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "48\u00b0",
+        "5": "21\u00b0"
+      },
+      "vertical": {
+        "2.4": "48\u00b0",
+        "5": "18\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "2 Vertical, 2 Horizontal",
+    "cable_length": "Fixed (no pigtail)",
+    "dimensions": "373.3 \u00d7 411.4 \u00d7 35.8 mm (14.7 \u00d7 16.2 \u00d7 1.41 in)",
+    "weight": "1.58 kg (3.48 lb); 2.28 kg (5.03 lb) with mount",
+    "ip_rating": "IP67",
+    "radome": "ASA white UV stable",
+    "mount_type": "Mast 44\u201357 mm or concrete wall (HDMNT)",
+    "vswr": "<2.0:1 max",
+    "isolation": ">30 dB",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/pdq244915-fnf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-PDQ244915",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ244915&DocType=DS&DocLang=EN"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PDQ244915 (mirror)",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq244915-91nf.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-PDQ244915",
+        "id": "ANT-DS-PDQ244915",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDQ244915&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22",
+        "note": "Primary first-party DocumentDelivery URL; mirror used during mining when te.com PDF fetch was bot-blocked."
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PDQ244915 (mirror)",
+        "id": "ANT-DS-PDQ244915",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdq244915-91nf.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PDM24519-FNF",
+    "name": "2.4/5 GHz 3-Port H/V MIMO Directional Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 8,
+      "5": 9
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "90\u00b0",
+        "5": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 3,
+    "polarization": "1 Horizontal, 2 Vertical",
+    "cable_length": "Fixed N-Female",
+    "dimensions": "178 \u00d7 305 \u00d7 25 mm (7 \u00d7 12 \u00d7 1.0 in)",
+    "weight": "0.69 kg",
+    "ip_rating": "IP67",
+    "radome": "Polycarbonate EXL9330 white",
+    "mount_type": "Articulating wall mount",
+    "vswr": "2:1 max",
+    "isolation": "17\u201340 dB class (port pair dependent)",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/pdm24519-fnf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-PDM24519",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDM24519&DocType=DS&DocLang=EN"
+      },
+      {
+        "label": "Laird ANT-DS-PDM24519 (mirror)",
+        "url": "https://www.ariat-tech.com/datasheet/84/PDM24519-FNF.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-PDM24519",
+        "id": "ANT-DS-PDM24519",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDM24519&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22",
+        "note": "Primary first-party DocumentDelivery URL; mirror used during mining when te.com PDF fetch was bot-blocked."
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Laird ANT-DS-PDM24519 (mirror)",
+        "id": "ANT-DS-PDM24519",
+        "url": "https://www.ariat-tech.com/datasheet/84/PDM24519-FNF.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PDM24499-FNF",
+    "name": "2.4/5 GHz 4-Port MIMO Directional Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.95 GHz",
+    "gain_dbi": {
+      "2.4": 8.6,
+      "5": 9.6
+    },
+    "beamwidth": {
+      "horizontal": {},
+      "vertical": {}
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "Linear",
+    "cable_length": "Fixed N-Female",
+    "dimensions": "305 \u00d7 178 \u00d7 26 mm",
+    "ip_rating": "IP67",
+    "mount_type": "Wall/ceiling",
+    "vswr": "2.0:1 max",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/pdm24499-fnf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PDM245115H-FNF",
+    "name": "2.4/5 GHz 4-Port H/V High-Gain MIMO Directional Panel",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 14,
+      "5": 14.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "31\u00b0",
+        "5": "31\u00b0"
+      },
+      "vertical": {
+        "2.4": "33\u00b0",
+        "5": "27\u00b0"
+      }
+    },
+    "connector": "N Female",
+    "lead_count": 4,
+    "polarization": "2 Vertical, 2 Horizontal",
+    "cable_length": "Fixed N-Female \u00d74",
+    "dimensions": "507 \u00d7 368 \u00d7 21.1 mm (20.0 \u00d7 14.5 \u00d7 0.8 in)",
+    "weight": "2.3 kg (5.1 lb) without brackets",
+    "ip_rating": "IP67",
+    "radome": "Polycarbonate white",
+    "mount_type": "Articulating mast/wall",
+    "vswr": "<1.6:1 / <2.0:1 / <1.5:1 by sub-band",
+    "operating_temp": "-40 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/pdm245115h-fnf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-PDM245115H",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDM245115H&DocType=DS&DocLang=EN"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PDM245115H (mirror)",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdm245115h-fnf.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-PDM245115H",
+        "id": "ANT-DS-PDM245115H",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-PDM245115H&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22",
+        "note": "Primary first-party DocumentDelivery URL; mirror used during mining when te.com PDF fetch was bot-blocked."
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird ANT-DS-PDM245115H (mirror)",
+        "id": "ANT-DS-PDM245115H",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/pdm245115h-fnf.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "S24517PT36RSM",
+    "name": "2.4/5 GHz 3-Port MIMO Directional Sector Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.1-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 8,
+      "5": 10.7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "70\u00b0",
+        "5": "60\u00b0"
+      },
+      "vertical": {
+        "2.4": "75\u00b0",
+        "5": "55\u00b0"
+      }
+    },
+    "connector": "RPSMA",
+    "lead_count": 3,
+    "polarization": "2 Vertical, 1 Horizontal",
+    "cable_length": "914 mm (36 in)",
+    "dimensions": "259.1 \u00d7 259.1 \u00d7 33.5 mm (10.2 \u00d7 10.2 \u00d7 1.3 in)",
+    "weight": "1.8 kg (2.2 lb)",
+    "ip_rating": "IP67",
+    "radome": "Polycarbonate",
+    "mount_type": "Articulating wall/mast",
+    "wind_rating": "124 mph (200 km/h)",
+    "vswr": "2.0:1 max",
+    "operating_temp": "-30 to +65 \u00b0C",
+    "image_url": "images/te-connectivity/s24517pt36rsm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-S24517PT",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-S24517PT&DocType=DS&DocLang=EN"
+      },
+      {
+        "label": "TE/Laird ANT-DS-S24517PT (mirror)",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/s24517pt36rsm.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-S24517PT",
+        "id": "ANT-DS-S24517PT",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-S24517PT&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22",
+        "note": "Primary first-party DocumentDelivery URL; mirror used during mining when te.com PDF fetch was bot-blocked."
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird ANT-DS-S24517PT (mirror)",
+        "id": "ANT-DS-S24517PT",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/s24517pt36rsm.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "S24493TS36RSM",
+    "name": "2.4/5 GHz 3-Port MIMO Ceiling Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "RPSMA",
+    "lead_count": 3,
+    "polarization": "Linear",
+    "cable_length": "36 in class (per SKU)",
+    "dimensions": "308 \u00d7 22 \u00d7 92 mm",
+    "mount_type": "Wall/ceiling",
+    "vswr": "2.0:1 max",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/s24493ts36rsm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "CMM24513S4-91RSM",
+    "name": "2.4/5 GHz 4-Port MIMO Ceiling Omni Dome",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 2.9,
+      "5": 3.3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 4,
+    "polarization": "Linear",
+    "cable_length": "910 mm",
+    "cable_type": "RG-58 plenum",
+    "dimensions": "43.5 \u00d7 \u2300219 mm",
+    "weight": "~0.47 kg",
+    "mount_type": "Ceiling",
+    "vswr": "2.0:1 max",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/cmm24513s4-91rsm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE CMM24513S4-91RSM",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=CMM24513S4-91RSM&DocType=DS&DocLang=EN"
+      },
+      {
+        "label": "TE/Laird CMM24513S4 drawing (mirror)",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/cmm24513s4-91rsm.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE CMM24513S4-91RSM",
+        "id": "CMM24513S4-91RSM",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=CMM24513S4-91RSM&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22",
+        "note": "Primary first-party DocumentDelivery URL; mirror used during mining when te.com PDF fetch was bot-blocked."
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird CMM24513S4 drawing (mirror)",
+        "id": "CMM24513S4-91RSM",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/cmm24513s4-91rsm.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "OP24516DS-91RSMM",
+    "name": "2.4/5 GHz 6-Port MIMO Outdoor Omni Canister",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 2.8,
+      "5": 6.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "66\u00b0",
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 6,
+    "polarization": "Linear Vertical",
+    "cable_length": "910 mm \u00b118 mm (36 in)",
+    "dimensions": "\u2300209.6 \u00d7 116.5 mm (8.25 \u00d7 4.59 in)",
+    "weight": "1.6 kg (3.53 lb)",
+    "ip_rating": "IP67",
+    "radome": "Polycarbonate white",
+    "mount_type": "Pole/mast",
+    "wind_rating": "125 mph (200 km/h)",
+    "vswr": "2.0:1 max",
+    "isolation": "20/25 dB",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/op24516ds-91rsmm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-OP24516DS",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-OP24516DS&DocType=DS&DocLang=EN"
+      },
+      {
+        "label": "TE/Laird ANT-DS-OP24516DS (mirror)",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/op24516ds-91nm.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-OP24516DS",
+        "id": "ANT-DS-OP24516DS",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-OP24516DS&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22",
+        "note": "Primary first-party DocumentDelivery URL; mirror used during mining when te.com PDF fetch was bot-blocked."
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird ANT-DS-OP24516DS (mirror)",
+        "id": "ANT-DS-OP24516DS",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/op24516ds-91nm.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "OP24516DS-91NM",
+    "name": "2.4/5 GHz 6-Port MIMO Outdoor Omni Canister",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 2.8,
+      "5": 6.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "66\u00b0",
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "N Male",
+    "lead_count": 6,
+    "polarization": "Linear Vertical",
+    "cable_length": "910 mm \u00b118 mm (36 in)",
+    "dimensions": "\u2300209.6 \u00d7 116.5 mm (8.25 \u00d7 4.59 in)",
+    "weight": "1.6 kg (3.53 lb)",
+    "ip_rating": "IP67",
+    "radome": "Polycarbonate white",
+    "mount_type": "Pole/mast",
+    "wind_rating": "125 mph (200 km/h)",
+    "vswr": "2.0:1 max",
+    "isolation": "20/25 dB",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/op24516ds-91nm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE ANT-DS-OP24516DS",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-OP24516DS&DocType=DS&DocLang=EN"
+      },
+      {
+        "label": "TE/Laird ANT-DS-OP24516DS (mirror)",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/op24516ds-91nm.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE ANT-DS-OP24516DS",
+        "id": "ANT-DS-OP24516DS",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=ANT-DS-OP24516DS&DocType=DS&DocLang=EN",
+        "last_checked": "2026-11-22",
+        "note": "Primary first-party DocumentDelivery URL; mirror used during mining when te.com PDF fetch was bot-blocked."
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE/Laird ANT-DS-OP24516DS (mirror)",
+        "id": "ANT-DS-OP24516DS",
+        "url": "https://resources.ampheo.com/static/datasheets/te-connectivity/op24516ds-91nm.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "OP24516SX-91RSMM",
+    "name": "2.4/5 GHz 6-Port Split-Band MIMO Outdoor Omni (3\u00d72.4 + 3\u00d75)",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "32\u00b0"
+      }
+    },
+    "connector": "RPSMA Male",
+    "lead_count": 6,
+    "polarization": "Linear Vertical",
+    "cable_length": "910 mm \u00b118 mm \u00d76",
+    "dimensions": "\u2300116.5 class canister (see drawing)",
+    "weight": "1.7 kg (3.7 lb)",
+    "ip_rating": "IP67",
+    "radome": "Polycarbonate white",
+    "mount_type": "Mast 31.8\u201357.2 mm",
+    "wind_rating": "125 mph (200 km/h)",
+    "vswr": "2.0:1 max",
+    "isolation": "20/30 dB",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/op24516sx-91rsmm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE OP24516SX customer drawing",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocFormat=pdf&DocLang=English&DocNm=OP24516SX-91RSMMMO&DocType=Customer+Drawing&PartCntxt=OP24516SX-91RSMM"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE OP24516SX customer drawing",
+        "id": "OP24516SX-91RSMMMO",
+        "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocFormat=pdf&DocLang=English&DocNm=OP24516SX-91RSMMMO&DocType=Customer+Drawing&PartCntxt=OP24516SX-91RSMM",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "OC24519-FNM",
+    "name": "2.4/5 GHz Dual-Band Outdoor Omni Baton",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.25-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 7.5,
+      "5": 9
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "dimensions": "376.8 \u00d7 \u230032 mm",
+    "ip_rating": "IP67",
+    "mount_type": "Pole/mast",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/oc24519-fnm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "OC24527-FNF",
+    "name": "2.4/5 GHz Dual-Band Outdoor Omni Baton",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 4.5,
+      "5": 7.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "dimensions": "280 \u00d7 \u230025.4 mm",
+    "ip_rating": "IP67",
+    "mount_type": "Pole/mast",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/oc24527-fnf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "ANT-W63-IPW1-NP",
+    "name": "2.4/5/6 GHz Tri-Band Outdoor Omni Whip",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.485/5.15-5.85/5.925-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 3.2,
+      "5": 8.7,
+      "6": 5.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Plug",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "dimensions": "178 \u00d7 \u230025 mm",
+    "ip_rating": "IP67",
+    "mount_type": "Connector mount",
+    "operating_temp": "-40 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/ant-w63-ipw1-np.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "ANT-5GW-IPW2-NP",
+    "name": "2.4/5/6 GHz Tri-Band Outdoor Omni Whip",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.485/5.15-5.85/5.925-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 1.6,
+      "5": 5,
+      "6": 5.6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Plug",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "dimensions": "132 \u00d7 \u230024 mm",
+    "ip_rating": "IP67",
+    "mount_type": "Connector mount",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/ant-5gw-ipw2-np.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "ANT-5GW-IPW3-NP",
+    "name": "2.4/5/6 GHz Tri-Band Outdoor Omni Whip",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.485/5.15-5.85/5.925-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 4.4,
+      "5": 7.2,
+      "6": 4.1
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Plug",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "dimensions": "176.4 \u00d7 \u230021 mm",
+    "ip_rating": "IP67",
+    "mount_type": "Connector mount",
+    "operating_temp": "-40 to +85 \u00b0C",
+    "image_url": "images/te-connectivity/ant-5gw-ipw3-np.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "OC24005-FNF",
+    "name": "2.4 GHz Outdoor Omni Baton",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "dimensions": "297 \u00d7 \u230032 mm",
+    "ip_rating": "IP67",
+    "mount_type": "Pole/mast",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/oc24005-fnf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "FG24008",
+    "name": "2.4 GHz Outdoor Fiberglass Omni Baton",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "dimensions": "624 \u00d7 \u230033 mm",
+    "ip_rating": "IP67",
+    "mount_type": "Pole/mast",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/fg24008.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "S5156WBSFNM",
+    "name": "5 GHz Outdoor Omni Baton",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.9-5.85 GHz",
+    "gain_dbi": {
+      "5": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "dimensions": "292 \u00d7 \u230025.4 mm",
+    "ip_rating": "IP54",
+    "mount_type": "Pole/mast",
+    "operating_temp": "-30 to +65 \u00b0C",
+    "image_url": "images/te-connectivity/s5156wbsfnm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "OC515010H-FNM",
+    "name": "5 GHz Outdoor Omni Baton",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.875 GHz",
+    "gain_dbi": {
+      "5": 10
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Male",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "dimensions": "451 \u00d7 \u230025.4 mm",
+    "ip_rating": "IP67",
+    "mount_type": "Pole/mast",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/oc515010h-fnm.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "S2401240P12NF",
+    "name": "2.4 GHz 12 dBi Outdoor Flat Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 12
+    },
+    "beamwidth": {
+      "horizontal": {},
+      "vertical": {}
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "cable_length": "300 mm",
+    "dimensions": "153 \u00d7 153 \u00d7 32 mm",
+    "mount_type": "Wall/ceiling",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/s2401240p12nf.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "MD24-12",
+    "name": "2.4 GHz 12 dBi Mini Flat Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.483 GHz",
+    "gain_dbi": {
+      "2.4": 11
+    },
+    "beamwidth": {
+      "horizontal": {},
+      "vertical": {}
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "dimensions": "102 \u00d7 102 \u00d7 102 mm",
+    "mount_type": "Mast/bracket",
+    "operating_temp": "-40 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/md24-12.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PA24-19",
+    "name": "2.4 GHz 19 dBi Outdoor Flat Panel",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.483 GHz",
+    "gain_dbi": {
+      "2.4": 19
+    },
+    "beamwidth": {
+      "horizontal": {},
+      "vertical": {}
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "dimensions": "389 \u00d7 368 \u00d7 20 mm",
+    "mount_type": "Mast/bracket",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/pa24-19.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "PA58-24",
+    "name": "5 GHz 24 dBi Outdoor Flat Panel",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.825 GHz",
+    "gain_dbi": {
+      "5": 24
+    },
+    "beamwidth": {
+      "horizontal": {},
+      "vertical": {}
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "dimensions": "390 \u00d7 371 \u00d7 21 mm",
+    "mount_type": "Mast/bracket",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/pa58-24.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "TE Connectivity",
+    "sku": "YE240015",
+    "name": "2.4 GHz 14.5 dBi Outdoor Yagi",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.485 GHz",
+    "gain_dbi": {
+      "2.4": 14.5
+    },
+    "beamwidth": {
+      "horizontal": {},
+      "vertical": {}
+    },
+    "connector": "N Female",
+    "lead_count": 1,
+    "polarization": "Linear",
+    "dimensions": "447 mm long",
+    "mount_type": "Mast/bracket",
+    "wind_rating": "150 mph",
+    "operating_temp": "-30 to +70 \u00b0C",
+    "image_url": "images/te-connectivity/ye240015.jpg",
+    "datasheet_urls": [
+      {
+        "label": "TE Antenna Catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "TE Connectivity Antenna Catalog",
+        "id": "te-connectivity-antenna-catalog",
+        "url": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ]
   }
 ]
