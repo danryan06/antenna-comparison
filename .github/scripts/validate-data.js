@@ -67,3 +67,4 @@ data.forEach((entry, index) => {
 if (!process.exitCode) {
   console.log(`OK: ${data.length} antenna entr${data.length === 1 ? 'y' : 'ies'} validated`);
 }
+
