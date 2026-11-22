@@ -52,6 +52,16 @@ data.forEach((entry, index) => {
     }
   });
 
+  if (entry.antenna_id != null && typeof entry.antenna_id !== 'string') {
+    fail(`${label}: antenna_id must be a string`);
+  }
+  if (entry.rf_interfaces != null && !Array.isArray(entry.rf_interfaces)) {
+    fail(`${label}: rf_interfaces must be an array`);
+  }
+  if (entry.compatibility_claims != null && !Array.isArray(entry.compatibility_claims)) {
+    fail(`${label}: compatibility_claims must be an array`);
+  }
+
   const checkImage = (rel, where) => {
     if (!rel) return;
     if (/^https?:/i.test(rel)) return;

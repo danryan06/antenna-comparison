@@ -1,0 +1,11 @@
+{
+  "pinned_from": "https://github.com/danryan06/ap-comparison/pull/100",
+  "pin_ref": "cursor/ap-rf-export-v1-aee2",
+  "pin_commit": "6a1d06b5f1b80365ca48a2d09b7b871df9972f65",
+  "schema_name": "apcomparison.external-antenna-profiles",
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-22T17:00:10Z",
+  "profile_count": 48,
+  "sha256": "664ddabc8307609bbe676b78bb9f24bd5caace0e6bc193a4bb84da9179e53c02",
+  "note": "Fixture snapshot of APComparison v1 export; replace when PR merges and regenerates."
+}

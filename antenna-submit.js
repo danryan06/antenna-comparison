@@ -21,14 +21,17 @@
     'compatible_ap_list'
   ];
   const PUBLIC_KEYS = [
-    'vendor', 'sku', 'legacy_sku', 'name', 'form', 'indoor_outdoor',
+    'antenna_id', 'vendor', 'sku', 'legacy_sku', 'name', 'form', 'indoor_outdoor',
     'bands', 'frequency_range', 'gain_dbi', 'beamwidth', 'connector',
     'lead_count', 'polarization', 'cable_length', 'cable_type', 'dimensions',
     'weight', 'ip_rating', 'radome', 'mount_type', 'included_parts',
     'wind_rating', 'vswr', 'isolation', 'operating_temp', 'image_url',
     'images', 'pattern_images', 'dimension_image_url', 'dimension_image_kind',
-    'datasheet_urls', 'sources'
+    'datasheet_urls', 'sources', 'rf_interfaces', 'compatibility_claims'
   ];
+  // Structured compatibility fields are public in the catalog but not editable via
+  // the GitHub issue form. Preserve them on edit merges so submissions cannot wipe them.
+  const PRESERVE_FROM_BASE = ['antenna_id', 'rf_interfaces', 'compatibility_claims'];
 
   function trim(value) {
     return String(value == null ? '' : value).trim();
@@ -199,15 +202,9 @@
       const id = src.id || '';
       const url = src.url || '';
       const note = src.note || '';
-      const lastChecked = src.last_checked || '';
       if (!label && !id && !url) return '';
       const parts = [label, id, url];
-      if (lastChecked) {
-        parts.push(note || '');
-        parts.push(lastChecked);
-      } else if (note) {
-        parts.push(note);
-      }
+      if (note) parts.push(note);
       return parts.join(' | ');
     }).filter(Boolean).join('\n');
   }
@@ -225,15 +222,7 @@
       if (parts.length > 2) {
         src.url = parts[2] ? (sanitizeHttpUrl(parts[2]) || null) : null;
       }
-      const dateRe = /^\d{4}-\d{2}-\d{2}$/;
-      if (parts.length >= 5 && dateRe.test(parts[4])) {
-        if (parts[3]) src.note = parts[3];
-        src.last_checked = parts[4];
-      } else if (parts[3] && dateRe.test(parts[3]) && !parts[4]) {
-        src.last_checked = parts[3];
-      } else if (parts[3]) {
-        src.note = parts[3];
-      }
+      if (parts[3]) src.note = parts[3];
       if (!src.label && !src.id && !src.url) return null;
       return src;
     }).filter(Boolean);
@@ -413,8 +402,14 @@
         if (isPrivateKey(key) || PUBLIC_KEYS.indexOf(key) !== -1) return;
         result[key] = baseEntry[key];
       });
+      PRESERVE_FROM_BASE.forEach(key => {
+        if (Object.prototype.hasOwnProperty.call(baseEntry, key) && !emptyValue(baseEntry[key])) {
+          result[key] = baseEntry[key];
+        }
+      });
     }
     PUBLIC_KEYS.forEach(key => {
+      if (PRESERVE_FROM_BASE.indexOf(key) !== -1) return;
       if (emptyValue(values[key])) return;
       result[key] = values[key];
     });
@@ -1019,6 +1014,7 @@
     FORMS: FORMS,
     PRIVATE_KEYS: PRIVATE_KEYS,
     PUBLIC_KEYS: PUBLIC_KEYS,
+    PRESERVE_FROM_BASE: PRESERVE_FROM_BASE,
     stripPrivateFields: stripPrivateFields,
     toPublicCatalogEntry: toPublicCatalogEntry,
     findPrivateCatalogKeys: findPrivateCatalogKeys,

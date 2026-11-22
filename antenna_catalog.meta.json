@@ -4,9 +4,10 @@
   "generated_from": "antenna_data.json",
   "public_artifact": "antenna_catalog.json",
   "entry_count": 607,
-  "source_revision": "6a156fd65f5806e1c558e55dde93e4d8e555b82b",
-  "generated_at": "2026-11-22T23:13:53.974Z",
+  "source_revision": "27c662fff8c76b54ed63a7f8921cf84dc4bba45c",
+  "generated_at": "2026-11-22T23:14:43.446Z",
   "public_keys": [
+    "antenna_id",
     "vendor",
     "sku",
     "legacy_sku",
@@ -38,7 +39,9 @@
     "dimension_image_url",
     "dimension_image_kind",
     "datasheet_urls",
-    "sources"
+    "sources",
+    "rf_interfaces",
+    "compatibility_claims"
   ],
   "private_keys_excluded": [
     "internal_notes",

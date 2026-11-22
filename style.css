@@ -3255,6 +3255,236 @@ table.antenna-table td.beamwidth-cell {
   font-variant-numeric: tabular-nums;
 }
 
+/* AP → antenna compatibility (Finder) */
+.compat-banner {
+  margin: 1rem 0 0;
+  padding: 1rem 1.15rem;
+  border: 1px solid rgba(234, 179, 8, 0.45);
+  border-left: 4px solid #ca8a04;
+  border-radius: 0.65rem;
+  background: rgba(66, 32, 6, 0.35);
+  color: #fef3c7;
+}
+
+.compat-banner-title {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: #fde68a;
+}
+
+.compat-banner-body,
+.compat-banner-about {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #fef3c7;
+}
+
+.compat-banner-about a {
+  color: #fde68a;
+}
+
+.filter-inline-note {
+  margin: 0.45rem 0 0;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.ap-summary {
+  margin: 0 0 1rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 0.65rem;
+  background: rgba(15, 23, 42, 0.45);
+}
+
+.ap-summary h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  color: #e2e8f0;
+}
+
+.ap-summary p {
+  margin: 0.25rem 0;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+.ap-summary-meta {
+  color: #94a3b8 !important;
+}
+
+.ap-summary-links a {
+  color: #93c5fd;
+}
+
+.compat-group {
+  margin: 0 0 1.25rem;
+}
+
+.compat-group > h3 {
+  margin: 0 0 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  letter-spacing: 0.02em;
+}
+
+.compat-result {
+  margin: 0 0 0.75rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 0.65rem;
+  background: rgba(15, 23, 42, 0.35);
+}
+
+.compat-result-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.65rem;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.compat-status {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  border: 1px solid transparent;
+}
+
+.compat-status-direct-fit {
+  color: #052e16;
+  background: #86efac;
+  border-color: #4ade80;
+}
+
+.compat-status-requires-cable,
+.compat-status-requires-adapter {
+  color: #451a03;
+  background: #fdba74;
+  border-color: #fb923c;
+}
+
+.compat-status-vendor-listed-unverified,
+.compat-status-review-required {
+  color: #422006;
+  background: #fde68a;
+  border-color: #fbbf24;
+}
+
+.compat-status-incompatible {
+  color: #450a0a;
+  background: #fca5a5;
+  border-color: #f87171;
+}
+
+.compat-claim {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #e0e7ff;
+  background: rgba(79, 70, 229, 0.35);
+  border: 1px solid rgba(165, 180, 252, 0.45);
+}
+
+.compat-sku {
+  font-weight: 600;
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.compat-sku:hover {
+  text-decoration: underline;
+}
+
+.compat-reminder {
+  margin: 0.25rem 0;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+}
+
+.compat-verify-warning {
+  margin: 0.35rem 0;
+  padding: 0.55rem 0.7rem;
+  border-left: 3px solid #f59e0b;
+  background: rgba(120, 53, 15, 0.35);
+  color: #fde68a;
+  font-size: 0.85rem;
+  font-weight: 560;
+}
+
+.compat-meta {
+  margin: 0.25rem 0;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.compat-why {
+  margin: 0.45rem 0;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+.compat-why summary {
+  cursor: pointer;
+  color: #93c5fd;
+}
+
+.compat-why ul {
+  margin: 0.4rem 0 0 1.1rem;
+  padding: 0;
+}
+
+.compat-verify {
+  margin: 0.5rem 0 0;
+  font-size: 0.82rem;
+  color: #cbd5e1;
+}
+
+.compat-verify ul {
+  margin: 0.25rem 0 0 1.1rem;
+  padding: 0;
+}
+
+.compat-verify a {
+  color: #93c5fd;
+}
+
+.compat-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.55rem;
+}
+
+.compat-unavailable {
+  padding: 1rem;
+  border: 1px dashed rgba(248, 113, 113, 0.45);
+  border-radius: 0.65rem;
+  color: #fecaca;
+}
+
+.compat-about {
+  margin-top: 1.5rem;
+}
+
+.compat-about h2 {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+.compat-about p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #cbd5e1;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

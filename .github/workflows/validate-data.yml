@@ -7,6 +7,7 @@ on:
       - 'antenna_catalog.json'
       - 'antenna_catalog.meta.json'
       - 'antenna_template.json'
+      - 'data/compatibility/**'
       - '*.html'
       - '*.js'
       - '*.css'
@@ -19,6 +20,7 @@ on:
       - 'antenna_catalog.json'
       - 'antenna_catalog.meta.json'
       - 'antenna_template.json'
+      - 'data/compatibility/**'
       - '*.html'
       - '*.js'
       - '*.css'
@@ -41,9 +43,15 @@ jobs:
           node-version: '22'
       - name: Validate antenna data
         run: node .github/scripts/validate-data.js
+      - name: Validate compatibility data
+        run: node .github/scripts/validate-compatibility.js
       - name: Verify public catalog artifact
         run: node .github/scripts/build-public-catalog.js --check
+      - name: Verify compatibility index artifact
+        run: node .github/scripts/build-compatibility-index.js --check
       - name: Test edit and submit helpers
         run: node .github/scripts/test-antenna-submit.js
+      - name: Test compatibility matcher
+        run: node .github/scripts/test-compatibility-matcher.js
       - name: Test datasheet label XSS guard
         run: node .github/scripts/test-datasheet-label-xss.js
