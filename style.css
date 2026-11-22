@@ -1276,10 +1276,14 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
   min-height: 48px;
 }
 
-/* Row select checkbox in vendor cell */
-.row-select {
+/* Browse-table checkbox in the vendor cell (not Finder result-row wrappers) */
+input.row-select {
   margin-right: 0.4rem;
   transform: translateY(1px);
+}
+.result-row > .row-select {
+  margin-right: 0;
+  transform: none;
 }
 .form-actions {
   margin-top: 1rem;
@@ -2479,6 +2483,8 @@ a.inline-link:focus-visible {
     min-width: 100%;
     display: table;
     border-collapse: collapse;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 
   table.antenna-table th,
