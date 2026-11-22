@@ -213,4 +213,22 @@ assert.ok(dup.result.stderr.includes('already exists'));
 const missing = runApply('edit', 'no json here', fixture);
 assert.notStrictEqual(missing.result.status, 0);
 
+
+const buildPublic = require('./build-public-catalog.js');
+const publicCatalog = buildPublic.buildPublicCatalog(catalog);
+assert.strictEqual(publicCatalog.length, catalog.length, 'public catalog entry count');
+publicCatalog.forEach((entry, index) => {
+  const leaked = submit.findPrivateCatalogKeys(entry);
+  assert.deepStrictEqual(leaked, [], 'public entry leaked private keys at ' + index);
+  Object.keys(entry).forEach(key => {
+    assert.ok(submit.PUBLIC_KEYS.indexOf(key) !== -1, 'non-allowlisted key ' + key + ' at ' + index);
+  });
+  assert.ok(!Object.prototype.hasOwnProperty.call(entry, 'field_notes'));
+  assert.ok(!Object.prototype.hasOwnProperty.call(entry, 'internal_notes'));
+});
+const sample = catalog.find(entry => entry.field_notes || entry.internal_notes);
+assert.ok(sample, 'expected authoring catalog to include maintainer notes');
+const projected = submit.toPublicCatalogEntry(sample);
+assert.ok(!projected.field_notes && !projected.internal_notes, 'toPublicCatalogEntry must drop maintainer notes');
+assert.strictEqual(projected.sku, sample.sku);
 console.log('OK: antenna submit helpers and issue apply');

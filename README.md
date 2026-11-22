@@ -28,7 +28,7 @@ Each antenna entry includes:
 - **Media**: product photos, radiation pattern plots, dimension drawings
 - **Sources**: dual PDF citations where AccelTex/Hubbell publish both a Hubbell SPEC and a legacy AccelTex sheet
 
-`field_notes` (merge/conflict notes) and `internal_notes` (including vendor-listed compatible APs) are maintainer-only and are **never** shown in the UI.
+`field_notes` (merge/conflict notes) and `internal_notes` (including vendor-listed compatible APs) are maintainer-only. They stay in the authoring file `antenna_data.json` for contributors and automation, are **never** shown in the UI, and are **not** included in the public Pages catalog (`antenna_catalog.json`).
 
 ## How to use
 
@@ -53,9 +53,19 @@ Always cite vendor datasheets. When AccelTex/Hubbell publish dual PDFs, merge fi
 ## Technical details
 
 - **Frontend**: pure HTML, CSS, and JavaScript (no frameworks) — same family as AP Comparison
-- **Data**: `antenna_data.json`
+- **Authoring data**: `antenna_data.json` (full catalog, including maintainer-only notes)
+- **Public Pages catalog**: `antenna_catalog.json` (allowlisted public fields only; this is what the site loads)
 - **Hosting**: GitHub Pages (`main` / root), with `CNAME` for `antennacomparison.com`
 - **License**: MIT
+
+Regenerate the public catalog after authoring changes:
+
+```bash
+node .github/scripts/build-public-catalog.js
+node .github/scripts/build-public-catalog.js --check
+```
+
+CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-only keys.
 
 ### Project structure
 
@@ -65,10 +75,13 @@ Always cite vendor datasheets. When AccelTex/Hubbell publish dual PDFs, merge fi
 ├── edit.html               # Edit an existing antenna
 ├── submit.html             # Submit a new antenna
 ├── compare.html            # Side-by-side compare
+├── finder.html             # Feature Finder
 ├── style.css               # Shared styling
 ├── antenna-format.js       # Display helpers
 ├── antenna-submit.js       # Edit / submit form helpers
-├── antenna_data.json       # Antenna catalog
+├── antenna_data.json       # Authoring catalog (may include maintainer notes)
+├── antenna_catalog.json    # Public Pages catalog (allowlisted fields only)
+├── antenna_catalog.meta.json
 ├── antenna_template.json   # Entry template
 ├── images/                 # Product photos & patterns
 ├── CNAME                   # antennacomparison.com
