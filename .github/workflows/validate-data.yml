@@ -39,3 +39,5 @@ jobs:
         run: node .github/scripts/validate-data.js
       - name: Test edit and submit helpers
         run: node .github/scripts/test-antenna-submit.js
+      - name: Test datasheet label XSS guard
+        run: node .github/scripts/test-datasheet-label-xss.js

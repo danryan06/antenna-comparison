@@ -335,12 +335,32 @@ function searchBlob(entry) {
   return parts.filter(Boolean).join(" ").toLowerCase();
 }
 
+/**
+ * Build a datasheet action link with a text-only label.
+ * Catalog-controlled labels must never be parsed as HTML.
+ */
+function createDatasheetActionLink(doc, sheet) {
+  if (!doc || !sheet) return null;
+  const href = safeUrl(sheet.url);
+  if (!href) return null;
+  const a = doc.createElement("a");
+  a.href = href;
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  a.className = "btn-inline-action";
+  const span = doc.createElement("span");
+  span.textContent = sheet.label || "Datasheet";
+  a.appendChild(span);
+  return a;
+}
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = {
     FORM_TYPES,
     normalizeForSlug,
     slugifyAntenna,
     safeUrl,
+    createDatasheetActionLink,
     formatBands,
     frequencyToBand,
     formatPatternCaption,
