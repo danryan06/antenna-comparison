@@ -36439,5 +36439,4360 @@
         "last_checked": "2026-11-22"
       }
     ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PND10-2400/5500",
+    "name": "6\u00d7 MIMO Quad-Polarization Dual-Band Wi-Fi Panel",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-6.0 GHz",
+    "gain_dbi": {
+      "2.4": 8,
+      "5": 10
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "100\u00b0",
+        "5": "40\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "45\u00b0"
+      }
+    },
+    "connector": "N Jack",
+    "lead_count": 6,
+    "polarization": "Horizontal, Vertical, +45\u00b0 slant, -45\u00b0 slant",
+    "dimensions": "13.50 \u00d7 13.50 \u00d7 1.96 in (34.3 \u00d7 34.3 \u00d7 5 cm)",
+    "mount_type": "Flange / adjustable tilt mount",
+    "vswr": "2:1 max",
+    "isolation": ">20 dB",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/pnd10-2400-5500.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/pnd10-2400-5500-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PND10-2400/5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7459/pnd10-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PND10-2400/5500 spec sheet",
+        "id": "pnd10-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7459/pnd10-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PND10-2400/5500)",
+        "id": "pnd10-2400-5500",
+        "url": "https://www.mobilemark.com/product/pnd10-2400-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PND8-2400/5500",
+    "name": "2\u00d7/3\u00d7 MIMO Dual-Band Wi-Fi Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-6.0 GHz",
+    "gain_dbi": {
+      "2.4": 8,
+      "5": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "90\u00b0",
+        "5": "120\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "SMA Jack",
+    "lead_count": 3,
+    "polarization": "Multi-element MIMO",
+    "dimensions": "12.5 \u00d7 3 \u00d7 1.25 in (32 \u00d7 8 \u00d7 3 cm)",
+    "mount_type": "Pole mount up to 2.5 in OD, vertical tilt to 45\u00b0",
+    "vswr": "2:1 max",
+    "isolation": ">20 dB",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/pnd8-2400-5500.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/pnd8-2400-5500-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PND8-2400/5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7460/pnd8-2400-5500-dod5-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PND8-2400/5500 spec sheet",
+        "id": "pnd8-2400-5500-dod5-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7460/pnd8-2400-5500-dod5-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PND8-2400/5500)",
+        "id": "pnd8-2400-5500",
+        "url": "https://www.mobilemark.com/product/pnd8-2400-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PS10-5500-120",
+    "name": "10 dBi 5 GHz 120\u00b0 Sector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.85 GHz",
+    "gain_dbi": {
+      "5": 10
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "120\u00b0"
+      },
+      "vertical": {
+        "5": "11\u00b0"
+      }
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "dimensions": "12.5 \u00d7 3 in (panel)",
+    "mount_type": "L-bracket pole mount up to 2.5 in OD, downtilt to 45\u00b0",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/ps10-5500-120.jpg",
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/ps10-5500-120-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PS10-5500-120 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7458/ps10-5500-ps11-5500-ps12-5500-ps14-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PS10-5500-120 spec sheet",
+        "id": "ps10-5500-ps11-5500-ps12-5500-ps14-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7458/ps10-5500-ps11-5500-ps12-5500-ps14-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PS10-5500-120)",
+        "id": "ps10-5500-120",
+        "url": "https://www.mobilemark.com/product/ps10-5500-120/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PS11-5500-90",
+    "name": "11 dBi 5 GHz 90\u00b0 Sector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.85 GHz",
+    "gain_dbi": {
+      "5": 11
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "90\u00b0"
+      },
+      "vertical": {
+        "5": "12\u00b0"
+      }
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "dimensions": "12.5 \u00d7 3 in (panel)",
+    "mount_type": "L-bracket pole mount up to 2.5 in OD, downtilt to 45\u00b0",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/ps11-5500-90.jpg",
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/ps11-5500-90-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PS11-5500-90 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7458/ps10-5500-ps11-5500-ps12-5500-ps14-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PS11-5500-90 spec sheet",
+        "id": "ps10-5500-ps11-5500-ps12-5500-ps14-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7458/ps10-5500-ps11-5500-ps12-5500-ps14-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PS11-5500-90)",
+        "id": "ps11-5500-90",
+        "url": "https://www.mobilemark.com/product/ps11-5500-90/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PS12-5500-60",
+    "name": "12 dBi 5 GHz 60\u00b0 Sector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.85 GHz",
+    "gain_dbi": {
+      "5": 12
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "60\u00b0"
+      },
+      "vertical": {
+        "5": "12\u00b0"
+      }
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "dimensions": "12.5 \u00d7 3 in (panel)",
+    "mount_type": "L-bracket pole mount up to 2.5 in OD, downtilt to 45\u00b0",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/ps12-5500-60.jpg",
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/ps12-5500-60-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PS12-5500-60 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7458/ps10-5500-ps11-5500-ps12-5500-ps14-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PS12-5500-60 spec sheet",
+        "id": "ps10-5500-ps11-5500-ps12-5500-ps14-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7458/ps10-5500-ps11-5500-ps12-5500-ps14-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PS12-5500-60)",
+        "id": "ps12-5500-60",
+        "url": "https://www.mobilemark.com/product/ps12-5500-60/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PS14-5500-45",
+    "name": "14 dBi 5 GHz 45\u00b0 Sector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.85 GHz",
+    "gain_dbi": {
+      "5": 14
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "45\u00b0"
+      },
+      "vertical": {
+        "5": "11\u00b0"
+      }
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "dimensions": "12.5 \u00d7 3 in (panel)",
+    "mount_type": "L-bracket pole mount up to 2.5 in OD, downtilt to 45\u00b0",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/ps14-5500-45.jpg",
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/ps14-5500-45-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PS14-5500-45 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7458/ps10-5500-ps11-5500-ps12-5500-ps14-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PS14-5500-45 spec sheet",
+        "id": "ps10-5500-ps11-5500-ps12-5500-ps14-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7458/ps10-5500-ps11-5500-ps12-5500-ps14-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PS14-5500-45)",
+        "id": "ps14-5500-45",
+        "url": "https://www.mobilemark.com/product/ps14-5500-45/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PS12-2400-90",
+    "name": "12 dBi 2.4 GHz 90\u00b0 Sector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 12
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "90\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "mount_type": "Pole / wall sector mount",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/ps12-2400-90.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PS12-2400-90 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7464/ps12-2400-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PS12-2400-90 spec sheet",
+        "id": "ps12-2400-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7464/ps12-2400-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PS12-2400-90)",
+        "id": "ps12-2400-90",
+        "url": "https://www.mobilemark.com/product/ps12-2400-90/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "SCR9-2400",
+    "name": "9 dBi 2.4 GHz Corner Reflector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.3-2.6 GHz",
+    "gain_dbi": {
+      "2.4": 9
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "60\u00b0"
+      },
+      "vertical": {
+        "2.4": "78\u00b0"
+      }
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "radome": "ASA / powder-coated aluminum",
+    "mount_type": "Pole mount hardware included",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/scr9-2400.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/scr9-2400-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark SCR9-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7469/scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark SCR9-2400 spec sheet",
+        "id": "scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7469/scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (SCR9-2400)",
+        "id": "scr9-2400",
+        "url": "https://www.mobilemark.com/product/scr9-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "SCR12-2400",
+    "name": "12 dBi 2.4 GHz Corner Reflector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.3-2.6 GHz",
+    "gain_dbi": {
+      "2.4": 12
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "36\u00b0"
+      },
+      "vertical": {
+        "2.4": "50\u00b0"
+      }
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "radome": "ASA / powder-coated aluminum",
+    "mount_type": "Pole mount hardware included",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/scr12-2400.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark SCR12-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7469/scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark SCR12-2400 spec sheet",
+        "id": "scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7469/scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (SCR12-2400)",
+        "id": "scr12-2400",
+        "url": "https://www.mobilemark.com/product/scr12-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "SCR10-5250",
+    "name": "10 dBi 5.2 GHz Corner Reflector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.35 GHz",
+    "gain_dbi": {
+      "5": 10
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "30\u00b0"
+      },
+      "vertical": {
+        "5": "57\u00b0"
+      }
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "radome": "ASA / powder-coated aluminum",
+    "mount_type": "Pole mount hardware included",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/scr10-5250.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark SCR10-5250 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7469/scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark SCR10-5250 spec sheet",
+        "id": "scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7469/scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (SCR10-5250)",
+        "id": "scr10-5250",
+        "url": "https://www.mobilemark.com/product/scr10-5250/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "SCR12-5725",
+    "name": "12 dBi 5.8 GHz Corner Reflector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.72-5.93 GHz",
+    "gain_dbi": {
+      "5": 12
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "26\u00b0"
+      },
+      "vertical": {
+        "5": "75\u00b0"
+      }
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "radome": "ASA / powder-coated aluminum",
+    "mount_type": "Pole mount hardware included",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/scr12-5725.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark SCR12-5725 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7469/scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark SCR12-5725 spec sheet",
+        "id": "scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7469/scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (SCR12-5725)",
+        "id": "scr12-5725",
+        "url": "https://www.mobilemark.com/product/scr12-5725/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "SCR-2400/5500",
+    "name": "Dual-Band 9/12 dBi Corner Reflector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-6.0 GHz",
+    "gain_dbi": {
+      "2.4": 9,
+      "5": 12
+    },
+    "beamwidth": {
+      "horizontal": {},
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "mount_type": "Pole mount",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/scr-2400-5500.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark SCR-2400/5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7469/scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark SCR-2400/5500 spec sheet",
+        "id": "scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7469/scr9-2400-scr12-2400-scr10-5250-scr12-5725-scr-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (SCR-2400/5500)",
+        "id": "scr-2400-5500",
+        "url": "https://www.mobilemark.com/product/scr-2400-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "ECO5-2400",
+    "name": "5 dBi 2.4 GHz Outdoor Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Pipe mount kit (up to ~2 in OD)",
+    "wind_rating": "100 mph minimum",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/mobile-mark/eco5-2400.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/eco5-2400-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark ECO5-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7448/eco5-2400-eco8-2400-eco6-5500-eco9-5500-eco12-5800-eco5-2400rn-eco8-2400rm-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark ECO5-2400 spec sheet",
+        "id": "eco5-2400-eco8-2400-eco6-5500-eco9-5500-eco12-5800-eco5-2400rn-eco8-2400rm-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7448/eco5-2400-eco8-2400-eco6-5500-eco9-5500-eco12-5800-eco5-2400rn-eco8-2400rm-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (ECO5-2400)",
+        "id": "eco5-2400",
+        "url": "https://www.mobilemark.com/product/eco5-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "ECO5-2400/5500",
+    "name": "5 dBi Tri-Band Wi-Fi 6E Outdoor Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-7.2 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5,
+      "6": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "22\u00b0",
+        "5": "30\u00b0",
+        "6": "30\u00b0"
+      }
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "9.50 in L \u00d7 1.03 in dia (241 \u00d7 26 mm)",
+    "weight": "8 oz (226 g)",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Pipe mount kit (up to ~2 in OD)",
+    "wind_rating": "100 mph minimum",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/mobile-mark/eco5-2400-5500.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/eco5-2400-5500-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark ECO5-2400/5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7450/eco5-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark ECO5-2400/5500 spec sheet",
+        "id": "eco5-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7450/eco5-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (ECO5-2400/5500)",
+        "id": "eco5-2400-5500",
+        "url": "https://www.mobilemark.com/product/eco5-2400-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "ECO6-5500",
+    "name": "6 dBi 5 GHz Outdoor Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.0-6.0 GHz",
+    "gain_dbi": {
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "5": "25\u00b0"
+      }
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "~10 in fiberglass radome",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Pipe mount kit (up to ~2 in OD)",
+    "wind_rating": "125+ mph",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/mobile-mark/eco6-5500.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark ECO6-5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7448/eco5-2400-eco8-2400-eco6-5500-eco9-5500-eco12-5800-eco5-2400rn-eco8-2400rm-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark ECO6-5500 spec sheet",
+        "id": "eco5-2400-eco8-2400-eco6-5500-eco9-5500-eco12-5800-eco5-2400rn-eco8-2400rm-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7448/eco5-2400-eco8-2400-eco6-5500-eco9-5500-eco12-5800-eco5-2400rn-eco8-2400rm-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (ECO6-5500)",
+        "id": "eco6-5500",
+        "url": "https://www.mobilemark.com/product/eco6-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "ECO9-5500",
+    "name": "9 dBi 5 GHz Outdoor Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.0-6.0 GHz",
+    "gain_dbi": {
+      "5": 9
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Pipe mount kit (up to ~2 in OD)",
+    "wind_rating": "100 mph minimum",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/mobile-mark/eco9-5500.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark ECO9-5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7448/eco5-2400-eco8-2400-eco6-5500-eco9-5500-eco12-5800-eco5-2400rn-eco8-2400rm-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark ECO9-5500 spec sheet",
+        "id": "eco5-2400-eco8-2400-eco6-5500-eco9-5500-eco12-5800-eco5-2400rn-eco8-2400rm-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7448/eco5-2400-eco8-2400-eco6-5500-eco9-5500-eco12-5800-eco5-2400rn-eco8-2400rm-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (ECO9-5500)",
+        "id": "eco9-5500",
+        "url": "https://www.mobilemark.com/product/eco9-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "ECO12-5800",
+    "name": "12 dBi 5.8 GHz Outdoor Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.7-5.9 GHz",
+    "gain_dbi": {
+      "5": 12
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Pipe mount kit (up to ~2 in OD)",
+    "wind_rating": "100 mph minimum",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/mobile-mark/eco12-5800.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark ECO12-5800 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7448/eco5-2400-eco8-2400-eco6-5500-eco9-5500-eco12-5800-eco5-2400rn-eco8-2400rm-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark ECO12-5800 spec sheet",
+        "id": "eco5-2400-eco8-2400-eco6-5500-eco9-5500-eco12-5800-eco5-2400rn-eco8-2400rm-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7448/eco5-2400-eco8-2400-eco6-5500-eco9-5500-eco12-5800-eco5-2400rn-eco8-2400rm-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (ECO12-5800)",
+        "id": "eco12-5800",
+        "url": "https://www.mobilemark.com/product/eco12-5800/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "ECOM5-2400",
+    "name": "Magnetic-Mount 5 dBi 2.4 GHz Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Magnetic mount",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/ecom5-2400.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/ecom5-2400-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark ECOM5-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7452/ecom5-2400-ecom6-5500-ecom9-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark ECOM5-2400 spec sheet",
+        "id": "ecom5-2400-ecom6-5500-ecom9-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7452/ecom5-2400-ecom6-5500-ecom9-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (ECOM5-2400)",
+        "id": "ecom5-2400",
+        "url": "https://www.mobilemark.com/product/ecom5-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "ECOM6-5500",
+    "name": "Magnetic-Mount 6 dBi 5 GHz Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.0-6.0 GHz",
+    "gain_dbi": {
+      "5": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Magnetic mount",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/ecom6-5500.jpg",
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/ecom6-5500-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark ECOM6-5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7452/ecom5-2400-ecom6-5500-ecom9-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark ECOM6-5500 spec sheet",
+        "id": "ecom5-2400-ecom6-5500-ecom9-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7452/ecom5-2400-ecom6-5500-ecom9-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (ECOM6-5500)",
+        "id": "ecom6-5500",
+        "url": "https://www.mobilemark.com/product/ecom6-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "ECOM9-5500",
+    "name": "Magnetic-Mount 9 dBi 5 GHz Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.0-6.0 GHz",
+    "gain_dbi": {
+      "5": 9
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Magnetic mount",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/ecom9-5500.jpg",
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/ecom9-5500-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark ECOM9-5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7452/ecom5-2400-ecom6-5500-ecom9-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark ECOM9-5500 spec sheet",
+        "id": "ecom5-2400-ecom6-5500-ecom9-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7452/ecom5-2400-ecom6-5500-ecom9-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (ECOM9-5500)",
+        "id": "ecom9-5500",
+        "url": "https://www.mobilemark.com/product/ecom9-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "ECOS5-2400DN",
+    "name": "Spring-Mount 5 dBi 2.4 GHz Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Spring / direct mount",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/ecos5-2400dn.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark ECOS5-2400DN spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7449/ecom5-2400-ecom8-2400-ecom6-5500-ecom9-5500-ecos5-2400dn-ecos8-2400dn-ecos6-5500dn-ecos9-5500dn-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark ECOS5-2400DN spec sheet",
+        "id": "ecom5-2400-ecom8-2400-ecom6-5500-ecom9-5500-ecos5-2400dn-ecos8-2400dn-ecos6-5500dn-ecos9-5500dn-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7449/ecom5-2400-ecom8-2400-ecom6-5500-ecom9-5500-ecos5-2400dn-ecos8-2400dn-ecos6-5500dn-ecos9-5500dn-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (ECOS5-2400DN)",
+        "id": "ecos5-2400",
+        "url": "https://www.mobilemark.com/product/ecos5-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "ECOS9-5500DN",
+    "name": "Spring-Mount 9 dBi 5 GHz Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.0-6.0 GHz",
+    "gain_dbi": {
+      "5": 9
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Spring / direct mount",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/ecos9-5500dn.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark ECOS9-5500DN spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7449/ecom5-2400-ecom8-2400-ecom6-5500-ecom9-5500-ecos5-2400dn-ecos8-2400dn-ecos6-5500dn-ecos9-5500dn-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark ECOS9-5500DN spec sheet",
+        "id": "ecom5-2400-ecom8-2400-ecom6-5500-ecom9-5500-ecos5-2400dn-ecos8-2400dn-ecos6-5500dn-ecos9-5500dn-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7449/ecom5-2400-ecom8-2400-ecom6-5500-ecom9-5500-ecos5-2400dn-ecos8-2400dn-ecos6-5500dn-ecos9-5500dn-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (ECOS9-5500DN)",
+        "id": "ecos9-5500",
+        "url": "https://www.mobilemark.com/product/ecos9-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "OD3-2400",
+    "name": "3 dBi 2.4 GHz Outdoor Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Pole / mast",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/od3-2400.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/od3-2400-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark OD3-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2031/accessories/7236/od3-2400-od6-2400-od9-2400-od12-2400-odr9-2400-odr9-2400t120k-odr9-2400t180k-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark OD3-2400 spec sheet",
+        "id": "od3-2400-od6-2400-od9-2400-od12-2400-odr9-2400-odr9-2400t120k-odr9-2400t180k-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2031/accessories/7236/od3-2400-od6-2400-od9-2400-od12-2400-odr9-2400-odr9-2400t120k-odr9-2400t180k-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (OD3-2400)",
+        "id": "od3-2400",
+        "url": "https://www.mobilemark.com/product/od3-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "OD6-2400",
+    "name": "6 dBi 2.4 GHz Outdoor Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Pole / mast",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/od6-2400.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/od6-2400-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark OD6-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2031/accessories/7236/od3-2400-od6-2400-od9-2400-od12-2400-odr9-2400-odr9-2400t120k-odr9-2400t180k-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark OD6-2400 spec sheet",
+        "id": "od3-2400-od6-2400-od9-2400-od12-2400-odr9-2400-odr9-2400t120k-odr9-2400t180k-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2031/accessories/7236/od3-2400-od6-2400-od9-2400-od12-2400-odr9-2400-odr9-2400t120k-odr9-2400t180k-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (OD6-2400)",
+        "id": "od6-2400",
+        "url": "https://www.mobilemark.com/product/od6-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "OD9-2400",
+    "name": "9 dBi 2.4 GHz Outdoor Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 9
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Pole / mast",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/od9-2400.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/od9-2400-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark OD9-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2031/accessories/7236/od3-2400-od6-2400-od9-2400-od12-2400-odr9-2400-odr9-2400t120k-odr9-2400t180k-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark OD9-2400 spec sheet",
+        "id": "od3-2400-od6-2400-od9-2400-od12-2400-odr9-2400-odr9-2400t120k-odr9-2400t180k-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2031/accessories/7236/od3-2400-od6-2400-od9-2400-od12-2400-odr9-2400-odr9-2400t120k-odr9-2400t180k-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (OD9-2400)",
+        "id": "od9-2400",
+        "url": "https://www.mobilemark.com/product/od9-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "OD12-2400",
+    "name": "12 dBi 2.4 GHz Outdoor Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 12
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Pole / mast",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/od12-2400.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/od12-2400-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark OD12-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7455/od3-2400-od6-2400-od9-2400-od12-2400-odr9-2400-odr9-2400t120k-odr9-2400t180k-spec-sheet-2.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark OD12-2400 spec sheet",
+        "id": "od3-2400-od6-2400-od9-2400-od12-2400-odr9-2400-odr9-2400t120k-odr9-2400t180k-spec-sheet-2",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7455/od3-2400-od6-2400-od9-2400-od12-2400-odr9-2400-odr9-2400t120k-odr9-2400t180k-spec-sheet-2.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (OD12-2400)",
+        "id": "od12-2400",
+        "url": "https://www.mobilemark.com/product/od12-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "OD3-2400MOD2",
+    "name": "3 dBi High-Vibration 2.4 GHz Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Pole / mast",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/od3-2400mod2.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark OD3-2400MOD2 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7453/od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark OD3-2400MOD2 spec sheet",
+        "id": "od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7453/od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (OD3-2400MOD2)",
+        "id": "od3-2400mod2",
+        "url": "https://www.mobilemark.com/product/od3-2400mod2/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "OD6-2400MOD2",
+    "name": "6 dBi High-Vibration 2.4 GHz Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 6
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Pole / mast",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/od6-2400mod2.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/od6-2400mod2-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark OD6-2400MOD2 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7453/od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark OD6-2400MOD2 spec sheet",
+        "id": "od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7453/od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (OD6-2400MOD2)",
+        "id": "od6-2400mod2-vibration-resistant",
+        "url": "https://www.mobilemark.com/product/od6-2400mod2-vibration-resistant/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "OD9-2400MOD2",
+    "name": "9 dBi High-Vibration 2.4 GHz Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 9
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Pole / mast",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/od9-2400mod2.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/od9-2400mod2-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark OD9-2400MOD2 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7453/od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark OD9-2400MOD2 spec sheet",
+        "id": "od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7453/od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (OD9-2400MOD2)",
+        "id": "od9-2400mod2-vibration-resistant",
+        "url": "https://www.mobilemark.com/product/od9-2400mod2-vibration-resistant/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "MOD3-2400",
+    "name": "High-Vibration Marine 2.4 GHz Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Pole / mast",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/mod3-2400.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark MOD3-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7453/od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark MOD3-2400 spec sheet",
+        "id": "od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7453/od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (MOD3-2400)",
+        "id": "mod3-2400",
+        "url": "https://www.mobilemark.com/product/mod3-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "OD5-2400/5500MOD2",
+    "name": "Dual-Band High-Vibration Wi-Fi Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "ip_rating": "IPX5",
+    "radome": "Fiberglass",
+    "mount_type": "Pole / mast (high-vibration)",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/od5-2400-5500mod2.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/od5-2400-5500mod2-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark OD5-2400/5500MOD2 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7453/od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark OD5-2400/5500MOD2 spec sheet",
+        "id": "od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7453/od3-2400mod2-od6-2400mod2-od9-2400mod2-od5-2400-5500mod2-mod3-2400-mod6-2400-mod9-2400-mod12-2400-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (OD5-2400/5500MOD2)",
+        "id": "od5-2400-5500mod2",
+        "url": "https://www.mobilemark.com/product/od5-2400-5500mod2/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "DOD5-2400/5500",
+    "name": "2\u00d7/3\u00d7 MIMO Dual-Band Outdoor Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.925 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {},
+      "vertical": {
+        "2.4": "40\u00b0",
+        "5": "45\u00b0"
+      }
+    },
+    "connector": "SMA Plug",
+    "lead_count": 3,
+    "polarization": "Multi-element MIMO vertical",
+    "cable_length": "9 / 12 / 15 in staggered leads",
+    "cable_type": "Integral leads",
+    "dimensions": "29 5/8 in H \u00d7 1 in dia (75 \u00d7 3 cm)",
+    "radome": "Fiberglass, black",
+    "mount_type": "U-bolt pole kit up to 2.5 in OD",
+    "vswr": "2:1 max",
+    "isolation": ">20 dB",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/dod5-2400-5500.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark DOD5-2400/5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7460/pnd8-2400-5500-dod5-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark DOD5-2400/5500 spec sheet",
+        "id": "pnd8-2400-5500-dod5-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7460/pnd8-2400-5500-dod5-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (DOD5-2400/5500)",
+        "id": "dod5-2400-5500",
+        "url": "https://www.mobilemark.com/product/dod5-2400-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "YAG8-W",
+    "name": "8 dBi Dual-Band Wi-Fi Yagi",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-6.0 GHz",
+    "gain_dbi": {
+      "2.4": 8,
+      "5": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "90\u00b0",
+        "5": "90\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "70\u00b0"
+      }
+    },
+    "connector": "SMA Plug",
+    "lead_count": 1,
+    "cable_length": "12 in (305 mm)",
+    "cable_type": "LL-195",
+    "dimensions": "2.75 \u00d7 6.35 \u00d7 0.56 in (7 \u00d7 16 \u00d7 1.4 cm); 7.5 in with mount",
+    "weight": "0.5 lb (0.23 kg)",
+    "ip_rating": "IPX5",
+    "radome": "ASA, white",
+    "mount_type": "45\u00b0 adjustable swivel wall mount (optional pipe mount)",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 85 \u00b0C",
+    "image_url": "images/mobile-mark/yag8-w.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark YAG8-W spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7485/yag8-w-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark YAG8-W spec sheet",
+        "id": "yag8-w-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7485/yag8-w-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (YAG8-W)",
+        "id": "yag8-w",
+        "url": "https://www.mobilemark.com/product/yag8-w/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "YAG12-5500",
+    "name": "10/12 dBi 4.4\u20136.0 GHz Yagi",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "4.4-5.4/5.47-6.0 GHz",
+    "gain_dbi": {
+      "5": 12
+    },
+    "beamwidth": {
+      "horizontal": {},
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 1,
+    "cable_length": "12 in",
+    "dimensions": "6.35 in L (7.5 in with wall bracket)",
+    "radome": "ASA",
+    "mount_type": "Two-axis wall bracket; optional pipe mount",
+    "image_url": "images/mobile-mark/yag12-5500.jpg",
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/yag12-5500-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark YAG12-5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7484/yag12-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark YAG12-5500 spec sheet",
+        "id": "yag12-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7484/yag12-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (YAG12-5500)",
+        "id": "yag12-5500",
+        "url": "https://www.mobilemark.com/product/yag12-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "SMD-W-2",
+    "name": "2\u00d7 MIMO Tri-Band Wi-Fi 6E Surface-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-7.2 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 4,
+      "6": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 2,
+    "polarization": "Vertical MIMO",
+    "cable_type": "RF-195",
+    "dimensions": "1.5 in H \u00d7 3.5 in dia (38 \u00d7 89 mm)",
+    "radome": "ASA",
+    "mount_type": "Thru-hole 5/8 in stud (up to 1/4 in surface)",
+    "vswr": "2:1 max",
+    "isolation": ">20 dB",
+    "image_url": "images/mobile-mark/smd-w-2.jpg",
+    "pattern_images": [
+      {
+        "label": "Horizontal/Vertical",
+        "url": "images/mobile-mark/smd-w-2-pattern-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark SMD-W-2 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7470/smd-w-msmd-w-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark SMD-W-2 spec sheet",
+        "id": "smd-w-msmd-w-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7470/smd-w-msmd-w-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (SMD-W-2)",
+        "id": "smd-w-2-cable",
+        "url": "https://www.mobilemark.com/product/smd-w-2-cable/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "SMD-W-3",
+    "name": "3\u00d7 MIMO Tri-Band Wi-Fi 6E Surface-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-7.2 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 4,
+      "6": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 3,
+    "polarization": "Vertical MIMO",
+    "cable_type": "RF-195",
+    "dimensions": "1.5 in H \u00d7 3.5 in dia (38 \u00d7 89 mm)",
+    "radome": "ASA",
+    "mount_type": "Thru-hole 5/8 in stud (up to 1/4 in surface)",
+    "vswr": "2:1 max",
+    "isolation": ">20 dB",
+    "image_url": "images/mobile-mark/smd-w-3.jpg",
+    "pattern_images": [
+      {
+        "label": "Horizontal/Vertical",
+        "url": "images/mobile-mark/smd-w-3-pattern-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark SMD-W-3 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7470/smd-w-msmd-w-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark SMD-W-3 spec sheet",
+        "id": "smd-w-msmd-w-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7470/smd-w-msmd-w-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (SMD-W-3)",
+        "id": "smd-w-3-cable",
+        "url": "https://www.mobilemark.com/product/smd-w-3-cable/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "SMD-W-HV",
+    "name": "3\u00d73 High-Vibration Tri-Band Wi-Fi 6E Surface Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-7.2 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 4,
+      "6": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 3,
+    "polarization": "Vertical MIMO",
+    "mount_type": "High-vibration surface mount",
+    "vswr": "2:1 max",
+    "isolation": ">20 dB",
+    "image_url": "images/mobile-mark/smd-w-hv.jpg",
+    "pattern_images": [
+      {
+        "label": "Horizontal/Vertical",
+        "url": "images/mobile-mark/smd-w-hv-pattern-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark SMD-W-HV spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7470/smd-w-msmd-w-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark SMD-W-HV spec sheet",
+        "id": "smd-w-msmd-w-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7470/smd-w-msmd-w-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (SMD-W-HV)",
+        "id": "smd-w-hv",
+        "url": "https://www.mobilemark.com/product/smd-w-hv/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "CMD-W-2",
+    "name": "2\u00d7 MIMO Tri-Band Wi-Fi 6E Ceiling Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.7/4.9-7.2 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 4,
+      "6": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 2,
+    "cable_type": "LMR-195FR",
+    "mount_type": "Thru-hole 5/8 in ceiling/surface stud",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/cmd-w-2.jpg",
+    "pattern_images": [
+      {
+        "label": "Horizontal/Vertical",
+        "url": "images/mobile-mark/cmd-w-2-pattern-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark CMD-W-2 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7447/cmd-w-2-and-3-cable-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark CMD-W-2 spec sheet",
+        "id": "cmd-w-2-and-3-cable-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7447/cmd-w-2-and-3-cable-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (CMD-W-2)",
+        "id": "cmd-w-2-cable",
+        "url": "https://www.mobilemark.com/product/cmd-w-2-cable/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "CMD-W-3",
+    "name": "3\u00d7 MIMO Tri-Band Wi-Fi 6E Ceiling Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.7/4.9-7.2 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 4,
+      "6": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 3,
+    "cable_type": "LMR-195FR",
+    "mount_type": "Thru-hole 5/8 in ceiling/surface stud",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/cmd-w-3.jpg",
+    "pattern_images": [
+      {
+        "label": "Horizontal/Vertical",
+        "url": "images/mobile-mark/cmd-w-3-pattern-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark CMD-W-3 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7447/cmd-w-2-and-3-cable-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark CMD-W-3 spec sheet",
+        "id": "cmd-w-2-and-3-cable-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7447/cmd-w-2-and-3-cable-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (CMD-W-3)",
+        "id": "cmd-w-3-cable",
+        "url": "https://www.mobilemark.com/product/cmd-w-3-cable/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "NXD-W",
+    "name": "4\u00d7 MIMO Wi-Fi 6E Low-Profile Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-7.2 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 4,
+      "6": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "12 in (300 mm)",
+    "cable_type": "LMR-100",
+    "dimensions": "0.625 in H \u00d7 3.53 in dia (15.6 \u00d7 89.4 mm)",
+    "weight": "8 oz (226 g)",
+    "ip_rating": "IP69K (stud) / IP67 (mag-mount)",
+    "radome": "ASA UV-stable, black",
+    "mount_type": "5/8-18 stud, ground-plane independent",
+    "vswr": "<2:1",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/mobile-mark/nxd-w.jpg",
+    "pattern_images": [
+      {
+        "label": "Horizontal/Vertical",
+        "url": "images/mobile-mark/nxd-w-pattern-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark NXD-W spec sheet",
+        "url": "https://www.mobilemark.com/download/2036/tech-sheets/7810/nxd-w-7cx4-blk-12-tech-sheet.pdf"
+      },
+      {
+        "label": "Mobile Mark NXD-W spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/8227/nxd-series-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark NXD-W spec sheet",
+        "id": "nxd-w-7cx4-blk-12-tech-sheet",
+        "url": "https://www.mobilemark.com/download/2036/tech-sheets/7810/nxd-w-7cx4-blk-12-tech-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark NXD-W spec sheet",
+        "id": "nxd-series-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/8227/nxd-series-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (NXD-W)",
+        "id": "nxd-w-4x-wifi",
+        "url": "https://www.mobilemark.com/product/nxd-w-4x-wifi/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PR-NXD-W",
+    "name": "4\u00d7 MIMO Wi-Fi Passenger-Rail Low-Profile Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-7.2 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 4,
+      "6": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "radome": "ASA",
+    "mount_type": "Passenger-rail / NFPA-oriented stud mount",
+    "image_url": "images/mobile-mark/pr-nxd-w.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PR-NXD-W spec sheet",
+        "url": "https://www.mobilemark.com/download/2035/specialty-networks/11384/pr-nxd-w-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PR-NXD-W spec sheet",
+        "id": "pr-nxd-w-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2035/specialty-networks/11384/pr-nxd-w-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PR-NXD-W)",
+        "id": "pr-nxd-w-passenger-rail",
+        "url": "https://www.mobilemark.com/product/pr-nxd-w-passenger-rail/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "SMG404",
+    "name": "4\u00d7 Wi-Fi 6E/7 MIMO + GNSS Low-Profile",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-7.2 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5,
+      "6": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 4,
+    "polarization": "Vertical",
+    "cable_length": "12 in (305 mm)",
+    "cable_type": "LMR-100 (Wi-Fi); RG-174 (GNSS)",
+    "dimensions": "4.0 in dia \u00d7 1.5 in H (10.2 \u00d7 3.8 cm)",
+    "weight": "0.48 lb (217 g)",
+    "radome": "UV-stable ASA",
+    "mount_type": "3/4 in hole panel mount, ground-plane independent",
+    "vswr": "2:1 max",
+    "operating_temp": "-40 to 80 \u00b0C",
+    "image_url": "images/mobile-mark/smg404.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark SMG404 spec sheet",
+        "url": "https://www.mobilemark.com/download/2033/gps-gnss-multiband/18392/smg404-7c2c-b-12-tech-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark SMG404 spec sheet",
+        "id": "smg404-7c2c-b-12-tech-sheet",
+        "url": "https://www.mobilemark.com/download/2033/gps-gnss-multiband/18392/smg404-7c2c-b-12-tech-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (SMG404)",
+        "id": "smg404-4x-wifi-6e-7-1x-gnss",
+        "url": "https://www.mobilemark.com/product/smg404-4x-wifi-6e-7-1x-gnss/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "SMG505",
+    "name": "5\u00d7 Wi-Fi 6E/7 MIMO + GNSS Low-Profile",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-7.2 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5,
+      "6": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 5,
+    "polarization": "Vertical",
+    "radome": "UV-stable ASA",
+    "mount_type": "Panel / stud mount, ground-plane independent",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/smg505.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark SMG505 spec sheet",
+        "url": "https://www.mobilemark.com/download/2033/gps-gnss-multiband/18414/smg505-7c2c-b-12-tech-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark SMG505 spec sheet",
+        "id": "smg505-7c2c-b-12-tech-sheet",
+        "url": "https://www.mobilemark.com/download/2033/gps-gnss-multiband/18414/smg505-7c2c-b-12-tech-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (SMG505)",
+        "id": "smg505-5x-wifi-6e-7-1x-gnss",
+        "url": "https://www.mobilemark.com/product/smg505-5x-wifi-6e-7-1x-gnss/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "SMHG-W5",
+    "name": "4\u00d7 Wi-Fi 6E/7 + GNSS Heavy-Duty Low-Profile",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/4.9-7.2 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5,
+      "6": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 4,
+    "radome": "ASA",
+    "mount_type": "Heavy-duty surface mount",
+    "image_url": "images/mobile-mark/smhg-w5.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark SMHG-W5 spec sheet",
+        "url": "https://www.mobilemark.com/download/2033/gps-gnss-multiband/15334/smhg-w5-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark SMHG-W5 spec sheet",
+        "id": "smhg-w5-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2033/gps-gnss-multiband/15334/smhg-w5-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (SMHG-W5)",
+        "id": "smhg-w5",
+        "url": "https://www.mobilemark.com/product/smhg-w5/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PSKN3-24/55",
+    "name": "Dual-Band Knuckle-Swivel Device Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA / RPSMA (config)",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "mount_type": "Direct connector knuckle-swivel",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/pskn3-24-55.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/pskn3-24-55-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PSKN3-24/55 spec sheet",
+        "url": "https://www.mobilemark.com/download/2032/cellular-iot-m2m/7271/pskn3-2400-pskn3-3500-psn3-2400-pskn3-24-55s-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PSKN3-24/55 spec sheet",
+        "id": "pskn3-2400-pskn3-3500-psn3-2400-pskn3-24-55s-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2032/cellular-iot-m2m/7271/pskn3-2400-pskn3-3500-psn3-2400-pskn3-24-55s-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PSKN3-24/55)",
+        "id": "pskn3-24-55",
+        "url": "https://www.mobilemark.com/product/pskn3-24-55/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PSKN3-2400S",
+    "name": "2.4 GHz Knuckle-Swivel Device Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.485 GHz",
+    "gain_dbi": {
+      "2.4": 3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA / RPSMA (config)",
+    "lead_count": 1,
+    "mount_type": "Direct connector knuckle-swivel",
+    "image_url": "images/mobile-mark/pskn3-2400s.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PSKN3-2400S spec sheet",
+        "url": "https://www.mobilemark.com/download/2032/cellular-iot-m2m/7271/pskn3-2400-pskn3-3500-psn3-2400-pskn3-24-55s-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PSKN3-2400S spec sheet",
+        "id": "pskn3-2400-pskn3-3500-psn3-2400-pskn3-24-55s-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2032/cellular-iot-m2m/7271/pskn3-2400-pskn3-3500-psn3-2400-pskn3-24-55s-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PSKN3-2400S)",
+        "id": "pskn3-2400s",
+        "url": "https://www.mobilemark.com/product/pskn3-2400s/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PSKN4-2400RT",
+    "name": "4 dBi 2.4 GHz Reverse-TNC Device Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.485 GHz",
+    "gain_dbi": {
+      "2.4": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "Reverse-TNC",
+    "lead_count": 1,
+    "dimensions": "12 in whip",
+    "mount_type": "Direct connector swivel",
+    "image_url": "images/mobile-mark/pskn4-2400rt.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PSKN4-2400RT spec sheet",
+        "url": "https://www.mobilemark.com/download/2036/tech-sheets/7944/pskn4-2400rt.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PSKN4-2400RT spec sheet",
+        "id": "pskn4-2400rt",
+        "url": "https://www.mobilemark.com/download/2036/tech-sheets/7944/pskn4-2400rt.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PSKN4-2400RT)",
+        "id": "pskn4-2400rt",
+        "url": "https://www.mobilemark.com/product/pskn4-2400rt/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PSKN4-W6E",
+    "name": "4 dBi Wi-Fi 6E/7 Knuckle-Swivel Blade",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.895/6.125-7.125 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 4,
+      "6": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA / RPSMA",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "mount_type": "Knuckle swivel 0/45/90\u00b0",
+    "image_url": "images/mobile-mark/pskn4-w6e.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PSKN4-W6E spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/9470/pskn4-w6e-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PSKN4-W6E spec sheet",
+        "id": "pskn4-w6e-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/9470/pskn4-w6e-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PSKN4-W6E)",
+        "id": "pskn4-w6e-wifi-6e-rubber-duck",
+        "url": "https://www.mobilemark.com/product/pskn4-w6e-wifi-6e-rubber-duck/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PSN3-2400RT",
+    "name": "2.4 GHz Fixed-Straight Reverse-TNC Device Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.485 GHz",
+    "gain_dbi": {
+      "2.4": 3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "Reverse-TNC",
+    "lead_count": 1,
+    "mount_type": "Direct connector fixed-straight",
+    "image_url": "images/mobile-mark/psn3-2400rt.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PSN3-2400RT spec sheet",
+        "url": "https://www.mobilemark.com/download/2032/cellular-iot-m2m/7271/pskn3-2400-pskn3-3500-psn3-2400-pskn3-24-55s-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PSN3-2400RT spec sheet",
+        "id": "pskn3-2400-pskn3-3500-psn3-2400-pskn3-24-55s-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2032/cellular-iot-m2m/7271/pskn3-2400-pskn3-3500-psn3-2400-pskn3-24-55s-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PSN3-2400RT)",
+        "id": "psn3-2400rt",
+        "url": "https://www.mobilemark.com/product/psn3-2400rt/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PSTN2-2400/5600",
+    "name": "Dual-Band Half-Wave Device Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 2
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA / TNC (config)",
+    "lead_count": 1,
+    "mount_type": "Direct connector",
+    "image_url": "images/mobile-mark/pstn2-2400-5600.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/pstn2-2400-5600-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PSTN2-2400/5600 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7465/pstn2-2200-pstn2-3200-pstn2-4500-pstn2-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PSTN2-2400/5600 spec sheet",
+        "id": "pstn2-2200-pstn2-3200-pstn2-4500-pstn2-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7465/pstn2-2200-pstn2-3200-pstn2-4500-pstn2-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PSTN2-2400/5600)",
+        "id": "pstn2-2400-5600",
+        "url": "https://www.mobilemark.com/product/pstn2-2400-5600/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "PSTG0-2400",
+    "name": "2.4 GHz Quarter-Wave Device Antenna",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.485 GHz",
+    "gain_dbi": {
+      "2.4": 0
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA / TNC (config)",
+    "lead_count": 1,
+    "mount_type": "Direct connector",
+    "image_url": "images/mobile-mark/pstg0-2400.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark PSTG0-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2032/cellular-iot-m2m/7274/pstg0-900-1900-pstg0-925-1800-pstg0-915-pstg0-2400-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark PSTG0-2400 spec sheet",
+        "id": "pstg0-900-1900-pstg0-925-1800-pstg0-915-pstg0-2400-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2032/cellular-iot-m2m/7274/pstg0-900-1900-pstg0-925-1800-pstg0-915-pstg0-2400-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (PSTG0-2400)",
+        "id": "pstg0-2400",
+        "url": "https://www.mobilemark.com/product/pstg0-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "RM3-2400",
+    "name": "5 dBi 2.4 GHz Surface-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "~3 in H \u00d7 1.7 in dia",
+    "mount_type": "Gasketed stud mount",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/rm3-2400.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark RM3-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2032/cellular-iot-m2m/7276/rm3-2400-dn-mgrm3-2400-rm-whf-rm-whf-dn-mgrm-whf-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark RM3-2400 spec sheet",
+        "id": "rm3-2400-dn-mgrm3-2400-rm-whf-rm-whf-dn-mgrm-whf-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2032/cellular-iot-m2m/7276/rm3-2400-dn-mgrm3-2400-rm-whf-rm-whf-dn-mgrm-whf-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (RM3-2400)",
+        "id": "rm3-2400",
+        "url": "https://www.mobilemark.com/product/rm3-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "RM3-2400DN",
+    "name": "5 dBi 2.4 GHz Direct-N Surface Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "~3 in H \u00d7 1.7 in dia",
+    "mount_type": "Direct-N equipment mount",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/rm3-2400dn.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark RM3-2400DN spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7466/rm3-2400-dn-mgrm3-2400-rm-whf-rm-whf-dn-mgrm-whf-spec-sheet-2.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark RM3-2400DN spec sheet",
+        "id": "rm3-2400-dn-mgrm3-2400-rm-whf-rm-whf-dn-mgrm-whf-spec-sheet-2",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7466/rm3-2400-dn-mgrm3-2400-rm-whf-rm-whf-dn-mgrm-whf-spec-sheet-2.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (RM3-2400DN)",
+        "id": "rm3-2400dn",
+        "url": "https://www.mobilemark.com/product/rm3-2400dn/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "RM3-5500",
+    "name": "5 dBi 5 GHz Surface-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.9 GHz",
+    "gain_dbi": {
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "~3 in H \u00d7 1.7 in dia",
+    "mount_type": "Gasketed stud mount",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/rm3-5500.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark RM3-5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7468/rm3-5500-dn-rm-whf-dm2-5250-dm2-5725-dm2-5500-dm2-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark RM3-5500 spec sheet",
+        "id": "rm3-5500-dn-rm-whf-dm2-5250-dm2-5725-dm2-5500-dm2-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7468/rm3-5500-dn-rm-whf-dm2-5250-dm2-5725-dm2-5500-dm2-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (RM3-5500)",
+        "id": "rm3-5500",
+        "url": "https://www.mobilemark.com/product/rm3-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "RM3-5500DN",
+    "name": "5 dBi 5 GHz Direct-N Surface Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.9 GHz",
+    "gain_dbi": {
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "~3 in H \u00d7 1.7 in dia",
+    "mount_type": "Direct-N equipment mount",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/rm3-5500dn.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark RM3-5500DN spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7468/rm3-5500-dn-rm-whf-dm2-5250-dm2-5725-dm2-5500-dm2-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark RM3-5500DN spec sheet",
+        "id": "rm3-5500-dn-rm-whf-dm2-5250-dm2-5725-dm2-5500-dm2-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7468/rm3-5500-dn-rm-whf-dm2-5250-dm2-5725-dm2-5500-dm2-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (RM3-5500DN)",
+        "id": "rm3-5500dn",
+        "url": "https://www.mobilemark.com/product/rm3-5500dn/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "RM-WHF",
+    "name": "5 dBi Wideband Surface-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-6.0 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "~3 in H \u00d7 1.7 in dia",
+    "mount_type": "Gasketed stud mount",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/rm-whf.jpg",
+    "pattern_images": [
+      {
+        "label": "Horizontal/Vertical",
+        "url": "images/mobile-mark/rm-whf-pattern-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark RM-WHF spec sheet",
+        "url": "https://www.mobilemark.com/download/2032/cellular-iot-m2m/9103/rm-whf-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark RM-WHF spec sheet",
+        "id": "rm-whf-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2032/cellular-iot-m2m/9103/rm-whf-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (RM-WHF)",
+        "id": "rm-whf",
+        "url": "https://www.mobilemark.com/product/rm-whf/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "RM-WHF-DN",
+    "name": "5 dBi Wideband Direct-N Surface Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/4.9-6.0 GHz",
+    "gain_dbi": {
+      "2.4": 5,
+      "5": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "Vertical",
+    "dimensions": "~3 in H \u00d7 1.7 in dia",
+    "mount_type": "Direct-N equipment mount",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/rm-whf-dn.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark RM-WHF-DN spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7466/rm3-2400-dn-mgrm3-2400-rm-whf-rm-whf-dn-mgrm-whf-spec-sheet-2.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark RM-WHF-DN spec sheet",
+        "id": "rm3-2400-dn-mgrm3-2400-rm-whf-rm-whf-dn-mgrm-whf-spec-sheet-2",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7466/rm3-2400-dn-mgrm3-2400-rm-whf-rm-whf-dn-mgrm-whf-spec-sheet-2.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (RM-WHF-DN)",
+        "id": "rm-whf-dn",
+        "url": "https://www.mobilemark.com/product/rm-whf-dn/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "MRM3-2400/5500",
+    "name": "Dual-Band Compact Stud-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 2.5,
+      "5": 2.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 1,
+    "cable_length": "12 in",
+    "dimensions": "1 in dia stud-mount radome",
+    "mount_type": "Stud mount",
+    "image_url": "images/mobile-mark/mrm3-2400-5500.jpg",
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/mrm3-2400-5500-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark MRM3-2400/5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7457/mrm3-2400-mrm3-2600-mrm3-3500-mrm3-5500-mrm-umb-mrm3-2400-5500-spec-sheet-2.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark MRM3-2400/5500 spec sheet",
+        "id": "mrm3-2400-mrm3-2600-mrm3-3500-mrm3-5500-mrm-umb-mrm3-2400-5500-spec-sheet-2",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7457/mrm3-2400-mrm3-2600-mrm3-3500-mrm3-5500-mrm-umb-mrm3-2400-5500-spec-sheet-2.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (MRM3-2400/5500)",
+        "id": "mrm3-2400-5500",
+        "url": "https://www.mobilemark.com/product/mrm3-2400-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "DM2-2400",
+    "name": "2.4 GHz Dome Surface Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 1,
+    "mount_type": "Surface / through-hole dome",
+    "image_url": "images/mobile-mark/dm2-2400.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark DM2-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7446/dm2-2400-dm2-2400-5500-mgd-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark DM2-2400 spec sheet",
+        "id": "dm2-2400-dm2-2400-5500-mgd-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7446/dm2-2400-dm2-2400-5500-mgd-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (DM2-2400)",
+        "id": "dm2-2400",
+        "url": "https://www.mobilemark.com/product/dm2-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "DM2-2400/5500",
+    "name": "Dual-Band Dome Surface Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 1,
+    "mount_type": "Surface / through-hole dome",
+    "image_url": "images/mobile-mark/dm2-2400-5500.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/dm2-2400-5500-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark DM2-2400/5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7468/rm3-5500-dn-rm-whf-dm2-5250-dm2-5725-dm2-5500-dm2-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark DM2-2400/5500 spec sheet",
+        "id": "rm3-5500-dn-rm-whf-dm2-5250-dm2-5725-dm2-5500-dm2-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7468/rm3-5500-dn-rm-whf-dm2-5250-dm2-5725-dm2-5500-dm2-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (DM2-2400/5500)",
+        "id": "dm2-2400-5500",
+        "url": "https://www.mobilemark.com/product/dm2-2400-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "DM2-5500",
+    "name": "5 GHz Dome Surface Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.9 GHz",
+    "gain_dbi": {
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 1,
+    "mount_type": "Surface / through-hole dome",
+    "image_url": "images/mobile-mark/dm2-5500.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark DM2-5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7468/rm3-5500-dn-rm-whf-dm2-5250-dm2-5725-dm2-5500-dm2-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark DM2-5500 spec sheet",
+        "id": "rm3-5500-dn-rm-whf-dm2-5250-dm2-5725-dm2-5500-dm2-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7468/rm3-5500-dn-rm-whf-dm2-5250-dm2-5725-dm2-5500-dm2-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (DM2-5500)",
+        "id": "dm2-5500",
+        "url": "https://www.mobilemark.com/product/dm2-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "BD-2400",
+    "name": "2.4 GHz Bidirectional Site Antenna",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {},
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "mount_type": "Site / wall mount",
+    "image_url": "images/mobile-mark/bd-2400.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/bd-2400-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark BD-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7443/bd-2400-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark BD-2400 spec sheet",
+        "id": "bd-2400-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7443/bd-2400-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (BD-2400)",
+        "id": "bd-2400",
+        "url": "https://www.mobilemark.com/product/bd-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "CVL-2400/5500",
+    "name": "Dual-Band Covert Low-Profile Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.9 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 1,
+    "mount_type": "Covert / low-profile surface",
+    "image_url": "images/mobile-mark/cvl-2400-5500.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/cvl-2400-5500-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark CVL-2400/5500 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7445/cvl-2400-5500-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark CVL-2400/5500 spec sheet",
+        "id": "cvl-2400-5500-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7445/cvl-2400-5500-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (CVL-2400/5500)",
+        "id": "cvl-2400-5500",
+        "url": "https://www.mobilemark.com/product/cvl-2400-5500/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "HD4-2400",
+    "name": "Heavy-Duty 2.4 GHz Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 4
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "radome": "Fiberglass / heavy-duty",
+    "mount_type": "Heavy-duty site mount",
+    "image_url": "images/mobile-mark/hd4-2400.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/hd4-2400-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark HD4-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7451/hd4-2400-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark HD4-2400 spec sheet",
+        "id": "hd4-2400-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7451/hd4-2400-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (HD4-2400)",
+        "id": "hd4-2400",
+        "url": "https://www.mobilemark.com/product/hd4-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "BS2400XL3",
+    "name": "5 dBi 2.4 GHz Base-Station Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "mount_type": "Base-station pole mount",
+    "image_url": "images/mobile-mark/bs2400xl3.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark BS2400XL3 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7444/bs2400xl3-data-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark BS2400XL3 spec sheet",
+        "id": "bs2400xl3-data-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7444/bs2400xl3-data-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (BS2400XL3)",
+        "id": "bs2400xl3",
+        "url": "https://www.mobilemark.com/product/bs2400xl3/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "A10245B",
+    "name": "5 dBi 2.4 GHz Whip",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA / config",
+    "lead_count": 1,
+    "mount_type": "Direct connector whip",
+    "image_url": "images/mobile-mark/a10245b.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark A10245B spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7439/a10245b-spec-sheet.pdf"
+      },
+      {
+        "label": "Mobile Mark A10245B spec sheet",
+        "url": "https://www.mobilemark.com/download/2040/mobile/7165/a10245bmm.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark A10245B spec sheet",
+        "id": "a10245b-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7439/a10245b-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark A10245B spec sheet",
+        "id": "a10245bmm",
+        "url": "https://www.mobilemark.com/download/2040/mobile/7165/a10245bmm.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (A10245B)",
+        "id": "a10245b",
+        "url": "https://www.mobilemark.com/product/a10245b/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "A212405B",
+    "name": "5 dBi 2.4 GHz Whip",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA / config",
+    "lead_count": 1,
+    "mount_type": "Direct connector whip",
+    "image_url": "images/mobile-mark/a212405b.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark A212405B spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7442/a212405b-data-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark A212405B spec sheet",
+        "id": "a212405b-data-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7442/a212405b-data-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (A212405B)",
+        "id": "a212405b",
+        "url": "https://www.mobilemark.com/product/a212405b/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "IMAG5-2400",
+    "name": "5 dBi 2.4 GHz Magnetic-Mount Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 1,
+    "mount_type": "Magnetic mount",
+    "image_url": "images/mobile-mark/imag5-2400.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark IMAG5-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7454/mgd-2400-5500-imag5-2400-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark IMAG5-2400 spec sheet",
+        "id": "mgd-2400-5500-imag5-2400-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7454/mgd-2400-5500-imag5-2400-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (IMAG5-2400)",
+        "id": "imag5-2400",
+        "url": "https://www.mobilemark.com/product/imag5-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "MGRM3-2400",
+    "name": "5 dBi 2.4 GHz Magnetic RM Omni",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor/Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "SMA Plug",
+    "lead_count": 1,
+    "mount_type": "Magnetic mount",
+    "image_url": "images/mobile-mark/mgrm3-2400.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal/Vertical",
+        "url": "images/mobile-mark/mgrm3-2400-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark MGRM3-2400 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7466/rm3-2400-dn-mgrm3-2400-rm-whf-rm-whf-dn-mgrm-whf-spec-sheet-2.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark MGRM3-2400 spec sheet",
+        "id": "rm3-2400-dn-mgrm3-2400-rm-whf-rm-whf-dn-mgrm-whf-spec-sheet-2",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7466/rm3-2400-dn-mgrm3-2400-rm-whf-rm-whf-dn-mgrm-whf-spec-sheet-2.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (MGRM3-2400)",
+        "id": "mgrm3-2400",
+        "url": "https://www.mobilemark.com/product/mgrm3-2400/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-24/5XO-FPS-711",
+    "name": "Dual-Band Circularly Polarized Sector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.4-2.5/5.15-5.85 GHz",
+    "gain_dbi": {
+      "2.4": 7,
+      "5": 11
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "65\u00b0",
+        "5": "65\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "<1.5:1",
+    "image_url": "images/mobile-mark/xw-24-5xo-fps-711.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-24/5XO-FPS-711 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/11910/xw-24-5xo-fps-711-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-24/5XO-FPS-711 spec sheet",
+        "id": "xw-24-5xo-fps-711-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/11910/xw-24-5xo-fps-711-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-24/5XO-FPS-711)",
+        "id": "xw-24-5xo-fps-711",
+        "url": "https://www.mobilemark.com/product/xw-24-5xo-fps-711/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-24O-FP14",
+    "name": "14 dBi Circularly Polarized 2.4 GHz Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 14
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "30\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/xw-24o-fp14.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-24O-FP14 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7481/xw-24o-fp14-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-24O-FP14 spec sheet",
+        "id": "xw-24o-fp14-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7481/xw-24o-fp14-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-24O-FP14)",
+        "id": "xw-24o-fp14",
+        "url": "https://www.mobilemark.com/product/xw-24o-fp14/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-24O-FP7",
+    "name": "7 dBi Circularly Polarized 2.4 GHz Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "65\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/xw-24o-fp7.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-24O-FP7 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7480/xw-24o-fp7-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-24O-FP7 spec sheet",
+        "id": "xw-24o-fp7-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7480/xw-24o-fp7-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-24O-FP7)",
+        "id": "xw-24o-fp7",
+        "url": "https://www.mobilemark.com/product/xw-24o-fp7/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-24O-FPS11",
+    "name": "11 dBi Circularly Polarized 2.4 GHz Sector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 11
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "65\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/xw-24o-fps11.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-24O-FPS11 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7482/xw-24o-fps11-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-24O-FPS11 spec sheet",
+        "id": "xw-24o-fps11-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7482/xw-24o-fps11-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-24O-FPS11)",
+        "id": "xw-24o-fps11",
+        "url": "https://www.mobilemark.com/product/xw-24o-fps11/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-24O-FPS11M",
+    "name": "2\u00d72 Circularly Polarized 2.4 GHz Sector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 11
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "65\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 2,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/xw-24o-fps11m.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-24O-FPS11M spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7479/xw-24o-fps11m-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-24O-FPS11M spec sheet",
+        "id": "xw-24o-fps11m-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7479/xw-24o-fps11m-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-24O-FPS11M)",
+        "id": "xw-24o-fps11m",
+        "url": "https://www.mobilemark.com/product/xw-24o-fps11m/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-24O-H10",
+    "name": "10 dBi Circularly Polarized 2.4 GHz Horn",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 10
+    },
+    "beamwidth": {
+      "horizontal": {},
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/xw-24o-h10.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-24O-H10 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7959/xw-24-h10-and-xw-24-h13-spec-sheet-2.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-24O-H10 spec sheet",
+        "id": "xw-24-h10-and-xw-24-h13-spec-sheet-2",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7959/xw-24-h10-and-xw-24-h13-spec-sheet-2.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-24O-H10)",
+        "id": "xw-24o-h10",
+        "url": "https://www.mobilemark.com/product/xw-24o-h10/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-24O-H13",
+    "name": "13 dBi Circularly Polarized 2.4 GHz Horn",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 13
+    },
+    "beamwidth": {
+      "horizontal": {},
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/xw-24o-h13.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-24O-H13 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7959/xw-24-h10-and-xw-24-h13-spec-sheet-2.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-24O-H13 spec sheet",
+        "id": "xw-24-h10-and-xw-24-h13-spec-sheet-2",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7959/xw-24-h10-and-xw-24-h13-spec-sheet-2.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-24O-H13)",
+        "id": "xw-24o-h13",
+        "url": "https://www.mobilemark.com/product/xw-24o-h13/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-24O-OH7G",
+    "name": "7 dBi Circularly Polarized 2.4 GHz Omni (Gray)",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/xw-24o-oh7g.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-24O-OH7G spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7483/xw-24o-oh7g-and-xw-24o-oh7w-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-24O-OH7G spec sheet",
+        "id": "xw-24o-oh7g-and-xw-24o-oh7w-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7483/xw-24o-oh7g-and-xw-24o-oh7w-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-24O-OH7G)",
+        "id": "xw-24o-oh7g",
+        "url": "https://www.mobilemark.com/product/xw-24o-oh7g/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-24O-OH7W",
+    "name": "7 dBi Circularly Polarized 2.4 GHz Omni (White)",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.4-2.5 GHz",
+    "gain_dbi": {
+      "2.4": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "2:1 max",
+    "image_url": "images/mobile-mark/xw-24o-oh7w.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-24O-OH7W spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7483/xw-24o-oh7g-and-xw-24o-oh7w-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-24O-OH7W spec sheet",
+        "id": "xw-24o-oh7g-and-xw-24o-oh7w-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7483/xw-24o-oh7g-and-xw-24o-oh7w-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-24O-OH7W)",
+        "id": "xw-24o-oh7w",
+        "url": "https://www.mobilemark.com/product/xw-24o-oh7w/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-5XO-FP13",
+    "name": "13 dBi Circularly Polarized 5 GHz Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.85 GHz",
+    "gain_dbi": {
+      "5": 13
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "35\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "<1.5:1",
+    "image_url": "images/mobile-mark/xw-5xo-fp13.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-5XO-FP13 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7473/xw-5xo-fp13-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-5XO-FP13 spec sheet",
+        "id": "xw-5xo-fp13-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7473/xw-5xo-fp13-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-5XO-FP13)",
+        "id": "xw-5xo-fp13",
+        "url": "https://www.mobilemark.com/product/xw-5xo-fp13/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-5XO-FP18",
+    "name": "18 dBi Circularly Polarized 5 GHz Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.85 GHz",
+    "gain_dbi": {
+      "5": 18
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "20\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "<1.5:1",
+    "image_url": "images/mobile-mark/xw-5xo-fp18.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-5XO-FP18 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7475/xw-5xo-fp18-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-5XO-FP18 spec sheet",
+        "id": "xw-5xo-fp18-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7475/xw-5xo-fp18-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-5XO-FP18)",
+        "id": "xw-5xo-fp18",
+        "url": "https://www.mobilemark.com/product/xw-5xo-fp18/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-5XO-FP7",
+    "name": "7 dBi Broad-Beam 5 GHz Circular Panel",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.85 GHz",
+    "gain_dbi": {
+      "5": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "65\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "<1.5:1",
+    "image_url": "images/mobile-mark/xw-5xo-fp7.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-5XO-FP7 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7472/xw-5xo-fp7-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-5XO-FP7 spec sheet",
+        "id": "xw-5xo-fp7-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7472/xw-5xo-fp7-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-5XO-FP7)",
+        "id": "xw-5xo-fp7",
+        "url": "https://www.mobilemark.com/product/xw-5xo-fp7/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-5XO-FPS10",
+    "name": "10 dBi Circularly Polarized 5 GHz Sector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.15-5.85 GHz",
+    "gain_dbi": {
+      "5": 10
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "65\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "<1.5:1",
+    "image_url": "images/mobile-mark/xw-5xo-fps10.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-5XO-FPS10 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7476/xw-5xo-fps10-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-5XO-FPS10 spec sheet",
+        "id": "xw-5xo-fps10-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7476/xw-5xo-fps10-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-5XO-FPS10)",
+        "id": "xw-5xo-fps10",
+        "url": "https://www.mobilemark.com/product/xw-5xo-fps10/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-5XO-FPS13",
+    "name": "13 dBi Circularly Polarized 5 GHz Sector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.45-6.0 GHz",
+    "gain_dbi": {
+      "5": 13
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "65\u00b0"
+      },
+      "vertical": {
+        "5": "20\u00b0"
+      }
+    },
+    "connector": "N Jack",
+    "lead_count": 1,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "dimensions": "4.25 \u00d7 7.25 \u00d7 1.6 in (108 \u00d7 184 \u00d7 41 mm)",
+    "weight": "6.5 oz (184 g)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "<1.5:1",
+    "image_url": "images/mobile-mark/xw-5xo-fps13.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-5XO-FPS13 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7477/xw-5xo-fps13-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-5XO-FPS13 spec sheet",
+        "id": "xw-5xo-fps13-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7477/xw-5xo-fps13-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-5XO-FPS13)",
+        "id": "xw-5xo-fps13",
+        "url": "https://www.mobilemark.com/product/xw-5xo-fps13/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-5XO-FPS13M2",
+    "name": "2\u00d72 Circularly Polarized 5 GHz Sector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.45-6.0 GHz",
+    "gain_dbi": {
+      "5": 13
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "65\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 2,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "<1.5:1",
+    "image_url": "images/mobile-mark/xw-5xo-fps13m2.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-5XO-FPS13M2 spec sheet",
+        "url": "https://www.mobilemark.com/download/2035/specialty-networks/7433/xw-5xo-fps13m2-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-5XO-FPS13M2 spec sheet",
+        "id": "xw-5xo-fps13m2-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2035/specialty-networks/7433/xw-5xo-fps13m2-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-5XO-FPS13M2)",
+        "id": "xw-5xo-fps13m2",
+        "url": "https://www.mobilemark.com/product/xw-5xo-fps13m2/",
+        "last_checked": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "vendor": "Mobile Mark",
+    "sku": "XW-5XO-FPS13M3",
+    "name": "3\u00d73 Circularly Polarized 5 GHz Sector",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.45-6.0 GHz",
+    "gain_dbi": {
+      "5": 13
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "65\u00b0"
+      },
+      "vertical": {}
+    },
+    "connector": "N Jack",
+    "lead_count": 3,
+    "polarization": "RHCP (Clear-WAV circular)",
+    "mount_type": "Outdoor bracket (HDW-AM-UOD or equivalent where supplied)",
+    "vswr": "<1.5:1",
+    "image_url": "images/mobile-mark/xw-5xo-fps13m3.jpg",
+    "datasheet_urls": [
+      {
+        "label": "Mobile Mark XW-5XO-FPS13M3 spec sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7477/xw-5xo-fps13-spec-sheet.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mobile Mark XW-5XO-FPS13M3 spec sheet",
+        "id": "xw-5xo-fps13-spec-sheet",
+        "url": "https://www.mobilemark.com/download/2037/wifi-networks/7477/xw-5xo-fps13-spec-sheet.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Mobile Mark product page (XW-5XO-FPS13M3)",
+        "id": "xw-5xo-fps13m3",
+        "url": "https://www.mobilemark.com/product/xw-5xo-fps13m3/",
+        "last_checked": "2026-11-22"
+      }
+    ]
   }
 ]
