@@ -202,9 +202,15 @@
       const id = src.id || '';
       const url = src.url || '';
       const note = src.note || '';
+      const lastChecked = src.last_checked || '';
       if (!label && !id && !url) return '';
       const parts = [label, id, url];
-      if (note) parts.push(note);
+      if (lastChecked) {
+        parts.push(note || '');
+        parts.push(lastChecked);
+      } else if (note) {
+        parts.push(note);
+      }
       return parts.join(' | ');
     }).filter(Boolean).join('\n');
   }
@@ -222,7 +228,15 @@
       if (parts.length > 2) {
         src.url = parts[2] ? (sanitizeHttpUrl(parts[2]) || null) : null;
       }
-      if (parts[3]) src.note = parts[3];
+      const dateRe = /^\d{4}-\d{2}-\d{2}$/;
+      if (parts.length >= 5 && dateRe.test(parts[4])) {
+        if (parts[3]) src.note = parts[3];
+        src.last_checked = parts[4];
+      } else if (parts[3] && dateRe.test(parts[3]) && !parts[4]) {
+        src.last_checked = parts[3];
+      } else if (parts[3]) {
+        src.note = parts[3];
+      }
       if (!src.label && !src.id && !src.url) return null;
       return src;
     }).filter(Boolean);
