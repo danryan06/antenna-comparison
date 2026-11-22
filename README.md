@@ -76,6 +76,7 @@ Always cite vendor datasheets. When AccelTex/Hubbell publish dual PDFs, merge fi
 - **Authoring data**: `antenna_data.json` (full catalog, including maintainer-only notes)
 - **Public Pages catalog**: `antenna_catalog.json` (allowlisted public fields only; this is what the site loads)
 - **Hosting**: GitHub Pages (`main` / root). Custom domain is optional until DNS is ready; do not add `CNAME` until `antennacomparison.com` resolves to Pages
+- **robots.txt**: crawler hints only (e.g. `Disallow: /antenna_data.json`). It does **not** hide maintainer notes — `antenna_data.json` remains public in the GitHub repo and is still fetchable; the site loads `antenna_catalog.json`
 - **Security**: see [SECURITY.md](./SECURITY.md)
 - **License**: MIT (code). Vendor media remains vendor property — see License below
 
@@ -106,8 +107,8 @@ CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-onl
 ├── submit.html             # Submit a new antenna
 ├── compare.html            # Side-by-side compare
 ├── finder.html             # Feature Finder (+ AP compatibility lookup)
-├── 404.html                # Branded not-found recovery
-├── robots.txt
+├── 404.html                # Branded not-found recovery (base href for Pages project path)
+├── robots.txt              # Crawler hints only; does not hide public repo files
 ├── style.css               # Shared styling
 ├── antenna-format.js       # Display helpers + shared URL sanitizer
 ├── compatibility-matcher.js
