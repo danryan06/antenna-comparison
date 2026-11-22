@@ -16575,6 +16575,10 @@
       {
         "label": "5 GHz Horizontal + Vertical",
         "url": "images/ventev/270444-pattern-5-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal + Vertical",
+        "url": "images/ventev/270444-pattern-6-ghz-horizontal-vertical.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -16598,13 +16602,13 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 270444. Manufacturer part number M6030040O62420TA (not a Hubbell dual-SKU).",
-      "pattern_images": "Re-extracted with wide-plot / grid heuristics; H/V in filenames.",
+      "pattern_images": "Sheet overlays both planes on one polar chart per band (top to bottom 2.4, 5, 6 GHz). Files are the PDF image embeds at native pixel aspect. The page maps those nearly square embeds into wide boxes, which is what stretched the grids into ovals.",
       "gain_dbi": "2026-11-22 first-party Ventev correction (audit high confidence)"
     },
     "internal_notes": {
       "compatible_aps": [],
       "mfg_part": "M6030040O62420TA",
-      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "maintainer": "Ventev batch 3. Pattern files replaced with native PDF embeds so polar grids stay round. Embeds are about 170px; not resampled.",
       "closeout": false
     }
   },
@@ -16778,7 +16782,7 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 298232. Manufacturer part number M6030030O42420TA (not a Hubbell dual-SKU).",
-      "pattern_images": "Re-extracted with wide-plot / grid heuristics; H/V in filenames.",
+      "pattern_images": "Sheet overlays azimuth and elevation on one polar chart per band. Files are the PDF embeds at native pixel aspect so the grids stay round. The page placement stretched those embeds into ovals.",
       "gain_dbi": "2026-11-22 first-party Ventev correction (audit high confidence)",
       "vswr": "2026-11-22 first-party Ventev correction (audit high confidence)",
       "polarization": "2026-11-22 first-party Ventev correction (audit high confidence)",
@@ -16787,7 +16791,7 @@
     "internal_notes": {
       "compatible_aps": [],
       "mfg_part": "M6030030O42420TA",
-      "maintainer": "Ventev batch 3. Inventory form preserved; dynamic PDF crops with high-DPI short-edge \u22651000px.",
+      "maintainer": "Ventev batch 3. Pattern files replaced with native PDF embeds so polar grids stay round. Embeds are about 220x160; not resampled.",
       "closeout": false
     },
     "dimension_image_kind": null
