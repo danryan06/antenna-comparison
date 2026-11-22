@@ -18,9 +18,9 @@
         </a>
       </div>
 
-      <nav class="header-nav">
+      <nav class="header-nav" aria-label="Primary">
         <a href="index.html" class="nav-link" data-page="index">
-          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="8" y1="6" x2="21" y2="6"/>
             <line x1="8" y1="12" x2="21" y2="12"/>
             <line x1="8" y1="18" x2="21" y2="18"/>
@@ -31,8 +31,8 @@
           <span class="nav-text">Browse</span>
         </a>
 
-        <a href="finder.html" class="nav-link active" data-page="finder">
-          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <a href="finder.html" class="nav-link active" data-page="finder" aria-current="page">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="10"/>
             <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
           </svg>
@@ -40,7 +40,7 @@
         </a>
 
         <a href="compare.html" class="nav-link" data-page="compare">
-          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M18 20V10"/>
             <path d="M12 20V4"/>
             <path d="M6 20v-6"/>
@@ -69,12 +69,10 @@
     </div>
   </header>
 
-  <div class="container" style="margin-top: 24px;">
-    <div class="actions">
-      <a class="btn-link" href="index.html">Back to Antenna Table</a>
-      <a class="btn-link" href="submit.html">Submit a new antenna</a>
-      <button id="clear-filters" type="button" class="btn-link">Reset Filters</button>
-      <button id="export-csv" type="button" class="btn-link">Export CSV</button>
+  <div class="container finder-page" style="margin-top: 24px;">
+    <div class="actions finder-actions-top">
+      <a class="btn-link finder-action-secondary" href="index.html">Back to Antenna Table</a>
+      <a class="btn-link finder-action-secondary" href="submit.html">Submit a new antenna</a>
     </div>
 
     <div class="card finder-card">
@@ -84,58 +82,68 @@
       </p>
 
       <div class="finder-grid">
-        <section class="filter-panel" aria-label="Antenna filters">
-          <h2>Filters</h2>
+        <details class="finder-filters" id="finder-filters" open>
+          <summary class="finder-filters-summary">
+            <span class="finder-filters-summary-label">Filters</span>
+            <span class="finder-filters-summary-hint" id="finder-filters-hint"></span>
+          </summary>
+          <section class="filter-panel" aria-label="Antenna filters">
+            <h2 class="finder-filters-heading">Filters</h2>
 
-          <div class="filter-group">
-            <div class="filter-group-head">
-              <h3 id="vendor-heading">Manufacturer</h3>
-              <p id="vendor-help">Any selected vendor matches</p>
+            <div class="filter-group">
+              <div class="filter-group-head">
+                <h3 id="vendor-heading">Manufacturer</h3>
+                <p id="vendor-help">Any selected vendor matches</p>
+              </div>
+              <div id="vendor-options" class="chip-grid" role="group" aria-labelledby="vendor-heading" aria-describedby="vendor-help"></div>
             </div>
-            <div id="vendor-options" class="chip-grid" role="group" aria-labelledby="vendor-heading" aria-describedby="vendor-help"></div>
-          </div>
 
-          <div class="filter-group">
-            <div class="filter-group-head">
-              <h3>Form type</h3>
+            <div class="filter-group">
+              <div class="filter-group-head">
+                <h3>Form type</h3>
+              </div>
+              <div id="form-options" class="chip-grid" role="radiogroup" aria-label="Form type"></div>
             </div>
-            <div id="form-options" class="chip-grid" role="radiogroup" aria-label="Form type"></div>
-          </div>
 
-          <div class="filter-group">
-            <div class="filter-group-head">
-              <h3 id="bands-heading">Bands</h3>
-              <p id="bands-help">Must support every selected band</p>
+            <div class="filter-group">
+              <div class="filter-group-head">
+                <h3 id="bands-heading">Bands</h3>
+                <p id="bands-help">Must support every selected band</p>
+              </div>
+              <div id="bands-presets" class="band-presets" role="group" aria-label="Band presets"></div>
+              <div id="bands-options" class="chip-grid" role="group" aria-labelledby="bands-heading" aria-describedby="bands-help"></div>
             </div>
-            <div id="bands-presets" class="band-presets" role="group" aria-label="Band presets"></div>
-            <div id="bands-options" class="chip-grid" role="group" aria-labelledby="bands-heading" aria-describedby="bands-help"></div>
-          </div>
 
-          <div class="filter-group">
-            <div class="filter-group-head">
-              <h3>Connector</h3>
+            <div class="filter-group">
+              <div class="filter-group-head">
+                <h3>Connector</h3>
+              </div>
+              <select id="filter-connector" class="filter-select filter-panel-select" aria-label="Filter by connector">
+                <option value="">Any connector</option>
+              </select>
             </div>
-            <select id="filter-connector" class="filter-select filter-panel-select" aria-label="Filter by connector">
-              <option value="">Any connector</option>
-            </select>
-          </div>
 
-          <div class="filter-group">
-            <div class="filter-group-head">
-              <h3>Lead count</h3>
+            <div class="filter-group">
+              <div class="filter-group-head">
+                <h3>Lead count</h3>
+              </div>
+              <select id="filter-leads" class="filter-select filter-panel-select" aria-label="Filter by lead count">
+                <option value="">Any lead count</option>
+              </select>
             </div>
-            <select id="filter-leads" class="filter-select filter-panel-select" aria-label="Filter by lead count">
-              <option value="">Any lead count</option>
-            </select>
-          </div>
 
-          <div class="filter-group">
-            <div class="filter-group-head">
-              <h3>Environment</h3>
+            <div class="filter-group">
+              <div class="filter-group-head">
+                <h3>Environment</h3>
+              </div>
+              <div id="env-options" class="chip-grid" role="radiogroup" aria-label="Indoor or outdoor"></div>
             </div>
-            <div id="env-options" class="chip-grid" role="radiogroup" aria-label="Indoor or outdoor"></div>
-          </div>
-        </section>
+
+            <div class="finder-filter-actions">
+              <button id="clear-filters" type="button" class="btn-link">Reset Filters</button>
+            </div>
+          </section>
+        </details>
 
         <section class="results-panel">
           <div class="results-header">
@@ -143,7 +151,10 @@
               <h2>Results</h2>
               <p class="results-note" id="results-note" aria-live="polite">Loading data…</p>
             </div>
-            <div class="match-count" id="match-count" aria-live="polite">—</div>
+            <div class="results-header-actions">
+              <div class="match-count" id="match-count" aria-live="polite">—</div>
+              <button id="export-csv" type="button" class="btn-link btn-link-small">Export CSV</button>
+            </div>
           </div>
 
           <div id="active-filters" class="active-filters" style="display:none;"></div>
@@ -238,9 +249,36 @@
       return params;
     }
 
+    function finderReturnPath() {
+      const qs = getFilterStateForUrl().toString();
+      return qs ? `finder.html?${qs}` : 'finder.html';
+    }
+
+    function detailHrefFor(slug) {
+      return buildAntennaDetailHref(slug, finderReturnPath());
+    }
+
     function syncUrl() {
       const qs = getFilterStateForUrl().toString();
       history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+    }
+
+    function syncFilterDisclosure() {
+      const details = document.getElementById('finder-filters');
+      if (!details) return;
+      const mobile = window.matchMedia('(max-width: 980px)').matches;
+      details.open = !mobile;
+    }
+
+    function updateFilterDisclosureHint() {
+      const hint = document.getElementById('finder-filters-hint');
+      if (!hint) return;
+      const activeLabel = document.getElementById('active-filters');
+      let n = 0;
+      if (activeLabel && activeLabel.style.display !== 'none') {
+        n = activeLabel.children.length;
+      }
+      hint.textContent = n > 0 ? `(${n} active)` : '';
     }
 
     function connectorFamily(raw) {
@@ -553,6 +591,7 @@
 
       if (!chips.length) {
         container.style.display = 'none';
+        updateFilterDisclosureHint();
         return;
       }
       container.style.display = 'flex';
@@ -565,6 +604,7 @@
         btn.addEventListener('click', () => removeFilter(chip.type, chip.value));
         container.appendChild(btn);
       });
+      updateFilterDisclosureHint();
     }
 
     function removeFilter(type, value) {
@@ -622,6 +662,7 @@
     function renderResultsHeader(container) {
       const header = document.createElement('div');
       header.className = 'result-row result-header result-row-antenna';
+      header.setAttribute('role', 'row');
 
       const spacer = document.createElement('div');
       spacer.className = 'result-cell';
@@ -630,6 +671,12 @@
       RESULT_COLUMNS.forEach(col => {
         const cell = document.createElement('div');
         cell.className = 'result-cell';
+        cell.setAttribute('role', 'columnheader');
+        if (currentSort.key === col.key) {
+          cell.setAttribute('aria-sort', currentSort.dir === 'asc' ? 'ascending' : 'descending');
+        } else {
+          cell.setAttribute('aria-sort', 'none');
+        }
         const button = document.createElement('button');
         button.type = 'button';
         button.className = 'result-sort-btn';
@@ -637,9 +684,6 @@
         button.textContent = col.label;
         if (currentSort.key === col.key) {
           button.dataset.dir = currentSort.dir;
-          button.setAttribute('aria-sort', currentSort.dir === 'asc' ? 'ascending' : 'descending');
-        } else {
-          button.setAttribute('aria-sort', 'none');
         }
         button.setAttribute('aria-label', `Sort by ${col.label}`);
         button.addEventListener('click', (e) => {
@@ -712,7 +756,7 @@
           if (col.key === 'sku') {
             const skuLink = document.createElement('a');
             skuLink.className = 'sku-link';
-            skuLink.href = `antenna.html?id=${encodeURIComponent(entry._slug)}&from=finder`;
+            skuLink.href = detailHrefFor(entry._slug);
             skuLink.textContent = entry.sku || entry.legacy_sku || 'View';
             cell.appendChild(skuLink);
           } else if (col.key === 'beamwidth') {
@@ -727,7 +771,7 @@
         const actions = document.createElement('div');
         actions.className = 'result-cell result-actions';
         const detail = document.createElement('a');
-        detail.href = `antenna.html?id=${encodeURIComponent(entry._slug)}&from=finder`;
+        detail.href = detailHrefFor(entry._slug);
         detail.className = 'btn-link btn-link-ghost btn-link-small';
         detail.textContent = 'Details';
         actions.appendChild(detail);
@@ -736,10 +780,7 @@
         row.style.cursor = 'pointer';
         row.addEventListener('click', (e) => {
           if (e.target.type === 'checkbox' || e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
-          const params = getFilterStateForUrl();
-          params.set('id', entry._slug);
-          params.set('from', 'finder');
-          window.location.href = `antenna.html?${params.toString()}`;
+          window.location.href = detailHrefFor(entry._slug);
         });
 
         container.appendChild(row);
@@ -828,6 +869,15 @@
         if (window.pageYOffset > 10) header.classList.add('scrolled');
         else header.classList.remove('scrolled');
       });
+
+      syncFilterDisclosure();
+      const mobileMq = window.matchMedia('(max-width: 980px)');
+      const onViewportChange = () => syncFilterDisclosure();
+      if (typeof mobileMq.addEventListener === 'function') {
+        mobileMq.addEventListener('change', onViewportChange);
+      } else if (typeof mobileMq.addListener === 'function') {
+        mobileMq.addListener(onViewportChange);
+      }
 
       document.getElementById('filter-connector').addEventListener('change', (e) => {
         state.connector = e.target.value;
