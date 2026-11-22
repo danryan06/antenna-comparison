@@ -706,15 +706,8 @@
         actions.className = 'detail-actions';
         const sheets = Array.isArray(entry.datasheet_urls) ? entry.datasheet_urls : [];
         sheets.forEach(sheet => {
-          const href = safeUrl(sheet.url);
-          if (!href) return;
-          const a = document.createElement('a');
-          a.href = href;
-          a.target = '_blank';
-          a.rel = 'noopener noreferrer';
-          a.className = 'btn-inline-action';
-          a.innerHTML = `<span>${sheet.label || 'Datasheet'}</span>`;
-          actions.appendChild(a);
+          const a = createDatasheetActionLink(document, sheet);
+          if (a) actions.appendChild(a);
         });
 
         const detailsEl = document.getElementById('details');
