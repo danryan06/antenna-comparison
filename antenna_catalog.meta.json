@@ -3,9 +3,9 @@
   "schema_version": "1.0.0",
   "generated_from": "antenna_data.json",
   "public_artifact": "antenna_catalog.json",
-  "entry_count": 366,
-  "source_revision": "605021ce224cc141194879b1ba01da21f92b0762",
-  "generated_at": "2026-11-22T16:58:00.648Z",
+  "entry_count": 386,
+  "source_revision": "dec530d857cb2b020dc6f3c008e34e8f72e59efd",
+  "generated_at": "2026-11-22T23:06:03.448Z",
   "public_keys": [
     "vendor",
     "sku",
