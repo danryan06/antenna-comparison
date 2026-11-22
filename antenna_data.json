@@ -39745,5 +39745,2379 @@
       ],
       "cables_per_ap": 4
     }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-20",
+    "name": "4/7 dBi Dual-Band Omni Antenna Set",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "45\u00b0",
+        "5": "45\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 1,
+    "polarization": "Vertical (linear)",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "1.0 \u00d7 7.1 in (25 \u00d7 180 mm)",
+    "weight": "0.17 lb (79 g)",
+    "ip_rating": null,
+    "radome": "ABS plastic",
+    "mount_type": "Direct to AP N-connector (no cable)",
+    "included_parts": [
+      {
+        "item": "MA-ANT-20 omni antenna",
+        "part_number": "MA-ANT-20",
+        "qty": 2
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": "images/meraki/ma-ant-20.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical Port 1",
+        "url": "images/meraki/ma-ant-20-pattern-2-4-ghz-vertical-port-1.jpg"
+      },
+      {
+        "label": "5 GHz Vertical Port 2",
+        "url": "images/meraki/ma-ant-20-pattern-5-ghz-vertical-port-2.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal Port 1",
+        "url": "images/meraki/ma-ant-20-pattern-2-4-ghz-horizontal-port-1.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal Port 2",
+        "url": "images/meraki/ma-ant-20-pattern-5-ghz-horizontal-port-2.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-20 datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_antenna_omni_4_7dBi.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-20 datasheet",
+        "id": "meraki-ma-ant-20",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_antenna_omni_4_7dBi.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (outdoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "packaging": "Sold as a set of two single-port omnis; lead_count is per antenna element.",
+      "compatible_aps_on_sheet": "Datasheet lists MR62/66/72/74/84; FAQ also lists MR76/86."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR62",
+        "MR66",
+        "MR72",
+        "MR74",
+        "MR76",
+        "MR84",
+        "MR86"
+      ],
+      "maintainer": "Outdoor omni; patterns cropped from Meraki datasheet page render (Wayback PDF)."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-21",
+    "name": "5 GHz MIMO 13 dBi Sector Antenna",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "5"
+    ],
+    "frequency_range": "5.150-5.875 GHz",
+    "gain_dbi": {
+      "5": 13
+    },
+    "beamwidth": {
+      "horizontal": {
+        "5": "80\u00b0"
+      },
+      "vertical": {
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 2,
+    "polarization": "Linear, vertical / horizontal",
+    "cable_length": "12 in",
+    "cable_type": null,
+    "dimensions": "9.2 \u00d7 5.5 \u00d7 1.6 in (233 \u00d7 140 \u00d7 40 mm)",
+    "weight": "1.2 lb (527 g)",
+    "ip_rating": null,
+    "radome": "UV resistant plastic",
+    "mount_type": "Wall or pole (hardware included); or AP-direct for some installs",
+    "included_parts": [
+      {
+        "item": "N-type pigtail cable",
+        "part_number": null,
+        "qty": 2
+      },
+      {
+        "item": "Mounting hardware",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": "images/meraki/ma-ant-21.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/meraki/ma-ant-21-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/meraki/ma-ant-21-pattern-5-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-21 datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_antenna_5GHz_sector_13dBi.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-21 datasheet",
+        "id": "meraki-ma-ant-21",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_antenna_5GHz_sector_13dBi.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (outdoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "form": "Meraki datasheet calls this a sector; catalog form is Patch (no Sector type).",
+      "beamwidth": "Vertical HPBW from Meraki antenna FAQ outdoor table; datasheet listed horizontal only."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR74",
+        "MR76",
+        "MR84",
+        "MR86"
+      ],
+      "maintainer": "RF from Meraki datasheet; FAQ used for missing vertical beamwidth where noted."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-23",
+    "name": "2.4 GHz MIMO 11 dBi Sector Antenna",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4"
+    ],
+    "frequency_range": "2.400-2.500 GHz",
+    "gain_dbi": {
+      "2.4": 11
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "70\u00b0"
+      },
+      "vertical": {
+        "2.4": "40\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 2,
+    "polarization": "Linear, vertical / horizontal",
+    "cable_length": "12 in",
+    "cable_type": null,
+    "dimensions": "9.2 \u00d7 5.5 \u00d7 1.6 in (233 \u00d7 140 \u00d7 40 mm)",
+    "weight": "1.2 lb (525 g)",
+    "ip_rating": null,
+    "radome": "UV resistant plastic",
+    "mount_type": "Wall or pole (hardware included); or AP-direct for some installs",
+    "included_parts": [
+      {
+        "item": "N-type pigtail cable",
+        "part_number": null,
+        "qty": 2
+      },
+      {
+        "item": "Mounting hardware",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": "images/meraki/ma-ant-23.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/meraki/ma-ant-23-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/meraki/ma-ant-23-pattern-2-4-ghz-horizontal.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-23 datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_antenna_2GHz_sector_11dBi.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-23 datasheet",
+        "id": "meraki-ma-ant-23",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_antenna_2GHz_sector_11dBi.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (outdoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "form": "Meraki datasheet calls this a sector; catalog form is Patch (no Sector type).",
+      "beamwidth": "Vertical HPBW from Meraki antenna FAQ outdoor table; datasheet listed horizontal only."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR62",
+        "MR66",
+        "MR72",
+        "MR74",
+        "MR76",
+        "MR86"
+      ],
+      "maintainer": "RF from Meraki datasheet; FAQ used for missing vertical beamwidth where noted."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-25",
+    "name": "Dual-Band 8 / 6.5 dBi Patch Antenna",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 8,
+      "5": 6.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "60\u00b0",
+        "5": "75\u00b0"
+      },
+      "vertical": {
+        "2.4": "70\u00b0",
+        "5": "84\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 2,
+    "polarization": "Linear, vertical / horizontal",
+    "cable_length": "12 in",
+    "cable_type": null,
+    "dimensions": "7.1 \u00d7 7.1 \u00d7 1.6 in (180 \u00d7 180 \u00d7 40 mm)",
+    "weight": "1.1 lb (512 g)",
+    "ip_rating": null,
+    "radome": "UV resistant plastic",
+    "mount_type": "Wall or pole (hardware included); or AP-direct for some installs",
+    "included_parts": [
+      {
+        "item": "N-type pigtail cable",
+        "part_number": null,
+        "qty": 2
+      },
+      {
+        "item": "Mounting hardware",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": "images/meraki/ma-ant-25.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal Port 1",
+        "url": "images/meraki/ma-ant-25-pattern-2-4-ghz-horizontal-port-1.jpg"
+      },
+      {
+        "label": "5 GHz Vertical Port 1",
+        "url": "images/meraki/ma-ant-25-pattern-5-ghz-vertical-port-1.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal Port 2",
+        "url": "images/meraki/ma-ant-25-pattern-2-4-ghz-horizontal-port-2.jpg"
+      },
+      {
+        "label": "5 GHz Vertical Port 2",
+        "url": "images/meraki/ma-ant-25-pattern-5-ghz-vertical-port-2.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-25 datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_antenna_dual_band_patch_8dBi_6dBi.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-25 datasheet",
+        "id": "meraki-ma-ant-25",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_antenna_dual_band_patch_8dBi_6dBi.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (outdoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "form": "Meraki datasheet calls this a sector; catalog form is Patch (no Sector type).",
+      "datasheet_type": "Datasheet electrical line says antenna type sector; marketing name and FAQ classify as Patch.",
+      "dimensions": "Datasheet depth printed as 1.8 mm; FAQ/table use 1.6 in \u2014 stored 1.6 in (40 mm) from FAQ weights/measures to match other outdoor panels.",
+      "beamwidth": "Horizontal from datasheet; vertical from FAQ outdoor table."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR72",
+        "MR74",
+        "MR76",
+        "MR84",
+        "MR86"
+      ],
+      "maintainer": "RF from Meraki datasheet; FAQ used for missing vertical beamwidth where noted."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-27",
+    "name": "Dual-Band 9 / 12 dBi Sector Antenna",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 9,
+      "5": 12
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "86\u00b0",
+        "5": "65\u00b0"
+      },
+      "vertical": {
+        "2.4": "34\u00b0",
+        "5": "18\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 2,
+    "polarization": "Linear, vertical / horizontal",
+    "cable_length": "12 in",
+    "cable_type": null,
+    "dimensions": "9.1 \u00d7 5.5 \u00d7 1.9 in (230 \u00d7 140 \u00d7 48 mm)",
+    "weight": "1.4 lb (630 g)",
+    "ip_rating": null,
+    "radome": "UV resistant plastic",
+    "mount_type": "Wall or pole (hardware included); or AP-direct for some installs",
+    "included_parts": [
+      {
+        "item": "N-type pigtail cable",
+        "part_number": null,
+        "qty": 2
+      },
+      {
+        "item": "Mounting hardware",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "Vertical Port Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-27-pattern-vertical-port-horizontal-vertical.jpg"
+      },
+      {
+        "label": "Horizontal Port Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-27-pattern-horizontal-port-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-27 datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_antenna_dual_band_sector__9dBi_12dBi.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-27 datasheet",
+        "id": "meraki-ma-ant-27",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_antenna_dual_band_sector__9dBi_12dBi.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (outdoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "form": "Meraki datasheet calls this a sector; catalog form is Patch (no Sector type)."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR74",
+        "MR76",
+        "MR84",
+        "MR86"
+      ],
+      "maintainer": "RF from Meraki datasheet; FAQ used for missing vertical beamwidth where noted."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-3-A1",
+    "name": "Indoor fixed dipole dual-band omni, single",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 3.8,
+      "5": 5.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "40\u00b0",
+        "5": "40\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Linear, vertical/horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "3.05 \u00d7 0.57 in (77.7 \u00d7 14.5 mm)",
+    "weight": "0.076 oz (21.59 g)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Direct to RP-TNC port",
+    "included_parts": [
+      {
+        "item": "MA-ANT-3-A dipole",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "0 to 40 \u00b0C",
+    "image_url": "images/meraki/ma-ant-3-a.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-a-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-a-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-3-A datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-A.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-3-A datasheet",
+        "id": "meraki-ma-ant-3-a",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-A.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (indoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "pack_variants": "Same RF design as other MA-ANT-3-A* orderables; separate SKU for pack/port count."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR42E",
+        "MR46E",
+        "MR53E"
+      ],
+      "maintainer": "Shared product photo/patterns across pack SKUs for the same letter."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-3-A5",
+    "name": "Indoor fixed dipole dual-band omni, 5-pack",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 3.8,
+      "5": 5.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "40\u00b0",
+        "5": "40\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Linear, vertical/horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "3.05 \u00d7 0.57 in (77.7 \u00d7 14.5 mm)",
+    "weight": "0.076 oz (21.59 g)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Direct to RP-TNC port",
+    "included_parts": [
+      {
+        "item": "MA-ANT-3-A dipole",
+        "part_number": null,
+        "qty": 5
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "0 to 40 \u00b0C",
+    "image_url": "images/meraki/ma-ant-3-a.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-a-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-a-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-3-A datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-A.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-3-A datasheet",
+        "id": "meraki-ma-ant-3-a",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-A.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (indoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "pack_variants": "Same RF design as other MA-ANT-3-A* orderables; separate SKU for pack/port count."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR42E"
+      ],
+      "maintainer": "Shared product photo/patterns across pack SKUs for the same letter."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-3-A6",
+    "name": "Indoor fixed dipole dual-band omni, 6-pack",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 3.8,
+      "5": 5.5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "40\u00b0",
+        "5": "40\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Linear, vertical/horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "3.05 \u00d7 0.57 in (77.7 \u00d7 14.5 mm)",
+    "weight": "0.076 oz (21.59 g)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Direct to RP-TNC port",
+    "included_parts": [
+      {
+        "item": "MA-ANT-3-A dipole",
+        "part_number": null,
+        "qty": 6
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "0 to 40 \u00b0C",
+    "image_url": "images/meraki/ma-ant-3-a.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-a-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-a-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-3-A datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-A.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-3-A datasheet",
+        "id": "meraki-ma-ant-3-a",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-A.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (indoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "pack_variants": "Same RF design as other MA-ANT-3-A* orderables; separate SKU for pack/port count."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR46E",
+        "MR53E"
+      ],
+      "maintainer": "Shared product photo/patterns across pack SKUs for the same letter."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-3-B1",
+    "name": "Indoor bendable dipole dual-band omni, single",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 5.7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "40\u00b0",
+        "5": "40\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Linear, vertical/horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "3.51 \u00d7 0.57 in (89.3 \u00d7 14.5 mm)",
+    "weight": "0.71 oz (20.19 g)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Direct to RP-TNC port (bendable)",
+    "included_parts": [
+      {
+        "item": "MA-ANT-3-B dipole",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "0 to 40 \u00b0C",
+    "image_url": "images/meraki/ma-ant-3-b.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-b-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-b-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-3-B datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-B.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-3-B datasheet",
+        "id": "meraki-ma-ant-3-b",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-B.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (indoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "pack_variants": "Same RF design as other MA-ANT-3-B* orderables; separate SKU for pack/port count."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR42E",
+        "MR46E",
+        "MR53E"
+      ],
+      "maintainer": "Shared product photo/patterns across pack SKUs for the same letter."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-3-B5",
+    "name": "Indoor bendable dipole dual-band omni, 5-pack",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 5.7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "40\u00b0",
+        "5": "40\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Linear, vertical/horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "3.51 \u00d7 0.57 in (89.3 \u00d7 14.5 mm)",
+    "weight": "0.71 oz (20.19 g)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Direct to RP-TNC port (bendable)",
+    "included_parts": [
+      {
+        "item": "MA-ANT-3-B dipole",
+        "part_number": null,
+        "qty": 5
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "0 to 40 \u00b0C",
+    "image_url": "images/meraki/ma-ant-3-b.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-b-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-b-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-3-B datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-B.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-3-B datasheet",
+        "id": "meraki-ma-ant-3-b",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-B.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (indoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "pack_variants": "Same RF design as other MA-ANT-3-B* orderables; separate SKU for pack/port count."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR42E"
+      ],
+      "maintainer": "Shared product photo/patterns across pack SKUs for the same letter."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-3-B6",
+    "name": "Indoor bendable dipole dual-band omni, 6-pack",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 5.7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "40\u00b0",
+        "5": "40\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": "Linear, vertical/horizontal",
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "3.51 \u00d7 0.57 in (89.3 \u00d7 14.5 mm)",
+    "weight": "0.71 oz (20.19 g)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Direct to RP-TNC port (bendable)",
+    "included_parts": [
+      {
+        "item": "MA-ANT-3-B dipole",
+        "part_number": null,
+        "qty": 6
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "0 to 40 \u00b0C",
+    "image_url": "images/meraki/ma-ant-3-b.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-b-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-b-pattern-5-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-3-B datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-B.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-3-B datasheet",
+        "id": "meraki-ma-ant-3-b",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-B.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (indoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "pack_variants": "Same RF design as other MA-ANT-3-B* orderables; separate SKU for pack/port count."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR46E",
+        "MR53E"
+      ],
+      "maintainer": "Shared product photo/patterns across pack SKUs for the same letter."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-3-C5",
+    "name": "Indoor dual-band panel omni, 5-port",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 4.9,
+      "5": 4.9
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 5,
+    "polarization": "Linear, vertical/horizontal",
+    "cable_length": "1 m (Times AA-9303)",
+    "cable_type": null,
+    "dimensions": "11.81 in diameter \u00d7 1.38 in (300 \u00d7 35 mm)",
+    "weight": "34.39 oz (0.98 kg)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Flush ceiling/wall (bracket included); surface/pipe mounts sold separately",
+    "included_parts": [
+      {
+        "item": "5-port antenna assembly",
+        "part_number": "MA-ANT-3-C5",
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "0 to 40 \u00b0C",
+    "image_url": "images/meraki/ma-ant-3-c.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-c-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-c-pattern-2-4-ghz-horizontal-vertical-b.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-c-pattern-5-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-c-pattern-5-ghz-horizontal-vertical-b.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-3-C datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-C.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-3-C datasheet",
+        "id": "meraki-ma-ant-3-c",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-C.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (indoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "pack_variants": "Same RF design as other MA-ANT-3-C* orderables; separate SKU for pack/port count."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR42E"
+      ],
+      "maintainer": "Shared product photo/patterns across pack SKUs for the same letter."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-3-C6",
+    "name": "Indoor dual-band panel omni, 6-port",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 4.9,
+      "5": 4.9
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 6,
+    "polarization": "Linear, vertical/horizontal",
+    "cable_length": "1 m (Times AA-9303)",
+    "cable_type": null,
+    "dimensions": "11.81 in diameter \u00d7 1.38 in (300 \u00d7 35 mm)",
+    "weight": "37.04 oz (1.05 kg)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Flush ceiling/wall (bracket included); surface/pipe mounts sold separately",
+    "included_parts": [
+      {
+        "item": "6-port antenna assembly",
+        "part_number": "MA-ANT-3-C6",
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "0 to 40 \u00b0C",
+    "image_url": "images/meraki/ma-ant-3-c.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-c-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-c-pattern-2-4-ghz-horizontal-vertical-b.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-c-pattern-5-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-c-pattern-5-ghz-horizontal-vertical-b.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-3-C datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-C.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-3-C datasheet",
+        "id": "meraki-ma-ant-3-c",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-C.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (indoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "pack_variants": "Same RF design as other MA-ANT-3-C* orderables; separate SKU for pack/port count."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR46E",
+        "MR53E",
+        "CW9174E"
+      ],
+      "maintainer": "Shared product photo/patterns across pack SKUs for the same letter."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-3-D5",
+    "name": "Indoor dual-band downtilt panel omni, 5-port",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 2.9,
+      "5": 3.7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 5,
+    "polarization": "Linear, vertical/horizontal",
+    "cable_length": "1 m (Aliner RG316)",
+    "cable_type": null,
+    "dimensions": "8.86 in diameter \u00d7 1.46 in (225 \u00d7 37 mm)",
+    "weight": "20.11 oz (0.57 kg)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Flush ceiling/wall (bracket included); electronic downtilt \u00b145\u00b0",
+    "included_parts": [
+      {
+        "item": "5-port antenna assembly",
+        "part_number": "MA-ANT-3-D5",
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "0 to 40 \u00b0C",
+    "image_url": "images/meraki/ma-ant-3-d.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-d-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-d-pattern-2-4-ghz-horizontal-vertical-b.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-d-pattern-5-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-d-pattern-5-ghz-horizontal-vertical-b.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-3-D datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-D.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-3-D datasheet",
+        "id": "meraki-ma-ant-3-d",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-D.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (indoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "gain": "Datasheet lists 2.9/3.7 dBi; FAQ outdoor/indoor table shows 2.4/3.7 for D6 \u2014 prefer datasheet.",
+      "beamwidth": "Vertical HPBW centered at \u00b145\u00b0 downtilt per datasheet.",
+      "pack_variants": "Same RF design as other MA-ANT-3-D* orderables; separate SKU for pack/port count."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR42E"
+      ],
+      "maintainer": "Shared product photo/patterns across pack SKUs for the same letter."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-3-D6",
+    "name": "Indoor dual-band downtilt panel omni, 6-port",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 2.9,
+      "5": 3.7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 6,
+    "polarization": "Linear, vertical/horizontal",
+    "cable_length": "1 m (Aliner RG316)",
+    "cable_type": null,
+    "dimensions": "8.86 in diameter \u00d7 1.46 in (225 \u00d7 37 mm)",
+    "weight": "20.81 oz (0.59 kg)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Flush ceiling/wall (bracket included); electronic downtilt \u00b145\u00b0",
+    "included_parts": [
+      {
+        "item": "6-port antenna assembly",
+        "part_number": "MA-ANT-3-D6",
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "0 to 40 \u00b0C",
+    "image_url": "images/meraki/ma-ant-3-d.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-d-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-d-pattern-2-4-ghz-horizontal-vertical-b.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-d-pattern-5-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-d-pattern-5-ghz-horizontal-vertical-b.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-3-D datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-D.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-3-D datasheet",
+        "id": "meraki-ma-ant-3-d",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-D.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (indoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "gain": "Datasheet lists 2.9/3.7 dBi; FAQ outdoor/indoor table shows 2.4/3.7 for D6 \u2014 prefer datasheet.",
+      "beamwidth": "Vertical HPBW centered at \u00b145\u00b0 downtilt per datasheet.",
+      "pack_variants": "Same RF design as other MA-ANT-3-D* orderables; separate SKU for pack/port count."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR46E",
+        "MR53E",
+        "CW9174E"
+      ],
+      "maintainer": "Shared product photo/patterns across pack SKUs for the same letter."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-3-E5",
+    "name": "Indoor dual-band wide patch, 5-port",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 7,
+      "5": 6.3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 5,
+    "polarization": "Linear, \u00b145\u00b0",
+    "cable_length": "1 m (AA-9303)",
+    "cable_type": null,
+    "dimensions": "10.83 \u00d7 10.83 \u00d7 0.93 in (275 \u00d7 275 \u00d7 23.5 mm)",
+    "weight": "38.8 oz (1.1 kg)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Surface mount nut included; compatible with MA-MNT-ANT-1/2 articulating arms",
+    "included_parts": [
+      {
+        "item": "5-port antenna assembly",
+        "part_number": "MA-ANT-3-E5",
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "0 to 40 \u00b0C",
+    "image_url": "images/meraki/ma-ant-3-e.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-e-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-e-pattern-2-4-ghz-horizontal-vertical-b.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-e-pattern-5-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-e-pattern-5-ghz-horizontal-vertical-b.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-3-E datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-E.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-3-E datasheet",
+        "id": "meraki-ma-ant-3-e",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-E.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (indoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "pack_variants": "Same RF design as other MA-ANT-3-E* orderables; separate SKU for pack/port count."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR42E"
+      ],
+      "maintainer": "Shared product photo/patterns across pack SKUs for the same letter."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-3-E6",
+    "name": "Indoor dual-band wide patch, 6-port",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 7,
+      "5": 6.3
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 6,
+    "polarization": "Linear, \u00b145\u00b0",
+    "cable_length": "1 m (AA-9303)",
+    "cable_type": null,
+    "dimensions": "10.83 \u00d7 10.83 \u00d7 0.93 in (275 \u00d7 275 \u00d7 23.5 mm)",
+    "weight": "41.27 oz (1.17 kg)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Surface mount nut included; compatible with MA-MNT-ANT-1/2 articulating arms",
+    "included_parts": [
+      {
+        "item": "6-port antenna assembly",
+        "part_number": "MA-ANT-3-E6",
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "0 to 40 \u00b0C",
+    "image_url": "images/meraki/ma-ant-3-e.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-e-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-e-pattern-2-4-ghz-horizontal-vertical-b.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-e-pattern-5-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-e-pattern-5-ghz-horizontal-vertical-b.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-3-E datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-E.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-3-E datasheet",
+        "id": "meraki-ma-ant-3-e",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-E.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (indoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "pack_variants": "Same RF design as other MA-ANT-3-E* orderables; separate SKU for pack/port count."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR46E",
+        "MR53E",
+        "CW9174E"
+      ],
+      "maintainer": "Shared product photo/patterns across pack SKUs for the same letter."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-3-F5",
+    "name": "Indoor dual-band narrow patch, 5-port",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 11.2,
+      "5": 10.8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "30\u00b0",
+        "5": "30\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0",
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 5,
+    "polarization": "Linear, \u00b145\u00b0",
+    "cable_length": "1 m (Times AA-9303)",
+    "cable_type": null,
+    "dimensions": "25.98 \u00d7 20.87 \u00d7 5.12 in (660 \u00d7 530 \u00d7 130 mm)",
+    "weight": "6.9 lb (110.4 oz)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Compatible with MA-MNT-ANT-1/2 articulating arms",
+    "included_parts": [
+      {
+        "item": "5-port antenna assembly",
+        "part_number": "MA-ANT-3-F5",
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "0 to 40 \u00b0C",
+    "image_url": "images/meraki/ma-ant-3-f.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-f-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-f-pattern-2-4-ghz-horizontal-vertical-b.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-f-pattern-5-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-f-pattern-5-ghz-horizontal-vertical-b.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-3-F datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-F.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-3-F datasheet",
+        "id": "meraki-ma-ant-3-f",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-F.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (indoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "form": "30\u00b0\u00d730\u00b0 narrow patch classified as High-density patch.",
+      "pack_variants": "Same RF design as other MA-ANT-3-F* orderables; separate SKU for pack/port count."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR42E"
+      ],
+      "maintainer": "Shared product photo/patterns across pack SKUs for the same letter."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "MA-ANT-3-F6",
+    "name": "Indoor dual-band narrow patch, 6-port",
+    "form": "High-density patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5"
+    ],
+    "frequency_range": "2.400-2.500/5.150-5.875 GHz",
+    "gain_dbi": {
+      "2.4": 11.2,
+      "5": 10.8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "30\u00b0",
+        "5": "30\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0",
+        "5": "30\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 6,
+    "polarization": "Linear, \u00b145\u00b0",
+    "cable_length": "1 m (Times AA-9303)",
+    "cable_type": null,
+    "dimensions": "25.98 \u00d7 20.87 \u00d7 5.12 in (660 \u00d7 530 \u00d7 130 mm)",
+    "weight": "7.1 lb (113.6 oz)",
+    "ip_rating": null,
+    "radome": "PC-ABS",
+    "mount_type": "Compatible with MA-MNT-ANT-1/2 articulating arms",
+    "included_parts": [
+      {
+        "item": "6-port antenna assembly",
+        "part_number": "MA-ANT-3-F6",
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "0 to 40 \u00b0C",
+    "image_url": "images/meraki/ma-ant-3-f.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-f-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-f-pattern-2-4-ghz-horizontal-vertical-b.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/ma-ant-3-f-pattern-5-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical Port 2",
+        "url": "images/meraki/ma-ant-3-f-pattern-5-ghz-horizontal-vertical-b.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki MA-ANT-3-F datasheet",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-F.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki MA-ANT-3-F datasheet",
+        "id": "meraki-ma-ant-3-f",
+        "url": "https://meraki.cisco.com/lib/pdf/meraki_datasheet_MA-ANT-3-F.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ (indoor RF table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "form": "30\u00b0\u00d730\u00b0 narrow patch classified as High-density patch.",
+      "pack_variants": "Same RF design as other MA-ANT-3-F* orderables; separate SKU for pack/port count."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "MR46E",
+        "MR53E",
+        "CW9174E"
+      ],
+      "maintainer": "Shared product photo/patterns across pack SKUs for the same letter."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "CW-ANT-O1-NS-00",
+    "name": "Tri-band 4/8/8 dBi Omnidirectional SIA, N-type",
+    "form": "Omni",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4/5/6 GHz (tri-band)",
+    "gain_dbi": {
+      "2.4": 4,
+      "5": 8,
+      "6": 8
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0",
+        "5": "30\u00b0",
+        "6": "30\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 1,
+    "polarization": null,
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "1.0 \u00d7 8.875 in (25 \u00d7 225 mm)",
+    "weight": "0.25 lb (115 g)",
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Direct to AP N-connector",
+    "included_parts": [
+      {
+        "item": "Omnidirectional SIA antenna",
+        "part_number": "CW-ANT-O1-NS-00",
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": "images/meraki/cw-ant-o1-ns-00.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4/5/6 GHz Horizontal",
+        "url": "images/meraki/cw-ant-o1-ns-00-pattern-2-4-ghz-5-ghz-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4/5/6 GHz Vertical",
+        "url": "images/meraki/cw-ant-o1-ns-00-pattern-2-4-ghz-5-ghz-6-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki CW-ANT-O1-NS-00 product page",
+        "url": "https://meraki.cisco.com/product/wi-fi/wireless-accessories/wireless-accessories-antennas/cw-ant-o1-ns-00/"
+      },
+      {
+        "label": "Cisco Catalyst 9163E data sheet (antenna section)",
+        "url": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9163e-access-point/nb-06-cat-9163e-series-access-ds-cte-en.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki CW-ANT-O1-NS-00 product page",
+        "id": "meraki-cw-ant-o1",
+        "url": "https://meraki.cisco.com/product/wi-fi/wireless-accessories/wireless-accessories-antennas/cw-ant-o1-ns-00/",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki CW9163E datasheet (antenna table)",
+        "id": "meraki-cw9163e-ds",
+        "url": "https://documentation.meraki.com/Wireless/Product_Information/Overviews_and_Datasheets/CW9163E_Datasheet",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Cisco Catalyst 9163E data sheet (peak gain + patterns)",
+        "id": "cisco-cat9163e-ds",
+        "url": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9163e-access-point/nb-06-cat-9163e-series-access-ds-cte-en.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "provenance": "Sold on Meraki accessories catalog and listed on Meraki CW9163E datasheet. Not dual-listed under Cisco \u2014 CW-ANT-O1-NS-00 absent from Cisco vendor rows on main. Patterns/product photo from shared Catalyst 9163E DS.",
+      "gain": "Published as peak gain on Catalyst 9163E / Meraki CW9163E tables.",
+      "packaging": "Sold individually; four required to fully populate CW9163E."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "CW9163E",
+        "CW9163E-MR"
+      ],
+      "maintainer": "Excluded CW-ANT-GPS2-S-00 (GNSS). Did not dual-list CW-ANT-T-D3-N (already Cisco; no Meraki-branded datasheet)."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "CW-ANT-D1-NS-00",
+    "name": "Tri-band 8/9/9 dBi 4-Port Directional Patch SIA, N-type",
+    "form": "Patch",
+    "indoor_outdoor": "Outdoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4/5/6 GHz (tri-band; 2 dual-band 2.4/5 ports + 2\u00d7 6 GHz ports)",
+    "gain_dbi": {
+      "2.4": 8,
+      "5": 9,
+      "6": 9
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "75\u00b0",
+        "5": "60\u00b0",
+        "6": "72\u00b0"
+      },
+      "vertical": {
+        "2.4": "30\u00b0",
+        "5": "30\u00b0",
+        "6": "27\u00b0"
+      }
+    },
+    "connector": "N-type",
+    "lead_count": 4,
+    "polarization": null,
+    "cable_length": "24 in (0.6 m) integrated pigtails",
+    "cable_type": null,
+    "dimensions": "10.58 \u00d7 8.28 \u00d7 1.38 in (268.8 \u00d7 210.2 \u00d7 35 mm)",
+    "weight": "1.92 lb (0.872 kg)",
+    "ip_rating": null,
+    "radome": "Paintable plastic",
+    "mount_type": "CW-MNT-ART2-00 articulating wall/pole mount included",
+    "included_parts": [
+      {
+        "item": "4-port directional patch SIA",
+        "part_number": "CW-ANT-D1-NS-00",
+        "qty": 1
+      },
+      {
+        "item": "Articulating arm mount",
+        "part_number": "CW-MNT-ART2-00",
+        "qty": 1
+      },
+      {
+        "item": "Grounding / cable gland / dust cap kit",
+        "part_number": null,
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": "\u221240 to 70 \u00b0C",
+    "image_url": "images/meraki/cw-ant-d1-ns-00.jpg",
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4/5/6 GHz Elevation 0\u00b0",
+        "url": "images/meraki/cw-ant-d1-ns-00-pattern-2-4-ghz-5-ghz-6-ghz-elevation-0-vertical.jpg"
+      },
+      {
+        "label": "2.4/5/6 GHz Elevation 90\u00b0",
+        "url": "images/meraki/cw-ant-d1-ns-00-pattern-2-4-ghz-5-ghz-6-ghz-elevation-90-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Meraki CW-ANT-D1-NS-00 product page",
+        "url": "https://meraki.cisco.com/product/wi-fi/wireless-accessories/wireless-accessories-antennas/cw-ant-d1-ns-00/"
+      },
+      {
+        "label": "Cisco Catalyst 9163E data sheet (antenna section)",
+        "url": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9163e-access-point/nb-06-cat-9163e-series-access-ds-cte-en.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki CW-ANT-D1-NS-00 product page",
+        "id": "meraki-cw-ant-d1",
+        "url": "https://meraki.cisco.com/product/wi-fi/wireless-accessories/wireless-accessories-antennas/cw-ant-d1-ns-00/",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki CW9163E datasheet (antenna table)",
+        "id": "meraki-cw9163e-ds",
+        "url": "https://documentation.meraki.com/Wireless/Product_Information/Overviews_and_Datasheets/CW9163E_Datasheet",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Meraki antenna FAQ",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Cisco Catalyst 9163E data sheet (peak gain + patterns)",
+        "id": "cisco-cat9163e-ds",
+        "url": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9163e-access-point/nb-06-cat-9163e-series-access-ds-cte-en.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "provenance": "Meraki accessories product page + Meraki CW9163E listing. Absent from Cisco vendor catalog rows. Patterns from Catalyst 9163E DS.",
+      "gain": "Peak gain per Catalyst/Meraki tables.",
+      "ports": "Two 2.4/5 dual-band ports and two 6 GHz-only ports; color-coded for CW9163E."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "CW9163E",
+        "CW9163E-MR"
+      ],
+      "maintainer": "One antenna fully populates CW9163E (2x2 tri-band)."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "CW-ANT-T-O2-D8",
+    "name": "Tri-band indoor ceiling omni, DART8",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4/5/6 GHz (tri-band)",
+    "gain_dbi": {
+      "2.4": 2,
+      "5": 5,
+      "6": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "60\u00b0",
+        "5": "60\u00b0",
+        "6": "60\u00b0"
+      }
+    },
+    "connector": "DART8",
+    "lead_count": 8,
+    "polarization": null,
+    "cable_length": "2 ft (0.6 m) DART8 pigtail",
+    "cable_type": null,
+    "dimensions": "12 \u00d7 12 \u00d7 1.25 in (305 \u00d7 305 \u00d7 32 mm)",
+    "weight": null,
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Ceiling mount; integrated accelerometer",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/meraki/cw-ant-t-o2-d8-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/meraki/cw-ant-t-o2-d8-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/meraki/cw-ant-t-o2-d8-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/meraki/cw-ant-t-o2-d8-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/meraki/cw-ant-t-o2-d8-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/meraki/cw-ant-t-o2-d8-pattern-6-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Cisco Wireless 9174 Series data sheet (CW9174E antennas)",
+        "url": "https://www.cisco.com/c/dam/en/us/products/collateral/networking/wireless/access-points/wireless-9174-series-access-points-ds.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki antenna FAQ (indoor CW-ANT table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Cisco Wireless 9174 Series data sheet",
+        "id": "cisco-9174-ds",
+        "url": "https://www.cisco.com/c/dam/en/us/products/collateral/networking/wireless/access-points/wireless-9174-series-access-points-ds.pdf",
+        "last_checked": "2026-11-22",
+        "note": "Peak gain + radiation patterns for CW-ANT-T-O2-D8"
+      }
+    ],
+    "field_notes": {
+      "provenance": "Meraki FAQ lists as CW9174E Meraki accessory family. No separate Meraki PDF datasheet found; RF peak gains from Cisco 9174 DS (agree with FAQ 2/5/5). Not present under Cisco vendor rows.",
+      "beamwidth": "HPBW from Meraki FAQ indoor quick-reference (V 60\u00b0/60\u00b0; applied to 6 GHz as well).",
+      "pattern_orientation": "Azimuth/Elevation pair order inferred from 9174 DS embed sequence; verify against sheet captions if re-mining."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "CW9174E"
+      ],
+      "maintainer": "No product hero photo in mined sources; patterns only."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "CW-ANT-T-D2-D8",
+    "name": "Tri-band indoor directional patch, DART8",
+    "form": "Patch",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4/5/6 GHz (tri-band)",
+    "gain_dbi": {
+      "2.4": 6.6,
+      "5": 5.7,
+      "6": 5.7
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0",
+        "6": "75\u00b0"
+      },
+      "vertical": {
+        "2.4": "75\u00b0",
+        "5": "75\u00b0",
+        "6": "75\u00b0"
+      }
+    },
+    "connector": "DART8",
+    "lead_count": 8,
+    "polarization": null,
+    "cable_length": "2 ft (0.6 m) DART8 pigtail",
+    "cable_type": null,
+    "dimensions": null,
+    "weight": null,
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "CW-MNT-ART2 articulating arm included; wall/ceiling/mast hardware",
+    "included_parts": [
+      {
+        "item": "Articulating arm mount",
+        "part_number": "CW-MNT-ART2",
+        "qty": 1
+      }
+    ],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/meraki/cw-ant-t-d2-d8-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/meraki/cw-ant-t-d2-d8-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/meraki/cw-ant-t-d2-d8-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/meraki/cw-ant-t-d2-d8-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/meraki/cw-ant-t-d2-d8-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/meraki/cw-ant-t-d2-d8-pattern-6-ghz-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Cisco Wireless 9174 Series data sheet (CW9174E antennas)",
+        "url": "https://www.cisco.com/c/dam/en/us/products/collateral/networking/wireless/access-points/wireless-9174-series-access-points-ds.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki antenna FAQ (indoor CW-ANT table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Cisco Wireless 9174 Series data sheet",
+        "id": "cisco-9174-ds",
+        "url": "https://www.cisco.com/c/dam/en/us/products/collateral/networking/wireless/access-points/wireless-9174-series-access-points-ds.pdf",
+        "last_checked": "2026-11-22",
+        "note": "Peak gain 6.6/5.7/5.7 and 75\u00d775 beamwidth"
+      }
+    ],
+    "field_notes": {
+      "gain": "Cisco 9174 DS peak gains 6.6/5.7/5.7 used; Meraki FAQ rounds to 6/6/6 dBi.",
+      "provenance": "Meraki FAQ CW9174E accessory; no Meraki-only PDF. Not in Cisco vendor catalog rows."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "CW9174E"
+      ],
+      "maintainer": "Optional CW-MNT-9 integrates AP + this patch."
+    }
+  },
+  {
+    "vendor": "Meraki",
+    "sku": "CW-ANT-T-O4-R",
+    "name": "Tri-band indoor dipole omni, RP-TNC",
+    "form": "Omni",
+    "indoor_outdoor": "Indoor",
+    "bands": [
+      "2.4",
+      "5",
+      "6"
+    ],
+    "frequency_range": "2.4/5/6 GHz (tri-band)",
+    "gain_dbi": {
+      "2.4": 3,
+      "5": 5,
+      "6": 5
+    },
+    "beamwidth": {
+      "horizontal": {
+        "2.4": "360\u00b0",
+        "5": "360\u00b0",
+        "6": "360\u00b0"
+      },
+      "vertical": {
+        "2.4": "40\u00b0",
+        "5": "40\u00b0",
+        "6": "40\u00b0"
+      }
+    },
+    "connector": "RP-TNC",
+    "lead_count": 1,
+    "polarization": null,
+    "cable_length": null,
+    "cable_type": null,
+    "dimensions": "3.4 in long (8.4 cm)",
+    "weight": null,
+    "ip_rating": null,
+    "radome": null,
+    "mount_type": "Direct to RP-TNC (requires DART8-to-RP-TNC adapter on CW9174E)",
+    "included_parts": [],
+    "wind_rating": null,
+    "vswr": null,
+    "isolation": null,
+    "operating_temp": null,
+    "image_url": null,
+    "images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal + Vertical",
+        "url": "images/meraki/cw-ant-t-o4-r-pattern-2-4-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal + Vertical",
+        "url": "images/meraki/cw-ant-t-o4-r-pattern-5-ghz-horizontal-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal + Vertical",
+        "url": "images/meraki/cw-ant-t-o4-r-pattern-6-ghz-horizontal-vertical.jpg"
+      }
+    ],
+    "dimension_image_url": null,
+    "datasheet_urls": [
+      {
+        "label": "Cisco Wireless 9174 Series data sheet (CW9174E antennas)",
+        "url": "https://www.cisco.com/c/dam/en/us/products/collateral/networking/wireless/access-points/wireless-9174-series-access-points-ds.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Meraki antenna FAQ (indoor CW-ANT table)",
+        "id": "meraki-ant-faq",
+        "url": "https://documentation.meraki.com/Wireless/Operate_and_Maintain/FAQs/Frequently_Asked_Questions_regarding_Cisco_Meraki_Antennas",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "Cisco Wireless 9174 Series data sheet",
+        "id": "cisco-9174-ds",
+        "url": "https://www.cisco.com/c/dam/en/us/products/collateral/networking/wireless/access-points/wireless-9174-series-access-points-ds.pdf",
+        "last_checked": "2026-11-22"
+      }
+    ],
+    "field_notes": {
+      "adapter": "CW9174E needs AIR-CAB002-D8-R= or CW-CAB-001-D8-R4; qty 8 (tri-band mode) or 4 (2.4/5 mode).",
+      "provenance": "Meraki FAQ lists for CW9174E; RF from FAQ (3/5/5). Not in Cisco vendor catalog rows.",
+      "pattern_orientation": "9174 DS publishes combined plots for O4-R; stored as Horizontal + Vertical."
+    },
+    "internal_notes": {
+      "compatible_aps": [
+        "CW9174E"
+      ],
+      "maintainer": "Dipole stick; patterns from 9174 DS end pages."
+    }
   }
 ]

@@ -202,12 +202,8 @@
       const lastChecked = src.last_checked || '';
       if (!label && !id && !url) return '';
       const parts = [label, id, url];
-      if (lastChecked) {
-        parts.push(note || '');
-        parts.push(lastChecked);
-      } else if (note) {
-        parts.push(note);
-      }
+      if (note) parts.push(note);
+      if (lastChecked) parts.push(lastChecked);
       return parts.join(' | ');
     }).filter(Boolean).join('\n');
   }
@@ -225,14 +221,16 @@
       if (parts.length > 2) {
         src.url = parts[2] ? (sanitizeHttpUrl(parts[2]) || null) : null;
       }
-      const dateRe = /^\d{4}-\d{2}-\d{2}$/;
-      if (parts.length >= 5 && dateRe.test(parts[4])) {
+      // Optional trailing columns: note and/or last_checked (YYYY-MM-DD).
+      // 4th column alone may be last_checked when it is date-only; otherwise note.
+      // 5th column is last_checked when present.
+      const dateOnly = /^\d{4}-\d{2}-\d{2}$/;
+      if (parts.length >= 5) {
         if (parts[3]) src.note = parts[3];
-        src.last_checked = parts[4];
-      } else if (parts[3] && dateRe.test(parts[3]) && !parts[4]) {
-        src.last_checked = parts[3];
+        if (parts[4]) src.last_checked = parts[4];
       } else if (parts[3]) {
-        src.note = parts[3];
+        if (dateOnly.test(parts[3])) src.last_checked = parts[3];
+        else src.note = parts[3];
       }
       if (!src.label && !src.id && !src.url) return null;
       return src;
@@ -732,8 +730,8 @@
     sheets.placeholder = 'Hubbell SPEC | https://example.com/spec.pdf';
     media.appendChild(fieldRow('datasheets', 'Datasheet URLs', sheets, 'One datasheet per line: label | https URL. A datasheet or a source URL is required.'));
     const sources = document.createElement('textarea');
-    sources.placeholder = 'Hubbell SPEC | ATS-ATS03414-SPEC-EN | https://example.com/spec.pdf';
-    media.appendChild(fieldRow('sources', 'Sources', sources, 'One source per line: label | id | url | note. The note is optional.'));
+    sources.placeholder = 'Hubbell SPEC | ATS-ATS03414-SPEC-EN | https://example.com/spec.pdf | 2026-11-22';
+    media.appendChild(fieldRow('sources', 'Sources', sources, 'One source per line: label | id | url | optional note | optional last_checked (YYYY-MM-DD). A date-only 4th column is treated as last_checked.'));
     root.appendChild(media);
   }
 
