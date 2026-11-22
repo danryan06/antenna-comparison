@@ -4,8 +4,8 @@
   "generated_from": "antenna_data.json",
   "public_artifact": "antenna_catalog.json",
   "entry_count": 569,
-  "source_revision": "bdb87832d2e727d812fc47c446084c46b891384e",
-  "generated_at": "2026-11-22T23:10:54.191Z",
+  "source_revision": "493feb104dbfb1d47dbb184f05d670573d20a477",
+  "generated_at": "2026-11-22T23:11:30.000Z",
   "public_keys": [
     "vendor",
     "sku",
