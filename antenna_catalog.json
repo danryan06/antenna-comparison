@@ -41316,7 +41316,16 @@
         "url": "images/pctel/boa24004nf-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/boa24004nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/boa24004nf-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -41328,6 +41337,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 2.4 GHz Radiation Patterns",
+        "id": "boa-series-2.4-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-2.4-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -41376,7 +41391,16 @@
         "url": "images/pctel/boa24006nf-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/boa24006nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/boa24006nf-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -41388,6 +41412,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 2.4 GHz Radiation Patterns",
+        "id": "boa-series-2.4-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-2.4-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -41436,7 +41466,16 @@
         "url": "images/pctel/boa24006nm-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/boa24006nm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/boa24006nm-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -41448,6 +41487,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 2.4 GHz Radiation Patterns",
+        "id": "boa-series-2.4-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-2.4-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -41496,7 +41541,16 @@
         "url": "images/pctel/boa24008dt12nf-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/boa24008dt12nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/boa24008dt12nf-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -41508,6 +41562,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 2.4 GHz Radiation Patterns",
+        "id": "boa-series-2.4-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-2.4-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -41556,7 +41616,16 @@
         "url": "images/pctel/boa24008dt12nm-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/boa24008dt12nm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/boa24008dt12nm-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -41568,6 +41637,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 2.4 GHz Radiation Patterns",
+        "id": "boa-series-2.4-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-2.4-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -41616,7 +41691,16 @@
         "url": "images/pctel/boa24008dt7nf-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/boa24008dt7nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/boa24008dt7nf-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -41628,6 +41712,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 2.4 GHz Radiation Patterns",
+        "id": "boa-series-2.4-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-2.4-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -41676,7 +41766,16 @@
         "url": "images/pctel/boa24008dt7nm-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/boa24008dt7nm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/boa24008dt7nm-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -41688,6 +41787,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 2.4 GHz Radiation Patterns",
+        "id": "boa-series-2.4-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-2.4-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -41736,7 +41841,16 @@
         "url": "images/pctel/boa24008nf-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/boa24008nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/boa24008nf-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -41748,6 +41862,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 2.4 GHz Radiation Patterns",
+        "id": "boa-series-2.4-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-2.4-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -41796,7 +41916,16 @@
         "url": "images/pctel/boa24008nm-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/boa24008nm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/boa24008nm-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -41808,6 +41937,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 2.4 GHz Radiation Patterns",
+        "id": "boa-series-2.4-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-2.4-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -41856,7 +41991,16 @@
         "url": "images/pctel/boa24010nf-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/boa24010nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/boa24010nf-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -41868,6 +42012,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 2.4 GHz Radiation Patterns",
+        "id": "boa-series-2.4-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-2.4-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -41916,7 +42066,16 @@
         "url": "images/pctel/boa51004nf-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/boa51004nf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/boa51004nf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -41928,6 +42087,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 5 GHz Radiation Patterns",
+        "id": "boa-series-5-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-5-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -41976,7 +42141,16 @@
         "url": "images/pctel/boa51004nm-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/boa51004nm-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/boa51004nm-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -41988,6 +42162,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 5 GHz Radiation Patterns",
+        "id": "boa-series-5-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-5-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -42036,7 +42216,16 @@
         "url": "images/pctel/boa58006nf-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/boa58006nf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/boa58006nf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -42048,6 +42237,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 5 GHz Radiation Patterns",
+        "id": "boa-series-5-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-5-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -42096,7 +42291,16 @@
         "url": "images/pctel/boa58006nm-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/boa58006nm-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/boa58006nm-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -42108,6 +42312,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 5 GHz Radiation Patterns",
+        "id": "boa-series-5-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-5-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -42156,7 +42366,16 @@
         "url": "images/pctel/boa58010nf-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/boa58010nf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/boa58010nf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -42168,6 +42387,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 5 GHz Radiation Patterns",
+        "id": "boa-series-5-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-5-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -42216,7 +42441,16 @@
         "url": "images/pctel/boa58010nm-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/boa58010nm-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/boa58010nm-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
@@ -42228,6 +42462,12 @@
         "label": "PCTEL VenU Heavy-Duty Omnidirectional Base Station (BOA) datasheet",
         "id": "venu-heavy-duty-omnidirectional-base-station-boa-antenna-series",
         "url": "https://pctel.com/datasheets/venu-heavy-duty-omnidirectional-base-station-boa-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOA Series 5 GHz Radiation Patterns",
+        "id": "boa-series-5-ghz-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOA-Series-5-GHz-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -42272,7 +42512,16 @@
         "url": "images/pctel/boah242505nf-alt-1.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/boah242505nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/boah242505nf-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
@@ -42284,6 +42533,12 @@
         "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
         "id": "venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series",
         "url": "https://pctel.com/datasheets/venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOAH Series Radiation Patterns",
+        "id": "boah-series-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOAH-Series-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -42328,7 +42583,16 @@
         "url": "images/pctel/boah242505nm-alt-1.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/boah242505nm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/boah242505nm-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
@@ -42340,6 +42604,12 @@
         "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
         "id": "venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series",
         "url": "https://pctel.com/datasheets/venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOAH Series Radiation Patterns",
+        "id": "boah-series-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOAH-Series-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -42384,7 +42654,16 @@
         "url": "images/pctel/boah515905nf-alt-1.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/boah515905nf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/boah515905nf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
@@ -42396,6 +42675,12 @@
         "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
         "id": "venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series",
         "url": "https://pctel.com/datasheets/venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOAH Series Radiation Patterns",
+        "id": "boah-series-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOAH-Series-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -42440,7 +42725,16 @@
         "url": "images/pctel/boah515905nm-alt-1.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/boah515905nm-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/boah515905nm-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
@@ -42452,6 +42746,12 @@
         "label": "PCTEL VenU Horizontally Polarized Omnidirectional Base Station (BOAH) datasheet",
         "id": "venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series",
         "url": "https://pctel.com/datasheets/venu-horizontally-polarized-omnidirectional-base-station-boah-antenna-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "BOAH Series Radiation Patterns",
+        "id": "boah-series-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/BOAH-Series-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -42615,7 +42915,24 @@
         "url": "images/pctel/fpmi245808-dp4nf-alt-1.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/fpmi245808-dp4nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/fpmi245808-dp4nf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/fpmi245808-dp4nf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/fpmi245808-dp4nf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Dual Band Wi-Fi Panel Antenna datasheet",
@@ -42627,6 +42944,12 @@
         "label": "PCTEL VenU Dual Band Wi-Fi Panel Antenna datasheet",
         "id": "venu-dual-band-wifi-panel-antenna",
         "url": "https://pctel.com/datasheets/venu-dual-band-wifi-panel-antenna.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "FPMI2458 Series Radiation Patterns",
+        "id": "fpmi2458-series-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/FPMI2458-Series-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -42722,7 +43045,16 @@
     "vswr": "<2.0:1",
     "image_url": "images/pctel/mho24007nmip.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/mho24007nmip-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/mho24007nmip-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU High Performance Omnidirectional Antenna datasheet",
@@ -42734,6 +43066,12 @@
         "label": "PCTEL VenU High Performance Omnidirectional Antenna datasheet",
         "id": "venu-high-performance-omnidirectional-antenna",
         "url": "https://pctel.com/datasheets/venu-high-performance-omnidirectional-antenna.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "MHO24007NMIP Radiation Patterns",
+        "id": "mho24007nmip-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/MHO24007NMIP-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -43250,7 +43588,16 @@
         "url": "images/pctel/mho58009nmip-alt-1.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/mho58009nmip-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/mho58009nmip-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Slender High Performance Omnidirectional Antenna datasheet",
@@ -43262,6 +43609,12 @@
         "label": "PCTEL VenU Slender High Performance Omnidirectional Antenna datasheet",
         "id": "venu-slender-high-performance-omnidirectional-antenna",
         "url": "https://pctel.com/datasheets/venu-slender-high-performance-omnidirectional-antenna.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "MHO58009NMIP Radiation Patterns",
+        "id": "mho58009nmip-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/MHO58009NMIP-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -43727,7 +44080,16 @@
         "url": "images/pctel/mpamb24495804-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/mpamb24495804-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/mpamb24495804-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL Portable Omnidirectional Antennas MPAMB Series datasheet",
@@ -43739,6 +44101,12 @@
         "label": "PCTEL Portable Omnidirectional Antennas MPAMB Series datasheet",
         "id": "portable-omnidirectional-antennas-mpamb-series",
         "url": "https://pctel.com/datasheets/portable-omnidirectional-antennas-mpamb-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "MPAMB24495804 Radiation Patterns",
+        "id": "mpamb24495804-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/MPAMB24495804-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -43786,7 +44154,16 @@
         "url": "images/pctel/mpamb24495804-rpsma-alt-2.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/mpamb24495804-rpsma-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/mpamb24495804-rpsma-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL Portable Omnidirectional Antennas MPAMB Series datasheet",
@@ -43798,6 +44175,12 @@
         "label": "PCTEL Portable Omnidirectional Antennas MPAMB Series datasheet",
         "id": "portable-omnidirectional-antennas-mpamb-series",
         "url": "https://pctel.com/datasheets/portable-omnidirectional-antennas-mpamb-series.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "MPAMB24495804 Radiation Patterns",
+        "id": "mpamb24495804-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/MPAMB24495804-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -43847,7 +44230,24 @@
     "operating_temp": "-30 to 70 \u00b0C",
     "image_url": "images/pctel/mpmi2458-3-rpsma.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/mpmi2458-3-rpsma-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/mpmi2458-3-rpsma-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/mpmi2458-3-rpsma-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/mpmi2458-3-rpsma-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Dual Band MIMO Omnidirectional Antenna datasheet",
@@ -43859,6 +44259,12 @@
         "label": "PCTEL VenU Dual Band MIMO Omnidirectional Antenna datasheet",
         "id": "venu-dual-band-mimo-omnidirectional-antenna",
         "url": "https://pctel.com/datasheets/venu-dual-band-mimo-omnidirectional-antenna.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "MPMI2458-6-RPSMA RF Pattern Data",
+        "id": "mpmi2458-6-rpsma-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/MPMI2458-6-RPSMA-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -43908,7 +44314,72 @@
     "operating_temp": "-30 to 70 \u00b0C",
     "image_url": "images/pctel/mpmi2458-4-rpc.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Horizontal",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-2-4-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 1 Vertical",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-2-4-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Horizontal",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-2-4-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Vertical",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-2-4-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Horizontal",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-2-4-ghz-element-3-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Vertical",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-2-4-ghz-element-3-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 4 Horizontal",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-2-4-ghz-element-4-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 4 Vertical",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-2-4-ghz-element-4-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Horizontal",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-5-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Vertical",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-5-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-5-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Vertical",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-5-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Horizontal",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-5-ghz-element-3-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Vertical",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-5-ghz-element-3-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 4 Horizontal",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-5-ghz-element-4-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 4 Vertical",
+        "url": "images/pctel/mpmi2458-4-rpc-pattern-5-ghz-element-4-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Dual Band MIMO Omnidirectional Antenna datasheet",
@@ -43920,6 +44391,12 @@
         "label": "PCTEL VenU Dual Band MIMO Omnidirectional Antenna datasheet",
         "id": "venu-dual-band-mimo-omnidirectional-antenna",
         "url": "https://pctel.com/datasheets/venu-dual-band-mimo-omnidirectional-antenna.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "MPMI2458-4-RPC RF Measured Data",
+        "id": "mpmi2458-4-rpc-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/MPMI2458-4-RPC-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -43969,7 +44446,24 @@
     "operating_temp": "-30 to 70 \u00b0C",
     "image_url": "images/pctel/mpmi2458-6-rpsma.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/mpmi2458-6-rpsma-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/mpmi2458-6-rpsma-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/mpmi2458-6-rpsma-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/mpmi2458-6-rpsma-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL VenU Dual Band MIMO Omnidirectional Antenna datasheet",
@@ -43981,6 +44475,12 @@
         "label": "PCTEL VenU Dual Band MIMO Omnidirectional Antenna datasheet",
         "id": "venu-dual-band-mimo-omnidirectional-antenna",
         "url": "https://pctel.com/datasheets/venu-dual-band-mimo-omnidirectional-antenna.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "MPMI2458-6-RPSMA RF Pattern Data",
+        "id": "mpmi2458-6-rpsma-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/MPMI2458-6-RPSMA-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -44077,7 +44577,24 @@
     "operating_temp": "-40 to 80 \u00b0C",
     "image_url": "images/pctel/pcthpmimo-2-sf.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/pcthpmimo-2-sf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/pcthpmimo-2-sf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/pcthpmimo-2-sf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/pcthpmimo-2-sf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL Coach Wi-Fi 6E Multiband MIMO Permanent Mount Antennas datasheet",
@@ -44089,6 +44606,12 @@
         "label": "PCTEL Coach Wi-Fi 6E Multiband MIMO Permanent Mount Antennas datasheet",
         "id": "coach-wifi-6e-multiband-mimo-permanent-mount-antennas",
         "url": "https://pctel.com/datasheets/coach-wifi-6e-multiband-mimo-permanent-mount-antennas.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "PCTHPMIMO-SF Series Radiation Patterns",
+        "id": "pcthpmimo-sf-series-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/PCTHPMIMO-SF-Series-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -44185,7 +44708,24 @@
     "operating_temp": "-40 to 80 \u00b0C",
     "image_url": "images/pctel/pcthpmimo-3-sf.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/pcthpmimo-3-sf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/pcthpmimo-3-sf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/pcthpmimo-3-sf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/pcthpmimo-3-sf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL Coach Wi-Fi 6E Multiband MIMO Permanent Mount Antennas datasheet",
@@ -44197,6 +44737,12 @@
         "label": "PCTEL Coach Wi-Fi 6E Multiband MIMO Permanent Mount Antennas datasheet",
         "id": "coach-wifi-6e-multiband-mimo-permanent-mount-antennas",
         "url": "https://pctel.com/datasheets/coach-wifi-6e-multiband-mimo-permanent-mount-antennas.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "PCTHPMIMO-SF Series Radiation Patterns",
+        "id": "pcthpmimo-sf-series-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/PCTHPMIMO-SF-Series-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -44290,7 +44836,24 @@
     "operating_temp": "-30 to 70 \u00b0C",
     "image_url": "images/pctel/pctmi2458-rpc.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/pctmi2458-rpc-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/pctmi2458-rpc-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/pctmi2458-rpc-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/pctmi2458-rpc-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL Low Profile Access Point Antenna for Broadband Wireless datasheet",
@@ -44302,6 +44865,12 @@
         "label": "PCTEL Low Profile Access Point Antenna for Broadband Wireless datasheet",
         "id": "low-profile-access-point-antenna-for-broadband-wireless",
         "url": "https://pctel.com/datasheets/low-profile-access-point-antenna-for-broadband-wireless.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "PCTMI2458-RPC Radiation Patterns",
+        "id": "pctmi2458-rpc-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/PCTMI2458-RPC-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -44342,7 +44911,24 @@
     "operating_temp": "0 to 55 \u00b0C",
     "image_url": "images/pctel/pctmi2458-rpsma.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/pctmi2458-rpsma-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/pctmi2458-rpsma-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/pctmi2458-rpsma-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/pctmi2458-rpsma-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL Very Low Profile Access Point Antenna datasheet",
@@ -44354,6 +44940,12 @@
         "label": "PCTEL Very Low Profile Access Point Antenna datasheet",
         "id": "pctmi-very-low-profile-access-point-antenna",
         "url": "https://pctel.com/datasheets/pctmi-very-low-profile-access-point-antenna.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "PCTMI2458-RPC Radiation Patterns",
+        "id": "pctmi2458-rpc-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/PCTMI2458-RPC-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -44526,7 +45118,16 @@
         "url": "images/pctel/wlp2458ngp-alt-1.jpg"
       }
     ],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/wlp2458ngp-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/wlp2458ngp-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL Low Profile Dual Band Wi-Fi Antenna (ground plane independent) datasheet",
@@ -44538,6 +45139,12 @@
         "label": "PCTEL Low Profile Dual Band Wi-Fi Antenna (ground plane independent) datasheet",
         "id": "low-profile-dual-band-wi-fi-antenna-ground-plane-independent",
         "url": "https://pctel.com/datasheets/low-profile-dual-band-wi-fi-antenna-ground-plane-independent.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "WLP2458NGP Radiation Patterns",
+        "id": "wlp2458ngp-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/WLP2458NGP-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -44578,7 +45185,24 @@
     "operating_temp": "-40 to 85 \u00b0C",
     "image_url": "images/pctel/wv-covdb2458.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/wv-covdb2458-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/wv-covdb2458-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/pctel/wv-covdb2458-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/pctel/wv-covdb2458-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL Hush Low Profile Wi-Fi Glass Mount Antenna datasheet",
@@ -44590,6 +45214,12 @@
         "label": "PCTEL Hush Low Profile Wi-Fi Glass Mount Antenna datasheet",
         "id": "hush-low-profile-wi-fi-glass-mount-antenna",
         "url": "https://pctel.com/datasheets/hush-low-profile-wi-fi-glass-mount-antenna.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "WV-COVDB2458 Radiation Patterns",
+        "id": "wv-covdb2458-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/WV-COVDB2458-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
@@ -44627,7 +45257,16 @@
     "operating_temp": "-40 to 85 \u00b0C",
     "image_url": "images/pctel/wv-covwifi.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/pctel/wv-covwifi-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/pctel/wv-covwifi-pattern-2-4-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "PCTEL Hush Low Profile Wi-Fi Glass Mount Antenna datasheet",
@@ -44639,6 +45278,12 @@
         "label": "PCTEL Hush Low Profile Wi-Fi Glass Mount Antenna datasheet",
         "id": "hush-low-profile-wi-fi-glass-mount-antenna",
         "url": "https://pctel.com/datasheets/hush-low-profile-wi-fi-glass-mount-antenna.pdf",
+        "last_checked": "2026-11-22"
+      },
+      {
+        "label": "WV-COVWIFI Radiation Patterns",
+        "id": "wv-covwifi-patterns",
+        "url": "https://pctel.com/wp-content/uploads/2020/06/WV-COVWIFI-Patterns.pdf",
         "last_checked": "2026-11-22"
       }
     ]
