@@ -21428,12 +21428,13 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/261112.jpg",
-    "images": [],
-    "pattern_images": [
+    "images": [
       {
-        "label": "5/6 GHz Horizontal",
-        "url": "images/ventev/261112-pattern-5-6-ghz-horizontal.jpg"
-      },
+        "label": "Product drawing",
+        "url": "images/ventev/261112-drawing.jpg"
+      }
+    ],
+    "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
         "url": "images/ventev/261112-pattern-2-4-ghz-vertical.jpg"
@@ -21460,7 +21461,7 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 261112. Manufacturer part number ACCESSBX-JBANT-S (not a Hubbell dual-SKU).",
-      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge ≥~1000px; H/V from nearby H/E-plane labels when present.",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge ≥~1000px; H/V from nearby H/E-plane labels when present. 2026-11-23: the '5/6 GHz Horizontal' crop was a line drawing of the floor box, not a plot; moved to images as 'Product drawing'. The '5/6' came from the 5/6 dBi gain, not a band.",
       "gain_dbi": "2026-11-22 first-party Ventev correction (audit high confidence)",
       "vswr": "2026-11-22 first-party Ventev correction (audit high confidence)",
       "isolation": "Cleared non-measurement isolation fragment (2026-11-22 audit)"
@@ -21538,12 +21539,13 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/239601.jpg",
-    "images": [],
-    "pattern_images": [
+    "images": [
       {
-        "label": "5/6 GHz Horizontal",
-        "url": "images/ventev/239601-pattern-5-6-ghz-horizontal.jpg"
-      },
+        "label": "Product drawing",
+        "url": "images/ventev/239601-drawing.jpg"
+      }
+    ],
+    "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
         "url": "images/ventev/239601-pattern-2-4-ghz-vertical.jpg"
@@ -21570,7 +21572,7 @@
     ],
     "field_notes": {
       "sku": "Primary SKU 239601. Manufacturer part number ACCESSBX-JBANTR6R (not a Hubbell dual-SKU).",
-      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge ≥~1000px; H/V from nearby H/E-plane labels when present.",
+      "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge ≥~1000px; H/V from nearby H/E-plane labels when present. 2026-11-23: the '5/6 GHz Horizontal' crop was a line drawing of the floor box, not a plot; moved to images as 'Product drawing'. The '5/6' came from the 5/6 dBi gain, not a band.",
       "gain_dbi": "2026-11-22 first-party Ventev correction (audit high confidence)",
       "vswr": "2026-11-22 first-party Ventev correction (audit high confidence)",
       "isolation": "Cleared non-measurement isolation fragment (2026-11-22 audit)"
@@ -68822,7 +68824,7 @@
     },
     "field_notes": {
       "beamwidth": "Not listed on catalog card.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "2026-11-23: replaced plots that pointed at PDQ24499-91NM files (a 2.4/5 GHz antenna) with this panel's own 5 GHz azimuth/elevation plots, which were in the repo but unlinked. Azimuth→Horizontal, Elevation→Vertical."
     },
     "image_url": "images/te-connectivity/pa58-24.jpg",
     "antenna_id": "te-connectivity:pa58-24",
@@ -68851,20 +68853,12 @@
     ],
     "pattern_images": [
       {
-        "label": "2.4 GHz Horizontal",
-        "url": "images/te-connectivity/pdq24499-91nm-pattern-2-4-ghz-horizontal.jpg"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/te-connectivity/pdq24499-91nm-pattern-2-4-ghz-vertical.jpg"
-      },
-      {
         "label": "5 GHz Horizontal",
-        "url": "images/te-connectivity/pdq24499-91nm-pattern-5-ghz-horizontal.jpg"
+        "url": "images/te-connectivity/pa58-24-pattern-5-ghz-horizontal.jpg"
       },
       {
         "label": "5 GHz Vertical",
-        "url": "images/te-connectivity/pdq24499-91nm-pattern-5-ghz-vertical.jpg"
+        "url": "images/te-connectivity/pa58-24-pattern-5-ghz-vertical.jpg"
       }
     ]
   },

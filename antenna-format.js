@@ -304,6 +304,82 @@ function sortPatternImages(items) {
     .map(entry => entry.item);
 }
 
+/**
+ * Per-port pattern grouping for the detail page.
+ *
+ * Some datasheets publish one H and one V plot for every port (Cisco C-ANT9101
+ * has 30). The detail page shows one port at a time with chips to switch.
+ * A plot belongs to a port when its label (minus band and plane words) is
+ * "Port A", "Element 1", "Lead 2", "Cable 3", "AUX" or "BLE". Anything else
+ * (a combined chart, a downtilt cut, a named radio) is shared and always shown.
+ *
+ * Returns null when there are fewer than two ports, or when the whole set is
+ * small enough to show at once (minItems, default 7), so ordinary antennas
+ * keep the plain gallery.
+ */
+const PATTERN_PORT_RE = /^(?:(port|element|lead|cable)\s+([a-z0-9]+)|(aux|ble))$/i;
+
+function patternPortKey(label, url) {
+  const group = patternGroupKey(label, url);
+  const match = String(group || "").match(PATTERN_PORT_RE);
+  if (!match) return "";
+  if (match[3]) return match[3].toUpperCase();
+  const kind = match[1].charAt(0).toUpperCase() + match[1].slice(1).toLowerCase();
+  const id = /^\d+$/.test(match[2]) ? String(Number(match[2])) : match[2].toUpperCase();
+  return `${kind} ${id}`;
+}
+
+function patternPortOrder(key) {
+  if (key === "AUX") return [1, 0];
+  if (key === "BLE") return [1, 1];
+  const id = key.split(" ")[1] || "";
+  return /^\d+$/.test(id) ? [0, Number(id)] : [0, 1000 + id.charCodeAt(0)];
+}
+
+function groupPatternsByPort(items, options) {
+  const minItems = options && options.minItems != null ? options.minItems : 7;
+  if (!Array.isArray(items) || items.length < minItems) return null;
+  const ordered = sortPatternImages(items);
+  const ports = [];
+  const byKey = new Map();
+  const shared = [];
+  ordered.forEach(item => {
+    const fields = patternImageFields(item);
+    const key = patternPortKey(fields.label, fields.url);
+    if (!key) {
+      shared.push(item);
+      return;
+    }
+    if (!byKey.has(key)) {
+      const group = { key, label: key, items: [], bands: new Set() };
+      byKey.set(key, group);
+      ports.push(group);
+    }
+    const group = byKey.get(key);
+    group.items.push(item);
+    ghzBandsInText(fields.label).forEach(band => group.bands.add(band));
+  });
+  if (ports.length < 2) return null;
+  ports.sort((a, b) => comparePatternRank(patternPortOrder(a.key), patternPortOrder(b.key)));
+  // Default to the port with the most bands (Cisco Port A is 5 GHz only while
+  // Port E carries 2.4 and 5); ties keep datasheet order.
+  let best = ports[0];
+  ports.forEach(group => {
+    // ties keep chip order
+    if (group.bands.size > best.bands.size) best = group;
+  });
+  return {
+    ports: ports.map(group => ({
+      key: group.key,
+      label: group.label,
+      items: group.items,
+      bands: PATTERN_BAND_ORDER.filter(band => group.bands.has(band))
+    })),
+    shared,
+    defaultKey: best.key
+  };
+}
+
 function flatBandParts(obj, kind) {
   if (!obj || typeof obj !== "object" || Array.isArray(obj)) return null;
   if (Object.values(obj).some(item => item && typeof item === "object")) return null;
@@ -453,6 +529,8 @@ if (typeof module !== "undefined" && module.exports) {
     frequencyToBand,
     formatPatternCaption,
     sortPatternImages,
+    patternPortKey,
+    groupPatternsByPort,
     formatBandObject,
     formatBeamwidthCompact,
     formatBeamwidthStacked,

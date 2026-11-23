@@ -9,6 +9,9 @@ const dataPath = path.join(root, 'antenna_data.json');
 const FORMS = new Set(['Omni', 'Patch', 'High-density patch']);
 const required = ['vendor', 'sku', 'form', 'bands', 'gain_dbi', 'beamwidth', 'connector'];
 
+const { frequencyToBand } = require(path.join(root, 'antenna-format.js'));
+const warnings = [];
+
 function fail(msg) {
   console.error(msg);
   process.exitCode = 1;
@@ -72,7 +75,32 @@ data.forEach((entry, index) => {
   (entry.images || []).forEach((img, i) => checkImage(img && img.url, `images[${i}]`));
   (entry.pattern_images || []).forEach((img, i) => checkImage(img && img.url, `pattern_images[${i}]`));
   checkImage(entry.dimension_image_url, 'dimension_image_url');
+
+  // A pattern labeled for a band the antenna does not list is usually a plot
+  // borrowed from a sibling product, or a bands list that is missing a band.
+  // Warn rather than fail so a known gap does not block unrelated changes.
+  const bands = new Set((entry.bands || []).map(String));
+  (entry.pattern_images || []).forEach((img, i) => {
+    const text = String((img && img.label) || '');
+    const re = /(\d+(?:\.\d+)?(?:\s*\/\s*\d+(?:\.\d+)?)*)\s*GHz/gi;
+    let match;
+    while ((match = re.exec(text))) {
+      // "5/6 GHz" on a 5/6 dBi antenna is a gain label, not a band list, so
+      // only flag when no band in the label is one the antenna supports.
+      const labelBands = (match[1].match(/\d+(?:\.\d+)?/g) || [])
+        .map(n => frequencyToBand(Number(n)))
+        .filter(Boolean);
+      if (labelBands.length && !labelBands.some(b => bands.has(b))) {
+        warnings.push(`${label}: pattern_images[${i}] "${text}" is for ${labelBands.join('/')} GHz but bands are [${Array.from(bands).join(', ')}]`);
+      }
+    }
+  });
 });
+
+if (warnings.length) {
+  console.warn(`WARN: ${warnings.length} pattern plot(s) for bands the antenna does not list:`);
+  warnings.forEach(w => console.warn(`  ${w}`));
+}
 
 if (!process.exitCode) {
   console.log(`OK: ${data.length} antenna entr${data.length === 1 ? 'y' : 'ies'} validated`);
