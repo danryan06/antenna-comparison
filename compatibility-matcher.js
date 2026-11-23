@@ -53,7 +53,7 @@
   var DISCLAIMERS = {
     bannerTitle: 'Best-effort compatibility guidance',
     bannerBody:
-      'Results are based on published specifications and the evidence shown for each match. They may be incomplete, outdated, region-specific, or affected by firmware, connector variants, cables, adaptors, installation, and regulatory limits. Before purchasing or installing, verify the exact access point, antenna, cable, and adaptor part numbers in the manufacturers’ current documentation.',
+      'Results are based on published specifications and the evidence shown for each match. They may be incomplete, outdated, region-specific, or affected by firmware, connector variants, cables, adaptors, installation, and regulatory limits. Verify compatibility with the manufacturers before purchase or installation.',
     compact:
       'Best-effort match — verify with the manufacturers before purchase or installation.',
     verificationRequired:
