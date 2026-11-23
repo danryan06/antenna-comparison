@@ -934,15 +934,27 @@
     function configureBackLink() {
       const params = new URLSearchParams(window.location.search);
       const back = document.getElementById('back-link');
+
+      // Prefer sessionStorage (Browse/Finder stashed path). Fall back to legacy
+      // return= / from=finder query params for old bookmarks and shared links.
+      const fromSession = readDetailBackPath();
       const fromReturn = safeReturnPath(params.get('return'));
-      if (fromReturn) {
-        back.href = fromReturn;
-        if (fromReturn.startsWith('finder.html')) {
+      const target = fromSession || fromReturn;
+      if (target) {
+        back.href = target;
+        if (target.startsWith('finder.html')) {
           back.textContent = '\u2190 Back to Finder results';
-        } else if (fromReturn.startsWith('compare.html')) {
+        } else if (target.startsWith('compare.html')) {
           back.textContent = '\u2190 Back to Compare';
         } else {
           back.textContent = '\u2190 Back to Antenna Table';
+        }
+        // Drop legacy return= from the address bar once Back is configured.
+        if (params.has('return') || params.has('from')) {
+          params.delete('return');
+          params.delete('from');
+          const clean = params.toString();
+          history.replaceState(null, '', clean ? `antenna.html?${clean}` : 'antenna.html');
         }
         return;
       }

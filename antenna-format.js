@@ -76,6 +76,9 @@ const SAFE_RETURN_PAGES = new Set([
   "edit.html"
 ]);
 
+/** sessionStorage key for Browse/Finder → Detail → Back restoration. */
+const DETAIL_BACK_STORAGE_KEY = "antennaComparison.detailBack";
+
 /**
  * Validate a relative return path used across Browse/Finder → Detail → Back.
  * Accepts only known HTML pages with a safe query string; rejects schemes,
@@ -96,12 +99,30 @@ function safeReturnPath(value) {
   return page + qs;
 }
 
-/** Build antenna.html?id=…&return=… with a validated return path. */
-function buildAntennaDetailHref(slug, returnPath) {
+/** Stash a validated list path so Detail Back can restore filters without a long URL. */
+function saveDetailBackPath(path) {
+  const safe = safeReturnPath(path);
+  if (!safe) return;
+  try {
+    sessionStorage.setItem(DETAIL_BACK_STORAGE_KEY, safe);
+  } catch (_) {
+    /* private mode / quota — Back falls back to defaults */
+  }
+}
+
+/** Read the stashed Detail Back path, or "" if missing/invalid. */
+function readDetailBackPath() {
+  try {
+    return safeReturnPath(sessionStorage.getItem(DETAIL_BACK_STORAGE_KEY) || "");
+  } catch (_) {
+    return "";
+  }
+}
+
+/** Short detail URL: antenna.html?id=… only (no return= query). */
+function buildAntennaDetailHref(slug) {
   const params = new URLSearchParams();
   params.set("id", String(slug || ""));
-  const safe = safeReturnPath(returnPath);
-  if (safe) params.set("return", safe);
   return `antenna.html?${params.toString()}`;
 }
 
@@ -423,6 +444,9 @@ if (typeof module !== "undefined" && module.exports) {
     slugifyAntenna,
     safeUrl,
     safeReturnPath,
+    DETAIL_BACK_STORAGE_KEY,
+    saveDetailBackPath,
+    readDetailBackPath,
     buildAntennaDetailHref,
     createDatasheetActionLink,
     formatBands,
