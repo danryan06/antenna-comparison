@@ -389,6 +389,26 @@ function formatEnvironment(value) {
   return v || "Not specified";
 }
 
+/**
+ * AP Comparison detail slug: mirrors slugify(`${vendor} ${model}`) in
+ * apcomparison.com index.html / ap.html, so "Cisco Meraki" + "CW9163E"
+ * becomes "cisco-meraki-cw9163e" (ap.html?id=cisco-meraki-cw9163e).
+ */
+function apComparisonSlug(vendor, model) {
+  return `${vendor || ""} ${model || ""}`
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+const AP_COMPARISON_BASE = "https://apcomparison.com";
+
+function apComparisonDetailUrl(profile) {
+  const slug = apComparisonSlug(profile && profile.vendor, profile && profile.model);
+  return slug ? `${AP_COMPARISON_BASE}/ap.html?id=${encodeURIComponent(slug)}` : AP_COMPARISON_BASE;
+}
+
 function flatBandParts(obj, kind) {
   if (!obj || typeof obj !== "object" || Array.isArray(obj)) return null;
   if (Object.values(obj).some(item => item && typeof item === "object")) return null;
@@ -541,6 +561,8 @@ if (typeof module !== "undefined" && module.exports) {
     patternPortKey,
     groupPatternsByPort,
     formatEnvironment,
+    apComparisonSlug,
+    apComparisonDetailUrl,
     formatBandObject,
     formatBeamwidthCompact,
     formatBeamwidthStacked,

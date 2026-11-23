@@ -1302,8 +1302,8 @@ a.inline-link:focus-visible {
 
 .finder-grid {
   display: grid;
-  grid-template-columns: minmax(280px, 340px) 1fr;
-  gap: 1.5rem;
+  grid-template-columns: minmax(250px, 270px) minmax(0, 1fr);
+  gap: 1.25rem;
   align-items: flex-start;
 }
 
@@ -1684,8 +1684,9 @@ a.inline-link:focus-visible {
 
 .results-table:has(.result-row-antenna) {
   display: table;
-  width: max-content;
-  min-width: 100%;
+  /* Fill the card; wrappable columns shrink before the table overflows.
+     .results-scroll still scrolls when min-content is wider (phones). */
+  width: 100%;
   border: none;
   border-radius: 0;
   overflow: visible;
@@ -1705,7 +1706,7 @@ a.inline-link:focus-visible {
 .result-row.result-row-antenna > .row-select {
   display: table-cell;
   vertical-align: top;
-  padding: 0.7rem 0.65rem;
+  padding: 0.7rem 0.5rem;
   white-space: nowrap;
   text-align: left;
   border-bottom: 1px solid rgba(148, 163, 184, 0.08);
@@ -1740,10 +1741,41 @@ a.inline-link:focus-visible {
 }
 
 .result-row.result-row-antenna > .result-beamwidth {
-  white-space: pre;
+  /* pre-line keeps the H / V lines; rare long per-port values wrap. */
+  white-space: pre-line;
+  min-width: 8.5rem;
   line-height: 1.35;
   font-variant-numeric: tabular-nums;
 }
+
+/* Text-heavy columns wrap instead of pushing the table past its card.
+   Vendor, SKU and short numeric columns stay on one line. */
+.result-row.result-row-antenna > .result-metrics,
+.result-row.result-row-antenna > .result-form,
+.result-row.result-row-antenna > .result-antenna,
+.result-row.result-row-antenna > .result-vendor,
+.result-row.result-row-antenna > .result-wifi,
+.result-row.result-row-antenna > .result-env {
+  white-space: normal;
+}
+.result-row.result-row-antenna > .result-vendor { min-width: 5.5rem; }
+
+/* When the table does scroll sideways, keep the SKU in view. */
+.result-row.result-row-antenna > .result-model {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: #070d1c;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.25);
+}
+.result-header.result-row-antenna > .result-model {
+  z-index: 2;
+  background: #0b1324;
+}
+.result-row.result-row-antenna > .result-wifi { min-width: 4rem; }
+.result-row.result-row-antenna > .result-metrics { min-width: 5.5rem; }
+.result-row.result-row-antenna > .result-form { min-width: 5.5rem; }
+.result-row.result-row-antenna > .result-antenna { min-width: 6rem; }
 
 .btn-link-small {
   padding: 0.3rem 0.6rem;
@@ -3491,4 +3523,160 @@ table.antenna-table td.beamwidth-cell {
     min-width: 44px;
     min-height: 44px;
   }
+}
+
+/* Finder: AP-first entry point */
+.finder-ap {
+  margin: 1.25rem 0 1.5rem;
+  padding: 1.25rem 1.25rem 1rem;
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(139, 92, 246, 0.08));
+}
+
+.finder-ap-head h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.15rem;
+}
+
+.finder-ap-head p {
+  margin: 0 0 0.85rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 60rem;
+}
+
+.finder-ap-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.finder-ap-input {
+  flex: 1 1 20rem;
+  max-width: 36rem;
+  min-height: 46px;
+  font-size: 1rem;
+}
+
+.finder-ap .filter-inline-note:empty {
+  display: none;
+}
+
+.finder-ap-quick {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.finder-ap-quick[hidden] {
+  display: none;
+}
+
+.finder-ap-quick-label {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.finder-ap-vendors,
+.finder-ap-models {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.finder-ap-models {
+  flex-basis: 100%;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  background: rgba(2, 6, 23, 0.5);
+}
+
+.finder-ap-models[hidden] {
+  display: none;
+}
+
+/* Port / vendor chips (shared by the detail page port picker and Finder AP browse) */
+.pattern-port-chip {
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  min-height: 32px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(15, 23, 42, 0.6);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.pattern-port-chip:hover {
+  border-color: rgba(96, 165, 250, 0.7);
+  color: #fff;
+}
+
+.pattern-port-chip[aria-pressed="true"],
+.pattern-port-chip[aria-expanded="true"] {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: #60a5fa;
+  color: #93c5fd;
+}
+
+.pattern-port-chip:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+.finder-ap .ap-summary {
+  margin-top: 0.85rem;
+}
+
+@media (max-width: 560px) {
+  .finder-ap {
+    padding: 1rem 0.85rem;
+  }
+  .finder-ap-input {
+    flex-basis: 100%;
+  }
+}
+
+.finder-ap #clear-ap[hidden] {
+  display: none;
+}
+
+.finder-card .compat-banner {
+  margin-bottom: 1.25rem;
+}
+
+/* Browse: entry point into the AP-first Finder */
+.finder-ap-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.6rem;
+  align-items: baseline;
+  margin: 0.25rem 0 1.25rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  border-radius: 0.65rem;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(139, 92, 246, 0.08));
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.finder-ap-cta:hover {
+  border-color: #60a5fa;
+  color: #fff;
+}
+
+.finder-ap-cta:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+.finder-ap-cta-title {
+  font-weight: 600;
+  color: #93c5fd;
 }

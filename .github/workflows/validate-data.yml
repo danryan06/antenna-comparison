@@ -69,5 +69,7 @@ jobs:
         run: node .github/scripts/test-detail-back.js
       - name: Test per-port pattern grouping
         run: node .github/scripts/test-pattern-ports.js
+      - name: Test AP Comparison links
+        run: node .github/scripts/test-ap-links.js
       - name: Test HTML sink inventory
         run: node .github/scripts/test-html-sinks.js
