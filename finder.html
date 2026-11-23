@@ -110,7 +110,7 @@
             <div class="filter-group">
               <div class="filter-group-head">
                 <h3 id="ap-heading">Access point</h3>
-                <p id="ap-help">Canonical AP ID from AP Comparison</p>
+                <p id="ap-help">Search by AP model name</p>
               </div>
               <label class="visually-hidden" for="filter-ap">Access point</label>
               <input
@@ -583,6 +583,42 @@
       return null;
     }
 
+    function formatConnectorFamilyLabel(family) {
+      const raw = String(family || '').trim();
+      if (!raw) return 'Unknown family';
+      const key = raw.toLowerCase();
+      const labels = {
+        'rp-sma': 'RP-SMA',
+        rpsma: 'RP-SMA',
+        sma: 'SMA',
+        'rp-tnc': 'RP-TNC',
+        rptnc: 'RP-TNC',
+        tnc: 'TNC',
+        n: 'N',
+        'n-type': 'N',
+        qn: 'QN',
+        dart: 'DART',
+        mpc: 'MPC',
+        msoc: 'MSOC',
+        'juniper-pin-block': 'Juniper pin block',
+        'vendor-proprietary': 'Proprietary'
+      };
+      if (labels[key]) return labels[key];
+      // Title-case unknown slug families (e.g. "foo-bar" → "Foo-Bar").
+      return raw.split(/([-])/).map((part, i) => {
+        if (part === '-') return part;
+        return part.charAt(0).toUpperCase() + part.slice(1).toLowerCase();
+      }).join('');
+    }
+
+    function formatConnectorGenderLabel(gender) {
+      const raw = String(gender || '').trim().toLowerCase();
+      if (!raw) return 'Gender unknown';
+      if (raw === 'male' || raw === 'plug') return 'Male';
+      if (raw === 'female' || raw === 'jack') return 'Female';
+      return raw.charAt(0).toUpperCase() + raw.slice(1);
+    }
+
     function formatApInterfaceSummary(profile) {
       const cfg = AntennaCompatibility.defaultConfiguration(profile);
       if (!cfg) return 'No external interface data';
@@ -593,12 +629,15 @@
       if (!ifaces.length) return 'No required Wi-Fi external interface';
       return ifaces.map(iface => {
         const c = iface.connector || {};
+        const count = iface.connector_count;
+        const countLabel = count == null
+          ? 'Connector count unknown'
+          : `${count} connector${count === 1 ? '' : 's'}`;
         const parts = [
-          c.family || 'unknown family',
-          c.variant ? `variant ${c.variant}` : null,
-          c.gender || 'gender unknown',
-          `${iface.connector_count || '?'} connector(s)`,
-          `${iface.rf_path_count || '?'} RF path(s)`
+          formatConnectorFamilyLabel(c.family),
+          c.variant ? `Variant ${c.variant}` : null,
+          formatConnectorGenderLabel(c.gender),
+          countLabel
         ].filter(Boolean);
         return parts.join(' · ');
       }).join('; ');
@@ -634,18 +673,12 @@
       clearBtn.hidden = false;
       el.hidden = false;
       const complete = profile.completeness && profile.completeness.status === 'complete';
-      const missing = (profile.completeness && profile.completeness.missing) || [];
       const ds = profile.datasheet_url ? safeUrl(profile.datasheet_url) : '';
       el.innerHTML = '';
 
       const title = document.createElement('h3');
       title.textContent = profile.display_name || profile.ap_id;
       el.appendChild(title);
-
-      const meta = document.createElement('p');
-      meta.className = 'ap-summary-meta';
-      meta.textContent = `AP ID: ${profile.ap_id}`;
-      el.appendChild(meta);
 
       const iface = document.createElement('p');
       iface.textContent = formatApInterfaceSummary(profile);
@@ -654,14 +687,6 @@
       const bands = document.createElement('p');
       bands.textContent = 'Bands: ' + ((profile.supported_bands || []).join(', ') || '—');
       el.appendChild(bands);
-
-      const dataChecked = document.createElement('p');
-      dataChecked.className = 'ap-summary-meta';
-      const gen = (apIndex && apIndex.envelope && apIndex.envelope.generated_at) || '';
-      dataChecked.textContent = complete
-        ? `Data checked: ${gen || 'pinned export'} · profile complete`
-        : `Data checked: ${gen || 'pinned export'} · incomplete (${missing.length} missing fact${missing.length === 1 ? '' : 's'})`;
-      el.appendChild(dataChecked);
 
       const links = document.createElement('p');
       links.className = 'ap-summary-links';
