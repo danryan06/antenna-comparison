@@ -22883,11 +22883,6 @@
         "label": "2.4 GHz Horizontal",
         "url": "images/ventev/610816-pattern-2-4-ghz-horizontal.jpg",
         "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/610816-pattern-2-4-ghz-vertical-2.jpg",
-        "kind": "pattern"
       }
     ],
     "dimension_image_url": null,
@@ -23003,11 +22998,6 @@
       {
         "label": "5/6 GHz Vertical",
         "url": "images/ventev/610484-pattern-5-6-ghz-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Vertical",
-        "url": "images/ventev/610484-pattern-5-6-ghz-vertical-2.jpg",
         "kind": "pattern"
       }
     ],
@@ -23684,11 +23674,6 @@
         "kind": "pattern"
       },
       {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/610693-pattern-2-4-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
         "label": "5/6 GHz Horizontal",
         "url": "images/ventev/610693-pattern-5-6-ghz-horizontal.jpg",
         "kind": "pattern"
@@ -23810,28 +23795,8 @@
         "kind": "pattern"
       },
       {
-        "label": "5/6 GHz Horizontal",
-        "url": "images/ventev/611741-pattern-5-6-ghz-horizontal-2.jpg",
-        "kind": "pattern"
-      },
-      {
         "label": "5/6 GHz Horizontal + Vertical",
         "url": "images/ventev/611741-pattern-5-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Vertical",
-        "url": "images/ventev/611741-pattern-5-6-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal",
-        "url": "images/ventev/611741-pattern-5-6-ghz-horizontal-3.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Vertical",
-        "url": "images/ventev/611741-pattern-5-6-ghz-vertical-3.jpg",
         "kind": "pattern"
       }
     ],
@@ -24548,11 +24513,6 @@
         "kind": "pattern"
       },
       {
-        "label": "5/6 GHz Vertical",
-        "url": "images/ventev/605253-pattern-5-6-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
         "label": "5/6 GHz Horizontal",
         "url": "images/ventev/605253-pattern-5-6-ghz-horizontal.jpg",
         "kind": "pattern"
@@ -24911,10 +24871,6 @@
         "url": "images/ventev/607902-pattern-5-6-ghz-vertical.jpg"
       },
       {
-        "label": "5/6 GHz Vertical",
-        "url": "images/ventev/607902-pattern-5-6-ghz-vertical-3.jpg"
-      },
-      {
         "label": "6 GHz Vertical",
         "url": "images/ventev/607902-pattern-6-ghz-vertical.jpg"
       },
@@ -25020,38 +24976,8 @@
         "kind": "pattern"
       },
       {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/607656-pattern-2-4-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
         "label": "5 GHz Vertical",
         "url": "images/ventev/607656-pattern-5-ghz-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/607656-pattern-2-4-ghz-vertical-3.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/607656-pattern-2-4-ghz-vertical-4.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5 GHz Vertical",
-        "url": "images/ventev/607656-pattern-5-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/607656-pattern-2-4-ghz-vertical-5.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/607656-pattern-2-4-ghz-vertical-6.jpg",
         "kind": "pattern"
       }
     ],
@@ -25150,38 +25076,8 @@
         "kind": "pattern"
       },
       {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/607655-pattern-2-4-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
         "label": "5 GHz Vertical",
         "url": "images/ventev/607655-pattern-5-ghz-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/607655-pattern-2-4-ghz-vertical-3.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/607655-pattern-2-4-ghz-vertical-4.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5 GHz Vertical",
-        "url": "images/ventev/607655-pattern-5-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/607655-pattern-2-4-ghz-vertical-5.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/607655-pattern-2-4-ghz-vertical-6.jpg",
         "kind": "pattern"
       }
     ],
@@ -25296,11 +25192,6 @@
       {
         "label": "5/6 GHz Horizontal + Vertical",
         "url": "images/ventev/607918-pattern-5-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/607918-pattern-5-6-ghz-horizontal-vertical-2.jpg",
         "kind": "pattern"
       },
       {
@@ -25427,21 +25318,6 @@
       {
         "label": "5/6 GHz Horizontal + Vertical",
         "url": "images/ventev/607919-pattern-5-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/607919-pattern-5-6-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/607919-pattern-5-6-ghz-horizontal-vertical-3.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/607919-pattern-5-6-ghz-horizontal-vertical-4.jpg",
         "kind": "pattern"
       }
     ],
@@ -25822,28 +25698,8 @@
         "kind": "pattern"
       },
       {
-        "label": "5/6 GHz Horizontal",
-        "url": "images/ventev/606460-pattern-5-6-ghz-horizontal-2.jpg",
-        "kind": "pattern"
-      },
-      {
         "label": "5/6 GHz Horizontal + Vertical",
         "url": "images/ventev/606460-pattern-5-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Vertical",
-        "url": "images/ventev/606460-pattern-5-6-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal",
-        "url": "images/ventev/606460-pattern-5-6-ghz-horizontal-3.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Vertical",
-        "url": "images/ventev/606460-pattern-5-6-ghz-vertical-3.jpg",
         "kind": "pattern"
       }
     ],
@@ -25954,11 +25810,6 @@
       {
         "label": "5/6 GHz Horizontal + Vertical",
         "url": "images/ventev/606346-pattern-5-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/606346-pattern-5-6-ghz-horizontal-vertical-2.jpg",
         "kind": "pattern"
       }
     ],
@@ -26192,11 +26043,6 @@
         "label": "5/6 GHz Horizontal + Vertical",
         "url": "images/ventev/606347-pattern-5-6-ghz-horizontal-vertical.jpg",
         "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/606347-pattern-5-6-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
       }
     ],
     "dimension_image_url": null,
@@ -26312,11 +26158,6 @@
       {
         "label": "5/6 GHz Horizontal + Vertical",
         "url": "images/ventev/601623-pattern-5-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/601623-pattern-5-6-ghz-horizontal-vertical-2.jpg",
         "kind": "pattern"
       },
       {
@@ -26454,21 +26295,6 @@
         "label": "5/6 GHz Horizontal + Vertical",
         "url": "images/ventev/223126-pattern-5-6-ghz-horizontal-vertical.jpg",
         "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/223126-pattern-5-6-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/223126-pattern-5-6-ghz-horizontal-vertical-3.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/223126-pattern-5-6-ghz-horizontal-vertical-4.jpg",
-        "kind": "pattern"
       }
     ],
     "dimension_image_url": null,
@@ -26581,23 +26407,8 @@
         "kind": "pattern"
       },
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/606999-pattern-5-6-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Horizontal + Vertical",
-        "url": "images/ventev/606999-pattern-2-4-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
         "label": "6 GHz Horizontal + Vertical",
         "url": "images/ventev/606999-pattern-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "6 GHz Horizontal + Vertical",
-        "url": "images/ventev/606999-pattern-6-ghz-horizontal-vertical-2.jpg",
         "kind": "pattern"
       }
     ],
@@ -26711,23 +26522,8 @@
         "kind": "pattern"
       },
       {
-        "label": "5/6 GHz Horizontal + Vertical",
-        "url": "images/ventev/607002-pattern-5-6-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Horizontal + Vertical",
-        "url": "images/ventev/607002-pattern-2-4-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
         "label": "6 GHz Horizontal + Vertical",
         "url": "images/ventev/607002-pattern-6-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "6 GHz Horizontal + Vertical",
-        "url": "images/ventev/607002-pattern-6-ghz-horizontal-vertical-2.jpg",
         "kind": "pattern"
       }
     ],
@@ -26981,16 +26777,6 @@
         "kind": "pattern"
       },
       {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/215630-pattern-2-4-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Horizontal",
-        "url": "images/ventev/215630-pattern-2-4-ghz-horizontal-2.jpg",
-        "kind": "pattern"
-      },
-      {
         "label": "6 GHz Vertical",
         "url": "images/ventev/215630-pattern-6-ghz-vertical.jpg",
         "kind": "pattern"
@@ -27103,38 +26889,8 @@
         "kind": "pattern"
       },
       {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/257749-pattern-2-4-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
         "label": "5 GHz Vertical",
         "url": "images/ventev/257749-pattern-5-ghz-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/257749-pattern-2-4-ghz-vertical-3.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/257749-pattern-2-4-ghz-vertical-4.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5 GHz Vertical",
-        "url": "images/ventev/257749-pattern-5-ghz-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/257749-pattern-2-4-ghz-vertical-5.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/ventev/257749-pattern-2-4-ghz-vertical-6.jpg",
         "kind": "pattern"
       }
     ],
@@ -27817,16 +27573,6 @@
       {
         "label": "2.4 GHz Horizontal + Vertical",
         "url": "images/ventev/589255-pattern-2-4-ghz-horizontal-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Horizontal + Vertical",
-        "url": "images/ventev/589255-pattern-2-4-ghz-horizontal-vertical-2.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "2.4 GHz Horizontal + Vertical",
-        "url": "images/ventev/589255-pattern-2-4-ghz-horizontal-vertical-3.jpg",
         "kind": "pattern"
       },
       {
@@ -28543,11 +28289,6 @@
       {
         "label": "5/6 GHz Vertical",
         "url": "images/ventev/254399-pattern-5-6-ghz-vertical.jpg",
-        "kind": "pattern"
-      },
-      {
-        "label": "5/6 GHz Vertical",
-        "url": "images/ventev/254399-pattern-5-6-ghz-vertical-2.jpg",
         "kind": "pattern"
       }
     ],
@@ -35275,22 +35016,6 @@
       {
         "label": "5 GHz Horizontal",
         "url": "images/aruba/ap-ant-1b-pattern-5-ghz-horizontal.jpg"
-      },
-      {
-        "label": "5 GHz Vertical",
-        "url": "images/aruba/ap-ant-1b-pattern-5-ghz-vertical-2.jpg"
-      },
-      {
-        "label": "5 GHz Vertical",
-        "url": "images/aruba/ap-ant-1b-pattern-5-ghz-vertical-3.jpg"
-      },
-      {
-        "label": "5 GHz Horizontal",
-        "url": "images/aruba/ap-ant-1b-pattern-5-ghz-horizontal-2.jpg"
-      },
-      {
-        "label": "5 GHz Horizontal",
-        "url": "images/aruba/ap-ant-1b-pattern-5-ghz-horizontal-3.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -35396,22 +35121,6 @@
       {
         "label": "5 GHz Horizontal",
         "url": "images/aruba/ap-ant-1w-pattern-5-ghz-horizontal.jpg"
-      },
-      {
-        "label": "5 GHz Vertical",
-        "url": "images/aruba/ap-ant-1w-pattern-5-ghz-vertical-2.jpg"
-      },
-      {
-        "label": "5 GHz Vertical",
-        "url": "images/aruba/ap-ant-1w-pattern-5-ghz-vertical-3.jpg"
-      },
-      {
-        "label": "5 GHz Horizontal",
-        "url": "images/aruba/ap-ant-1w-pattern-5-ghz-horizontal-2.jpg"
-      },
-      {
-        "label": "5 GHz Horizontal",
-        "url": "images/aruba/ap-ant-1w-pattern-5-ghz-horizontal-3.jpg"
       }
     ],
     "dimension_image_url": null,
@@ -61219,14 +60928,6 @@
     "image_url": "images/te-connectivity/op24516sx-91rsmm.jpg",
     "pattern_images": [
       {
-        "label": "2.4 GHz Element 1 Horizontal",
-        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-2-4-ghz-element-1-horizontal.jpg"
-      },
-      {
-        "label": "2.4 GHz Element 1 Vertical",
-        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-2-4-ghz-element-1-vertical.jpg"
-      },
-      {
         "label": "2.4 GHz Element 2 Horizontal",
         "url": "images/te-connectivity/op24516sx-91rsmm-pattern-2-4-ghz-element-2-horizontal.jpg"
       },
@@ -61241,14 +60942,6 @@
       {
         "label": "2.4 GHz Element 3 Vertical",
         "url": "images/te-connectivity/op24516sx-91rsmm-pattern-2-4-ghz-element-3-vertical.jpg"
-      },
-      {
-        "label": "5 GHz Element 1 Horizontal",
-        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-5-ghz-element-1-horizontal.jpg"
-      },
-      {
-        "label": "5 GHz Element 1 Vertical",
-        "url": "images/te-connectivity/op24516sx-91rsmm-pattern-5-ghz-element-1-vertical.jpg"
       },
       {
         "label": "5 GHz Element 2 Horizontal",
