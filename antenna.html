@@ -59,6 +59,44 @@
     .gallery-item.dimension img {
       background: #0b1220;
     }
+    .pattern-ports {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 4px 0 6px;
+    }
+    .pattern-port-chip {
+      font: inherit;
+      font-size: 0.8rem;
+      padding: 5px 12px;
+      min-height: 32px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      background: rgba(15, 23, 42, 0.6);
+      color: rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+    }
+    .pattern-port-chip:hover {
+      border-color: rgba(96, 165, 250, 0.7);
+      color: #fff;
+    }
+    .pattern-port-chip[aria-pressed="true"] {
+      background: rgba(59, 130, 246, 0.2);
+      border-color: #60a5fa;
+      color: #93c5fd;
+    }
+    .pattern-port-chip:focus-visible {
+      outline: 2px solid #60a5fa;
+      outline-offset: 2px;
+    }
+    .pattern-port-chip-all {
+      border-style: dashed;
+    }
+    .pattern-ports-note {
+      margin: 0 0 12px;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.55);
+    }
     .gallery-caption {
       margin-top: 8px;
       font-size: 0.85rem;
@@ -666,6 +704,86 @@
       });
     }
 
+    function galleryFigure(item, kind, title) {
+      const url = safeUrl(item.url || item, { allowRelative: true });
+      if (!url) return null;
+      const fig = document.createElement('figure');
+      fig.className = 'gallery-item ' + (kind || '');
+      const displayLabel = kind === 'pattern'
+        ? formatPatternCaption(item.label)
+        : (item.label || '');
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'gallery-zoom';
+      btn.setAttribute('aria-label', displayLabel ? `Expand ${displayLabel}` : `Expand ${title}`);
+      const img = document.createElement('img');
+      img.src = url;
+      img.alt = displayLabel || title;
+      img.loading = 'lazy';
+      btn.appendChild(img);
+      btn.addEventListener('click', () => openLightbox(url, displayLabel || title));
+      fig.appendChild(btn);
+      if (displayLabel) {
+        const cap = document.createElement('figcaption');
+        cap.className = 'gallery-caption';
+        cap.textContent = displayLabel;
+        fig.appendChild(cap);
+      }
+      return fig;
+    }
+
+    function fillGrid(grid, items, kind, title) {
+      grid.replaceChildren();
+      items.forEach(item => {
+        const fig = galleryFigure(item, kind, title);
+        if (fig) grid.appendChild(fig);
+      });
+    }
+
+    // Per-port datasheets (e.g. Cisco C-ANT9101, 30 plots) show one port at a
+    // time with chips to switch; plots not tied to a port always show.
+    function addPortPicker(section, grid, groups, title) {
+      const ALL = '__all__';
+      const bar = document.createElement('div');
+      bar.className = 'pattern-ports';
+      bar.setAttribute('role', 'group');
+      bar.setAttribute('aria-label', 'Choose which port to show');
+      const note = document.createElement('p');
+      note.className = 'pattern-ports-note';
+      note.setAttribute('aria-live', 'polite');
+      const buttons = [];
+      const total = groups.ports.reduce((n, g) => n + g.items.length, 0) + groups.shared.length;
+
+      function show(key) {
+        buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.port === key)));
+        let items;
+        if (key === ALL) {
+          items = sortPatternImages(groups.shared.concat(...groups.ports.map(g => g.items)));
+          note.textContent = `Showing all ${total} plots for ${groups.ports.length} ports.`;
+        } else {
+          const port = groups.ports.find(g => g.key === key);
+          items = groups.shared.concat(port.items);
+          const bands = port.bands.length ? ` (${port.bands.join(' / ')} GHz)` : '';
+          note.textContent = `Showing ${port.label}${bands}. The datasheet has plots for ${groups.ports.length} ports; pick another above.`;
+        }
+        fillGrid(grid, items, 'pattern', title);
+      }
+
+      groups.ports.map(g => ({ key: g.key, label: g.label })).concat([{ key: ALL, label: 'All ports' }]).forEach(opt => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'pattern-port-chip' + (opt.key === ALL ? ' pattern-port-chip-all' : '');
+        b.dataset.port = opt.key;
+        b.textContent = opt.label;
+        b.addEventListener('click', () => show(opt.key));
+        buttons.push(b);
+        bar.appendChild(b);
+      });
+      section.appendChild(bar);
+      section.appendChild(note);
+      show(groups.defaultKey);
+    }
+
     function addGallery(container, title, items, kind) {
       if (!items || !items.length) return;
       const ordered = kind === 'pattern' && typeof sortPatternImages === 'function'
@@ -678,33 +796,14 @@
       section.appendChild(h);
       const grid = document.createElement('div');
       grid.className = 'gallery-grid';
-      ordered.forEach(item => {
-        const url = safeUrl(item.url || item, { allowRelative: true });
-        if (!url) return;
-        const fig = document.createElement('figure');
-        fig.className = 'gallery-item ' + (kind || '');
-        const displayLabel = kind === 'pattern'
-          ? formatPatternCaption(item.label)
-          : (item.label || '');
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'gallery-zoom';
-        btn.setAttribute('aria-label', displayLabel ? `Expand ${displayLabel}` : `Expand ${title}`);
-        const img = document.createElement('img');
-        img.src = url;
-        img.alt = displayLabel || title;
-        img.loading = 'lazy';
-        btn.appendChild(img);
-        btn.addEventListener('click', () => openLightbox(url, displayLabel || title));
-        fig.appendChild(btn);
-        if (displayLabel) {
-          const cap = document.createElement('figcaption');
-          cap.className = 'gallery-caption';
-          cap.textContent = displayLabel;
-          fig.appendChild(cap);
-        }
-        grid.appendChild(fig);
-      });
+      const groups = kind === 'pattern' && typeof groupPatternsByPort === 'function'
+        ? groupPatternsByPort(items)
+        : null;
+      if (groups) {
+        addPortPicker(section, grid, groups, title);
+      } else {
+        fillGrid(grid, ordered, kind, title);
+      }
       if (!grid.children.length) return;
       section.appendChild(grid);
       container.appendChild(section);

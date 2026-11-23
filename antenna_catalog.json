@@ -18595,12 +18595,13 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/261112.jpg",
-    "images": [],
-    "pattern_images": [
+    "images": [
       {
-        "label": "5/6 GHz Horizontal",
-        "url": "images/ventev/261112-pattern-5-6-ghz-horizontal.jpg"
-      },
+        "label": "Product drawing",
+        "url": "images/ventev/261112-drawing.jpg"
+      }
+    ],
+    "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
         "url": "images/ventev/261112-pattern-2-4-ghz-vertical.jpg"
@@ -18692,12 +18693,13 @@
     "isolation": null,
     "operating_temp": null,
     "image_url": "images/ventev/239601.jpg",
-    "images": [],
-    "pattern_images": [
+    "images": [
       {
-        "label": "5/6 GHz Horizontal",
-        "url": "images/ventev/239601-pattern-5-6-ghz-horizontal.jpg"
-      },
+        "label": "Product drawing",
+        "url": "images/ventev/239601-drawing.jpg"
+      }
+    ],
+    "pattern_images": [
       {
         "label": "2.4 GHz Vertical",
         "url": "images/ventev/239601-pattern-2-4-ghz-vertical.jpg"
@@ -62192,20 +62194,12 @@
     "image_url": "images/te-connectivity/pa58-24.jpg",
     "pattern_images": [
       {
-        "label": "2.4 GHz Horizontal",
-        "url": "images/te-connectivity/pdq24499-91nm-pattern-2-4-ghz-horizontal.jpg"
-      },
-      {
-        "label": "2.4 GHz Vertical",
-        "url": "images/te-connectivity/pdq24499-91nm-pattern-2-4-ghz-vertical.jpg"
-      },
-      {
         "label": "5 GHz Horizontal",
-        "url": "images/te-connectivity/pdq24499-91nm-pattern-5-ghz-horizontal.jpg"
+        "url": "images/te-connectivity/pa58-24-pattern-5-ghz-horizontal.jpg"
       },
       {
         "label": "5 GHz Vertical",
-        "url": "images/te-connectivity/pdq24499-91nm-pattern-5-ghz-vertical.jpg"
+        "url": "images/te-connectivity/pa58-24-pattern-5-ghz-vertical.jpg"
       }
     ],
     "datasheet_urls": [
