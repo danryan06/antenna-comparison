@@ -1021,14 +1021,6 @@
             card.appendChild(reminder);
           }
 
-          if (result.status === 'vendor_listed_unverified' || result.status === 'review_required') {
-            const warn = document.createElement('p');
-            warn.className = 'compat-verify-warning';
-            warn.textContent = DISCLAIMERS.verificationRequired ||
-              'Verification required. The available evidence is incomplete or ambiguous.';
-            card.appendChild(warn);
-          }
-
           const meta = document.createElement('p');
           meta.className = 'compat-meta';
           const bits = [

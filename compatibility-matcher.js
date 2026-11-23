@@ -56,8 +56,6 @@
       'Results are based on published specifications and the evidence shown for each match. They may be incomplete, outdated, region-specific, or affected by firmware, connector variants, cables, adaptors, installation, and regulatory limits. Verify compatibility with the manufacturers before purchase or installation.',
     compact:
       'Best-effort match — verify with the manufacturers before purchase or installation.',
-    verificationRequired:
-      'Verification required. The available evidence is incomplete or ambiguous. Do not rely on this result without confirming the exact hardware and required accessories in current manufacturer documentation.',
     exportNotice:
       'Compatibility results are best-effort informational guidance, not a manufacturer approval, warranty, installation instruction, regulatory determination, or guarantee of performance. Verify all part numbers, accessories, restrictions, and regional requirements with the manufacturers before purchase or installation.',
     aboutLinkLabel: 'About compatibility results'

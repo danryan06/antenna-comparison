@@ -3472,16 +3472,6 @@ table.antenna-table td.beamwidth-cell {
   color: #cbd5e1;
 }
 
-.compat-verify-warning {
-  margin: 0.35rem 0;
-  padding: 0.55rem 0.7rem;
-  border-left: 3px solid #f59e0b;
-  background: rgba(120, 53, 15, 0.35);
-  color: #fde68a;
-  font-size: 0.85rem;
-  font-weight: 560;
-}
-
 .compat-meta {
   margin: 0.25rem 0;
   font-size: 0.85rem;
