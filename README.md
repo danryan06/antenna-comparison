@@ -25,7 +25,7 @@ Each antenna entry includes:
 - **Identity**: vendor, primary SKU (Hubbell catalog number), legacy AccelTex SKU (searchable alias)
 - **RF**: bands, frequency range, gain, beamwidth (H/V), connector, lead count, polarization, VSWR, isolation
 - **Cable / mechanical**: cable length & type, dimensions, weight, radome, mount/install type, included parts
-- **Environment**: indoor/outdoor, IP rating, wind rating, operating temperature
+- **Environment**: install rating (`Indoor`, `Outdoor`, `Indoor/Outdoor`, or not specified), applications (e.g. Warehouse), IP rating, wind rating, operating temperature
 - **Media**: product photos, radiation pattern plots, dimension drawings
 - **Sources**: dual PDF citations where AccelTex/Hubbell publish both a Hubbell SPEC and a legacy AccelTex sheet
 

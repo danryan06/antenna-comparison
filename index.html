@@ -220,6 +220,7 @@
       if (key === 'gain_dbi') return formatGainCompact(v);
       if (key === 'beamwidth') return formatBeamwidthCompact(v);
       if (key === 'lead_count') return v == null ? '' : String(v);
+      if (key === 'indoor_outdoor') return formatEnvironment(v);
       return normalizeString(v);
     }
 

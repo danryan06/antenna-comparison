@@ -231,4 +231,15 @@ assert.ok(sample, 'expected authoring catalog to include maintainer notes');
 const projected = submit.toPublicCatalogEntry(sample);
 assert.ok(!projected.field_notes && !projected.internal_notes, 'toPublicCatalogEntry must drop maintainer notes');
 assert.strictEqual(projected.sku, sample.sku);
+
+// Maintainer-curated applications tag survives a round trip through the edit form,
+// and the form only ever offers the three install environments.
+{
+  const warehouse = catalog.find(entry => Array.isArray(entry.applications) && entry.applications.length);
+  assert.ok(warehouse, 'expected at least one entry with applications');
+  const rebuilt = submit.buildAntennaEntry(submit.entryToFormFields(warehouse), warehouse);
+  assert.deepStrictEqual(rebuilt.applications, warehouse.applications, 'edit form must preserve applications');
+  assert.deepStrictEqual(submit.ENVIRONMENTS, ['Indoor', 'Outdoor', 'Indoor/Outdoor']);
+}
+
 console.log('OK: antenna submit helpers and issue apply');

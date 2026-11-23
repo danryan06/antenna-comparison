@@ -8,6 +8,10 @@ const root = path.join(__dirname, '..', '..');
 const dataPath = path.join(root, 'antenna_data.json');
 const FORMS = new Set(['Omni', 'Patch', 'High-density patch']);
 const required = ['vendor', 'sku', 'form', 'bands', 'gain_dbi', 'beamwidth', 'connector'];
+const { ENVIRONMENTS } = require(path.join(root, 'antenna-submit.js'));
+// Install environment is only ever Indoor / Outdoor / Indoor/Outdoor (or unset when
+// the datasheet does not say). Where an antenna is used goes in applications.
+const APPLICATIONS = new Set(['Warehouse']);
 
 const { frequencyToBand } = require(path.join(root, 'antenna-format.js'));
 const warnings = [];
@@ -43,6 +47,18 @@ data.forEach((entry, index) => {
   });
   if (entry.form && !FORMS.has(entry.form)) {
     fail(`${label}: form must be one of ${Array.from(FORMS).join(' | ')}`);
+  }
+  if (entry.indoor_outdoor != null && ENVIRONMENTS.indexOf(entry.indoor_outdoor) === -1) {
+    fail(`${label}: indoor_outdoor must be one of ${ENVIRONMENTS.join(' | ')} or null (got "${entry.indoor_outdoor}"); use applications for things like Warehouse`);
+  }
+  if (entry.applications != null) {
+    if (!Array.isArray(entry.applications)) {
+      fail(`${label}: applications must be an array`);
+    } else {
+      entry.applications.forEach(app => {
+        if (!APPLICATIONS.has(app)) fail(`${label}: unknown application "${app}" (known: ${Array.from(APPLICATIONS).join(', ')})`);
+      });
+    }
   }
   const slug = `${String(entry.vendor || '').toLowerCase()}|${String(entry.sku || '').toLowerCase()}`;
   if (seen.has(slug)) fail(`${label}: duplicate vendor+sku (also entry[${seen.get(slug)}])`);

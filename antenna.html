@@ -450,6 +450,7 @@
       ['name', 'Name'],
       ['form', 'Form'],
       ['indoor_outdoor', 'Indoor/Outdoor'],
+      ['applications', 'Application'],
       ['bands', 'Bands'],
       ['frequency_range', 'Frequency Range'],
       ['gain_dbi', 'Gain (dBi)'],
@@ -585,6 +586,8 @@
     }
 
     function formatField(key, value) {
+      if (key === 'indoor_outdoor') return formatEnvironment(value);
+      if (key === 'applications') return Array.isArray(value) ? value.join(', ') : normalizeString(value);
       if (key === 'bands') return formatBands(value);
       if (key === 'gain_dbi') return formatGainCompact(value) || formatBandObject(value, 'gain');
       if (key === 'beamwidth') return formatBeamwidthCompact(value) || formatBandObject(value, 'beam');
@@ -931,8 +934,10 @@
         detailsEl.innerHTML = '';
         PUBLIC_FIELDS.forEach(([key, label]) => {
           if (INTERNAL_ONLY_KEYS.has(key)) return;
-          if (!Object.prototype.hasOwnProperty.call(entry, key)) return;
-          if (entry[key] == null || entry[key] === '') return;
+          // Environment always shows, as "Not specified" when the datasheet is silent.
+          const alwaysShow = key === 'indoor_outdoor';
+          if (!alwaysShow && !Object.prototype.hasOwnProperty.call(entry, key)) return;
+          if (!alwaysShow && (entry[key] == null || entry[key] === '' || (Array.isArray(entry[key]) && !entry[key].length))) return;
           const keyEl = document.createElement('dt');
           keyEl.className = 'key';
           keyEl.textContent = label;

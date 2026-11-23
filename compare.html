@@ -203,6 +203,7 @@
     let selected = [];
 
     function formatField(key, value) {
+      if (key === 'indoor_outdoor') return formatEnvironment(value);
       if (key === 'bands') return formatBands(value);
       if (key === 'gain_dbi') return formatGainCompact(value) || formatBandObject(value, 'gain');
       if (key === 'beamwidth') return formatBeamwidthCompact(value) || formatBandObject(value, 'beam');
