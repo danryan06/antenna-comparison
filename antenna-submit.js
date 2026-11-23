@@ -83,24 +83,38 @@
     return false;
   }
 
-  function sanitizeHttpUrl(value) {
-    const raw = trim(value);
-    if (!raw) return '';
+  // Prefer the shared sanitizer from antenna-format.js (Node require or browser global).
+  // Pages must load antenna-format.js before antenna-submit.js.
+  function sharedSafeUrl() {
     try {
-      const parsed = new URL(raw);
-      if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return '';
-      return raw;
+      if (typeof require === 'function') {
+        const format = require('./antenna-format.js');
+        if (format && typeof format.safeUrl === 'function') return format.safeUrl;
+      }
     } catch (err) {
-      return '';
+      /* browser path loads antenna-format.js as a classic script */
     }
+    const g = typeof globalThis !== 'undefined' ? globalThis : null;
+    if (g && typeof g.safeUrl === 'function') return g.safeUrl;
+    return null;
+  }
+
+  function requireSafeUrl() {
+    const shared = sharedSafeUrl();
+    if (!shared) {
+      throw new Error(
+        'safeUrl is unavailable; load antenna-format.js before antenna-submit.js'
+      );
+    }
+    return shared;
+  }
+
+  function sanitizeHttpUrl(value) {
+    return requireSafeUrl()(value, { allowRelative: false });
   }
 
   function sanitizeAssetUrl(value) {
-    const raw = trim(value);
-    if (!raw) return '';
-    if (/^[a-z][a-z0-9+.-]*:/i.test(raw)) return sanitizeHttpUrl(raw);
-    if (raw.startsWith('//') || raw.startsWith('/') || raw.includes('\\') || raw.includes('..')) return '';
-    return raw;
+    return requireSafeUrl()(value, { allowRelative: true });
   }
 
   function splitList(text) {

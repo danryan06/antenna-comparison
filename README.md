@@ -1,10 +1,10 @@
 # AntennaComparison
 
-An open-source database for comparing Wi-Fi antennas (indoor and outdoor). Explore, filter, and compare antennas across vendors — starting with AccelTex / Hubbell, with Ventev and OEM antennas planned next.
+An open-source database for comparing Wi-Fi antennas (indoor and outdoor). Explore, filter, and compare antennas across vendors — AccelTex / Hubbell, Ventev, OEM lines, and major third-party manufacturers.
 
 Sibling of [AP Comparison](https://apcomparison.com) and [Switch Comparison](https://switchcomparison.com).
 
-🌐 **Live Site:** [antennacomparison.com](https://antennacomparison.com) *(DNS pending)* | [GitHub Pages](https://danryan06.github.io/antenna-comparison)
+🌐 **Live Site:** [GitHub Pages](https://danryan06.github.io/antenna-comparison) · custom domain `antennacomparison.com` *(DNS pending — no tracked `CNAME` until the domain is verified)*
 
 ## Features
 
@@ -29,7 +29,7 @@ Each antenna entry includes:
 - **Media**: product photos, radiation pattern plots, dimension drawings
 - **Sources**: dual PDF citations where AccelTex/Hubbell publish both a Hubbell SPEC and a legacy AccelTex sheet
 
-`field_notes` (merge/conflict notes) and `internal_notes` (including vendor-listed compatible APs) are maintainer-only. They stay in the authoring file `antenna_data.json` for contributors and automation, are **never** shown in the UI, and are **not** included in the public Pages catalog (`antenna_catalog.json`).
+`field_notes` (merge/conflict notes) and `internal_notes` (including vendor-listed compatible APs) are maintainer-only. They stay in the authoring file `antenna_data.json` for contributors and automation, are **never** shown in the UI, and are **not** included in the public Pages catalog (`antenna_catalog.json`). Because this repository is public, anyone who clones it can still read authoring notes — do not store secrets there. See [SECURITY.md](./SECURITY.md).
 
 ## How to use
 
@@ -38,6 +38,25 @@ Each antenna entry includes:
 3. **Choose Columns** to focus the table
 4. Open a row for the full detail page (photos, patterns, dimensions, sources)
 5. Tick two or more rows and click **Compare**
+
+## Local development
+
+```bash
+# From the repo root — serve over HTTP (file:// cannot fetch the catalog)
+python3 -m http.server 8000 --bind 127.0.0.1
+# then open http://127.0.0.1:8000/
+
+node .github/scripts/validate-data.js
+node .github/scripts/validate-compatibility.js
+node .github/scripts/build-public-catalog.js --check
+node .github/scripts/test-antenna-submit.js
+node .github/scripts/test-compatibility-matcher.js
+node .github/scripts/test-datasheet-label-xss.js
+node .github/scripts/test-url-sanitizer.js
+node .github/scripts/test-html-sinks.js
+```
+
+Supported browsers: current Chrome, Firefox, and Safari/iOS Safari (desktop + ~375px mobile).
 
 ## Contributing
 
@@ -56,8 +75,10 @@ Always cite vendor datasheets. When AccelTex/Hubbell publish dual PDFs, merge fi
 - **Frontend**: pure HTML, CSS, and JavaScript (no frameworks) — same family as AP Comparison
 - **Authoring data**: `antenna_data.json` (full catalog, including maintainer-only notes)
 - **Public Pages catalog**: `antenna_catalog.json` (allowlisted public fields only; this is what the site loads)
-- **Hosting**: GitHub Pages (`main` / root), with `CNAME` for `antennacomparison.com`
-- **License**: MIT
+- **Hosting**: GitHub Pages (`main` / root). Custom domain is optional until DNS is ready; do not add `CNAME` until `antennacomparison.com` resolves to Pages
+- **robots.txt**: crawler hints only (e.g. `Disallow: /antenna_data.json`). It does **not** hide maintainer notes — `antenna_data.json` remains public in the GitHub repo and is still fetchable; the site loads `antenna_catalog.json`
+- **Security**: see [SECURITY.md](./SECURITY.md)
+- **License**: MIT (code). Vendor media remains vendor property — see License below
 
 Regenerate the public catalog after authoring changes:
 
@@ -86,8 +107,10 @@ CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-onl
 ├── submit.html             # Submit a new antenna
 ├── compare.html            # Side-by-side compare
 ├── finder.html             # Feature Finder (+ AP compatibility lookup)
+├── 404.html                # Branded not-found recovery (base href for Pages project path)
+├── robots.txt              # Crawler hints only; does not hide public repo files
 ├── style.css               # Shared styling
-├── antenna-format.js       # Display helpers
+├── antenna-format.js       # Display helpers + shared URL sanitizer
 ├── compatibility-matcher.js
 ├── connector-normalize.js
 ├── data/compatibility/     # Pinned AP RF export + generated index
@@ -97,7 +120,7 @@ CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-onl
 ├── antenna_catalog.meta.json
 ├── antenna_template.json   # Entry template
 ├── images/                 # Product photos & patterns
-├── CNAME                   # antennacomparison.com
+├── SECURITY.md             # Vulnerability reporting
 ├── LICENSE                 # MIT
 └── README.md
 ```

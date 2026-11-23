@@ -5,10 +5,17 @@
   <title>Edit an antenna — AntennaComparison</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="description" content="Propose corrections to an existing AntennaComparison catalog entry via a prefilled GitHub issue." />
+  <meta property="og:title" content="Edit an antenna — AntennaComparison" />
+  <meta property="og:description" content="Propose corrections to an existing AntennaComparison catalog entry via a prefilled GitHub issue." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://danryan06.github.io/antenna-comparison/logo.png" />
+  <meta name="twitter:card" content="summary" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <div class="header-content">
       <div class="header-left">
@@ -18,7 +25,7 @@
         </a>
       </div>
 
-      <nav class="header-nav">
+      <nav class="header-nav" aria-label="Primary">
         <a href="index.html" class="nav-link" data-page="index">
           <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="8" y1="6" x2="21" y2="6"/>
@@ -69,12 +76,14 @@
     </div>
   </header>
 
+  <main id="main-content">
+
   <div class="container" style="margin-top: 24px;">
     <div class="actions">
       <a class="btn-link" id="back-link" href="index.html">&larr; Back to Antenna Table</a>
     </div>
 
-    <h2>Edit an antenna</h2>
+    <h1 class="page-title">Edit an antenna</h1>
     <p class="subtitle">
       Update the public specs, generate the JSON, then open a prefilled GitHub issue.
       The form covers the catalog fields only.
@@ -118,6 +127,8 @@
       </div>
     </div>
   </div>
+
+  </main>
 
   <script src="antenna-format.js"></script>
   <script src="antenna-submit.js"></script>

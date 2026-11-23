@@ -5,10 +5,18 @@
   <title>Feature Finder — AntennaComparison</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="description" content="Filter Wi-Fi antennas by form, bands, connector, and environment. Optional AP compatibility lookup with manufacturer-verification disclaimers." />
+  <link rel="canonical" href="https://danryan06.github.io/antenna-comparison/finder.html" />
+  <meta property="og:title" content="Feature Finder — AntennaComparison" />
+  <meta property="og:description" content="Filter Wi-Fi antennas by form, bands, connector, and environment. Optional AP compatibility lookup with manufacturer-verification disclaimers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://danryan06.github.io/antenna-comparison/logo.png" />
+  <meta name="twitter:card" content="summary" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <div class="header-content">
       <div class="header-left">
@@ -69,6 +77,8 @@
     </div>
   </header>
 
+  <main id="main-content">
+
   <div class="container finder-page" style="margin-top: 24px;">
     <div class="actions finder-actions-top">
       <a class="btn-link finder-action-secondary" href="index.html">Back to Antenna Table</a>
@@ -77,6 +87,7 @@
 
     <div class="card finder-card">
       <span class="badge">Feature Finder</span>
+      <h1 class="page-title">Feature Finder</h1>
       <p class="subtitle" style="margin-top:0.5rem;">
         Set any combination of filters — results update immediately. Choose an access point to see best-effort antenna compatibility.
       </p>
@@ -199,7 +210,7 @@
           <div id="active-filters" class="active-filters" style="display:none;"></div>
 
           <div class="results-scroll">
-            <div id="results" class="results-table"></div>
+            <div id="results" class="results-table" role="table" aria-label="Matching antennas"></div>
           </div>
           <div id="empty-state" class="empty-state" style="display:none;">
             <p>No antennas match every selected requirement.</p>
@@ -214,6 +225,8 @@
       </section>
     </div>
   </div>
+
+  </main>
 
   <button id="compare-fab" class="btn-primary floating-compare" style="display:none;" type="button" disabled>Compare (0)</button>
 
@@ -1138,7 +1151,9 @@
       header.setAttribute('role', 'row');
 
       const spacer = document.createElement('div');
-      spacer.className = 'result-cell';
+      spacer.className = 'row-select';
+      spacer.setAttribute('role', 'columnheader');
+      spacer.setAttribute('aria-label', 'Select');
       header.appendChild(spacer);
 
       RESULT_COLUMNS.forEach(col => {
@@ -1169,6 +1184,8 @@
 
       const actions = document.createElement('div');
       actions.className = 'result-cell';
+      actions.setAttribute('role', 'columnheader');
+      actions.setAttribute('aria-label', 'Actions');
       header.appendChild(actions);
       container.appendChild(header);
     }
@@ -1198,10 +1215,13 @@
       matches.forEach(entry => {
         const row = document.createElement('div');
         row.className = 'result-row result-row-antenna';
+        row.setAttribute('role', 'row');
 
+        const selectCell = document.createElement('div');
+        selectCell.className = 'row-select';
+        selectCell.setAttribute('role', 'cell');
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
-        checkbox.className = 'row-select';
         checkbox.setAttribute(
           'aria-label',
           `Select ${entry.vendor || ''} ${entry.sku || ''} for comparison`.trim()
@@ -1213,11 +1233,13 @@
           else selectedIds.delete(entry._slug);
           updateCompareFab();
         });
-        row.appendChild(checkbox);
+        selectCell.appendChild(checkbox);
+        row.appendChild(selectCell);
 
         RESULT_COLUMNS.forEach(col => {
           const cell = document.createElement('div');
           cell.className = 'result-cell';
+          cell.setAttribute('role', 'cell');
           if (col.key === 'vendor') cell.classList.add('result-vendor');
           if (col.key === 'sku') cell.classList.add('result-model');
           if (col.key === 'form') cell.classList.add('result-form');
@@ -1243,6 +1265,7 @@
 
         const actions = document.createElement('div');
         actions.className = 'result-cell result-actions';
+        actions.setAttribute('role', 'cell');
         const detail = document.createElement('a');
         detail.href = detailHrefFor(entry._slug);
         detail.className = 'btn-link btn-link-ghost btn-link-small';

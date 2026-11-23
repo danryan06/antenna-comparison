@@ -1150,11 +1150,13 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
   grid-template-columns: 1fr 2fr;
   gap: 0.5rem 0.75rem;
 }
-.kv-grid .key {
+.kv-grid .key,
+.kv-grid dt.key {
   color: #9ca3af;
   font-size: 0.85rem;
 }
-.kv-grid .val {
+.kv-grid .val,
+.kv-grid dd.val {
   color: #e5e7eb;
   font-size: 0.9rem;
   word-break: break-word;
@@ -1274,10 +1276,14 @@ tbody tr:nth-child(5) { animation-delay: 120ms; }
   min-height: 48px;
 }
 
-/* Row select checkbox in vendor cell */
-.row-select {
+/* Browse-table checkbox in the vendor cell (not Finder result-row wrappers) */
+input.row-select {
   margin-right: 0.4rem;
   transform: translateY(1px);
+}
+.result-row > .row-select {
+  margin-right: 0;
+  transform: none;
 }
 .form-actions {
   margin-top: 1rem;
@@ -2470,86 +2476,80 @@ a.inline-link:focus-visible {
     -webkit-overflow-scrolling: touch;
   }
   
-  /* Table font sizes - MORE SPECIFIC with font boosting prevention */
-  table {
-    font-size: 11px;
-    width: max-content; /* Allow table to be wider than container */
+  /* Antenna browse table — readable mobile type; sticky vendor/SKU */
+  table.antenna-table {
+    font-size: 14px;
+    width: max-content;
     min-width: 100%;
-    display: table; /* Keep as table, don't change to block */
+    display: table;
     border-collapse: collapse;
-    text-size-adjust: none; /* Prevent browser font boosting */
-    -webkit-text-size-adjust: none; /* Safari */
-    -moz-text-size-adjust: none; /* Firefox */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
-  
-  /* Apply consistent font size to ALL cells */
-  table th,
-  table td {
+
+  table.antenna-table th,
+  table.antenna-table td {
     padding: 10px 8px;
-    font-size: 11px !important;
+    font-size: 14px;
     white-space: nowrap;
-    text-size-adjust: none;
-    -webkit-text-size-adjust: none;
   }
-  
-  /* Remove any inherited font-size overrides on specific columns */
-  table th:nth-child(5),
-  table td:nth-child(5),
-  table th:nth-child(6),
-  table td:nth-child(6) {
-    font-size: 11px !important;
-    width: auto; /* Don't use fixed widths that might cause scaling */
+
+  table.antenna-table th[data-key="beamwidth"],
+  table.antenna-table td.beamwidth-cell {
+    white-space: pre;
   }
-  
-  /* Ensure PoE class columns don't word-break differently */
-  table td:nth-child(5),
-  table td:nth-child(6) {
-    white-space: nowrap !important;
-    word-break: normal !important;
-  }
-  
-  /* Sticky first two columns - CORRECTED */
-  th:nth-child(1),
-  td:nth-child(1) {
+
+  table.antenna-table th[data-key="vendor"],
+  table.antenna-table td:nth-child(1) {
     position: sticky;
     left: 0;
     z-index: 2;
     background: #020617;
-    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1); /* Visual separation */
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    min-width: 100px;
   }
-  
-  th:nth-child(2),
-  td:nth-child(2) {
+
+  table.antenna-table th[data-key="sku"],
+  table.antenna-table td:nth-child(2) {
     position: sticky;
-    left: 100px; /* Adjust based on column 1 actual width */
+    left: 100px;
     z-index: 2;
     background: #020617;
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    min-width: 120px;
   }
-  
-  /* Ensure header sticky columns are on top */
-  th:nth-child(1),
-  th:nth-child(2) {
+
+  table.antenna-table thead th[data-key="vendor"],
+  table.antenna-table thead th[data-key="sku"] {
     z-index: 3;
   }
-  
-  /* Set minimum widths for all columns to prevent squishing */
-  th:nth-child(1), td:nth-child(1) { min-width: 100px; } /* Vendor */
-  th:nth-child(2), td:nth-child(2) { min-width: 120px; } /* Model */
-  th:nth-child(3), td:nth-child(3) { min-width: 140px; } /* Wi-Fi Gen */
-  th:nth-child(4), td:nth-child(4) { min-width: 130px; } /* Spatial Streams */
-  th:nth-child(5), td:nth-child(5) { min-width: 110px; } /* Min PoE */
-  th:nth-child(6), td:nth-child(6) { min-width: 130px; } /* Rec PoE */
-  th:nth-child(7), td:nth-child(7) { min-width: 160px; } /* Behavior */
-  th:nth-child(8), td:nth-child(8) { min-width: 140px; } /* Ethernet */
-  th:nth-child(9), td:nth-child(9) { min-width: 180px; } /* Radios/IoT */
-  th:nth-child(10), td:nth-child(10) { min-width: 100px; } /* Antenna */
-  th:nth-child(11), td:nth-child(11) { min-width: 100px; } /* Form Factor */
-  th:nth-child(12), td:nth-child(12) { min-width: 140px; } /* Dimensions */
-  th:nth-child(13), td:nth-child(13) { min-width: 80px; } /* Weight */
-  th:nth-child(14), td:nth-child(14) { min-width: 140px; } /* Connectors */
-  th:nth-child(15), td:nth-child(15) { min-width: 140px; } /* Temp */
-  th:nth-child(16), td:nth-child(16) { min-width: 90px; } /* MSRP */
+
+  table.antenna-table th[data-key="form"],
+  table.antenna-table td:nth-child(3) { min-width: 110px; }
+  table.antenna-table th[data-key="bands"],
+  table.antenna-table td:nth-child(4) { min-width: 110px; }
+  table.antenna-table th[data-key="gain_dbi"],
+  table.antenna-table td:nth-child(5) { min-width: 100px; }
+  table.antenna-table th[data-key="beamwidth"],
+  table.antenna-table td:nth-child(6) { min-width: 140px; }
+  table.antenna-table th[data-key="connector"],
+  table.antenna-table td:nth-child(7) { min-width: 120px; }
+  table.antenna-table th[data-key="lead_count"],
+  table.antenna-table td:nth-child(8) { min-width: 70px; }
+  table.antenna-table th[data-key="indoor_outdoor"],
+  table.antenna-table td:nth-child(9) { min-width: 120px; }
+  table.antenna-table th[data-key="polarization"],
+  table.antenna-table td:nth-child(10) { min-width: 110px; }
+  table.antenna-table th[data-key="cable_length"],
+  table.antenna-table td:nth-child(11) { min-width: 110px; }
+  table.antenna-table th[data-key="dimensions"],
+  table.antenna-table td:nth-child(12) { min-width: 140px; }
+  table.antenna-table th[data-key="weight"],
+  table.antenna-table td:nth-child(13) { min-width: 80px; }
+  table.antenna-table th[data-key="ip_rating"],
+  table.antenna-table td:nth-child(14) { min-width: 90px; }
+  table.antenna-table th[data-key="legacy_sku"],
+  table.antenna-table td:nth-child(15) { min-width: 140px; }
   
   /* Filter bar mobile optimization */
   .filter-bar {
@@ -3236,9 +3236,64 @@ a.inline-link:focus-visible {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  z-index: 10000;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  background: #0f172a;
+  color: #f8fafc;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  text-decoration: none;
+  font-weight: 600;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0);
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+.page-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #e2e8f0;
+}
+
+.catalog-disclaimer,
+.provenance-note {
+  margin: 0.75rem 0 0;
+  padding: 0.75rem 0.9rem;
+  border-left: 3px solid rgba(96, 165, 250, 0.55);
+  background: rgba(15, 23, 42, 0.55);
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.kv-grid {
+  margin: 0;
+}
+
+.kv-grid dt.key,
+.kv-grid .key {
+  margin: 0;
+}
+
+.kv-grid dd.val,
+.kv-grid .val {
+  margin: 0;
 }
 
 table.antenna-table tbody td {

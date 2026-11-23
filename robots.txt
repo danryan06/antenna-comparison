@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+# Only takes effect once served from a domain root (custom domain).
+# antenna_data.json is public in the GitHub repo regardless; this only reduces crawler indexing.
+Disallow: /antenna_data.json

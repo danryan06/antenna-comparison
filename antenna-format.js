@@ -26,18 +26,42 @@ function slugifyAntenna(entry) {
     .replace(/^-+|-+$/g, "");
 }
 
+/**
+ * Shared URL sanitizer for display and submission paths.
+ * Absolute: http(s) only. Relative (opt-in): no scheme, no //, no \, no
+ * absolute-root "/", and no ".." path segments (encoded or raw).
+ */
 function safeUrl(value, options = {}) {
   const raw = String(value || "").trim();
   if (!raw) return "";
+  // Reject control characters used to obfuscate schemes (e.g. java\tscript:).
+  if (/[\u0000-\u001F\u007F]/.test(raw)) return "";
   const allowRelative = options.allowRelative === true;
   const hasScheme = /^[a-z][a-z0-9+.-]*:/i.test(raw);
   if (!hasScheme) {
-    if (!allowRelative || raw.startsWith("//") || raw.includes("\\")) return "";
+    if (!allowRelative) return "";
+    if (raw.startsWith("//") || raw.startsWith("/") || raw.includes("\\")) return "";
+    // Reject traversal before and after percent-decoding (e.g. %2e%2e).
+    let decoded = raw;
+    try {
+      decoded = decodeURIComponent(raw);
+    } catch (err) {
+      return "";
+    }
+    if (
+      decoded.includes("\\") ||
+      decoded.split(/[/?#]/).some(part => part === "..") ||
+      raw.split(/[/?#]/).some(part => part === "..")
+    ) {
+      return "";
+    }
     return raw;
   }
   try {
     const parsed = new URL(raw);
-    return parsed.protocol === "http:" || parsed.protocol === "https:" ? parsed.href : "";
+    // Keep the caller’s string when valid so Unicode path segments round-trip
+    // unchanged (URL.href would percent-encode them).
+    return parsed.protocol === "http:" || parsed.protocol === "https:" ? raw : "";
   } catch (err) {
     return "";
   }
