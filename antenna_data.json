@@ -878,7 +878,7 @@
       "ip_rating": "Taken from AccelTex sheet (IP66).",
       "weight": "Not listed on either sheet reviewed.",
       "pattern_images": "AccelTex sheet overlays Horizontal + Vertical on one polar plot per band. Filenames use -horizontal-vertical so both orientations are denoted; plots were not split.",
-      "applications": "2026-11-23 Hubbell SPEC: 'We call this one our \"Half Warehouse\" antenna'; ideal for 'Half Warehouse' coverage."
+      "applications": "2026-11-23 Hubbell SPEC: 'We call this one our \"Half Warehouse\" antenna'; ideal for 'Half Warehouse' coverage. 2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -7232,7 +7232,7 @@
       "operating_temp": "Operating temperature taken from AccelTex sheet; Hubbell SPEC omits it.",
       "cable_type": "Hubbell abbreviates the cable as RG402 Plen; AccelTex sheet spells RG402 Plenum.",
       "pattern_images": "AccelTex sheet overlays horizontal and vertical on one plot per band. Saved as one horizontal-vertical file per band; plots were not split.",
-      "applications": "2026-11-23 Hubbell 'Warehouse & Manufacturing' brochure (hubbellcdn.com/brochure/2302-Warehouses-Brochure-Can-EN-V1.pdf) lists ATS-OP-245-13-4NP-36 and ATS-OP-245-6-4NP-36 as antennas designed for warehouse coverage; the FR edition lists both in N-style, RPSMA and RPTNC versions."
+      "applications": "2026-11-23 Hubbell 'Warehouse & Manufacturing' brochure (hubbellcdn.com/brochure/2302-Warehouses-Brochure-Can-EN-V1.pdf) lists ATS-OP-245-13-4NP-36 and ATS-OP-245-6-4NP-36 as antennas designed for warehouse coverage; the FR edition lists both in N-style, RPSMA and RPTNC versions. 2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -7372,7 +7372,7 @@
       "operating_temp": "Operating temperature taken from AccelTex sheet; Hubbell SPEC omits it.",
       "cable_type": "Hubbell abbreviates the cable as RG402 Plen; AccelTex sheet spells RG402 Plenum.",
       "pattern_images": "AccelTex sheet overlays horizontal and vertical on one plot per band. Saved as one horizontal-vertical file per band; plots were not split.",
-      "applications": "2026-11-23 Hubbell 'Warehouse & Manufacturing' brochure (hubbellcdn.com/brochure/2302-Warehouses-Brochure-Can-EN-V1.pdf) lists ATS-OP-245-13-4NP-36 and ATS-OP-245-6-4NP-36 as antennas designed for warehouse coverage; the FR edition lists both in N-style, RPSMA and RPTNC versions."
+      "applications": "2026-11-23 Hubbell 'Warehouse & Manufacturing' brochure (hubbellcdn.com/brochure/2302-Warehouses-Brochure-Can-EN-V1.pdf) lists ATS-OP-245-13-4NP-36 and ATS-OP-245-6-4NP-36 as antennas designed for warehouse coverage; the FR edition lists both in N-style, RPSMA and RPTNC versions. 2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -7506,7 +7506,7 @@
       "operating_temp": "Operating temperature taken from AccelTex sheet; Hubbell SPEC omits it.",
       "cable_type": "Hubbell abbreviates the cable as RG402 Plen; AccelTex sheet spells RG402 Plenum.",
       "pattern_images": "AccelTex sheet overlays horizontal and vertical on one plot per band. Saved as one horizontal-vertical file per band; plots were not split.",
-      "applications": "2026-11-23 Hubbell 'Warehouse & Manufacturing' brochure (hubbellcdn.com/brochure/2302-Warehouses-Brochure-Can-EN-V1.pdf) lists ATS-OP-245-13-4NP-36 and ATS-OP-245-6-4NP-36 as antennas designed for warehouse coverage; the FR edition lists both in N-style, RPSMA and RPTNC versions."
+      "applications": "2026-11-23 Hubbell 'Warehouse & Manufacturing' brochure (hubbellcdn.com/brochure/2302-Warehouses-Brochure-Can-EN-V1.pdf) lists ATS-OP-245-13-4NP-36 and ATS-OP-245-6-4NP-36 as antennas designed for warehouse coverage; the FR edition lists both in N-style, RPSMA and RPTNC versions. 2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -7549,6 +7549,9 @@
     "name": "2.4/5 GHz 13 dBi 6 Element Indoor/Outdoor Patch Antenna with N-Style",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -7637,7 +7640,8 @@
       "ip_rating": "Taken from AccelTex sheet (IP66).",
       "vswr": "Taken from AccelTex sheet (≤1.5:1, max 2.0). Hubbell lists Voltage Ratio ≤1.5:1, Max 2.0.",
       "cable_type": "Hubbell abbreviates the cable as RG402 Plen; AccelTex sheet spells RG402 Plenum.",
-      "pattern_images": "AccelTex sheet overlays horizontal and vertical on one plot per band. Saved as one horizontal-vertical file per band; plots were not split."
+      "pattern_images": "AccelTex sheet overlays horizontal and vertical on one plot per band. Saved as one horizontal-vertical file per band; plots were not split.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -7681,6 +7685,9 @@
     "name": "2.4/5 GHz 13 dBi 6 Element Indoor/Outdoor Patch Antenna with RPSMA",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -7770,7 +7777,8 @@
       "vswr": "Taken from AccelTex sheet (≤1.5:1, max 2.0). Hubbell lists Voltage Ratio ≤1.5:1, Max 2.0.",
       "operating_temp": "Operating temperature taken from AccelTex sheet; Hubbell SPEC omits it.",
       "cable_type": "Hubbell abbreviates the cable as RG402 Plen; AccelTex sheet spells RG402 Plenum.",
-      "pattern_images": "AccelTex sheet overlays horizontal and vertical on one plot per band. Saved as one horizontal-vertical file per band; plots were not split."
+      "pattern_images": "AccelTex sheet overlays horizontal and vertical on one plot per band. Saved as one horizontal-vertical file per band; plots were not split.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -7813,6 +7821,9 @@
     "name": "2.4/5 GHz 13 dBi 6 Element Indoor/Outdoor Patch Antenna with RPTNC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -7902,7 +7913,8 @@
       "cable_length": "Cable length taken from AccelTex sheet; Hubbell SPEC omits it.",
       "vswr": "Taken from AccelTex sheet (≤1.5:1, max 2.0). Hubbell lists Voltage Ratio ≤1.5:1, Max 2.0.",
       "cable_type": "Hubbell abbreviates the cable as RG402 Plen; AccelTex sheet spells RG402 Plenum.",
-      "pattern_images": "AccelTex sheet overlays horizontal and vertical on one plot per band. Saved as one horizontal-vertical file per band; plots were not split."
+      "pattern_images": "AccelTex sheet overlays horizontal and vertical on one plot per band. Saved as one horizontal-vertical file per band; plots were not split.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -10414,6 +10426,9 @@
     "name": "2.4/5 GHz 8 dBi 4 Element Indoor/Outdoor Patch Antenna with N-Style",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -10493,7 +10508,8 @@
       "weight": "Weight is not listed on the Hubbell SPEC or the AccelTex sheet reviewed.",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
       "vswr": "Taken from AccelTex sheet (<1.5:1 Max: 2.0). Hubbell lists Voltage Ratio < 1.5:1, Max 2.0.",
-      "pattern_images": "Each band plot overlays horizontal and vertical traces (legend is inside the AccelTex figure). Saved as one horizontal-vertical file per band."
+      "pattern_images": "Each band plot overlays horizontal and vertical traces (legend is inside the AccelTex figure). Saved as one horizontal-vertical file per band.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -10542,6 +10558,9 @@
     "name": "2.4/5 GHz 8 dBi 4 Element Indoor/Outdoor Patch Antenna with RPTNC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -10621,7 +10640,8 @@
       "ip_rating": "Taken from AccelTex sheet (IP66).",
       "mount_type": "Hubbell SPEC omits installation type. AccelTex drawing note: threaded inserts labeled \"B\" are 1/4\"-20 TPI and are meant for I-beam clamps.",
       "vswr": "Taken from AccelTex sheet (<1.5:1 Max: 2.0). Hubbell lists Voltage Ratio < 1.5:1, max 2.0.",
-      "pattern_images": "Each band plot overlays horizontal and vertical traces (legend is inside the AccelTex figure). Saved as one horizontal-vertical file per band."
+      "pattern_images": "Each band plot overlays horizontal and vertical traces (legend is inside the AccelTex figure). Saved as one horizontal-vertical file per band.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -10665,6 +10685,9 @@
     "name": "2.4/5 GHz 8 dBi 6 Element Indoor/Outdoor Patch Antenna with N-Style",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -10752,7 +10775,8 @@
       "weight": "Weight is not listed on the Hubbell SPEC or the AccelTex sheet reviewed.",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
       "vswr": "Taken from AccelTex sheet (<1.5).",
-      "pattern_images": "AccelTex sheet shows separate H-plane and V-plane plots for each band."
+      "pattern_images": "AccelTex sheet shows separate H-plane and V-plane plots for each band.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -10796,6 +10820,9 @@
     "name": "2.4/5 GHz 8 dBi 6 Element Indoor/Outdoor Patch Antenna with RPSMA",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -10888,7 +10915,8 @@
       "weight": "Weight is not listed on the Hubbell SPEC or the AccelTex sheet reviewed.",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
       "vswr": "Taken from AccelTex sheet (<1.5). Hubbell lists Voltage Ratio ≤1.5.",
-      "pattern_images": "AccelTex sheet shows separate H-plane and V-plane plots for each band."
+      "pattern_images": "AccelTex sheet shows separate H-plane and V-plane plots for each band.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -10931,6 +10959,9 @@
     "name": "2.4/5 GHz 8 dBi 6 Element Indoor/Outdoor Patch Antenna with RPTNC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -11023,7 +11054,8 @@
       "weight": "Weight is not listed on the Hubbell SPEC or the AccelTex sheet reviewed.",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
       "vswr": "Taken from AccelTex sheet (<1.5). Hubbell lists Voltage Ratio ≤1.5.",
-      "pattern_images": "AccelTex sheet shows separate H-plane and V-plane plots for each band."
+      "pattern_images": "AccelTex sheet shows separate H-plane and V-plane plots for each band.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -13581,6 +13613,9 @@
     "name": "2.4/5/6 GHz 8 dBi 10 Element Indoor Patch Antenna with 10 MPC",
     "form": "Patch",
     "indoor_outdoor": "Indoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -13677,7 +13712,8 @@
     "field_notes": {
       "weight": "Taken from AccelTex sheet.",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
-      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates."
+      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -13697,6 +13733,9 @@
     "name": "2.4/5/6 GHz 8 dBi 8 Element Indoor/Outdoor Patch Antenna with RA DART",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -13785,7 +13824,8 @@
       "weight": "Taken from AccelTex sheet.",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
       "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
-      "lead_count": "Hubbell Number of Leads is 1 (Right Angle 8-Port DART). AccelTex lists number of leads as 8."
+      "lead_count": "Hubbell Number of Leads is 1 (Right Angle 8-Port DART). AccelTex lists number of leads as 8.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -13827,6 +13867,9 @@
     "name": "2.4/5/6 GHz 8dBi 8 Element Indoor/Outdoor Patch Antenna with DART",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -13914,7 +13957,8 @@
     "field_notes": {
       "weight": "Taken from AccelTex sheet.",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
-      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates."
+      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -13956,6 +14000,9 @@
     "name": "2.4/5/6 GHz 8 dBi 8 Element Indoor/Outdoor Patch Antenna with RPSMA",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -14043,7 +14090,8 @@
     "field_notes": {
       "weight": "Taken from AccelTex sheet.",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
-      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates."
+      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -15357,6 +15405,9 @@
     "name": "2.4/5/6 GHz 8 dBi 8 Element Indoor/Outdoor Patch Antenna with N-Style",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -15439,7 +15490,8 @@
     "field_notes": {
       "weight": "AccelTex sheet prints 2.5 lb (0.68 kg), which is arithmetically impossible (2.5 lb ≈ 1.13 kg; 0.68 kg ≈ 1.50 lb). Left unchanged pending vendor clarification; do not treat either figure as authoritative without a documented precedence rule.",
       "ip_rating": "Taken from AccelTex sheet (IP66).",
-      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates."
+      "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -16325,6 +16377,9 @@
     "name": "2.4/5/6 GHz 8 dBi 6 Element Patch Antenna with N-Style Plugs",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -16418,7 +16473,8 @@
       "isolation": "Taken from AccelTex sheet.",
       "operating_temp": "Taken from AccelTex sheet.",
       "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
-      "lead_count": "Taken from AccelTex sheet."
+      "lead_count": "Taken from AccelTex sheet.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -17016,6 +17072,9 @@
     "name": "2.4/5/6 GHz 8 dBi 6 Element Patch Antenna with RPSMA Plugs",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -17109,7 +17168,8 @@
       "isolation": "Taken from AccelTex sheet.",
       "operating_temp": "Taken from AccelTex sheet.",
       "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
-      "lead_count": "Taken from AccelTex sheet."
+      "lead_count": "Taken from AccelTex sheet.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -17978,6 +18038,9 @@
     "name": "2.4/5/6 GHz 25°x115° 8 dBi 14 Element Patch antenna with MPC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -18086,7 +18149,8 @@
       "vswr": "Taken from AccelTex sheet (<1.5:1 Max: 2.5). Hubbell SPEC omits voltage ratio.",
       "isolation": "Taken from AccelTex sheet.",
       "lead_count": "Taken from AccelTex sheet.",
-      "connector": "Hubbell connector type is MPC. AccelTex sheet details it as 4MPC (5GHz), 6MPC-BLK (6GHz and Scan), 6MPC-WHT (2.4/5/GHz). Hubbell description lists 4MPC (5 GHZ); 6MPC-BLK (6 GHz and Scan); 6MPC-WHT (2.4/5/6 GHz."
+      "connector": "Hubbell connector type is MPC. AccelTex sheet details it as 4MPC (5GHz), 6MPC-BLK (6GHz and Scan), 6MPC-WHT (2.4/5/GHz). Hubbell description lists 4MPC (5 GHZ); 6MPC-BLK (6 GHz and Scan); 6MPC-WHT (2.4/5/6 GHz.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -18469,6 +18533,9 @@
     "name": "2.4/5/6 GHz 8 dBi 4 Element Patch Antenna with N-Style Plugs",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -18556,7 +18623,8 @@
       "vswr": "Taken from AccelTex sheet (<1.5:1 Max: 2.0). Hubbell SPEC omits voltage ratio.",
       "isolation": "Taken from AccelTex sheet.",
       "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
-      "lead_count": "Taken from AccelTex sheet."
+      "lead_count": "Taken from AccelTex sheet.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -18606,6 +18674,9 @@
     "name": "2.4/5/6 GHz 8 dBi 4 Element Patch Antenna with RPSMA Plugs",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -18693,7 +18764,8 @@
       "vswr": "Taken from AccelTex sheet (<1.5:1 Max: 2.0). Hubbell SPEC omits voltage ratio.",
       "isolation": "Taken from AccelTex sheet.",
       "bands": "Hubbell notes outdoor/connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
-      "lead_count": "Taken from AccelTex sheet."
+      "lead_count": "Taken from AccelTex sheet.",
+      "applications": "2026-11-23 maintainer: AccelTex ATS-OP-245-13-*, ATS-OP-245-8-* and tri-band ATS-OP-2456-8-* are warehouse antennas (suffix = lead count/connector, then lead length in inches)."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -26282,7 +26354,7 @@
     "sku": "610484",
     "name": "TerraWave® 2.4/5/6 GHz 13 dBi Wi-Fi Directional  Warehouse Antenna with 4 N Female Connectors",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor",
     "applications": [
       "Warehouse"
     ],
@@ -26371,7 +26443,7 @@
     ],
     "field_notes": {
       "sku": "Primary SKU is Ventev/Tessco 610484. Manufacturer part number M7130130MP1D0006W (not a Hubbell dual-SKU).",
-      "indoor_outdoor": "2026-11-23 datasheet checked: no indoor/outdoor line or IP rating. Left unset.",
+      "indoor_outdoor": "2026-11-23 maintainer rule: the datasheet names only a warehouse application and no install environment, so Indoor.",
       "applications": "2026-11-23 datasheet: Application 'Industrial/Warehouse'; 'ideal for warehouse deployments'."
     },
     "internal_notes": {
@@ -28334,7 +28406,7 @@
     "sku": "607902",
     "name": "2.4/5/6 GHz 8dBi Directional Antenna",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor",
     "applications": [
       "Warehouse"
     ],
@@ -28422,7 +28494,7 @@
     "field_notes": {
       "sku": "Primary SKU is Ventev/Tessco 607902. Manufacturer part number M7080080P1D43620 (not a Hubbell dual-SKU).",
       "qc": "Batch2 QC: fixed wrong crops / overlay-vs-split captions (Horizontal/Vertical only for true overlays).",
-      "indoor_outdoor": "2026-11-23 datasheet checked: no environment line or IP rating (UV-resistant ABS radome only). Left unset.",
+      "indoor_outdoor": "2026-11-23 maintainer rule: the datasheet names only a warehouse application and no install environment, so Indoor.",
       "applications": "2026-11-23 datasheet: 'ideal for warehouse deployments', 'concise coverage for aisles'."
     },
     "internal_notes": {
@@ -31793,7 +31865,7 @@
     "sku": "237129",
     "name": "2.4/5 GHz 8 dBi Directional Antenna with 6 RPSMA Male Connectors",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor",
     "applications": [
       "Warehouse"
     ],
@@ -31892,7 +31964,7 @@
       "weight": "2026-11-22 first-party Ventev correction (audit high confidence)",
       "mount_type": "2026-11-22 first-party Ventev correction (audit high confidence)",
       "polarization": "2026-11-22 first-party Ventev correction (audit high confidence)",
-      "indoor_outdoor": "2026-11-23 datasheet checked: no indoor/outdoor line or IP rating. Left unset.",
+      "indoor_outdoor": "2026-11-23 maintainer rule: the datasheet names only a warehouse application and no install environment, so Indoor.",
       "applications": "2026-11-23 datasheet: Application 'Warehouse'; 'ideal for warehouse deployments'."
     },
     "internal_notes": {
@@ -31931,7 +32003,7 @@
     "sku": "208128",
     "name": "2.4/5 GHz 8 dBi Directional Antenna with 4 RPTNC Male Connectors and Articulating Mount",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor",
     "applications": [
       "Warehouse"
     ],
@@ -32033,7 +32105,7 @@
       "sku": "Primary SKU is Ventev/Tessco 208128. Manufacturer part number M6080080P1D43602 (not a Hubbell dual-SKU).",
       "polarization": "2026-11-22 first-party Ventev correction (audit high confidence)",
       "pattern_images": "Corrected dual-band 2.4/5 labels; prior 6 GHz labels were erroneous (2026-11-22 audit). Filenames retained.",
-      "indoor_outdoor": "2026-11-23 datasheet checked: no indoor/outdoor line or IP rating. Left unset.",
+      "indoor_outdoor": "2026-11-23 maintainer rule: the datasheet names only a warehouse application and no install environment, so Indoor.",
       "applications": "2026-11-23 datasheet: Application 'Industrial/Warehouse'; 'ideal for warehouse deployments'."
     },
     "internal_notes": {
@@ -47585,7 +47657,7 @@
     "sku": "FANT-04BEAX-1313-D-N",
     "name": "2.4/5/6 GHz 13 dBi Wi-Fi Directional Antenna with 4 N-Type",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor",
     "applications": [
       "Warehouse"
     ],
@@ -47706,7 +47778,7 @@
       "cable_length": "No pigtails; supporting cables CABL-3FT-N-NType and CABL-3FT-N-RPSMA ordered separately.",
       "pattern_images": "5 and 6 GHz share combined 5/6 GHz plots on the sheet.",
       "ordering_typo": "Ordering page lists a FANT-04BEAX-1313-D-R with 6 RPSMA — that line matches FANT-06BEAX-1313-D-R; no separate 4-lead −R datasheet exists in this PDF.",
-      "indoor_outdoor": "2026-11-23 datasheet checked: environment column says 'Industrial / Warehouse' (an application, not an install rating); no IP rating. Left unset.",
+      "indoor_outdoor": "2026-11-23 maintainer rule: the datasheet names only a warehouse application and no install environment, so Indoor.",
       "applications": "2026-11-23 Fortinet antenna datasheet: Application 'Industrial/Warehouse'; 'ideal for warehouse deployments'."
     },
     "internal_notes": {
@@ -47751,7 +47823,7 @@
     "sku": "FANT-06BEAX-1313-D-R",
     "name": "2.4/5/6 GHz 12/13/13 dBi Wi-Fi Directional Antenna with 6 RPSMA",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor",
     "applications": [
       "Warehouse"
     ],
@@ -47842,7 +47914,7 @@
       "gain_dbi": "Body table lists 12/13/13 dBi; tri-band comparison page 29 prints 13 dBi for all three bands. Prefer body table.",
       "pattern_images": "Page 26 pattern block only labels 5/6 GHz plots (two Vertical + two Horizontal). No dedicated 2.4 GHz plots in this PDF revision; filed as element 1/2 for the two pairs.",
       "cable_length": "Highlight says 6 RPSMA 3 ft cable; comparison page 29 says None (Order separately) — prefer highlight body.",
-      "indoor_outdoor": "2026-11-23 datasheet checked: environment column says 'Industrial / Warehouse' (an application, not an install rating); no IP rating. Left unset.",
+      "indoor_outdoor": "2026-11-23 maintainer rule: the datasheet names only a warehouse application and no install environment, so Indoor.",
       "applications": "2026-11-23 Fortinet antenna datasheet: Application 'Industrial/Warehouse'; 'ideal for warehouse deployments'."
     },
     "internal_notes": {
