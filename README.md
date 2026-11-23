@@ -46,6 +46,10 @@ Each antenna entry includes:
 python3 -m http.server 8000 --bind 127.0.0.1
 # then open http://127.0.0.1:8000/
 
+# Run every validator and test at once (same checks CI runs):
+npm test
+
+# Or individually:
 node .github/scripts/validate-data.js
 node .github/scripts/validate-compatibility.js
 node .github/scripts/build-public-catalog.js --check
@@ -53,6 +57,7 @@ node .github/scripts/test-antenna-submit.js
 node .github/scripts/test-compatibility-matcher.js
 node .github/scripts/test-datasheet-label-xss.js
 node .github/scripts/test-url-sanitizer.js
+node .github/scripts/test-detail-back.js
 node .github/scripts/test-html-sinks.js
 ```
 
