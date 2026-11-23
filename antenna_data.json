@@ -9002,9 +9002,6 @@
     "name": "2.4/5 GHz 6 dBi 4 Element Indoor/Outdoor Patch Antenna with N-Style",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
-    "applications": [
-      "Warehouse"
-    ],
     "bands": [
       "2.4",
       "5"
@@ -9092,7 +9089,7 @@
       "operating_temp": "Operating temperature taken from AccelTex sheet; Hubbell SPEC omits it.",
       "cable_type": "Hubbell abbreviates the cable as RG402 Plen; AccelTex sheet spells RG402 Plenum.",
       "pattern_images": "AccelTex sheet shows one plot per band and does not label horizontal vs vertical. Files are named by band only so an orientation is not assigned. Filenames updated to include horizontal-vertical because the AccelTex sheet overlays both planes on one plot without separate H/V figures.",
-      "applications": "2026-11-23 Hubbell 'Warehouse & Manufacturing' brochure (hubbellcdn.com/brochure/2302-Warehouses-Brochure-Can-EN-V1.pdf) lists ATS-OP-245-13-4NP-36 and ATS-OP-245-6-4NP-36 as antennas designed for warehouse coverage; the FR edition lists both in N-style, RPSMA and RPTNC versions."
+      "applications": "2026-11-23: not tagged Warehouse. Hubbell's warehouse brochure names ATS-OP-245-6-4NP-36, but maintainer ruling: the 6 dBi patterns are too wide for warehouse aisle coverage."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -9140,9 +9137,6 @@
     "name": "2.4/5 GHz 6 dBi 4 Element Indoor/Outdoor Patch Antenna with RPSMA",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
-    "applications": [
-      "Warehouse"
-    ],
     "bands": [
       "2.4",
       "5"
@@ -9230,7 +9224,7 @@
       "cable_type": "Hubbell abbreviates the cable as RG402 Plen; AccelTex sheet spells RG402 Plenum.",
       "pattern_images": "AccelTex sheet shows one plot per band and does not label horizontal vs vertical. Files are named by band only so an orientation is not assigned. Filenames updated to include horizontal-vertical because the AccelTex sheet overlays both planes on one plot without separate H/V figures.",
       "images": "AccelTex product photo on this sheet is the same image as ATS-01108.",
-      "applications": "2026-11-23 Hubbell 'Warehouse & Manufacturing' brochure (hubbellcdn.com/brochure/2302-Warehouses-Brochure-Can-EN-V1.pdf) lists ATS-OP-245-13-4NP-36 and ATS-OP-245-6-4NP-36 as antennas designed for warehouse coverage; the FR edition lists both in N-style, RPSMA and RPTNC versions."
+      "applications": "2026-11-23: not tagged Warehouse. Hubbell's warehouse brochure names ATS-OP-245-6-4NP-36, but maintainer ruling: the 6 dBi patterns are too wide for warehouse aisle coverage."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -9272,9 +9266,6 @@
     "name": "2.4/5 GHz 6 dBi 4 Element Indoor/Outdoor Patch Antenna with RPTNC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
-    "applications": [
-      "Warehouse"
-    ],
     "bands": [
       "2.4",
       "5"
@@ -9363,7 +9354,7 @@
       "cable_type": "Hubbell abbreviates the cable as RG402 Plen; AccelTex sheet spells RG402 Plenum.",
       "pattern_images": "AccelTex sheet shows one plot per band and does not label horizontal vs vertical. Files are named by band only so an orientation is not assigned. Filenames updated to include horizontal-vertical because the AccelTex sheet overlays both planes on one plot without separate H/V figures.",
       "images": "AccelTex product photo on this sheet is the same image as ATS-01108.",
-      "applications": "2026-11-23 Hubbell 'Warehouse & Manufacturing' brochure (hubbellcdn.com/brochure/2302-Warehouses-Brochure-Can-EN-V1.pdf) lists ATS-OP-245-13-4NP-36 and ATS-OP-245-6-4NP-36 as antennas designed for warehouse coverage; the FR edition lists both in N-style, RPSMA and RPTNC versions."
+      "applications": "2026-11-23: not tagged Warehouse. Hubbell's warehouse brochure names ATS-OP-245-6-4NP-36, but maintainer ruling: the 6 dBi patterns are too wide for warehouse aisle coverage."
     },
     "internal_notes": {
       "compatible_aps": [
