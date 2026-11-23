@@ -268,7 +268,7 @@ console.log('compatibility matcher tests');
     matcher.DISCLAIMERS.bannerTitle,
     'Best-effort compatibility guidance'
   );
-  assert.ok(matcher.DISCLAIMERS.bannerBody.indexOf('manufacturers’ current documentation') !== -1);
+  assert.ok(matcher.DISCLAIMERS.bannerBody.indexOf('Verify compatibility with the manufacturers') !== -1);
   assert.strictEqual(
     matcher.DISCLAIMERS.compact,
     'Best-effort match — verify with the manufacturers before purchase or installation.'
