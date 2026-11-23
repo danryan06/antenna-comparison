@@ -629,126 +629,6 @@ a.sku-link:focus-visible {
   text-decoration-color: var(--link-focus);
 }
 
-/* Model names - larger and bolder */
-td:nth-child(2) {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: #e5e7eb;
-}
-
-/* Technical specs - monospace for better alignment */
-td[data-key="spatial_streams"],
-.spatial-streams {
-  font-family: 'SF Mono', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
-  font-size: 0.8125rem;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-/* Radios & IoT tags */
-.tag {
-  display: inline-block;
-  padding: 0.15rem 0.4rem;
-  border-radius: 999px;
-  font-size: 0.7rem;
-  background: #111827;
-  color: #d1d5db;
-  margin: 0.1rem 0.2rem 0 0;
-}
-
-/* Column width tweaks */
-
-/* Spatial Streams (col 4) */
-th:nth-child(4),
-td:nth-child(4) {
-  width: 110px;
-}
-
-/* Recommended PoE (col 6) */
-th:nth-child(6),
-td:nth-child(6) {
-  width: 130px;
-}
-
-/* Min PoE Class (col 5) */
-th:nth-child(5),
-td:nth-child(5) {
-  width: 110px;
-  white-space: normal;
-  word-break: break-word;
-}
-
-/* Radios & IoT Features (col 9) */
-th:nth-child(9),
-td:nth-child(9) {
-  width: 220px;
-  white-space: normal; /* allow wrapping for tags/text */
-}
-
-/* Ethernet Ports & Speed (col 8) */
-th:nth-child(8),
-td:nth-child(8) {
-  width: 110px;
-  white-space: normal;
-  word-break: break-word;
-}
-
-/* Antenna Type (col 10) */
-th:nth-child(10),
-td:nth-child(10) {
-  width: 120px;
-  white-space: normal;
-  word-break: break-word;
-}
-
-/* Form Factor (col 11) */
-th:nth-child(11),
-td:nth-child(11) {
-  width: 120px;
-  white-space: normal;
-  word-break: break-word;
-}
-
-/* Dimensions (col 12) */
-th:nth-child(12),
-td:nth-child(12) {
-  width: 160px;
-  white-space: normal;
-  word-break: break-word;
-}
-
-/* Weight (col 13) */
-th:nth-child(13),
-td:nth-child(13) {
-  width: 110px;
-  white-space: normal;
-  word-break: break-word;
-}
-
-/* Antenna Connectors (col 14) */
-th:nth-child(14),
-td:nth-child(14) {
-  width: 200px;
-  white-space: normal;
-  word-break: break-word;
-}
-
-/* Operating Temp Range (col 15) */
-th:nth-child(15),
-td:nth-child(15) {
-  width: 200px;
-  white-space: normal;
-  word-break: break-word;
-}
-
-/* MSRP (col 16) */
-th:nth-child(16),
-td:nth-child(16) {
-  width: 120px;
-  white-space: normal;
-  word-break: break-word;
-}
-
 /* Column resize handle on headers */
 th {
   position: sticky; /* already sticky; ensure positioning for resizer */
@@ -2655,6 +2535,7 @@ a.inline-link:focus-visible {
   
   .actions .btn-link {
     width: 100%;
+    box-sizing: border-box;
   }
   
   /* Floating compare button */
@@ -3309,10 +3190,12 @@ table.antenna-table tbody td {
 
 table.antenna-table th[data-key="beamwidth"],
 table.antenna-table td.beamwidth-cell {
-  /* Beat the small-screen nowrap !important so the V line stays intact. */
-  white-space: pre !important;
+  /* Beat the small-screen nowrap !important so the H and V lines stay separate.
+     pre-line keeps the H/V line break but lets the rare long per-port value wrap. */
+  white-space: pre-line !important;
   width: auto;
   min-width: 9.5rem;
+  max-width: 16rem;
   line-height: 1.35;
   font-variant-numeric: tabular-nums;
 }
@@ -3545,5 +3428,67 @@ table.antenna-table td.beamwidth-cell {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Tablet and phone header: labeled tabs instead of bare icons. */
+@media (max-width: 1024px) {
+  .site-header .header-nav .nav-link {
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+    min-height: 44px;
+    padding: 4px 10px;
+    font-size: 11px;
+    line-height: 1.1;
+  }
+
+  .site-header .header-nav .nav-link.active {
+    padding: 3px 9px;
+  }
+
+  .site-header .header-nav .nav-link .nav-text {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+/* Phone header: no horizontal overflow.
+   "Edit antenna" is dropped here because every detail page has its own
+   "Edit this antenna" button. */
+@media (max-width: 560px) {
+  .site-header .header-content {
+    gap: 8px;
+    padding: 8px 12px;
+  }
+
+  .site-header .header-divider,
+  .site-header .header-right .nav-link-secondary {
+    display: none;
+  }
+
+  .site-header .header-nav {
+    flex: 1;
+    justify-content: space-around;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .site-header .header-nav .nav-link {
+    padding: 4px 8px;
+  }
+
+  .site-header .header-nav .nav-link.active {
+    padding: 3px 7px;
+  }
+
+  .site-header .header-right .nav-link-accent {
+    padding: 8px;
+    min-width: 44px;
+    min-height: 44px;
   }
 }
