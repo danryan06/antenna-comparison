@@ -128,6 +128,83 @@ console.log('compatibility matcher tests');
 
 {
   const ant = makeAntenna({
+    lead_count: 6,
+    rf_interfaces: [
+      Object.assign({}, makeAntenna().rf_interfaces[0], {
+        connector_count: 6,
+        physical_lead_count: 6,
+        rf_path_count: 6
+      })
+    ]
+  });
+  const r = matcher.matchAntennaToAp(ant, makeAp());
+  assert.strictEqual(r.status, 'incompatible');
+  assert.ok(r.reasons.some(x => x.code === 'PATHS_EXTRA'));
+  pass('incompatible when antenna has more RF paths than the AP');
+}
+
+{
+  // Mirrors AP-734 (4 RP-SMA, dual-band + 6 GHz groups) vs ATS-01060 (6 leads).
+  const ap734 = makeAp({
+    ap_id: 'aruba:ap-734',
+    completeness: {
+      status: 'incomplete',
+      missing: ['antenna_configurations.default.external_interfaces.wifi-rpsma.connector.gender']
+    },
+    antenna_configurations: [
+      {
+        configuration_id: 'default',
+        label: 'Default',
+        is_default: true,
+        active_bands: ['2.4', '5', '6'],
+        integrated_antenna_groups: [],
+        external_interfaces: [
+          Object.assign({}, makeAp().antenna_configurations[0].external_interfaces[0], {
+            connector: { family: 'rp-sma', variant: null, gender: null, orientation: null },
+            connector_count: 4,
+            rf_path_count: 4,
+            path_groups: [
+              { path_group_id: 'dual-band', count: 2, bands: ['2.4', '5'], interchangeable: true },
+              { path_group_id: 'six', count: 2, bands: ['6'], interchangeable: true }
+            ]
+          })
+        ]
+      }
+    ]
+  });
+  const ats01060 = makeAntenna({
+    antenna_id: 'acceltex:ats-01060',
+    sku: 'ATS-01060',
+    lead_count: 6,
+    rf_interfaces: [
+      Object.assign({}, makeAntenna().rf_interfaces[0], {
+        connector_count: 6,
+        physical_lead_count: 6,
+        rf_path_count: 6,
+        gender: 'male'
+      })
+    ]
+  });
+  const r = matcher.matchAntennaToAp(ats01060, ap734);
+  assert.strictEqual(r.status, 'incompatible');
+  assert.ok(r.reasons.some(x => x.code === 'PATHS_EXTRA'));
+  pass('AP-734 excludes 6-lead ATS-01060 despite incomplete AP gender');
+}
+
+{
+  // Catalog rows sometimes only have top-level lead_count (no rf_interfaces).
+  const ant = makeAntenna({
+    lead_count: 10,
+    rf_interfaces: []
+  });
+  const r = matcher.matchAntennaToAp(ant, makeAp());
+  assert.strictEqual(r.status, 'incompatible');
+  assert.ok(r.reasons.some(x => x.code === 'PATHS_EXTRA'));
+  pass('incompatible on surplus lead_count when rf_interfaces are missing');
+}
+
+{
+  const ant = makeAntenna({
     bands: ['2.4', '5'],
     rf_interfaces: [
       Object.assign({}, makeAntenna().rf_interfaces[0], { bands: ['2.4', '5'] })

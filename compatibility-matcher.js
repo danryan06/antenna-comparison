@@ -309,14 +309,37 @@
     return { status: 'ok', code: 'CONNECTOR_EXACT' };
   }
 
+  function resolveAntennaPathCount(antIface, antenna) {
+    if (antIface && antIface.rf_path_count != null) return antIface.rf_path_count;
+    if (antIface && antIface.physical_lead_count != null) return antIface.physical_lead_count;
+    if (antIface && antIface.connector_count != null) return antIface.connector_count;
+    if (antenna && antenna.lead_count != null) return antenna.lead_count;
+    return null;
+  }
+
+  function surplusLeadIncompatible(apPaths, antPaths, reasons) {
+    reasons.push(reason(
+      'PATHS_EXTRA',
+      'Antenna provides ' + antPaths + ' RF path(s); AP has ' + apPaths +
+        '. Surplus leads are not a match — choose an antenna with the same lead count.'
+    ));
+    return { status: 'incompatible', units_required: null };
+  }
+
   function matchPathsAndBands(apIface, antIface, antenna, reasons) {
     var apPaths = apIface.rf_path_count;
-    var antPaths = antIface.rf_path_count;
+    if (apPaths == null && apIface.connector_count != null) apPaths = apIface.connector_count;
+    var antPaths = resolveAntennaPathCount(antIface, antenna);
     var groups = Array.isArray(apIface.path_groups) ? apIface.path_groups : [];
 
     if (apPaths == null || antPaths == null) {
       reasons.push(reason('PATHS_UNKNOWN', 'RF path counts are incomplete on the AP or antenna profile.'));
       return { status: 'review_required', units_required: null };
+    }
+
+    // Hard rule: never list antennas with more leads than the AP has ports.
+    if (antPaths > apPaths) {
+      return surplusLeadIncompatible(apPaths, antPaths, reasons);
     }
 
     if (!groups.length) {
@@ -330,13 +353,6 @@
         reasons.push(reason(
           'PATHS_INSUFFICIENT',
           'Antenna provides ' + antPaths + ' RF path(s); AP requires ' + apPaths + '.'
-        ));
-        return { status: 'review_required', units_required: null };
-      }
-      if (antPaths > apPaths) {
-        reasons.push(reason(
-          'PATHS_EXTRA',
-          'Antenna provides more RF paths than the AP requires; unused paths need vendor confirmation.'
         ));
         return { status: 'review_required', units_required: null };
       }
@@ -404,11 +420,7 @@
       return { status: 'incompatible', units_required: null };
     }
 
-    // Extra antenna paths
-    reasons.push(reason(
-      'PATHS_EXTRA',
-      'Antenna provides extra RF paths; unused connectors are not allowed without vendor documentation.'
-    ));
+    // antPaths > apPaths already returned incompatible above.
     return { status: 'review_required', units_required: null };
   }
 
@@ -538,6 +550,20 @@
 
     var antIface = pickBestAntennaInterface(antenna, apIface);
     if (!antIface) {
+      var apPathCount = apIface.rf_path_count;
+      if (apPathCount == null && apIface.connector_count != null) {
+        apPathCount = apIface.connector_count;
+      }
+      var antLeadCount = resolveAntennaPathCount(null, antenna);
+      if (apPathCount != null && antLeadCount != null && antLeadCount > apPathCount) {
+        surplusLeadIncompatible(apPathCount, antLeadCount, reasons);
+        return emptyResult(antennaId, 'incompatible', reasons, {
+          vendor_listed: vendorListed,
+          warnings: warnings,
+          confidence: 'high',
+          evidence: evidence
+        });
+      }
       var noIfaceStatus = vendorListed ? 'vendor_listed_unverified' : 'review_required';
       reasons.push(reason(
         'ANTENNA_RF_INTERFACE_MISSING',
