@@ -87,11 +87,36 @@
     </div>
 
     <div class="card finder-card">
-      <span class="badge">Feature Finder</span>
-      <h1 class="page-title">Feature Finder</h1>
+      <span class="badge">Finder</span>
+      <h1 class="page-title">Antenna Finder</h1>
       <p class="subtitle" style="margin-top:0.5rem;">
-        Set any combination of filters — results update immediately. Choose an access point to see best-effort antenna compatibility.
+        Start with your access point to see which antennas fit it, or just filter. Results update as you go.
       </p>
+
+      <section id="ap" class="finder-ap" aria-labelledby="ap-heading">
+        <div class="finder-ap-head">
+          <h2 id="ap-heading">Which antennas fit my AP?</h2>
+          <p id="ap-help">Pick an external-antenna access point. Results show what fits its connectors and radios, with reasons. Best-effort guidance, not a certification.</p>
+        </div>
+        <div class="finder-ap-row">
+          <label class="visually-hidden" for="filter-ap">Access point</label>
+          <input
+            id="filter-ap"
+            class="filter-select finder-ap-input"
+            type="search"
+            list="ap-options"
+            autocomplete="off"
+            placeholder="Type an AP model, e.g. 9130AXE, AP-574, MR76…"
+            aria-labelledby="ap-heading"
+            aria-describedby="ap-help ap-status"
+          />
+          <datalist id="ap-options"></datalist>
+          <button id="clear-ap" type="button" class="btn-link btn-link-small" hidden>Clear access point</button>
+        </div>
+        <p id="ap-status" class="filter-inline-note" aria-live="polite"></p>
+        <div id="ap-quick" class="finder-ap-quick" hidden></div>
+        <div id="ap-summary" class="ap-summary" hidden></div>
+      </section>
 
       <div id="compat-banner" class="compat-banner" role="note" hidden>
         <strong class="compat-banner-title"></strong>
@@ -107,29 +132,6 @@
           </summary>
           <section class="filter-panel" aria-label="Antenna filters">
             <h2 class="finder-filters-heading">Filters</h2>
-
-            <div class="filter-group">
-              <div class="filter-group-head">
-                <h3 id="ap-heading">Access point</h3>
-                <p id="ap-help">Search by AP model name</p>
-              </div>
-              <label class="visually-hidden" for="filter-ap">Access point</label>
-              <input
-                id="filter-ap"
-                class="filter-select filter-panel-select"
-                type="text"
-                list="ap-options"
-                autocomplete="off"
-                placeholder="Search AP model or id…"
-                aria-labelledby="ap-heading"
-                aria-describedby="ap-help ap-status"
-              />
-              <datalist id="ap-options"></datalist>
-              <p id="ap-status" class="filter-inline-note" aria-live="polite"></p>
-              <button id="clear-ap" type="button" class="btn-link btn-link-small" hidden>Clear access point</button>
-            </div>
-
-            <div id="ap-summary" class="ap-summary" hidden></div>
 
             <div class="filter-group">
               <div class="filter-group-head">
@@ -178,6 +180,13 @@
                 <h3>Environment</h3>
               </div>
               <div id="env-options" class="chip-grid" role="radiogroup" aria-label="Indoor or outdoor"></div>
+            </div>
+
+            <div class="filter-group" id="app-group" hidden>
+              <div class="filter-group-head">
+                <h3>Application</h3>
+              </div>
+              <div id="app-options" class="chip-grid" role="radiogroup" aria-label="Application"></div>
             </div>
 
             <div class="filter-group">
@@ -236,7 +245,6 @@
   <script>
     const DATA_URL = 'antenna_catalog.json';
     const AP_PROFILES_URL = 'data/compatibility/ap-profiles.json';
-    const AP_COMPARE_BASE = 'https://apcomparison.com';
     const WIFI_BANDS = ['2.4', '5', '6'];
     const BAND_PRESETS = [
       { id: 'dual', label: 'Dual', bands: ['2.4', '5'] },
@@ -259,6 +267,8 @@
       { key: 'indoor_outdoor', label: 'Env' }
     ];
     const DEFAULT_SORT = { key: 'vendor', dir: 'asc' };
+    // Read before syncUrl() rewrites the address (replaceState drops the hash).
+    const FOCUS_AP_ON_LOAD = window.location.hash === '#ap';
 
     const state = {
       vendors: new Set(),
@@ -267,6 +277,7 @@
       connector: '',
       leads: '',
       env: 'Either',
+      app: '',
       apId: '',
       showExcluded: false
     };
@@ -294,6 +305,7 @@
       state.leads = params.get('leads') || '';
       const env = params.get('env');
       if (env && ENV_OPTIONS.some(opt => opt.value === env)) state.env = env;
+      state.app = (params.get('app') || '').trim();
       state.apId = (params.get('ap') || '').trim();
       state.showExcluded = params.get('excluded') === '1';
       const sortKey = params.get('sort') || '';
@@ -312,6 +324,7 @@
       if (state.connector) params.set('connector', state.connector);
       if (state.leads) params.set('leads', state.leads);
       if (state.env && state.env !== 'Either') params.set('env', state.env);
+      if (state.app) params.set('app', state.app);
       if (state.showExcluded) params.set('excluded', '1');
       if (currentSort.key !== DEFAULT_SORT.key || currentSort.dir !== DEFAULT_SORT.dir) {
         params.set('sort', currentSort.key);
@@ -345,7 +358,7 @@
 
     function syncUrl() {
       const qs = getFilterStateForUrl().toString();
-      history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+      history.replaceState(null, '', (qs ? `?${qs}` : location.pathname) + location.hash);
     }
 
     function syncFilterDisclosure() {
@@ -437,6 +450,7 @@
           if (!input.checked) return;
           if (type === 'form') state.form = value;
           else if (type === 'env') state.env = value;
+          else if (type === 'app') state.app = value;
           applyFilters();
         });
         const span = document.createElement('span');
@@ -571,6 +585,69 @@
       });
     }
 
+    // Browse APs by vendor so nobody has to guess the exact model string.
+    function buildApQuickPicks() {
+      const wrap = document.getElementById('ap-quick');
+      if (!wrap || !apIndex || !apIndex.list.length) return;
+      wrap.replaceChildren();
+      const byVendor = new Map();
+      apIndex.list.forEach(profile => {
+        const vendor = String(profile.vendor || 'Other');
+        if (!byVendor.has(vendor)) byVendor.set(vendor, []);
+        byVendor.get(vendor).push(profile);
+      });
+      const label = document.createElement('span');
+      label.className = 'finder-ap-quick-label';
+      label.id = 'ap-quick-label';
+      label.textContent = 'Or browse:';
+      const vendors = document.createElement('div');
+      vendors.className = 'finder-ap-vendors';
+      vendors.setAttribute('role', 'group');
+      vendors.setAttribute('aria-labelledby', 'ap-quick-label');
+      const models = document.createElement('div');
+      models.className = 'finder-ap-models';
+      models.hidden = true;
+      const vendorButtons = [];
+      Array.from(byVendor.keys()).sort((a, b) => a.localeCompare(b)).forEach(vendor => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'pattern-port-chip';
+        b.textContent = vendor;
+        b.setAttribute('aria-expanded', 'false');
+        b.addEventListener('click', () => {
+          const open = b.getAttribute('aria-expanded') !== 'true';
+          vendorButtons.forEach(x => x.setAttribute('aria-expanded', 'false'));
+          models.replaceChildren();
+          models.hidden = !open;
+          if (!open) return;
+          b.setAttribute('aria-expanded', 'true');
+          byVendor.get(vendor)
+            .slice()
+            .sort((x, y) => String(x.model || '').localeCompare(String(y.model || ''), undefined, { numeric: true }))
+            .forEach(profile => {
+              const m = document.createElement('button');
+              m.type = 'button';
+              m.className = 'pattern-port-chip';
+              m.textContent = profile.model || apDisplayLabel(profile);
+              m.setAttribute('aria-label', apDisplayLabel(profile));
+              m.addEventListener('click', () => {
+                document.getElementById('filter-ap').value = apDisplayLabel(profile);
+                models.hidden = true;
+                b.setAttribute('aria-expanded', 'false');
+                applyApSelectionFromInput();
+              });
+              models.appendChild(m);
+            });
+        });
+        vendorButtons.push(b);
+        vendors.appendChild(b);
+      });
+      wrap.appendChild(label);
+      wrap.appendChild(vendors);
+      wrap.appendChild(models);
+      wrap.hidden = !!selectedApProfile;
+    }
+
     function resolveApInput(raw) {
       const text = String(raw || '').trim();
       if (!text || !apIndex) return null;
@@ -692,10 +769,10 @@
       const links = document.createElement('p');
       links.className = 'ap-summary-links';
       const back = document.createElement('a');
-      back.href = AP_COMPARE_BASE;
+      back.href = apComparisonDetailUrl(profile);
       back.target = '_blank';
       back.rel = 'noopener noreferrer';
-      back.textContent = 'Open AP Comparison';
+      back.textContent = 'Full specs on AP Comparison';
       links.appendChild(back);
       if (ds) {
         links.appendChild(document.createTextNode(' · '));
@@ -726,6 +803,8 @@
       }
       updateCompatChrome();
       renderApSummary(profile);
+      const quick = document.getElementById('ap-quick');
+      if (quick && quick.children.length) quick.hidden = !!profile;
       document.getElementById('show-excluded').checked = state.showExcluded;
     }
 
@@ -782,6 +861,18 @@
         { labelFn: v => `${v} lead${v === '1' ? '' : 's'}` }
       );
       renderRadioChips(document.getElementById('env-options'), ENV_OPTIONS, 'env', state.env);
+      const applications = Array.from(new Set(
+        enrichedData.flatMap(e => Array.isArray(e.applications) ? e.applications : [])
+      )).sort();
+      if (state.app && !applications.includes(state.app)) state.app = '';
+      document.getElementById('app-group').hidden = !applications.length;
+      renderRadioChips(
+        document.getElementById('app-options'),
+        [{ value: '', label: 'Any' }, ...applications.map(v => ({ value: v, label: v }))],
+        'app',
+        state.app
+      );
+      buildApQuickPicks();
 
       const knownVendors = new Set(collectUnique(e => e.vendor));
       Array.from(state.vendors).forEach(v => {
@@ -825,6 +916,10 @@
       if (state.leads) {
         const leads = entry.lead_count == null ? '' : String(entry.lead_count);
         if (leads !== state.leads) return false;
+      }
+
+      if (state.app && !(Array.isArray(entry.applications) && entry.applications.includes(state.app))) {
+        return false;
       }
 
       if (state.env && state.env !== 'Either') {
@@ -1108,6 +1203,7 @@
       if (state.env && state.env !== 'Either') {
         chips.push({ type: 'env', value: state.env, label: state.env });
       }
+      if (state.app) chips.push({ type: 'app', value: state.app, label: state.app });
       if (state.showExcluded) chips.push({ type: 'excluded', value: '1', label: 'Show excluded' });
 
       if (!chips.length) {
@@ -1158,6 +1254,10 @@
         state.env = 'Either';
         const input = document.querySelector('input[name="filter-env"][value="Either"]');
         if (input) input.checked = true;
+      } else if (type === 'app') {
+        state.app = '';
+        const input = document.querySelector('input[name="filter-app"][value=""]');
+        if (input) input.checked = true;
       }
       applyFilters();
     }
@@ -1169,6 +1269,7 @@
       state.connector = '';
       state.leads = '';
       state.env = 'Either';
+      state.app = '';
       state.apId = '';
       state.showExcluded = false;
       currentSort = { key: DEFAULT_SORT.key, dir: DEFAULT_SORT.dir };
@@ -1204,7 +1305,7 @@
 
       RESULT_COLUMNS.forEach(col => {
         const cell = document.createElement('div');
-        cell.className = 'result-cell';
+        cell.className = 'result-cell' + (col.key === 'sku' ? ' result-model' : '');
         cell.setAttribute('role', 'columnheader');
         if (currentSort.key === col.key) {
           cell.setAttribute('aria-sort', currentSort.dir === 'asc' ? 'ascending' : 'descending');
@@ -1228,11 +1329,7 @@
         header.appendChild(cell);
       });
 
-      const actions = document.createElement('div');
-      actions.className = 'result-cell';
-      actions.setAttribute('role', 'columnheader');
-      actions.setAttribute('aria-label', 'Actions');
-      header.appendChild(actions);
+      // No separate Details column: the SKU is the link and the whole row opens the detail page.
       container.appendChild(header);
     }
 
@@ -1241,7 +1338,8 @@
       if (key === 'gain_dbi') return formatGainCompact(entry.gain_dbi) || '—';
       if (key === 'beamwidth') return formatBeamwidthCompact(entry.beamwidth) || '—';
       if (key === 'lead_count') return entry.lead_count == null ? '—' : String(entry.lead_count);
-      if (key === 'indoor_outdoor') return formatEnvironment(entry.indoor_outdoor);
+      // Spaced so the narrow Env column can wrap it.
+      if (key === 'indoor_outdoor') return formatEnvironment(entry.indoor_outdoor).replace('/', ' / ');
       const v = entry[key];
       return v == null || v === '' ? '—' : String(v);
     }
@@ -1294,6 +1392,7 @@
           if (col.key === 'connector') cell.classList.add('result-antenna');
           if (col.key === 'lead_count') cell.classList.add('result-spatial');
           if (col.key === 'gain_dbi') cell.classList.add('result-metrics');
+          if (col.key === 'indoor_outdoor') cell.classList.add('result-env');
 
           if (col.key === 'sku') {
             const skuLink = document.createElement('a');
@@ -1309,16 +1408,6 @@
           }
           row.appendChild(cell);
         });
-
-        const actions = document.createElement('div');
-        actions.className = 'result-cell result-actions';
-        actions.setAttribute('role', 'cell');
-        const detail = document.createElement('a');
-        bindDetailLink(detail, entry._slug);
-        detail.className = 'btn-link btn-link-ghost btn-link-small';
-        detail.textContent = 'Details';
-        actions.appendChild(detail);
-        row.appendChild(actions);
 
         row.style.cursor = 'pointer';
         row.addEventListener('click', (e) => {
@@ -1454,6 +1543,10 @@
         restoreStateFromUrl();
         buildControls();
         applyFilters();
+        // finder.html#ap (linked from Browse) jumps straight to the AP picker.
+        if (FOCUS_AP_ON_LOAD && !state.apId) {
+          document.getElementById('filter-ap').focus({ preventScroll: false });
+        }
       } catch (err) {
         console.error('Failed to load data', err);
         document.getElementById('results-note').textContent = 'Unable to load antenna data.';

@@ -59,6 +59,7 @@ node .github/scripts/test-datasheet-label-xss.js
 node .github/scripts/test-url-sanitizer.js
 node .github/scripts/test-detail-back.js
 node .github/scripts/test-pattern-ports.js
+node .github/scripts/test-ap-links.js
 node .github/scripts/test-html-sinks.js
 ```
 
