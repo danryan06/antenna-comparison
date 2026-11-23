@@ -4,8 +4,8 @@
   "generated_from": "antenna_data.json",
   "public_artifact": "antenna_catalog.json",
   "entry_count": 607,
-  "source_revision": "272dd23eeb3024740d6ceba3589eaf112d34f999",
-  "generated_at": "2026-11-23T20:27:30.877Z",
+  "source_revision": "ed2c1fd01bfefaf77f98eeef908d2f27c308ff2d",
+  "generated_at": "2026-11-23T20:29:34.644Z",
   "public_keys": [
     "antenna_id",
     "vendor",
@@ -14,6 +14,7 @@
     "name",
     "form",
     "indoor_outdoor",
+    "applications",
     "bands",
     "frequency_range",
     "gain_dbi",

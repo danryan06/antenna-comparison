@@ -20,6 +20,12 @@ Use `antenna_template.json` as the shape for new rows in `antenna_data.json`.
 One of: `Omni` | `Patch` | `High-density patch`  
 (No separate Sector type for Wi-Fi; treat sectors as Patch.)
 
+## Environment and applications
+
+- `indoor_outdoor` is the install rating only: `Indoor` | `Outdoor` | `Indoor/Outdoor`. Use `null` when the datasheet does not say; the site shows "Not specified". CI rejects any other value.
+- Where an antenna is meant to be used goes in `applications` (array). Known values: `Warehouse`. Add new values to `APPLICATIONS` in `.github/scripts/validate-data.js`.
+- `applications` is maintainer-curated: the edit form does not show it and edits keep the existing value.
+
 ## Default table columns
 
 `bands`, `gain_dbi`, `beamwidth`, `connector` (plus vendor/SKU). Lead count is choosable.
@@ -36,6 +42,12 @@ Record conflicts in `field_notes` (maintainer-only; never rendered in the UI). C
 ## Pattern captions
 
 Store whatever the datasheet figure says if useful for mining, but the detail page collapses mid-band frequency lists to simple band labels (`2.4 GHz Horizontal`, `5 GHz Vertical`, `6 GHz Horizontal`). Prefer those simple labels when writing new data.
+
+## Per-port patterns
+
+Datasheets that publish a plot per port can be stored as-is. Label them `<band> GHz Port A Horizontal`, `<band> GHz Element 1 Vertical`, `<band> GHz AUX Horizontal`, and so on. When an antenna has 7 or more plots across two or more ports, the detail page shows one port at a time with chips to switch. Plots without a port in the label always show.
+
+`validate-data.js` warns when a pattern's band is not in the antenna's `bands`; that is usually a plot borrowed from a sibling product.
 
 ## Pattern gallery order
 

@@ -22938,7 +22938,10 @@
     "sku": "610484",
     "name": "TerraWave\u00ae 2.4/5/6 GHz 13 dBi Wi-Fi Directional  Warehouse Antenna with 4 N Female Connectors",
     "form": "Patch",
-    "indoor_outdoor": "Industrial/Warehouse",
+    "indoor_outdoor": null,
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -27987,7 +27990,10 @@
     "sku": "237129",
     "name": "2.4/5 GHz 8 dBi Directional Antenna with 6 RPSMA Male Connectors",
     "form": "Patch",
-    "indoor_outdoor": "Warehouse",
+    "indoor_outdoor": null,
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -28108,7 +28114,10 @@
     "sku": "208128",
     "name": "2.4/5 GHz 8 dBi Directional Antenna with 4 RPTNC Male Connectors and Articulating Mount",
     "form": "Patch",
-    "indoor_outdoor": "Industrial/Warehouse",
+    "indoor_outdoor": null,
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -42265,7 +42274,10 @@
     "sku": "FANT-04BEAX-1313-D-N",
     "name": "2.4/5/6 GHz 13 dBi Wi-Fi Directional Antenna with 4 N-Type",
     "form": "Patch",
-    "indoor_outdoor": "Industrial/Warehouse",
+    "indoor_outdoor": null,
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -42412,7 +42424,10 @@
     "sku": "FANT-06BEAX-1313-D-R",
     "name": "2.4/5/6 GHz 12/13/13 dBi Wi-Fi Directional Antenna with 6 RPSMA",
     "form": "Patch",
-    "indoor_outdoor": "Industrial/Warehouse",
+    "indoor_outdoor": null,
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",

@@ -380,6 +380,15 @@ function groupPatternsByPort(items, options) {
   };
 }
 
+/**
+ * Install environment for display. The field is Indoor / Outdoor /
+ * Indoor/Outdoor, or null when the datasheet does not say.
+ */
+function formatEnvironment(value) {
+  const v = value == null ? "" : String(value).trim();
+  return v || "Not specified";
+}
+
 function flatBandParts(obj, kind) {
   if (!obj || typeof obj !== "object" || Array.isArray(obj)) return null;
   if (Object.values(obj).some(item => item && typeof item === "object")) return null;
@@ -531,6 +540,7 @@ if (typeof module !== "undefined" && module.exports) {
     sortPatternImages,
     patternPortKey,
     groupPatternsByPort,
+    formatEnvironment,
     formatBandObject,
     formatBeamwidthCompact,
     formatBeamwidthStacked,

@@ -1241,6 +1241,7 @@
       if (key === 'gain_dbi') return formatGainCompact(entry.gain_dbi) || '—';
       if (key === 'beamwidth') return formatBeamwidthCompact(entry.beamwidth) || '—';
       if (key === 'lead_count') return entry.lead_count == null ? '—' : String(entry.lead_count);
+      if (key === 'indoor_outdoor') return formatEnvironment(entry.indoor_outdoor);
       const v = entry[key];
       return v == null || v === '' ? '—' : String(v);
     }

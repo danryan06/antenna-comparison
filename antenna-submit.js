@@ -22,7 +22,7 @@
   ];
   const PUBLIC_KEYS = [
     'antenna_id', 'vendor', 'sku', 'legacy_sku', 'name', 'form', 'indoor_outdoor',
-    'bands', 'frequency_range', 'gain_dbi', 'beamwidth', 'connector',
+    'applications', 'bands', 'frequency_range', 'gain_dbi', 'beamwidth', 'connector',
     'lead_count', 'polarization', 'cable_length', 'cable_type', 'dimensions',
     'weight', 'ip_rating', 'radome', 'mount_type', 'included_parts',
     'wind_rating', 'vswr', 'isolation', 'operating_temp', 'image_url',
@@ -31,7 +31,8 @@
   ];
   // Structured compatibility fields are public in the catalog but not editable via
   // the GitHub issue form. Preserve them on edit merges so submissions cannot wipe them.
-  const PRESERVE_FROM_BASE = ['antenna_id', 'rf_interfaces', 'compatibility_claims'];
+  // applications (e.g. "Warehouse") is a maintainer-curated tag, also kept on edit.
+  const PRESERVE_FROM_BASE = ['antenna_id', 'applications', 'rf_interfaces', 'compatibility_claims'];
 
   function trim(value) {
     return String(value == null ? '' : value).trim();
@@ -1040,6 +1041,7 @@
     GITHUB_REPO: GITHUB_REPO,
     STANDARD_BANDS: STANDARD_BANDS,
     FORMS: FORMS,
+    ENVIRONMENTS: ENVIRONMENTS,
     PRIVATE_KEYS: PRIVATE_KEYS,
     PUBLIC_KEYS: PUBLIC_KEYS,
     PRESERVE_FROM_BASE: PRESERVE_FROM_BASE,
