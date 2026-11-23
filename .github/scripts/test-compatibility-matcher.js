@@ -205,6 +205,18 @@ console.log('compatibility matcher tests');
 
 {
   const ant = makeAntenna({
+    connector: 'Right Angle DART',
+    lead_count: 1,
+    rf_interfaces: []
+  });
+  const r = matcher.matchAntennaToAp(ant, makeAp());
+  assert.strictEqual(r.status, 'incompatible');
+  assert.ok(r.reasons.some(x => x.code === 'CONNECTOR_FAMILY_MISMATCH'));
+  pass('incompatible when free-text connector is DART vs RP-SMA AP');
+}
+
+{
+  const ant = makeAntenna({
     bands: ['2.4', '5'],
     rf_interfaces: [
       Object.assign({}, makeAntenna().rf_interfaces[0], { bands: ['2.4', '5'] })
