@@ -17496,9 +17496,10 @@
     "indoor_outdoor": "Indoor",
     "bands": [
       "2.4",
-      "5"
+      "5",
+      "6"
     ],
-    "frequency_range": "2.4/5 GHz",
+    "frequency_range": "2.4-2.5/5.15-5.85/5.925-7.125 GHz",
     "gain_dbi": {
       "2.4": 2,
       "5": 3.5
@@ -18756,6 +18757,9 @@
     "name": "2.4/5 GHz 12/13 dBi Wi-Fi Warehouse Directional Antenna with 6 N Female Connectors",
     "form": "Patch",
     "indoor_outdoor": "Indoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -23178,7 +23182,7 @@
     "sku": "VEN612069",
     "name": "TerraWave\u00ae 2.4/5/6 GHz 6/6/6 dBi Directional Antenna",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor/Outdoor",
     "bands": [
       "2.4",
       "5",
@@ -23391,7 +23395,7 @@
     "sku": "610822",
     "name": "TerraWave\u00ae 2.4/5/6 GHz 6/6/6 dBi Directional Antenna",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor/Outdoor",
     "bands": [
       "2.4",
       "5",
@@ -23961,7 +23965,7 @@
     "sku": "607904",
     "name": "2.4/5/6 GHz 6 dBi Wi-Fi 6 Femto Patch Antenna with 4 N Male Connectors and Articulating Mount",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor/Outdoor",
     "bands": [
       "2.4",
       "5",
@@ -27289,7 +27293,7 @@
     "sku": "290230",
     "name": "2.4/5/6 GHz 6 dBi Wi-Fi 6 Femto Patch Antenna with 4 RPTNC Male Connectors and Articulating Mount",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor/Outdoor",
     "bands": [
       "2.4",
       "5",
@@ -27410,7 +27414,7 @@
     "sku": "209391",
     "name": "2.4/5/6 GHz 6 dBi Wi-Fi 6 Femto Patch Antenna with  4 RPSMA Male Connectors and Articulating Mount",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor/Outdoor",
     "bands": [
       "2.4",
       "5",

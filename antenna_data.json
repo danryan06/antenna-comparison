@@ -20210,9 +20210,10 @@
     "indoor_outdoor": "Indoor",
     "bands": [
       "2.4",
-      "5"
+      "5",
+      "6"
     ],
-    "frequency_range": "2.4/5 GHz",
+    "frequency_range": "2.4-2.5/5.15-5.85/5.925-7.125 GHz",
     "gain_dbi": {
       "2.4": 2,
       "5": 3.5
@@ -20277,7 +20278,8 @@
     "field_notes": {
       "sku": "Primary SKU 270444. Manufacturer part number M6030040O62420TA (not a Hubbell dual-SKU).",
       "pattern_images": "Sheet overlays both planes on one polar chart per band (top to bottom 2.4, 5, 6 GHz). Files are the PDF image embeds at native pixel aspect. The page maps those nearly square embeds into wide boxes, which is what stretched the grids into ovals.",
-      "gain_dbi": "2026-11-22 first-party Ventev correction (audit high confidence)"
+      "gain_dbi": "2026-11-22 first-party Ventev correction (audit high confidence)",
+      "bands": "2026-11-23: datasheet lists 2.4-2.5, 5.150-5.850 and 5.925-7.125 GHz and has a 6 GHz pattern; tri-band confirmed by maintainer. Gain line reads '2/3.5 dBi' (title says '2/4 dBi') with no per-band mapping, so no 6 GHz gain recorded. Vertical beamwidth '50/40/30' is unlabeled by band; not recorded."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -21615,6 +21617,9 @@
     "name": "2.4/5 GHz 12/13 dBi Wi-Fi Warehouse Directional Antenna with 6 N Female Connectors",
     "form": "Patch",
     "indoor_outdoor": "Indoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -21693,7 +21698,8 @@
       "pattern_images": "Dynamic per-figure pymupdf crops; near-zero top pad; short edge ≥~1000px; H/V from nearby H/E-plane labels when present.",
       "gain_dbi": "2026-11-22 first-party Ventev correction (audit high confidence)",
       "polarization": "Stripped zero-width extraction artifacts (2026-11-22 audit)",
-      "vswr": "Stripped zero-width extraction artifacts (2026-11-22 audit)"
+      "vswr": "Stripped zero-width extraction artifacts (2026-11-22 audit)",
+      "applications": "2026-11-23: Ventev product name is 'Wi-Fi Warehouse Directional Antenna'."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -26506,7 +26512,7 @@
     "sku": "VEN612069",
     "name": "TerraWave® 2.4/5/6 GHz 6/6/6 dBi Directional Antenna",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor/Outdoor",
     "bands": [
       "2.4",
       "5",
@@ -26592,7 +26598,7 @@
     "field_notes": {
       "sku": "Primary SKU is Ventev/Tessco VEN612069. Manufacturer part number M7060060MP1D43620 (not a Hubbell dual-SKU).",
       "polarization": "2026-11-22 first-party Ventev correction (audit high confidence)",
-      "indoor_outdoor": "2026-11-23: environment not confirmed from the datasheet yet; left unset (UI shows 'Not specified')."
+      "indoor_outdoor": "2026-11-23: set to Indoor/Outdoor from the IP54 rating (maintainer rule: IP54 means Indoor/Outdoor)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -26739,7 +26745,7 @@
     "sku": "610822",
     "name": "TerraWave® 2.4/5/6 GHz 6/6/6 dBi Directional Antenna",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor/Outdoor",
     "bands": [
       "2.4",
       "5",
@@ -26825,7 +26831,7 @@
     "field_notes": {
       "sku": "Primary SKU is Ventev/Tessco 610822. Manufacturer part number M7060060MP1D43620 (not a Hubbell dual-SKU).",
       "polarization": "2026-11-22 first-party Ventev correction (audit high confidence)",
-      "indoor_outdoor": "2026-11-23: environment not confirmed from the datasheet yet; left unset (UI shows 'Not specified')."
+      "indoor_outdoor": "2026-11-23: set to Indoor/Outdoor from the IP54 rating (maintainer rule: IP54 means Indoor/Outdoor)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -27361,7 +27367,7 @@
     "sku": "607904",
     "name": "2.4/5/6 GHz 6 dBi Wi-Fi 6 Femto Patch Antenna with 4 N Male Connectors and Articulating Mount",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor/Outdoor",
     "bands": [
       "2.4",
       "5",
@@ -27452,7 +27458,7 @@
     ],
     "field_notes": {
       "sku": "Primary SKU is Ventev/Tessco 607904. Manufacturer part number M6060060D4D3607FP (not a Hubbell dual-SKU).",
-      "indoor_outdoor": "Cleared IP rating wrongly stored as environment; ip_rating retained (2026-11-22 audit) 2026-11-23: environment not confirmed from the datasheet yet; left unset (UI shows 'Not specified')."
+      "indoor_outdoor": "2026-11-23: set to Indoor/Outdoor from the IP54 rating (maintainer rule: IP54 means Indoor/Outdoor)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -30976,7 +30982,7 @@
     "sku": "290230",
     "name": "2.4/5/6 GHz 6 dBi Wi-Fi 6 Femto Patch Antenna with 4 RPTNC Male Connectors and Articulating Mount",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor/Outdoor",
     "bands": [
       "2.4",
       "5",
@@ -31068,7 +31074,7 @@
     "field_notes": {
       "sku": "Primary SKU is Ventev/Tessco 290230. Manufacturer part number M6060060D4D3602FP (not a Hubbell dual-SKU).",
       "polarization": "2026-11-22 first-party Ventev correction (audit high confidence)",
-      "indoor_outdoor": "Cleared IP rating wrongly stored as environment; ip_rating retained (2026-11-22 audit) 2026-11-23: environment not confirmed from the datasheet yet; left unset (UI shows 'Not specified')."
+      "indoor_outdoor": "2026-11-23: set to Indoor/Outdoor from the IP54 rating (maintainer rule: IP54 means Indoor/Outdoor)."
     },
     "internal_notes": {
       "compatible_aps": [],
@@ -31107,7 +31113,7 @@
     "sku": "209391",
     "name": "2.4/5/6 GHz 6 dBi Wi-Fi 6 Femto Patch Antenna with  4 RPSMA Male Connectors and Articulating Mount",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor/Outdoor",
     "bands": [
       "2.4",
       "5",
@@ -31199,7 +31205,7 @@
     "field_notes": {
       "sku": "Primary SKU is Ventev/Tessco 209391. Manufacturer part number M6060060D4D3620FP (not a Hubbell dual-SKU).",
       "polarization": "2026-11-22 first-party Ventev correction (audit high confidence)",
-      "indoor_outdoor": "Cleared IP rating wrongly stored as environment; ip_rating retained (2026-11-22 audit) 2026-11-23: environment not confirmed from the datasheet yet; left unset (UI shows 'Not specified')."
+      "indoor_outdoor": "2026-11-23: set to Indoor/Outdoor from the IP54 rating (maintainer rule: IP54 means Indoor/Outdoor)."
     },
     "internal_notes": {
       "compatible_aps": [],
