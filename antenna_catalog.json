@@ -704,6 +704,9 @@
     "name": "2.4/5 GHz 8 dBi 4 Element Indoor/Outdoor Patch Antenna with RPSMA",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -5982,6 +5985,9 @@
     "name": "2.4/5 GHz 13 dBi 4 Element Indoor/Outdoor Patch Antenna with N-Style",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -6095,6 +6101,9 @@
     "name": "2.4/5 GHz 13 dBi 4 Element Indoor/Outdoor Patch Antenna with RPSMA",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -6208,6 +6217,9 @@
     "name": "2.4/5 GHz 13 dBi 4 Element Indoor/Outdoor Patch Antenna with RPTNC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -6321,6 +6333,9 @@
     "name": "2.4/5 GHz 13 dBi 6 Element Indoor/Outdoor Patch Antenna with N-Style",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -6434,6 +6449,9 @@
     "name": "2.4/5 GHz 13 dBi 6 Element Indoor/Outdoor Patch Antenna with RPSMA",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -6547,6 +6565,9 @@
     "name": "2.4/5 GHz 13 dBi 6 Element Indoor/Outdoor Patch Antenna with RPTNC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -8830,6 +8851,9 @@
     "name": "2.4/5 GHz 8 dBi 4 Element Indoor/Outdoor Patch Antenna with N-Style",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -8938,6 +8962,9 @@
     "name": "2.4/5 GHz 8 dBi 4 Element Indoor/Outdoor Patch Antenna with RPTNC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -9046,6 +9073,9 @@
     "name": "2.4/5 GHz 8 dBi 6 Element Indoor/Outdoor Patch Antenna with N-Style",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -9161,6 +9191,9 @@
     "name": "2.4/5 GHz 8 dBi 6 Element Indoor/Outdoor Patch Antenna with RPSMA",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -9282,6 +9315,9 @@
     "name": "2.4/5 GHz 8 dBi 6 Element Indoor/Outdoor Patch Antenna with RPTNC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -11650,6 +11686,9 @@
     "name": "2.4/5/6 GHz 8 dBi 10 Element Indoor Patch Antenna with 10 MPC",
     "form": "Patch",
     "indoor_outdoor": "Indoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -11754,6 +11793,9 @@
     "name": "2.4/5/6 GHz 8 dBi 8 Element Indoor/Outdoor Patch Antenna with RA DART",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -11872,6 +11914,9 @@
     "name": "2.4/5/6 GHz 8dBi 8 Element Indoor/Outdoor Patch Antenna with DART",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -11990,6 +12035,9 @@
     "name": "2.4/5/6 GHz 8 dBi 8 Element Indoor/Outdoor Patch Antenna with RPSMA",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -13254,6 +13302,9 @@
     "name": "2.4/5/6 GHz 8 dBi 8 Element Indoor/Outdoor Patch Antenna with N-Style",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -14070,6 +14121,9 @@
     "name": "2.4/5/6 GHz 8 dBi 6 Element Patch Antenna with N-Style Plugs",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -14660,6 +14714,9 @@
     "name": "2.4/5/6 GHz 8 dBi 6 Element Patch Antenna with RPSMA Plugs",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -15491,6 +15548,9 @@
     "name": "2.4/5/6 GHz 25\u00b0x115\u00b0 8 dBi 14 Element Patch antenna with MPC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -15920,6 +15980,9 @@
     "name": "2.4/5/6 GHz 8 dBi 4 Element Patch Antenna with N-Style Plugs",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -16034,6 +16097,9 @@
     "name": "2.4/5/6 GHz 8 dBi 4 Element Patch Antenna with RPSMA Plugs",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -22942,7 +23008,7 @@
     "sku": "610484",
     "name": "TerraWave\u00ae 2.4/5/6 GHz 13 dBi Wi-Fi Directional  Warehouse Antenna with 4 N Female Connectors",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor",
     "applications": [
       "Warehouse"
     ],
@@ -24825,7 +24891,10 @@
     "sku": "607902",
     "name": "2.4/5/6 GHz 8dBi Directional Antenna",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -24941,18 +25010,22 @@
     "form": "Omni",
     "indoor_outdoor": "Indoor",
     "bands": [
+      "2.4",
       "5"
     ],
     "frequency_range": "617-960/1400-2700/3300-6000 MHz",
     "gain_dbi": {
-      "5": 1.5
+      "2.4": 3,
+      "5": 3
     },
     "beamwidth": {
       "horizontal": {
+        "2.4": "360\u00b0",
         "5": "360\u00b0"
       },
       "vertical": {
-        "5": "90\u00b0"
+        "2.4": "70\u00b0",
+        "5": "50\u00b0"
       }
     },
     "connector": "TNC Male",
@@ -25041,18 +25114,22 @@
     "form": "Omni",
     "indoor_outdoor": "Indoor",
     "bands": [
+      "2.4",
       "5"
     ],
     "frequency_range": "617-960/1400-2700/3300-6000 MHz",
     "gain_dbi": {
-      "5": 1.5
+      "2.4": 3,
+      "5": 3
     },
     "beamwidth": {
       "horizontal": {
+        "2.4": "360\u00b0",
         "5": "360\u00b0"
       },
       "vertical": {
-        "5": "90\u00b0"
+        "2.4": "70\u00b0",
+        "5": "50\u00b0"
       }
     },
     "connector": "N Male",
@@ -26854,18 +26931,22 @@
     "form": "Omni",
     "indoor_outdoor": "Indoor",
     "bands": [
+      "2.4",
       "5"
     ],
     "frequency_range": "617-960/1400-2700/3300-6000 MHz",
     "gain_dbi": {
-      "5": 1.5
+      "2.4": 3,
+      "5": 3
     },
     "beamwidth": {
       "horizontal": {
+        "2.4": "360\u00b0",
         "5": "360\u00b0"
       },
       "vertical": {
-        "5": "90\u00b0"
+        "2.4": "70\u00b0",
+        "5": "50\u00b0"
       }
     },
     "connector": "SMA Male",
@@ -27994,7 +28075,7 @@
     "sku": "237129",
     "name": "2.4/5 GHz 8 dBi Directional Antenna with 6 RPSMA Male Connectors",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor",
     "applications": [
       "Warehouse"
     ],
@@ -28118,7 +28199,7 @@
     "sku": "208128",
     "name": "2.4/5 GHz 8 dBi Directional Antenna with 4 RPTNC Male Connectors and Articulating Mount",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor",
     "applications": [
       "Warehouse"
     ],
@@ -42278,7 +42359,7 @@
     "sku": "FANT-04BEAX-1313-D-N",
     "name": "2.4/5/6 GHz 13 dBi Wi-Fi Directional Antenna with 4 N-Type",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor",
     "applications": [
       "Warehouse"
     ],
@@ -42428,7 +42509,7 @@
     "sku": "FANT-06BEAX-1313-D-R",
     "name": "2.4/5/6 GHz 12/13/13 dBi Wi-Fi Directional Antenna with 6 RPSMA",
     "form": "Patch",
-    "indoor_outdoor": null,
+    "indoor_outdoor": "Indoor",
     "applications": [
       "Warehouse"
     ],
