@@ -65,5 +65,7 @@ jobs:
         run: node .github/scripts/test-datasheet-label-xss.js
       - name: Test URL sanitizer unification
         run: node .github/scripts/test-url-sanitizer.js
+      - name: Test detail Back session helpers
+        run: node .github/scripts/test-detail-back.js
       - name: Test HTML sink inventory
         run: node .github/scripts/test-html-sinks.js

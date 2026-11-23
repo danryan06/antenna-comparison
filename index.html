@@ -272,6 +272,11 @@
       return qs ? `index.html?${qs}` : 'index.html';
     }
 
+    function goToDetail(id) {
+      saveDetailBackPath(browseReturnPath());
+      window.location.href = buildAntennaDetailHref(id);
+    }
+
     function buildColumnsPanel() {
       const grid = document.getElementById('columns-grid');
       grid.innerHTML = '';
@@ -509,9 +514,12 @@
           } else if (colKey === 'sku') {
             const link = document.createElement('a');
             link.className = 'sku-link';
-            link.href = buildAntennaDetailHref(id, browseReturnPath());
+            link.href = buildAntennaDetailHref(id);
             link.textContent = entry.sku || '';
-            link.addEventListener('click', e => e.stopPropagation());
+            link.addEventListener('click', e => {
+              e.stopPropagation();
+              saveDetailBackPath(browseReturnPath());
+            });
             td.appendChild(link);
             td.style.fontSize = '1rem';
             td.style.fontWeight = '600';
@@ -528,7 +536,7 @@
         });
 
         tr.addEventListener('click', () => {
-          window.location.href = buildAntennaDetailHref(id, browseReturnPath());
+          goToDetail(id);
         });
         tbody.appendChild(tr);
       });

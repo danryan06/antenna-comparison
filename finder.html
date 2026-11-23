@@ -325,7 +325,21 @@
     }
 
     function detailHrefFor(slug) {
-      return buildAntennaDetailHref(slug, finderReturnPath());
+      return buildAntennaDetailHref(slug);
+    }
+
+    function rememberFinderBack() {
+      saveDetailBackPath(finderReturnPath());
+    }
+
+    function bindDetailLink(anchor, slug) {
+      anchor.href = detailHrefFor(slug);
+      anchor.addEventListener('click', () => rememberFinderBack());
+    }
+
+    function goToFinderDetail(slug) {
+      rememberFinderBack();
+      window.location.href = detailHrefFor(slug);
     }
 
     function syncUrl() {
@@ -538,14 +552,20 @@
       });
     }
 
+    function apDisplayLabel(profile) {
+      if (!profile) return '';
+      return String(profile.display_name || '').trim() || String(profile.ap_id || '').trim();
+    }
+
     function buildApOptions() {
       const list = document.getElementById('ap-options');
       list.innerHTML = '';
       if (!apIndex) return;
       apIndex.list.forEach(profile => {
         const opt = document.createElement('option');
-        opt.value = profile.ap_id;
-        opt.label = `${profile.display_name} (${profile.ap_id})`;
+        // Value is the human label so the datalist shows "Aruba AP-734"
+        // instead of the internal ap_id slug. resolveApInput still accepts both.
+        opt.value = apDisplayLabel(profile);
         list.appendChild(opt);
       });
     }
@@ -674,7 +694,9 @@
         // keep typed unknown id for unavailable state
       }
       if (syncInput) {
-        document.getElementById('filter-ap').value = state.apId || '';
+        const input = document.getElementById('filter-ap');
+        if (profile) input.value = apDisplayLabel(profile);
+        else input.value = state.apId || '';
       }
       updateCompatChrome();
       renderApSummary(profile);
@@ -708,7 +730,8 @@
         return;
       }
       state.apId = profile.ap_id;
-      if (input.value !== profile.ap_id) input.value = profile.ap_id;
+      const label = apDisplayLabel(profile);
+      if (input.value !== label) input.value = label;
       setSelectedAp(profile, { syncInput: false });
       applyFilters();
     }
@@ -960,7 +983,7 @@
 
           const title = document.createElement('a');
           title.className = 'compat-sku';
-          title.href = detailHrefFor(entry._slug);
+          bindDetailLink(title, entry._slug);
           title.textContent = `${entry.vendor || ''} ${entry.sku || ''}`.trim();
           top.appendChild(title);
           card.appendChild(top);
@@ -1016,7 +1039,7 @@
           const actions = document.createElement('div');
           actions.className = 'compat-actions';
           const detail = document.createElement('a');
-          detail.href = detailHrefFor(entry._slug);
+          bindDetailLink(detail, entry._slug);
           detail.className = 'btn-link btn-link-ghost btn-link-small';
           detail.textContent = 'Details';
           actions.appendChild(detail);
@@ -1053,7 +1076,12 @@
       container.innerHTML = '';
       const chips = [];
 
-      if (state.apId) chips.push({ type: 'ap', value: state.apId, label: `AP ${state.apId}` });
+      if (state.apId) {
+        const apChipLabel = apDisplayLabel(selectedApProfile) ||
+          apDisplayLabel(resolveApInput(state.apId)) ||
+          state.apId;
+        chips.push({ type: 'ap', value: state.apId, label: apChipLabel });
+      }
       state.vendors.forEach(v => chips.push({ type: 'vendors', value: v, label: v }));
       if (state.form) chips.push({ type: 'form', value: state.form, label: state.form });
       state.bands.forEach(v => chips.push({ type: 'bands', value: v, label: `${v} GHz` }));
@@ -1251,7 +1279,7 @@
           if (col.key === 'sku') {
             const skuLink = document.createElement('a');
             skuLink.className = 'sku-link';
-            skuLink.href = detailHrefFor(entry._slug);
+            bindDetailLink(skuLink, entry._slug);
             skuLink.textContent = entry.sku || entry.legacy_sku || 'View';
             cell.appendChild(skuLink);
           } else if (col.key === 'beamwidth') {
@@ -1267,7 +1295,7 @@
         actions.className = 'result-cell result-actions';
         actions.setAttribute('role', 'cell');
         const detail = document.createElement('a');
-        detail.href = detailHrefFor(entry._slug);
+        bindDetailLink(detail, entry._slug);
         detail.className = 'btn-link btn-link-ghost btn-link-small';
         detail.textContent = 'Details';
         actions.appendChild(detail);
@@ -1276,7 +1304,7 @@
         row.style.cursor = 'pointer';
         row.addEventListener('click', (e) => {
           if (e.target.type === 'checkbox' || e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
-          window.location.href = detailHrefFor(entry._slug);
+          goToFinderDetail(entry._slug);
         });
 
         container.appendChild(row);
