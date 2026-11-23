@@ -4,7 +4,7 @@ An open-source database for comparing Wi-Fi antennas (indoor and outdoor). Explo
 
 Sibling of [AP Comparison](https://apcomparison.com) and [Switch Comparison](https://switchcomparison.com).
 
-🌐 **Live Site:** [GitHub Pages](https://danryan06.github.io/antenna-comparison) · custom domain `antennacomparison.com` *(DNS pending — no tracked `CNAME` until the domain is verified)*
+🌐 **Live Site:** [https://antennacomparison.com](https://antennacomparison.com) (GitHub Pages + custom domain)
 
 ## Features
 
@@ -75,7 +75,7 @@ Always cite vendor datasheets. When AccelTex/Hubbell publish dual PDFs, merge fi
 - **Frontend**: pure HTML, CSS, and JavaScript (no frameworks) — same family as AP Comparison
 - **Authoring data**: `antenna_data.json` (full catalog, including maintainer-only notes)
 - **Public Pages catalog**: `antenna_catalog.json` (allowlisted public fields only; this is what the site loads)
-- **Hosting**: GitHub Pages (`main` / root). Custom domain is optional until DNS is ready; do not add `CNAME` until `antennacomparison.com` resolves to Pages
+- **Hosting**: GitHub Pages (`main` / root) with custom domain `antennacomparison.com` (tracked `CNAME` at repo root so deploys keep the domain)
 - **robots.txt**: crawler hints only (e.g. `Disallow: /antenna_data.json`). It does **not** hide maintainer notes — `antenna_data.json` remains public in the GitHub repo and is still fetchable; the site loads `antenna_catalog.json`
 - **Security**: see [SECURITY.md](./SECURITY.md)
 - **License**: MIT (code). Vendor media remains vendor property — see License below
@@ -107,8 +107,10 @@ CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-onl
 ├── submit.html             # Submit a new antenna
 ├── compare.html            # Side-by-side compare
 ├── finder.html             # Feature Finder (+ AP compatibility lookup)
-├── 404.html                # Branded not-found recovery (base href for Pages project path)
+├── 404.html                # Branded not-found recovery (root base href for custom domain)
+├── CNAME                   # Custom domain for GitHub Pages (antennacomparison.com)
 ├── robots.txt              # Crawler hints only; does not hide public repo files
+├── sitemap.xml             # Public page list for crawlers
 ├── style.css               # Shared styling
 ├── antenna-format.js       # Display helpers + shared URL sanitizer
 ├── compatibility-matcher.js
