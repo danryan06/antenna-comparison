@@ -58908,6 +58908,32 @@
     "mount_type": "Pole/mast or wall bracket",
     "vswr": "<2.0:1",
     "image_url": "images/te-connectivity/l000962-01.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/l000962-01-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/l000962-01-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/l000962-01-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/l000962-01-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/te-connectivity/l000962-01-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/te-connectivity/l000962-01-pattern-6-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE ANT-DS-ProSig-L000962",
@@ -58988,6 +59014,32 @@
     "mount_type": "Pole/mast or wall bracket",
     "vswr": "<2.0:1",
     "image_url": "images/te-connectivity/l000962-02.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/l000962-02-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/l000962-02-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/l000962-02-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/l000962-02-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/te-connectivity/l000962-02-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/te-connectivity/l000962-02-pattern-6-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE ANT-DS-ProSig-L000962",
@@ -59401,6 +59453,24 @@
     "isolation": ">30 dB",
     "operating_temp": "-40 to +70 \u00b0C",
     "image_url": "images/te-connectivity/pdq24496-fnf.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24496-fnf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq24496-fnf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24496-fnf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq24496-fnf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE ANT-DS-PDQ24496",
@@ -59497,6 +59567,24 @@
     "isolation": ">30 dB",
     "operating_temp": "-40 to +70 \u00b0C",
     "image_url": "images/te-connectivity/pdq24496-91nf.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24496-91nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq24496-91nf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24496-91nf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq24496-91nf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE ANT-DS-PDQ24496",
@@ -59593,6 +59681,24 @@
     "isolation": ">30 dB",
     "operating_temp": "-40 to +70 \u00b0C",
     "image_url": "images/te-connectivity/pdq24496-91nm.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24496-91nm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq24496-91nm-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24496-91nm-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq24496-91nm-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE ANT-DS-PDQ24496",
@@ -59688,6 +59794,24 @@
     "isolation": ">30 dB",
     "operating_temp": "-40 to +70 \u00b0C",
     "image_url": "images/te-connectivity/pdq24499-91nm.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE ANT-DS-PDQ24499",
@@ -59783,6 +59907,24 @@
     "isolation": ">30 dB",
     "operating_temp": "-40 to +70 \u00b0C",
     "image_url": "images/te-connectivity/pdq24499-91nf.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24499-91nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq24499-91nf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24499-91nf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq24499-91nf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE ANT-DS-PDQ24499",
@@ -59878,6 +60020,24 @@
     "isolation": ">30 dB",
     "operating_temp": "-30 to +70 \u00b0C",
     "image_url": "images/te-connectivity/pdq244915-91nf.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq244915-91nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq244915-91nf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq244915-91nf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq244915-91nf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE ANT-DS-PDQ244915",
@@ -59973,6 +60133,24 @@
     "isolation": ">30 dB",
     "operating_temp": "-30 to +70 \u00b0C",
     "image_url": "images/te-connectivity/pdq244915-91nm.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq244915-91nm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq244915-91nm-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq244915-91nm-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq244915-91nm-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE ANT-DS-PDQ244915",
@@ -60068,6 +60246,24 @@
     "isolation": ">30 dB",
     "operating_temp": "-30 to +70 \u00b0C",
     "image_url": "images/te-connectivity/pdq244915-fnf.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq244915-fnf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq244915-fnf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq244915-fnf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq244915-fnf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE ANT-DS-PDQ244915",
@@ -60305,6 +60501,24 @@
     "vswr": "2.0:1 max",
     "operating_temp": "-30 to +70 \u00b0C",
     "image_url": "images/te-connectivity/pdm24499-fnf.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdm24499-fnf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdm24499-fnf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdm24499-fnf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdm24499-fnf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE Antenna Catalog",
@@ -60382,6 +60596,24 @@
     "vswr": "<1.6:1 / <2.0:1 / <1.5:1 by sub-band",
     "operating_temp": "-40 to +70 \u00b0C",
     "image_url": "images/te-connectivity/pdm245115h-fnf.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdm245115h-fnf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdm245115h-fnf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdm245115h-fnf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdm245115h-fnf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE ANT-DS-PDM245115H",
@@ -60734,6 +60966,56 @@
     "isolation": "20/25 dB",
     "operating_temp": "-30 to +70 \u00b0C",
     "image_url": "images/te-connectivity/op24516ds-91rsmm.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-2-4-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 1 Vertical",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-2-4-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-2-4-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Vertical",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-2-4-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-2-4-ghz-element-3-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Vertical",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-2-4-ghz-element-3-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-5-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Vertical",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-5-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-5-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Vertical",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-5-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-5-ghz-element-3-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Vertical",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-5-ghz-element-3-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE ANT-DS-OP24516DS",
@@ -60830,6 +61112,56 @@
     "isolation": "20/25 dB",
     "operating_temp": "-30 to +70 \u00b0C",
     "image_url": "images/te-connectivity/op24516ds-91nm.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-2-4-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 1 Vertical",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-2-4-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-2-4-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Vertical",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-2-4-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-2-4-ghz-element-3-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Vertical",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-2-4-ghz-element-3-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-5-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Vertical",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-5-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-5-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Vertical",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-5-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-5-ghz-element-3-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Vertical",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-5-ghz-element-3-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE ANT-DS-OP24516DS",
@@ -61789,6 +62121,12 @@
     "mount_type": "Mast/bracket",
     "operating_temp": "-30 to +70 \u00b0C",
     "image_url": "images/te-connectivity/pa24-19.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal / Vertical",
+        "url": "images/te-connectivity/pa24-19-pattern-2-4-ghz-horizontal-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE Antenna Catalog",
@@ -61852,6 +62190,24 @@
     "mount_type": "Mast/bracket",
     "operating_temp": "-30 to +70 \u00b0C",
     "image_url": "images/te-connectivity/pa58-24.jpg",
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-5-ghz-vertical.jpg"
+      }
+    ],
     "datasheet_urls": [
       {
         "label": "TE Antenna Catalog",

@@ -65326,7 +65326,8 @@
     ],
     "field_notes": {
       "gain_dbi": "te.com lists Gain (Max) 9.6 dB and drawing title 8 dBi; per-band table not captured from PLP. Used 8/9.6/8 as working values pending full PDF table QC.",
-      "beamwidth": "Not published on te.com PLP summary; left null pending datasheet table."
+      "beamwidth": "Not published on te.com PLP summary; left null pending datasheet table.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "sku": "L000962-01",
     "legacy_sku": "PSD24718-75RSMM",
@@ -65376,6 +65377,32 @@
           "removable": false
         }
       }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/l000962-01-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/l000962-01-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/l000962-01-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/l000962-01-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/te-connectivity/l000962-01-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/te-connectivity/l000962-01-pattern-6-ghz-vertical.jpg"
+      }
     ]
   },
   {
@@ -65413,7 +65440,8 @@
     ],
     "field_notes": {
       "gain_dbi": "te.com lists Gain (Max) 9.6 dB and drawing title 8 dBi; per-band table not captured from PLP. Used 8/9.6/8 as working values pending full PDF table QC.",
-      "beamwidth": "Not published on te.com PLP summary; left null pending datasheet table."
+      "beamwidth": "Not published on te.com PLP summary; left null pending datasheet table.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "sku": "L000962-02",
     "legacy_sku": "PSQ24718-75RSMM",
@@ -65462,6 +65490,32 @@
           "type": "RG 58",
           "removable": false
         }
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/l000962-02-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/l000962-02-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/l000962-02-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/l000962-02-pattern-5-ghz-vertical.jpg"
+      },
+      {
+        "label": "6 GHz Horizontal",
+        "url": "images/te-connectivity/l000962-02-pattern-6-ghz-horizontal.jpg"
+      },
+      {
+        "label": "6 GHz Vertical",
+        "url": "images/te-connectivity/l000962-02-pattern-6-ghz-vertical.jpg"
       }
     ]
   },
@@ -65886,8 +65940,9 @@
       "maintainer": "Primary electricals from TE-branded datasheet mirror; catalog confirms family."
     },
     "field_notes": {
-      "beamwidth": "V-pol horizontal/vertical plane values used; H-pol similar (63°/71° @2.4).",
-      "datasheet_urls": "Ampheo hosts TE-branded PDF while te.com DocumentDelivery is bot-blocked from this environment; first-party DocNm ANT-DS-PDQ24496 also cited via catalog."
+      "beamwidth": "V-pol horizontal/vertical plane values used; H-pol similar (63\u00b0/71\u00b0 @2.4).",
+      "datasheet_urls": "Ampheo hosts TE-branded PDF while te.com DocumentDelivery is bot-blocked from this environment; first-party DocNm ANT-DS-PDQ24496 also cited via catalog.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq24496-fnf.jpg",
     "antenna_id": "te-connectivity:pdq24496-fnf",
@@ -65913,6 +65968,24 @@
           "type": null,
           "removable": false
         }
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24496-fnf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq24496-fnf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24496-fnf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq24496-fnf-pattern-5-ghz-vertical.jpg"
       }
     ]
   },
@@ -65989,8 +66062,9 @@
       "maintainer": "Primary electricals from TE-branded datasheet mirror; catalog confirms family."
     },
     "field_notes": {
-      "beamwidth": "V-pol horizontal/vertical plane values used; H-pol similar (63°/71° @2.4).",
-      "datasheet_urls": "Ampheo hosts TE-branded PDF while te.com DocumentDelivery is bot-blocked from this environment; first-party DocNm ANT-DS-PDQ24496 also cited via catalog."
+      "beamwidth": "V-pol horizontal/vertical plane values used; H-pol similar (63\u00b0/71\u00b0 @2.4).",
+      "datasheet_urls": "Ampheo hosts TE-branded PDF while te.com DocumentDelivery is bot-blocked from this environment; first-party DocNm ANT-DS-PDQ24496 also cited via catalog.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq24496-91nf.jpg",
     "antenna_id": "te-connectivity:pdq24496-91nf",
@@ -66016,6 +66090,24 @@
           "type": null,
           "removable": false
         }
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24496-91nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq24496-91nf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24496-91nf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq24496-91nf-pattern-5-ghz-vertical.jpg"
       }
     ]
   },
@@ -66092,8 +66184,9 @@
       "maintainer": "Primary electricals from TE-branded datasheet mirror; catalog confirms family."
     },
     "field_notes": {
-      "beamwidth": "V-pol horizontal/vertical plane values used; H-pol similar (63°/71° @2.4).",
-      "datasheet_urls": "Ampheo hosts TE-branded PDF while te.com DocumentDelivery is bot-blocked from this environment; first-party DocNm ANT-DS-PDQ24496 also cited via catalog."
+      "beamwidth": "V-pol horizontal/vertical plane values used; H-pol similar (63\u00b0/71\u00b0 @2.4).",
+      "datasheet_urls": "Ampheo hosts TE-branded PDF while te.com DocumentDelivery is bot-blocked from this environment; first-party DocNm ANT-DS-PDQ24496 also cited via catalog.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq24496-91nm.jpg",
     "antenna_id": "te-connectivity:pdq24496-91nm",
@@ -66119,6 +66212,24 @@
           "type": null,
           "removable": false
         }
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24496-91nm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq24496-91nm-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24496-91nm-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq24496-91nm-pattern-5-ghz-vertical.jpg"
       }
     ]
   },
@@ -66195,7 +66306,8 @@
     },
     "field_notes": {
       "gain_dbi": "Catalog lists 8.6/9.4; customer drawing peak 7.8/9.4. Primary 8.6/9.4 from catalog card.",
-      "beamwidth": "V-pol azimuth/elevation from drawing."
+      "beamwidth": "V-pol azimuth/elevation from drawing.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq24499-91nm.jpg",
     "antenna_id": "te-connectivity:pdq24499-91nm",
@@ -66221,6 +66333,24 @@
           "type": null,
           "removable": false
         }
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-5-ghz-vertical.jpg"
       }
     ]
   },
@@ -66297,7 +66427,8 @@
     },
     "field_notes": {
       "gain_dbi": "Catalog lists 8.6/9.4; customer drawing peak 7.8/9.4. Primary 8.6/9.4 from catalog card.",
-      "beamwidth": "V-pol azimuth/elevation from drawing."
+      "beamwidth": "V-pol azimuth/elevation from drawing.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq24499-91nf.jpg",
     "antenna_id": "te-connectivity:pdq24499-91nf",
@@ -66323,6 +66454,24 @@
           "type": null,
           "removable": false
         }
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24499-91nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq24499-91nf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24499-91nf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq24499-91nf-pattern-5-ghz-vertical.jpg"
       }
     ]
   },
@@ -66398,7 +66547,8 @@
       "maintainer": "High-gain venue panel; form High-density patch due to ~20° 5 GHz beams."
     },
     "field_notes": {
-      "beamwidth": "V-pol plane values from datasheet."
+      "beamwidth": "V-pol plane values from datasheet.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq244915-91nf.jpg",
     "antenna_id": "te-connectivity:pdq244915-91nf",
@@ -66424,6 +66574,24 @@
           "type": null,
           "removable": false
         }
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq244915-91nf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq244915-91nf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq244915-91nf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq244915-91nf-pattern-5-ghz-vertical.jpg"
       }
     ]
   },
@@ -66499,7 +66667,8 @@
       "maintainer": "High-gain venue panel; form High-density patch due to ~20° 5 GHz beams."
     },
     "field_notes": {
-      "beamwidth": "V-pol plane values from datasheet."
+      "beamwidth": "V-pol plane values from datasheet.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq244915-91nm.jpg",
     "antenna_id": "te-connectivity:pdq244915-91nm",
@@ -66525,6 +66694,24 @@
           "type": null,
           "removable": false
         }
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq244915-91nm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq244915-91nm-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq244915-91nm-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq244915-91nm-pattern-5-ghz-vertical.jpg"
       }
     ]
   },
@@ -66600,7 +66787,8 @@
       "maintainer": "High-gain venue panel; form High-density patch due to ~20° 5 GHz beams."
     },
     "field_notes": {
-      "beamwidth": "V-pol plane values from datasheet."
+      "beamwidth": "V-pol plane values from datasheet.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq244915-fnf.jpg",
     "antenna_id": "te-connectivity:pdq244915-fnf",
@@ -66626,6 +66814,24 @@
           "type": null,
           "removable": false
         }
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq244915-fnf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq244915-fnf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq244915-fnf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq244915-fnf-pattern-5-ghz-vertical.jpg"
       }
     ]
   },
@@ -66832,7 +67038,8 @@
       "maintainer": "Catalog card only for beamwidth — left empty maps."
     },
     "field_notes": {
-      "beamwidth": "Not on catalog card; empty pending datasheet."
+      "beamwidth": "Not on catalog card; empty pending datasheet.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdm24499-fnf.jpg",
     "antenna_id": "te-connectivity:pdm24499-fnf",
@@ -66858,6 +67065,24 @@
           "type": null,
           "removable": false
         }
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdm24499-fnf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdm24499-fnf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdm24499-fnf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdm24499-fnf-pattern-5-ghz-vertical.jpg"
       }
     ]
   },
@@ -66956,7 +67181,28 @@
           "removable": false
         }
       }
-    ]
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdm245115h-fnf-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdm245115h-fnf-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdm245115h-fnf-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdm245115h-fnf-pattern-5-ghz-vertical.jpg"
+      }
+    ],
+    "field_notes": {
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+    }
   },
   {
     "vendor": "TE Connectivity",
@@ -67302,7 +67548,8 @@
       "maintainer": "Gain uses datasheet max (2.8/6.5); typical 2.0/4.8."
     },
     "field_notes": {
-      "gain_dbi": "Peak/max from datasheet; typical 2.0/4.8 dBi."
+      "gain_dbi": "Peak/max from datasheet; typical 2.0/4.8 dBi.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/op24516ds-91rsmm.jpg",
     "antenna_id": "te-connectivity:op24516ds-91rsmm",
@@ -67328,6 +67575,56 @@
           "type": null,
           "removable": false
         }
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-2-4-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 1 Vertical",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-2-4-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-2-4-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Vertical",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-2-4-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-2-4-ghz-element-3-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Vertical",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-2-4-ghz-element-3-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-5-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Vertical",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-5-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-5-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Vertical",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-5-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-5-ghz-element-3-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Vertical",
+        "url": "images/te-connectivity/op24516ds-91rsmm-pattern-5-ghz-element-3-vertical.jpg"
       }
     ]
   },
@@ -67404,7 +67701,8 @@
       "maintainer": "Gain uses datasheet max (2.8/6.5); typical 2.0/4.8."
     },
     "field_notes": {
-      "gain_dbi": "Peak/max from datasheet; typical 2.0/4.8 dBi."
+      "gain_dbi": "Peak/max from datasheet; typical 2.0/4.8 dBi.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/op24516ds-91nm.jpg",
     "antenna_id": "te-connectivity:op24516ds-91nm",
@@ -67430,6 +67728,56 @@
           "type": null,
           "removable": false
         }
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Element 1 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-2-4-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 1 Vertical",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-2-4-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-2-4-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 2 Vertical",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-2-4-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-2-4-ghz-element-3-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Element 3 Vertical",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-2-4-ghz-element-3-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-5-ghz-element-1-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 1 Vertical",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-5-ghz-element-1-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-5-ghz-element-2-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 2 Vertical",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-5-ghz-element-2-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Horizontal",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-5-ghz-element-3-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Element 3 Vertical",
+        "url": "images/te-connectivity/op24516ds-91nm-pattern-5-ghz-element-3-vertical.jpg"
       }
     ]
   },
@@ -68397,7 +68745,8 @@
       "maintainer": "Directional infrastructure antenna from TE Antenna Catalog."
     },
     "field_notes": {
-      "beamwidth": "Not listed on catalog card."
+      "beamwidth": "Not listed on catalog card.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pa24-19.jpg",
     "antenna_id": "te-connectivity:pa24-19",
@@ -68422,6 +68771,12 @@
           "type": null,
           "removable": null
         }
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal / Vertical",
+        "url": "images/te-connectivity/pa24-19-pattern-2-4-ghz-horizontal-vertical.jpg"
       }
     ]
   },
@@ -68466,7 +68821,8 @@
       "maintainer": "Directional infrastructure antenna from TE Antenna Catalog."
     },
     "field_notes": {
-      "beamwidth": "Not listed on catalog card."
+      "beamwidth": "Not listed on catalog card.",
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pa58-24.jpg",
     "antenna_id": "te-connectivity:pa58-24",
@@ -68491,6 +68847,24 @@
           "type": null,
           "removable": null
         }
+      }
+    ],
+    "pattern_images": [
+      {
+        "label": "2.4 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-2-4-ghz-horizontal.jpg"
+      },
+      {
+        "label": "2.4 GHz Vertical",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-2-4-ghz-vertical.jpg"
+      },
+      {
+        "label": "5 GHz Horizontal",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-5-ghz-horizontal.jpg"
+      },
+      {
+        "label": "5 GHz Vertical",
+        "url": "images/te-connectivity/pdq24499-91nm-pattern-5-ghz-vertical.jpg"
       }
     ]
   },
