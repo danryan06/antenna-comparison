@@ -704,6 +704,9 @@
     "name": "2.4/5 GHz 8 dBi 4 Element Indoor/Outdoor Patch Antenna with RPSMA",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -5982,6 +5985,9 @@
     "name": "2.4/5 GHz 13 dBi 4 Element Indoor/Outdoor Patch Antenna with N-Style",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -6095,6 +6101,9 @@
     "name": "2.4/5 GHz 13 dBi 4 Element Indoor/Outdoor Patch Antenna with RPSMA",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -6208,6 +6217,9 @@
     "name": "2.4/5 GHz 13 dBi 4 Element Indoor/Outdoor Patch Antenna with RPTNC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -7587,6 +7599,9 @@
     "name": "2.4/5 GHz 6 dBi 4 Element Indoor/Outdoor Patch Antenna with N-Style",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -7700,6 +7715,9 @@
     "name": "2.4/5 GHz 6 dBi 4 Element Indoor/Outdoor Patch Antenna with RPSMA",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -7813,6 +7831,9 @@
     "name": "2.4/5 GHz 6 dBi 4 Element Indoor/Outdoor Patch Antenna with RPTNC",
     "form": "Patch",
     "indoor_outdoor": "Indoor/Outdoor",
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5"
@@ -24826,6 +24847,9 @@
     "name": "2.4/5/6 GHz 8dBi Directional Antenna",
     "form": "Patch",
     "indoor_outdoor": null,
+    "applications": [
+      "Warehouse"
+    ],
     "bands": [
       "2.4",
       "5",
@@ -24941,18 +24965,22 @@
     "form": "Omni",
     "indoor_outdoor": "Indoor",
     "bands": [
+      "2.4",
       "5"
     ],
     "frequency_range": "617-960/1400-2700/3300-6000 MHz",
     "gain_dbi": {
-      "5": 1.5
+      "2.4": 3,
+      "5": 3
     },
     "beamwidth": {
       "horizontal": {
+        "2.4": "360\u00b0",
         "5": "360\u00b0"
       },
       "vertical": {
-        "5": "90\u00b0"
+        "2.4": "70\u00b0",
+        "5": "50\u00b0"
       }
     },
     "connector": "TNC Male",
@@ -25041,18 +25069,22 @@
     "form": "Omni",
     "indoor_outdoor": "Indoor",
     "bands": [
+      "2.4",
       "5"
     ],
     "frequency_range": "617-960/1400-2700/3300-6000 MHz",
     "gain_dbi": {
-      "5": 1.5
+      "2.4": 3,
+      "5": 3
     },
     "beamwidth": {
       "horizontal": {
+        "2.4": "360\u00b0",
         "5": "360\u00b0"
       },
       "vertical": {
-        "5": "90\u00b0"
+        "2.4": "70\u00b0",
+        "5": "50\u00b0"
       }
     },
     "connector": "N Male",
@@ -26854,18 +26886,22 @@
     "form": "Omni",
     "indoor_outdoor": "Indoor",
     "bands": [
+      "2.4",
       "5"
     ],
     "frequency_range": "617-960/1400-2700/3300-6000 MHz",
     "gain_dbi": {
-      "5": 1.5
+      "2.4": 3,
+      "5": 3
     },
     "beamwidth": {
       "horizontal": {
+        "2.4": "360\u00b0",
         "5": "360\u00b0"
       },
       "vertical": {
-        "5": "90\u00b0"
+        "2.4": "70\u00b0",
+        "5": "50\u00b0"
       }
     },
     "connector": "SMA Male",
