@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
-# Only takes effect once served from a domain root (custom domain).
+# Served from the custom domain root (antennacomparison.com).
 # antenna_data.json is public in the GitHub repo regardless; this only reduces crawler indexing.
 Disallow: /antenna_data.json
+
+Sitemap: https://antennacomparison.com/sitemap.xml
