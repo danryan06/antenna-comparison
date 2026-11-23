@@ -6,7 +6,10 @@ Use `antenna_template.json` as the shape for new rows in `antenna_data.json`.
 
 - `antenna_id` — immutable `vendor-slug:sku-slug` used by AP compatibility matching; freeze after assignment even if display vendor/SKU text changes
 - `sku` — primary / display catalog number (Hubbell for AccelTex/Hubbell products)
-- `legacy_sku` — searchable AccelTex (or prior) alias; show on the detail page
+- `legacy_sku` — searchable alternate number, shown on the detail page with a vendor-specific label:
+  - AccelTex / Hubbell: the former AccelTex part number (e.g. `ATS-OP-245-13-4NP-36`: 13 dBi, 4 N-style plug leads, 36 in leads)
+  - Ventev: the Ventev/Tessco SKU (e.g. `611751`). Ventev's `sku` is the **manufacturer part number** (e.g. `M7060060D3D43607E`), because that is how Ventev refers to its antennas.
+- Detail links built from the alternate number (`antenna.html?id=ventev-611751`) still resolve and redirect to the canonical id.
 - Search must match either SKU
 
 ## RF interfaces (compatibility)
@@ -24,6 +27,7 @@ One of: `Omni` | `Patch` | `High-density patch`
 
 - `indoor_outdoor` is the install rating only: `Indoor` | `Outdoor` | `Indoor/Outdoor`. Use `null` when the datasheet does not say; the site shows "Not specified". CI rejects any other value.
 - Where an antenna is meant to be used goes in `applications` (array). Known values: `Warehouse`. Add new values to `APPLICATIONS` in `.github/scripts/validate-data.js`.
+- Warehouse rule: tag `Warehouse` when the vendor's own name, datasheet or brochure says the antenna is for warehouses. AccelTex families `ATS-OP-245-13-*`, `ATS-OP-245-8-*` and tri-band `ATS-OP-2456-8-*` are warehouse antennas. If a sheet names only a warehouse application and no install environment, use `Indoor`. IP54 with no other environment wording means `Indoor/Outdoor`.
 - `applications` is maintainer-curated: the edit form does not show it and edits keep the existing value.
 
 ## Default table columns

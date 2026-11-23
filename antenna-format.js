@@ -409,6 +409,34 @@ function apComparisonDetailUrl(profile) {
   return slug ? `${AP_COMPARISON_BASE}/ap.html?id=${encodeURIComponent(slug)}` : AP_COMPARISON_BASE;
 }
 
+/**
+ * Label for legacy_sku, which holds a vendor's alternate number:
+ * the former AccelTex part number for AccelTex / Hubbell, the Ventev/Tessco
+ * SKU for Ventev (whose primary sku is the manufacturer part number).
+ */
+function altSkuLabel(entry) {
+  const vendor = String((entry && entry.vendor) || "").toLowerCase();
+  if (vendor.includes("acceltex")) return "Former AccelTex part number";
+  if (vendor === "ventev") return "Ventev SKU";
+  return "Alternate part number";
+}
+
+/**
+ * Find an antenna by detail-page id. Ids are slugifyAntenna(vendor + sku);
+ * an id built from the alternate number (legacy_sku) also resolves, so links
+ * made before a vendor's primary number changed (e.g. ventev-610484) keep
+ * working. Returns { entry, canonical } where canonical is false for a
+ * legacy-id match.
+ */
+function findAntennaById(data, id) {
+  if (!Array.isArray(data) || !id) return null;
+  const direct = data.find(e => slugifyAntenna(e) === id);
+  if (direct) return { entry: direct, canonical: true };
+  const legacy = data.find(e => e && e.legacy_sku &&
+    slugifyAntenna({ vendor: e.vendor, sku: e.legacy_sku }) === id);
+  return legacy ? { entry: legacy, canonical: false } : null;
+}
+
 function flatBandParts(obj, kind) {
   if (!obj || typeof obj !== "object" || Array.isArray(obj)) return null;
   if (Object.values(obj).some(item => item && typeof item === "object")) return null;
@@ -562,6 +590,8 @@ if (typeof module !== "undefined" && module.exports) {
     groupPatternsByPort,
     formatEnvironment,
     apComparisonSlug,
+    altSkuLabel,
+    findAntennaById,
     apComparisonDetailUrl,
     formatBandObject,
     formatBeamwidthCompact,

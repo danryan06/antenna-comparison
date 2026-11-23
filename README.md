@@ -22,7 +22,7 @@ Sibling of [AP Comparison](https://apcomparison.com) and [Switch Comparison](htt
 
 Each antenna entry includes:
 
-- **Identity**: vendor, primary SKU (Hubbell catalog number), legacy AccelTex SKU (searchable alias)
+- **Identity**: vendor, primary part number (Hubbell catalog number for AccelTex / Hubbell; manufacturer part number for Ventev), alternate number in `legacy_sku` (former AccelTex part number, or the Ventev/Tessco SKU), searchable
 - **RF**: bands, frequency range, gain, beamwidth (H/V), connector, lead count, polarization, VSWR, isolation
 - **Cable / mechanical**: cable length & type, dimensions, weight, radome, mount/install type, included parts
 - **Environment**: install rating (`Indoor`, `Outdoor`, `Indoor/Outdoor`, or not specified), applications (e.g. Warehouse), IP rating, wind rating, operating temperature
@@ -60,6 +60,7 @@ node .github/scripts/test-url-sanitizer.js
 node .github/scripts/test-detail-back.js
 node .github/scripts/test-pattern-ports.js
 node .github/scripts/test-ap-links.js
+node .github/scripts/test-alt-sku.js
 node .github/scripts/test-html-sinks.js
 ```
 

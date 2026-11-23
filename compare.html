@@ -197,7 +197,7 @@
       ['vswr', 'VSWR'],
       ['isolation', 'Isolation'],
       ['operating_temp', 'Operating Temp'],
-      ['legacy_sku', 'Legacy SKU']
+      ['legacy_sku', 'Alt. part number']
     ];
     const hidden = new Set(['cable_type', 'radome', 'wind_rating', 'vswr', 'isolation', 'operating_temp']);
     let selected = [];
@@ -305,7 +305,10 @@
         if (!res.ok) throw new Error('HTTP ' + res.status);
         const data = await res.json();
         const ids = (new URLSearchParams(location.search).get('ids') || '').split(',').filter(Boolean);
-        selected = ids.map(id => data.find(e => slugifyAntenna(e) === id)).filter(Boolean);
+        selected = ids.map(id => {
+          const found = findAntennaById(data, id);
+          return found ? found.entry : null;
+        }).filter(Boolean);
         if (selected.length < 2) {
           errorEl.style.display = 'block';
           errorEl.textContent = 'Select at least two antennas from the browse table to compare.';
