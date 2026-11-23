@@ -600,7 +600,7 @@
     ]);
     identity.appendChild(fieldRow('vendor', 'Vendor', textInput('AccelTex / Hubbell, Ventev, Cisco…')));
     identity.appendChild(fieldRow('sku', 'SKU', textInput('ATS-03414')));
-    identity.appendChild(fieldRow('legacy_sku', 'Legacy SKU', textInput('ATS-OHDP-2456-14-8RPSP-36')));
+    identity.appendChild(fieldRow('legacy_sku', 'Alternate part number (former AccelTex number, or Ventev SKU)', textInput('ATS-OHDP-2456-14-8RPSP-36')));
     identity.appendChild(fieldRow('name', 'Name', textInput('Short product name')));
     const formSelect = el('select');
     formSelect.appendChild(el('option', { value: '', text: 'Select form factor' }));
@@ -968,7 +968,12 @@
           select.appendChild(option);
         });
         const requested = new URLSearchParams(window.location.search).get('id') || '';
-        const match = requested ? data.findIndex(entry => entryId(entry) === requested) : -1;
+        let match = requested ? data.findIndex(entry => entryId(entry) === requested) : -1;
+        if (match < 0 && requested && typeof findAntennaById === 'function') {
+          // Old id built from the alternate number (e.g. a Ventev SKU).
+          const found = findAntennaById(data, requested);
+          if (found) match = data.indexOf(found.entry);
+        }
         if (match >= 0) {
           select.value = String(match);
           selected = data[match];

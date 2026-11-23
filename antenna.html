@@ -446,7 +446,7 @@
     const PUBLIC_FIELDS = [
       ['vendor', 'Vendor'],
       ['sku', 'SKU (primary)'],
-      ['legacy_sku', 'Legacy SKU'],
+      ['legacy_sku', 'Alternate part number'],
       ['name', 'Name'],
       ['form', 'Form'],
       ['indoor_outdoor', 'Indoor/Outdoor'],
@@ -877,7 +877,14 @@
         if (!res.ok) throw new Error('HTTP ' + res.status);
         const data = await res.json();
         const id = readId();
-        const entry = data.find(e => slugifyAntenna(e) === id);
+        const found = findAntennaById(data, id);
+        const entry = found ? found.entry : null;
+        if (found && !found.canonical) {
+          // Old link (e.g. a Ventev SKU id): show the canonical id in the address bar.
+          const params = new URLSearchParams(window.location.search);
+          params.set('id', slugifyAntenna(entry));
+          history.replaceState(null, '', `${location.pathname}?${params.toString()}${location.hash}`);
+        }
         if (!entry) {
           errorEl.style.display = 'block';
           errorEl.textContent = 'Antenna not found.';
@@ -903,7 +910,7 @@
         const parts = document.getElementById('part-numbers');
         parts.replaceChildren();
         addPartNumber(parts, sku);
-        if (legacySku) addPartNumber(parts, legacySku, 'Former AccelTex part number');
+        if (legacySku) addPartNumber(parts, legacySku, altSkuLabel(entry));
 
         const imgUrl = safeUrl(entry.image_url, { allowRelative: true });
         const imageWrapper = document.getElementById('image-container');
@@ -940,7 +947,7 @@
           if (!alwaysShow && (entry[key] == null || entry[key] === '' || (Array.isArray(entry[key]) && !entry[key].length))) return;
           const keyEl = document.createElement('dt');
           keyEl.className = 'key';
-          keyEl.textContent = label;
+          keyEl.textContent = key === 'legacy_sku' ? altSkuLabel(entry) : label;
           const valEl = document.createElement('dd');
           valEl.className = 'val';
           if (COPYABLE_SKU_KEYS.has(key)) {
