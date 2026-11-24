@@ -61,6 +61,7 @@ node .github/scripts/test-detail-back.js
 node .github/scripts/test-pattern-ports.js
 node .github/scripts/test-ap-links.js
 node .github/scripts/test-alt-sku.js
+node .github/scripts/test-compat-explain.js
 node .github/scripts/test-html-sinks.js
 ```
 
