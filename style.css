@@ -3680,3 +3680,51 @@ table.antenna-table td.beamwidth-cell {
   font-weight: 600;
   color: #93c5fd;
 }
+
+/* Finder AP results: compare toggle above the antenna name */
+.compat-compare {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.35rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  user-select: none;
+}
+
+.compat-compare:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.compat-compare input {
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  accent-color: #3b82f6;
+  cursor: pointer;
+}
+
+.compat-compare:has(input:checked) {
+  color: #93c5fd;
+}
+
+/* Keep the card's Details button a normal pill on phones (it was stretching into a circle). */
+.compat-actions {
+  align-items: center;
+}
+
+.compat-actions .btn-link {
+  box-sizing: border-box;
+  min-height: 34px;
+  height: auto;
+  padding: 0.35rem 1rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 560px) {
+  .compat-actions .btn-link {
+    min-height: 40px; /* comfortable touch target without ballooning */
+  }
+}

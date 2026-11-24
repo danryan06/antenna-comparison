@@ -1114,9 +1114,14 @@
 
         const section = document.createElement('section');
         section.className = 'compat-group';
-        const heading = document.createElement('h3');
-        heading.textContent = `${group.title} (${items.length})`;
-        section.appendChild(heading);
+        // Every candidate is best-effort and the banner above says so, so the
+        // default "Needs review" group gets no heading. Groups that say
+        // something different (Excluded, Direct matches, ...) keep theirs.
+        if (group.id !== 'review') {
+          const heading = document.createElement('h3');
+          heading.textContent = `${group.title} (${items.length})`;
+          section.appendChild(heading);
+        }
 
         items.forEach(result => {
           rendered += 1;
@@ -1124,13 +1129,39 @@
           const card = document.createElement('article');
           card.className = 'compat-result';
 
+          // Compare toggle sits above the antenna name, same behavior as the
+          // table view's row checkbox (adds to the Compare tray, no re-render).
+          const compare = document.createElement('label');
+          compare.className = 'compat-compare';
+          const compareBox = document.createElement('input');
+          compareBox.type = 'checkbox';
+          compareBox.checked = selectedIds.has(entry._slug);
+          compareBox.setAttribute(
+            'aria-label',
+            `Compare ${entry.vendor || ''} ${entry.sku || ''}`.trim()
+          );
+          compareBox.addEventListener('change', () => {
+            if (compareBox.checked) selectedIds.add(entry._slug);
+            else selectedIds.delete(entry._slug);
+            updateCompareFab();
+          });
+          const compareText = document.createElement('span');
+          compareText.textContent = 'Compare';
+          compareText.setAttribute('aria-hidden', 'true');
+          compare.appendChild(compareBox);
+          compare.appendChild(compareText);
+          card.appendChild(compare);
+
           const top = document.createElement('div');
           top.className = 'compat-result-top';
 
-          const status = document.createElement('span');
-          status.className = statusClass(result.status);
-          status.textContent = AntennaCompatibility.statusLabel(result.status);
-          top.appendChild(status);
+          // Same rule for the per-card badge: only when it adds information.
+          if (result.status !== 'review_required') {
+            const status = document.createElement('span');
+            status.className = statusClass(result.status);
+            status.textContent = AntennaCompatibility.statusLabel(result.status);
+            top.appendChild(status);
+          }
 
           if (result.vendor_listed) {
             const claim = document.createElement('span');
@@ -1145,14 +1176,6 @@
           title.textContent = `${entry.vendor || ''} ${entry.sku || ''}`.trim();
           top.appendChild(title);
           card.appendChild(top);
-
-          if (result.status !== 'incompatible') {
-            const reminder = document.createElement('p');
-            reminder.className = 'compat-reminder';
-            reminder.textContent = DISCLAIMERS.compact ||
-              'Best-effort match — verify with the manufacturers before purchase or installation.';
-            card.appendChild(reminder);
-          }
 
           const meta = document.createElement('p');
           meta.className = 'compat-meta';
@@ -1193,17 +1216,6 @@
           detail.className = 'btn-link btn-link-ghost btn-link-small';
           detail.textContent = 'Details';
           actions.appendChild(detail);
-          const select = document.createElement('button');
-          select.type = 'button';
-          select.className = 'btn-link btn-link-small';
-          select.textContent = selectedIds.has(entry._slug) ? 'Selected' : 'Select';
-          select.addEventListener('click', () => {
-            if (selectedIds.has(entry._slug)) selectedIds.delete(entry._slug);
-            else selectedIds.add(entry._slug);
-            updateCompareFab();
-            applyFilters();
-          });
-          actions.appendChild(select);
           card.appendChild(actions);
 
           section.appendChild(card);
