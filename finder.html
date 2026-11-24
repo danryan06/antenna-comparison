@@ -1114,9 +1114,14 @@
 
         const section = document.createElement('section');
         section.className = 'compat-group';
-        const heading = document.createElement('h3');
-        heading.textContent = `${group.title} (${items.length})`;
-        section.appendChild(heading);
+        // Every candidate is best-effort and the banner above says so, so the
+        // default "Needs review" group gets no heading. Groups that say
+        // something different (Excluded, Direct matches, ...) keep theirs.
+        if (group.id !== 'review') {
+          const heading = document.createElement('h3');
+          heading.textContent = `${group.title} (${items.length})`;
+          section.appendChild(heading);
+        }
 
         items.forEach(result => {
           rendered += 1;
@@ -1127,10 +1132,13 @@
           const top = document.createElement('div');
           top.className = 'compat-result-top';
 
-          const status = document.createElement('span');
-          status.className = statusClass(result.status);
-          status.textContent = AntennaCompatibility.statusLabel(result.status);
-          top.appendChild(status);
+          // Same rule for the per-card badge: only when it adds information.
+          if (result.status !== 'review_required') {
+            const status = document.createElement('span');
+            status.className = statusClass(result.status);
+            status.textContent = AntennaCompatibility.statusLabel(result.status);
+            top.appendChild(status);
+          }
 
           if (result.vendor_listed) {
             const claim = document.createElement('span');
@@ -1145,14 +1153,6 @@
           title.textContent = `${entry.vendor || ''} ${entry.sku || ''}`.trim();
           top.appendChild(title);
           card.appendChild(top);
-
-          if (result.status !== 'incompatible') {
-            const reminder = document.createElement('p');
-            reminder.className = 'compat-reminder';
-            reminder.textContent = DISCLAIMERS.compact ||
-              'Best-effort match — verify with the manufacturers before purchase or installation.';
-            card.appendChild(reminder);
-          }
 
           const meta = document.createElement('p');
           meta.className = 'compat-meta';
