@@ -1193,18 +1193,37 @@
           const summary = document.createElement('summary');
           summary.textContent = 'Why this result?';
           why.appendChild(summary);
-          const ul = document.createElement('ul');
-          (result.reasons || []).forEach(r => {
-            const li = document.createElement('li');
-            li.textContent = `${r.code}: ${r.message}`;
-            ul.appendChild(li);
+          // Plain-language reasons grouped by what they mean for this AP.
+          // The raw matcher code and message stay available as a tooltip.
+          const explained = AntennaCompatibility.explainResult(result);
+          const body = document.createElement('div');
+          body.className = 'compat-why-body';
+          [
+            ['match', 'What matches'],
+            ['check', 'Couldn\u2019t confirm'],
+            ['mismatch', 'Doesn\u2019t fit']
+          ].forEach(([tone, title]) => {
+            const items = explained[tone];
+            if (!items.length) return;
+            // For an excluded antenna, only the reasons it doesn't fit matter.
+            if (result.status === 'incompatible' && tone !== 'mismatch') return;
+            const block = document.createElement('div');
+            block.className = `compat-why-group compat-why-${tone}`;
+            const h = document.createElement('p');
+            h.className = 'compat-why-title';
+            h.textContent = title;
+            block.appendChild(h);
+            const ul = document.createElement('ul');
+            items.forEach(item => {
+              const li = document.createElement('li');
+              li.textContent = item.text;
+              li.title = item.detail ? `${item.code}: ${item.detail}` : item.code;
+              ul.appendChild(li);
+            });
+            block.appendChild(ul);
+            body.appendChild(block);
           });
-          (result.warnings || []).forEach(r => {
-            const li = document.createElement('li');
-            li.textContent = `Warning ${r.code}: ${r.message}`;
-            ul.appendChild(li);
-          });
-          why.appendChild(ul);
+          why.appendChild(body);
           card.appendChild(why);
 
           card.appendChild(manufacturerLinks(entry, result));

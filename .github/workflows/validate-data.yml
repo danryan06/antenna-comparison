@@ -73,5 +73,7 @@ jobs:
         run: node .github/scripts/test-ap-links.js
       - name: Test alternate part numbers and old detail links
         run: node .github/scripts/test-alt-sku.js
+      - name: Test plain-language compatibility explanations
+        run: node .github/scripts/test-compat-explain.js
       - name: Test HTML sink inventory
         run: node .github/scripts/test-html-sinks.js

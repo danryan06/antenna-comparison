@@ -750,6 +750,211 @@
     });
   }
 
+  // ---------------------------------------------------------------------------
+  // Plain-language explanations for the Finder's "Why this result?" panel.
+  // The matcher's own reason codes and messages stay as-is (CSV export, tests);
+  // this only rewrites them for people. Every code the matcher emits must have
+  // an entry here (test-compat-explain.js checks).
+  // tone: "match" = in its favor, "check" = could not confirm, "mismatch" = rules it out.
+  // ---------------------------------------------------------------------------
+  function quoted(text) {
+    var out = [];
+    String(text || '').replace(/"([^"]*)"/g, function (_, v) { out.push(v); return _; });
+    return out;
+  }
+
+  function familyName(f) {
+    var v = String(f || '').trim();
+    var known = { dart: 'DART', 'rp-sma': 'RP-SMA', rpsma: 'RP-SMA', sma: 'SMA', n: 'N-type', 'n-type': 'N-type', 'rp-tnc': 'RP-TNC', rptnc: 'RP-TNC', tnc: 'TNC', mpc: 'MPC', msoc: 'MSOC', qn: 'QN' };
+    return known[v.toLowerCase()] || v;
+  }
+
+  function variantName(v) {
+    var m = String(v || '').match(/^dart-(\d+)$/i);
+    if (m) return m[1] + '-port DART';
+    if (/^octal$/i.test(v)) return '8-port DART';
+    if (/^quad$/i.test(v)) return '4-port DART';
+    return String(v || '');
+  }
+
+  function firstNumber(text, re) {
+    var m = String(text || '').match(re);
+    return m ? m[1] : null;
+  }
+
+  var EXPLAIN = {
+    CONNECTOR_EXACT: function (msg) {
+      var gender = String(msg || '').match(/\(([^)]*)\)/);
+      return {
+        tone: 'match',
+        text: gender
+          ? 'Connector mates with the AP (' + gender[1].replace('↔', 'to') + ').'
+          : 'Connector type and variant match the AP.'
+      };
+    },
+    PATHS_EXACT: function (msg) {
+      var n = firstNumber(msg, /\((\d+)\)/);
+      return { tone: 'match', text: n ? 'Lead count matches the AP’s ' + n + ' RF paths.' : 'Lead count matches the AP.' };
+    },
+    BANDS_COVERED: function (msg) {
+      return {
+        tone: 'match',
+        text: /per unit/.test(msg || '')
+          ? 'Each antenna covers the bands the AP’s ports need.'
+          : 'Covers the bands the AP’s ports need.'
+      };
+    },
+    CABLE_INCLUDED: function () {
+      return { tone: 'match', text: 'Leads are built in, so no separate cable is needed.' };
+    },
+    MULTI_UNIT: function (msg) {
+      var units = firstNumber(msg, /;\s*(\d+) antenna/);
+      var paths = firstNumber(msg, /fill (\d+) paths/);
+      return {
+        tone: 'match',
+        text: units && paths
+          ? 'Takes ' + units + ' of these antennas to fill all ' + paths + ' of the AP’s ports.'
+          : 'Takes more than one of these antennas to fill the AP’s ports.'
+      };
+    },
+    AP_PROFILE_INCOMPLETE: function () {
+      return { tone: 'check', text: 'Some AP details aren’t in our data yet, so this can’t be fully confirmed.' };
+    },
+    PATH_GROUPS_UNKNOWN: function () {
+      return { tone: 'check', text: 'Which AP ports carry which bands isn’t published in our data, so per-port band coverage can’t be confirmed.' };
+    },
+    PATHS_UNKNOWN: function () {
+      return { tone: 'check', text: 'The lead count or the AP’s RF path count is missing, so the port count can’t be confirmed.' };
+    },
+    PATH_GROUP_SUM_MISMATCH: function () {
+      return { tone: 'check', text: 'The AP’s port groups don’t add up to its RF path count in our data.' };
+    },
+    CONNECTOR_UNKNOWN: function () {
+      return { tone: 'check', text: 'Connector details are missing for the AP or the antenna.' };
+    },
+    CONNECTOR_VARIANT_UNKNOWN: function () {
+      return { tone: 'check', text: 'This connector type needs an exact variant match, and the variant isn’t confirmed.' };
+    },
+    CONNECTOR_GENDER_UNKNOWN: function () {
+      return { tone: 'check', text: 'Connector type matches, but male/female isn’t confirmed.' };
+    },
+    CABLE_UNKNOWN: function () {
+      return { tone: 'check', text: 'Not confirmed whether a cable or leads are included.' };
+    },
+    CABLE_REQUIRED: function () {
+      return { tone: 'check', text: 'No leads included; you’ll need a cable assembly to reach the AP.' };
+    },
+    CABLE_NOT_INCLUDED: function () {
+      return { tone: 'check', text: 'Cable not included.' };
+    },
+    ACCESSORY_UNMODELED: function () {
+      return { tone: 'check', text: 'We don’t list cable or adaptor part numbers yet.' };
+    },
+    ANTENNA_RF_INTERFACE_MISSING: function () {
+      return { tone: 'check', text: 'This antenna’s connector details aren’t structured yet, so physical fit can’t be checked.' };
+    },
+    MULTI_INTERFACE: function () {
+      return { tone: 'check', text: 'The AP has more than one antenna interface; only the primary one is checked.' };
+    },
+    AP_HARD_RESTRICTION: function (msg) {
+      return { tone: 'check', text: String(msg || 'The AP vendor lists a restriction for this configuration.') };
+    },
+    AP_RETIRED: function () {
+      return { tone: 'check', text: 'This AP is retired.' };
+    },
+    CONNECTOR_FAMILY_MISMATCH: function (msg) {
+      // Two message shapes: 'Antenna connector "X" does not match AP family "y".'
+      // and 'AP connector family "y" does not match antenna "x".'
+      var q = quoted(msg);
+      if (q.length === 2) {
+        var apFirst = /^AP connector/.test(String(msg || ''));
+        var ant = apFirst ? q[1] : q[0];
+        var ap = familyName(apFirst ? q[0] : q[1]);
+        return { tone: 'mismatch', text: 'Antenna connector (' + familyName(ant) + ') doesn’t fit the AP’s ' + ap + ' ports.' };
+      }
+      return { tone: 'mismatch', text: 'Connector type doesn’t match the AP.' };
+    },
+    CONNECTOR_VARIANT_MISMATCH: function (msg) {
+      var q = quoted(msg);
+      return {
+        tone: 'mismatch',
+        text: q.length === 2
+          ? 'Connector variant doesn’t match: the AP uses ' + variantName(q[0]) + ', this antenna is ' + variantName(q[1]) + '.'
+          : 'Connector variant doesn’t match the AP (for example, 4-port vs 8-port DART).'
+      };
+    },
+    CONNECTOR_GENDER_MISMATCH: function (msg) {
+      var q = quoted(msg);
+      return {
+        tone: 'mismatch',
+        text: q.length === 2
+          ? 'Connectors don’t mate: the AP is ' + q[0] + ' and this antenna is ' + q[1] + '.'
+          : 'Connector male/female doesn’t mate with the AP.'
+      };
+    },
+    PATHS_INSUFFICIENT: function (msg) {
+      var ant = firstNumber(msg, /provides (\d+)/);
+      var ap = firstNumber(msg, /requires (\d+)/);
+      return {
+        tone: 'mismatch',
+        text: ant && ap ? 'Has ' + ant + ' lead(s); the AP needs ' + ap + '.' : 'Not enough leads for the AP.'
+      };
+    },
+    PATHS_EXTRA: function (msg) {
+      var ant = firstNumber(msg, /provides (\d+)/);
+      var ap = firstNumber(msg, /AP has (\d+)/);
+      return {
+        tone: 'mismatch',
+        text: ant && ap ? 'Has ' + ant + ' leads; the AP has ' + ap + ' ports. Pick an antenna with the same lead count.' : 'More leads than the AP has ports.'
+      };
+    },
+    BAND_MISSING: function (msg) {
+      var band = firstNumber(msg, /required band ([\d.]+) GHz/);
+      return { tone: 'mismatch', text: band ? 'Doesn’t cover ' + band + ' GHz, which the AP needs.' : 'Doesn’t cover a band the AP needs.' };
+    },
+    AP_CONFIG_MISSING: function () {
+      return { tone: 'mismatch', text: 'No external-antenna configuration is published for this AP.' };
+    },
+    AP_NO_WIFI_INTERFACE: function () {
+      return { tone: 'mismatch', text: 'This AP has no external Wi-Fi antenna ports.' };
+    },
+    AP_PROFILE_MISSING: function () {
+      return { tone: 'mismatch', text: 'This AP isn’t in our compatibility data.' };
+    }
+  };
+
+  function explainReason(r) {
+    var code = r && r.code;
+    var fn = code && EXPLAIN[code];
+    if (fn) {
+      var out = fn(r.message);
+      return { code: code, tone: out.tone, text: out.text, detail: r.message || '' };
+    }
+    return { code: code || '', tone: 'check', text: (r && r.message) || String(code || ''), detail: (r && r.message) || '' };
+  }
+
+  // Group a result's reasons and warnings by tone, dropping exact duplicates.
+  function explainResult(result) {
+    var groups = { match: [], check: [], mismatch: [] };
+    var seen = {};
+    var all = ((result && result.reasons) || []).concat((result && result.warnings) || []);
+    var hasPathGroupsUnknown = all.some(function (r) { return r && r.code === 'PATH_GROUPS_UNKNOWN'; });
+    all.forEach(function (r) {
+      // "AP profile incomplete" only restates PATH_GROUPS_UNKNOWN when the only
+      // missing facts are path_groups; show the more specific line alone.
+      if (r && r.code === 'AP_PROFILE_INCOMPLETE' && hasPathGroupsUnknown) {
+        var listed = String(r.message || '').replace(/^[^:]*:\s*/, '').replace(/\.$/, '').split(/,\s*/).filter(Boolean);
+        if (listed.length && listed.every(function (f) { return /path_groups$/.test(f); })) return;
+      }
+      var e = explainReason(r);
+      var key = e.tone + '|' + e.text;
+      if (seen[key]) return;
+      seen[key] = true;
+      groups[e.tone].push(e);
+    });
+    return groups;
+  }
+
   return {
     SUPPORTED_SCHEMA: SUPPORTED_SCHEMA,
     SUPPORTED_MAJOR: SUPPORTED_MAJOR,
@@ -762,6 +967,9 @@
     matchAllForAp: matchAllForAp,
     statusLabel: statusLabel,
     groupResults: groupResults,
+    explainReason: explainReason,
+    explainResult: explainResult,
+    EXPLAINED_CODES: Object.keys(EXPLAIN),
     normalizeBand: normalizeBand
   };
 });
