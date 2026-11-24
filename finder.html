@@ -1129,6 +1129,29 @@
           const card = document.createElement('article');
           card.className = 'compat-result';
 
+          // Compare toggle sits above the antenna name, same behavior as the
+          // table view's row checkbox (adds to the Compare tray, no re-render).
+          const compare = document.createElement('label');
+          compare.className = 'compat-compare';
+          const compareBox = document.createElement('input');
+          compareBox.type = 'checkbox';
+          compareBox.checked = selectedIds.has(entry._slug);
+          compareBox.setAttribute(
+            'aria-label',
+            `Compare ${entry.vendor || ''} ${entry.sku || ''}`.trim()
+          );
+          compareBox.addEventListener('change', () => {
+            if (compareBox.checked) selectedIds.add(entry._slug);
+            else selectedIds.delete(entry._slug);
+            updateCompareFab();
+          });
+          const compareText = document.createElement('span');
+          compareText.textContent = 'Compare';
+          compareText.setAttribute('aria-hidden', 'true');
+          compare.appendChild(compareBox);
+          compare.appendChild(compareText);
+          card.appendChild(compare);
+
           const top = document.createElement('div');
           top.className = 'compat-result-top';
 
@@ -1193,17 +1216,6 @@
           detail.className = 'btn-link btn-link-ghost btn-link-small';
           detail.textContent = 'Details';
           actions.appendChild(detail);
-          const select = document.createElement('button');
-          select.type = 'button';
-          select.className = 'btn-link btn-link-small';
-          select.textContent = selectedIds.has(entry._slug) ? 'Selected' : 'Select';
-          select.addEventListener('click', () => {
-            if (selectedIds.has(entry._slug)) selectedIds.delete(entry._slug);
-            else selectedIds.add(entry._slug);
-            updateCompareFab();
-            applyFilters();
-          });
-          actions.appendChild(select);
           card.appendChild(actions);
 
           section.appendChild(card);
