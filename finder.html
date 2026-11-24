@@ -135,8 +135,18 @@
 
             <div class="filter-group">
               <div class="filter-group-head">
-                <h3 id="vendor-heading">Manufacturer</h3>
-                <p id="vendor-help">Any selected vendor matches</p>
+                <h3 id="sidebar-ap-heading"><label for="filter-ap-select">Access point</label></h3>
+                <p id="sidebar-ap-help">Show antennas that fit this AP</p>
+              </div>
+              <select id="filter-ap-select" class="filter-select" aria-describedby="sidebar-ap-help">
+                <option value="">Any access point</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <div class="filter-group-head">
+                <h3 id="vendor-heading">Antenna manufacturer</h3>
+                <p id="vendor-help">Who makes the antenna. To filter by AP, use Access point above.</p>
               </div>
               <div id="vendor-options" class="chip-grid" role="group" aria-labelledby="vendor-heading" aria-describedby="vendor-help"></div>
             </div>
@@ -583,6 +593,31 @@
         opt.value = apDisplayLabel(profile);
         list.appendChild(opt);
       });
+
+      // Sidebar dropdown: same APs grouped by AP vendor, kept in sync with the top picker.
+      const select = document.getElementById('filter-ap-select');
+      select.querySelectorAll('optgroup').forEach(g => g.remove());
+      const byVendor = new Map();
+      apIndex.list.forEach(profile => {
+        const vendor = String(profile.vendor || 'Other');
+        if (!byVendor.has(vendor)) byVendor.set(vendor, []);
+        byVendor.get(vendor).push(profile);
+      });
+      Array.from(byVendor.keys()).sort((a, b) => a.localeCompare(b)).forEach(vendor => {
+        const group = document.createElement('optgroup');
+        group.label = vendor;
+        byVendor.get(vendor)
+          .slice()
+          .sort((x, y) => String(x.model || '').localeCompare(String(y.model || ''), undefined, { numeric: true }))
+          .forEach(profile => {
+            const opt = document.createElement('option');
+            opt.value = profile.ap_id;
+            opt.textContent = apDisplayLabel(profile);
+            group.appendChild(opt);
+          });
+        select.appendChild(group);
+      });
+      select.value = selectedApProfile ? selectedApProfile.ap_id : '';
     }
 
     // Browse APs by vendor so nobody has to guess the exact model string.
@@ -803,6 +838,8 @@
       }
       updateCompatChrome();
       renderApSummary(profile);
+      const sidebarSelect = document.getElementById('filter-ap-select');
+      if (sidebarSelect) sidebarSelect.value = profile ? profile.ap_id : '';
       const quick = document.getElementById('ap-quick');
       if (quick && quick.children.length) quick.hidden = !!profile;
       document.getElementById('show-excluded').checked = state.showExcluded;
@@ -1584,6 +1621,19 @@
           e.preventDefault();
           applyApSelectionFromInput();
         }
+      });
+      document.getElementById('filter-ap-select').addEventListener('change', (e) => {
+        const apId = e.target.value;
+        if (!apId) {
+          state.apId = '';
+          apInput.value = '';
+          setSelectedAp(null);
+          applyFilters();
+          return;
+        }
+        const profile = resolveApInput(apId);
+        apInput.value = profile ? apDisplayLabel(profile) : apId;
+        applyApSelectionFromInput();
       });
       document.getElementById('clear-ap').addEventListener('click', () => {
         state.apId = '';
