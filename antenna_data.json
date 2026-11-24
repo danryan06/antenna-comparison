@@ -4548,12 +4548,25 @@
     "operating_temp": "-40 to 65 °C",
     "image_url": "images/acceltex-hubbell/ats-01062.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-01062-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-01062-pattern-vertical.jpg"
+      }
+    ],
     "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS01062-SPEC-EN)",
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS01062-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OO-2456-46-8PDART-ND-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OO-2456-46-8PDART-ND-36%20Spec%20Sheet.pdf"
       }
     ],
     "sources": [
@@ -4570,7 +4583,8 @@
       "dimensions": "Hubbell lists height 0 in and puts the cylinder diameter in Length and the height in Width. Pole diameter 2 in. Installation hole 1.15 in. No legacy sheet to confirm a diameter form or millimeter conversion.",
       "ip_rating": "Not stated on the Hubbell SPEC.",
       "weight": "Not stated on the Hubbell SPEC.",
-      "bands": "Hubbell notes outdoor and connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates."
+      "bands": "Hubbell notes outdoor and connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
+      "pattern_images": "AccelTex Spec Sheet ATS-OO-2456-46-8PDART-ND-36 (hubbellcdn; linked from Hubbell product page p/19382860), page 1: separate Horizontal and Vertical polar plots with 2.4/5/6 GHz traces overlaid on each plot."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -4658,12 +4672,25 @@
     "operating_temp": "-40 to 65 °C",
     "image_url": "images/acceltex-hubbell/ats-01064.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-01064-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-01064-pattern-vertical.jpg"
+      }
+    ],
     "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS01064-SPEC-EN)",
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS01064-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OO-2456-46-8PRADART-ND-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OO-2456-46-8PRADART-ND-36%20Spec%20Sheet.pdf"
       }
     ],
     "sources": [
@@ -4680,7 +4707,8 @@
       "dimensions": "Hubbell lists height 0 in and puts the cylinder diameter in Length and the height in Width. Pole diameter 2 in. Installation hole 1.15 in.",
       "ip_rating": "Not stated on the Hubbell SPEC.",
       "weight": "Not stated on the Hubbell SPEC.",
-      "bands": "Hubbell notes outdoor and connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates."
+      "bands": "Hubbell notes outdoor and connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
+      "pattern_images": "AccelTex Spec Sheet ATS-OO-2456-46-8PRADART-ND-36 (hubbellcdn; linked from Hubbell product page p/19382862), page 1: separate Horizontal and Vertical polar plots with 2.4/5/6 GHz traces overlaid on each plot. Filename uses \"46\", not the \"466\" gain token in the former catalog number."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -5510,12 +5538,25 @@
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03478.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-03478-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-03478-pattern-vertical.jpg"
+      }
+    ],
     "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS03478-SPEC-EN)",
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS03478-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OO-2456-466-4NP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OO-2456-466-4NP-36.pdf"
       }
     ],
     "sources": [
@@ -5538,7 +5579,8 @@
       "lead_count": "Taken from the product title. The Hubbell SPEC has no Number of Leads field.",
       "bands": "Hubbell notes outdoor and connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
       "dimensions": "Hubbell lists Height 3.13 in and Width 5.7 in. Length is not listed.",
-      "mount_type": "Stated in the Hubbell description and features. Black is available on request."
+      "mount_type": "Stated in the Hubbell description and features. Black is available on request.",
+      "pattern_images": "AccelTex Spec Sheet ATS-OO-2456-466-4NP-36 (hubbellcdn; linked from Hubbell product page p/19383183), page 1: separate Horizontal and Vertical polar plots with 2.4/5/6 GHz traces overlaid on each plot."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -5633,12 +5675,25 @@
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03561.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-03561-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-03561-pattern-vertical.jpg"
+      }
+    ],
     "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS03561-SPEC-EN)",
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS03561-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OO-2456-466-4RPSP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OO-2456-466-4RPSP-36.pdf"
       }
     ],
     "sources": [
@@ -5660,7 +5715,8 @@
       "cable_length": "Not stated on the Hubbell SPEC.",
       "lead_count": "Taken from the product title. The Hubbell SPEC has no Number of Leads field.",
       "bands": "Hubbell notes outdoor and connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
-      "dimensions": "Hubbell lists Height 3.13 in and Width 5.7 in. Length is not listed."
+      "dimensions": "Hubbell lists Height 3.13 in and Width 5.7 in. Length is not listed.",
+      "pattern_images": "AccelTex Spec Sheet ATS-OO-2456-466-4RPSP-36 (hubbellcdn; linked from Hubbell product page p/19383186), page 1: separate Horizontal and Vertical polar plots with 2.4/5/6 GHz traces overlaid on each plot."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -5746,12 +5802,25 @@
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03775.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-03775-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-03775-pattern-vertical.jpg"
+      }
+    ],
     "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS03775-SPEC-EN)",
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS03775-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OO-2456-344-4NP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OO-2456-344-4NP-36_Spec_Sheet.pdf"
       }
     ],
     "sources": [
@@ -5774,7 +5843,8 @@
       "lead_count": "Taken from the product title. The Hubbell SPEC has no Number of Leads field.",
       "bands": "Hubbell notes outdoor and connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
       "beamwidth": "Hubbell lists one vertical beamwidth, 70°, and horizontal 360°, rather than a per-band split.",
-      "mount_type": "Description says integrated flush mount only. It does not mention a wall/pole kit."
+      "mount_type": "Description says integrated flush mount only. It does not mention a wall/pole kit.",
+      "pattern_images": "AccelTex Spec Sheet ATS-OO-2456-344-4NP-36 (hubbellcdn; linked from Hubbell product page p/19383209), page 1: separate Vertical (left) and Horizontal (right) polar plots titled ATS-OO-2456-344-4***-36, with 2.4/5/6 GHz traces overlaid on each plot. Page 2 is dimensions only."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -5863,12 +5933,25 @@
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03776.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-03776-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-03776-pattern-vertical.jpg"
+      }
+    ],
     "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS03776-SPEC-EN)",
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS03776-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OO-2456-344-4RPSP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OO-2456-344-4RPSP-36_Spec_Sheet.pdf"
       }
     ],
     "sources": [
@@ -5890,7 +5973,8 @@
       "cable_length": "Not stated on the Hubbell SPEC.",
       "lead_count": "Taken from the product title. The Hubbell SPEC has no Number of Leads field.",
       "bands": "Hubbell notes outdoor and connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
-      "beamwidth": "Hubbell lists one vertical beamwidth, 70°, and horizontal 360°."
+      "beamwidth": "Hubbell lists one vertical beamwidth, 70°, and horizontal 360°.",
+      "pattern_images": "AccelTex Spec Sheet ATS-OO-2456-344-4RPSP-36 (hubbellcdn; linked from Hubbell product page p/19383222), page 1: separate Vertical (left) and Horizontal (right) polar plots titled ATS-OO-2456-344-4***-36, with 2.4/5/6 GHz traces overlaid on each plot. Page 2 is dimensions only."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -5976,12 +6060,25 @@
     "operating_temp": null,
     "image_url": "images/acceltex-hubbell/ats-03788.jpg",
     "images": [],
-    "pattern_images": [],
+    "pattern_images": [
+      {
+        "label": "Horizontal",
+        "url": "images/acceltex-hubbell/ats-03788-pattern-horizontal.jpg"
+      },
+      {
+        "label": "Vertical",
+        "url": "images/acceltex-hubbell/ats-03788-pattern-vertical.jpg"
+      }
+    ],
     "dimension_image_url": null,
     "datasheet_urls": [
       {
         "label": "Hubbell SPEC (ATS-ATS03788-SPEC-EN)",
         "url": "https://hubbellcdn.com/specsheet/ATS-ATS03788-SPEC-EN.pdf"
+      },
+      {
+        "label": "AccelTex Spec Sheet ATS-OO-2456-344-4RPTP-36",
+        "url": "https://hubbellcdn.com/specsheet/ATS-OO-2456-344-4RPTP-36_Spec_Sheet.pdf"
       }
     ],
     "sources": [
@@ -6003,7 +6100,8 @@
       "cable_length": "Not stated on the Hubbell SPEC.",
       "lead_count": "Taken from the product title. The Hubbell SPEC has no Number of Leads field.",
       "bands": "Hubbell notes outdoor and connectorized 6 GHz use in the U.S. may require pending FCC equipment-approval updates.",
-      "beamwidth": "Hubbell lists one vertical beamwidth, 70°, and horizontal 360°."
+      "beamwidth": "Hubbell lists one vertical beamwidth, 70°, and horizontal 360°.",
+      "pattern_images": "AccelTex Spec Sheet ATS-OO-2456-344-4RPTP-36 (hubbellcdn; linked from Hubbell product page p/19383240), page 1: separate Vertical (left) and Horizontal (right) polar plots titled ATS-OO-2456-344-4***-36, with 2.4/5/6 GHz traces overlaid on each plot. Page 2 is dimensions only."
     },
     "internal_notes": {
       "compatible_aps": [
@@ -65586,7 +65684,7 @@
     "field_notes": {
       "gain_dbi": "te.com lists Gain (Max) 9.6 dB and drawing title 8 dBi; per-band table not captured from PLP. Used 8/9.6/8 as working values pending full PDF table QC.",
       "beamwidth": "Not published on te.com PLP summary; left null pending datasheet table.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     },
     "sku": "L000962-01",
     "legacy_sku": "PSD24718-75RSMM",
@@ -65700,7 +65798,7 @@
     "field_notes": {
       "gain_dbi": "te.com lists Gain (Max) 9.6 dB and drawing title 8 dBi; per-band table not captured from PLP. Used 8/9.6/8 as working values pending full PDF table QC.",
       "beamwidth": "Not published on te.com PLP summary; left null pending datasheet table.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     },
     "sku": "L000962-02",
     "legacy_sku": "PSQ24718-75RSMM",
@@ -66199,9 +66297,9 @@
       "maintainer": "Primary electricals from TE-branded datasheet mirror; catalog confirms family."
     },
     "field_notes": {
-      "beamwidth": "V-pol horizontal/vertical plane values used; H-pol similar (63\u00b0/71\u00b0 @2.4).",
+      "beamwidth": "V-pol horizontal/vertical plane values used; H-pol similar (63°/71° @2.4).",
       "datasheet_urls": "Ampheo hosts TE-branded PDF while te.com DocumentDelivery is bot-blocked from this environment; first-party DocNm ANT-DS-PDQ24496 also cited via catalog.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq24496-fnf.jpg",
     "antenna_id": "te-connectivity:pdq24496-fnf",
@@ -66321,9 +66419,9 @@
       "maintainer": "Primary electricals from TE-branded datasheet mirror; catalog confirms family."
     },
     "field_notes": {
-      "beamwidth": "V-pol horizontal/vertical plane values used; H-pol similar (63\u00b0/71\u00b0 @2.4).",
+      "beamwidth": "V-pol horizontal/vertical plane values used; H-pol similar (63°/71° @2.4).",
       "datasheet_urls": "Ampheo hosts TE-branded PDF while te.com DocumentDelivery is bot-blocked from this environment; first-party DocNm ANT-DS-PDQ24496 also cited via catalog.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq24496-91nf.jpg",
     "antenna_id": "te-connectivity:pdq24496-91nf",
@@ -66443,9 +66541,9 @@
       "maintainer": "Primary electricals from TE-branded datasheet mirror; catalog confirms family."
     },
     "field_notes": {
-      "beamwidth": "V-pol horizontal/vertical plane values used; H-pol similar (63\u00b0/71\u00b0 @2.4).",
+      "beamwidth": "V-pol horizontal/vertical plane values used; H-pol similar (63°/71° @2.4).",
       "datasheet_urls": "Ampheo hosts TE-branded PDF while te.com DocumentDelivery is bot-blocked from this environment; first-party DocNm ANT-DS-PDQ24496 also cited via catalog.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq24496-91nm.jpg",
     "antenna_id": "te-connectivity:pdq24496-91nm",
@@ -66566,7 +66664,7 @@
     "field_notes": {
       "gain_dbi": "Catalog lists 8.6/9.4; customer drawing peak 7.8/9.4. Primary 8.6/9.4 from catalog card.",
       "beamwidth": "V-pol azimuth/elevation from drawing.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq24499-91nm.jpg",
     "antenna_id": "te-connectivity:pdq24499-91nm",
@@ -66687,7 +66785,7 @@
     "field_notes": {
       "gain_dbi": "Catalog lists 8.6/9.4; customer drawing peak 7.8/9.4. Primary 8.6/9.4 from catalog card.",
       "beamwidth": "V-pol azimuth/elevation from drawing.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq24499-91nf.jpg",
     "antenna_id": "te-connectivity:pdq24499-91nf",
@@ -66807,7 +66905,7 @@
     },
     "field_notes": {
       "beamwidth": "V-pol plane values from datasheet.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq244915-91nf.jpg",
     "antenna_id": "te-connectivity:pdq244915-91nf",
@@ -66927,7 +67025,7 @@
     },
     "field_notes": {
       "beamwidth": "V-pol plane values from datasheet.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq244915-91nm.jpg",
     "antenna_id": "te-connectivity:pdq244915-91nm",
@@ -67047,7 +67145,7 @@
     },
     "field_notes": {
       "beamwidth": "V-pol plane values from datasheet.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdq244915-fnf.jpg",
     "antenna_id": "te-connectivity:pdq244915-fnf",
@@ -67298,7 +67396,7 @@
     },
     "field_notes": {
       "beamwidth": "Not on catalog card; empty pending datasheet.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pdm24499-fnf.jpg",
     "antenna_id": "te-connectivity:pdm24499-fnf",
@@ -67460,7 +67558,7 @@
       }
     ],
     "field_notes": {
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     }
   },
   {
@@ -67808,7 +67906,7 @@
     },
     "field_notes": {
       "gain_dbi": "Peak/max from datasheet; typical 2.0/4.8 dBi.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/op24516ds-91rsmm.jpg",
     "antenna_id": "te-connectivity:op24516ds-91rsmm",
@@ -67961,7 +68059,7 @@
     },
     "field_notes": {
       "gain_dbi": "Peak/max from datasheet; typical 2.0/4.8 dBi.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/op24516ds-91nm.jpg",
     "antenna_id": "te-connectivity:op24516ds-91nm",
@@ -69005,7 +69103,7 @@
     },
     "field_notes": {
       "beamwidth": "Not listed on catalog card.",
-      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth\u2192Horizontal, Elevation\u2192Vertical; mid-band frequencies preferred (\u22482450/5400 MHz)."
+      "pattern_images": "Octopart mirror of TE/Laird datasheet radiation-pattern figures (last extracted 2026-11-23). Azimuth→Horizontal, Elevation→Vertical; mid-band frequencies preferred (≈2450/5400 MHz)."
     },
     "image_url": "images/te-connectivity/pa24-19.jpg",
     "antenna_id": "te-connectivity:pa24-19",
