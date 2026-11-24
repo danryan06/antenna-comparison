@@ -94,6 +94,18 @@
       </p>
 
       <section id="ap" class="finder-ap" aria-labelledby="ap-heading">
+        <!-- Once an AP is chosen the picker collapses to this one-line bar. -->
+        <div id="ap-compact" class="finder-ap-compact" hidden>
+          <div class="finder-ap-compact-main">
+            <p class="finder-ap-compact-title">Antennas for <strong id="ap-compact-name"></strong></p>
+            <p class="finder-ap-compact-meta" id="ap-compact-meta"></p>
+          </div>
+          <div class="finder-ap-compact-actions">
+            <span id="ap-compact-links" class="finder-ap-compact-links"></span>
+            <button id="change-ap" type="button" class="btn-link btn-link-small">Change AP</button>
+          </div>
+        </div>
+        <div id="ap-picker">
         <div class="finder-ap-head">
           <h2 id="ap-heading">Which antennas fit my AP?</h2>
           <p id="ap-help">Pick an external-antenna access point. Results show what fits its connectors and radios, with reasons. Best-effort guidance, not a certification.</p>
@@ -115,13 +127,16 @@
         </div>
         <p id="ap-status" class="filter-inline-note" aria-live="polite"></p>
         <div id="ap-quick" class="finder-ap-quick" hidden></div>
+        </div>
         <div id="ap-summary" class="ap-summary" hidden></div>
       </section>
 
       <div id="compat-banner" class="compat-banner" role="note" hidden>
-        <strong class="compat-banner-title"></strong>
-        <p class="compat-banner-body"></p>
-        <p class="compat-banner-about"><a href="#about-compatibility" id="about-compatibility-link"></a></p>
+        <p class="compat-banner-line">
+          <strong class="compat-banner-title"></strong>
+          <span class="compat-banner-body"></span>
+          <a href="#about-compatibility" id="about-compatibility-link"></a>
+        </p>
       </div>
 
       <div class="finder-grid">
@@ -215,7 +230,7 @@
           </section>
         </details>
 
-        <section class="results-panel">
+        <section class="results-panel" id="results-panel">
           <div class="results-header">
             <div>
               <h2>Results</h2>
@@ -241,6 +256,7 @@
 
       <section id="about-compatibility" class="compat-about card" hidden>
         <h2>About compatibility results</h2>
+        <p id="compat-about-summary"></p>
         <p id="compat-about-body"></p>
       </section>
     </div>
@@ -279,6 +295,7 @@
     const DEFAULT_SORT = { key: 'vendor', dir: 'asc' };
     // Read before syncUrl() rewrites the address (replaceState drops the hash).
     const FOCUS_AP_ON_LOAD = window.location.hash === '#ap';
+    const JUMP_TO_RESULTS_ON_LOAD = window.location.hash === '#results';
 
     const state = {
       vendors: new Set(),
@@ -746,14 +763,29 @@
         const countLabel = count == null
           ? 'Connector count unknown'
           : `${count} connector${count === 1 ? '' : 's'}`;
+        const family = formatConnectorFamilyLabel(c.family);
+        const dartPorts = String(c.variant || '').match(/^dart-(\d+)$/i);
+        const connectorLabel = dartPorts
+          ? `${dartPorts[1]}-port ${family}`
+          : (c.variant ? `${family} (${c.variant})` : family);
         const parts = [
-          formatConnectorFamilyLabel(c.family),
-          c.variant ? `Variant ${c.variant}` : null,
-          formatConnectorGenderLabel(c.gender),
-          countLabel
+          connectorLabel,
+          // Only state gender when it's known; "unknown" is noise here.
+          c.gender ? formatConnectorGenderLabel(c.gender) : null,
+          dartPorts && count === 1 ? null : countLabel
         ].filter(Boolean);
         return parts.join(' · ');
       }).join('; ');
+    }
+
+    // One-line banner; the full explanation lives in "About compatibility results".
+    function fillCompatBanner() {
+      const banner = document.getElementById('compat-banner');
+      banner.querySelector('.compat-banner-title').textContent = 'Best-effort guidance.';
+      banner.querySelector('.compat-banner-body').textContent =
+        'Verify with the manufacturers before purchase or installation.';
+      document.getElementById('about-compatibility-link').textContent =
+        DISCLAIMERS.aboutLinkLabel || 'About compatibility results';
     }
 
     function updateCompatChrome() {
@@ -764,53 +796,51 @@
       banner.hidden = !active;
       about.hidden = !active;
       if (active) {
-        banner.querySelector('.compat-banner-title').textContent = DISCLAIMERS.bannerTitle || 'Best-effort compatibility guidance';
-        banner.querySelector('.compat-banner-body').textContent = DISCLAIMERS.bannerBody || '';
-        const aboutLink = document.getElementById('about-compatibility-link');
-        aboutLink.textContent = DISCLAIMERS.aboutLinkLabel || 'About compatibility results';
+        fillCompatBanner();
+        document.getElementById('compat-about-summary').textContent = DISCLAIMERS.bannerBody || '';
         aboutBody.textContent =
           'AntennaComparison compiles information from sources believed to be reliable, but specifications, approvals, firmware requirements, and product availability can change without notice. Results may contain errors or omissions and do not replace manufacturer documentation, qualified RF engineering, site surveys, installation guidance, or applicable laws and regulations. AntennaComparison is not affiliated with or endorsed by the listed manufacturers unless explicitly stated. Use of the information is at your own risk. To the maximum extent permitted by applicable law, the site and its contributors provide the information “as is,” without warranties of accuracy, completeness, compatibility, merchantability, fitness for a particular purpose, non-infringement, or uninterrupted availability, and are not liable for purchasing decisions, installation costs, service interruption, equipment damage, loss of data, lost profits, or other direct, indirect, incidental, special, consequential, or punitive damages arising from reliance on the results.';
       }
     }
 
+    let editingAp = false;
+
+    // With an AP chosen, show a one-line bar instead of the picker and summary card.
     function renderApSummary(profile) {
       const el = document.getElementById('ap-summary');
       const status = document.getElementById('ap-status');
       const clearBtn = document.getElementById('clear-ap');
+      const compact = document.getElementById('ap-compact');
+      const picker = document.getElementById('ap-picker');
+      const section = document.getElementById('ap');
+      el.hidden = true;
+      el.innerHTML = '';
       if (!profile) {
-        el.hidden = true;
-        el.innerHTML = '';
+        compact.hidden = true;
+        picker.hidden = false;
+        section.classList.remove('is-compact');
         clearBtn.hidden = !state.apId;
+        editingAp = false;
         return;
       }
       clearBtn.hidden = false;
-      el.hidden = false;
-      const complete = profile.completeness && profile.completeness.status === 'complete';
-      const ds = profile.datasheet_url ? safeUrl(profile.datasheet_url) : '';
-      el.innerHTML = '';
+      status.textContent = '';
+      document.getElementById('ap-compact-name').textContent = profile.display_name || profile.ap_id;
+      const bands = (profile.supported_bands || []).join(' / ');
+      document.getElementById('ap-compact-meta').textContent =
+        [formatApInterfaceSummary(profile), bands ? `${bands} GHz` : null].filter(Boolean).join(' \u00b7 ');
 
-      const title = document.createElement('h3');
-      title.textContent = profile.display_name || profile.ap_id;
-      el.appendChild(title);
-
-      const iface = document.createElement('p');
-      iface.textContent = formatApInterfaceSummary(profile);
-      el.appendChild(iface);
-
-      const bands = document.createElement('p');
-      bands.textContent = 'Bands: ' + ((profile.supported_bands || []).join(', ') || '—');
-      el.appendChild(bands);
-
-      const links = document.createElement('p');
-      links.className = 'ap-summary-links';
+      const links = document.getElementById('ap-compact-links');
+      links.replaceChildren();
       const back = document.createElement('a');
       back.href = apComparisonDetailUrl(profile);
       back.target = '_blank';
       back.rel = 'noopener noreferrer';
       back.textContent = 'Full specs on AP Comparison';
       links.appendChild(back);
+      const ds = profile.datasheet_url ? safeUrl(profile.datasheet_url) : '';
       if (ds) {
-        links.appendChild(document.createTextNode(' · '));
+        links.appendChild(document.createTextNode(' \u00b7 '));
         const doc = document.createElement('a');
         doc.href = ds;
         doc.target = '_blank';
@@ -818,11 +848,11 @@
         doc.textContent = 'AP documentation';
         links.appendChild(doc);
       }
-      el.appendChild(links);
 
-      status.textContent = complete
-        ? 'Using pinned AP profile.'
-        : 'Pinned AP profile is incomplete — results stay conservative.';
+      editingAp = false;
+      compact.hidden = false;
+      picker.hidden = true;
+      section.classList.add('is-compact');
     }
 
     function setSelectedAp(profile, { syncInput = true } = {}) {
@@ -864,10 +894,7 @@
         document.getElementById('ap-summary').hidden = true;
         updateCompatChrome();
         document.getElementById('compat-banner').hidden = false;
-        document.getElementById('compat-banner').querySelector('.compat-banner-title').textContent =
-          DISCLAIMERS.bannerTitle || 'Best-effort compatibility guidance';
-        document.getElementById('compat-banner').querySelector('.compat-banner-body').textContent =
-          DISCLAIMERS.bannerBody || '';
+        fillCompatBanner();
         applyFilters();
         return;
       }
@@ -1612,6 +1639,10 @@
         buildControls();
         applyFilters();
         // finder.html#ap (linked from Browse) jumps straight to the AP picker.
+        if (JUMP_TO_RESULTS_ON_LOAD) {
+          const panel = document.getElementById('results-panel');
+          if (panel) panel.scrollIntoView({ block: 'start' });
+        }
         if (FOCUS_AP_ON_LOAD && !state.apId) {
           document.getElementById('filter-ap').focus({ preventScroll: false });
         }
@@ -1652,6 +1683,14 @@
           e.preventDefault();
           applyApSelectionFromInput();
         }
+      });
+      document.getElementById('change-ap').addEventListener('click', () => {
+        editingAp = true;
+        document.getElementById('ap-compact').hidden = true;
+        document.getElementById('ap-picker').hidden = false;
+        document.getElementById('ap').classList.remove('is-compact');
+        apInput.select();
+        apInput.focus();
       });
       document.getElementById('filter-ap-select').addEventListener('change', (e) => {
         const apId = e.target.value;

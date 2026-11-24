@@ -3234,32 +3234,30 @@ table.antenna-table td.beamwidth-cell {
 
 /* AP → antenna compatibility (Finder) */
 .compat-banner {
-  margin: 1rem 0 0;
-  padding: 1rem 1.15rem;
-  border: 1px solid rgba(234, 179, 8, 0.45);
-  border-left: 4px solid #ca8a04;
-  border-radius: 0.65rem;
-  background: rgba(66, 32, 6, 0.35);
+  margin: 0 0 1.25rem;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid rgba(234, 179, 8, 0.35);
+  border-left: 3px solid #ca8a04;
+  border-radius: 0.5rem;
+  background: rgba(66, 32, 6, 0.28);
   color: #fef3c7;
+}
+
+.compat-banner-line {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
 }
 
 .compat-banner-title {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 0.4rem;
   color: #fde68a;
+  font-weight: 600;
 }
 
-.compat-banner-body,
-.compat-banner-about {
-  margin: 0.35rem 0 0;
-  font-size: 0.9rem;
-  line-height: 1.45;
-  color: #fef3c7;
-}
-
-.compat-banner-about a {
+.compat-banner-line a {
+  margin-left: 0.35rem;
   color: #fde68a;
+  white-space: nowrap;
 }
 
 .filter-inline-note {
@@ -3792,4 +3790,65 @@ table.antenna-table td.beamwidth-cell {
   .compat-actions .btn-link {
     min-height: 40px; /* comfortable touch target without ballooning */
   }
+}
+
+/* Finder: once an AP is chosen, the AP section collapses to one line. */
+.finder-ap.is-compact {
+  padding: 0.75rem 1rem;
+  margin: 1rem 0 1rem;
+}
+
+.finder-ap-compact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.25rem;
+}
+
+.finder-ap-compact[hidden],
+#ap-picker[hidden] {
+  display: none;
+}
+
+.finder-ap-compact-title {
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.finder-ap-compact-title strong {
+  color: #fff;
+}
+
+.finder-ap-compact-meta {
+  margin: 0.15rem 0 0;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.finder-ap-compact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.9rem;
+  font-size: 0.85rem;
+}
+
+.finder-ap-compact-links a {
+  color: #93c5fd;
+}
+
+.finder-ap-compact-actions .btn-link {
+  box-sizing: border-box;
+  min-height: 32px;
+  padding: 0.3rem 0.9rem;
+}
+
+#results-panel {
+  scroll-margin-top: 80px; /* clear the sticky header when jumping to #results */
+}
+
+#compat-about-summary {
+  font-weight: 500;
 }
