@@ -4149,3 +4149,7 @@ a.sku-link:hover { text-decoration: underline; }
 button.btn-link, button.btn-link-small { font-family: var(--sans); font-size: 14px; }
 /* Vendor note as quiet text everywhere, not a callout box */
 .catalog-disclaimer { padding: 0; border: 0; background: none; color: var(--muted); font-size: 14px; }
+
+/* Antenna Finder: filters scroll with the page (no clipped inner scroll box) */
+.finder-page .finder-filters { position: static; max-height: none; overflow: visible; padding-right: 0; }
+.finder-page .band-presets { display: flex; width: 100%; margin: 0 0 8px; }
