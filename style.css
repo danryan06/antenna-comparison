@@ -4251,11 +4251,21 @@ a.sku-link:hover { text-decoration: underline; }
 .finder-page .compat-compare { align-self: center; display: flex; margin: 0; }
 .finder-page .compat-compare input { width: 20px; height: 20px; margin: 0; cursor: pointer; accent-color: var(--accent); }
 /* Fit summary: status badge, vendor claim and unit count stacked at a fixed x. */
-.finder-page .compat-fit { display: flex; flex-direction: column; align-items: stretch; gap: 6px; padding-top: 2px; align-self: stretch; }
-.finder-page .compat-fit > * { text-align: center; }
+.finder-page .compat-fit { display: flex; flex-direction: column; align-items: stretch; gap: 3px; padding-top: 2px; align-self: stretch; font-size: 14px; }
+/* Fit text is plain: status as colored text with a dot, the rest as quiet text.
+   Details stays the only boxed element in the row. */
 .finder-page .compat-fit .compat-status,
-.finder-page .compat-fit .compat-claim,
-.finder-page .compat-fit .compat-chip { white-space: nowrap; }
+.finder-page .compat-fit .compat-claim {
+  display: block; padding: 0; border: 0; border-radius: 0; background: none;
+  font-size: 14px; font-weight: 600; white-space: nowrap;
+}
+.finder-page .compat-fit .compat-status::before {
+  content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 7px;
+  border-radius: 50%; background: currentColor; vertical-align: 1px;
+}
+.finder-page .compat-fit .compat-claim { color: var(--muted); font-weight: 500; }
+.finder-page .compat-units { color: var(--ink); white-space: nowrap; }
+.finder-page .compat-units-many { font-weight: 700; }
 .finder-page .compat-thumb {
   align-self: center; /* centered in the row; the other columns stay top-aligned */
   display: flex; align-items: center; justify-content: center;
@@ -4268,12 +4278,12 @@ a.sku-link:hover { text-decoration: underline; }
 .finder-page .compat-result-top { gap: 4px 10px; align-items: baseline; margin: 0 0 6px; }
 .finder-page .compat-sku a, .finder-page .compat-sku { font-family: var(--cond); font-size: 19px; font-weight: 600; line-height: 1.15; }
 .finder-page .compat-alt-sku { font-family: var(--mono); font-size: 12px; color: var(--muted); }
-.finder-page .compat-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; }
-.finder-page .compat-chip {
-  padding: 2px 8px; border-radius: 4px; border: 1px solid var(--line);
-  background: var(--surface); color: var(--ink); font-size: 13px; line-height: 1.4;
-}
-.finder-page .compat-chip-accent { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); font-weight: 600; }
+.finder-page .compat-chips-wrap { overflow: hidden; margin: 0 0 8px; }
+.finder-page .compat-chips { display: flex; flex-wrap: wrap; margin-left: -18px; }
+/* Plain facts separated by dots. Each item carries its own leading dot; the
+   negative margin pushes each line's first dot into the wrapper's clip. */
+.finder-page .compat-chip { color: var(--ink); font-size: 14px; line-height: 1.5; white-space: nowrap; }
+.finder-page .compat-chip::before { content: "·"; display: inline-block; width: 18px; text-align: center; color: var(--muted); }
 .finder-page .compat-specs { display: flex; flex-wrap: wrap; gap: 6px 28px; margin: 0 0 8px; }
 .finder-page .compat-specs dt { font-size: 12px; color: var(--muted); }
 .finder-page .compat-specs dd { margin: 0; font-family: var(--cond); font-size: 17px; font-weight: 600; color: var(--ink); }
@@ -4298,8 +4308,8 @@ a.sku-link:hover { text-decoration: underline; }
   .finder-page .compat-result { grid-template-columns: 22px 48px minmax(0, 1fr); }
   .finder-page .compat-thumb { width: 48px; height: 48px; align-self: start; }
   .finder-page .compat-compare { align-self: start; margin-top: 2px; }
-  .finder-page .compat-fit { grid-column: 3; flex-direction: row; flex-wrap: wrap; align-items: flex-start; padding: 0; }
-  .finder-page .compat-actions { margin: 0; padding: 0; }
+  .finder-page .compat-fit { grid-column: 3; align-items: flex-start; padding: 0; }
+  .finder-page .compat-actions { margin: 0; padding-top: 8px; }
   .finder-page .compat-specs { gap: 6px 18px; }
 }
 /* Buttons that are <button> elements size like the link buttons */

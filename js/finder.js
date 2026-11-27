@@ -877,9 +877,9 @@ function manufacturerLinks(entry) {
   return wrap;
 }
 
-function compatChip(text, extraClass) {
+function compatChip(text) {
   const chip = document.createElement('span');
-  chip.className = 'compat-chip' + (extraClass ? ' ' + extraClass : '');
+  chip.className = 'compat-chip';
   chip.textContent = text;
   return chip;
 }
@@ -1063,10 +1063,11 @@ function renderCompatResults(results) {
         fit.appendChild(claim);
       }
       if (result.units_required) {
-        fit.appendChild(compatChip(
-          `${result.units_required} unit${result.units_required === 1 ? '' : 's'} required`,
-          'compat-chip-accent'
-        ));
+        const units = document.createElement('span');
+        const many = result.units_required > 1;
+        units.className = 'compat-units' + (many ? ' compat-units-many' : '');
+        units.textContent = `${result.units_required} unit${many ? 's' : ''} required`;
+        fit.appendChild(units);
       }
 
       const chips = document.createElement('div');
@@ -1076,7 +1077,11 @@ function renderCompatResults(results) {
       const bands = formatBands(entry.bands);
       if (bands) chips.appendChild(compatChip(`${bands} GHz`));
       if (entry.indoor_outdoor) chips.appendChild(compatChip(formatEnvironment(entry.indoor_outdoor)));
-      body.appendChild(chips);
+      // The wrapper clips the separator dot that would start a wrapped line.
+      const chipsWrap = document.createElement('div');
+      chipsWrap.className = 'compat-chips-wrap';
+      chipsWrap.appendChild(chips);
+      body.appendChild(chipsWrap);
 
       const specs = compatSpecs(entry);
       if (specs) body.appendChild(specs);
