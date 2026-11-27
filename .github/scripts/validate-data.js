@@ -5,6 +5,8 @@ const fs = require('fs');
 const path = require('path');
 
 const root = path.join(__dirname, '..', '..');
+// Every catalog image is downloaded by visitors; the largest today is ~0.75 MB.
+const MAX_IMAGE_BYTES = 1000000;
 const dataPath = path.join(root, 'antenna_data.json');
 const FORMS = new Set(['Omni', 'Patch', 'High-density patch']);
 const required = ['vendor', 'sku', 'form', 'bands', 'gain_dbi', 'beamwidth', 'connector'];
@@ -86,6 +88,10 @@ data.forEach((entry, index) => {
     if (/^https?:/i.test(rel)) return;
     const abs = path.join(root, rel);
     if (!fs.existsSync(abs)) fail(`${label}: missing image for ${where}: ${rel}`);
+    const bytes = fs.statSync(abs).size;
+    if (bytes > MAX_IMAGE_BYTES) {
+      fail(`${label}: ${where} ${rel} is ${(bytes / 1e6).toFixed(2)} MB; keep images under ${MAX_IMAGE_BYTES / 1e6} MB (see ANTENNA_TEMPLATE_GUIDE.md, Images)`);
+    }
   };
   checkImage(entry.image_url, 'image_url');
   (entry.images || []).forEach((img, i) => checkImage(img && img.url, `images[${i}]`));

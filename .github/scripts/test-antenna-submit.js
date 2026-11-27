@@ -206,6 +206,44 @@ assert.ok(!added[1].internal_notes);
 assert.strictEqual(added[0].internal_notes.maintainer, 'secret');
 assert.ok(newRun.text.indexOf('"sku": "ATS-03414"') < newRun.text.indexOf('"sku": "EX-9"'));
 
+// New entries must come out valid for validate-compatibility.js: a derived
+// antenna_id (caller-supplied ids are ignored) and an rf_interfaces array.
+assert.strictEqual(added[1].antenna_id, 'example:ex-9');
+assert.ok(Array.isArray(added[1].rf_interfaces), 'new entry needs rf_interfaces');
+{
+  const spoofed = Object.assign({}, created, { sku: 'EX-10', antenna_id: 'acceltex-hubbell:ats-03414' });
+  const spoofBody = submit.buildIssue({ kind: 'new', vendor: spoofed.vendor, sku: spoofed.sku, json: submit.formatAntennaJson(spoofed) }).body;
+  const spoofRun = runApply('new', spoofBody, fixture);
+  assert.strictEqual(spoofRun.result.status, 0, spoofRun.result.stderr);
+  assert.strictEqual(JSON.parse(spoofRun.text)[1].antenna_id, 'example:ex-10');
+}
+
+// Edits cannot change or drop antenna_id / rf_interfaces / compatibility_claims / applications.
+{
+  const curated = Object.assign({}, fixtureEntry, {
+    antenna_id: 'acceltex-hubbell:ats-03414',
+    applications: ['Warehouse'],
+    rf_interfaces: [{ connector_family: 'rp-sma' }],
+    compatibility_claims: [{ ap_id: 'x' }]
+  });
+  const curatedFixture = submit.formatAntennaJson([curated], { escapeUnicode: true }) + '\n';
+  const hostile = Object.assign({}, fixtureEntry, { name: 'Renamed', antenna_id: 'evil:id', applications: [] });
+  delete hostile.field_notes;
+  delete hostile.internal_notes;
+  const hostileBody = submit.buildIssue({
+    kind: 'edit', vendor: hostile.vendor, sku: hostile.sku,
+    existingLabel: hostile.vendor + ' ' + hostile.sku, json: submit.formatAntennaJson(hostile)
+  }).body;
+  const run = runApply('edit', hostileBody, curatedFixture);
+  assert.strictEqual(run.result.status, 0, run.result.stderr);
+  const out = JSON.parse(run.text)[0];
+  assert.strictEqual(out.name, 'Renamed');
+  assert.strictEqual(out.antenna_id, curated.antenna_id);
+  assert.deepStrictEqual(out.applications, curated.applications);
+  assert.deepStrictEqual(out.rf_interfaces, curated.rf_interfaces);
+  assert.deepStrictEqual(out.compatibility_claims, curated.compatibility_claims);
+}
+
 const dup = runApply('new', newBody, newRun.text);
 assert.notStrictEqual(dup.result.status, 0);
 assert.ok(dup.result.stderr.includes('already exists'));

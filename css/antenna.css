@@ -1,0 +1,313 @@
+/* Page styles for antenna.html (loaded after style.css). */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 1rem 0 1.5rem;
+}
+.gallery-item {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+}
+.gallery-item button.gallery-zoom {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: zoom-in;
+  border-radius: 8px;
+}
+.gallery-item button.gallery-zoom:focus {
+  outline: none;
+}
+.gallery-item button.gallery-zoom:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.gallery-item img {
+  max-width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: var(--ink);
+  display: block;
+  margin: 0 auto;
+}
+.gallery-item.pattern img,
+.gallery-item.dimension img {
+  background: var(--surface);
+}
+.pattern-ports {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 4px 0 6px;
+}
+.pattern-port-chip {
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  min-height: 32px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+.pattern-port-chip:hover {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+.pattern-port-chip[aria-pressed="true"] {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.pattern-port-chip:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.pattern-port-chip-all {
+  border-style: dashed;
+}
+.pattern-ports-note {
+  margin: 0 0 12px;
+  font-size: 0.8rem;
+  color: var(--ink);
+}
+.gallery-caption {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+.ap-image-wrapper {
+  position: relative;
+}
+.ap-image-zoom {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: zoom-in;
+}
+.ap-image-zoom:focus {
+  outline: none;
+}
+.ap-image-zoom:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 0.75rem;
+}
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: var(--surface);
+
+}
+.lightbox-overlay.is-open {
+  display: flex;
+}
+.lightbox-dialog {
+  position: relative;
+  max-width: min(1100px, 100%);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+.lightbox-dialog img {
+  max-width: 100%;
+  max-height: calc(90vh - 3.5rem);
+  object-fit: contain;
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
+}
+.lightbox-caption {
+  margin: 0;
+  max-width: 42rem;
+  text-align: center;
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.lightbox-close {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.lightbox-close:hover {
+  background: var(--surface);
+  color: var(--ink);
+}
+.lightbox-close:focus {
+  outline: none;
+}
+.lightbox-close:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+body.lightbox-open {
+  overflow: hidden;
+}
+.legacy-sku {
+  margin-top: -0.85rem;
+  margin-bottom: 1.35rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+.legacy-sku-label {
+  color: var(--muted);
+}
+.legacy-sku-value {
+  color: var(--ink);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+.legacy-sku-row,
+.val-with-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  min-width: 0;
+  vertical-align: middle;
+}
+.legacy-sku-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+}
+.val-with-copy .part-text,
+.legacy-sku-row .legacy-sku-value {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.val-with-copy .part-text {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+#title-header {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+.header-with-logo {
+  align-items: flex-start;
+}
+.part-numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  margin: 0.85rem 0 1.35rem;
+  max-width: 48rem;
+}
+.part-number-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.55rem;
+  max-width: 100%;
+  /* Same UI sans as the specs grid, a step larger than .kv-grid .val (0.9rem). */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.45;
+}
+.part-number-label,
+.part-number-value {
+  font-family: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+}
+.part-number-label {
+  color: var(--ink);
+}
+.part-number-value {
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+@media (max-width: 480px) {
+  #title-header {
+    font-size: 1.5rem;
+  }
+}
+.notes-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+.notes-list a {
+  color: var(--link, var(--accent));
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: var(--link-underline, var(--accent));
+}
+.notes-list a:hover {
+  color: var(--link-hover, var(--ink));
+  text-decoration-color: var(--link-underline-hover, var(--ink));
+}
+.notes-list a:focus {
+  outline: none;
+}
+.notes-list a:focus-visible {
+  color: var(--link-focus, var(--ink));
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+  text-decoration-color: var(--link-focus, var(--ink));
+}
+/* Clear break after specs before body sections */
+#details.kv-grid {
+  padding-bottom: 0.25rem;
+}
+#included:not(:empty) {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+#patterns:not(:empty),
+#dimensions:not(:empty),
+#photos:not(:empty),
+#sources:not(:empty) {
+  margin-top: 1.25rem;
+}
+#patterns .spec-section:first-child,
+#dimensions .spec-section:first-child,
+#photos .spec-section:first-child,
+#included .spec-section:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}

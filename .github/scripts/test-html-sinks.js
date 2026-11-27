@@ -16,25 +16,25 @@ const path = require('path');
 const assert = require('assert');
 
 const root = path.join(__dirname, '..', '..');
-const files = [
-  'index.html',
-  'finder.html',
-  'antenna.html',
-  'compare.html',
-  'submit.html',
-  'edit.html',
+// Page HTML must stay script-free (see test-csp.js); page logic lives in js/.
+const pageScripts = fs.readdirSync(path.join(root, 'js'))
+  .filter(name => name.endsWith('.js'))
+  .map(name => 'js/' + name);
+const files = pageScripts.concat([
+  'site-header.js',
+  'fresh.js',
   'antenna-format.js',
   'antenna-submit.js',
   'compatibility-matcher.js',
   'connector-normalize.js'
-];
+]);
 
 // Trusted constant markup only — keep why-comments next to real assignments.
 const ALLOWED_RHS = new Set([
   "''",
   '""',
   '``',
-  'markup', // antenna.html copy/check SVG path constants
+  'markup', // js/antenna.js copy/check SVG path constants
   'CHECK_ICON',
   'COPY_ICON',
   '`<div class="card-vendor"></div><div class="card-model"></div>`', // compare empty shell
@@ -97,16 +97,16 @@ files.forEach(rel => {
 });
 
 // Explicit regressions called out in the audit
-const indexHtml = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const indexHtml = fs.readFileSync(path.join(root, 'js', 'index.js'), 'utf8');
 assert.ok(
   !/td\.innerHTML\s*=\s*`[\s\S]*empty-state-enhanced/.test(indexHtml),
-  'index.html empty state must not use innerHTML with a template'
+  'js/index.js empty state must not use innerHTML with a template'
 );
 
-const antennaHtml = fs.readFileSync(path.join(root, 'antenna.html'), 'utf8');
+const antennaHtml = fs.readFileSync(path.join(root, 'js', 'antenna.js'), 'utf8');
 assert.ok(
   !/a\.innerHTML\s*=\s*`[\s\S]*\$\{[^}]*sheet\.label/.test(antennaHtml),
-  'antenna.html must not interpolate sheet.label into innerHTML'
+  'js/antenna.js must not interpolate sheet.label into innerHTML'
 );
 
 if (violations.length) {

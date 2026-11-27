@@ -1,0 +1,1530 @@
+// Page script for finder.html. Loaded as a classic script at the end of <body>,
+// after the shared helpers it uses, so top-level names stay global.
+const DATA_URL = 'antenna_catalog.json';
+const AP_PROFILES_URL = 'data/compatibility/ap-profiles.json';
+const WIFI_BANDS = ['2.4', '5', '6'];
+const BAND_PRESETS = [
+  { id: 'dual', label: 'Dual', bands: ['2.4', '5'] },
+  { id: 'tri', label: 'Tri', bands: ['2.4', '5', '6'] }
+];
+const ENV_OPTIONS = [
+  { value: 'Indoor', label: 'Indoor' },
+  { value: 'Outdoor', label: 'Outdoor' },
+  { value: 'Either', label: 'Either' }
+];
+const RESULT_COLUMNS = [
+  { key: 'vendor', label: 'Vendor' },
+  { key: 'sku', label: 'SKU' },
+  { key: 'form', label: 'Form' },
+  { key: 'bands', label: 'Bands' },
+  { key: 'gain_dbi', label: 'Gain' },
+  { key: 'beamwidth', label: 'Beamwidth' },
+  { key: 'connector', label: 'Connector' },
+  { key: 'lead_count', label: 'Leads' },
+  { key: 'indoor_outdoor', label: 'Env' }
+];
+const DEFAULT_SORT = { key: 'vendor', dir: 'asc' };
+// Read before syncUrl() rewrites the address (replaceState drops the hash).
+const FOCUS_AP_ON_LOAD = window.location.hash === '#ap';
+const JUMP_TO_RESULTS_ON_LOAD = window.location.hash === '#results';
+
+const state = {
+  vendors: new Set(),
+  form: '',
+  bands: new Set(),
+  connector: '',
+  leads: '',
+  env: 'Either',
+  app: '',
+  apId: '',
+  showExcluded: false
+};
+let currentSort = { key: DEFAULT_SORT.key, dir: DEFAULT_SORT.dir };
+
+let enrichedData = [];
+let apIndex = null;
+let selectedApProfile = null;
+let lastCompatResults = [];
+const selectedIds = new Set();
+const DISCLAIMERS = (window.AntennaCompatibility && AntennaCompatibility.DISCLAIMERS) || {};
+
+function restoreStateFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const knownVendors = new Set(enrichedData.map(e => e.vendor).filter(Boolean));
+  (params.get('vendors') || '').split('|').map(v => v.trim()).filter(Boolean).forEach(v => {
+    if (knownVendors.has(v)) state.vendors.add(v);
+  });
+  const form = params.get('form') || '';
+  if (form && FORM_TYPES.includes(form)) state.form = form;
+  (params.get('bands') || '').split(',').filter(Boolean).forEach(v => {
+    if (WIFI_BANDS.includes(v)) state.bands.add(v);
+  });
+  state.connector = params.get('connector') || '';
+  state.leads = params.get('leads') || '';
+  const env = params.get('env');
+  if (env && ENV_OPTIONS.some(opt => opt.value === env)) state.env = env;
+  state.app = (params.get('app') || '').trim();
+  state.apId = (params.get('ap') || '').trim();
+  state.showExcluded = params.get('excluded') === '1';
+  const sortKey = params.get('sort') || '';
+  if (RESULT_COLUMNS.some(col => col.key === sortKey)) currentSort.key = sortKey;
+  else currentSort.key = DEFAULT_SORT.key;
+  currentSort.dir = params.get('dir') === 'desc' ? 'desc' : 'asc';
+  if (!params.get('sort')) currentSort = { key: DEFAULT_SORT.key, dir: DEFAULT_SORT.dir };
+}
+
+function getFilterStateForUrl() {
+  const params = new URLSearchParams();
+  if (state.apId) params.set('ap', state.apId);
+  if (state.vendors.size) params.set('vendors', Array.from(state.vendors).join('|'));
+  if (state.form) params.set('form', state.form);
+  if (state.bands.size) params.set('bands', Array.from(state.bands).join(','));
+  if (state.connector) params.set('connector', state.connector);
+  if (state.leads) params.set('leads', state.leads);
+  if (state.env && state.env !== 'Either') params.set('env', state.env);
+  if (state.app) params.set('app', state.app);
+  if (state.showExcluded) params.set('excluded', '1');
+  if (currentSort.key !== DEFAULT_SORT.key || currentSort.dir !== DEFAULT_SORT.dir) {
+    params.set('sort', currentSort.key);
+    params.set('dir', currentSort.dir);
+  }
+  return params;
+}
+
+function finderReturnPath() {
+  const qs = getFilterStateForUrl().toString();
+  return qs ? `finder.html?${qs}` : 'finder.html';
+}
+
+function detailHrefFor(slug) {
+  return buildAntennaDetailHref(slug);
+}
+
+function rememberFinderBack() {
+  saveDetailBackPath(finderReturnPath());
+}
+
+function bindDetailLink(anchor, slug) {
+  anchor.href = detailHrefFor(slug);
+  anchor.addEventListener('click', () => rememberFinderBack());
+}
+
+function goToFinderDetail(slug) {
+  rememberFinderBack();
+  window.location.href = detailHrefFor(slug);
+}
+
+function syncUrl() {
+  const qs = getFilterStateForUrl().toString();
+  history.replaceState(null, '', (qs ? `?${qs}` : location.pathname) + location.hash);
+}
+
+function syncFilterDisclosure() {
+  const details = document.getElementById('finder-filters');
+  if (!details) return;
+  const mobile = window.matchMedia('(max-width: 980px)').matches;
+  details.open = !mobile;
+}
+
+function updateFilterDisclosureHint() {
+  const hint = document.getElementById('finder-filters-hint');
+  if (!hint) return;
+  const activeLabel = document.getElementById('active-filters');
+  let n = 0;
+  if (activeLabel && activeLabel.style.display !== 'none') {
+    n = activeLabel.children.length;
+  }
+  hint.textContent = n > 0 ? `(${n} active)` : '';
+}
+
+function connectorFamily(raw) {
+  const c = String(raw || '').toUpperCase().replace(/\s+/g, ' ').trim();
+  if (!c) return '';
+  if (c.includes('DART')) return 'DART';
+  if (c.includes('MPC')) return 'MPC';
+  if (c.includes('RPSMA')) return 'RPSMA';
+  if (c.includes('RPTNC')) return 'RPTNC';
+  if (
+    c === 'N-STYLE' ||
+    c.startsWith('N-STYLE') ||
+    c.startsWith('N MALE') ||
+    c.startsWith('N PLUG') ||
+    c.startsWith('N JACK') ||
+    /^N\b/.test(c)
+  ) return 'N-Style';
+  if (c.includes('SMA')) return 'SMA';
+  return String(raw).trim();
+}
+
+function enrichEntry(entry) {
+  return Object.assign({}, entry, {
+    _slug: slugifyAntenna(entry),
+    _bands: Array.isArray(entry.bands) ? entry.bands.map(String) : [],
+    _connectorFamily: connectorFamily(entry.connector)
+  });
+}
+
+function collectUnique(getter, { numeric = false } = {}) {
+  const set = new Set();
+  enrichedData.forEach(entry => {
+    const value = getter(entry);
+    if (value == null || value === '') return;
+    set.add(value);
+  });
+  const values = Array.from(set);
+  if (numeric) {
+    return values
+      .map(Number)
+      .filter(n => !Number.isNaN(n))
+      .sort((a, b) => a - b)
+      .map(String);
+  }
+  return values.sort((a, b) => String(a).localeCompare(String(b), undefined, { numeric: true }));
+}
+
+function slugifyLabel(value) {
+  return String(value || '')
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function renderRadioChips(container, options, type, selectedValue) {
+  container.innerHTML = '';
+  options.forEach(option => {
+    const value = option.value != null ? String(option.value) : String(option);
+    const labelText = option.label != null ? option.label : value;
+    const id = `${type}-${slugifyLabel(value || 'any')}`;
+    const label = document.createElement('label');
+    label.className = 'chip-option';
+    const input = document.createElement('input');
+    input.type = 'radio';
+    input.name = `filter-${type}`;
+    input.id = id;
+    input.value = value;
+    input.checked = selectedValue === value;
+    input.addEventListener('change', () => {
+      if (!input.checked) return;
+      if (type === 'form') state.form = value;
+      else if (type === 'env') state.env = value;
+      else if (type === 'app') state.app = value;
+      applyFilters();
+    });
+    const span = document.createElement('span');
+    span.textContent = labelText;
+    label.appendChild(input);
+    label.appendChild(span);
+    container.appendChild(label);
+  });
+}
+
+function bandsMatchPreset(presetBands) {
+  if (state.bands.size !== presetBands.length) return false;
+  return presetBands.every(band => state.bands.has(band));
+}
+
+function syncBandCheckboxes() {
+  WIFI_BANDS.forEach(band => {
+    const input = document.getElementById(`bands-${slugifyLabel(band)}`);
+    if (input) input.checked = state.bands.has(band);
+  });
+}
+
+function updateBandPresetActive() {
+  document.querySelectorAll('#bands-presets .band-preset').forEach(btn => {
+    const preset = BAND_PRESETS.find(p => p.id === btn.dataset.preset);
+    const active = preset ? bandsMatchPreset(preset.bands) : false;
+    btn.classList.toggle('is-active', active);
+    btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+  });
+}
+
+function applyBandPreset(bands) {
+  state.bands = new Set(bands);
+  syncBandCheckboxes();
+  applyFilters();
+}
+
+function renderBandPresets(container) {
+  container.innerHTML = '';
+  BAND_PRESETS.forEach(preset => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'band-preset';
+    btn.dataset.preset = preset.id;
+    btn.textContent = preset.label;
+    btn.title = `Select ${preset.bands.map(b => `${b} GHz`).join(' + ')}`;
+    btn.setAttribute('aria-pressed', 'false');
+    btn.addEventListener('click', () => applyBandPreset(preset.bands));
+    container.appendChild(btn);
+  });
+  updateBandPresetActive();
+}
+
+function renderVendorChips(container) {
+  container.innerHTML = '';
+  const vendors = collectUnique(e => e.vendor);
+  vendors.forEach(vendor => {
+    const id = `vendor-${slugifyLabel(vendor)}`;
+    const label = document.createElement('label');
+    label.className = 'chip-option';
+    const input = document.createElement('input');
+    input.type = 'checkbox';
+    input.id = id;
+    input.value = vendor;
+    input.checked = state.vendors.has(vendor);
+    input.addEventListener('change', () => {
+      if (input.checked) state.vendors.add(vendor);
+      else state.vendors.delete(vendor);
+      applyFilters();
+    });
+    const span = document.createElement('span');
+    span.textContent = vendor;
+    label.appendChild(input);
+    label.appendChild(span);
+    container.appendChild(label);
+  });
+}
+
+function renderBandChips(container) {
+  container.innerHTML = '';
+  const bands = WIFI_BANDS.filter(b =>
+    enrichedData.some(e => (e._bands || []).includes(b))
+  );
+  const available = bands.length ? bands : WIFI_BANDS;
+  available.forEach(band => {
+    const id = `bands-${slugifyLabel(band)}`;
+    const label = document.createElement('label');
+    label.className = 'chip-option';
+    const input = document.createElement('input');
+    input.type = 'checkbox';
+    input.id = id;
+    input.value = band;
+    input.checked = state.bands.has(band);
+    input.addEventListener('change', () => {
+      if (input.checked) state.bands.add(band);
+      else state.bands.delete(band);
+      applyFilters();
+    });
+    const span = document.createElement('span');
+    span.textContent = `${band} GHz`;
+    label.appendChild(input);
+    label.appendChild(span);
+    container.appendChild(label);
+  });
+}
+
+function fillSelect(select, values, { labelFn } = {}) {
+  while (select.options.length > 1) select.remove(1);
+  values.forEach(value => {
+    const opt = document.createElement('option');
+    opt.value = value;
+    opt.textContent = labelFn ? labelFn(value) : value;
+    select.appendChild(opt);
+  });
+}
+
+function apDisplayLabel(profile) {
+  if (!profile) return '';
+  return String(profile.display_name || '').trim() || String(profile.ap_id || '').trim();
+}
+
+function buildApOptions() {
+  const list = document.getElementById('ap-options');
+  list.innerHTML = '';
+  if (!apIndex) return;
+  apIndex.list.forEach(profile => {
+    const opt = document.createElement('option');
+    // Value is the human label so the datalist shows "Aruba AP-734"
+    // instead of the internal ap_id slug. resolveApInput still accepts both.
+    opt.value = apDisplayLabel(profile);
+    list.appendChild(opt);
+  });
+
+  // Sidebar dropdown: same APs grouped by AP vendor, kept in sync with the top picker.
+  const select = document.getElementById('filter-ap-select');
+  select.querySelectorAll('optgroup').forEach(g => g.remove());
+  const byVendor = new Map();
+  apIndex.list.forEach(profile => {
+    const vendor = String(profile.vendor || 'Other');
+    if (!byVendor.has(vendor)) byVendor.set(vendor, []);
+    byVendor.get(vendor).push(profile);
+  });
+  Array.from(byVendor.keys()).sort((a, b) => a.localeCompare(b)).forEach(vendor => {
+    const group = document.createElement('optgroup');
+    group.label = vendor;
+    byVendor.get(vendor)
+      .slice()
+      .sort((x, y) => String(x.model || '').localeCompare(String(y.model || ''), undefined, { numeric: true }))
+      .forEach(profile => {
+        const opt = document.createElement('option');
+        opt.value = profile.ap_id;
+        opt.textContent = apDisplayLabel(profile);
+        group.appendChild(opt);
+      });
+    select.appendChild(group);
+  });
+  select.value = selectedApProfile ? selectedApProfile.ap_id : '';
+}
+
+// Browse APs by vendor so nobody has to guess the exact model string.
+function buildApQuickPicks() {
+  const wrap = document.getElementById('ap-quick');
+  if (!wrap || !apIndex || !apIndex.list.length) return;
+  wrap.replaceChildren();
+  const byVendor = new Map();
+  apIndex.list.forEach(profile => {
+    const vendor = String(profile.vendor || 'Other');
+    if (!byVendor.has(vendor)) byVendor.set(vendor, []);
+    byVendor.get(vendor).push(profile);
+  });
+  const label = document.createElement('span');
+  label.className = 'finder-ap-quick-label';
+  label.id = 'ap-quick-label';
+  label.textContent = 'Or browse:';
+  const vendors = document.createElement('div');
+  vendors.className = 'finder-ap-vendors';
+  vendors.setAttribute('role', 'group');
+  vendors.setAttribute('aria-labelledby', 'ap-quick-label');
+  const models = document.createElement('div');
+  models.className = 'finder-ap-models';
+  models.hidden = true;
+  const vendorButtons = [];
+  Array.from(byVendor.keys()).sort((a, b) => a.localeCompare(b)).forEach(vendor => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'pattern-port-chip';
+    b.textContent = vendor;
+    b.setAttribute('aria-expanded', 'false');
+    b.addEventListener('click', () => {
+      const open = b.getAttribute('aria-expanded') !== 'true';
+      vendorButtons.forEach(x => x.setAttribute('aria-expanded', 'false'));
+      models.replaceChildren();
+      models.hidden = !open;
+      if (!open) return;
+      b.setAttribute('aria-expanded', 'true');
+      byVendor.get(vendor)
+        .slice()
+        .sort((x, y) => String(x.model || '').localeCompare(String(y.model || ''), undefined, { numeric: true }))
+        .forEach(profile => {
+          const m = document.createElement('button');
+          m.type = 'button';
+          m.className = 'pattern-port-chip';
+          m.textContent = profile.model || apDisplayLabel(profile);
+          m.setAttribute('aria-label', apDisplayLabel(profile));
+          m.addEventListener('click', () => {
+            document.getElementById('filter-ap').value = apDisplayLabel(profile);
+            models.hidden = true;
+            b.setAttribute('aria-expanded', 'false');
+            applyApSelectionFromInput();
+          });
+          models.appendChild(m);
+        });
+    });
+    vendorButtons.push(b);
+    vendors.appendChild(b);
+  });
+  wrap.appendChild(label);
+  wrap.appendChild(vendors);
+  wrap.appendChild(models);
+  wrap.hidden = !!selectedApProfile;
+}
+
+function resolveApInput(raw) {
+  const text = String(raw || '').trim();
+  if (!text || !apIndex) return null;
+  if (apIndex.byId[text]) return apIndex.byId[text];
+  const lower = text.toLowerCase();
+  const exactName = apIndex.list.find(p =>
+    String(p.display_name || '').toLowerCase() === lower ||
+    String(p.model || '').toLowerCase() === lower
+  );
+  if (exactName) return exactName;
+  return null;
+}
+
+function formatConnectorFamilyLabel(family) {
+  const raw = String(family || '').trim();
+  if (!raw) return 'Unknown family';
+  const key = raw.toLowerCase();
+  const labels = {
+    'rp-sma': 'RP-SMA',
+    rpsma: 'RP-SMA',
+    sma: 'SMA',
+    'rp-tnc': 'RP-TNC',
+    rptnc: 'RP-TNC',
+    tnc: 'TNC',
+    n: 'N',
+    'n-type': 'N',
+    qn: 'QN',
+    dart: 'DART',
+    mpc: 'MPC',
+    msoc: 'MSOC',
+    'juniper-pin-block': 'Juniper pin block',
+    'vendor-proprietary': 'Proprietary'
+  };
+  if (labels[key]) return labels[key];
+  // Title-case unknown slug families (e.g. "foo-bar" → "Foo-Bar").
+  return raw.split(/([-])/).map((part, i) => {
+    if (part === '-') return part;
+    return part.charAt(0).toUpperCase() + part.slice(1).toLowerCase();
+  }).join('');
+}
+
+function formatConnectorGenderLabel(gender) {
+  const raw = String(gender || '').trim().toLowerCase();
+  if (!raw) return 'Gender unknown';
+  if (raw === 'male' || raw === 'plug') return 'Male';
+  if (raw === 'female' || raw === 'jack') return 'Female';
+  return raw.charAt(0).toUpperCase() + raw.slice(1);
+}
+
+function formatApInterfaceSummary(profile) {
+  const cfg = AntennaCompatibility.defaultConfiguration(profile);
+  if (!cfg) return 'No external interface data';
+  const ifaces = (cfg.external_interfaces || []).filter(i =>
+    i && i.requirement === 'required' &&
+    i.purpose !== 'iot' && i.purpose !== 'gnss' && i.purpose !== 'lorawan' && i.purpose !== 'lte'
+  );
+  if (!ifaces.length) return 'No required Wi-Fi external interface';
+  return ifaces.map(iface => {
+    const c = iface.connector || {};
+    const count = iface.connector_count;
+    const countLabel = count == null
+      ? 'Connector count unknown'
+      : `${count} connector${count === 1 ? '' : 's'}`;
+    const family = formatConnectorFamilyLabel(c.family);
+    const dartPorts = String(c.variant || '').match(/^dart-(\d+)$/i);
+    const connectorLabel = dartPorts
+      ? `${dartPorts[1]}-port ${family}`
+      : (c.variant ? `${family} (${c.variant})` : family);
+    const parts = [
+      connectorLabel,
+      // Only state gender when it's known; "unknown" is noise here.
+      c.gender ? formatConnectorGenderLabel(c.gender) : null,
+      dartPorts && count === 1 ? null : countLabel
+    ].filter(Boolean);
+    return parts.join(' · ');
+  }).join('; ');
+}
+
+// One-line banner; the full explanation lives in "About compatibility results".
+function fillCompatBanner() {
+  const banner = document.getElementById('compat-banner');
+  banner.querySelector('.compat-banner-title').textContent = 'Best-effort guidance.';
+  banner.querySelector('.compat-banner-body').textContent =
+    'Verify with the manufacturers before purchase or installation.';
+  document.getElementById('about-compatibility-link').textContent =
+    DISCLAIMERS.aboutLinkLabel || 'About compatibility results';
+}
+
+function updateCompatChrome() {
+  const banner = document.getElementById('compat-banner');
+  const about = document.getElementById('about-compatibility');
+  const aboutBody = document.getElementById('compat-about-body');
+  const active = !!selectedApProfile;
+  banner.hidden = !active;
+  about.hidden = !active;
+  if (active) {
+    fillCompatBanner();
+    document.getElementById('compat-about-summary').textContent = DISCLAIMERS.bannerBody || '';
+    aboutBody.textContent =
+      'AntennaComparison compiles information from sources believed to be reliable, but specifications, approvals, firmware requirements, and product availability can change without notice. Results may contain errors or omissions and do not replace manufacturer documentation, qualified RF engineering, site surveys, installation guidance, or applicable laws and regulations. AntennaComparison is not affiliated with or endorsed by the listed manufacturers unless explicitly stated. Use of the information is at your own risk. To the maximum extent permitted by applicable law, the site and its contributors provide the information “as is,” without warranties of accuracy, completeness, compatibility, merchantability, fitness for a particular purpose, non-infringement, or uninterrupted availability, and are not liable for purchasing decisions, installation costs, service interruption, equipment damage, loss of data, lost profits, or other direct, indirect, incidental, special, consequential, or punitive damages arising from reliance on the results.';
+  }
+}
+
+let editingAp = false;
+
+// With an AP chosen, show a one-line bar instead of the picker and summary card.
+function renderApSummary(profile) {
+  const el = document.getElementById('ap-summary');
+  const status = document.getElementById('ap-status');
+  const clearBtn = document.getElementById('clear-ap');
+  const compact = document.getElementById('ap-compact');
+  const picker = document.getElementById('ap-picker');
+  const section = document.getElementById('ap');
+  el.hidden = true;
+  el.innerHTML = '';
+  if (!profile) {
+    compact.hidden = true;
+    picker.hidden = false;
+    section.classList.remove('is-compact');
+    clearBtn.hidden = !state.apId;
+    editingAp = false;
+    return;
+  }
+  clearBtn.hidden = false;
+  status.textContent = '';
+  document.getElementById('ap-compact-name').textContent = profile.display_name || profile.ap_id;
+  const bands = (profile.supported_bands || []).join(' / ');
+  document.getElementById('ap-compact-meta').textContent =
+    [formatApInterfaceSummary(profile), bands ? `${bands} GHz` : null].filter(Boolean).join(' \u00b7 ');
+
+  const links = document.getElementById('ap-compact-links');
+  links.replaceChildren();
+  const back = document.createElement('a');
+  back.href = apComparisonDetailUrl(profile);
+  back.target = '_blank';
+  back.rel = 'noopener noreferrer';
+  back.textContent = 'Full specs on AP Comparison';
+  links.appendChild(back);
+  const ds = profile.datasheet_url ? safeUrl(profile.datasheet_url) : '';
+  if (ds) {
+    links.appendChild(document.createTextNode(' \u00b7 '));
+    const doc = document.createElement('a');
+    doc.href = ds;
+    doc.target = '_blank';
+    doc.rel = 'noopener noreferrer';
+    doc.textContent = 'AP documentation';
+    links.appendChild(doc);
+  }
+
+  editingAp = false;
+  compact.hidden = false;
+  picker.hidden = true;
+  section.classList.add('is-compact');
+}
+
+function setSelectedAp(profile, { syncInput = true } = {}) {
+  selectedApProfile = profile || null;
+  state.apId = profile ? profile.ap_id : state.apId;
+  if (!profile && !resolveApInput(state.apId)) {
+    // keep typed unknown id for unavailable state
+  }
+  if (syncInput) {
+    const input = document.getElementById('filter-ap');
+    if (profile) input.value = apDisplayLabel(profile);
+    else input.value = state.apId || '';
+  }
+  updateCompatChrome();
+  renderApSummary(profile);
+  const sidebarSelect = document.getElementById('filter-ap-select');
+  if (sidebarSelect) sidebarSelect.value = profile ? profile.ap_id : '';
+  const quick = document.getElementById('ap-quick');
+  if (quick && quick.children.length) quick.hidden = !!profile;
+  document.getElementById('show-excluded').checked = state.showExcluded;
+}
+
+function applyApSelectionFromInput() {
+  const input = document.getElementById('filter-ap');
+  const status = document.getElementById('ap-status');
+  const raw = input.value.trim();
+  if (!raw) {
+    state.apId = '';
+    setSelectedAp(null, { syncInput: false });
+    status.textContent = '';
+    applyFilters();
+    return;
+  }
+  const profile = resolveApInput(raw);
+  if (!profile) {
+    state.apId = raw;
+    setSelectedAp(null, { syncInput: false });
+    status.textContent = 'AP profile unavailable for this id. Pick a pinned access point — Finder does not guess from display names.';
+    document.getElementById('ap-summary').hidden = true;
+    updateCompatChrome();
+    document.getElementById('compat-banner').hidden = false;
+    fillCompatBanner();
+    applyFilters();
+    return;
+  }
+  state.apId = profile.ap_id;
+  const label = apDisplayLabel(profile);
+  if (input.value !== label) input.value = label;
+  setSelectedAp(profile, { syncInput: false });
+  applyFilters();
+}
+
+function buildControls() {
+  const formOptions = [
+    { value: '', label: 'Any' },
+    ...FORM_TYPES.map(v => ({ value: v, label: v }))
+  ];
+  buildApOptions();
+  renderVendorChips(document.getElementById('vendor-options'));
+  renderRadioChips(document.getElementById('form-options'), formOptions, 'form', state.form);
+  renderBandPresets(document.getElementById('bands-presets'));
+  renderBandChips(document.getElementById('bands-options'));
+  fillSelect(
+    document.getElementById('filter-connector'),
+    collectUnique(e => e._connectorFamily)
+  );
+  fillSelect(
+    document.getElementById('filter-leads'),
+    collectUnique(e => e.lead_count, { numeric: true }),
+    { labelFn: v => `${v} lead${v === '1' ? '' : 's'}` }
+  );
+  renderRadioChips(document.getElementById('env-options'), ENV_OPTIONS, 'env', state.env);
+  const applications = Array.from(new Set(
+    enrichedData.flatMap(e => Array.isArray(e.applications) ? e.applications : [])
+  )).sort();
+  if (state.app && !applications.includes(state.app)) state.app = '';
+  document.getElementById('app-group').hidden = !applications.length;
+  renderRadioChips(
+    document.getElementById('app-options'),
+    [{ value: '', label: 'Any' }, ...applications.map(v => ({ value: v, label: v }))],
+    'app',
+    state.app
+  );
+  buildApQuickPicks();
+
+  const knownVendors = new Set(collectUnique(e => e.vendor));
+  Array.from(state.vendors).forEach(v => {
+    if (!knownVendors.has(v)) state.vendors.delete(v);
+  });
+
+  const connectorSelect = document.getElementById('filter-connector');
+  const leadsSelect = document.getElementById('filter-leads');
+  if (state.connector && ![...connectorSelect.options].some(o => o.value === state.connector)) {
+    state.connector = '';
+  }
+  if (state.leads && ![...leadsSelect.options].some(o => o.value === state.leads)) {
+    state.leads = '';
+  }
+  connectorSelect.value = state.connector;
+  leadsSelect.value = state.leads;
+  document.getElementById('filter-ap').value = state.apId || '';
+  document.getElementById('show-excluded').checked = state.showExcluded;
+  if (state.apId) {
+    const profile = resolveApInput(state.apId);
+    if (profile) setSelectedAp(profile, { syncInput: true });
+    else applyApSelectionFromInput();
+  } else {
+    setSelectedAp(null);
+  }
+}
+
+function matchesFilters(entry) {
+  if (state.vendors.size && !state.vendors.has(entry.vendor)) return false;
+
+  if (state.form && entry.form !== state.form) return false;
+
+  if (state.bands.size) {
+    for (const band of state.bands) {
+      if (!(entry._bands || []).includes(band)) return false;
+    }
+  }
+
+  if (state.connector && entry._connectorFamily !== state.connector) return false;
+
+  if (state.leads) {
+    const leads = entry.lead_count == null ? '' : String(entry.lead_count);
+    if (leads !== state.leads) return false;
+  }
+
+  if (state.app && !(Array.isArray(entry.applications) && entry.applications.includes(state.app))) {
+    return false;
+  }
+
+  if (state.env && state.env !== 'Either') {
+    const env = entry.indoor_outdoor || '';
+    if (state.env === 'Indoor') {
+      if (env !== 'Indoor' && env !== 'Indoor/Outdoor') return false;
+    } else if (state.env === 'Outdoor') {
+      if (env !== 'Outdoor' && env !== 'Indoor/Outdoor') return false;
+    }
+  }
+
+  return true;
+}
+
+function sortValue(entry, key) {
+  if (key === 'bands') return formatBands(entry.bands);
+  if (key === 'gain_dbi') return formatGainCompact(entry.gain_dbi);
+  if (key === 'beamwidth') return formatBeamwidthCompact(entry.beamwidth);
+  if (key === 'lead_count') return entry.lead_count == null ? '' : String(entry.lead_count);
+  const v = entry[key];
+  if (v == null) return '';
+  if (Array.isArray(v)) return v.join(', ');
+  if (typeof v === 'object') return JSON.stringify(v);
+  return String(v);
+}
+
+function sortMatches(matches) {
+  const dir = currentSort.dir === 'asc' ? 1 : -1;
+  const key = currentSort.key;
+  return matches.slice().sort((a, b) => {
+    const av = sortValue(a, key).toLowerCase();
+    const bv = sortValue(b, key).toLowerCase();
+    return av.localeCompare(bv, undefined, { numeric: true }) * dir;
+  });
+}
+
+function applyFilters() {
+  if (!enrichedData.length) return;
+  updateBandPresetActive();
+  renderActiveFilters();
+
+  if (state.apId && !selectedApProfile) {
+    lastCompatResults = [];
+    renderCompatUnavailable();
+    updateMatchCount(0);
+    document.getElementById('results-note').textContent =
+      'AP profile unavailable — choose a pinned access point id.';
+    syncUrl();
+    return;
+  }
+
+  if (selectedApProfile) {
+    const filtered = enrichedData.filter(matchesFilters);
+    const results = AntennaCompatibility.matchAllForAp(filtered, selectedApProfile, {
+      showExcluded: state.showExcluded
+    });
+    lastCompatResults = results;
+    renderCompatResults(results);
+    const visible = results.filter(r => r.status !== 'incompatible' || state.showExcluded);
+    updateMatchCount(visible.length);
+    document.getElementById('results-note').textContent = visible.length
+      ? 'Compatibility results for the selected AP, narrowed by active filters.'
+      : 'No compatibility candidates for this AP with the current filters.';
+    syncUrl();
+    return;
+  }
+
+  lastCompatResults = [];
+  const matches = sortMatches(enrichedData.filter(matchesFilters));
+  renderResults(matches);
+  updateMatchCount(matches.length);
+  document.getElementById('results-note').textContent = matches.length
+    ? 'Showing antennas that meet every selected requirement.'
+    : 'No matches — broaden your filters.';
+  syncUrl();
+}
+
+function renderCompatUnavailable() {
+  const container = document.getElementById('results');
+  const emptyState = document.getElementById('empty-state');
+  container.innerHTML = '';
+  emptyState.style.display = 'none';
+  const box = document.createElement('div');
+  box.className = 'compat-unavailable';
+  const h = document.createElement('h3');
+  h.textContent = 'AP profile unavailable';
+  const p = document.createElement('p');
+  p.textContent = 'This deep link uses an opaque AP id that is not in the pinned AP Comparison export. Pick an access point from the list — Finder will not fuzzy-match display names.';
+  box.appendChild(h);
+  box.appendChild(p);
+  container.appendChild(box);
+  updateCompareFab();
+}
+
+function statusClass(status) {
+  return 'compat-status compat-status-' + String(status || '').replace(/_/g, '-');
+}
+
+function manufacturerLinks(entry) {
+  // One quiet line of source links. They back up the card, so they
+  // shouldn't outweigh the specs above them.
+  const wrap = document.createElement('div');
+  wrap.className = 'compat-verify';
+  const label = document.createElement('span');
+  label.className = 'compat-verify-label';
+  label.textContent = 'Verify:';
+  wrap.appendChild(label);
+  const links = [];
+  if (selectedApProfile && selectedApProfile.datasheet_url) {
+    const href = safeUrl(selectedApProfile.datasheet_url);
+    if (href) links.push({ href, text: 'AP documentation' });
+  }
+  const sheets = Array.isArray(entry.datasheet_urls) ? entry.datasheet_urls : [];
+  sheets.slice(0, 2).forEach(sheet => {
+    const href = safeUrl(sheet && sheet.url);
+    if (href) links.push({ href, text: sheet.label || 'Antenna documentation' });
+  });
+  if (!links.length) {
+    const none = document.createElement('span');
+    none.textContent = 'No direct documentation links in catalog. Check the manufacturer site.';
+    wrap.appendChild(none);
+    return wrap;
+  }
+  links.forEach(link => {
+    const a = document.createElement('a');
+    a.href = link.href;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.textContent = link.text;
+    wrap.appendChild(a);
+  });
+  return wrap;
+}
+
+function compatChip(text, extraClass) {
+  const chip = document.createElement('span');
+  chip.className = 'compat-chip' + (extraClass ? ' ' + extraClass : '');
+  chip.textContent = text;
+  return chip;
+}
+
+// Band order for a per-band value object, e.g. { "5": 3, "2.4": 2 } -> "2.4/5".
+function gainBandLabel(gain) {
+  if (!gain || typeof gain !== 'object') return '';
+  return ['2.4', '5', '6']
+    .filter(b => gain[b] != null && gain[b] !== '')
+    .join('/');
+}
+
+function compatSpecs(entry) {
+  const specs = [];
+  const gain = formatGainCompact(entry.gain_dbi);
+  if (gain) {
+    const bands = gainBandLabel(entry.gain_dbi);
+    specs.push([bands ? `Gain (${bands} GHz)` : 'Gain', gain]);
+  }
+  const beam = formatBeamwidthCompact(entry.beamwidth);
+  if (beam) specs.push(['Beamwidth', beam]);
+  if (entry.lead_count != null) specs.push(['Leads', String(entry.lead_count)]);
+  if (entry.polarization) specs.push(['Polarization', String(entry.polarization)]);
+  if (!specs.length) return null;
+
+  const dl = document.createElement('dl');
+  dl.className = 'compat-specs';
+  specs.forEach(([k, v]) => {
+    const item = document.createElement('div');
+    const dt = document.createElement('dt');
+    dt.textContent = k;
+    const dd = document.createElement('dd');
+    dd.textContent = v;
+    item.appendChild(dt);
+    item.appendChild(dd);
+    dl.appendChild(item);
+  });
+  return dl;
+}
+
+function compatWhy(result) {
+  const why = document.createElement('details');
+  why.className = 'compat-why';
+  const summary = document.createElement('summary');
+  summary.textContent = 'Why this result?';
+  why.appendChild(summary);
+  // Plain-language reasons grouped by what they mean for this AP.
+  // The raw matcher code and message stay available as a tooltip.
+  const explained = AntennaCompatibility.explainResult(result);
+  const body = document.createElement('div');
+  body.className = 'compat-why-body';
+  [
+    ['match', 'What matches'],
+    ['check', 'Couldn’t confirm'],
+    ['mismatch', 'Doesn’t fit']
+  ].forEach(([tone, title]) => {
+    const items = explained[tone];
+    if (!items.length) return;
+    // For an excluded antenna, only the reasons it doesn't fit matter.
+    if (result.status === 'incompatible' && tone !== 'mismatch') return;
+    const block = document.createElement('div');
+    block.className = `compat-why-group compat-why-${tone}`;
+    const h = document.createElement('p');
+    h.className = 'compat-why-title';
+    h.textContent = title;
+    block.appendChild(h);
+    const ul = document.createElement('ul');
+    items.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item.text;
+      li.title = item.detail ? `${item.code}: ${item.detail}` : item.code;
+      ul.appendChild(li);
+    });
+    block.appendChild(ul);
+    body.appendChild(block);
+  });
+  why.appendChild(body);
+  return why;
+}
+
+function renderCompatResults(results) {
+  const container = document.getElementById('results');
+  const emptyState = document.getElementById('empty-state');
+  container.innerHTML = '';
+  const groups = AntennaCompatibility.groupResults(results);
+  let rendered = 0;
+
+  groups.forEach(group => {
+    const items = group.items.filter(r =>
+      group.id !== 'excluded' || state.showExcluded
+    );
+    if (group.id === 'excluded' && !state.showExcluded) return;
+    if (!items.length) return;
+
+    const section = document.createElement('section');
+    section.className = 'compat-group';
+    // Every candidate is best-effort and the banner above says so, so the
+    // default "Needs review" group gets no heading. Groups that say
+    // something different (Excluded, Direct matches, ...) keep theirs.
+    if (group.id !== 'review') {
+      const heading = document.createElement('h3');
+      heading.textContent = `${group.title} (${items.length})`;
+      section.appendChild(heading);
+    }
+
+    items.forEach(result => {
+      rendered += 1;
+      const entry = result.antenna;
+      const fullName = `${entry.vendor || ''} ${entry.sku || ''}`.trim();
+      const card = document.createElement('article');
+      card.className = 'compat-result';
+
+      // Column 1: compare toggle (same behavior as the table view's row
+      // checkbox: adds to the Compare tray, no re-render).
+      const compare = document.createElement('label');
+      compare.className = 'compat-compare';
+      const compareBox = document.createElement('input');
+      compareBox.type = 'checkbox';
+      compareBox.checked = selectedIds.has(entry._slug);
+      compareBox.setAttribute('aria-label', `Compare ${fullName}`);
+      compareBox.addEventListener('change', () => {
+        if (compareBox.checked) selectedIds.add(entry._slug);
+        else selectedIds.delete(entry._slug);
+        updateCompareFab();
+      });
+      compare.appendChild(compareBox);
+      card.appendChild(compare);
+
+      // Column 2: product photo, when the catalog has one.
+      const thumbWrap = document.createElement('a');
+      thumbWrap.className = 'compat-thumb';
+      thumbWrap.tabIndex = -1;
+      thumbWrap.setAttribute('aria-hidden', 'true');
+      bindDetailLink(thumbWrap, entry._slug);
+      const imgSrc = safeUrl(entry.image_url, { allowRelative: true });
+      if (imgSrc) {
+        const img = document.createElement('img');
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.src = imgSrc;
+        img.alt = '';
+        thumbWrap.appendChild(img);
+      } else {
+        thumbWrap.classList.add('is-empty');
+      }
+      card.appendChild(thumbWrap);
+
+      // Column 3: name, chips, key specs, sources.
+      const body = document.createElement('div');
+      body.className = 'compat-body';
+
+      const top = document.createElement('div');
+      top.className = 'compat-result-top';
+      const title = document.createElement('a');
+      title.className = 'compat-sku';
+      bindDetailLink(title, entry._slug);
+      title.textContent = fullName;
+      top.appendChild(title);
+      if (entry.legacy_sku) {
+        const alt = document.createElement('span');
+        alt.className = 'compat-alt-sku';
+        alt.title = altSkuLabel(entry);
+        alt.textContent = entry.legacy_sku;
+        top.appendChild(alt);
+      }
+      // Status badge only when it adds information (see group heading note).
+      if (result.status !== 'review_required') {
+        const status = document.createElement('span');
+        status.className = statusClass(result.status);
+        status.textContent = AntennaCompatibility.statusLabel(result.status);
+        top.appendChild(status);
+      }
+      if (result.vendor_listed) {
+        const claim = document.createElement('span');
+        claim.className = 'compat-claim';
+        claim.textContent = 'Vendor listed';
+        top.appendChild(claim);
+      }
+      body.appendChild(top);
+
+      const chips = document.createElement('div');
+      chips.className = 'compat-chips';
+      if (entry.form) chips.appendChild(compatChip(entry.form));
+      chips.appendChild(compatChip(entry.connector || 'Connector not listed'));
+      const bands = formatBands(entry.bands);
+      if (bands) chips.appendChild(compatChip(`${bands} GHz`));
+      if (entry.indoor_outdoor) chips.appendChild(compatChip(formatEnvironment(entry.indoor_outdoor)));
+      if (result.units_required) {
+        chips.appendChild(compatChip(
+          `${result.units_required} unit${result.units_required === 1 ? '' : 's'} required`,
+          'compat-chip-accent'
+        ));
+      }
+      body.appendChild(chips);
+
+      const specs = compatSpecs(entry);
+      if (specs) body.appendChild(specs);
+
+      const foot = document.createElement('div');
+      foot.className = 'compat-foot';
+      foot.appendChild(manufacturerLinks(entry));
+      foot.appendChild(compatWhy(result));
+      body.appendChild(foot);
+      card.appendChild(body);
+
+      // Column 4: primary action.
+      const actions = document.createElement('div');
+      actions.className = 'compat-actions';
+      const detail = document.createElement('a');
+      bindDetailLink(detail, entry._slug);
+      detail.className = 'btn-link btn-link-ghost btn-link-small';
+      detail.textContent = 'Details';
+      detail.setAttribute('aria-label', `Details for ${fullName}`);
+      actions.appendChild(detail);
+      card.appendChild(actions);
+
+      section.appendChild(card);
+    });
+
+    container.appendChild(section);
+  });
+
+  emptyState.style.display = rendered ? 'none' : 'block';
+  updateCompareFab();
+}
+
+function updateMatchCount(count) {
+  const el = document.getElementById('match-count');
+  el.textContent = count === 0 ? '0 matches' : `${count} match${count === 1 ? '' : 'es'}`;
+}
+
+function renderActiveFilters() {
+  const container = document.getElementById('active-filters');
+  container.innerHTML = '';
+  const chips = [];
+
+  if (state.apId) {
+    const apChipLabel = apDisplayLabel(selectedApProfile) ||
+      apDisplayLabel(resolveApInput(state.apId)) ||
+      state.apId;
+    chips.push({ type: 'ap', value: state.apId, label: apChipLabel });
+  }
+  state.vendors.forEach(v => chips.push({ type: 'vendors', value: v, label: v }));
+  if (state.form) chips.push({ type: 'form', value: state.form, label: state.form });
+  state.bands.forEach(v => chips.push({ type: 'bands', value: v, label: `${v} GHz` }));
+  if (state.connector) chips.push({ type: 'connector', value: state.connector, label: state.connector });
+  if (state.leads) chips.push({ type: 'leads', value: state.leads, label: `${state.leads} leads` });
+  if (state.env && state.env !== 'Either') {
+    chips.push({ type: 'env', value: state.env, label: state.env });
+  }
+  if (state.app) chips.push({ type: 'app', value: state.app, label: state.app });
+  if (state.showExcluded) chips.push({ type: 'excluded', value: '1', label: 'Show excluded' });
+
+  if (!chips.length) {
+    container.style.display = 'none';
+    updateFilterDisclosureHint();
+    return;
+  }
+  container.style.display = 'flex';
+  chips.forEach(chip => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'active-filter-chip';
+    btn.textContent = `${chip.label} ×`;
+    btn.setAttribute('aria-label', `Remove ${chip.label} filter`);
+    btn.addEventListener('click', () => removeFilter(chip.type, chip.value));
+    container.appendChild(btn);
+  });
+  updateFilterDisclosureHint();
+}
+
+function removeFilter(type, value) {
+  if (type === 'ap') {
+    state.apId = '';
+    document.getElementById('filter-ap').value = '';
+    setSelectedAp(null);
+  } else if (type === 'excluded') {
+    state.showExcluded = false;
+    document.getElementById('show-excluded').checked = false;
+  } else if (type === 'vendors') {
+    state.vendors.delete(value);
+    const input = document.getElementById(`vendor-${slugifyLabel(value)}`);
+    if (input) input.checked = false;
+  } else if (type === 'form') {
+    state.form = '';
+    const input = document.querySelector('input[name="filter-form"][value=""]');
+    if (input) input.checked = true;
+  } else if (type === 'bands') {
+    state.bands.delete(value);
+    const input = document.getElementById(`bands-${slugifyLabel(value)}`);
+    if (input) input.checked = false;
+  } else if (type === 'connector') {
+    state.connector = '';
+    document.getElementById('filter-connector').value = '';
+  } else if (type === 'leads') {
+    state.leads = '';
+    document.getElementById('filter-leads').value = '';
+  } else if (type === 'env') {
+    state.env = 'Either';
+    const input = document.querySelector('input[name="filter-env"][value="Either"]');
+    if (input) input.checked = true;
+  } else if (type === 'app') {
+    state.app = '';
+    const input = document.querySelector('input[name="filter-app"][value=""]');
+    if (input) input.checked = true;
+  }
+  applyFilters();
+}
+
+function clearAllFilters() {
+  state.vendors.clear();
+  state.form = '';
+  state.bands.clear();
+  state.connector = '';
+  state.leads = '';
+  state.env = 'Either';
+  state.app = '';
+  state.apId = '';
+  state.showExcluded = false;
+  currentSort = { key: DEFAULT_SORT.key, dir: DEFAULT_SORT.dir };
+  selectedIds.clear();
+  document.getElementById('filter-ap').value = '';
+  setSelectedAp(null);
+  buildControls();
+  applyFilters();
+  updateCompareFab();
+}
+
+function setSort(key) {
+  if (!key) return;
+  if (currentSort.key === key) {
+    currentSort.dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
+  } else {
+    currentSort.key = key;
+    currentSort.dir = 'asc';
+  }
+  applyFilters();
+}
+
+function renderResultsHeader(container) {
+  const header = document.createElement('div');
+  header.className = 'result-row result-header result-row-antenna';
+  header.setAttribute('role', 'row');
+
+  const spacer = document.createElement('div');
+  spacer.className = 'row-select';
+  spacer.setAttribute('role', 'columnheader');
+  spacer.setAttribute('aria-label', 'Select');
+  header.appendChild(spacer);
+
+  RESULT_COLUMNS.forEach(col => {
+    const cell = document.createElement('div');
+    cell.className = 'result-cell' + (col.key === 'sku' ? ' result-model' : '');
+    cell.setAttribute('role', 'columnheader');
+    if (currentSort.key === col.key) {
+      cell.setAttribute('aria-sort', currentSort.dir === 'asc' ? 'ascending' : 'descending');
+    } else {
+      cell.setAttribute('aria-sort', 'none');
+    }
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'result-sort-btn';
+    button.dataset.key = col.key;
+    button.textContent = col.label;
+    if (currentSort.key === col.key) {
+      button.dataset.dir = currentSort.dir;
+    }
+    button.setAttribute('aria-label', `Sort by ${col.label}`);
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setSort(col.key);
+    });
+    cell.appendChild(button);
+    header.appendChild(cell);
+  });
+
+  // No separate Details column: the SKU is the link and the whole row opens the detail page.
+  container.appendChild(header);
+}
+
+function cellDisplay(entry, key) {
+  if (key === 'bands') return formatBands(entry.bands) || '—';
+  if (key === 'gain_dbi') return formatGainCompact(entry.gain_dbi) || '—';
+  if (key === 'beamwidth') return formatBeamwidthCompact(entry.beamwidth) || '—';
+  if (key === 'lead_count') return entry.lead_count == null ? '—' : String(entry.lead_count);
+  // Spaced so the narrow Env column can wrap it.
+  if (key === 'indoor_outdoor') return formatEnvironment(entry.indoor_outdoor).replace('/', ' / ');
+  const v = entry[key];
+  return v == null || v === '' ? '—' : String(v);
+}
+
+function renderResults(matches) {
+  const container = document.getElementById('results');
+  const emptyState = document.getElementById('empty-state');
+  container.innerHTML = '';
+  renderResultsHeader(container);
+
+  if (!matches.length) {
+    emptyState.style.display = 'block';
+    updateCompareFab();
+    return;
+  }
+  emptyState.style.display = 'none';
+
+  matches.forEach(entry => {
+    const row = document.createElement('div');
+    row.className = 'result-row result-row-antenna';
+    row.setAttribute('role', 'row');
+
+    const selectCell = document.createElement('div');
+    selectCell.className = 'row-select';
+    selectCell.setAttribute('role', 'cell');
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.setAttribute(
+      'aria-label',
+      `Select ${entry.vendor || ''} ${entry.sku || ''} for comparison`.trim()
+    );
+    checkbox.checked = selectedIds.has(entry._slug);
+    checkbox.addEventListener('click', e => e.stopPropagation());
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) selectedIds.add(entry._slug);
+      else selectedIds.delete(entry._slug);
+      updateCompareFab();
+    });
+    selectCell.appendChild(checkbox);
+    row.appendChild(selectCell);
+
+    RESULT_COLUMNS.forEach(col => {
+      const cell = document.createElement('div');
+      cell.className = 'result-cell';
+      cell.setAttribute('role', 'cell');
+      if (col.key === 'vendor') cell.classList.add('result-vendor');
+      if (col.key === 'sku') cell.classList.add('result-model');
+      if (col.key === 'form') cell.classList.add('result-form');
+      if (col.key === 'bands') cell.classList.add('result-wifi');
+      if (col.key === 'connector') cell.classList.add('result-antenna');
+      if (col.key === 'lead_count') cell.classList.add('result-spatial');
+      if (col.key === 'gain_dbi') cell.classList.add('result-metrics');
+      if (col.key === 'indoor_outdoor') cell.classList.add('result-env');
+
+      if (col.key === 'sku') {
+        const skuLink = document.createElement('a');
+        skuLink.className = 'sku-link';
+        bindDetailLink(skuLink, entry._slug);
+        skuLink.textContent = entry.sku || entry.legacy_sku || 'View';
+        cell.appendChild(skuLink);
+      } else if (col.key === 'beamwidth') {
+        cell.classList.add('result-beamwidth');
+        cell.textContent = formatBeamwidthStacked(entry.beamwidth) || '—';
+      } else {
+        cell.textContent = cellDisplay(entry, col.key);
+      }
+      row.appendChild(cell);
+    });
+
+    row.style.cursor = 'pointer';
+    row.addEventListener('click', (e) => {
+      if (e.target.type === 'checkbox' || e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
+      goToFinderDetail(entry._slug);
+    });
+
+    container.appendChild(row);
+  });
+
+  updateCompareFab();
+}
+
+function updateCompareFab() {
+  const fab = document.getElementById('compare-fab');
+  const n = selectedIds.size;
+  fab.disabled = n < 2;
+  if (n >= 2) {
+    fab.style.display = 'inline-flex';
+    fab.textContent = `Compare (${n})`;
+  } else if (n === 1) {
+    fab.style.display = 'inline-flex';
+    fab.textContent = 'Select 1 more to compare';
+  } else {
+    fab.style.display = 'none';
+  }
+}
+
+function exportToCsv() {
+  function escapeCsvValue(value) {
+    const s = String(value || '');
+    return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+  }
+
+  let rows;
+  if (selectedApProfile) {
+    const results = lastCompatResults.length
+      ? lastCompatResults
+      : AntennaCompatibility.matchAllForAp(
+        enrichedData.filter(matchesFilters),
+        selectedApProfile,
+        { showExcluded: state.showExcluded }
+      );
+    if (!results.length) {
+      alert('No antennas to export. Please adjust your filters.');
+      return;
+    }
+    const notice = DISCLAIMERS.exportNotice || '';
+    const keys = [
+      'status', 'confidence', 'units_required', 'vendor_listed', 'reason_codes',
+      'antenna_id', 'vendor', 'sku', 'name', 'form', 'bands', 'connector', 'lead_count'
+    ];
+    rows = [
+      'NOTICE,' + escapeCsvValue(notice),
+      `ap_id,${escapeCsvValue(selectedApProfile.ap_id)}`,
+      keys.map(escapeCsvValue).join(','),
+      ...results.map(result => {
+        const entry = result.antenna || {};
+        const map = {
+          status: result.status,
+          confidence: result.confidence,
+          units_required: result.units_required,
+          vendor_listed: result.vendor_listed ? 'yes' : 'no',
+          reason_codes: (result.reasons || []).map(r => r.code).join('|'),
+          antenna_id: result.antenna_id || entry.antenna_id || '',
+          vendor: entry.vendor,
+          sku: entry.sku,
+          name: entry.name,
+          form: entry.form,
+          bands: formatBands(entry.bands),
+          connector: entry.connector,
+          lead_count: entry.lead_count
+        };
+        return keys.map(k => escapeCsvValue(map[k])).join(',');
+      })
+    ];
+  } else {
+    const matches = sortMatches(enrichedData.filter(matchesFilters));
+    if (!matches.length) {
+      alert('No antennas to export. Please adjust your filters.');
+      return;
+    }
+    const keys = [
+      'vendor', 'sku', 'legacy_sku', 'name', 'form', 'indoor_outdoor', 'bands',
+      'connector', 'lead_count', 'gain_dbi', 'beamwidth', 'polarization',
+      'cable_length', 'dimensions', 'weight', 'ip_rating'
+    ];
+    function cell(entry, key) {
+      const v = entry[key];
+      if (key === 'bands') return formatBands(v);
+      if (key === 'gain_dbi') return formatGainCompact(v);
+      if (key === 'beamwidth') return formatBeamwidthCompact(v);
+      if (Array.isArray(v)) return v.join('; ');
+      if (v && typeof v === 'object') return JSON.stringify(v);
+      return v == null ? '' : String(v);
+    }
+    rows = [
+      keys.map(escapeCsvValue).join(','),
+      ...matches.map(entry => keys.map(k => escapeCsvValue(cell(entry, k))).join(','))
+    ];
+  }
+
+  const blob = new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = selectedApProfile ? 'antenna-compatibility-results.csv' : 'antenna-finder-results.csv';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+async function loadData() {
+  try {
+    const [antennaRes, apRes] = await Promise.all([
+      fetch(DATA_URL, { cache: 'no-store' }),
+      fetch(AP_PROFILES_URL, { cache: 'no-store' })
+    ]);
+    if (!antennaRes.ok) throw new Error('HTTP ' + antennaRes.status);
+    const raw = await antennaRes.json();
+    if (!Array.isArray(raw)) throw new Error('antenna_catalog.json must be an array');
+    enrichedData = raw.map(enrichEntry);
+
+    if (apRes.ok) {
+      const envelope = await apRes.json();
+      apIndex = AntennaCompatibility.indexProfiles(envelope);
+    } else {
+      console.warn('AP profiles unavailable', apRes.status);
+      apIndex = null;
+    }
+
+    restoreStateFromUrl();
+    buildControls();
+    applyFilters();
+    // finder.html#ap (linked from Browse) jumps straight to the AP picker.
+    if (JUMP_TO_RESULTS_ON_LOAD) {
+      const panel = document.getElementById('results-panel');
+      if (panel) panel.scrollIntoView({ block: 'start' });
+    }
+    if (FOCUS_AP_ON_LOAD && !state.apId) {
+      document.getElementById('filter-ap').focus({ preventScroll: false });
+    }
+  } catch (err) {
+    console.error('Failed to load data', err);
+    document.getElementById('results-note').textContent = 'Unable to load antenna data.';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('.site-header');
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 10) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  });
+
+  syncFilterDisclosure();
+  const mobileMq = window.matchMedia('(max-width: 980px)');
+  const onViewportChange = () => syncFilterDisclosure();
+  if (typeof mobileMq.addEventListener === 'function') {
+    mobileMq.addEventListener('change', onViewportChange);
+  } else if (typeof mobileMq.addListener === 'function') {
+    mobileMq.addListener(onViewportChange);
+  }
+
+  document.getElementById('filter-connector').addEventListener('change', (e) => {
+    state.connector = e.target.value;
+    applyFilters();
+  });
+  document.getElementById('filter-leads').addEventListener('change', (e) => {
+    state.leads = e.target.value;
+    applyFilters();
+  });
+  const apInput = document.getElementById('filter-ap');
+  apInput.addEventListener('change', applyApSelectionFromInput);
+  apInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      applyApSelectionFromInput();
+    }
+  });
+  document.getElementById('change-ap').addEventListener('click', () => {
+    editingAp = true;
+    document.getElementById('ap-compact').hidden = true;
+    document.getElementById('ap-picker').hidden = false;
+    document.getElementById('ap').classList.remove('is-compact');
+    apInput.select();
+    apInput.focus();
+  });
+  document.getElementById('filter-ap-select').addEventListener('change', (e) => {
+    const apId = e.target.value;
+    if (!apId) {
+      state.apId = '';
+      apInput.value = '';
+      setSelectedAp(null);
+      applyFilters();
+      return;
+    }
+    const profile = resolveApInput(apId);
+    apInput.value = profile ? apDisplayLabel(profile) : apId;
+    applyApSelectionFromInput();
+  });
+  document.getElementById('clear-ap').addEventListener('click', () => {
+    state.apId = '';
+    apInput.value = '';
+    setSelectedAp(null);
+    applyFilters();
+  });
+  document.getElementById('show-excluded').addEventListener('change', (e) => {
+    state.showExcluded = !!e.target.checked;
+    applyFilters();
+  });
+  document.getElementById('clear-filters').addEventListener('click', clearAllFilters);
+  document.getElementById('export-csv').addEventListener('click', exportToCsv);
+  document.getElementById('compare-fab').addEventListener('click', () => {
+    if (selectedIds.size < 2) return;
+    window.location.href = `compare.html?ids=${encodeURIComponent(Array.from(selectedIds).join(','))}`;
+  });
+
+  loadData();
+});

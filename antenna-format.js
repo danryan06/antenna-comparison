@@ -35,6 +35,7 @@ function safeUrl(value, options = {}) {
   const raw = String(value || "").trim();
   if (!raw) return "";
   // Reject control characters used to obfuscate schemes (e.g. java\tscript:).
+  // eslint-disable-next-line no-control-regex -- matching control characters is the point
   if (/[\u0000-\u001F\u007F]/.test(raw)) return "";
   const allowRelative = options.allowRelative === true;
   const hasScheme = /^[a-z][a-z0-9+.-]*:/i.test(raw);
@@ -140,7 +141,7 @@ function frequencyToBand(n) {
   return null;
 }
 
-const PATTERN_GHZ = /(\d+(?:\.\d+)?(?:\s*[\/,–—-]\s*\d+(?:\.\d+)?)*)\s*GHz/gi;
+const PATTERN_GHZ = /(\d+(?:\.\d+)?(?:\s*[/,–—-]\s*\d+(?:\.\d+)?)*)\s*GHz/gi;
 const PATTERN_BAND_ORDER = ["2.4", "5", "6"];
 
 /**
@@ -570,8 +571,49 @@ function createDatasheetActionLink(doc, sheet) {
   return a;
 }
 
+const SITE_ORIGIN = "https://antennacomparison.com";
+
+/** Canonical absolute URL of an antenna's detail page (used by antenna.html and the sitemap). */
+function antennaDetailUrl(entry) {
+  return `${SITE_ORIGIN}/antenna.html?id=${encodeURIComponent(slugifyAntenna(entry))}`;
+}
+
+/**
+ * Per-antenna page metadata: <title>, meta description, and canonical URL.
+ * Plain text only; callers must set it via textContent / setAttribute.
+ */
+function antennaDetailMeta(entry) {
+  const vendorSku = `${String(entry.vendor || "").trim()} ${String(entry.sku || "").trim()}`.trim();
+  const name = String(entry.name || "").trim();
+  const heading = name || vendorSku || String(entry.form || "").trim() || "Antenna Details";
+  const facts = [];
+  const form = String(entry.form || "").trim();
+  facts.push(form ? `${form} Wi-Fi antenna` : "Wi-Fi antenna");
+  const bands = formatBands(entry.bands);
+  if (bands) facts.push(`${bands} GHz`);
+  const gains = entry.gain_dbi && typeof entry.gain_dbi === "object"
+    ? Object.values(entry.gain_dbi).map(Number).filter(Number.isFinite)
+    : [];
+  if (gains.length) facts.push(`up to ${Math.max(...gains)} dBi`);
+  const connector = String(entry.connector || "").trim();
+  if (connector) facts.push(`${connector} connector`);
+  const leads = Number(entry.lead_count);
+  if (Number.isFinite(leads) && leads > 0) facts.push(`${leads} lead${leads === 1 ? "" : "s"}`);
+  const env = String(entry.indoor_outdoor || "").trim();
+  if (env) facts.push(env.toLowerCase());
+  const subject = vendorSku ? `${vendorSku}: ` : "";
+  return {
+    title: `${heading} — AntennaComparison`,
+    description: `${subject}${facts.join(", ")}. Specs, radiation patterns, dimensions, and vendor datasheets.`,
+    canonical: antennaDetailUrl(entry)
+  };
+}
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = {
+    SITE_ORIGIN,
+    antennaDetailUrl,
+    antennaDetailMeta,
     FORM_TYPES,
     normalizeForSlug,
     slugifyAntenna,
