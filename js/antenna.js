@@ -430,6 +430,29 @@ function extraProductPhotos(entry) {
   });
 }
 
+// Find or create a <head> element by attribute (e.g. meta[name=description]) and set one attribute.
+function setHeadTag(tag, keyAttr, keyValue, valueAttr, value) {
+  let node = document.head.querySelector(`${tag}[${keyAttr}="${keyValue}"]`);
+  if (!node) {
+    node = document.createElement(tag);
+    node.setAttribute(keyAttr, keyValue);
+    document.head.appendChild(node);
+  }
+  node.setAttribute(valueAttr, value);
+}
+
+// Per-antenna title/description/canonical so each detail URL indexes as its own page.
+// antenna.html ships without a canonical link on purpose: a static one would
+// point every ?id= page at the bare antenna.html.
+function applyDetailMeta(meta) {
+  document.title = meta.title;
+  setHeadTag('meta', 'name', 'description', 'content', meta.description);
+  setHeadTag('link', 'rel', 'canonical', 'href', meta.canonical);
+  setHeadTag('meta', 'property', 'og:title', 'content', meta.title);
+  setHeadTag('meta', 'property', 'og:description', 'content', meta.description);
+  setHeadTag('meta', 'property', 'og:url', 'content', meta.canonical);
+}
+
 async function load() {
   const errorEl = document.getElementById('error-message');
   try {
@@ -446,6 +469,7 @@ async function load() {
       history.replaceState(null, '', `${location.pathname}?${params.toString()}${location.hash}`);
     }
     if (!entry) {
+      setHeadTag('meta', 'name', 'robots', 'content', 'noindex');
       errorEl.style.display = 'block';
       errorEl.textContent = 'Antenna not found.';
       return;
@@ -466,7 +490,7 @@ async function load() {
     const vendorSku = `${vendor} ${sku}`.trim();
     const heading = productName || vendorSku || String(entry.form || '').trim() || 'Antenna Details';
     document.getElementById('title-header').textContent = heading;
-    document.title = `${heading} — AntennaComparison`;
+    applyDetailMeta(antennaDetailMeta(entry));
 
     const parts = document.getElementById('part-numbers');
     parts.replaceChildren();

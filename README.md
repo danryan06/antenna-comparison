@@ -83,7 +83,7 @@ Always cite vendor datasheets. When AccelTex/Hubbell publish dual PDFs, merge fi
 - **Security**: every page carries the same strict Content-Security-Policy (`<meta>` tag; Pages can't set headers): scripts, styles, fonts, images and data load only from this site. Keep page logic in `js/`, page styles in `css/`, and no inline `<script>`, `<style>`, `style=""` or `on*=` handlers; `npm test` enforces this (`test-csp.js`). See [SECURITY.md](./SECURITY.md)
 - **License**: MIT (code). Vendor media remains vendor property — see License below
 
-Regenerate both generated artifacts (the public catalog and the compatibility index built from the pinned AP Comparison export) after authoring changes with `npm run build`, then confirm with `npm test`. `site-meta.json` (last-edited dates and the Recent changes list) is rebuilt from git history by a workflow on every push to `main`; run it locally with `npm run build:meta` (needs full history).
+Regenerate the generated artifacts (the public catalog, the compatibility index built from the pinned AP Comparison export, and `sitemap.xml`) after authoring changes with `npm run build`, then confirm with `npm test`. `site-meta.json` (last-edited dates and the Recent changes list) is rebuilt from git history by a workflow on every push to `main`; run it locally with `npm run build:meta` (needs full history).
 
 CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-only keys, or if the compatibility index drifts from the matcher.
 
@@ -100,7 +100,7 @@ CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-onl
 ├── 404.html                # Branded not-found recovery (root base href for custom domain)
 ├── CNAME                   # Custom domain for GitHub Pages (antennacomparison.com)
 ├── robots.txt              # Crawler hints only; does not hide public repo files
-├── sitemap.xml             # Public page list for crawlers
+├── sitemap.xml             # Generated (npm run build): pages + every antenna detail URL
 ├── style.css               # Shared styling (+ self-hosted @font-face rules)
 ├── js/                     # Page scripts (one per HTML page; no inline JS, see CSP)
 ├── css/                    # Page-specific styles

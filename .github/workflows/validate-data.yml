@@ -22,6 +22,7 @@ on:
       - '.nvmrc'
       - 'SECURITY.md'
       - 'robots.txt'
+      - 'sitemap.xml'
       - '.github/workflows/**'
       - '.github/scripts/**'
   pull_request:
