@@ -4250,6 +4250,7 @@ a.sku-link:hover { text-decoration: underline; }
 .finder-page .compat-result:has(.compat-compare input:checked) { box-shadow: inset 3px 0 0 var(--accent); }
 .finder-page .compat-compare { margin: 6px 0 0; }
 .finder-page .compat-thumb {
+  align-self: center; /* centered in the row; the other columns stay top-aligned */
   display: flex; align-items: center; justify-content: center;
   width: 64px; height: 64px; border-radius: 6px;
   background: var(--surface); border: 1px solid var(--line); overflow: hidden;
@@ -4287,7 +4288,7 @@ a.sku-link:hover { text-decoration: underline; }
 .compat-status-incompatible { color: var(--bad); background: var(--bad-soft); border-color: var(--bad); }
 @media (max-width: 640px) {
   .finder-page .compat-result { grid-template-columns: 18px 48px minmax(0, 1fr); }
-  .finder-page .compat-thumb { width: 48px; height: 48px; }
+  .finder-page .compat-thumb { width: 48px; height: 48px; align-self: start; }
   .finder-page .compat-actions { grid-column: 3; }
   .finder-page .compat-specs { gap: 6px 18px; }
 }

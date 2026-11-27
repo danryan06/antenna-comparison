@@ -612,6 +612,11 @@
  "changes": [
   {
    "date": "2026-11-27",
+   "pr": 75,
+   "title": "Refresh AP RF profiles from ap-comparison; center Finder thumbnails"
+  },
+  {
+   "date": "2026-11-27",
    "pr": 74,
    "title": "Finder: compact AP-fit result rows"
   },
@@ -754,11 +759,6 @@
    "date": "2026-11-22",
    "pr": 38,
    "title": "Phase 2: Finder return, mobile nav a11y, Browse keyboard sort"
-  },
-  {
-   "date": "2026-11-22",
-   "pr": 27,
-   "title": "Add Aruba external Wi-Fi antennas"
   }
  ]
 }
