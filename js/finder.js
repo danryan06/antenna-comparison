@@ -1046,8 +1046,8 @@ function renderCompatResults(results) {
       }
       body.appendChild(top);
 
-      // Column 4: fit summary, stacked in a fixed column so it lines up
-      // from row to row. "Needs review" is the default and gets no badge.
+      // Column 4: fit summary and Details, stacked in a fixed column so they
+      // line up from row to row. "Needs review" is the default and gets no badge.
       const fit = document.createElement('div');
       fit.className = 'compat-fit';
       if (result.status !== 'review_required') {
@@ -1089,7 +1089,8 @@ function renderCompatResults(results) {
       card.appendChild(body);
       card.appendChild(fit);
 
-      // Column 5: primary action.
+      // Primary action sits at the foot of the fit column, level with the
+      // Verify line, so the right side reads as one unit.
       const actions = document.createElement('div');
       actions.className = 'compat-actions';
       const detail = document.createElement('a');
@@ -1098,7 +1099,7 @@ function renderCompatResults(results) {
       detail.textContent = 'Details';
       detail.setAttribute('aria-label', `Details for ${fullName}`);
       actions.appendChild(detail);
-      card.appendChild(actions);
+      fit.appendChild(actions);
 
       section.appendChild(card);
     });

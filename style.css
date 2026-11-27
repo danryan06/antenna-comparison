@@ -4234,12 +4234,12 @@ a.sku-link:hover { text-decoration: underline; }
 }
 .finder-page .active-filter-chip:hover { border-color: var(--accent); }
 /* AP-fit results: one compact ruled row per antenna.
-   Columns: compare | photo | name, chips, specs, sources | fit | Details */
+   Columns: compare | photo | name, chips, specs, sources | fit + Details */
 .finder-page .compat-group { border: 0; background: none; padding: 0; margin: 0 0 8px; }
 .finder-page .compat-group > h3 { margin: 14px 0 0; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
 .finder-page .compat-result {
   display: grid;
-  grid-template-columns: 22px 64px minmax(0, 1fr) 150px auto;
+  grid-template-columns: 22px 64px minmax(0, 1fr) 150px;
   gap: 4px 14px;
   align-items: start;
   margin: 0;
@@ -4251,7 +4251,7 @@ a.sku-link:hover { text-decoration: underline; }
 .finder-page .compat-compare { align-self: center; display: flex; margin: 0; }
 .finder-page .compat-compare input { width: 20px; height: 20px; margin: 0; cursor: pointer; accent-color: var(--accent); }
 /* Fit summary: status badge, vendor claim and unit count stacked at a fixed x. */
-.finder-page .compat-fit { display: flex; flex-direction: column; align-items: stretch; gap: 6px; padding-top: 2px; }
+.finder-page .compat-fit { display: flex; flex-direction: column; align-items: stretch; gap: 6px; padding-top: 2px; align-self: stretch; }
 .finder-page .compat-fit > * { text-align: center; }
 .finder-page .compat-fit .compat-status,
 .finder-page .compat-fit .compat-claim,
@@ -4282,7 +4282,8 @@ a.sku-link:hover { text-decoration: underline; }
 .finder-page .compat-verify-label { color: var(--muted); }
 .finder-page .compat-why { margin: 0; font-size: 13px; }
 .finder-page .compat-why[open] { flex-basis: 100%; }
-.finder-page .compat-actions { margin: 2px 0 0; }
+.finder-page .compat-actions { margin: auto 0 0; padding-top: 6px; }
+.finder-page .compat-actions .btn-link { display: block; text-align: center; }
 .finder-page .compat-verify a, .finder-page .compat-result a { text-decoration: none; }
 .finder-page .compat-verify a:hover, .finder-page .compat-result a:hover { text-decoration: underline; }
 .finder-page .compat-thumb:hover { text-decoration: none; border-color: var(--accent); }
@@ -4298,8 +4299,7 @@ a.sku-link:hover { text-decoration: underline; }
   .finder-page .compat-thumb { width: 48px; height: 48px; align-self: start; }
   .finder-page .compat-compare { align-self: start; margin-top: 2px; }
   .finder-page .compat-fit { grid-column: 3; flex-direction: row; flex-wrap: wrap; align-items: flex-start; padding: 0; }
-  .finder-page .compat-fit:empty { display: none; }
-  .finder-page .compat-actions { grid-column: 3; }
+  .finder-page .compat-actions { margin: 0; padding: 0; }
   .finder-page .compat-specs { gap: 6px 18px; }
 }
 /* Buttons that are <button> elements size like the link buttons */
