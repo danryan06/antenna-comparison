@@ -1,5 +1,5 @@
-# Keeps the SHA-pinned GitHub Actions current (Dependabot updates the pin and
-# its "# vN" comment together). There are no npm dependencies to track.
+# Keeps the SHA-pinned GitHub Actions and the npm dev dependencies (ESLint)
+# current. Dependabot updates an action's pin and its "# vN" comment together.
 version: 2
 updates:
   - package-ecosystem: github-actions
@@ -9,3 +9,10 @@ updates:
     groups:
       actions:
         patterns: ['*']
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      dev-dependencies:
+        dependency-type: development

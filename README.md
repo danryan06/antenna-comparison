@@ -51,9 +51,13 @@ npm test
 
 # After editing antenna_data.json, regenerate the public catalog and compatibility index:
 npm run build
+
+# Lint the JavaScript (one-time `npm ci` installs ESLint; npm test needs no install):
+npm ci
+npm run lint
 ```
 
-Node 22 or newer is required (see `.nvmrc`); there are no npm dependencies to install. The individual checks live in `.github/scripts/` and are listed in the `test` script in `package.json`.
+Node 22 or newer is required (see `.nvmrc`); `npm test` and `npm run build` need no installed packages; ESLint is the only (dev) dependency. The individual checks live in `.github/scripts/` and are listed in the `test` script in `package.json`.
 
 Supported browsers: current Chrome, Firefox, and Safari/iOS Safari (desktop + ~375px mobile).
 

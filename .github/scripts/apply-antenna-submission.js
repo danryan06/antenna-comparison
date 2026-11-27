@@ -2,7 +2,6 @@
 'use strict';
 
 const fs = require('fs');
-const path = require('path');
 const submit = require('../../antenna-submit.js');
 const connectors = require('../../connector-normalize.js');
 

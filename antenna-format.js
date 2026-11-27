@@ -35,6 +35,7 @@ function safeUrl(value, options = {}) {
   const raw = String(value || "").trim();
   if (!raw) return "";
   // Reject control characters used to obfuscate schemes (e.g. java\tscript:).
+  // eslint-disable-next-line no-control-regex -- matching control characters is the point
   if (/[\u0000-\u001F\u007F]/.test(raw)) return "";
   const allowRelative = options.allowRelative === true;
   const hasScheme = /^[a-z][a-z0-9+.-]*:/i.test(raw);
@@ -140,7 +141,7 @@ function frequencyToBand(n) {
   return null;
 }
 
-const PATTERN_GHZ = /(\d+(?:\.\d+)?(?:\s*[\/,–—-]\s*\d+(?:\.\d+)?)*)\s*GHz/gi;
+const PATTERN_GHZ = /(\d+(?:\.\d+)?(?:\s*[/,–—-]\s*\d+(?:\.\d+)?)*)\s*GHz/gi;
 const PATTERN_BAND_ORDER = ["2.4", "5", "6"];
 
 /**

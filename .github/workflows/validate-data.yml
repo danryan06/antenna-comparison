@@ -17,6 +17,8 @@ on:
       - 'fonts/**'
       - 'images/**'
       - 'package.json'
+      - 'package-lock.json'
+      - 'eslint.config.mjs'
       - '.nvmrc'
       - 'SECURITY.md'
       - 'robots.txt'
@@ -46,6 +48,12 @@ jobs:
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version-file: .nvmrc
-      # package.json "test" is the single list of validators and tests.
+          cache: npm
+      # package.json "test" is the single list of validators and tests; it needs
+      # no installed packages, so it runs before npm ci.
       - name: Run validators and tests
         run: npm test
+      - name: Install dev dependencies
+        run: npm ci
+      - name: Lint
+        run: npm run lint
