@@ -612,6 +612,11 @@
  "changes": [
   {
    "date": "2026-11-27",
+   "pr": 74,
+   "title": "Finder: compact AP-fit result rows"
+  },
+  {
+   "date": "2026-11-27",
    "pr": 72,
    "title": "Best-practices pass: fix submission automation, strict CSP, self-hosted fonts, ESLint, per-antenna SEO"
   },
@@ -754,11 +759,6 @@
    "date": "2026-11-22",
    "pr": 27,
    "title": "Add Aruba external Wi-Fi antennas"
-  },
-  {
-   "date": "2026-11-22",
-   "pr": 32,
-   "title": "Fix squished Ventev polar charts (270444, 298232)"
   }
  ]
 }
