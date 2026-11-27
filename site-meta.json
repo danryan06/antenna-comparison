@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26",
+ "generated": "2026-11-27",
  "entries": {
   "acceltex-hubbell-ats-03414": "2026-11-23",
   "acceltex-hubbell-ats-01050": "2026-11-23",
@@ -611,6 +611,11 @@
  },
  "changes": [
   {
+   "date": "2026-11-27",
+   "pr": 72,
+   "title": "Best-practices pass: fix submission automation, strict CSP, self-hosted fonts, ESLint, per-antenna SEO"
+  },
+  {
    "date": "2026-11-26",
    "sha": "2accb34",
    "title": "match the AP Comparison look"
@@ -754,11 +759,6 @@
    "date": "2026-11-22",
    "pr": 32,
    "title": "Fix squished Ventev polar charts (270444, 298232)"
-  },
-  {
-   "date": "2026-11-22",
-   "pr": 37,
-   "title": "Land confirmed AccelTex data corrections"
   }
  ]
 }
