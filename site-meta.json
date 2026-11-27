@@ -612,6 +612,11 @@
  "changes": [
   {
    "date": "2026-11-27",
+   "pr": 76,
+   "title": "Finder: calmer AP-fit rows (no group headings, fit column, plain text)"
+  },
+  {
+   "date": "2026-11-27",
    "pr": 73,
    "title": "Bump the actions group with 4 updates"
   },
@@ -754,11 +759,6 @@
    "date": "2026-11-22",
    "pr": 41,
    "title": "Add Ruckus external Wi-Fi antennas (5 SKUs)"
-  },
-  {
-   "date": "2026-11-22",
-   "pr": 40,
-   "title": "Add Fortinet FANT external Wi-Fi antennas (20 SKUs)"
   }
  ]
 }
