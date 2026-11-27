@@ -1,11 +1,11 @@
 {
-  "pinned_from": "https://github.com/danryan06/ap-comparison/pull/100",
-  "pin_ref": "cursor/ap-rf-export-v1-aee2",
-  "pin_commit": "6a1d06b5f1b80365ca48a2d09b7b871df9972f65",
+  "pinned_from": "https://github.com/danryan06/ap-comparison/pull/124",
+  "pin_ref": "main (merged in 1bf98cb095b6d4d359337c55f00bc9d0daf8343c)",
+  "pin_commit": "aa613dcd23d41edc9bb9bf009fd3612e04774262",
   "schema_name": "apcomparison.external-antenna-profiles",
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-22T17:00:10Z",
+  "generated_at": "2026-11-27T16:39:48Z",
   "profile_count": 48,
-  "sha256": "664ddabc8307609bbe676b78bb9f24bd5caace0e6bc193a4bb84da9179e53c02",
-  "note": "Fixture snapshot of APComparison v1 export; replace when PR merges and regenerates."
+  "sha256": "fa1470f831be8f8ae13538cdde5a560e1c8a675500f796a08ecff7dd850c31be",
+  "note": "Snapshot of the APComparison v1 export from ap-comparison main. Refresh by copying exports/antenna-compatibility/v1/ap-profiles.json and updating this file."
 }
