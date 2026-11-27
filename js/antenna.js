@@ -1,0 +1,658 @@
+// Page script for antenna.html. Loaded as a classic script at the end of <body>,
+// after the shared helpers it uses, so top-level names stay global.
+const DATA_URL = 'antenna_catalog.json';
+let currentEntry = null;
+
+const PUBLIC_FIELDS = [
+  ['vendor', 'Vendor'],
+  ['sku', 'SKU (primary)'],
+  ['legacy_sku', 'Alternate part number'],
+  ['name', 'Name'],
+  ['form', 'Form'],
+  ['indoor_outdoor', 'Indoor/Outdoor'],
+  ['applications', 'Application'],
+  ['bands', 'Bands'],
+  ['frequency_range', 'Frequency Range'],
+  ['gain_dbi', 'Gain (dBi)'],
+  ['beamwidth', 'Beamwidth'],
+  ['connector', 'Connector'],
+  ['lead_count', 'Lead Count'],
+  ['polarization', 'Polarization'],
+  ['cable_length', 'Cable Length'],
+  ['cable_type', 'Cable Type'],
+  ['dimensions', 'Dimensions'],
+  ['weight', 'Weight'],
+  ['ip_rating', 'IP Rating'],
+  ['radome', 'Radome'],
+  ['mount_type', 'Mount / Install Type'],
+  ['wind_rating', 'Wind Rating'],
+  ['vswr', 'VSWR'],
+  ['isolation', 'Isolation'],
+  ['operating_temp', 'Operating Temperature']
+];
+
+// Never render these in the UI (maintainer / merge notes only)
+const INTERNAL_ONLY_KEYS = new Set(['internal_notes', 'compatible_aps', 'field_notes']);
+const COPYABLE_SKU_KEYS = new Set(['sku', 'legacy_sku']);
+const COPY_ICON = '<rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>';
+const CHECK_ICON = '<path d="M20 6 9 17l-5-5"/>';
+
+function readId() {
+  return new URLSearchParams(window.location.search).get('id') || '';
+}
+
+function iconSvg(markup, size) {
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('width', String(size));
+  svg.setAttribute('height', String(size));
+  svg.setAttribute('viewBox', '0 0 24 24');
+  svg.setAttribute('fill', 'none');
+  svg.setAttribute('stroke', 'currentColor');
+  svg.setAttribute('stroke-width', '2');
+  svg.setAttribute('stroke-linecap', 'round');
+  svg.setAttribute('stroke-linejoin', 'round');
+  svg.setAttribute('aria-hidden', 'true');
+  // Trusted compile-time SVG path markup only (not catalog strings).
+  svg.innerHTML = markup;
+  return svg;
+}
+
+function copyAnnouncer() {
+  let live = document.getElementById('copy-status');
+  if (live) return live;
+  live = document.createElement('div');
+  live.id = 'copy-status';
+  live.className = 'visually-hidden';
+  live.setAttribute('aria-live', 'polite');
+  document.body.appendChild(live);
+  return live;
+}
+
+function copyPartNumber(text, button) {
+  const value = String(text || '').trim();
+  if (!value) return;
+  const clipboard = navigator.clipboard;
+  if (!clipboard || typeof clipboard.writeText !== 'function') return;
+  let pending;
+  try {
+    pending = clipboard.writeText(value);
+  } catch (err) {
+    return;
+  }
+  Promise.resolve(pending).then(() => {
+    const svg = button.querySelector('svg');
+    button.classList.add('is-copied');
+    button.setAttribute('aria-label', `Copied ${value}`);
+    if (svg) svg.innerHTML = CHECK_ICON; // trusted constant SVG paths
+    const live = copyAnnouncer();
+    live.textContent = '';
+    window.setTimeout(() => { live.textContent = 'Copied'; }, 30);
+    window.clearTimeout(button._copyTimer);
+    button._copyTimer = window.setTimeout(() => {
+      button.classList.remove('is-copied');
+      button.setAttribute('aria-label', `Copy ${value}`);
+      if (svg) svg.innerHTML = COPY_ICON; // trusted constant SVG paths
+    }, 1500);
+  }, () => {});
+}
+
+function createCopyButton(text) {
+  const value = String(text || '').trim();
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'copy-part';
+  button.setAttribute('aria-label', `Copy ${value}`);
+  button.title = `Copy ${value}`;
+  button.appendChild(iconSvg(COPY_ICON, 16));
+  button.addEventListener('click', event => {
+    event.preventDefault();
+    event.stopPropagation();
+    copyPartNumber(value, button);
+  });
+  return button;
+}
+
+function appendCopyableSku(container, text) {
+  const value = String(text || '').trim();
+  const part = document.createElement('span');
+  part.className = 'part-text';
+  part.textContent = value;
+  container.appendChild(part);
+  if (value) container.appendChild(createCopyButton(value));
+}
+
+function addPartNumber(container, value, label) {
+  const text = String(value || '').trim();
+  if (!text) return;
+  const row = document.createElement('div');
+  row.className = 'part-number-row';
+  if (label) {
+    const labelEl = document.createElement('span');
+    labelEl.className = 'part-number-label';
+    labelEl.textContent = label;
+    row.appendChild(labelEl);
+  }
+  const valueEl = document.createElement('span');
+  valueEl.className = 'part-number-value';
+  valueEl.textContent = text;
+  row.append(valueEl, createCopyButton(text));
+  container.appendChild(row);
+}
+
+function normalizeString(value) {
+  if (value == null) return '';
+  if (Array.isArray(value)) return value.join(', ');
+  return String(value);
+}
+
+function formatField(key, value) {
+  if (key === 'indoor_outdoor') return formatEnvironment(value);
+  if (key === 'applications') return Array.isArray(value) ? value.join(', ') : normalizeString(value);
+  if (key === 'bands') return formatBands(value);
+  if (key === 'gain_dbi') return formatGainCompact(value) || formatBandObject(value, 'gain');
+  if (key === 'beamwidth') return formatBeamwidthCompact(value) || formatBandObject(value, 'beam');
+  if (Array.isArray(value)) return value.join('; ');
+  if (value && typeof value === 'object') return JSON.stringify(value);
+  return normalizeString(value);
+}
+
+function escapeCsvValue(value) {
+  const s = String(value || '');
+  return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+}
+
+function exportToCsv() {
+  if (!currentEntry) return;
+  const keys = PUBLIC_FIELDS.map(([k]) => k).filter(k => Object.prototype.hasOwnProperty.call(currentEntry, k));
+  const headers = keys.map(escapeCsvValue);
+  const values = keys.map(k => escapeCsvValue(formatField(k, currentEntry[k])));
+  const blob = new Blob([headers.join(',') + '\n' + values.join(',')], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = slugifyAntenna(currentEntry) + '.csv';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function normalizeImageKey(url) {
+  if (!url) return '';
+  try {
+    const u = new URL(url, window.location.href);
+    return decodeURIComponent(u.pathname).replace(/\/+$/, '').toLowerCase();
+  } catch (_) {
+    return String(url).split('?')[0].split('#')[0].replace(/\/+$/, '').toLowerCase();
+  }
+}
+
+let lightboxLastFocus = null;
+
+function lightboxFocusable() {
+  const dialog = document.querySelector('#lightbox .lightbox-dialog');
+  if (!dialog) return [];
+  return Array.from(
+    dialog.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+  ).filter(el => !el.hasAttribute('disabled') && el.getAttribute('aria-hidden') !== 'true');
+}
+
+function openLightbox(src, caption) {
+  const overlay = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-image');
+  const cap = document.getElementById('lightbox-caption');
+  lightboxLastFocus = document.activeElement;
+  img.src = src;
+  img.alt = caption || '';
+  cap.textContent = caption || '';
+  overlay.hidden = false;
+  overlay.classList.add('is-open');
+  document.body.classList.add('lightbox-open');
+  const main = document.getElementById('main-content');
+  if (main) main.setAttribute('inert', '');
+  const header = document.querySelector('.site-header');
+  if (header) header.setAttribute('inert', '');
+  document.getElementById('lightbox-close').focus();
+}
+
+function closeLightbox() {
+  const overlay = document.getElementById('lightbox');
+  if (overlay.hidden) return;
+  overlay.classList.remove('is-open');
+  overlay.hidden = true;
+  document.body.classList.remove('lightbox-open');
+  const main = document.getElementById('main-content');
+  if (main) main.removeAttribute('inert');
+  const header = document.querySelector('.site-header');
+  if (header) header.removeAttribute('inert');
+  const img = document.getElementById('lightbox-image');
+  img.src = 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';
+  img.alt = '';
+  document.getElementById('lightbox-caption').textContent = '';
+  if (lightboxLastFocus && typeof lightboxLastFocus.focus === 'function') {
+    lightboxLastFocus.focus();
+  }
+  lightboxLastFocus = null;
+}
+
+function bindLightboxControls() {
+  const overlay = document.getElementById('lightbox');
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (overlay.hidden) return;
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeLightbox();
+      return;
+    }
+    if (e.key !== 'Tab') return;
+    const nodes = lightboxFocusable();
+    if (!nodes.length) {
+      e.preventDefault();
+      document.getElementById('lightbox-close').focus();
+      return;
+    }
+    const first = nodes[0];
+    const last = nodes[nodes.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  });
+}
+
+function galleryFigure(item, kind, title) {
+  const url = safeUrl(item.url || item, { allowRelative: true });
+  if (!url) return null;
+  const fig = document.createElement('figure');
+  fig.className = 'gallery-item ' + (kind || '');
+  const displayLabel = kind === 'pattern'
+    ? formatPatternCaption(item.label)
+    : (item.label || '');
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'gallery-zoom';
+  btn.setAttribute('aria-label', displayLabel ? `Expand ${displayLabel}` : `Expand ${title}`);
+  const img = document.createElement('img');
+  img.src = url;
+  img.alt = displayLabel || title;
+  img.loading = 'lazy';
+  btn.appendChild(img);
+  btn.addEventListener('click', () => openLightbox(url, displayLabel || title));
+  fig.appendChild(btn);
+  if (displayLabel) {
+    const cap = document.createElement('figcaption');
+    cap.className = 'gallery-caption';
+    cap.textContent = displayLabel;
+    fig.appendChild(cap);
+  }
+  return fig;
+}
+
+function fillGrid(grid, items, kind, title) {
+  grid.replaceChildren();
+  items.forEach(item => {
+    const fig = galleryFigure(item, kind, title);
+    if (fig) grid.appendChild(fig);
+  });
+}
+
+// Per-port datasheets (e.g. Cisco C-ANT9101, 30 plots) show one port at a
+// time with chips to switch; plots not tied to a port always show.
+function addPortPicker(section, grid, groups, title) {
+  const ALL = '__all__';
+  const bar = document.createElement('div');
+  bar.className = 'pattern-ports';
+  bar.setAttribute('role', 'group');
+  bar.setAttribute('aria-label', 'Choose which port to show');
+  const note = document.createElement('p');
+  note.className = 'pattern-ports-note';
+  note.setAttribute('aria-live', 'polite');
+  const buttons = [];
+  const total = groups.ports.reduce((n, g) => n + g.items.length, 0) + groups.shared.length;
+
+  function show(key) {
+    buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.port === key)));
+    let items;
+    if (key === ALL) {
+      items = sortPatternImages(groups.shared.concat(...groups.ports.map(g => g.items)));
+      note.textContent = `Showing all ${total} plots for ${groups.ports.length} ports.`;
+    } else {
+      const port = groups.ports.find(g => g.key === key);
+      items = groups.shared.concat(port.items);
+      const bands = port.bands.length ? ` (${port.bands.join(' / ')} GHz)` : '';
+      note.textContent = `Showing ${port.label}${bands}. The datasheet has plots for ${groups.ports.length} ports; pick another above.`;
+    }
+    fillGrid(grid, items, 'pattern', title);
+  }
+
+  groups.ports.map(g => ({ key: g.key, label: g.label })).concat([{ key: ALL, label: 'All ports' }]).forEach(opt => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'pattern-port-chip' + (opt.key === ALL ? ' pattern-port-chip-all' : '');
+    b.dataset.port = opt.key;
+    b.textContent = opt.label;
+    b.addEventListener('click', () => show(opt.key));
+    buttons.push(b);
+    bar.appendChild(b);
+  });
+  section.appendChild(bar);
+  section.appendChild(note);
+  show(groups.defaultKey);
+}
+
+function addGallery(container, title, items, kind) {
+  if (!items || !items.length) return;
+  const ordered = kind === 'pattern' && typeof sortPatternImages === 'function'
+    ? sortPatternImages(items)
+    : items;
+  const section = document.createElement('div');
+  section.className = 'spec-section';
+  const h = document.createElement('h3');
+  h.textContent = title;
+  section.appendChild(h);
+  const grid = document.createElement('div');
+  grid.className = 'gallery-grid';
+  const groups = kind === 'pattern' && typeof groupPatternsByPort === 'function'
+    ? groupPatternsByPort(items)
+    : null;
+  if (groups) {
+    addPortPicker(section, grid, groups, title);
+  } else {
+    fillGrid(grid, ordered, kind, title);
+  }
+  if (!grid.children.length) return;
+  section.appendChild(grid);
+  container.appendChild(section);
+}
+
+function dimensionImageKind(entry) {
+  // Require an explicit kind. Unlabeled dimension_image_url must not default to
+  // "Mechanical drawing" (that hid product photos under Dimensions).
+  const kind = entry && entry.dimension_image_kind;
+  if (kind === 'assembly' || kind === 'assembly_render') return 'assembly';
+  if (kind === 'mechanical' || kind === 'mechanical_drawing') return 'mechanical';
+  return null;
+}
+
+function sanitizePhotoCaption(label) {
+  const raw = (label == null ? '' : String(label)).trim();
+  if (!raw) return 'Product photo';
+  const low = raw.toLowerCase();
+  if (low === 'product' || low === 'additional photo' || /^product\s*\(/.test(low)) {
+    return 'Product photo';
+  }
+  // Drop awkward source tags: "Front angle (AccelTex sheet)" → "Front angle"
+  const stripped = raw.replace(
+    /\s*\((?:datasheet|hubbell(?:\s+spec|\s+cdn)?|acceltex(?:\s+sheet)?)\)\s*$/i,
+    ''
+  ).trim();
+  return stripped || 'Product photo';
+}
+
+function extraProductPhotos(entry) {
+  const photos = Array.isArray(entry.images) ? entry.images.slice() : [];
+  const dimUrl = safeUrl(entry.dimension_image_url, { allowRelative: true });
+  if (dimUrl && dimensionImageKind(entry) === 'assembly') {
+    const dimKey = normalizeImageKey(dimUrl);
+    const already = photos.some(item => {
+      const url = safeUrl(item && (item.url || item), { allowRelative: true });
+      return url && normalizeImageKey(url) === dimKey;
+    });
+    if (!already) {
+      photos.push({ label: 'Assembly view', url: entry.dimension_image_url });
+    }
+  }
+  const heroKey = normalizeImageKey(safeUrl(entry.image_url, { allowRelative: true }));
+  const seen = new Set();
+  return photos.filter(item => {
+    const url = safeUrl(item && (item.url || item), { allowRelative: true });
+    if (!url) return false;
+    const key = normalizeImageKey(url);
+    if (heroKey && key === heroKey) return false;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).map(item => {
+    if (!item || typeof item !== 'object') {
+      return { label: 'Product photo', url: item };
+    }
+    return {
+      label: item.label === 'Assembly view' ? 'Assembly view' : sanitizePhotoCaption(item.label),
+      url: item.url
+    };
+  });
+}
+
+async function load() {
+  const errorEl = document.getElementById('error-message');
+  try {
+    const res = await fetch(DATA_URL, { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    const id = readId();
+    const found = findAntennaById(data, id);
+    const entry = found ? found.entry : null;
+    if (found && !found.canonical) {
+      // Old link (e.g. a Ventev SKU id): show the canonical id in the address bar.
+      const params = new URLSearchParams(window.location.search);
+      params.set('id', slugifyAntenna(entry));
+      history.replaceState(null, '', `${location.pathname}?${params.toString()}${location.hash}`);
+    }
+    if (!entry) {
+      errorEl.style.display = 'block';
+      errorEl.textContent = 'Antenna not found.';
+      return;
+    }
+    currentEntry = entry;
+    if (window.Fresh) Fresh.addEditedDate(document.getElementById('catalog-disclaimer'), slugifyAntenna(entry));
+
+    const editLink = document.getElementById('edit-link');
+    const editParams = new URLSearchParams(window.location.search);
+    editParams.set('id', slugifyAntenna(entry));
+    editLink.href = `edit.html?${editParams.toString()}`;
+    editLink.style.display = 'inline-flex';
+
+    const productName = String(entry.name || '').trim();
+    const vendor = String(entry.vendor || '').trim();
+    const sku = String(entry.sku || '').trim();
+    const legacySku = String(entry.legacy_sku || '').trim();
+    const vendorSku = `${vendor} ${sku}`.trim();
+    const heading = productName || vendorSku || String(entry.form || '').trim() || 'Antenna Details';
+    document.getElementById('title-header').textContent = heading;
+    document.title = `${heading} — AntennaComparison`;
+
+    const parts = document.getElementById('part-numbers');
+    parts.replaceChildren();
+    addPartNumber(parts, sku);
+    if (legacySku) addPartNumber(parts, legacySku, altSkuLabel(entry));
+
+    const imgUrl = safeUrl(entry.image_url, { allowRelative: true });
+    const imageWrapper = document.getElementById('image-container');
+    const imageEl = document.getElementById('antenna-image');
+    const heroZoom = document.getElementById('hero-zoom');
+    if (imgUrl) {
+      imageEl.src = imgUrl;
+      imageEl.alt = heading;
+      imageWrapper.style.display = 'block';
+      heroZoom.hidden = false;
+      heroZoom.setAttribute('aria-label', `Expand product photo for ${heading}`);
+      heroZoom.onclick = () => openLightbox(imgUrl, heading);
+      imageEl.onerror = () => {
+        imageWrapper.style.display = 'none';
+        heroZoom.hidden = true;
+      };
+    }
+
+    const actions = document.getElementById('actions-inline');
+    actions.className = 'detail-actions';
+    const sheets = Array.isArray(entry.datasheet_urls) ? entry.datasheet_urls : [];
+    sheets.forEach(sheet => {
+      const a = createDatasheetActionLink(document, sheet);
+      if (a) actions.appendChild(a);
+    });
+
+    const detailsEl = document.getElementById('details');
+    detailsEl.innerHTML = '';
+    PUBLIC_FIELDS.forEach(([key, label]) => {
+      if (INTERNAL_ONLY_KEYS.has(key)) return;
+      // Environment always shows, as "Not specified" when the datasheet is silent.
+      const alwaysShow = key === 'indoor_outdoor';
+      if (!alwaysShow && !Object.prototype.hasOwnProperty.call(entry, key)) return;
+      if (!alwaysShow && (entry[key] == null || entry[key] === '' || (Array.isArray(entry[key]) && !entry[key].length))) return;
+      const keyEl = document.createElement('dt');
+      keyEl.className = 'key';
+      keyEl.textContent = key === 'legacy_sku' ? altSkuLabel(entry) : label;
+      const valEl = document.createElement('dd');
+      valEl.className = 'val';
+      if (COPYABLE_SKU_KEYS.has(key)) {
+        valEl.classList.add('val-with-copy');
+        // Copy the raw SKU string even if the value is also rendered as a link elsewhere.
+        appendCopyableSku(valEl, entry[key]);
+      } else {
+        valEl.textContent = formatField(key, entry[key]);
+      }
+      detailsEl.appendChild(keyEl);
+      detailsEl.appendChild(valEl);
+    });
+
+    // Section order: specs → included parts → radiation patterns → dimensions → additional photos
+    const included = document.getElementById('included');
+    if (Array.isArray(entry.included_parts) && entry.included_parts.length) {
+      const section = document.createElement('div');
+      section.className = 'spec-section';
+      const h = document.createElement('h3');
+      h.textContent = 'Included parts';
+      section.appendChild(h);
+      const list = document.createElement('ul');
+      list.className = 'mount-list';
+      entry.included_parts.forEach(part => {
+        if (!part) return;
+        const li = document.createElement('li');
+        const name = document.createElement('div');
+        name.className = 'mount-name';
+        const qty = part.qty ? `${part.qty}× ` : '';
+        name.textContent = `${qty}${part.item || ''}`.trim();
+        li.appendChild(name);
+        if (part.part_number) {
+          const pn = document.createElement('div');
+          pn.className = 'mount-nums';
+          pn.textContent = part.part_number;
+          li.appendChild(pn);
+        }
+        list.appendChild(li);
+      });
+      section.appendChild(list);
+      included.appendChild(section);
+    }
+
+    addGallery(document.getElementById('patterns'), 'Radiation patterns', entry.pattern_images, 'pattern');
+    // Only explicit mechanical drawings under Dimensions. Assembly renders fold into
+    // Additional product photos; unlabeled/photo dims are omitted (see dimension_image_kind).
+    if (entry.dimension_image_url && dimensionImageKind(entry) === 'mechanical') {
+      addGallery(
+        document.getElementById('dimensions'),
+        'Mechanical drawing',
+        [{ label: 'Mechanical drawing', url: entry.dimension_image_url }],
+        'dimension'
+      );
+    }
+    addGallery(
+      document.getElementById('photos'),
+      'Additional product photos',
+      extraProductPhotos(entry),
+      'photo'
+    );
+
+    const sourcesEl = document.getElementById('sources');
+    if (Array.isArray(entry.sources) && entry.sources.length) {
+      const section = document.createElement('div');
+      section.className = 'spec-section';
+      const h = document.createElement('h3');
+      h.textContent = 'Sources';
+      section.appendChild(h);
+      const list = document.createElement('ul');
+      list.className = 'notes-list';
+      entry.sources.forEach(src => {
+        const li = document.createElement('li');
+        const href = safeUrl(src.url);
+        if (href) {
+          const a = document.createElement('a');
+          a.href = href;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          a.textContent = src.label || src.id || href;
+          li.appendChild(a);
+        } else {
+          li.textContent = src.label || src.id || 'Source';
+        }
+        list.appendChild(li);
+      });
+      section.appendChild(list);
+      sourcesEl.appendChild(section);
+    }
+
+    // Guard: never surface field_notes / internal_notes / compatible_aps in the UI
+  } catch (err) {
+    errorEl.style.display = 'block';
+    errorEl.textContent = 'Failed to load antenna: ' + err.message;
+  }
+}
+
+function configureBackLink() {
+  const params = new URLSearchParams(window.location.search);
+  const back = document.getElementById('back-link');
+
+  // Prefer sessionStorage (Browse/Finder stashed path). Fall back to legacy
+  // return= / from=finder query params for old bookmarks and shared links.
+  const fromSession = readDetailBackPath();
+  const fromReturn = safeReturnPath(params.get('return'));
+  const target = fromSession || fromReturn;
+  if (target) {
+    back.href = target;
+    if (target.startsWith('finder.html')) {
+      back.textContent = '\u2190 Back to Finder results';
+    } else if (target.startsWith('compare.html')) {
+      back.textContent = '\u2190 Back to Compare';
+    } else {
+      back.textContent = '\u2190 Back to Antenna Table';
+    }
+    // Drop legacy return= from the address bar once Back is configured.
+    if (params.has('return') || params.has('from')) {
+      params.delete('return');
+      params.delete('from');
+      const clean = params.toString();
+      history.replaceState(null, '', clean ? `antenna.html?${clean}` : 'antenna.html');
+    }
+    return;
+  }
+
+  // Legacy Finder links: from=finder plus filter params (not Browse junk).
+  if (params.get('from') === 'finder') {
+    params.delete('id');
+    params.delete('from');
+    params.delete('return');
+    const qs = params.toString();
+    back.href = qs ? `finder.html?${qs}` : 'finder.html';
+    back.textContent = '\u2190 Back to Finder results';
+    return;
+  }
+
+  params.delete('id');
+  params.delete('from');
+  params.delete('return');
+  const backQs = params.toString();
+  back.href = backQs ? `index.html?${backQs}` : 'index.html';
+  back.textContent = '\u2190 Back to Antenna Table';
+}
+
+document.getElementById('export-csv').addEventListener('click', exportToCsv);
+bindLightboxControls();
+configureBackLink();
+load();

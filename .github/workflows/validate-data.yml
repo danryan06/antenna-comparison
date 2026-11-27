@@ -12,6 +12,8 @@ on:
       - '*.html'
       - '*.js'
       - '*.css'
+      - 'js/**'
+      - 'css/**'
       - 'fonts/**'
       - 'images/**'
       - 'package.json'

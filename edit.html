@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; upgrade-insecure-requests" />
   <title>Edit an antenna — AntennaComparison</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -14,10 +15,8 @@
   <meta property="og:image" content="https://antennacomparison.com/logo.png" />
   <meta name="twitter:card" content="summary" />
   <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" />
-  <link rel="stylesheet" href="style.css?v=23" />
+  <link rel="preload" href="fonts/Barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="style.css?v=24" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -26,7 +25,7 @@
 
   <main id="main-content">
 
-  <div class="container" style="margin-top: 24px;">
+  <div class="u-mt-24 container">
     <div class="actions">
       <a class="btn-link" id="back-link" href="index.html">&larr; Back to Antenna Table</a>
     </div>
@@ -51,7 +50,7 @@
           <div id="form-fields"></div>
         </div>
 
-        <div id="form-errors" class="error" style="display:none;" role="alert"></div>
+        <div id="form-errors" class="is-hidden error" role="alert"></div>
 
         <div class="form-actions">
           <button type="submit" class="btn-primary">Generate Updated JSON Snippet</button>
@@ -62,7 +61,7 @@
       <div class="output-box">
         <label for="output">Updated JSON entry (replaces the existing object in <code>antenna_data.json</code>):</label>
         <textarea id="output" readonly placeholder="The updated JSON snippet appears here after you generate it."></textarea>
-        <p class="hint" style="margin-top:0.5rem;">
+        <p class="u-mt-half hint">
           Step 1: Choose the antenna, edit the fields, and click “Generate Updated JSON Snippet”.
           Step 2: Click “Open GitHub Issue with This Update” and submit the prefilled issue on GitHub.
         </p>
@@ -79,15 +78,6 @@
 
   <script src="antenna-format.js"></script>
   <script src="antenna-submit.js"></script>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const returnId = params.get('id') || '';
-    params.delete('id');
-    const backQs = params.toString();
-    const back = document.getElementById('back-link');
-    if (returnId) back.href = 'antenna.html?id=' + encodeURIComponent(returnId) + (backQs ? '&' + backQs : '');
-    else back.href = backQs ? 'index.html?' + backQs : 'index.html';
-    initAntennaSubmissionPage({ kind: 'edit' });
-  </script>
+  <script src="js/edit.js?v=1"></script>
 </body>
 </html>

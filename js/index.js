@@ -1,0 +1,518 @@
+// Page script for index.html. Loaded as a classic script at the end of <body>,
+// after the shared helpers it uses, so top-level names stay global.
+const DATA_URL = 'antenna_catalog.json';
+
+let antennaData = [];
+let currentQuery = '';
+const currentFilters = { vendor: '', form: '', env: '' };
+let currentSort = { key: 'vendor', dir: 'asc' };
+const TABLE_COLUMN_KEYS = [
+  'vendor', 'sku', 'form', 'bands', 'gain_dbi', 'beamwidth', 'connector',
+  'lead_count', 'indoor_outdoor', 'polarization', 'cable_length',
+  'dimensions', 'weight', 'ip_rating', 'legacy_sku'
+];
+function defaultHiddenColumns() {
+  return new Set(['lead_count', 'polarization', 'cable_length', 'dimensions', 'weight', 'ip_rating', 'legacy_sku']);
+}
+const hiddenColumns = defaultHiddenColumns();
+const selectedIds = new Set();
+
+function normalizeString(value) {
+  if (value == null) return '';
+  if (Array.isArray(value)) return value.join(', ');
+  if (typeof value === 'object') {
+    return formatBandObject(value, 'gain') || JSON.stringify(value);
+  }
+  return String(value);
+}
+
+function displayValue(entry, key) {
+  const v = entry[key];
+  if (key === 'bands') return formatBands(v);
+  if (key === 'gain_dbi') return formatGainCompact(v);
+  if (key === 'beamwidth') return formatBeamwidthCompact(v);
+  if (key === 'lead_count') return v == null ? '' : String(v);
+  if (key === 'indoor_outdoor') return formatEnvironment(v);
+  return normalizeString(v);
+}
+
+function populateFilters() {
+  const vendorSelect = document.getElementById('filter-vendor');
+  const vendors = Array.from(new Set(antennaData.map(e => e.vendor).filter(Boolean))).sort((a, b) => a.localeCompare(b));
+  while (vendorSelect.options.length > 1) vendorSelect.remove(1);
+  vendors.forEach(v => {
+    const opt = document.createElement('option');
+    opt.value = v;
+    opt.textContent = v;
+    vendorSelect.appendChild(opt);
+  });
+}
+
+function updateSortIndicators() {
+  document.querySelectorAll('th.sortable').forEach(th => {
+    const btn = th.querySelector('.result-sort-btn');
+    if (th.dataset.key === currentSort.key) {
+      th.setAttribute('data-dir', currentSort.dir);
+      th.setAttribute('aria-sort', currentSort.dir === 'asc' ? 'ascending' : 'descending');
+      if (btn) {
+        btn.dataset.dir = currentSort.dir;
+        btn.setAttribute('aria-label', `Sort by ${btn.textContent.trim()}, currently ${currentSort.dir === 'asc' ? 'ascending' : 'descending'}`);
+      }
+    } else {
+      th.removeAttribute('data-dir');
+      th.setAttribute('aria-sort', 'none');
+      if (btn) {
+        delete btn.dataset.dir;
+        btn.setAttribute('aria-label', `Sort by ${btn.textContent.trim()}`);
+      }
+    }
+  });
+}
+
+function getColumnsFromHeader() {
+  return Array.from(document.querySelectorAll('thead th')).map((th, idx) => {
+    const btn = th.querySelector('.result-sort-btn');
+    const label = (btn ? btn.textContent : th.innerText).replace(/\s+/g, ' ').trim();
+    return {
+      key: th.dataset.key || `col_${idx + 1}`,
+      label,
+      index: idx
+    };
+  });
+}
+
+function browseReturnPath() {
+  const qs = window.location.search.replace(/^\?/, '');
+  return qs ? `index.html?${qs}` : 'index.html';
+}
+
+function goToDetail(id) {
+  saveDetailBackPath(browseReturnPath());
+  window.location.href = buildAntennaDetailHref(id);
+}
+
+function buildColumnsPanel() {
+  const grid = document.getElementById('columns-grid');
+  grid.innerHTML = '';
+  getColumnsFromHeader().forEach(col => {
+    const lock = col.key === 'vendor' || col.key === 'sku';
+    const label = document.createElement('label');
+    const input = document.createElement('input');
+    input.type = 'checkbox';
+    input.checked = !hiddenColumns.has(col.key) || lock;
+    input.disabled = lock;
+    input.addEventListener('change', () => {
+      if (input.checked) hiddenColumns.delete(col.key);
+      else hiddenColumns.add(col.key);
+      applyColumnVisibility();
+      updateUrl();
+    });
+    const span = document.createElement('span');
+    span.textContent = col.label;
+    label.appendChild(input);
+    label.appendChild(span);
+    grid.appendChild(label);
+  });
+}
+
+function applyColumnVisibility() {
+  const columns = getColumnsFromHeader();
+  const rows = Array.from(document.querySelectorAll('table tr'));
+  columns.forEach(col => {
+    const hide = hiddenColumns.has(col.key) && !(col.key === 'vendor' || col.key === 'sku');
+    rows.forEach(row => {
+      const cell = Array.from(row.children).find(item => item.dataset.key === col.key);
+      if (cell) cell.style.display = hide ? 'none' : '';
+    });
+  });
+  updateSortIndicators();
+}
+
+function saveLayout() {
+  const ths = Array.from(document.querySelectorAll('thead th'));
+  localStorage.setItem('antennaTable.colOrder', JSON.stringify(ths.map(th => th.dataset.key || '')));
+  const widths = {};
+  ths.forEach(th => {
+    if (th.dataset.key) widths[th.dataset.key] = th.style.width || '';
+  });
+  localStorage.setItem('antennaTable.colWidths', JSON.stringify(widths));
+}
+
+function applyColumnOrderFromHeader() {
+  const headerRow = document.querySelector('thead tr');
+  if (!headerRow) return;
+  const keys = Array.from(headerRow.children).map(th => th.dataset.key || '');
+  const tbody = document.querySelector('tbody');
+  if (!tbody) return;
+  Array.from(tbody.rows).forEach(row => {
+    const cells = new Map(Array.from(row.children).map(cell => [cell.dataset.key || '', cell]));
+    keys.forEach(key => {
+      const cell = cells.get(key);
+      if (cell) row.appendChild(cell);
+    });
+  });
+}
+
+function loadLayout() {
+  const headerRow = document.querySelector('thead tr');
+  if (!headerRow) return;
+  let storedOrder = [];
+  let storedWidths = {};
+  try {
+    storedOrder = JSON.parse(localStorage.getItem('antennaTable.colOrder') || '[]');
+    storedWidths = JSON.parse(localStorage.getItem('antennaTable.colWidths') || '{}');
+  } catch (err) {
+    localStorage.removeItem('antennaTable.colOrder');
+    localStorage.removeItem('antennaTable.colWidths');
+  }
+  if (Array.isArray(storedOrder) && storedOrder.length > 0) {
+    const map = {};
+    Array.from(headerRow.children).forEach(th => { map[th.dataset.key || ''] = th; });
+    const validOrder = [...new Set(storedOrder)].filter(key => map[key]);
+    Object.keys(map).forEach(key => {
+      if (!validOrder.includes(key)) validOrder.push(key);
+    });
+    validOrder.forEach(key => {
+      if (map[key]) headerRow.appendChild(map[key]);
+    });
+  }
+  applyColumnOrderFromHeader();
+  Array.from(headerRow.children).forEach(th => {
+    const key = th.dataset.key || '';
+    const w = storedWidths[key];
+    if (!w) return;
+    th.style.width = w;
+    const tbody = document.querySelector('tbody');
+    if (!tbody) return;
+    Array.from(tbody.rows).forEach(row => {
+      const cell = Array.from(row.children).find(item => item.dataset.key === key);
+      if (cell) cell.style.width = w;
+    });
+  });
+}
+
+let isResizing = false;
+
+function initColumnResizersAndDnD() {
+  const headerRow = document.querySelector('thead tr');
+  if (!headerRow) return;
+  const ths = Array.from(headerRow.querySelectorAll('th'));
+  ths.forEach((th) => {
+    if (!th.querySelector('.col-resizer')) {
+      const resizer = document.createElement('span');
+      resizer.className = 'col-resizer';
+      th.appendChild(resizer);
+      let startX, startWidth;
+      const onMouseMove = (e) => {
+        const newWidth = Math.max(60, startWidth + (e.clientX - startX));
+        th.style.width = newWidth + 'px';
+        th.style.minWidth = newWidth + 'px';
+        const tbody = document.querySelector('tbody');
+        if (!tbody) return;
+        const colIndex = Array.from(th.parentNode.children).indexOf(th);
+        Array.from(tbody.rows).forEach(row => {
+          const cell = row.children[colIndex];
+          if (cell) {
+            cell.style.width = newWidth + 'px';
+            cell.style.minWidth = newWidth + 'px';
+          }
+        });
+      };
+      let blockDragStart;
+      const onMouseUp = () => {
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+        document.removeEventListener('dragstart', blockDragStart, true);
+        isResizing = false;
+        th.draggable = true;
+        saveLayout();
+      };
+      resizer.addEventListener('mousedown', (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        startX = e.clientX;
+        startWidth = th.getBoundingClientRect().width;
+        isResizing = true;
+        th.draggable = false;
+        blockDragStart = (ev) => { ev.preventDefault(); };
+        document.addEventListener('dragstart', blockDragStart, true);
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+      });
+    }
+    th.setAttribute('draggable', 'true');
+    th.addEventListener('dragstart', (e) => {
+      if (isResizing) { e.preventDefault(); return; }
+      if (e.target.closest('button, a, input, .col-resizer')) { e.preventDefault(); return; }
+      e.dataTransfer.setData('text/plain', String(Array.from(th.parentNode.children).indexOf(th)));
+    });
+    th.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      const rect = th.getBoundingClientRect();
+      th.classList.toggle('drag-over-left', e.clientX < rect.left + rect.width / 2);
+      th.classList.toggle('drag-over-right', e.clientX >= rect.left + rect.width / 2);
+    });
+    th.addEventListener('dragleave', () => {
+      th.classList.remove('drag-over-left', 'drag-over-right');
+    });
+    th.addEventListener('drop', (e) => {
+      e.preventDefault();
+      const srcIndex = parseInt(e.dataTransfer.getData('text/plain'), 10);
+      const srcTh = ths[srcIndex];
+      const after = e.clientX >= th.getBoundingClientRect().left + th.getBoundingClientRect().width / 2;
+      th.classList.remove('drag-over-left', 'drag-over-right');
+      if (srcTh && srcTh !== th) {
+        if (after) th.parentNode.insertBefore(srcTh, th.nextSibling);
+        else th.parentNode.insertBefore(srcTh, th);
+        ths.splice(ths.indexOf(srcTh), 1);
+        ths.splice(Array.from(th.parentNode.children).indexOf(srcTh), 0, srcTh);
+        applyColumnOrderFromHeader();
+        saveLayout();
+      }
+    });
+  });
+}
+
+function envMatches(value, selected) {
+  if (!selected) return true;
+  const v = String(value || '').toLowerCase();
+  const s = selected.toLowerCase();
+  if (s === 'indoor/outdoor') return v === 'indoor/outdoor' || (v.includes('indoor') && v.includes('outdoor'));
+  if (s === 'indoor') return v === 'indoor' || v.includes('indoor/outdoor') || v === 'indoor or outdoor';
+  if (s === 'outdoor') return v === 'outdoor' || v.includes('indoor/outdoor') || v === 'indoor or outdoor';
+  return v === s;
+}
+
+function renderTable() {
+  const tbody = document.getElementById('antenna-table-body');
+  const q = currentQuery.trim().toLowerCase();
+  const filtered = antennaData.filter(entry => {
+    if (currentFilters.vendor && entry.vendor !== currentFilters.vendor) return false;
+    if (currentFilters.form && String(entry.form || '').toLowerCase() !== currentFilters.form.toLowerCase()) return false;
+    if (currentFilters.env && !envMatches(entry.indoor_outdoor, currentFilters.env)) return false;
+    if (!q) return true;
+    return searchBlob(entry).includes(q);
+  });
+
+  const key = currentSort.key;
+  const dir = currentSort.dir === 'asc' ? 1 : -1;
+  const sorted = filtered.slice().sort((a, b) => {
+    const av = displayValue(a, key).toLowerCase();
+    const bv = displayValue(b, key).toLowerCase();
+    return av.localeCompare(bv, undefined, { numeric: true }) * dir;
+  });
+
+  tbody.innerHTML = '';
+  sorted.forEach(entry => {
+    const tr = document.createElement('tr');
+    const id = slugifyAntenna(entry);
+
+    TABLE_COLUMN_KEYS.forEach((colKey, index) => {
+      const td = document.createElement('td');
+      td.dataset.key = colKey;
+      if (colKey === 'vendor') {
+        td.classList.add('vendor');
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.className = 'row-select';
+        cb.setAttribute('aria-label', `Select ${entry.vendor || ''} ${entry.sku || ''} for comparison`.trim());
+        cb.checked = selectedIds.has(id);
+        cb.addEventListener('click', e => e.stopPropagation());
+        cb.addEventListener('change', () => {
+          if (cb.checked) selectedIds.add(id);
+          else selectedIds.delete(id);
+          updateCompareFab();
+        });
+        td.appendChild(cb);
+        td.appendChild(document.createTextNode(entry.vendor || ''));
+      } else if (colKey === 'sku') {
+        const link = document.createElement('a');
+        link.className = 'sku-link';
+        link.href = buildAntennaDetailHref(id);
+        link.textContent = entry.sku || '';
+        link.addEventListener('click', e => {
+          e.stopPropagation();
+          saveDetailBackPath(browseReturnPath());
+        });
+        td.appendChild(link);
+        td.style.fontSize = '1rem';
+        td.style.fontWeight = '600';
+      } else if (colKey === 'beamwidth') {
+        td.classList.add('beamwidth-cell');
+        td.textContent = formatBeamwidthStacked(entry.beamwidth);
+      } else {
+        td.textContent = displayValue(entry, colKey);
+        if (colKey === 'sku' || colKey === 'legacy_sku') {
+          td.style.fontFamily = 'JetBrains Mono, ui-monospace, monospace';
+        }
+      }
+      tr.appendChild(td);
+    });
+
+    tr.addEventListener('click', () => {
+      goToDetail(id);
+    });
+    tbody.appendChild(tr);
+  });
+
+  if (sorted.length === 0) {
+    const tr = document.createElement('tr');
+    const td = document.createElement('td');
+    td.setAttribute('colspan', String(TABLE_COLUMN_KEYS.length));
+    td.className = 'empty-state-cell';
+    const empty = document.createElement('div');
+    empty.className = 'empty-state-enhanced';
+    const heading = document.createElement('h3');
+    heading.textContent = 'No antennas match your criteria';
+    const hint = document.createElement('p');
+    hint.textContent = (q || currentFilters.vendor || currentFilters.form || currentFilters.env)
+      ? 'Try adjusting your filters or search terms'
+      : 'No antennas defined yet. Add entries to antenna_data.json.';
+    empty.appendChild(heading);
+    empty.appendChild(hint);
+    td.appendChild(empty);
+    tr.appendChild(td);
+    tbody.appendChild(tr);
+  }
+
+  updateSortIndicators();
+  applyColumnOrderFromHeader();
+  applyColumnVisibility();
+  updateCompareFab();
+}
+
+function updateCompareFab() {
+  const fab = document.getElementById('compare-fab');
+  const n = selectedIds.size;
+  fab.disabled = n < 2;
+  if (n >= 2) {
+    fab.style.display = 'inline-flex';
+    fab.textContent = `Compare (${n})`;
+  } else if (n === 1) {
+    fab.style.display = 'inline-flex';
+    fab.textContent = 'Select 1 more to compare';
+  } else {
+    fab.style.display = 'none';
+  }
+}
+
+function updateUrl() {
+  const params = new URLSearchParams();
+  if (currentQuery) params.set('q', currentQuery);
+  if (currentFilters.vendor) params.set('vendor', currentFilters.vendor);
+  if (currentFilters.form) params.set('form', currentFilters.form);
+  if (currentFilters.env) params.set('env', currentFilters.env);
+  if (currentSort.key !== 'vendor' || currentSort.dir !== 'asc') {
+    params.set('sort', currentSort.key);
+    params.set('dir', currentSort.dir);
+  }
+  if (hiddenColumns.size) params.set('hide', Array.from(hiddenColumns).join(','));
+  if (selectedIds.size) params.set('sel', Array.from(selectedIds).join(','));
+  const qs = params.toString();
+  history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+}
+
+function readUrlState() {
+  const params = new URLSearchParams(window.location.search);
+  currentQuery = params.get('q') || '';
+  currentFilters.vendor = params.get('vendor') || '';
+  currentFilters.form = params.get('form') || '';
+  currentFilters.env = params.get('env') || '';
+  currentSort.key = params.get('sort') || 'vendor';
+  currentSort.dir = params.get('dir') === 'desc' ? 'desc' : 'asc';
+  const hide = params.get('hide');
+  if (hide) {
+    hiddenColumns.clear();
+    hide.split(',').filter(Boolean).forEach(k => hiddenColumns.add(k));
+  }
+  const sel = params.get('sel');
+  if (sel) sel.split(',').filter(Boolean).forEach(id => selectedIds.add(id));
+  document.getElementById('search').value = currentQuery;
+}
+
+async function load() {
+  const errorEl = document.getElementById('error-message');
+  try {
+    const res = await fetch(DATA_URL, { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    antennaData = await res.json();
+    if (!Array.isArray(antennaData)) throw new Error('antenna_catalog.json must be an array');
+    readUrlState();
+    populateFilters();
+    document.getElementById('filter-vendor').value = currentFilters.vendor;
+    document.getElementById('filter-form').value = currentFilters.form;
+    document.getElementById('filter-env').value = currentFilters.env;
+    buildColumnsPanel();
+    loadLayout();
+    initColumnResizersAndDnD();
+    renderTable();
+  } catch (err) {
+    errorEl.style.display = 'block';
+    errorEl.textContent = 'Failed to load antenna data: ' + err.message;
+  }
+}
+
+document.getElementById('search').addEventListener('input', (e) => {
+  currentQuery = e.target.value;
+  updateUrl();
+  renderTable();
+});
+document.getElementById('filter-vendor').addEventListener('change', (e) => {
+  currentFilters.vendor = e.target.value;
+  updateUrl();
+  renderTable();
+});
+document.getElementById('filter-form').addEventListener('change', (e) => {
+  currentFilters.form = e.target.value;
+  updateUrl();
+  renderTable();
+});
+document.getElementById('filter-env').addEventListener('change', (e) => {
+  currentFilters.env = e.target.value;
+  updateUrl();
+  renderTable();
+});
+document.getElementById('toggle-columns').addEventListener('click', () => {
+  const panel = document.getElementById('columns-panel');
+  const isOpen = panel.style.display === 'block';
+  panel.style.display = isOpen ? 'none' : 'block';
+});
+document.getElementById('reset-btn').addEventListener('click', () => {
+  currentQuery = '';
+  currentFilters.vendor = '';
+  currentFilters.form = '';
+  currentFilters.env = '';
+  currentSort = { key: 'vendor', dir: 'asc' };
+  hiddenColumns.clear();
+  defaultHiddenColumns().forEach(k => hiddenColumns.add(k));
+  selectedIds.clear();
+  document.getElementById('search').value = '';
+  document.getElementById('filter-vendor').value = '';
+  document.getElementById('filter-form').value = '';
+  document.getElementById('filter-env').value = '';
+  buildColumnsPanel();
+  updateUrl();
+  renderTable();
+});
+document.getElementById('reset-layout-btn').addEventListener('click', () => {
+  localStorage.removeItem('antennaTable.colOrder');
+  localStorage.removeItem('antennaTable.colWidths');
+  location.reload();
+});
+document.querySelectorAll('th.sortable .result-sort-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const key = btn.dataset.key || btn.closest('th')?.dataset.key;
+    if (!key) return;
+    if (currentSort.key === key) currentSort.dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
+    else { currentSort.key = key; currentSort.dir = 'asc'; }
+    updateUrl();
+    renderTable();
+  });
+});
+document.getElementById('compare-fab').addEventListener('click', () => {
+  if (selectedIds.size < 2) return;
+  window.location.href = `compare.html?ids=${encodeURIComponent(Array.from(selectedIds).join(','))}`;
+});
+
+load();
