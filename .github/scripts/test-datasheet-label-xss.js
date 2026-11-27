@@ -86,14 +86,14 @@ assert.strictEqual(
   'missing label falls back to Datasheet'
 );
 
-const antennaHtml = fs.readFileSync(path.join(__dirname, '..', '..', 'antenna.html'), 'utf8');
+const antennaHtml = fs.readFileSync(path.join(__dirname, '..', '..', 'js', 'antenna.js'), 'utf8');
 assert.ok(
   !/a\.innerHTML\s*=\s*`[\s\S]*\$\{[^}]*sheet\.label/.test(antennaHtml),
-  'antenna.html must not interpolate sheet.label into innerHTML'
+  'js/antenna.js must not interpolate sheet.label into innerHTML'
 );
 assert.ok(
   antennaHtml.includes('createDatasheetActionLink(document, sheet)'),
-  'antenna.html must build datasheet actions via createDatasheetActionLink'
+  'js/antenna.js must build datasheet actions via createDatasheetActionLink'
 );
 
 console.log('OK: datasheet labels use textContent (hostile-label regression)');

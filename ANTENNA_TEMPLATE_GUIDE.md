@@ -80,6 +80,15 @@ Examples:
 
 Optional `{band}` tokens: `2-4-ghz`, `5-ghz`, `6-ghz` when multiple patterns share an orientation. Keep `pattern_images[].label` human-readable (`Vertical`, `2.4 GHz Horizontal`, etc.).
 
+## Images
+
+Every image is downloaded by visitors and kept in git history forever, so add images at web size:
+
+- JPEG, quality around 85, metadata stripped.
+- Long edge at most about 2400 px. Radiation plots stay legible at that size in the zoom view.
+- Under 1 MB each. `validate-data.js` fails CI above that.
+- Don't re-save existing images to shrink them. A rewritten file adds a second copy to the repository history and saves only a few percent.
+
 ## Internal only
 
 Put vendor-listed compatible APs under `internal_notes.compatible_aps`. Never render `field_notes` or `internal_notes` in the UI. These maintainer-only keys stay in `antenna_data.json` and are excluded from the generated public Pages catalog (`antenna_catalog.json`).

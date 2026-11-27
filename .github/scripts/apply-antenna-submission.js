@@ -2,8 +2,8 @@
 'use strict';
 
 const fs = require('fs');
-const path = require('path');
 const submit = require('../../antenna-submit.js');
+const connectors = require('../../connector-normalize.js');
 
 function fail(message) {
   console.error(message);
@@ -106,7 +106,10 @@ function mergeEdit(existing, submitted) {
   const clean = publicSubmitted(submitted);
   const merged = {};
   Object.keys(existing).forEach(key => {
-    if (key === 'internal_notes' || key === 'field_notes') {
+    // Maintainer notes and curated structured fields (antenna_id is immutable,
+    // rf_interfaces / compatibility_claims / applications are not form-editable)
+    // always come from the existing entry, whatever the issue JSON says.
+    if (key === 'internal_notes' || key === 'field_notes' || submit.PRESERVE_FROM_BASE.indexOf(key) !== -1) {
       merged[key] = existing[key];
       return;
     }
@@ -118,6 +121,7 @@ function mergeEdit(existing, submitted) {
     merged[key] = existing[key];
   });
   submit.PUBLIC_KEYS.forEach(key => {
+    if (submit.PRESERVE_FROM_BASE.indexOf(key) !== -1) return;
     if (!Object.prototype.hasOwnProperty.call(merged, key) && Object.prototype.hasOwnProperty.call(clean, key)) {
       merged[key] = clean[key];
     }
@@ -170,7 +174,20 @@ function main() {
       return submit.submissionSlug(entry.vendor, entry.sku) === submit.submissionSlug(submitted.vendor, submitted.sku);
     });
     if (duplicate >= 0) fail('An antenna with this vendor and SKU already exists. Use the edit form.');
-    const block = indentBlock(submit.formatAntennaJson(submitted, { escapeUnicode: true }), 2);
+    // New entries get a derived antenna_id (never a caller-chosen one) and a
+    // conservative inferred rf_interfaces list, matching migrate-rf-interfaces.js.
+    const fresh = Object.assign({}, submitted);
+    delete fresh.antenna_id;
+    delete fresh.rf_interfaces;
+    delete fresh.compatibility_claims;
+    const entry = connectors.ensureStructuredFields(fresh);
+    if (!/^[a-z0-9-]+:[a-z0-9.-]+$/.test(entry.antenna_id)) {
+      fail('Could not derive a valid antenna_id from vendor and SKU: ' + entry.antenna_id);
+    }
+    if (entries.some(existing => existing.antenna_id === entry.antenna_id)) {
+      fail('antenna_id ' + entry.antenna_id + ' is already taken. Use the edit form, or ask a maintainer.');
+    }
+    const block = indentBlock(submit.formatAntennaJson(entry, { escapeUnicode: true }), 2);
     if (!ranges.length) {
       nextText = '[\n' + block + '\n]\n';
     } else {

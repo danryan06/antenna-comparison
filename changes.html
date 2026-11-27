@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; upgrade-insecure-requests" />
   <title>Recent Changes | AntennaComparison</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Recent changes to the AntennaComparison and site, newest first." />
+  <meta name="description" content="Recent changes to the AntennaComparison catalog and site, newest first." />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="AntennaComparison" />
   <meta property="og:title" content="Recent Changes" />
-  <meta property="og:description" content="Recent changes to the AntennaComparison and site, newest first." />
+  <meta property="og:description" content="Recent changes to the AntennaComparison catalog and site, newest first." />
+  <link rel="canonical" href="https://antennacomparison.com/changes.html" />
   <meta property="og:url" content="https://antennacomparison.com/changes.html" />
   <meta property="og:image" content="https://antennacomparison.com/logo.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" />
-  <link rel="stylesheet" href="style.css?v=23" />
+  <link rel="preload" href="fonts/Barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="style.css?v=24" />
 </head>
 <body>
   <header class="site-header" data-page="changes"></header>
@@ -29,8 +29,6 @@
   </div>
 
   <script src="fresh.js?v=1"></script>
-  <script>
-    Fresh.renderChanges(document.getElementById('changes-list'));
-  </script>
+  <script src="js/changes.js?v=1"></script>
 </body>
 </html>

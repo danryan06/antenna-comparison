@@ -46,24 +46,18 @@ Each antenna entry includes:
 python3 -m http.server 8000 --bind 127.0.0.1
 # then open http://127.0.0.1:8000/
 
-# Run every validator and test at once (same checks CI runs):
+# Run every validator and test at once (the same command CI runs):
 npm test
 
-# Or individually:
-node .github/scripts/validate-data.js
-node .github/scripts/validate-compatibility.js
-node .github/scripts/build-public-catalog.js --check
-node .github/scripts/test-antenna-submit.js
-node .github/scripts/test-compatibility-matcher.js
-node .github/scripts/test-datasheet-label-xss.js
-node .github/scripts/test-url-sanitizer.js
-node .github/scripts/test-detail-back.js
-node .github/scripts/test-pattern-ports.js
-node .github/scripts/test-ap-links.js
-node .github/scripts/test-alt-sku.js
-node .github/scripts/test-compat-explain.js
-node .github/scripts/test-html-sinks.js
+# After editing antenna_data.json, regenerate the public catalog and compatibility index:
+npm run build
+
+# Lint the JavaScript (one-time `npm ci` installs ESLint; npm test needs no install):
+npm ci
+npm run lint
 ```
+
+Node 22 or newer is required (see `.nvmrc`); `npm test` and `npm run build` need no installed packages; ESLint is the only (dev) dependency. The individual checks live in `.github/scripts/` and are listed in the `test` script in `package.json`.
 
 Supported browsers: current Chrome, Firefox, and Safari/iOS Safari (desktop + ~375px mobile).
 
@@ -73,7 +67,7 @@ From the catalog, use **Submit antenna** to propose a new entry. From an antenna
 
 `https://github.com/danryan06/antenna-comparison/issues/new`
 
-Review the issue and submit it. A maintainer adds the `antenna-submission` label. That label runs automation which opens a pull request updating `antenna_data.json`. New issues are titled `New Antenna: …`. Edits are titled `Edit Antenna: …`.
+Review the issue and submit it. A maintainer adds the `antenna-submission` label. That label runs automation which applies the change to `antenna_data.json`, regenerates the derived files, runs `npm test`, and opens a pull request that closes the issue when merged. New issues are titled `New Antenna: …`. Edits are titled `Edit Antenna: …`.
 
 Prefer to edit the data yourself? Open a pull request that changes `antenna_data.json` and add images under `images/<vendor>/`. Follow `antenna_template.json` for field shape.
 
@@ -86,24 +80,10 @@ Always cite vendor datasheets. When AccelTex/Hubbell publish dual PDFs, merge fi
 - **Public Pages catalog**: `antenna_catalog.json` (allowlisted public fields only; this is what the site loads)
 - **Hosting**: GitHub Pages (`main` / root) with custom domain `antennacomparison.com` (tracked `CNAME` at repo root so deploys keep the domain)
 - **robots.txt**: crawler hints only (e.g. `Disallow: /antenna_data.json`). It does **not** hide maintainer notes — `antenna_data.json` remains public in the GitHub repo and is still fetchable; the site loads `antenna_catalog.json`
-- **Security**: see [SECURITY.md](./SECURITY.md)
+- **Security**: every page carries the same strict Content-Security-Policy (`<meta>` tag; Pages can't set headers): scripts, styles, fonts, images and data load only from this site. Keep page logic in `js/`, page styles in `css/`, and no inline `<script>`, `<style>`, `style=""` or `on*=` handlers; `npm test` enforces this (`test-csp.js`). See [SECURITY.md](./SECURITY.md)
 - **License**: MIT (code). Vendor media remains vendor property — see License below
 
-Regenerate the public catalog after authoring changes:
-
-```bash
-node .github/scripts/build-public-catalog.js
-node .github/scripts/build-public-catalog.js --check
-```
-
-Compatibility artifacts (pinned AP Comparison export + generated index):
-
-```bash
-node .github/scripts/validate-compatibility.js
-node .github/scripts/build-compatibility-index.js
-node .github/scripts/build-compatibility-index.js --check
-node .github/scripts/test-compatibility-matcher.js
-```
+Regenerate the generated artifacts (the public catalog, the compatibility index built from the pinned AP Comparison export, and `sitemap.xml`) after authoring changes with `npm run build`, then confirm with `npm test`. `site-meta.json` (last-edited dates and the Recent changes list) is rebuilt from git history by a workflow on every push to `main`; run it locally with `npm run build:meta` (needs full history).
 
 CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-only keys, or if the compatibility index drifts from the matcher.
 
@@ -112,6 +92,7 @@ CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-onl
 ```
 ├── index.html              # Browse / filter table
 ├── antenna.html            # Detail page
+├── changes.html            # Recent changes (from site-meta.json)
 ├── edit.html               # Edit an existing antenna
 ├── submit.html             # Submit a new antenna
 ├── compare.html            # Side-by-side compare
@@ -119,8 +100,13 @@ CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-onl
 ├── 404.html                # Branded not-found recovery (root base href for custom domain)
 ├── CNAME                   # Custom domain for GitHub Pages (antennacomparison.com)
 ├── robots.txt              # Crawler hints only; does not hide public repo files
-├── sitemap.xml             # Public page list for crawlers
-├── style.css               # Shared styling
+├── sitemap.xml             # Generated (npm run build): pages + every antenna detail URL
+├── style.css               # Shared styling (+ self-hosted @font-face rules)
+├── js/                     # Page scripts (one per HTML page; no inline JS, see CSP)
+├── css/                    # Page-specific styles
+├── site-header.js          # Shared header / family strip
+├── fresh.js                # "Last edited" + recent changes from site-meta.json
+├── site-meta.json          # Generated by .github/workflows/site-meta.yml
 ├── antenna-format.js       # Display helpers + shared URL sanitizer
 ├── compatibility-matcher.js
 ├── connector-normalize.js
@@ -131,6 +117,10 @@ CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-onl
 ├── antenna_catalog.meta.json
 ├── antenna_template.json   # Entry template
 ├── images/                 # Product photos & patterns
+├── family/  fonts/         # Sibling-site icons; self-hosted Barlow + JetBrains Mono
+├── scripts/                # One-off vendor data miners (Python; see scripts/requirements.txt)
+├── .github/scripts/        # Validators, generators, tests (run via npm test / npm run build)
+├── .github/workflows/      # CI, issue-to-PR automation, site-meta refresh
 ├── SECURITY.md             # Vulnerability reporting
 ├── LICENSE                 # MIT
 └── README.md
@@ -138,7 +128,7 @@ CI fails if `antenna_catalog.json` is missing, stale, or contains maintainer-onl
 
 ## License
 
-Code is released under the MIT License (see LICENSE). Product images and radiation plots are the property of their respective vendors and are used for identification only. Specifications come from vendor documentation; always verify with the vendor before purchasing. Part numbers use JetBrains Mono, licensed under the SIL Open Font License (`fonts/OFL.txt`).
+Code is released under the MIT License (see LICENSE). Product images and radiation plots are the property of their respective vendors and are used for identification only. Specifications come from vendor documentation; always verify with the vendor before purchasing. Fonts are self-hosted: Barlow and Barlow Condensed (`fonts/OFL-Barlow.txt`) and JetBrains Mono for part numbers (`fonts/OFL.txt`), all under the SIL Open Font License.
 
 ## Maintainer
 
