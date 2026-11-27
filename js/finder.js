@@ -813,46 +813,123 @@ function statusClass(status) {
   return 'compat-status compat-status-' + String(status || '').replace(/_/g, '-');
 }
 
-function manufacturerLinks(entry, result) {
+function manufacturerLinks(entry) {
+  // One quiet line of source links. They back up the card, so they
+  // shouldn't outweigh the specs above them.
   const wrap = document.createElement('div');
   wrap.className = 'compat-verify';
-  const label = document.createElement('strong');
-  label.textContent = 'Verify with manufacturers';
+  const label = document.createElement('span');
+  label.className = 'compat-verify-label';
+  label.textContent = 'Verify:';
   wrap.appendChild(label);
-  const list = document.createElement('ul');
+  const links = [];
   if (selectedApProfile && selectedApProfile.datasheet_url) {
     const href = safeUrl(selectedApProfile.datasheet_url);
-    if (href) {
-      const li = document.createElement('li');
-      const a = document.createElement('a');
-      a.href = href;
-      a.target = '_blank';
-      a.rel = 'noopener noreferrer';
-      a.textContent = 'AP documentation';
-      li.appendChild(a);
-      list.appendChild(li);
-    }
+    if (href) links.push({ href, text: 'AP documentation' });
   }
   const sheets = Array.isArray(entry.datasheet_urls) ? entry.datasheet_urls : [];
   sheets.slice(0, 2).forEach(sheet => {
     const href = safeUrl(sheet && sheet.url);
-    if (!href) return;
-    const li = document.createElement('li');
+    if (href) links.push({ href, text: sheet.label || 'Antenna documentation' });
+  });
+  if (!links.length) {
+    const none = document.createElement('span');
+    none.textContent = 'No direct documentation links in catalog. Check the manufacturer site.';
+    wrap.appendChild(none);
+    return wrap;
+  }
+  links.forEach(link => {
     const a = document.createElement('a');
-    a.href = href;
+    a.href = link.href;
     a.target = '_blank';
     a.rel = 'noopener noreferrer';
-    a.textContent = sheet.label || 'Antenna documentation';
-    li.appendChild(a);
-    list.appendChild(li);
+    a.textContent = link.text;
+    wrap.appendChild(a);
   });
-  if (!list.children.length) {
-    const li = document.createElement('li');
-    li.textContent = 'No direct documentation links in catalog — check the manufacturer site.';
-    list.appendChild(li);
-  }
-  wrap.appendChild(list);
   return wrap;
+}
+
+function compatChip(text, extraClass) {
+  const chip = document.createElement('span');
+  chip.className = 'compat-chip' + (extraClass ? ' ' + extraClass : '');
+  chip.textContent = text;
+  return chip;
+}
+
+// Band order for a per-band value object, e.g. { "5": 3, "2.4": 2 } -> "2.4/5".
+function gainBandLabel(gain) {
+  if (!gain || typeof gain !== 'object') return '';
+  return ['2.4', '5', '6']
+    .filter(b => gain[b] != null && gain[b] !== '')
+    .join('/');
+}
+
+function compatSpecs(entry) {
+  const specs = [];
+  const gain = formatGainCompact(entry.gain_dbi);
+  if (gain) {
+    const bands = gainBandLabel(entry.gain_dbi);
+    specs.push([bands ? `Gain (${bands} GHz)` : 'Gain', gain]);
+  }
+  const beam = formatBeamwidthCompact(entry.beamwidth);
+  if (beam) specs.push(['Beamwidth', beam]);
+  if (entry.lead_count != null) specs.push(['Leads', String(entry.lead_count)]);
+  if (entry.polarization) specs.push(['Polarization', String(entry.polarization)]);
+  if (!specs.length) return null;
+
+  const dl = document.createElement('dl');
+  dl.className = 'compat-specs';
+  specs.forEach(([k, v]) => {
+    const item = document.createElement('div');
+    const dt = document.createElement('dt');
+    dt.textContent = k;
+    const dd = document.createElement('dd');
+    dd.textContent = v;
+    item.appendChild(dt);
+    item.appendChild(dd);
+    dl.appendChild(item);
+  });
+  return dl;
+}
+
+function compatWhy(result) {
+  const why = document.createElement('details');
+  why.className = 'compat-why';
+  const summary = document.createElement('summary');
+  summary.textContent = 'Why this result?';
+  why.appendChild(summary);
+  // Plain-language reasons grouped by what they mean for this AP.
+  // The raw matcher code and message stay available as a tooltip.
+  const explained = AntennaCompatibility.explainResult(result);
+  const body = document.createElement('div');
+  body.className = 'compat-why-body';
+  [
+    ['match', 'What matches'],
+    ['check', 'Couldn’t confirm'],
+    ['mismatch', 'Doesn’t fit']
+  ].forEach(([tone, title]) => {
+    const items = explained[tone];
+    if (!items.length) return;
+    // For an excluded antenna, only the reasons it doesn't fit matter.
+    if (result.status === 'incompatible' && tone !== 'mismatch') return;
+    const block = document.createElement('div');
+    block.className = `compat-why-group compat-why-${tone}`;
+    const h = document.createElement('p');
+    h.className = 'compat-why-title';
+    h.textContent = title;
+    block.appendChild(h);
+    const ul = document.createElement('ul');
+    items.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item.text;
+      li.title = item.detail ? `${item.code}: ${item.detail}` : item.code;
+      ul.appendChild(li);
+    });
+    block.appendChild(ul);
+    body.appendChild(block);
+  });
+  why.appendChild(body);
+  return why;
 }
 
 function renderCompatResults(results) {
@@ -867,7 +944,6 @@ function renderCompatResults(results) {
       group.id !== 'excluded' || state.showExcluded
     );
     if (group.id === 'excluded' && !state.showExcluded) return;
-    if (!items.length && group.id !== 'excluded') return;
     if (!items.length) return;
 
     const section = document.createElement('section');
@@ -884,114 +960,111 @@ function renderCompatResults(results) {
     items.forEach(result => {
       rendered += 1;
       const entry = result.antenna;
+      const fullName = `${entry.vendor || ''} ${entry.sku || ''}`.trim();
       const card = document.createElement('article');
       card.className = 'compat-result';
 
-      // Compare toggle sits above the antenna name, same behavior as the
-      // table view's row checkbox (adds to the Compare tray, no re-render).
+      // Column 1: compare toggle (same behavior as the table view's row
+      // checkbox: adds to the Compare tray, no re-render).
       const compare = document.createElement('label');
       compare.className = 'compat-compare';
       const compareBox = document.createElement('input');
       compareBox.type = 'checkbox';
       compareBox.checked = selectedIds.has(entry._slug);
-      compareBox.setAttribute(
-        'aria-label',
-        `Compare ${entry.vendor || ''} ${entry.sku || ''}`.trim()
-      );
+      compareBox.setAttribute('aria-label', `Compare ${fullName}`);
       compareBox.addEventListener('change', () => {
         if (compareBox.checked) selectedIds.add(entry._slug);
         else selectedIds.delete(entry._slug);
         updateCompareFab();
       });
-      const compareText = document.createElement('span');
-      compareText.textContent = 'Compare';
-      compareText.setAttribute('aria-hidden', 'true');
       compare.appendChild(compareBox);
-      compare.appendChild(compareText);
       card.appendChild(compare);
+
+      // Column 2: product photo, when the catalog has one.
+      const thumbWrap = document.createElement('a');
+      thumbWrap.className = 'compat-thumb';
+      thumbWrap.tabIndex = -1;
+      thumbWrap.setAttribute('aria-hidden', 'true');
+      bindDetailLink(thumbWrap, entry._slug);
+      const imgSrc = safeUrl(entry.image_url, { allowRelative: true });
+      if (imgSrc) {
+        const img = document.createElement('img');
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.src = imgSrc;
+        img.alt = '';
+        thumbWrap.appendChild(img);
+      } else {
+        thumbWrap.classList.add('is-empty');
+      }
+      card.appendChild(thumbWrap);
+
+      // Column 3: name, chips, key specs, sources.
+      const body = document.createElement('div');
+      body.className = 'compat-body';
 
       const top = document.createElement('div');
       top.className = 'compat-result-top';
-
-      // Same rule for the per-card badge: only when it adds information.
+      const title = document.createElement('a');
+      title.className = 'compat-sku';
+      bindDetailLink(title, entry._slug);
+      title.textContent = fullName;
+      top.appendChild(title);
+      if (entry.legacy_sku) {
+        const alt = document.createElement('span');
+        alt.className = 'compat-alt-sku';
+        alt.title = altSkuLabel(entry);
+        alt.textContent = entry.legacy_sku;
+        top.appendChild(alt);
+      }
+      // Status badge only when it adds information (see group heading note).
       if (result.status !== 'review_required') {
         const status = document.createElement('span');
         status.className = statusClass(result.status);
         status.textContent = AntennaCompatibility.statusLabel(result.status);
         top.appendChild(status);
       }
-
       if (result.vendor_listed) {
         const claim = document.createElement('span');
         claim.className = 'compat-claim';
         claim.textContent = 'Vendor listed';
         top.appendChild(claim);
       }
+      body.appendChild(top);
 
-      const title = document.createElement('a');
-      title.className = 'compat-sku';
-      bindDetailLink(title, entry._slug);
-      title.textContent = `${entry.vendor || ''} ${entry.sku || ''}`.trim();
-      top.appendChild(title);
-      card.appendChild(top);
+      const chips = document.createElement('div');
+      chips.className = 'compat-chips';
+      if (entry.form) chips.appendChild(compatChip(entry.form));
+      chips.appendChild(compatChip(entry.connector || 'Connector not listed'));
+      const bands = formatBands(entry.bands);
+      if (bands) chips.appendChild(compatChip(`${bands} GHz`));
+      if (entry.indoor_outdoor) chips.appendChild(compatChip(formatEnvironment(entry.indoor_outdoor)));
+      if (result.units_required) {
+        chips.appendChild(compatChip(
+          `${result.units_required} unit${result.units_required === 1 ? '' : 's'} required`,
+          'compat-chip-accent'
+        ));
+      }
+      body.appendChild(chips);
 
-      const meta = document.createElement('p');
-      meta.className = 'compat-meta';
-      const bits = [
-        entry.connector || 'connector —',
-        entry.form || null,
-        formatBands(entry.bands) || null,
-        result.units_required ? `${result.units_required} unit(s) required` : null
-      ].filter(Boolean);
-      meta.textContent = bits.join(' · ');
-      card.appendChild(meta);
+      const specs = compatSpecs(entry);
+      if (specs) body.appendChild(specs);
 
-      const why = document.createElement('details');
-      why.className = 'compat-why';
-      const summary = document.createElement('summary');
-      summary.textContent = 'Why this result?';
-      why.appendChild(summary);
-      // Plain-language reasons grouped by what they mean for this AP.
-      // The raw matcher code and message stay available as a tooltip.
-      const explained = AntennaCompatibility.explainResult(result);
-      const body = document.createElement('div');
-      body.className = 'compat-why-body';
-      [
-        ['match', 'What matches'],
-        ['check', 'Couldn\u2019t confirm'],
-        ['mismatch', 'Doesn\u2019t fit']
-      ].forEach(([tone, title]) => {
-        const items = explained[tone];
-        if (!items.length) return;
-        // For an excluded antenna, only the reasons it doesn't fit matter.
-        if (result.status === 'incompatible' && tone !== 'mismatch') return;
-        const block = document.createElement('div');
-        block.className = `compat-why-group compat-why-${tone}`;
-        const h = document.createElement('p');
-        h.className = 'compat-why-title';
-        h.textContent = title;
-        block.appendChild(h);
-        const ul = document.createElement('ul');
-        items.forEach(item => {
-          const li = document.createElement('li');
-          li.textContent = item.text;
-          li.title = item.detail ? `${item.code}: ${item.detail}` : item.code;
-          ul.appendChild(li);
-        });
-        block.appendChild(ul);
-        body.appendChild(block);
-      });
-      why.appendChild(body);
-      card.appendChild(why);
+      const foot = document.createElement('div');
+      foot.className = 'compat-foot';
+      foot.appendChild(manufacturerLinks(entry));
+      foot.appendChild(compatWhy(result));
+      body.appendChild(foot);
+      card.appendChild(body);
 
-      card.appendChild(manufacturerLinks(entry, result));
-
+      // Column 4: primary action.
       const actions = document.createElement('div');
       actions.className = 'compat-actions';
       const detail = document.createElement('a');
       bindDetailLink(detail, entry._slug);
       detail.className = 'btn-link btn-link-ghost btn-link-small';
       detail.textContent = 'Details';
+      detail.setAttribute('aria-label', `Details for ${fullName}`);
       actions.appendChild(detail);
       card.appendChild(actions);
 
