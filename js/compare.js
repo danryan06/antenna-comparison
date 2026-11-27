@@ -74,6 +74,7 @@ function render() {
     const imgUrl = safeUrl(entry.image_url, { allowRelative: true });
     if (imgUrl) {
       const img = document.createElement('img');
+      img.decoding = 'async';
       img.src = imgUrl;
       img.alt = entry.sku || '';
       imgWrap.appendChild(img);

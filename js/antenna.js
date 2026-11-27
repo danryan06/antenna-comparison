@@ -280,9 +280,11 @@ function galleryFigure(item, kind, title) {
   btn.className = 'gallery-zoom';
   btn.setAttribute('aria-label', displayLabel ? `Expand ${displayLabel}` : `Expand ${title}`);
   const img = document.createElement('img');
+  // Set loading/decoding before src, or the browser may start the download eagerly.
+  img.loading = 'lazy';
+  img.decoding = 'async';
   img.src = url;
   img.alt = displayLabel || title;
-  img.loading = 'lazy';
   btn.appendChild(img);
   btn.addEventListener('click', () => openLightbox(url, displayLabel || title));
   fig.appendChild(btn);
