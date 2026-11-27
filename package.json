@@ -6,6 +6,10 @@
   "scripts": {
     "serve": "python3 -m http.server 8000 --bind 127.0.0.1",
     "build": "node .github/scripts/build-public-catalog.js && node .github/scripts/build-compatibility-index.js",
-    "test": "node .github/scripts/validate-data.js && node .github/scripts/validate-compatibility.js && node .github/scripts/build-public-catalog.js --check && node .github/scripts/build-compatibility-index.js --check && node .github/scripts/test-antenna-submit.js && node .github/scripts/test-compatibility-matcher.js && node .github/scripts/test-datasheet-label-xss.js && node .github/scripts/test-url-sanitizer.js && node .github/scripts/test-detail-back.js && node .github/scripts/test-pattern-ports.js && node .github/scripts/test-ap-links.js && node .github/scripts/test-alt-sku.js && node .github/scripts/test-compat-explain.js && node .github/scripts/test-html-sinks.js"
+    "test": "node .github/scripts/validate-data.js && node .github/scripts/validate-compatibility.js && node .github/scripts/build-public-catalog.js --check && node .github/scripts/build-compatibility-index.js --check && node .github/scripts/test-antenna-submit.js && node .github/scripts/test-compatibility-matcher.js && node .github/scripts/test-datasheet-label-xss.js && node .github/scripts/test-url-sanitizer.js && node .github/scripts/test-detail-back.js && node .github/scripts/test-pattern-ports.js && node .github/scripts/test-ap-links.js && node .github/scripts/test-alt-sku.js && node .github/scripts/test-compat-explain.js && node .github/scripts/test-html-sinks.js",
+    "build:meta": "node .github/scripts/generate-site-meta.js"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

@@ -2,7 +2,8 @@ name: Validate Antenna Data
 
 on:
   push:
-    paths:
+    branches: [main]
+    paths: &validated-paths
       - 'antenna_data.json'
       - 'antenna_catalog.json'
       - 'antenna_catalog.meta.json'
@@ -13,67 +14,36 @@ on:
       - '*.css'
       - 'fonts/**'
       - 'images/**'
+      - 'package.json'
+      - '.nvmrc'
       - 'SECURITY.md'
-      - '404.html'
       - 'robots.txt'
       - '.github/workflows/**'
       - '.github/scripts/**'
   pull_request:
-    paths:
-      - 'antenna_data.json'
-      - 'antenna_catalog.json'
-      - 'antenna_catalog.meta.json'
-      - 'antenna_template.json'
-      - 'data/compatibility/**'
-      - '*.html'
-      - '*.js'
-      - '*.css'
-      - 'fonts/**'
-      - 'images/**'
-      - 'SECURITY.md'
-      - '404.html'
-      - 'robots.txt'
-      - '.github/workflows/**'
-      - '.github/scripts/**'
+    paths: *validated-paths
+  workflow_dispatch:
 
 permissions:
   contents: read
 
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
       - name: Setup Node
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
-          node-version: '22'
-      - name: Validate antenna data
-        run: node .github/scripts/validate-data.js
-      - name: Validate compatibility data
-        run: node .github/scripts/validate-compatibility.js
-      - name: Verify public catalog artifact
-        run: node .github/scripts/build-public-catalog.js --check
-      - name: Verify compatibility index artifact
-        run: node .github/scripts/build-compatibility-index.js --check
-      - name: Test edit and submit helpers
-        run: node .github/scripts/test-antenna-submit.js
-      - name: Test compatibility matcher
-        run: node .github/scripts/test-compatibility-matcher.js
-      - name: Test datasheet label XSS guard
-        run: node .github/scripts/test-datasheet-label-xss.js
-      - name: Test URL sanitizer unification
-        run: node .github/scripts/test-url-sanitizer.js
-      - name: Test detail Back session helpers
-        run: node .github/scripts/test-detail-back.js
-      - name: Test per-port pattern grouping
-        run: node .github/scripts/test-pattern-ports.js
-      - name: Test AP Comparison links
-        run: node .github/scripts/test-ap-links.js
-      - name: Test alternate part numbers and old detail links
-        run: node .github/scripts/test-alt-sku.js
-      - name: Test plain-language compatibility explanations
-        run: node .github/scripts/test-compat-explain.js
-      - name: Test HTML sink inventory
-        run: node .github/scripts/test-html-sinks.js
+          node-version-file: .nvmrc
+      # package.json "test" is the single list of validators and tests.
+      - name: Run validators and tests
+        run: npm test
