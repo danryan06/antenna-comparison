@@ -4234,12 +4234,12 @@ a.sku-link:hover { text-decoration: underline; }
 }
 .finder-page .active-filter-chip:hover { border-color: var(--accent); }
 /* AP-fit results: one compact ruled row per antenna.
-   Columns: compare | photo | name, chips, specs, sources | Details */
+   Columns: compare | photo | name, chips, specs, sources | fit | Details */
 .finder-page .compat-group { border: 0; background: none; padding: 0; margin: 0 0 8px; }
 .finder-page .compat-group > h3 { margin: 14px 0 0; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
 .finder-page .compat-result {
   display: grid;
-  grid-template-columns: 18px 64px minmax(0, 1fr) auto;
+  grid-template-columns: 22px 64px minmax(0, 1fr) 150px auto;
   gap: 4px 14px;
   align-items: start;
   margin: 0;
@@ -4248,7 +4248,14 @@ a.sku-link:hover { text-decoration: underline; }
 }
 .finder-page .compat-result:hover { background: none; }
 .finder-page .compat-result:has(.compat-compare input:checked) { box-shadow: inset 3px 0 0 var(--accent); }
-.finder-page .compat-compare { margin: 6px 0 0; }
+.finder-page .compat-compare { align-self: center; display: flex; margin: 0; }
+.finder-page .compat-compare input { width: 20px; height: 20px; margin: 0; cursor: pointer; accent-color: var(--accent); }
+/* Fit summary: status badge, vendor claim and unit count stacked at a fixed x. */
+.finder-page .compat-fit { display: flex; flex-direction: column; align-items: stretch; gap: 6px; padding-top: 2px; }
+.finder-page .compat-fit > * { text-align: center; }
+.finder-page .compat-fit .compat-status,
+.finder-page .compat-fit .compat-claim,
+.finder-page .compat-fit .compat-chip { white-space: nowrap; }
 .finder-page .compat-thumb {
   align-self: center; /* centered in the row; the other columns stay top-aligned */
   display: flex; align-items: center; justify-content: center;
@@ -4287,8 +4294,11 @@ a.sku-link:hover { text-decoration: underline; }
 .compat-status-review-required { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); }
 .compat-status-incompatible { color: var(--bad); background: var(--bad-soft); border-color: var(--bad); }
 @media (max-width: 640px) {
-  .finder-page .compat-result { grid-template-columns: 18px 48px minmax(0, 1fr); }
+  .finder-page .compat-result { grid-template-columns: 22px 48px minmax(0, 1fr); }
   .finder-page .compat-thumb { width: 48px; height: 48px; align-self: start; }
+  .finder-page .compat-compare { align-self: start; margin-top: 2px; }
+  .finder-page .compat-fit { grid-column: 3; flex-direction: row; flex-wrap: wrap; align-items: flex-start; padding: 0; }
+  .finder-page .compat-fit:empty { display: none; }
   .finder-page .compat-actions { grid-column: 3; }
   .finder-page .compat-specs { gap: 6px 18px; }
 }

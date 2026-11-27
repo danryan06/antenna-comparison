@@ -813,6 +813,31 @@ function statusClass(status) {
   return 'compat-status compat-status-' + String(status || '').replace(/_/g, '-');
 }
 
+function escapeRegExp(text) {
+  return String(text).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// Short visible text for a documentation link; the full title stays as the
+// tooltip. Drops parentheticals, this antenna's part numbers, and other
+// part-number-like codes, so "AccelTex Spec Sheet ATS-OO-245-46-6NP-36"
+// reads "AccelTex spec sheet". Long leftovers become brand + document type.
+function shortDocLabel(label, entry) {
+  const full = String(label || '').trim();
+  if (!full) return 'Antenna documentation';
+  let text = full.replace(/\([^)]*\)/g, ' ');
+  [entry && entry.sku, entry && entry.legacy_sku].filter(Boolean).forEach(part => {
+    text = text.replace(new RegExp(escapeRegExp(part) + '\\w*', 'gi'), ' ');
+  });
+  const words = text.split(/\s+/).filter(w => w && !(/\d/.test(w) && /[-_]/.test(w)));
+  const kind = (full.match(/\b(spec sheet|datasheet|data sheet|spec|installation guide|selection guide|guide|catalog|product page)\b/i) || [])[1];
+  let out = words.join(' ');
+  if (out.length > 22) out = kind ? `${words[0]} ${kind}` : `${words[0]} documentation`;
+  else if (words.length === 1 && !kind) out += ' documentation';
+  if (!out) return 'Antenna documentation';
+  // Lowercase the document type after the brand ("Hubbell SPEC" -> "Hubbell spec").
+  return out.replace(/\b(spec sheet|spec|datasheet|data sheet)\b/gi, m => m.toLowerCase());
+}
+
 function manufacturerLinks(entry) {
   // One quiet line of source links. They back up the card, so they
   // shouldn't outweigh the specs above them.
@@ -825,12 +850,14 @@ function manufacturerLinks(entry) {
   const links = [];
   if (selectedApProfile && selectedApProfile.datasheet_url) {
     const href = safeUrl(selectedApProfile.datasheet_url);
-    if (href) links.push({ href, text: 'AP documentation' });
+    if (href) links.push({ href, text: 'AP docs', title: 'AP documentation' });
   }
   const sheets = Array.isArray(entry.datasheet_urls) ? entry.datasheet_urls : [];
   sheets.slice(0, 2).forEach(sheet => {
     const href = safeUrl(sheet && sheet.url);
-    if (href) links.push({ href, text: sheet.label || 'Antenna documentation' });
+    if (href) {
+      links.push({ href, text: shortDocLabel(sheet.label, entry), title: sheet.label || 'Antenna documentation' });
+    }
   });
   if (!links.length) {
     const none = document.createElement('span');
@@ -844,6 +871,7 @@ function manufacturerLinks(entry) {
     a.target = '_blank';
     a.rel = 'noopener noreferrer';
     a.textContent = link.text;
+    if (link.title && link.title !== link.text) a.title = link.title;
     wrap.appendChild(a);
   });
   return wrap;
@@ -948,10 +976,9 @@ function renderCompatResults(results) {
 
     const section = document.createElement('section');
     section.className = 'compat-group';
-    // Every candidate is best-effort and the banner above says so, so the
-    // default "Needs review" group gets no heading. Groups that say
-    // something different (Excluded, Direct matches, ...) keep theirs.
-    if (group.id !== 'review') {
+    // Each row carries its own status badge, so groups don't need headings.
+    // Excluded keeps one: it is opt-in and sits apart from the candidates.
+    if (group.id === 'excluded') {
       const heading = document.createElement('h3');
       heading.textContent = `${group.title} (${items.length})`;
       section.appendChild(heading);
@@ -1017,20 +1044,30 @@ function renderCompatResults(results) {
         alt.textContent = entry.legacy_sku;
         top.appendChild(alt);
       }
-      // Status badge only when it adds information (see group heading note).
+      body.appendChild(top);
+
+      // Column 4: fit summary, stacked in a fixed column so it lines up
+      // from row to row. "Needs review" is the default and gets no badge.
+      const fit = document.createElement('div');
+      fit.className = 'compat-fit';
       if (result.status !== 'review_required') {
         const status = document.createElement('span');
         status.className = statusClass(result.status);
         status.textContent = AntennaCompatibility.statusLabel(result.status);
-        top.appendChild(status);
+        fit.appendChild(status);
       }
       if (result.vendor_listed) {
         const claim = document.createElement('span');
         claim.className = 'compat-claim';
         claim.textContent = 'Vendor listed';
-        top.appendChild(claim);
+        fit.appendChild(claim);
       }
-      body.appendChild(top);
+      if (result.units_required) {
+        fit.appendChild(compatChip(
+          `${result.units_required} unit${result.units_required === 1 ? '' : 's'} required`,
+          'compat-chip-accent'
+        ));
+      }
 
       const chips = document.createElement('div');
       chips.className = 'compat-chips';
@@ -1039,12 +1076,6 @@ function renderCompatResults(results) {
       const bands = formatBands(entry.bands);
       if (bands) chips.appendChild(compatChip(`${bands} GHz`));
       if (entry.indoor_outdoor) chips.appendChild(compatChip(formatEnvironment(entry.indoor_outdoor)));
-      if (result.units_required) {
-        chips.appendChild(compatChip(
-          `${result.units_required} unit${result.units_required === 1 ? '' : 's'} required`,
-          'compat-chip-accent'
-        ));
-      }
       body.appendChild(chips);
 
       const specs = compatSpecs(entry);
@@ -1056,8 +1087,9 @@ function renderCompatResults(results) {
       foot.appendChild(compatWhy(result));
       body.appendChild(foot);
       card.appendChild(body);
+      card.appendChild(fit);
 
-      // Column 4: primary action.
+      // Column 5: primary action.
       const actions = document.createElement('div');
       actions.className = 'compat-actions';
       const detail = document.createElement('a');
